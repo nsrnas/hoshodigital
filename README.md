@@ -1,6 +1,6 @@
-# HOSHŌ DIGITAL — Custom WordPress Theme
+# Evan's HOSHŌ DIGITAL — Custom WordPress Folder
 
-Custom WordPress theme for the **HOSHŌ DIGITAL** web redesign project. This implementation covers seven core pages:
+My work WordPress folder for the **HOSHŌ DIGITAL** web redesign project. This implementation covers seven core pages:
 
 | Page | WordPress Slug | Template |
 | --- | --- | --- |
