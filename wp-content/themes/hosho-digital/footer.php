@@ -1,0 +1,60 @@
+<?php
+/**
+ * Canonical site footer.
+ *
+ * @package Hosho_Digital
+ */
+?>
+<footer class="site-footer">
+	<div class="shell">
+		<div class="footer-main">
+			<div class="footer-brand">
+				<a class="brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="<?php esc_attr_e( 'HOSHŌ DIGITAL homepage', 'hosho-digital' ); ?>">
+					<img src="<?php echo esc_url( hosho_v9_asset_url( 'assets/logo.webp' ) ); ?>" alt="">
+					<span>HOSHŌ DIGITAL</span>
+				</a>
+				<div class="footer-socials" aria-label="<?php esc_attr_e( 'HOSHŌ DIGITAL social channels', 'hosho-digital' ); ?>">
+					<a href="https://www.linkedin.com/company/hoshodigital" target="_blank" rel="noreferrer" aria-label="<?php esc_attr_e( 'HOSHŌ DIGITAL on LinkedIn', 'hosho-digital' ); ?>">in</a>
+					<span aria-label="<?php esc_attr_e( 'X channel link pending', 'hosho-digital' ); ?>">X</span>
+					<span aria-label="<?php esc_attr_e( 'Instagram channel link pending', 'hosho-digital' ); ?>">◎</span>
+					<span aria-label="<?php esc_attr_e( 'YouTube channel link pending', 'hosho-digital' ); ?>">▶</span>
+				</div>
+			</div>
+			<div class="footer-column">
+				<h2>Programmes</h2>
+				<a href="<?php echo esc_url( hosho_page_url( 'eci' ) ); ?>">ECI</a>
+				<a href="<?php echo esc_url( hosho_page_url( 'ai-quick-win' ) ); ?>">AI Quick Win</a>
+			</div>
+			<div class="footer-column">
+				<h2>Approach</h2>
+				<a href="<?php echo esc_url( home_url( '/approach/ai/' ) ); ?>">AI</a>
+				<a href="<?php echo esc_url( home_url( '/approach/ams/' ) ); ?>">AMS</a>
+				<a href="<?php echo esc_url( home_url( '/approach/erp/' ) ); ?>">ERP</a>
+			</div>
+			<div class="footer-column">
+				<h2>Solutions</h2>
+				<a href="<?php echo esc_url( home_url( '/solutions/customer-experience/' ) ); ?>">Customer Experience</a>
+				<a href="<?php echo esc_url( home_url( '/solutions/employee-experience/' ) ); ?>">Employee Experience</a>
+				<a href="<?php echo esc_url( home_url( '/solutions/operational-experience/' ) ); ?>">Operational Experience</a>
+			</div>
+			<div class="footer-column">
+				<h2>Company</h2>
+				<a href="<?php echo esc_url( hosho_page_url( 'careers' ) ); ?>">Careers</a>
+				<a href="<?php echo esc_url( hosho_page_url( 'sustainability' ) ); ?>">Sustainability</a>
+				<a href="<?php echo esc_url( hosho_page_url( 'press' ) ); ?>">Press</a>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<span>© <?php echo esc_html( gmdate( 'Y' ) ); ?> HOSHŌ DIGITAL Pte. Ltd. ALL RIGHTS RESERVED.</span>
+			<span class="footer-legal">
+				<a href="<?php echo esc_url( home_url( '/privacy-policy/' ) ); ?>">Privacy Policy</a>
+				<a href="<?php echo esc_url( home_url( '/accessibility/' ) ); ?>">Accessibility Statement</a>
+				<a href="<?php echo esc_url( home_url( '/terms/' ) ); ?>">Terms of Service</a>
+				<a href="<?php echo esc_url( home_url( '/cookies/' ) ); ?>">Cookies Policy</a>
+			</span>
+		</div>
+	</div>
+</footer>
+<?php wp_footer(); ?>
+</body>
+</html>

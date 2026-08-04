@@ -1,0 +1,33 @@
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors
+.idea/
+*.code-workspace
+
+# Local configuration and secrets
+.env
+.env.*
+wp-config.php
+
+# WordPress runtime content
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/backups/
+
+# Logs and temporary output
+*.log
+*.tmp
+*.temp
+dist/*.zip
+
+# Dependency output if tooling is added later
+node_modules/
+vendor/
+
+# More
+RUN GUIDE.txt
+

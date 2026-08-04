@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2026-08-02T18:13:40.708Z",
+  "source": "D:\\Work & Organization\\Work\\Hosho Digital\\Figma Work\\v9 Recontent Old Design",
+  "pages": [
+    {
+      "slug": "careers",
+      "source": "careers.html",
+      "body": [
+        "page-careers",
+        "page-careers-recolor",
+        "editorial-v3"
+      ]
+    },
+    {
+      "slug": "sustainability",
+      "source": "sustainability/sustainability.html",
+      "body": [
+        "page-sustainability",
+        "editorial-v3"
+      ]
+    },
+    {
+      "slug": "press",
+      "source": "press/press.html",
+      "body": [
+        "page-press",
+        "editorial-v3"
+      ]
+    },
+    {
+      "slug": "contact",
+      "source": "contact/contact.html",
+      "body": [
+        "page-contact",
+        "editorial-v3"
+      ]
+    },
+    {
+      "slug": "company",
+      "source": "company/company.html",
+      "body": [
+        "page-company"
+      ]
+    },
+    {
+      "slug": "ai-quick-win",
+      "source": "ai-quick-win/ai-quick-win.html",
+      "body": [
+        "page-quickwin",
+        "editorial-v3"
+      ]
+    },
+    {
+      "slug": "eci",
+      "source": "eci/eci.html",
+      "body": [
+        "page-eci",
+        "editorial-v3"
+      ]
+    }
+  ]
+}
