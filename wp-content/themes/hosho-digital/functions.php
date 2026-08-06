@@ -16,6 +16,12 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function hosho_v9_pages() {
 	return array(
+		'approach'       => array(
+			'classes'     => array( 'page-approach' ),
+			'styles'      => array( 'styles.css' ),
+			'scripts'     => array(),
+			'description' => 'Read how HOSHŌ DIGITAL approaches enterprise transformation and digital delivery.',
+		),
 		'privacy-policy' => array(
 			'classes'     => array( 'page-legal', 'page-privacy-policy' ),
 			'styles'      => array( 'styles.css' ),
@@ -81,6 +87,12 @@ function hosho_v9_pages() {
 			'styles'      => array( 'eci/styles.css', 'eci/eci.css', 'editorial-v3.css', 'eci/eci-framework-fix.css', 'recontent-v9.css' ),
 			'scripts'     => array( 'eci/script.js', 'editorial-v3.js' ),
 			'description' => 'Accelerate enterprise AI adoption with HOSHŌ DIGITAL, Microsoft and Singapore’s Enterprise Compute Initiative.',
+		),
+		'approach' => array(
+			'classes'     => array( 'page-approach' ),
+			'styles'      => array( 'styles.css' ),
+			'scripts'     => array(),
+			'description' => 'Read how HOSHŌ DIGITAL collects, uses, shares and protects personal data.',
 		),
 	);
 }
@@ -299,7 +311,7 @@ function hosho_primary_menu_fallback() {
 				<li><a href="<?php echo esc_url( hosho_page_url( 'ai-quick-win' ) ); ?>">AI Quick Win</a></li>
 			</ul>
 		</li>
-		<li><a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Services</a></li>
+		<li><a href="<?php echo esc_url( home_url( '/approach/' ) ); ?>">Approach</a></li>
 		<li><a href="<?php echo esc_url( home_url( '/solutions/' ) ); ?>">Solutions</a></li>
 		<li class="menu-item menu-item-has-children">
 			<a href="<?php echo esc_url( hosho_page_url( 'company' ) ); ?>">Company</a>

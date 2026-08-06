@@ -15,7 +15,7 @@ if ( $asset_path && str_starts_with( $asset_path, realpath( $project_root ) ) &&
 	return false;
 }
 
-$preview_pages = array( 'front-page', 'privacy-policy', 'accessibility', 'terms-of-use', 'cookies', 'careers', 'sustainability', 'press', 'contact', 'company', 'ai-quick-win', 'eci' );
+$preview_pages = array( 'front-page', 'approach', 'privacy-policy', 'accessibility', 'terms-of-use', 'cookies', 'careers', 'sustainability', 'press', 'contact', 'company', 'ai-quick-win', 'eci' );
 $segments      = array_values( array_filter( explode( '/', trim( $request_path, '/' ) ) ) );
 $preview_page  = $segments[0] ?? 'front-page';
 
@@ -110,6 +110,7 @@ function wp_head() {
 	global $preview_styles;
 	$titles = array(
 		'front-page'    => 'Home',
+		'approach'      => 'Approach',
 		'privacy-policy' => 'Privacy Policy',
 		'accessibility' => 'Accessibility Statement',
 		'terms-of-use'  => 'Terms of Use',
