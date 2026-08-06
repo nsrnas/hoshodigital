@@ -67,7 +67,7 @@ function hosho_render_hero( $headline, $image, $options = array() ) {
           <?php foreach ( (array) $options['body'] as $line ) : ?><p><?php echo esc_html( $line ); ?></p><?php endforeach; ?>
         </div>
       <?php endif; ?>
-      <?php if ( $options['cta_label'] && $options['cta_url'] ) : ?><a class="button page-hero__cta" href="<?php echo esc_url( $options['cta_url'] ); ?>"><?php echo esc_html( $options['cta_label'] ); ?><span aria-hidden="true">&#8599;</span></a><?php endif; ?>
+      <?php if ( $options['cta_label'] && $options['cta_url'] ) : ?><a class="button page-hero__cta" href="<?php echo esc_url( $options['cta_url'] ); ?>"><?php echo esc_html( $options['cta_label'] ); ?><span class="button-arrow" aria-hidden="true"></span></a><?php endif; ?>
     </div>
     <span class="page-hero__edge" aria-hidden="true"></span>
   </section><?php

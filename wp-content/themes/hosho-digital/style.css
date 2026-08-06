@@ -144,13 +144,13 @@ p { color: var(--muted); font-size: 16px; }
 .stat strong { display: block; margin-bottom: 14px; color: var(--red); font-size: clamp(48px, 6vw, 84px); font-weight: 500; letter-spacing: -.055em; line-height: 1; }
 .stat p { margin: 0; }
 
-.quote-band { position: relative; display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(420px, .88fr); min-height: 560px; overflow: hidden; isolation: isolate; background: linear-gradient(108deg, var(--red-dark) 0%, #590d12 34%, #24131d 55%, var(--navy) 82%); color: white; }
-.quote-band::before { content: none; }
-.quote-band__portrait { align-self: end; height: 560px; min-height: 560px; overflow: hidden; background: var(--navy); }
-.quote-band__portrait img { width: 100%; height: 100%; object-fit: contain; object-position: center bottom; filter: grayscale(1) contrast(1.08); mix-blend-mode: screen; -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 12%, #000 100%); mask-image: linear-gradient(90deg, transparent 0%, #000 12%, #000 100%); }
-.quote-band__copy { display: flex; flex-direction: column; justify-content: center; padding: clamp(48px, 6vw, 86px); }
-.quote-band__mark { margin-bottom: 16px; color: #f9d2d0; font-size: 58px; font-weight: 600; line-height: .65; }
-.quote-band blockquote { max-width: 680px; margin: 0 0 34px; color: white; font-size: clamp(28px, 2.6vw, 42px); font-weight: 600; letter-spacing: -.035em; line-height: 1.16; }
+.quote-band { position: relative; display: grid; grid-template-columns: minmax(0, 60%) minmax(0, 40%); min-height: 443px; overflow: hidden; isolation: isolate; background: linear-gradient(108deg, #c0070d 0%, #870c12 22%, #28131e 54%, #07182b 80%, #07182b 100%); color: white; }
+.quote-band::before { content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none; background: linear-gradient(90deg, rgba(255,255,255,.025), transparent 34%, rgba(7,24,43,.2)); }
+.quote-band__portrait { position: relative; z-index: 1; align-self: end; height: 443px; min-height: 443px; overflow: hidden; background: transparent; }
+.quote-band__portrait img { width: 100%; height: 100%; object-fit: contain; object-position: right bottom; filter: grayscale(1) contrast(1.06); mix-blend-mode: screen; -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.72) 13%, #000 28%, #000 100%); mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.72) 13%, #000 28%, #000 100%); }
+.quote-band__copy { position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: center; min-width: 0; padding: 112px 64px 58px; }
+.quote-band__mark { position: absolute; top: 28px; left: 32px; margin: 0; color: rgba(249,210,208,.6); font-family: Georgia, 'Times New Roman', serif; font-size: 128px; font-weight: 400; line-height: .72; }
+.quote-band blockquote { max-width: 638px; margin: 0 0 32px; color: white; font-size: clamp(26px, 2.5vw, 32px); font-weight: 600; letter-spacing: -.025em; line-height: 1.2; }
 .quote-band cite { color: white; font-style: normal; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .quote-band cite span { display: block; margin-top: 7px; color: rgba(255,255,255,.76); font-size: 12px; font-weight: 400; letter-spacing: .02em; text-transform: none; }
 
@@ -267,4 +267,99 @@ p { color: var(--muted); font-size: 16px; }
   .footer-main { grid-template-columns: 1fr; }
   .footer-brand { grid-column: auto; }
   .footer-bottom, .footer-legal { flex-direction: column; }
+}
+
+
+/* WordPress host-theme compatibility: keep dark branded surfaces legible. */
+body.hosho-remade .page-hero h1,
+body.hosho-remade .page-hero h2,
+body.hosho-remade .page-hero h3,
+body.hosho-remade .cta-panel h2,
+body.hosho-remade .cta-panel h3,
+body.hosho-remade .section-navy h2,
+body.hosho-remade .section-navy h3,
+body.hosho-remade .section-red h2,
+body.hosho-remade .section-red h3,
+body.hosho-remade .media-split__content h2,
+body.hosho-remade .media-split__content h3,
+body.hosho-remade .photo-card__copy h2,
+body.hosho-remade .photo-card__copy h3,
+body.hosho-remade .process h3,
+body.hosho-remade .site-footer h2,
+body.hosho-remade .site-footer h3 {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+body.hosho-remade .quote-band blockquote,
+body.hosho-remade .quote-band cite {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+body.hosho-remade .quote-band cite span {
+  color: rgba(255,255,255,.76) !important;
+  -webkit-text-fill-color: rgba(255,255,255,.76) !important;
+}
+
+body.hosho-remade .quote-band__mark {
+  color: rgba(249,210,208,.6) !important;
+  -webkit-text-fill-color: rgba(249,210,208,.6) !important;
+}
+
+body.hosho-remade .page-hero--careers h1 span {
+  color: #f01f24 !important;
+  -webkit-text-fill-color: #f01f24 !important;
+}
+
+body.hosho-remade .page-hero__eyebrow,
+body.hosho-remade .page-hero__body p,
+body.hosho-remade .cta-panel .eyebrow,
+body.hosho-remade .cta-panel p,
+body.hosho-remade .section-navy p,
+body.hosho-remade .section-red p,
+body.hosho-remade .media-split__content p,
+body.hosho-remade .photo-card__copy p {
+  color: rgba(255,255,255,.86) !important;
+  -webkit-text-fill-color: rgba(255,255,255,.86) !important;
+}
+
+body.hosho-remade .media-split--light .media-split__content h2,
+body.hosho-remade .media-split--light .media-split__content h3 {
+  color: var(--ink) !important;
+  -webkit-text-fill-color: var(--ink) !important;
+}
+
+body.hosho-remade .media-split--light .media-split__content p {
+  color: var(--muted) !important;
+  -webkit-text-fill-color: var(--muted) !important;
+}
+
+body.hosho-remade .nav-cta,
+body.hosho-remade .button,
+body.hosho-remade .nav-cta:visited,
+body.hosho-remade .button:visited {
+  color: #fff !important;
+  -webkit-text-fill-color: #fff !important;
+  text-decoration: none !important;
+}
+
+body.hosho-remade .button-arrow {
+  display: block;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  margin-left: 34px;
+  background: currentColor;
+  clip-path: polygon(9% 40%, 59% 40%, 40% 21%, 52% 9%, 91% 48%, 52% 87%, 40% 75%, 59% 56%, 9% 56%);
+  transform: rotate(-45deg);
+  transform-origin: center;
+  transition: transform .25s var(--ease);
+}
+
+body.hosho-remade .button-arrow::before,
+body.hosho-remade .button-arrow::after { content: none; }
+
+body.hosho-remade .page-hero__cta:hover .button-arrow {
+  transform: translate(3px,-3px) rotate(-45deg);
 }
