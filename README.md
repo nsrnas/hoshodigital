@@ -1,24 +1,5 @@
-# Evan's HOSHŌ DIGITAL — Custom WordPress Folder
+# HOSHŌ DIGITAL — Remade
 
-My work WordPress folder for the **HOSHŌ DIGITAL** web redesign project. This implementation covers seven core pages:
+Fresh WordPress rebuild of seven approved pages. The project uses one shared header, footer, CTA, quote pattern, design system and motion layer. Legacy V8/V9 CSS is intentionally not included.
 
-| Page | WordPress Slug | Template |
-| --- | --- | --- |
-| Careers | `/careers/` | `page-careers.php` |
-| Sustainability | `/sustainability/` | `page-sustainability.php` |
-| Press | `/press/` | `page-press.php` |
-| Contact | `/contact/` | `page-contact.php` |
-| Company | `/company/` | `page-company.php` |
-| AI Quick Win | `/ai-quick-win/` | `page-ai-quick-win.php` |
-| Enterprise Compute Initiative | `/eci/` | `page-eci.php` |
-
----
-
-## Quick Local Preview (Without Full WordPress Setup)
-
-If you want to quickly test or review the static pages without setting up a database/WordPress environment:
-
-1. Open PowerShell / Terminal in this project root directory.
-2. Run the PHP built-in server:
-   ```powershell
-   php -S 127.0.0.1:4312 -t . preview/router.php
+See `RUN GUIDE.txt` for local preview instructions.

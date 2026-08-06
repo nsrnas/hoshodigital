@@ -1,152 +1,34 @@
-<?php
-/**
- * Template Name: Careers
- * Template Post Type: page
- *
- * Generated from the approved V9 Recontent design. Re-run
- * tools/build-v9-wordpress.cjs after changing the source HTML.
- *
- * @package Hosho_Digital
- */
-
-get_header();
-?>
+<?php get_header(); ?>
 <main id="main-content">
-    <section class="career-poster" id="top">
-      <img class="career-poster-image" src="<?php echo esc_url( hosho_v9_asset_url( 'assets/careers-red-flow.png' ) ); ?>" alt="Abstract red flowing architecture">
-      <div class="career-poster-overlay" aria-hidden="true"></div>
-      <div class="career-poster-grid" aria-hidden="true"></div>
-      <div class="shell career-poster-layout">
-        <div class="career-poster-copy reveal">
-          <p class="career-poster-kicker">Careers at HOSHŌ DIGITAL</p>
-          <h1><span>3 · 2 · 1</span><span class="career-liftoff-label">LIFTOFF!</span></h1>
-          <a class="career-action" href="#opportunities">
-            <span>Join us</span><i aria-hidden="true">↗</i>
-          </a>
-        </div>
-      </div>
-      <div class="shell career-poster-foot">
-        <span>01 / COMPANY</span>
-        <span>Diversity · Inclusion</span>
-      </div>
-    </section>
-
-    <section class="career-intro" aria-labelledby="career-intro-title">
-      <div class="career-intro-frame" aria-hidden="true"></div>
-      <div class="shell career-intro-layout reveal">
-        <header>
-          <p class="eyebrow">Careers</p>
-          <h2 id="career-intro-title">Diversity<br>and Inclusion</h2>
-        </header>
-        <p>We respect the unique qualities and experiences that each individual brings. We create an inclusive environment that respects diversity in race, ethnicity, gender, age, sexual orientation and ability.</p>
-      </div>
-    </section>
-
-    <section class="career-culture" aria-label="Life at HOSHŌ DIGITAL">
-      <div class="career-culture-media">
-        <figure class="career-culture-primary reveal">
-          <img src="<?php echo esc_url( hosho_v9_asset_url( 'assets/careers-singapore-red-stairs.jpg' ) ); ?>" alt="Red architectural staircase in Singapore">
-          <figcaption>Singapore</figcaption>
-        </figure>
-        <figure class="career-culture-secondary reveal">
-          <img src="<?php echo esc_url( hosho_v9_asset_url( 'assets/careers-code-hands.jpg' ) ); ?>" alt="Hands working with code on a laptop">
-          <figcaption>Life at HOSHŌ DIGITAL</figcaption>
-        </figure>
-      </div>
-      <div class="career-culture-copy reveal">
-        <p class="career-culture-index">02 / OUR CULTURE</p>
-        <h2>A wealth of perspectives and insights.</h2>
-        <p>Embracing these differences fosters a wealth of perspectives and insights that drives innovation and makes HOSHŌ DIGITAL a great place to work.</p>
-      </div>
-    </section>
-
-    <section class="voices-section career-voices">
-      <div class="shell voices-heading reveal">
-        <p class="eyebrow">Life at HOSHŌ DIGITAL</p>
-        <h2>Our people,<br>in their own words</h2>
-      </div>
-
-      <div class="voice-carousel reveal" data-carousel>
-        <div class="voice-viewport">
-          <div class="voice-track">
-            <article class="voice-slide is-active" data-slide aria-hidden="false">
-              <p class="voice-mark" aria-hidden="true">“</p>
-              <blockquote>Strong partnerships are the foundation of success. At HOSHŌ DIGITAL, we don’t just manage relationships—we create strategic alliances that fuel growth, efficiency, and long-term value for our clients.</blockquote>
-              <div class="voice-person"><strong>Aditya</strong><span>Partner Management</span></div>
-            </article>
-            <article class="voice-slide" data-slide aria-hidden="true">
-              <p class="voice-mark" aria-hidden="true">“</p>
-              <blockquote>The work environment at HOSHŌ DIGITAL encourages collaboration and innovation, helping me thrive and expand my skill set every day.</blockquote>
-              <div class="voice-person"><strong>Cindy</strong><span>UI/UX Design</span></div>
-            </article>
-            <article class="voice-slide" data-slide aria-hidden="true">
-              <p class="voice-mark" aria-hidden="true">“</p>
-              <blockquote>I love the feedback and learning culture at HOSHŌ DIGITAL. Everyone is so willing to support you and help you learn and grow.</blockquote>
-              <div class="voice-person"><strong>Megha</strong><span>Business Analyst</span></div>
-            </article>
-            <article class="voice-slide" data-slide aria-hidden="true">
-              <p class="voice-mark" aria-hidden="true">“</p>
-              <blockquote>Being a part of HOSHŌ DIGITAL means constantly learning and evolving. We’re empowered to bring creative solutions to complex problems.</blockquote>
-              <div class="voice-person"><strong>Satria</strong><span>Product Management</span></div>
-            </article>
-            <article class="voice-slide" data-slide aria-hidden="true">
-              <p class="voice-mark" aria-hidden="true">“</p>
-              <blockquote>Working at HOSHŌ DIGITAL has been an incredible journey—I’ve gained so much knowledge, improved my skills, and had the chance to collaborate with amazing colleagues who are always supportive and inspiring.</blockquote>
-              <div class="voice-person"><strong>Tahta</strong><span>Marketing</span></div>
-            </article>
-            <article class="voice-slide" data-slide aria-hidden="true">
-              <p class="voice-mark" aria-hidden="true">“</p>
-              <blockquote>The culture at HOSHŌ DIGITAL is supportive and forward-thinking. We’re encouraged to take initiative and lead projects that shape the future of business technology.</blockquote>
-              <div class="voice-person"><strong>Troung</strong><span>Project Management</span></div>
-            </article>
-          </div>
-        </div>
-        <div class="carousel-controls shell">
-          <p class="carousel-count" aria-live="polite"><span data-current>01</span> / 06</p>
-          <div class="carousel-buttons">
-            <button type="button" data-prev aria-label="Previous employee story">←</button>
-            <button type="button" data-next aria-label="Next employee story">→</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="career-quote" aria-label="Career philosophy">
-      <figure class="career-quote-art reveal">
-        <img src="<?php echo esc_url( hosho_v9_asset_url( 'recontent-assets/eric-hoffer.webp' ) ); ?>" alt="Black-and-white portrait of Eric Hoffer">
-        <figcaption>Eric Hoffer · archival portrait</figcaption>
-      </figure>
-      <div class="career-quote-copy reveal">
-        <p class="career-quote-mark" aria-hidden="true">“</p>
-        <blockquote>In a time of drastic change, it is the learners who inherit the future.</blockquote>
-        <cite>Eric Hoffer</cite>
-      </div>
-    </section>
-
-    <section class="career-explore">
-      <div class="career-explore-frame" aria-hidden="true"></div>
-      <div class="shell career-explore-heading reveal">
-        <p class="eyebrow">Get to know us</p>
-        <h2>Get to Know Us</h2>
-      </div>
-      <nav class="shell career-explore-links reveal" aria-label="Explore HOSHŌ DIGITAL">
-        <a href="#"><span>01</span><strong>Our story</strong><i aria-hidden="true">→</i></a>
-        <a href="#"><span>02</span><strong>Our technology</strong><i aria-hidden="true">→</i></a>
-        <a href="#"><span>03</span><strong>Our services</strong><i aria-hidden="true">→</i></a>
-      </nav>
-    </section>
-
-    <section class="career-cta-redesign" id="opportunities">
-      <img src="<?php echo esc_url( hosho_v9_asset_url( 'assets/careers-worktable.jpg' ) ); ?>" alt="Colleagues collaborating around a shared table">
-      <div class="career-cta-shade" aria-hidden="true"></div>
-      <div class="shell career-cta-layout reveal">
-        <p class="eyebrow">Come soar with us</p>
-        <h2>Come Soar<br>with Us</h2>
-        <a class="career-action career-action-light" href="#">
-          <span>View opportunities</span><i aria-hidden="true">↗</i>
-        </a>
-      </div>
-    </section>
-  </main>
-<?php
-get_footer();
+  <?php hosho_render_hero(
+    'Are <span>YOU</span><br>better?',
+    'hero-careers-eye.png',
+    array(
+      'class' => 'page-hero--careers',
+      'eyebrow' => 'Careers at HOSHŌ DIGITAL',
+      'body' => array(
+        'Not better than everyone. Better than yesterday.',
+        'Better under pressure. Better in learning.',
+      ),
+      'cta_label' => 'View opportunities',
+      'cta_url' => '#opportunities',
+    )
+  ); ?>
+  <section class="section"><div class="shell intro-grid motion"><div><p class="eyebrow">Careers at HOSHŌ DIGITAL</p><h2>Diversity and inclusion shape how we work.</h2></div><div class="body-copy"><p class="lede">We respect the unique qualities and experiences that each individual brings.</p><p>We create an inclusive environment that respects diversity in race, ethnicity, gender, age, sexual orientation and ability. These differences bring a wealth of perspectives and insights that support innovation and make HOSHŌ DIGITAL a stronger place to work.</p></div></div></section>
+  <section class="media-split"><div class="media-split__image" style="background-image:url('<?php echo esc_url( hosho_asset_url('careers-culture-team.jpg') ); ?>')"></div><div class="media-split__content motion"><p class="eyebrow">Our culture</p><h2>A wealth of perspectives and insights.</h2><p>Our teams learn continuously, collaborate across disciplines and bring practical ideas to complex business challenges.</p></div></section>
+  <section class="section section-mist" data-carousel><div class="shell"><div class="intro-grid"><div><p class="eyebrow">Life at HOSHŌ DIGITAL</p><h2>Our people, in their own words.</h2></div><div class="carousel-controls"><p><span data-current>01</span> / 06</p><button type="button" data-prev aria-label="Previous testimonial">←</button><button type="button" data-next aria-label="Next testimonial">→</button></div></div><div class="testimonial-window"><div class="testimonial-track" data-track>
+    <?php $voices=array(
+      array('Strong partnerships are the foundation of success. At HOSHŌ DIGITAL, we create strategic alliances that fuel growth, efficiency and long-term value for our clients.','Aditya','Partner Management'),
+      array('The work environment encourages collaboration and innovation, helping me thrive and expand my skill set every day.','Cindy','UI/UX Design'),
+      array('I value the feedback and learning culture. Everyone is willing to support you and help you learn and grow.','Megha','Business Analyst'),
+      array('Being part of HOSHŌ DIGITAL means constantly learning and evolving. We are empowered to bring creative solutions to complex problems.','Sotria','Product Management'),
+      array('I have gained knowledge, improved my skills and collaborated with colleagues who are always supportive and inspiring.','Tahto','Marketing'),
+      array('The culture is supportive and forward-thinking. We are encouraged to take initiative and lead meaningful projects.','Troung','Project Management')
+    ); foreach($voices as $voice): ?>
+      <article class="testimonial" data-slide><span aria-hidden="true">“</span><blockquote><?php echo esc_html($voice[0]); ?></blockquote><p><strong><?php echo esc_html($voice[1]); ?></strong><small><?php echo esc_html($voice[2]); ?></small></p></article>
+    <?php endforeach; ?>
+  </div></div></div></section>
+  <?php hosho_render_quote('The people who are crazy enough to think they can change the world are the ones who do.','Steve Jobs','Co-founder, Apple','steve-jobs-editorial-v2.png','quote-band--steve'); ?>
+  <section class="section" id="opportunities"><div class="shell intro-grid motion"><div><p class="eyebrow">Get to know us</p><h2>Where do you want to make an impact?</h2></div><div class="editorial-grid career-links"><a class="feature" href="#"><span class="feature__index">01</span><h3>Our story</h3><p>Learn what HOSHŌ DIGITAL stands for.</p></a><a class="feature" href="#"><span class="feature__index">02</span><h3>Our technology</h3><p>Explore the disciplines behind our work.</p></a><a class="feature" href="#"><span class="feature__index">03</span><h3>Our services</h3><p>See how we create enterprise value.</p></a></div></div></section>
+  <?php hosho_render_cta('Come soar with us','Build what comes next.','Explore current opportunities at HOSHŌ DIGITAL and help organisations adopt enterprise AI with confidence.','View opportunities','#opportunities','careers-singapore-red-stairs.jpg'); ?>
+</main><?php get_footer(); ?>
