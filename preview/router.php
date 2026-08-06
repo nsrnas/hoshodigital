@@ -15,13 +15,13 @@ if ( $asset_path && str_starts_with( $asset_path, realpath( $project_root ) ) &&
 	return false;
 }
 
-$preview_pages = array( 'careers', 'sustainability', 'press', 'contact', 'company', 'ai-quick-win', 'eci' );
+$preview_pages = array( 'front-page', 'privacy-policy', 'accessibility', 'terms-of-use', 'cookies', 'careers', 'sustainability', 'press', 'contact', 'company', 'ai-quick-win', 'eci' );
 $segments      = array_values( array_filter( explode( '/', trim( $request_path, '/' ) ) ) );
-$preview_page  = $segments[0] ?? 'careers';
+$preview_page  = $segments[0] ?? 'front-page';
 
 if ( ! in_array( $preview_page, $preview_pages, true ) ) {
 	http_response_code( 404 );
-	$preview_page = 'careers';
+	$preview_page = 'front-page';
 }
 
 define( 'ABSPATH', $project_root . '/' );
@@ -109,6 +109,11 @@ function wp_nav_menu() {
 function wp_head() {
 	global $preview_styles;
 	$titles = array(
+		'front-page'    => 'Home',
+		'privacy-policy' => 'Privacy Policy',
+		'accessibility' => 'Accessibility Statement',
+		'terms-of-use'  => 'Terms of Use',
+		'cookies'       => 'Cookies Policy',
 		'careers'       => 'Careers',
 		'sustainability' => 'Sustainability',
 		'press'         => 'Press',
@@ -140,4 +145,8 @@ function get_footer() {
 }
 
 require HOSHO_THEME_ROOT . '/functions.php';
-require HOSHO_THEME_ROOT . '/page-' . HOSHO_PREVIEW_PAGE . '.php';
+if ( 'front-page' === HOSHO_PREVIEW_PAGE ) {
+	require HOSHO_THEME_ROOT . '/front-page.php';
+} else {
+	require HOSHO_THEME_ROOT . '/page-' . HOSHO_PREVIEW_PAGE . '.php';
+}

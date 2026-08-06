@@ -47,10 +47,10 @@
 		<div class="footer-bottom">
 			<span>© <?php echo esc_html( gmdate( 'Y' ) ); ?> HOSHŌ DIGITAL Pte. Ltd. ALL RIGHTS RESERVED.</span>
 			<span class="footer-legal">
-				<a href="<?php echo esc_url( home_url( '/privacy-policy/' ) ); ?>">Privacy Policy</a>
-				<a href="<?php echo esc_url( home_url( '/accessibility/' ) ); ?>">Accessibility Statement</a>
-				<a href="<?php echo esc_url( home_url( '/terms/' ) ); ?>">Terms of Service</a>
-				<a href="<?php echo esc_url( home_url( '/cookies/' ) ); ?>">Cookies Policy</a>
+				<a href="<?php echo esc_url( hosho_page_url( 'privacy-policy' ) ); ?>">Privacy Policy</a>
+				<a href="<?php echo esc_url( hosho_page_url( 'accessibility' ) ); ?>">Accessibility Statement</a>
+				<a href="<?php echo esc_url( hosho_page_url( 'terms-of-use' ) ); ?>">Terms of Use</a>
+				<a href="<?php echo esc_url( hosho_page_url( 'cookies' ) ); ?>">Cookies Policy</a>
 			</span>
 		</div>
 	</div>

@@ -6,6 +6,9 @@
  */
 
 $header_action = hosho_header_action();
+$is_front_page = function_exists( 'is_front_page' )
+	? is_front_page()
+	: ( defined( 'HOSHO_PREVIEW_PAGE' ) && 'front-page' === HOSHO_PREVIEW_PAGE );
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -37,6 +40,16 @@ $header_action = hosho_header_action();
 					'depth'          => 2,
 				)
 			);
+			if ( ! $is_front_page ) :
+				?>
+				<div class="nav-legal-links" aria-label="<?php esc_attr_e( 'Legal pages', 'hosho-digital' ); ?>">
+					<a href="<?php echo esc_url( hosho_page_url( 'privacy-policy' ) ); ?>">Privacy Policy</a>
+					<a href="<?php echo esc_url( hosho_page_url( 'accessibility' ) ); ?>">Accessibility Statement</a>
+					<a href="<?php echo esc_url( hosho_page_url( 'terms-of-use' ) ); ?>">Terms of Use</a>
+					<a href="<?php echo esc_url( hosho_page_url( 'cookies' ) ); ?>">Cookies Policy</a>
+				</div>
+				<?php
+			endif;
 			?>
 		</div>
 		<a class="nav-cta" href="<?php echo esc_url( $header_action['url'] ); ?>">

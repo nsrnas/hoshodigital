@@ -16,6 +16,30 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function hosho_v9_pages() {
 	return array(
+		'privacy-policy' => array(
+			'classes'     => array( 'page-legal', 'page-privacy-policy' ),
+			'styles'      => array(),
+			'scripts'     => array(),
+			'description' => 'Read how HOSHŌ DIGITAL collects, uses, shares and protects personal data.',
+		),
+		'accessibility'  => array(
+			'classes'     => array( 'page-legal', 'page-accessibility' ),
+			'styles'      => array(),
+			'scripts'     => array(),
+			'description' => 'Learn how HOSHŌ DIGITAL supports accessibility and inclusive digital experiences.',
+		),
+		'terms-of-use'   => array(
+			'classes'     => array( 'page-legal', 'page-terms-of-use' ),
+			'styles'      => array(),
+			'scripts'     => array(),
+			'description' => 'Read the terms that govern use of the HOSHŌ DIGITAL website.',
+		),
+		'cookies'        => array(
+			'classes'     => array( 'page-legal', 'page-cookies' ),
+			'styles'      => array(),
+			'scripts'     => array(),
+			'description' => 'See how HOSHŌ DIGITAL uses cookies and similar technologies.',
+		),
 		'careers'       => array(
 			'classes'     => array( 'page-careers', 'page-careers-recolor', 'editorial-v3' ),
 			'styles'      => array( 'styles.css', 'editorial-v3.css', 'recontent-v9.css' ),
@@ -125,7 +149,30 @@ function hosho_enqueue_assets() {
 	);
 
 	if ( ! $slug || ! isset( $pages[ $slug ] ) ) {
-		wp_enqueue_style( 'hosho-fallback', get_stylesheet_uri(), array( 'hosho-fonts' ), wp_get_theme()->get( 'Version' ) );
+		wp_enqueue_style(
+			'hosho-v9-shell',
+			hosho_v9_asset_url( 'styles.css' ),
+			array( 'hosho-fonts' ),
+			hosho_asset_version( 'assets/v9/styles.css' )
+		);
+		wp_enqueue_style(
+			'hosho-v9-wordpress',
+			hosho_asset_url( 'css/v9-wordpress.css' ),
+			array( 'hosho-v9-shell' ),
+			hosho_asset_version( 'assets/css/v9-wordpress.css' )
+		);
+		wp_enqueue_style(
+			'hosho-brand-shell-v10',
+			hosho_v9_asset_url( 'brand-shell-v10.css' ),
+			array( 'hosho-v9-wordpress' ),
+			hosho_asset_version( 'assets/v9/brand-shell-v10.css' )
+		);
+		wp_enqueue_style(
+			'hosho-v9-motion',
+			hosho_asset_url( 'css/v9-motion.css' ),
+			array( 'hosho-brand-shell-v10' ),
+			hosho_asset_version( 'assets/css/v9-motion.css' )
+		);
 		return;
 	}
 
@@ -225,6 +272,10 @@ add_action( 'wp_head', 'hosho_javascript_bootstrap', 0 );
 function hosho_header_action() {
 	$slug = hosho_current_v9_page();
 	$actions = array(
+		'privacy-policy' => array( 'label' => 'Contact us', 'url' => hosho_page_url( 'contact' ) ),
+		'accessibility'  => array( 'label' => 'Contact us', 'url' => hosho_page_url( 'contact' ) ),
+		'terms-of-use'   => array( 'label' => 'Contact us', 'url' => hosho_page_url( 'contact' ) ),
+		'cookies'        => array( 'label' => 'Contact us', 'url' => hosho_page_url( 'contact' ) ),
 		'careers'       => array( 'label' => 'View opportunities', 'url' => '#opportunities' ),
 		'sustainability' => array( 'label' => 'Our commitments', 'url' => '#commitments' ),
 		'press'         => array( 'label' => 'Email media team', 'url' => 'mailto:media@hoshodigital.com' ),
