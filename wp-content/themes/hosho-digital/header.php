@@ -40,16 +40,6 @@ $is_front_page = function_exists( 'is_front_page' )
 					'depth'          => 2,
 				)
 			);
-			if ( ! $is_front_page ) :
-				?>
-				<div class="nav-legal-links" aria-label="<?php esc_attr_e( 'Legal pages', 'hosho-digital' ); ?>">
-					<a href="<?php echo esc_url( hosho_page_url( 'privacy-policy' ) ); ?>">Privacy Policy</a>
-					<a href="<?php echo esc_url( hosho_page_url( 'accessibility' ) ); ?>">Accessibility Statement</a>
-					<a href="<?php echo esc_url( hosho_page_url( 'terms-of-use' ) ); ?>">Terms of Use</a>
-					<a href="<?php echo esc_url( hosho_page_url( 'cookies' ) ); ?>">Cookies Policy</a>
-				</div>
-				<?php
-			endif;
 			?>
 		</div>
 		<a class="nav-cta" href="<?php echo esc_url( $header_action['url'] ); ?>">

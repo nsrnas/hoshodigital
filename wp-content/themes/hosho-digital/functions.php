@@ -18,25 +18,25 @@ function hosho_v9_pages() {
 	return array(
 		'privacy-policy' => array(
 			'classes'     => array( 'page-legal', 'page-privacy-policy' ),
-			'styles'      => array(),
+			'styles'      => array( 'styles.css' ),
 			'scripts'     => array(),
 			'description' => 'Read how HOSHŌ DIGITAL collects, uses, shares and protects personal data.',
 		),
 		'accessibility'  => array(
 			'classes'     => array( 'page-legal', 'page-accessibility' ),
-			'styles'      => array(),
+			'styles'      => array( 'styles.css' ),
 			'scripts'     => array(),
 			'description' => 'Learn how HOSHŌ DIGITAL supports accessibility and inclusive digital experiences.',
 		),
 		'terms-of-use'   => array(
 			'classes'     => array( 'page-legal', 'page-terms-of-use' ),
-			'styles'      => array(),
+			'styles'      => array( 'styles.css' ),
 			'scripts'     => array(),
 			'description' => 'Read the terms that govern use of the HOSHŌ DIGITAL website.',
 		),
 		'cookies'        => array(
 			'classes'     => array( 'page-legal', 'page-cookies' ),
-			'styles'      => array(),
+			'styles'      => array( 'styles.css' ),
 			'scripts'     => array(),
 			'description' => 'See how HOSHŌ DIGITAL uses cookies and similar technologies.',
 		),
