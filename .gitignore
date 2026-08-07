@@ -51,3 +51,6 @@ wp-config.php
 *.swp
 *.swo
 *~
+
+# More
+GENERATED-ASSETS.md
