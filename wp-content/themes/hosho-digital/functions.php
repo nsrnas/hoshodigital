@@ -327,6 +327,7 @@ function hosho_primary_menu_fallback() {
 			<a href="<?php echo esc_url( hosho_page_url( 'approach' ) ); ?>">Approach</a>
 			<ul class="sub-menu">
 				<li><a href="<?php echo esc_url( hosho_page_url( 'philosophy' ) ); ?>">Philosophy</a></li>
+				<li><a href="<?php echo esc_url( hosho_page_url( 'ai' ) ); ?>">AI</a></li>
 				<li><a href="<?php echo esc_url( hosho_page_url( 'ams' ) ); ?>">AMS</a></li>
 				<li><a href="<?php echo esc_url( hosho_page_url( 'erp' ) ); ?>">ERP</a></li>
 			</ul>

@@ -15,7 +15,7 @@ if ( $asset_path && str_starts_with( $asset_path, realpath( $project_root ) ) &&
 	return false;
 }
 
-$preview_pages = array( 'front-page', 'approach', 'approach-philosophy', 'erp', 'ams', 'privacy-policy', 'accessibility', 'terms-of-use', 'cookies', 'careers', 'sustainability', 'press', 'contact', 'company', 'ai-quick-win', 'eci' );
+$preview_pages = array( 'front-page', 'approach', 'approach-philosophy', 'erp', 'ams', 'ai', 'privacy-policy', 'accessibility', 'terms-of-use', 'cookies', 'careers', 'sustainability', 'press', 'contact', 'company', 'ai-quick-win', 'eci' );
 $segments      = array_values( array_filter( explode( '/', trim( $request_path, '/' ) ) ) );
 $preview_page  = $segments[0] ?? 'front-page';
 
@@ -114,6 +114,7 @@ function wp_head() {
 		'approach-philosophy' => 'Approach Philosophy',
 		'ams'           => 'Application Management Systems',
 		'erp'           => 'Approach ERP',
+		'ai'            => 'Artificial Intelligence',
 		'privacy-policy' => 'Privacy Policy',
 		'accessibility' => 'Accessibility Statement',
 		'terms-of-use'  => 'Terms of Use',
@@ -157,6 +158,8 @@ if ( 'front-page' === HOSHO_PREVIEW_PAGE ) {
 	require HOSHO_THEME_ROOT . '/page-approach-erp.php';
 } elseif ( 'ams' === HOSHO_PREVIEW_PAGE ) {
 	require HOSHO_THEME_ROOT . '/page-approach-ams.php';
+} elseif ( 'ai' === HOSHO_PREVIEW_PAGE ) {
+	require HOSHO_THEME_ROOT . '/page-approach-ai.php';
 } else {
 	require HOSHO_THEME_ROOT . '/page-' . HOSHO_PREVIEW_PAGE . '.php';
 }
