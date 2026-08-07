@@ -1,8 +1,8 @@
 <?php
 $project_root = dirname(__DIR__); $theme_root = $project_root . '/wp-content/themes/hosho-digital'; $request_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH); $asset_path = realpath($project_root . $request_path);
 if ($asset_path && str_starts_with($asset_path, realpath($project_root)) && is_file($asset_path)) return false;
-$pages = array('careers','sustainability','press','contact','company','ai-quick-win','eci'); $segments = array_values(array_filter(explode('/', trim($request_path,'/')))); $preview_page = $segments[0] ?? 'careers';
-if (!in_array($preview_page,$pages,true)) { http_response_code(404); $preview_page='careers'; }
+$pages = array('careers','sustainability','press','contact','company','ai-quick-win','eci', 'solutions', 'operational-experience', 'customer-experience', 'employee-experience'); $segments = array_values(array_filter(explode('/', trim($request_path,'/')))); $preview_page = 'careers';
+if (!empty($segments)) { $last_segment = end($segments); if (in_array($last_segment, $pages, true)) { $preview_page = $last_segment; } else { http_response_code(404); } }
 define('ABSPATH',$project_root.'/'); define('HOSHO_PREVIEW',true); define('HOSHO_PREVIEW_PAGE',$preview_page); define('HOSHO_THEME_ROOT',$theme_root);
 $preview_styles=array(); $preview_scripts=array(); class WP_Post {}
 function add_action(){} function add_filter(){} function add_theme_support(){} function register_nav_menus(){}

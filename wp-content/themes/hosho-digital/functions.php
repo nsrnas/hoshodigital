@@ -5,6 +5,7 @@ function hosho_pages() {
   return array(
     'careers' => 'Careers', 'sustainability' => 'Sustainability', 'press' => 'Press',
     'contact' => 'Contact', 'company' => 'Company', 'ai-quick-win' => 'AI Quick Win', 'eci' => 'Enterprise Compute Initiative',
+    'solutions' => 'Solutions', 'operational-experience' => 'Operational Experience', 'customer-experience' => 'Customer Experience', 'employee-experience' => 'Employee Experience'
   );
 }
 function hosho_current_page() {
@@ -34,13 +35,18 @@ function hosho_header_action() {
     'press' => array( 'Email media team', 'mailto:media@hoshodigital.com' ), 'contact' => array( 'Start a conversation', '#contact-form' ),
     'company' => array( 'Get in touch', hosho_page_url( 'contact' ) ), 'ai-quick-win' => array( 'Register interest', 'https://hoshodigital.com/ai-quick-win-form/' ),
     'eci' => array( 'Register interest', 'https://hoshodigital.com/eci-form/' ),
+    'solutions' => array( 'Get in touch', hosho_page_url( 'contact' ) ),
+    'operational-experience' => array( 'Get in touch', hosho_page_url( 'contact' ) ),
+    'customer-experience' => array( 'Get in touch', hosho_page_url( 'contact' ) ),
+    'employee-experience' => array( 'Get in touch', hosho_page_url( 'contact' ) ),
   );
   return $actions[ hosho_current_page() ] ?? array( 'Get in touch', hosho_page_url( 'contact' ) );
 }
 function hosho_primary_menu_fallback() { ?>
   <ul class="nav-links">
     <li class="menu-item-has-children"><a href="<?php echo esc_url( hosho_page_url( 'eci' ) ); ?>">Programmes</a><ul class="sub-menu"><li><a href="<?php echo esc_url( hosho_page_url( 'eci' ) ); ?>">Enterprise Compute Initiative</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'ai-quick-win' ) ); ?>">AI Quick Win</a></li></ul></li>
-    <li><a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Services</a></li><li><a href="<?php echo esc_url( home_url( '/solutions/' ) ); ?>">Solutions</a></li>
+    <li><a href="<?php echo esc_url( home_url( '/services/' ) ); ?>">Services</a></li>
+    <li class="menu-item-has-children"><a href="<?php echo esc_url( hosho_page_url( 'solutions' ) ); ?>">Solutions</a><ul class="sub-menu"><li><a href="<?php echo esc_url( hosho_page_url( 'operational-experience' ) ); ?>">Operational Experience</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'customer-experience' ) ); ?>">Customer Experience</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'employee-experience' ) ); ?>">Employee Experience</a></li></ul></li>
     <li class="menu-item-has-children"><a href="<?php echo esc_url( hosho_page_url( 'company' ) ); ?>">Company</a><ul class="sub-menu"><li><a href="<?php echo esc_url( hosho_page_url( 'careers' ) ); ?>">Careers</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'sustainability' ) ); ?>">Sustainability</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'press' ) ); ?>">Press</a></li></ul></li>
     <li><a href="<?php echo esc_url( hosho_page_url( 'contact' ) ); ?>">Contact</a></li>
   </ul><?php
