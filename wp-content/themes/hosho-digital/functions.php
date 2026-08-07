@@ -16,12 +16,6 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function hosho_v9_pages() {
 	return array(
-		'approach'       => array(
-			'classes'     => array( 'page-approach' ),
-			'styles'      => array( 'styles.css' ),
-			'scripts'     => array(),
-			'description' => 'Read how HOSHŌ DIGITAL approaches enterprise transformation and digital delivery.',
-		),
 		'privacy-policy' => array(
 			'classes'     => array( 'page-legal', 'page-privacy-policy' ),
 			'styles'      => array( 'styles.css' ),
@@ -96,6 +90,18 @@ function hosho_v9_pages() {
 		),
 		'philosophy' => array(
 			'classes'     => array( 'page-approach-philosophy' ),
+			'styles'      => array( 'styles.css' ),
+			'scripts'     => array(),
+			'description' => 'Explore the HOSHŌ DIGITAL approach philosophy and delivery framework.',
+		),
+		'erp' => array(
+			'classes'     => array( 'page-approach-erp' ),
+			'styles'      => array( 'styles.css' ),
+			'scripts'     => array(),
+			'description' => 'Explore the HOSHŌ DIGITAL approach philosophy and delivery framework.',
+		),
+		'ams' => array(
+			'classes'     => array( 'page-approach-ams' ),
 			'styles'      => array( 'styles.css' ),
 			'scripts'     => array(),
 			'description' => 'Explore the HOSHŌ DIGITAL approach philosophy and delivery framework.',
@@ -321,6 +327,8 @@ function hosho_primary_menu_fallback() {
 			<a href="<?php echo esc_url( hosho_page_url( 'approach' ) ); ?>">Approach</a>
 			<ul class="sub-menu">
 				<li><a href="<?php echo esc_url( hosho_page_url( 'philosophy' ) ); ?>">Philosophy</a></li>
+				<li><a href="<?php echo esc_url( hosho_page_url( 'ams' ) ); ?>">AMS</a></li>
+				<li><a href="<?php echo esc_url( hosho_page_url( 'erp' ) ); ?>">ERP</a></li>
 			</ul>
 		</li>
 		<li><a href="<?php echo esc_url( home_url( '/solutions/' ) ); ?>">Solutions</a></li>
