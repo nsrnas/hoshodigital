@@ -16,7 +16,7 @@
 		</div>
 	</section>
 
-	<?php hosho_render_quote("If you do build a great experience, customers tell each other about that. Word of mouth is very powerful.", 'Jeff Bezos', 'Founder & Executive Chairman, Amazon', 'jeff-bezos.png', 'motion'); 	?>
+	<?php hosho_render_quote("If you do build a great experience, customers tell each other about that. Word of mouth is very powerful.", 'Jeff Bezos', 'jeff-bezos.png', 'motion'); 	?>
 
 	<section class="section opex-dual-cards">
 		<div class="shell motion">

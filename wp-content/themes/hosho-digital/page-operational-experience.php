@@ -17,7 +17,7 @@
 	</section>
 
 	<?php
-	hosho_render_quote("The advance of technology is based on making it fit in so that you don't really even notice it.", 'Bill Gates', 'Co-founder, Microsoft', 'bill-gates.png', 'motion'); ?>
+	hosho_render_quote("The advance of technology is based on making it fit in so that you don't really even notice it.", 'Bill Gates', 'bill-gates.png', 'motion'); ?>
 
 	<section class="section opex-dual-cards">
 		<div class="shell motion">

@@ -87,7 +87,7 @@
     </div>
   </div></section>
 
-  <?php hosho_render_quote( 'AI is the most powerful technology force of our time.', 'Jensen Huang', 'Founder and CEO, NVIDIA', 'solutions-jensen-huang.png' ); ?>
+  <?php hosho_render_quote( 'AI is the most powerful technology force of our time.', 'Jensen Huang', 'solutions-jensen-huang.png' ); ?>
 
   <?php hosho_render_cta( 'Start your transformation', 'Ready to Transform Your Business?', 'Talk to HOSHŌ DIGITAL about intelligent digital solutions for your enterprise.', 'Contact Us', hosho_page_url( 'contact' ), 'company-cta-singapore-night.jpg' ); ?>
 </main>

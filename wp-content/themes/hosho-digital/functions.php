@@ -78,12 +78,12 @@ function hosho_render_hero( $headline, $image, $options = array() ) {
     <span class="page-hero__edge" aria-hidden="true"></span>
   </section><?php
 }
-function hosho_render_quote( $quote, $name, $role, $image, $class = '' ) { ?>
+function hosho_render_quote( $quote, $name, $image, $class = '' ) { ?>
   <section class="quote-band <?php echo esc_attr( $class ); ?>">
     <div class="quote-band__copy motion">
       <span class="quote-band__mark" aria-hidden="true">&ldquo;</span>
       <blockquote><?php echo esc_html( $quote ); ?></blockquote>
-      <cite><?php echo esc_html( $name ); ?><span><?php echo esc_html( $role ); ?></span></cite>
+      <cite><?php echo esc_html( $name ); ?> </cite>
     </div>
     <div class="quote-band__portrait"><img src="<?php echo esc_url( hosho_asset_url( $image ) ); ?>" alt="Portrait of <?php echo esc_attr( $name ); ?>"></div>
   </section><?php

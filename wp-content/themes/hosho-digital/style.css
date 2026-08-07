@@ -150,7 +150,7 @@ p { color: var(--muted); font-size: 16px; }
 .quote-band__portrait img { width: 100%; height: 100%; object-fit: contain; object-position: right bottom; filter: grayscale(1) contrast(1.06); mix-blend-mode: screen; -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.72) 13%, #000 28%, #000 100%); mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,.72) 13%, #000 28%, #000 100%); }
 .quote-band__copy { position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: center; min-width: 0; padding: 112px 64px 58px; }
 .quote-band__mark { position: absolute; top: 28px; left: 32px; margin: 0; color: rgba(249,210,208,.6); font-family: Georgia, 'Times New Roman', serif; font-size: 128px; font-weight: 400; line-height: .72; }
-.quote-band blockquote { max-width: 638px; margin: 0 0 32px; color: white; font-size: clamp(26px, 2.5vw, 32px); font-weight: 600; letter-spacing: -.025em; line-height: 1.2; }
+.quote-band blockquote { max-width: 638px; margin: 0 0 56px; color: white; font-size: clamp(26px, 2.5vw, 32px); font-weight: 600; letter-spacing: -.025em; line-height: 1.2; }
 .quote-band cite { color: white; font-style: normal; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
 .quote-band cite span { display: block; margin-top: 7px; color: rgba(255,255,255,.76); font-size: 12px; font-weight: 400; letter-spacing: .02em; text-transform: none; }
 
