@@ -9,11 +9,10 @@
 	);
 	?>
 
-	<section class="section opex-intro">
+	<section class="section cx-intro">
 		<div class="shell motion">
-			<div class="opex-intro__content">
-				<p class="lede">Our Operational Experience portfolio provides digital solutions that simplify complex business operations across finance, procurement, workforce management, governance, and industry-specific processes. Each solution is designed to improve efficiency, reduce manual work, and support scalable business operations.</p>
-			</div>
+			<h2 class="cx-intro__title">Driving Operational Excellence</h2>
+			<p class="cx-intro__body">Our Operational Experience portfolio provides digital solutions that simplify complex business operations across finance, procurement, workforce management, governance, and industry-specific processes. Each solution is designed to improve efficiency, reduce manual work, and support scalable business operations.</p>
 		</div>
 	</section>
 
@@ -34,7 +33,7 @@
 
 				<div class="opex-help-card">
 					<h2 class="opex-help-card__title">How HOSHŌ Digital Helps</h2>
-					<p class="body-copy">HOSHŌ Digital modernizes enterprise operations through intelligent automation, workflow optimization, finance, procurement, governance, and industry-specific solutions that enable organizations to operate more efficiently and scale with confidence.</p>
+					<p class="body-copy">We modernize enterprise operations through intelligent automation, workflow optimization, finance, procurement, governance, and industry-specific solutions that enable organizations to operate more efficiently and scale with confidence.</p>
 				</div>
 
 			</div>

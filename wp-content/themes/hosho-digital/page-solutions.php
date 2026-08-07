@@ -13,7 +13,12 @@
     </div>
   </div></div></section>
 
-  <section class="section"><div class="shell motion" style="text-align:center;"><h2>How HOSHŌ Digital Helps</h2><p class="lede" style="max-width:52rem;margin:0 auto;">HOSHŌ Digital helps organizations bridge the gap between AI adoption and measurable business outcomes by delivering connected solutions across Customer Experience, Employee Experience, and Operational Experience. Our integrated approach enables businesses to modernize operations, improve collaboration, and accelerate digital transformation with confidence.</p></div></section>
+  <section class="section cx-intro">
+		<div class="shell motion">
+			<h2 class="cx-intro__title">How HOSHŌ Digital Helps</h2>
+			<p class="cx-intro__body">We helps organizations bridge the gap between AI adoption and measurable business outcomes by delivering connected solutions across Customer Experience, Employee Experience, and Operational Experience. Our integrated approach enables businesses to modernize operations, improve collaboration, and accelerate digital transformation with confidence.</p>
+		</div>
+	</section>
 
   <section class="section section-navy"><div class="shell"><div class="intro-grid motion"><div><p class="eyebrow">Our solutions</p><h2>Transforming Business Through Connected Experiences</h2></div><div class="body-copy"><p>Business transformation creates the greatest impact when organizations improve the way customers interact, employees work, and operations perform together. Rather than treating these areas separately, HOSHŌ Digital structures its solutions around three connected business experiences that enable sustainable growth and operational excellence.</p></div></div>
     <div class="solutions-cards">

@@ -379,15 +379,15 @@ body.hosho-remade .page-hero__cta:hover .button-arrow {
 .solutions-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 56px; }
 .solutions-card { display: flex; flex-direction: column; padding: 32px; border-radius: 8px; background: white; border: 1px solid rgba(232,189,182,.6); box-shadow: 0 1px 2px rgba(0,0,0,.05); transition: transform .3s var(--ease), box-shadow .3s var(--ease); }
 .solutions-card:hover { transform: translateY(-6px); box-shadow: 0 12px 32px rgba(0,0,0,.1); }
-.solutions-card__icon { width: fit-content; padding: 16px; border-radius: 4px; margin-bottom: 24px; }
+.solutions-card__icon { display: flex; align-items: center; justify-content: center; width: 78px; height: 78px; padding: 16px; border-radius: 4px; margin-bottom: 24px; box-sizing: border-box; flex-shrink: 0; }
 .solutions-card__icon--ops { background: rgba(93,94,97,.05); color: #5d5e61; }
 .solutions-card__icon--cx { background: rgba(185,0,4,.05); color: var(--red-dark); }
 .solutions-card__icon--ex { background: rgba(76,91,113,.05); color: #4c5b71; }
-.solutions-card h3 { font-size: 24px; font-weight: 600; margin-bottom: 12px; color: #1a1c1d; }
-.solutions-card > p { font-size: 17px; color: var(--muted); margin-bottom: 24px; line-height: 1.6; }
+body.hosho-remade .solutions-card h3 { font-size: 24px; font-weight: 600; margin-bottom: 12px; color: #1a1c1d !important; -webkit-text-fill-color: #1a1c1d !important; }
+body.hosho-remade .solutions-card > p { font-size: 17px; color: var(--muted) !important; -webkit-text-fill-color: var(--muted) !important; margin-bottom: 24px; line-height: 1.6; }
 .solutions-card__caps { display: flex; flex-direction: column; gap: 6px; margin-bottom: auto; padding-bottom: 32px; }
-.solutions-card__caps-label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); }
-.solutions-card__caps > span:last-child { font-size: 14px; color: var(--ink); }
+body.hosho-remade .solutions-card__caps-label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--muted) !important; -webkit-text-fill-color: var(--muted) !important; }
+body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; color: var(--ink) !important; -webkit-text-fill-color: var(--ink) !important; }
 .solutions-card__link { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 16px 24px; margin-top: auto; border: 1px solid #5d5e61; border-radius: 4px; font-size: 14px; font-weight: 700; color: #5d5e61; transition: background .2s, color .2s, border-color .2s; }
 .solutions-card__link:hover { background: #5d5e61; color: white; }
 .solutions-card__link--cx { border-color: var(--red-dark); color: var(--red-dark); }
@@ -414,8 +414,6 @@ body.hosho-remade .page-hero__cta:hover .button-arrow {
 /* OPERATIONAL EXPERIENCE PAGE */
 
 .page-hero--opex .page-hero__media { background-position: 60% center; }
-
-.opex-intro__content { border-left: 4px solid var(--red); padding-left: 32px; max-width: 800px; }
 
 .opex-dual-cards__wrapper { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 48px; margin: 0 auto; max-width: 1080px; align-items: stretch; }
 .opex-stat-card { position: relative; overflow: hidden; padding: 48px; border-radius: 16px; background: #0b1c30; color: white; display: flex; flex-direction: column; justify-content: center; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25); border-bottom: 4px solid var(--red-dark); }
@@ -460,11 +458,6 @@ body.hosho-remade .page-hero__cta:hover .button-arrow {
 @media (max-width: 980px) {
   .opex-category__grid { grid-template-columns: repeat(2, 1fr) !important; }
 }
-@media (max-width: 620px) {
-  .opex-category__grid { grid-template-columns: 1fr !important; }
-  .opex-intro__content { padding-left: 20px; }
-  .opex-stat-card, .opex-help-card { padding: 32px 20px; }
-}
 
 /* CUSTOMER EXPERIENCE PAGE */
 
@@ -473,17 +466,6 @@ body.hosho-remade .page-hero__cta:hover .button-arrow {
 .cx-intro { text-align: center; }
 .cx-intro__title { font-size: clamp(28px, 4vw, 36px); font-weight: 600; color: var(--navy); margin-bottom: 20px; }
 .cx-intro__body { font-size: 20px; color: var(--muted); line-height: 1.6; max-width: 900px; margin: 0 auto; }
-
-.cx-quote { padding: clamp(48px, 6vw, 80px) 0; }
-.cx-quote__card { display: flex; overflow: hidden; border-radius: 12px; background: #fdf5f5; border: 1px solid rgba(196,199,200,.2); }
-.cx-quote__copy { flex: 2; padding: clamp(40px, 5vw, 64px); display: flex; flex-direction: column; justify-content: center; }
-.cx-quote__mark { font-size: 96px; line-height: .8; color: #ffdad5; opacity: .6; display: block; margin-bottom: 8px; }
-.cx-quote__text { font-size: clamp(22px, 3vw, 32px); font-weight: 600; color: var(--navy); line-height: 1.35; margin-bottom: 32px; }
-.cx-quote__cite { display: flex; flex-direction: column; gap: 4px; font-style: normal; }
-.cx-quote__cite strong { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--red); }
-.cx-quote__cite span { font-size: 14px; color: var(--muted); }
-.cx-quote__portrait { flex: 1; min-height: 320px; position: relative; overflow: hidden; }
-.cx-quote__portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center top; filter: grayscale(.2) contrast(1.05); }
 
 .cx-categories .cx-category { margin-bottom: 64px; }
 .cx-categories .cx-category:last-child { margin-bottom: 0; }
@@ -496,15 +478,6 @@ body.hosho-remade .page-hero__cta:hover .button-arrow {
 .cx-cta__title { font-size: clamp(28px, 4vw, 40px); font-weight: 700; color: white; margin-bottom: 32px; }
 .cx-cta .btn--white { display: inline-flex; align-items: center; justify-content: center; padding: 18px 40px; background: white; color: var(--red); border-radius: 4px; font-size: 18px; font-weight: 700; box-shadow: 0 20px 25px -5px rgba(0,0,0,.1), 0 8px 10px -6px rgba(0,0,0,.1); transition: transform .2s var(--ease), box-shadow .2s var(--ease); }
 .cx-cta .btn--white:hover { transform: translateY(-2px); box-shadow: 0 25px 35px -5px rgba(0,0,0,.15); }
-
-@media (max-width: 768px) {
-  .cx-quote__card { flex-direction: column; }
-  .cx-quote__portrait { min-height: 280px; }
-}
-@media (max-width: 620px) {
-  .cx-quote__copy { padding: 32px 20px; }
-  .cx-quote__mark { font-size: 64px; }
-}
 
 /* EMPLOYEE EXPERIENCE PAGEb*/
 

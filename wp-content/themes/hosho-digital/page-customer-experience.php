@@ -32,7 +32,7 @@
 
 				<div class="opex-help-card">
 					<h2 class="opex-help-card__title">How HOSHŌ Digital Helps</h2>
-					<p class="body-copy">HOSHŌ's AI-powered solutions strengthen relationships by unifying customer data, automating service workflows, and enabling intelligent, proactive engagement. We help you deliver seamless experiences that turn everyday interactions into long-term customer loyalty.</p>
+					<p class="body-copy">Our AI-powered solutions strengthen relationships by unifying customer data, automating service workflows, and enabling intelligent, proactive engagement. We help you deliver seamless experiences that turn everyday interactions into long-term customer loyalty.</p>
 				</div>
 
 			</div>
