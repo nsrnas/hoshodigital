@@ -88,7 +88,7 @@ function hosho_v9_pages() {
 			'scripts'     => array(),
 			'description' => 'Read how HOSHŌ DIGITAL collects, uses, shares and protects personal data.',
 		),
-		'philosophy' => array(
+		'approach-philosophy' => array(
 			'classes'     => array( 'page-approach-philosophy' ),
 			'styles'      => array( 'styles.css' ),
 			'scripts'     => array(),
@@ -326,7 +326,7 @@ function hosho_primary_menu_fallback() {
 		<li class="menu-item menu-item-has-children">
 			<a href="<?php echo esc_url( hosho_page_url( 'approach' ) ); ?>">Approach</a>
 			<ul class="sub-menu">
-				<li><a href="<?php echo esc_url( hosho_page_url( 'philosophy' ) ); ?>">Philosophy</a></li>
+				<li><a href="<?php echo esc_url( hosho_page_url( 'approach-philosophy' ) ); ?>">Philosophy</a></li>
 				<li><a href="<?php echo esc_url( hosho_page_url( 'ai' ) ); ?>">AI</a></li>
 				<li><a href="<?php echo esc_url( hosho_page_url( 'ams' ) ); ?>">AMS</a></li>
 				<li><a href="<?php echo esc_url( hosho_page_url( 'erp' ) ); ?>">ERP</a></li>

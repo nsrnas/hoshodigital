@@ -732,25 +732,48 @@ get_header();
 		.rapid-process {
 			display: flex;
 			justify-content: center;
-			align-items: center;
+			align-items: stretch;
 			margin-bottom: 70px;
 		}
 
 		.process-item {
-			background: #c31f24;
+			width: 220px;
+			height: 66px;
+			flex: 0 0 auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			color: white;
-			padding: 14px 34px 14px 24px;
-			font-size: 13px;
-			font-weight: 700;
-			letter-spacing: .5px;
+			font-size: 15px;
+			font-weight: 800;
+			letter-spacing: .8px;
 			text-transform: uppercase;
-			clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 12% 50%);
-			margin-left: -14px;
+			text-align: center;
+			padding: 0 18px;
+			clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 14% 50%);
+			margin-left: -26px;
 		}
 
 		.process-item:first-child {
 			margin-left: 0;
+			clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 0 100%);
 			padding-left: 26px;
+		}
+
+		.process-item:nth-child(1) {
+			background: linear-gradient(135deg, #e2373c, #c31f24);
+		}
+
+		.process-item:nth-child(2) {
+			background: linear-gradient(135deg, #c31f24, #a8181d);
+		}
+
+		.process-item:nth-child(3) {
+			background: linear-gradient(135deg, #a8181d, #8c1213);
+		}
+
+		.process-item:nth-child(4) {
+			background: linear-gradient(135deg, #8c1213, #6f0e12);
 		}
 
 		.rapid-grid {
@@ -818,9 +841,10 @@ get_header();
 		}
 
 		.rapid-card li {
+			display: flex;
+			align-items: center;
+			gap: 12px;
 			margin-bottom: 12px;
-			padding-left: 26px;
-			position: relative;
 			font-weight: 700;
 			color: var(--navy);
 		}
@@ -831,9 +855,7 @@ get_header();
 
 		.rapid-card li::before {
 			content: "✓";
-			position: absolute;
-			left: 0;
-			top: -1px;
+			flex: 0 0 auto;
 			width: 18px;
 			height: 18px;
 			border-radius: 50%;
@@ -1009,54 +1031,78 @@ get_header();
 		==================================*/
 
 		.partners-section {
-			padding: 110px 0;
+			padding: 90px 0 110px;
 			background: #fff;
 		}
 
-		.partner-group {
-			margin-bottom: 90px;
+		.partner-category-section {
+			margin-bottom: 80px;
 		}
 
-		.partner-group:last-child {
+		.partner-category-section:last-child {
 			margin-bottom: 0;
 		}
 
-		.partner-group h2 {
-			text-align: center;
-			font-size: 30px;
+		.partner-category-title {
+			display: block;
+			font-size: 13px;
 			font-weight: 800;
-			color: #112d4b;
-			margin-bottom: 45px;
-			letter-spacing: 1px;
+			letter-spacing: 1.5px;
+			text-transform: uppercase;
+			color: var(--red);
+			margin-bottom: 34px;
+			text-align: center;
 		}
 
-		.partner-logos {
+		.partner-logos-wrap {
+			overflow: hidden;
+			max-width: 900px;
+			margin: 0 auto;
+			-webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+			mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+		}
+
+		.partner-logos-track {
 			display: flex;
-			justify-content: center;
 			align-items: center;
-			flex-wrap: wrap;
-			gap: 60px;
+			width: max-content;
+			animation: logos-scroll 22s linear infinite;
+		}
+
+		.partner-logos-track:hover {
+			animation-play-state: paused;
 		}
 
 		.partner-logo {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			min-width: 160px;
+			flex: 0 0 auto;
+			width: 180px;
 			height: 70px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			transition: .3s;
 			opacity: .85;
 		}
 
 		.partner-logo:hover {
 			opacity: 1;
-			transform: translateY(-5px);
 		}
 
 		.partner-logo img {
-			max-width: 160px;
-			width: 100%;
+			height: 60px;
+			width: auto;
+			max-width: 130px;
 			object-fit: contain;
+			display: block;
+		}
+
+		@keyframes logos-scroll {
+			from {
+				transform: translateX(0);
+			}
+			to {
+				transform: translateX(-50%);
+			}
 		}
 
 		/*==================================
@@ -1253,7 +1299,7 @@ get_header();
 			</div>
 
 			<div style="text-align:center;">
-				<a href="#" class="btn-outline-dark">
+				<a href="<?php echo esc_url(home_url('/approach')); ?>" class="btn-outline-dark">
 					Find Out More
 				</a>
 			</div>
@@ -1305,12 +1351,6 @@ get_header();
 					</p>
 				</div>
 			</div>
-
-			<p class="cognitive-quote">
-				"Traditional SaaS provides software. Solution as a Service
-				continuously evolves by combining business expertise,
-				intelligent technology, and ongoing optimization."
-			</p>
 		</div>
 	</section>
 
@@ -1637,46 +1677,45 @@ get_header();
 	</section>
 
 	<!-- ==========================================
-	TECHNOLOGY PARTNERS
+	PARTNERS
 	=========================================== -->
 
 	<section class="partners-section">
 		<div class="container">
-			<div class="partner-group">
-				<h2>TECHNOLOGY PARTNERS</h2>
-				<div class="partner-logos">
-					<div class="partner-logo">
-						<img src="<?php echo esc_url( hosho_asset_url( 'images/homepage/openai.jpg' ) ); ?>" alt="OpenAI">
-					</div>
-					<div class="partner-logo">
-						<img src="<?php echo esc_url( hosho_asset_url( 'images/homepage/microsoft.jpg' ) ); ?>" alt="Microsoft">
-					</div>
-					<div class="partner-logo">
-						<img src="<?php echo esc_url( hosho_asset_url( 'images/homepage/google-cloud.jpg' ) ); ?>" alt="Google Cloud">
-					</div>
-					<div class="partner-logo">
-						<img src="<?php echo esc_url( hosho_asset_url( 'images/homepage/anthropic.jpg' ) ); ?>" alt="Anthropic">
+			<!-- Technology Partners -->
+			<div class="partner-category-section">
+				<span class="partner-category-title">Technology Partners</span>
+				<div class="partner-logos-wrap">
+					<div class="partner-logos-track">
+						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'images/homepage/tech-partners/openai.jpg' ) ); ?>" alt="OpenAI"></div>
+						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'images/homepage/tech-partners/microsoft.jpg' ) ); ?>" alt="Microsoft"></div>
+						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'images/homepage/tech-partners/google-cloud.jpg' ) ); ?>" alt="Google Cloud"></div>
+						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'images/homepage/tech-partners/anthropic.jpg' ) ); ?>" alt="Anthropic"></div>
+						<!-- duplicated for a seamless infinite loop -->
+						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'images/homepage/tech-partners/openai.jpg' ) ); ?>" alt="OpenAI"></div>
+						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'images/homepage/tech-partners/microsoft.jpg' ) ); ?>" alt="Microsoft"></div>
+						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'images/homepage/tech-partners/google-cloud.jpg' ) ); ?>" alt="Google Cloud"></div>
+						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'images/homepage/tech-partners/anthropic.jpg' ) ); ?>" alt="Anthropic"></div>
 					</div>
 				</div>
 			</div>
 
-			<div class="partner-group">
-				<h2>BUSINESS PARTNERS</h2>
-				<div class="partner-logos">
-					<div class="partner-logo">
-						<img src="https://placehold.co/160x70?text=Ingram+Micro" alt="Ingram Micro">
-					</div>
-					<div class="partner-logo">
-						<img src="https://placehold.co/160x70?text=SBF" alt="SBF">
-					</div>
-					<div class="partner-logo">
-						<img src="https://placehold.co/160x70?text=SG+Tech" alt="SG Tech">
-					</div>
-					<div class="partner-logo">
-						<img src="https://placehold.co/160x70?text=Pax8" alt="Pax8">
-					</div>
-					<div class="partner-logo">
-						<img src="https://placehold.co/160x70?text=Partner" alt="Partner">
+			<!-- Business Partners -->
+			<div class="partner-category-section">
+				<span class="partner-category-title">Business Partners</span>
+				<div class="partner-logos-wrap">
+					<div class="partner-logos-track">
+						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'images/homepage/buss-partners/ingram.png' ) ); ?>" alt="Ingram Micro"></div>
+						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'images/homepage/buss-partners/sbf.png' ) ); ?>" alt="SBF"></div>
+						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'images/homepage/buss-partners/sg-tech.png' ) ); ?>" alt="SG Tech"></div>
+						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'images/homepage/buss-partners/pax8.png' ) ); ?>" alt="Pax8"></div>
+						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'images/homepage/buss-partners/crayon.png' ) ); ?>" alt="Partner"></div>
+						<!-- duplicated for a seamless infinite loop -->
+						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'images/homepage/buss-partners/ingram.png' ) ); ?>" alt="Ingram Micro"></div>
+						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'images/homepage/buss-partners/sbf.png' ) ); ?>" alt="SBF"></div>
+						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'images/homepage/buss-partners/sg-tech.png' ) ); ?>" alt="SG Tech"></div>
+						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'images/homepage/buss-partners/pax8.png' ) ); ?>" alt="Pax8"></div>
+						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'images/homepage/buss-partners/crayon.png' ) ); ?>" alt="Partner"></div>
 					</div>
 				</div>
 			</div>

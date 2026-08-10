@@ -1027,15 +1027,6 @@ $hosho_phases = array(
 				<h2>The 8-Stage Delivery Framework</h2>
 			</div>
 
-			<div class="phase-tabs">
-				<?php foreach ( $hosho_phase_tabs as $index => $tab ) : ?>
-					<div class="phase-tab<?php echo 0 === $index ? ' active' : ''; ?>">
-						<span class="tab-label"><?php echo esc_html( $tab['label'] ); ?></span>
-						<span class="tab-title"><?php echo esc_html( $tab['title'] ); ?></span>
-					</div>
-				<?php endforeach; ?>
-			</div>
-
 			<div class="framework-body">
 				<!-- Sidebar navigation -->
 				<div class="framework-nav">

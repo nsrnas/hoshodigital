@@ -663,8 +663,7 @@ get_header();
 				</div>
 
 				<div class="building-quote">
-					"We don't demolish the house. We strengthen the foundation
-					to support the future."
+					We don't demolish the house. We strengthen the foundation to support the future.
 					<span></span>
 				</div>
 			</div>
@@ -702,7 +701,7 @@ get_header();
 				philosophy—a rigorous framework designed to eliminate
 				strategic drift and guarantee measurable enterprise value.
 			</p>
-			<a href="#" class="btn-red">Explore the Philosophy</a>
+			<a href="<?php echo esc_url(home_url('/philosophy')); ?>" class="btn-red">Explore the Philosophy</a>
 		</div>
 	</section>
 
