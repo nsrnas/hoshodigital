@@ -29,7 +29,7 @@
         <h3>Operational Experience</h3>
         <p>Improve business performance through connected operations, intelligent automation, and enterprise-wide process optimization.</p>
         <div class="solutions-card__caps"><span class="solutions-card__caps-label">Key Capabilities</span><span>Finance Operations, Procurement, Governance, Industry Solutions</span></div>
-        <a href="/solutions/operational-experience/" class="solutions-card__link">Explore Solutions <span aria-hidden="true">&#8599;</span></a>
+        <a href="<?php echo esc_url( hosho_page_url( 'operational-experience' ) ); ?>" class="solutions-card__link">Explore Solutions <span aria-hidden="true">&#8599;</span></a>
       </article>
       <article class="solutions-card solutions-card--cx motion">
         <div class="solutions-card__icon solutions-card__icon--cx">
@@ -38,7 +38,7 @@
         <h3>Customer Experience</h3>
         <p>Create meaningful customer interactions through intelligent engagement, AI-powered service, and connected sales processes.</p>
         <div class="solutions-card__caps"><span class="solutions-card__caps-label">Key Capabilities</span><span>Customer Engagement, Sales Management, AI Assistants, Workflow Automation</span></div>
-        <a href="/solutions/customer-experience/" class="solutions-card__link solutions-card__link--cx">Explore Solutions <span aria-hidden="true">&#8599;</span></a>
+        <a href="<?php echo esc_url( hosho_page_url( 'customer-experience' ) ); ?>" class="solutions-card__link solutions-card__link--cx">Explore Solutions <span aria-hidden="true">&#8599;</span></a>
       </article>
       <article class="solutions-card solutions-card--ex motion">
         <div class="solutions-card__icon solutions-card__icon--ex">
@@ -47,7 +47,7 @@
         <h3>Employee Experience</h3>
         <p>Empower employees with digital workplace solutions that simplify HR processes, collaboration, and everyday work.</p>
         <div class="solutions-card__caps"><span class="solutions-card__caps-label">Key Capabilities</span><span>HR Solutions, Employee Services, Procurement Requests, Intelligent Workplace</span></div>
-        <a href="/solutions/employee-experience/" class="solutions-card__link solutions-card__link--ex">Explore Solutions <span aria-hidden="true">&#8599;</span></a>
+        <a href="<?php echo esc_url( hosho_page_url( 'employee-experience' ) ); ?>" class="solutions-card__link solutions-card__link--ex">Explore Solutions <span aria-hidden="true">&#8599;</span></a>
       </article>
     </div>
   </div></section>
