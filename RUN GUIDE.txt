@@ -1,0 +1,22 @@
+HOSHO DIGITAL WEB - REMADE
+
+LOCAL PREVIEW (all seven pages)
+
+1. Open PowerShell in this folder.
+2. Run:
+   C:\xampp\php\php.exe -S 127.0.0.1:4330 -t . preview\router.php
+3. Open any URL:
+   http://127.0.0.1:4330/careers/
+   http://127.0.0.1:4330/sustainability/
+   http://127.0.0.1:4330/press/
+   http://127.0.0.1:4330/contact/
+   http://127.0.0.1:4330/company/
+   http://127.0.0.1:4330/ai-quick-win/
+   http://127.0.0.1:4330/eci/
+
+Press Ctrl+C in the same terminal to stop the server.
+
+WORDPRESS
+
+Copy wp-content\themes\hosho-digital into the WordPress installation, activate the theme, then create pages with these exact slugs:
+careers, sustainability, press, contact, company, ai-quick-win, eci.

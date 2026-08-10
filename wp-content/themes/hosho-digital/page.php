@@ -1,9 +1,1 @@
-<?php
-/**
- * Default page template.
- *
- * @package Hosho_Digital
- */
-
-get_template_part( 'index' );
-
+<?php get_header(); ?><main id="main-content" class="section"><div class="shell"><?php if ( have_posts() ) : while ( have_posts() ) : the_post(); the_title('<h1>','</h1>'); the_content(); endwhile; endif; ?></div></main><?php get_footer(); ?>

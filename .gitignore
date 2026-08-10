@@ -1,34 +1,56 @@
-# Operating-system files
-.DS_Store
-Thumbs.db
-Desktop.ini
+# Deployment packages and local knowledge graph
+/upload-material/
+/graphify-out/
 
-# Editors
-.idea/
-*.code-workspace
-
-# Local configuration and secrets
-.env
-.env.*
-wp-config.php
-
-# WordPress runtime content
-wp-content/uploads/
-wp-content/cache/
-wp-content/upgrade/
-wp-content/backups/
-
-# Logs and temporary output
+# Local preview output
 *.log
+*.pid
 *.tmp
 *.temp
-dist/*.zip
 
-# Dependency output if tooling is added later
+# Local environment and editor files
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+.fleet/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dependency and generated build folders
 node_modules/
 vendor/
+dist/
+build/
+coverage/
+.cache/
+.parcel-cache/
+
+# WordPress runtime and machine-specific content
+wp-config.php
+.htaccess
+/wp-content/cache/
+/wp-content/upgrade/
+/wp-content/uploads/
+/wp-content/backups/
+/wp-content/ai1wm-backups/
+/wp-content/updraft/
+
+# Local archives and database exports
+*.zip
+*.tar
+*.tar.gz
+*.sql
+*.sqlite
+*.sqlite3
+
+# OS and tool leftovers
+*.bak
+*.swp
+*.swo
+*~
 
 # More
-RUN GUIDE.txt
-OLD README.md
-
+GENERATED-ASSETS.md

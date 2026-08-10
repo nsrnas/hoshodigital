@@ -1,0 +1,35 @@
+HOSHO DIGITAL WEB REMADE
+TARGET REMOTE: https://github.com/nsrnas/hoshodigital.git
+TARGET BRANCH: feature/evan-section
+
+Run this block once in PowerShell:
+
+Set-Location -LiteralPath 'D:\Work & Organization\Work\Hosho Digital\Projects\Hosho Digital Web - Remade'
+
+git init
+git config user.name "Evan"
+git config user.email "evanwilliam303@gmail.com"
+git remote add origin https://github.com/nsrnas/hoshodigital.git
+git fetch origin feature/evan-section
+git reset --mixed origin/feature/evan-section
+git branch -M feature/evan-section
+
+git add -A
+git status --short
+git ls-files upload-material graphify-out
+
+git commit -m "feat: rebuild Evan website sections"
+git push -u origin feature/evan-section
+
+Expected checks before commit:
+- git status must include .gitignore and the current Remade source.
+- git status must not include upload-material, graphify-out or preview log files.
+- git ls-files upload-material graphify-out must print nothing.
+- Old tracked V8/V9 files that no longer exist in Remade may appear as deleted. This is expected only when Remade is replacing the previous Evan branch implementation.
+
+If push is rejected because the remote branch changed after fetch:
+
+git pull --rebase origin feature/evan-section
+git push -u origin feature/evan-section
+
+If a rebase conflict appears, do not force-push. Resolve the conflict or ask a teammate before continuing.
