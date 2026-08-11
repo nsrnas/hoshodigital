@@ -5327,6 +5327,628 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			text-decoration: none;
 		}
 
+/* =========================================================
+   RESPONSIVE SYSTEM — shared across every merged page
+   ========================================================= */
+
+html,
+body {
+	max-width: 100%;
+	overflow-x: clip;
+}
+
+body.nav-open { overflow: hidden; }
+
+img,
+svg,
+video,
+canvas { max-width: 100%; }
+
+.site-main,
+.site-main > *,
+.home-page,
+.approach-page,
+.philosophy-page,
+.ai-page,
+.ams-page,
+.erp-page,
+.legal-page,
+.shell,
+.container,
+.nav,
+.primary-navigation,
+.nav-links,
+.footer-main,
+.footer-column,
+.intro-grid > *,
+.media-split > *,
+.editorial-grid > *,
+.quote-band > *,
+.contact-layout > *,
+.framework > *,
+.solutions-cards > *,
+.opex-category__grid > *,
+.cx-categories > *,
+.ex-categories > * { min-width: 0; }
+
+.site-main p,
+.site-main li,
+.site-main h1,
+.site-main h2,
+.site-main h3,
+.site-main h4,
+.site-footer a { overflow-wrap: anywhere; }
+
+@media (max-width: 1180px) {
+	.home-page .container,
+	.approach-page .container,
+	.philosophy-page .container,
+	.ai-page .container,
+	.ams-page .container,
+	.erp-page .container,
+	.legal-page .container {
+		width: min(calc(100% - 48px), 1160px);
+	}
+
+	.pillars-grid,
+	.digital-core-process,
+	.services-grid,
+	.rapid-grid,
+	.principles-grid,
+	.capability-grid,
+	.stats-row,
+	.competencies-grid,
+	.advantage-grid,
+	.budget-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.nodes-section {
+		grid-template-columns: minmax(300px, .75fr) minmax(0, 1.25fr);
+	}
+
+	.ai-quote-content,
+	.ams-quote-content {
+		grid-template-columns: minmax(260px, .72fr) minmax(0, 1.28fr);
+	}
+}
+
+@media (max-width: 980px) {
+	.site-header { z-index: 100; }
+
+	.primary-navigation {
+		inset: 86px 0 0 !important;
+		width: 100%;
+		max-width: none;
+		height: calc(100dvh - 86px);
+		padding: 28px max(24px, calc((100vw - 760px) / 2)) calc(40px + env(safe-area-inset-bottom));
+		overflow-x: hidden;
+		overflow-y: auto;
+		overscroll-behavior: contain;
+		background: #07182b;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.nav-links { width: 100%; padding-bottom: 24px; }
+	.nav-links a { min-height: 48px; display: flex; align-items: center; }
+	.sub-menu { min-width: 0; padding: 0 0 12px 20px; }
+	.sub-menu a { font-size: 16px; }
+
+	.hero,
+	.approach-hero,
+	.philosophy-hero,
+	.ai-hero,
+	.ams-hero,
+	.erp-hero {
+		min-height: 720px;
+		height: auto;
+	}
+
+	.hero-content,
+	.approach-hero-content,
+	.philosophy-hero-content,
+	.ai-hero-content,
+	.ams-hero-content,
+	.erp-hero-content {
+		width: 100%;
+		max-width: 760px;
+		padding-block: 150px 80px;
+	}
+
+	.hero h1,
+	.approach-hero h1,
+	.philosophy-hero h1,
+	.ai-hero h1,
+	.ams-hero h1,
+	.erp-hero h1 {
+		font-size: clamp(42px, 8vw, 66px);
+		line-height: 1.02;
+	}
+
+	.success-guarantee,
+	.digital-core,
+	.cognitive-shift,
+	.services-section,
+	.rapid-spectrum,
+	.ai-budget,
+	.solution-growth,
+	.partners-section,
+	.approach-intro,
+	.architecture-scale,
+	.transformation-section,
+	.philosophy-section,
+	.fail-section,
+	.gap-section,
+	.framework-section,
+	.resilience-section,
+	.ai-intro-section,
+	.governance-section,
+	.outcomes-section,
+	.logos-section,
+	.ams-intro,
+	.continuity-section,
+	.stay-section,
+	.engine-section,
+	.competencies-section,
+	.advantage-section,
+	.opt-gap-section,
+	.help-section,
+	.why-hosho-section,
+	.success-section,
+	.outcome-section,
+	.philosophy-strip {
+		padding-block: clamp(72px, 10vw, 104px);
+	}
+
+	.compare-flow,
+	.rapid-process,
+	.continuity-grid,
+	.governance-grid,
+	.why-hosho-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.compare-arrow { transform: rotate(90deg); margin: 8px auto; }
+
+	.nodes-section { grid-template-columns: 1fr; }
+	.nodes-left,
+	.nodes-right {
+		width: auto;
+		max-width: none;
+		padding: 64px max(24px, calc((100vw - 760px) / 2));
+	}
+	.nodes-diagram-image,
+	.nodes-diagram-image img { width: 100%; height: auto; }
+
+	.ai-quote-content,
+	.ams-quote-content,
+	.approach-quote-inner,
+	.erp-quote-inner {
+		grid-template-columns: 1fr;
+		max-width: 100%;
+	}
+
+	.ai-quote-photo,
+	.ams-quote-photo { min-height: 360px; }
+
+	.flow-step,
+	.flow-step.reverse,
+	.gov-item,
+	.gov-item.reverse { flex-direction: row; text-align: left; }
+	.flow-tags,
+	.flow-step.reverse .flow-tags { justify-content: flex-start; }
+
+	.outcomes-grid,
+	.opt-gap-grid,
+	.help-grid,
+	.success-grid,
+	.outcome-grid,
+	.fail-grid,
+	.resilience-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.solutions-cards,
+	.solutions-why-grid,
+	.opex-category__grid,
+	.cx-categories,
+	.ex-categories,
+	.opex-dual-cards__wrapper {
+		grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+	}
+
+	.opex-category__title { white-space: normal; }
+	.opex-scard,
+	.ex-hcard,
+	.opex-help-card,
+	.opex-stat-card { min-width: 0; max-width: 100%; }
+
+	.legal-page .container { width: min(calc(100% - 48px), 760px); }
+	.legal-content { padding: 72px 0; }
+}
+
+@media (max-width: 640px) {
+	:root { --shell: calc(100vw - 32px); }
+	body { font-size: 16px; }
+	main p:not(.eyebrow):not(.small-title):not(.quote-role):not(.solutions-insight__source):not(.opex-stat-card__source):not(.ex-stat__source),
+	main li { font-size: max(16px, 1em); }
+
+	.site-header .nav { height: 72px; }
+	.brand { min-width: 48px; min-height: 48px; }
+	.brand img { width: 40px; height: 40px; }
+	.menu-button { width: 48px; height: 48px; }
+	.footer-socials a,
+	.footer-socials span { width: 44px; height: 44px; }
+
+	.primary-navigation {
+		inset: 72px 0 0 !important;
+		height: calc(100dvh - 72px);
+		padding: 18px 24px calc(36px + env(safe-area-inset-bottom));
+	}
+	.nav-links > li { border-bottom: 1px solid rgba(255,255,255,.1); }
+	.nav-links a { padding: 12px 0; font-size: 17px; }
+	.sub-menu { padding-left: 16px; }
+	.sub-menu a {
+		min-height: 44px;
+		padding: 8px 0;
+		font-size: 15px;
+		color: #bcc9d5;
+	}
+
+	.home-page .container,
+	.approach-page .container,
+	.philosophy-page .container,
+	.ai-page .container,
+	.ams-page .container,
+	.erp-page .container,
+	.legal-page .container { width: calc(100% - 32px); }
+
+	.page-hero__content { padding-top: 124px; }
+	.page-hero h1 { font-size: clamp(42px, 13vw, 62px); }
+	.page-hero--careers h1 { font-size: clamp(56px, 17vw, 78px); }
+
+	.hero,
+	.approach-hero,
+	.philosophy-hero,
+	.ai-hero,
+	.ams-hero,
+	.erp-hero { min-height: 100svh; }
+
+	.hero-content,
+	.approach-hero-content,
+	.philosophy-hero-content,
+	.ai-hero-content,
+	.ams-hero-content,
+	.erp-hero-content { padding: 122px 0 56px; }
+
+	.hero h1,
+	.approach-hero h1,
+	.philosophy-hero h1,
+	.ai-hero h1,
+	.ams-hero h1,
+	.erp-hero h1 {
+		max-width: 100%;
+		font-size: clamp(40px, 12vw, 58px);
+		line-height: 1.04;
+		letter-spacing: -.04em;
+	}
+
+	.hero p,
+	.approach-hero p,
+	.philosophy-hero p,
+	.ai-hero p,
+	.ams-hero p,
+	.erp-hero p,
+	.section-desc,
+	.body-copy,
+	.lede,
+	.cta-content p,
+	.approach-cta-content p,
+	.philosophy-cta-card p,
+	.ai-cta-content p,
+	.ams-cta-content p,
+	.erp-cta-content p { font-size: 16px; line-height: 1.65; }
+
+	.hero-buttons,
+	.philosophy-hero-actions {
+		width: 100%;
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.hero-buttons a,
+	.philosophy-hero-actions a,
+	.btn-red,
+	.btn-outline,
+	.btn-outline-dark,
+	.button { min-height: 48px; }
+	.hero-buttons a,
+	.philosophy-hero-actions a { width: 100%; justify-content: center; }
+
+	.success-guarantee,
+	.digital-core,
+	.cognitive-shift,
+	.services-section,
+	.rapid-spectrum,
+	.ai-budget,
+	.solution-growth,
+	.partners-section,
+	.final-cta,
+	.approach-intro,
+	.architecture-scale,
+	.transformation-section,
+	.philosophy-section,
+	.fail-section,
+	.gap-section,
+	.framework-section,
+	.resilience-section,
+	.ai-intro-section,
+	.governance-section,
+	.outcomes-section,
+	.logos-section,
+	.ams-intro,
+	.continuity-section,
+	.stay-section,
+	.engine-section,
+	.competencies-section,
+	.advantage-section,
+	.opt-gap-section,
+	.help-section,
+	.why-hosho-section,
+	.success-section,
+	.outcome-section,
+	.philosophy-strip,
+	.approach-cta,
+	.philosophy-cta,
+	.ai-cta,
+	.ams-cta,
+	.erp-cta { padding-block: 72px; }
+
+	.section-title,
+	.digital-core-heading h2,
+	.cognitive-header h2,
+	.strategy-heading,
+	.rapid-header h2,
+	.budget-header h2,
+	.growth-header h2,
+	.approach-intro h2,
+	.architecture-header h3,
+	.transformation-section h2,
+	.philosophy-section h2,
+	.fail-section h2,
+	.gap-section h2,
+	.framework-section h2,
+	.resilience-card h2,
+	.ai-intro-header h2,
+	.principles-header h2,
+	.flow-header h2,
+	.governance-header h2,
+	.outcomes-header h2,
+	.ams-intro h2,
+	.continuity-left h3,
+	.stay-section h2,
+	.engine-header h2,
+	.competencies-header h2,
+	.advantage-header h2,
+	.opt-gap-section h2,
+	.help-section h2,
+	.services-section h2,
+	.success-section h2,
+	.outcome-section h2,
+	.philosophy-strip h2,
+	.legal-title {
+		font-size: clamp(30px, 9vw, 44px);
+		line-height: 1.08;
+	}
+
+	.pillars-grid,
+	.digital-core-process,
+	.services-grid,
+	.rapid-grid,
+	.budget-grid,
+	.principles-grid,
+	.governance-grid,
+	.outcomes-grid,
+	.capability-grid,
+	.stats-row,
+	.competencies-grid,
+	.advantage-grid,
+	.opt-gap-grid,
+	.help-grid,
+	.success-grid,
+	.outcome-grid,
+	.fail-grid,
+	.gap-columns,
+	.resilience-grid,
+	.solutions-cards,
+	.solutions-why-grid,
+	.opex-category__grid,
+	.cx-categories,
+	.ex-categories,
+	.opex-dual-cards__wrapper {
+		grid-template-columns: minmax(0, 1fr) !important;
+	}
+
+	.success-card,
+	.guarantee-left,
+	.compare-card,
+	.rapid-card,
+	.budget-card,
+	.pillar-card,
+	.service-card,
+	.principle-card,
+	.capability-card,
+	.competency-card,
+	.opt-gap-card,
+	.help-card,
+	.outcome-card,
+	.opex-scard,
+	.ex-hcard { width: 100%; max-width: 100%; }
+
+	.success-card { margin-bottom: 56px; }
+	.guarantee-body,
+	.success-card,
+	.pillar-card,
+	.service-card,
+	.rapid-card,
+	.budget-card,
+	.fail-card,
+	.resilience-card,
+	.why-hosho-card,
+	.outcome-card { padding: 28px 22px; }
+
+	.building-layer,
+	.flow-step,
+	.flow-step.reverse,
+	.gov-item,
+	.gov-item.reverse,
+	.continuity-item { align-items: flex-start; gap: 18px; }
+	.building-layer { padding: 20px; }
+	.flow-step,
+	.flow-step.reverse,
+	.gov-item,
+	.gov-item.reverse { flex-direction: column; }
+
+	.ai-quote-content,
+	.ams-quote-content { gap: 28px; }
+	.ai-quote-photo,
+	.ams-quote-photo { min-height: 280px; }
+
+	.phase-tabs,
+	.framework-nav,
+	.growth-timeline,
+	.timeline-row,
+	.engine-chevrons {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		gap: 14px;
+		width: 100%;
+		overflow-x: auto;
+		padding: 8px 2px 18px;
+		scroll-snap-type: x mandatory;
+		overscroll-behavior-inline: contain;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.phase-tab,
+	.framework-nav-item,
+	.growth-step,
+	.timeline-step,
+	.engine-chevron {
+		flex: 0 0 min(78vw, 290px);
+		min-width: 0;
+		scroll-snap-align: start;
+	}
+
+	.framework-nav { position: static; }
+	.growth-box,
+	.growth-wedge { width: 100%; }
+	.partner-logos-wrap,
+	.logos-track-wrap { width: 100%; max-width: 100%; }
+	.nodes-left,
+	.nodes-right { padding: 56px 16px; }
+
+	.quote-band { min-height: 0; }
+	.quote-band__copy { min-height: 0; padding: 72px 24px 48px; }
+	.quote-band__mark { top: 20px; left: 20px; font-size: 92px; }
+	.quote-band blockquote {
+		margin-bottom: 32px;
+		font-size: clamp(24px, 7vw, 31px);
+	}
+	.quote-band__portrait { width: 100%; height: 340px; min-height: 340px; }
+
+	.testimonial-window { width: 100%; margin-top: 36px; }
+	.testimonial { min-height: 480px; padding: 42px 24px; }
+	.testimonial blockquote {
+		margin: 28px 0 36px;
+		font-size: clamp(25px, 8vw, 34px);
+	}
+	.carousel-controls { align-items: center; flex-wrap: wrap; }
+	.carousel-controls button { width: 48px; height: 48px; }
+
+	.media-split,
+	.media-split--reverse { min-height: 0; }
+	.media-split__image,
+	.contact-visual { min-height: 360px; }
+	.contact-form { gap: 18px; }
+	.field input,
+	.field select,
+	.field textarea { min-height: 48px; font-size: 16px; }
+	.consent input { width: 20px; height: 20px; }
+	.consent label { min-height: 44px; display: flex; align-items: flex-start; }
+
+	.cta-panel,
+	.final-cta,
+	.approach-cta,
+	.philosophy-cta,
+	.ai-cta,
+	.ams-cta,
+	.erp-cta { min-height: 440px; }
+
+	.cta-panel__inner,
+	.cta-content,
+	.approach-cta-content,
+	.philosophy-cta-card,
+	.ai-cta-content,
+	.ams-cta-content,
+	.erp-cta-content {
+		width: 100%;
+		max-width: 100%;
+		padding-inline: 0;
+	}
+
+	.cta-panel h2,
+	.cta-content h2,
+	.approach-cta-content h2,
+	.philosophy-cta-card h2,
+	.ai-cta-content h2,
+	.ams-cta-content h2,
+	.erp-cta-content h2 {
+		font-size: clamp(32px, 10vw, 48px);
+		line-height: 1.06;
+	}
+
+	.footer-main { gap: 40px; padding-bottom: 48px; }
+	.footer-column { gap: 0; }
+	.footer-column h2 { margin-bottom: 12px; }
+	.footer-column a { min-height: 44px; display: flex; align-items: center; }
+	.footer-legal { gap: 0; }
+	.footer-legal a { min-height: 40px; display: flex; align-items: center; }
+
+	.legal-hero { min-height: 320px; }
+	.legal-content { padding: 56px 0; }
+	.legal-content h2:not(:first-of-type) { margin-top: 48px; }
+	.legal-contact-box,
+	.legal-callout { padding: 24px; }
+}
+
+@media (max-width: 380px) {
+	:root { --shell: calc(100vw - 24px); }
+	.home-page .container,
+	.approach-page .container,
+	.philosophy-page .container,
+	.ai-page .container,
+	.ams-page .container,
+	.erp-page .container,
+	.legal-page .container { width: calc(100% - 24px); }
+
+	.page-hero h1,
+	.hero h1,
+	.approach-hero h1,
+	.philosophy-hero h1,
+	.ai-hero h1,
+	.ams-hero h1,
+	.erp-hero h1 { font-size: clamp(38px, 12vw, 50px); }
+	.page-hero--careers h1 { font-size: clamp(52px, 17vw, 70px); }
+	.testimonial,
+	.quote-band__copy,
+	.media-split__content,
+	.framework__label,
+	.framework__visual { padding-inline: 20px; }
+}
+
 
 /* =========================================================
    ACCESSIBILITY PAGE STYLES

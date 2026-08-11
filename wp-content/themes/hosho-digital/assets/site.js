@@ -50,6 +50,35 @@
     link.addEventListener('click', () => setMenu(false));
   });
 
+  const desktopNavigation = window.matchMedia('(min-width: 981px)');
+  const handleNavigationBreakpoint = (event) => {
+    if (event.matches) setMenu(false);
+  };
+  if (desktopNavigation.addEventListener) {
+    desktopNavigation.addEventListener('change', handleNavigationBreakpoint);
+  } else {
+    desktopNavigation.addListener(handleNavigationBreakpoint);
+  }
+
+  if (menu) {
+    const navigation = document.querySelector('.primary-navigation');
+    const focusableSelector = 'a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+    document.addEventListener('keydown', (event) => {
+      if (event.key !== 'Tab' || !body.classList.contains('nav-open') || !navigation) return;
+      const focusable = [menu, ...navigation.querySelectorAll(focusableSelector)].filter((item) => item.offsetParent !== null);
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    });
+  }
+
   const groupDefinitions = [
     ['.editorial-grid', ':scope > *'],
     ['.stat-grid', ':scope > *'],

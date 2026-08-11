@@ -73,8 +73,14 @@ function get_theme_file_uri($path = '') { return '/wp-content/themes/hosho-digit
 function get_theme_file_path($path = '') { return HOSHO_THEME_ROOT . '/' . ltrim($path, '/'); }
 function get_stylesheet_uri() { return get_theme_file_uri('style.css'); }
 
-function wp_enqueue_style($handle, $source) { global $preview_styles; $preview_styles[$handle] = $source; }
-function wp_enqueue_script($handle, $source) { global $preview_scripts; $preview_scripts[$handle] = $source; }
+function wp_enqueue_style($handle, $source, $deps = array(), $version = null) {
+    global $preview_styles;
+    $preview_styles[$handle] = $version ? $source . '?ver=' . rawurlencode((string) $version) : $source;
+}
+function wp_enqueue_script($handle, $source, $deps = array(), $version = null, $in_footer = false) {
+    global $preview_scripts;
+    $preview_scripts[$handle] = $version ? $source . '?ver=' . rawurlencode((string) $version) : $source;
+}
 
 function is_page($pages) {
     $pages = (array)$pages;

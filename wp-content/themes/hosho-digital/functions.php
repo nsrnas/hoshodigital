@@ -26,8 +26,8 @@ function hosho_page_url( $slug ) {
 }
 function hosho_enqueue_assets() {
   wp_enqueue_style( 'hosho-fonts', 'https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap' );
-  wp_enqueue_style( 'hosho-theme', get_stylesheet_uri() );
-  wp_enqueue_script( 'hosho-theme', get_theme_file_uri( 'assets/site.js' ), array(), null, true );
+  wp_enqueue_style( 'hosho-theme', get_stylesheet_uri(), array(), (string) filemtime( get_theme_file_path( 'style.css' ) ) );
+  wp_enqueue_script( 'hosho-theme', get_theme_file_uri( 'assets/site.js' ), array(), (string) filemtime( get_theme_file_path( 'assets/site.js' ) ), true );
 }
 add_action( 'wp_enqueue_scripts', 'hosho_enqueue_assets' );
 function hosho_body_classes( $classes ) { $classes[] = 'hosho-remade'; $classes[] = 'page-' . hosho_current_page(); return $classes; }
