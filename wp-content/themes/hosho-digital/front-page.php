@@ -318,33 +318,7 @@ get_header();
 	STEVE JOBS QUOTE
 	========================================================= -->
 
-	<section class="quote-section">
-		<div class="container">
-			<div class="quote-content">
-				<div class="quote-left">
-					<div class="quote-mark">
-						"
-					</div>
-					<h2>
-						Innovation is the
-						ability to see
-						change as an
-						opportunity, not a
-						threat.
-					</h2>
-					<div class="quote-author">
-						Steve Jobs
-						<span>
-							Co-founder, chairman, and CEO of Apple Inc
-						</span>
-					</div>
-				</div>
-				<div class="quote-right">
-					<img src="<?php echo esc_url( hosho_asset_url('homepage/steve-jobs.png' ) ); ?>" alt="Steve Jobs portrait">
-				</div>
-			</div>
-		</div>
-	</section>
+	<?php hosho_render_quote( 'Innovation is the ability to see change as an opportunity, not a threat.', 'Steve Jobs', 'homepage/steve-jobs.png' ); ?>
 
 	<!-- ==========================================
 	RAPID TO BE SPOKE
