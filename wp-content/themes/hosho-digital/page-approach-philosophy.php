@@ -119,14 +119,9 @@ $hosho_phases = array(
 			<img src="<?php echo esc_url( hosho_asset_url('approach/philosophy/hero.jpg' ) ); ?>" alt="Architectural steel structure, representing the Enterprise AI Delivery Philosophy">
 		</div>
 		<div class="philosophy-hero-overlay"></div>
-		<div class="container">
-			<div class="philosophy-hero-content">
+		<div class="container motion">
+			<div class="philosophy-hero-content motion">
 				<h1>Your Success.<br>Our Guarantee.</h1>
-				<p>
-					The Enterprise AI Delivery Philosophy designed to
-					eliminate risk and bridge the gap between vision and
-					sustained commercial value.
-				</p>
 				<div class="philosophy-hero-actions">
 					<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="btn-red">Schedule an Enterprise Audit</a>
 					<a href="#" class="btn-outline">Watch the 2-Min Philosophy Breakdown</a>
@@ -140,14 +135,14 @@ $hosho_phases = array(
 	========================================================= -->
 
 	<section class="fail-section">
-		<div class="container">
+		<div class="container motion">
 			<h2>Why 80% of Enterprise AI Fails&mdash;And How We Fix It.</h2>
 			<p>
 				The gap between pilot and production is where value evaporates. We identify and neutralize the failure vectors
 				inherent in standard transformation models.
 			</p>
 
-			<div class="fail-grid">
+			<div class="fail-grid motion">
 				<div class="fail-card">
 					<div class="icon">
 						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
@@ -180,7 +175,7 @@ $hosho_phases = array(
 	========================================================= -->
 
 	<section class="gap-section">
-		<div class="container">
+		<div class="container motion">
 			<h2>The corporate execution gap, and<br>the managed-risk alternative</h2>
 			<p>
 				Four out of five enterprise AI initiatives never yield a clear return. We treat AI as a
@@ -230,7 +225,7 @@ $hosho_phases = array(
 	========================================================= -->
 
 	<section class="framework-section">
-		<div class="container">
+		<div class="container motion">
 			<div class="framework-header">
 				<span class="small-title">Delivery Architecture</span>
 				<h2>The 8-Stage Delivery Framework</h2>
@@ -249,7 +244,7 @@ $hosho_phases = array(
 				</div>
 
 				<!-- Accordion content -->
-				<div class="framework-content">
+				<div class="framework-content motion">
 					<?php foreach ( $hosho_phases as $index => $phase ) : ?>
 						<div class="phase-panel<?php echo 0 === $index ? ' is-open' : ''; ?>" data-phase="<?php echo esc_attr( $phase['id'] ); ?>">
 							<div class="phase-panel-header" data-phase="<?php echo esc_attr( $phase['id'] ); ?>">
@@ -261,7 +256,7 @@ $hosho_phases = array(
 							</div>
 
 							<div class="phase-panel-body">
-								<div class="stage-grid">
+								<div class="stage-grid motion">
 									<?php foreach ( $phase['stages'] as $stage ) : ?>
 										<div class="stage-card">
 											<div class="stage-num"><?php echo esc_html( $stage['num'] ); ?></div>
@@ -301,11 +296,7 @@ $hosho_phases = array(
 			<h2>Built for Cross-Industry Resilience</h2>
 			<div class="resilience-divider"></div>
 
-			<div class="resilience-image">
-				<img src="<?php echo esc_url( hosho_asset_url('approach/philosophy/built.jpg' ) ); ?>" alt="Abstract network of connected nodes, representing cross-industry resilience">
-			</div>
-
-			<div class="resilience-grid">
+			<div class="resilience-grid motion">
 				<div class="resilience-item">
 					<div class="icon">
 						<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 9h1"/><path d="M14 9h1"/><path d="M9 13h1"/><path d="M14 13h1"/><path d="M9 21v-4h6v4"/></svg>
@@ -343,7 +334,7 @@ $hosho_phases = array(
 		</div>
 		<div class="philosophy-cta-overlay"></div>
 
-		<div class="container">
+		<div class="container motion">
 			<div class="philosophy-cta-card">
 				<div class="icon">
 					<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>

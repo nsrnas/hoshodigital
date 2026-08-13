@@ -84,7 +84,15 @@
     ['.stat-grid', ':scope > *'],
     ['.process', ':scope > *'],
     ['.logo-row', ':scope > *'],
-    ['.framework-stack', ':scope > *']
+    ['.framework-stack', ':scope > *'],
+    // Homepage-specific groups
+    ['.pillars-grid', ':scope > *'],
+    ['.services-grid', ':scope > *'],
+    ['.rapid-grid', ':scope > *'],
+    ['.budget-grid', ':scope > *'],
+    ['.digital-core-process', ':scope > *'],
+    ['.compare-flow', ':scope > *'],
+    ['.partner-category-section', ':scope > *']
   ];
 
   const motionGroups = [];
@@ -184,4 +192,65 @@
     show(0);
     start();
   });
+
+  // ── Homepage hero entrance ──────────────────────────────────────────────
+  const homeHero = document.querySelector('.home-page .hero');
+  if (homeHero) {
+    const heroImg = homeHero.querySelector('.hero-image img');
+    const heroContent = homeHero.querySelector('.hero-content');
+    if (heroImg && !reducedMotion) {
+      heroImg.style.transform = 'scale(1.06)';
+      heroImg.style.transition = 'transform 1.6s cubic-bezier(.22,1,.36,1)';
+      window.requestAnimationFrame(() => {
+        window.requestAnimationFrame(() => { heroImg.style.transform = 'scale(1.01)'; });
+      });
+    }
+    if (heroContent && !reducedMotion) {
+      const heroChildren = heroContent.querySelectorAll('h1, p, .hero-buttons');
+      heroChildren.forEach((el, i) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(28px)';
+        el.style.transition = `opacity .75s var(--ease), transform .75s var(--ease)`;
+        el.style.transitionDelay = `${0.1 + i * 0.12}s`;
+      });
+      window.requestAnimationFrame(() => {
+        window.requestAnimationFrame(() => {
+          heroChildren.forEach((el) => { el.style.opacity = '1'; el.style.transform = 'none'; });
+        });
+      });
+    }
+  }
+
+  // ── Solutions Growth counter animation ──────────────────────────────────
+  if (!reducedMotion && 'IntersectionObserver' in window) {
+    const growthBoxes = document.querySelectorAll('.growth-box h3');
+    if (growthBoxes.length) {
+      const animateCount = (el) => {
+        const text = el.textContent.trim();
+        const match = text.match(/^(\d+)(\+?.*)/);
+        if (!match) return;
+        const end = parseInt(match[1], 10);
+        const suffix = match[2];
+        const duration = 1400;
+        const start = performance.now();
+        const tick = (now) => {
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.round(eased * end) + suffix;
+          if (progress < 1) window.requestAnimationFrame(tick);
+        };
+        window.requestAnimationFrame(tick);
+      };
+      const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          animateCount(entry.target);
+          counterObserver.unobserve(entry.target);
+        });
+      }, { threshold: 0.5 });
+      growthBoxes.forEach((box) => counterObserver.observe(box));
+    }
+  }
+
 })();
+

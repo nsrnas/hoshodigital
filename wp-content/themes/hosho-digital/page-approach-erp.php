@@ -18,14 +18,9 @@ get_header();
 			<img src="<?php echo esc_url( hosho_asset_url('approach/erp/hero.jpeg' ) ); ?>" alt="Industrial gears over a mountain landscape, representing untapped ERP efficiency">
 		</div>
 		<div class="erp-hero-overlay"></div>
-		<div class="container">
-			<div class="erp-hero-content">
+		<div class="container motion">
+			<div class="erp-hero-content motion">
 				<h1>You're Using 40% Less Than What You're Paying For.</h1>
-				<p>
-					Most Business Central deployments stall after go-live &mdash; configured
-					once, then never revisited as the business changes. We close
-					that gap.
-				</p>
 			</div>
 		</div>
 	</section>
@@ -35,7 +30,7 @@ get_header();
 	========================================================= -->
 
 	<section class="opt-gap-section">
-		<div class="container">
+		<div class="container motion">
 			<span class="small-title">The Optimization Gap</span>
 			<h2>Is Your Business Central Delivering Everything It Should?</h2>
 
@@ -88,7 +83,7 @@ get_header();
 	========================================================= -->
 
 	<section class="help-section">
-		<div class="container">
+		<div class="container motion">
 			<h2>We Help You Get the Most from Your <span class="highlight">ERP</span></h2>
 			<p>
 				A successful ERP implementation isn&rsquo;t just about software. It&rsquo;s about aligning your
@@ -125,7 +120,7 @@ get_header();
 	========================================================= -->
 
 	<section class="services-section">
-		<div class="container">
+		<div class="container motion">
 			<h2>Strategic Intervention Services</h2>
 			<p>Targeted consulting to bridge the gap between technical availability and business performance.</p>
 
@@ -177,31 +172,15 @@ get_header();
 	QUOTE
 	========================================================= -->
 
-	<section class="erp-quote">
-		<div class="erp-quote-photo">
-			<img src="<?php echo esc_url( hosho_asset_url('approach/erp/charles-darwin.png' ) ); ?>" alt="Charles Darwin portrait">
-		</div>
-		<div class="container">
-			<div class="erp-quote-inner">
-				<div class="quote-mark">"</div>
-				<h2>
-					"It's not the strongest or the most
-					intelligent who survive, but those
-					most adaptable to change."
-				</h2>
-				<div class="quote-author">Charles Darwin</div>
-				<div class="quote-role">Naturalist, geologist, and biologist</div>
-			</div>
-		</div>
-	</section>
+	<?php hosho_render_quote( "It's not the strongest or the most intelligent who survive, but those most adaptable to change.", 'Charles Darwin', 'approach/erp/charles-darwin.png' ); ?>
 
 	<!-- =========================================================
 	WHY HOSHO DIGITAL
 	========================================================= -->
 
 	<section class="why-hosho-section">
-		<div class="container">
-			<div class="why-hosho-grid">
+		<div class="container motion">
+			<div class="why-hosho-grid motion">
 				<div class="why-hosho-card">
 					<h2>Why HOSHŌ Digital</h2>
 					<p>
@@ -256,7 +235,7 @@ get_header();
 	========================================================= -->
 
 	<section class="success-section">
-		<div class="container">
+		<div class="container motion">
 			<h2>How We Deliver Success</h2>
 
 			<div class="success-grid">
@@ -311,7 +290,7 @@ get_header();
 	========================================================= -->
 
 	<section class="outcome-section">
-		<div class="container">
+		<div class="container motion">
 			<div class="outcome-header">
 				<h2>The Optimized Outcome</h2>
 				<p>Precision-engineered results for organizations that demand more from their technology investments.</p>
@@ -358,7 +337,7 @@ get_header();
 	========================================================= -->
 
 	<section class="philosophy-strip">
-		<div class="container">
+		<div class="container motion">
 			<span class="small-title" style="text-align:center;">Our Philosophy</span>
 			<h2>ERP Is a Journey, Not a One-Time Project.</h2>
 			<p>
@@ -385,8 +364,8 @@ get_header();
 			<img src="<?php echo esc_url( hosho_asset_url('approach/erp/cta.jpg' ) ); ?>" alt="City skyline at dusk, representing the enterprise landscape">
 		</div>
 		<div class="erp-cta-overlay"></div>
-		<div class="container">
-			<div class="erp-cta-content">
+		<div class="container motion">
+			<div class="erp-cta-content motion">
 				<h2>
 					Already Using Business Central?<br>
 					Let's Unlock Its Full Potential Together.

@@ -1035,7 +1035,7 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 		}
 
 		/*==================================================
-		FROM STRATEGY TO CONTINUOUS VALUE (SERVICES)
+			FROM STRATEGY TO CONTINUOUS VALUE (SERVICES)
 		==================================================*/
 
 		.services-section {
@@ -1057,7 +1057,7 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			font-size: 17px;
 			line-height: 1.8;
 			color: #2c3644;
-			margin-bottom: 60px;
+			margin-bottom: 45px;
 		}
 
 		.strategy-desc strong {
@@ -1065,91 +1065,146 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 		}
 
 		.services-grid {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			gap: 30px;
+			display: grid !important;
+			grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+			gap: 24px !important;
+			width: 100% !important;
+			max-width: none !important;
 			margin-bottom: 60px;
+			align-items: stretch;
 		}
-
+		
 		.service-card {
-			background: white;
-			padding: 40px 36px;
-			border-top: 4px solid var(--red);
-			border: 1px solid var(--line);
-			border-top: 4px solid var(--red);
-			box-shadow: 0 15px 35px rgba(0, 0, 0, .05);
+			width: auto !important;
+			max-width: none !important;
+			min-width: 0 !important;
+			box-sizing: border-box;
+
+			display: flex;
+			flex-direction: column;
+
+			background: #fff;
+			padding: 25px 28px 22px;
+
+			border: 1px solid #e2e2e2;
+			border-top: 2px solid var(--red);
+
+			box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
 		}
 
-		.service-card.consulting {
-			border-top-color: #6d84a6;
-		}
-
-		.service-card.engineering {
-			border-top-color: var(--navy);
-		}
+		.service-card.advisory { border-top-color: var(--red);}
+		.service-card.consulting { border-top-color: #6d84a6;}
+		.service-card.engineering { border-top-color: var(--navy);}
 
 		.service-card-head {
 			display: flex;
 			align-items: center;
-			gap: 14px;
-			margin-bottom: 6px;
+			gap: 10px;
+			margin-bottom: 5px;
 		}
 
 		.service-icon {
-			font-size: 26px;
+			width: 22px;
+			min-width: 22px;
+			font-size: 20px;
+			line-height: 1;
 		}
 
 		.service-card h3 {
-			font-size: 22px;
+			margin: 0;
+			font-size: 16px;
+			line-height: 1.3;
 			font-weight: 700;
 			color: var(--navy);
 		}
 
 		.service-category {
-			font-size: 11px;
+			font-size: 8px;
+			line-height: 1.2;
 			font-weight: 800;
-			letter-spacing: 1px;
+			letter-spacing: .8px;
 			text-transform: uppercase;
 			color: var(--gray);
-			margin-bottom: 18px;
+			margin-bottom: 16px;
 		}
 
+
 		.service-card p.service-desc {
-			line-height: 1.7;
+			margin: 0 0 18px;
+			font-size: 11px;
+			line-height: 1.55;
 			color: #4a5561;
-			font-size: 15px;
-			margin-bottom: 22px;
 		}
 
 		.service-divider {
 			display: block;
+			width: 100%;
 			height: 1px;
-			background: var(--line);
-			margin-bottom: 20px;
+			background: #d9d9d9;
+			margin-top: auto;
+			margin-bottom: 14px;
 		}
 
 		.capabilities-label {
-			font-size: 11px;
-			font-weight: 800;
-			letter-spacing: 1px;
-			text-transform: uppercase;
-			color: var(--gray);
-			margin-bottom: 12px;
+			margin-bottom: 8px;
+			font-size: 9px;
+			font-weight: 600;
+			color: #555;
+			text-transform: none;
 		}
 
 		.capability-tags {
 			display: flex;
-			flex-wrap: wrap;
-			gap: 10px;
+			flex-wrap: nowrap;
+			gap: 5px;
+			width: 100%;
+			overflow: hidden;
+			scrollbar-width: none;
+			-ms-overflow-style: none;
 		}
 
+		.capability-tags::-webkit-scrollbar { display: none;	}
+
 		.capability-tag {
+			flex: 0 0 auto;
+			white-space: nowrap;
 			border: 1px solid #dfe3e8;
-			border-radius: 4px;
-			padding: 6px 12px;
-			font-size: 13px;
+			border-radius: 2px;
+			padding: 4px 7px;
+			font-size: 8px;
+			line-height: 1.2;
 			font-weight: 600;
 			color: var(--navy);
+			background: #fff;
+		}
+
+
+		/* =========================
+		RESPONSIVE
+		========================= */
+
+		@media (max-width: 900px) {
+			.services-grid {
+				grid-template-columns: repeat(3, minmax(0, 1fr));
+				gap: 8px;
+			}
+
+			.service-card {
+				padding: 20px 18px;
+			}
+
+			.service-card h3 {
+				font-size: 14px;
+			}
+
+			.service-card p.service-desc {
+				font-size: 10px;
+			}
+
+			.capability-tag {
+				font-size: 7px;
+				padding: 3px 5px;
+			}
 		}
 
 		/*==================================================
@@ -1733,7 +1788,7 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			overflow: hidden;
 		}
 
-		.approach-page section:not(.nodes-section) {
+		.approach-page section:not(.nodes-section):not(.quote-band) {
 			display: block;
 			width: 100%;
 			float: none;
@@ -1807,8 +1862,8 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			bottom: 0;
 			left: 0;
 			background:
-				radial-gradient(circle at 50% 0%, rgba(220, 40, 35, .45), transparent 55%),
-				linear-gradient(90deg, rgba(58, 6, 8, .92) 0%, rgba(90, 12, 15, .78) 45%, rgba(42, 5, 7, .55) 100%);
+				radial-gradient(circle at 50% 0%, rgba(14, 66, 120, .45), transparent 55%),
+				linear-gradient(90deg, rgba(7, 21, 35, .92) 0%, rgba(14, 42, 71, .78) 45%, rgba(4, 12, 20, .55) 100%);
 		}
 
 		.approach-hero-content {
@@ -2045,6 +2100,7 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 		.philosophy-section {
 			padding: 90px 0 100px;
 			background: var(--mist);
+			
 		}
 
 		.philosophy-section h2 {
@@ -2858,7 +2914,7 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 
 		.resilience-section {
 			background: #fff;
-			padding: 90px 0;
+			padding: 90px 0 0;
 			text-align: center;
 		}
 
@@ -3063,7 +3119,7 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			overflow: hidden;
 		}
 
-		.ai-page section {
+		.ai-page section:not(.quote-band) {
 			display: block;
 			width: 100%;
 			float: none;
@@ -3810,7 +3866,7 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			overflow: hidden;
 		}
 
-		.ams-page section:not(.ams-quote) {
+		.ams-page section:not(.ams-quote):not(.quote-band) {
 			display: block;
 			width: 100%;
 			float: none;
@@ -4564,7 +4620,7 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			overflow: hidden;
 		}
 
-		.erp-page section {
+		.erp-page section:not(.quote-band) {
 			display: block;
 			width: 100%;
 			float: none;
@@ -6229,11 +6285,11 @@ canvas { max-width: 100%; }
 		}
 
 
-/* =========================================================
-   COOKIES POLICY PAGE STYLES
-   ========================================================= */
+		/* =========================================================
+		COOKIES POLICY PAGE STYLES
+		========================================================= */
 
-.legal-page {
+		.legal-page {
 			font-family: Inter, sans-serif;
 			color: var(--text);
 			background: var(--mist);
@@ -6343,3 +6399,103 @@ canvas { max-width: 100%; }
 			color: var(--red);
 			text-decoration: none;
 		}
+
+		/*==================================
+		SOLUTION GROWTH
+		==================================*/
+
+		.growth-full-bleed {
+			position: relative;
+			width: 100vw;
+			left: 50%;
+			margin-left: -50vw;
+		}
+
+		.growth-full-bleed:not(.growth-years-row) { height: 210px; }
+
+		.growth-shape {
+			position: absolute;
+			inset: 0;
+			z-index: 1;
+			background: #c51d23;
+			clip-path: polygon(
+				0% 57.143%,
+				calc(33.333% - 60px) 57.143%,
+				33.333% 28.571%,
+				calc(66.667% - 60px) 28.571%,
+				66.667% 0%,
+				100% 0%,
+				100% 100%,
+				0% 100%
+			);
+		}
+
+		.growth-label {
+			position: absolute;
+			z-index: 2;
+			width: 33.333%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding: 0 40px;
+			color: #fff;
+		}
+
+		.growth-label h3 { font-size: 26px;	font-weight: 800; margin: 0;}
+
+		.growth-label.l1 { left: 0;       top: 57.143%; bottom: 0; }
+		.growth-label.l2 { left: 33.333%; top: 28.571%; bottom: 0; }
+		.growth-label.l3 { left: 66.667%; top: 0;        bottom: 0; }
+
+		.growth-years-row { display: flex; margin-top: 18px;}
+
+		.growth-year {
+			flex: 1 1 0;
+			min-width: 0;
+			position: relative;
+			text-align: center;
+			font-size: 15px;
+			font-weight: 600;
+			color: var(--text);
+			padding: 0 20px 0;
+		}
+
+
+		.growth-riser {
+			position: absolute;
+			z-index: 2;
+			width: 84px;
+			height: 64px;
+			background: #111;
+
+			clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+		}
+
+		.growth-riser.r1 {	left: calc(33.333% - 84px); top: 28.571%; height: 28.572%;		}
+		.growth-riser.r2 { 	left: calc(66.667% - 84px);	top: 0%; height: 28.572%;}
+
+		.growth-box {
+			position: absolute;
+			z-index: 1;
+			bottom: 0;
+			background: #c51d23;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding: 0 40px;
+			color: #fff;
+		}
+
+		.growth-box h3 { font-size: 26px; font-weight: 800; margin: 0;}
+
+		.growth-box.b1 { left: 0;       width: 33.333%; top: 57.143%; }
+		.growth-box.b2 { left: 33.333%; width: 33.333%; top: 28.571%; }
+		.growth-box.b3 { left: 66.667%; width: 33.333%; top: 0; }
+
+		.growth-timeline-wrap { position: relative; }
+
+		.growth-divider { position: absolute; width: 2px; background: #F5B3B1; z-index: 4; pointer-events: none; }
+		.growth-divider.d1 { left: calc(50% - 50vw + 33.333vw); top: 22%; bottom: 0; }
+		.growth-divider.d2 { left: calc(50% - 50vw + 66.667vw); top: 0; bottom: 0; }
