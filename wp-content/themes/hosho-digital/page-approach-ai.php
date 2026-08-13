@@ -18,18 +18,13 @@ get_header();
 			<img src="<?php echo esc_url( hosho_asset_url('approach/ai/hero.jpg' ) ); ?>" alt="Abstract red digital circuit texture">
 		</div>
 		<div class="ai-hero-overlay"></div>
-		<div class="container">
-			<div class="ai-hero-content">
+		<div class="container motion">
+			<div class="ai-hero-content motion">
 				<h1>
 					Architecting the<br>
 					Autonomous Enterprise:<br>
 					<span class="highlight">The AI Agent Flow</span>
 				</h1>
-				<p>
-					How a request moves from your team's screen down to raw
-					enterprise data, and how an autonomous agent acts on it —
-					layer by layer, with a human able to step in at any point.
-				</p>
 			</div>
 		</div>
 	</section>
@@ -39,7 +34,7 @@ get_header();
 	========================================================= -->
 
 	<section class="ai-intro-section">
-		<div class="container">
+		<div class="container motion">
 			<div class="ai-intro-header">
 				<h2><span class="highlight">Artificial Intelligence</span> <span class="dark">Innovations</span></h2>
 			</div>
@@ -75,13 +70,13 @@ get_header();
 	========================================================= -->
 
 	<section class="ai-principles">
-		<div class="container">
+		<div class="container motion">
 			<div class="principles-header">
 				<h2>Our Principles</h2>
 				<p>What every layer is held to</p>
 			</div>
 
-			<div class="principles-grid">
+			<div class="principles-grid motion">
 				<div class="principle-card">
 					<div class="cap-icon">🔒</div>
 					<h4>Secure</h4>
@@ -131,7 +126,7 @@ get_header();
 	========================================================= -->
 
 	<section class="ai-flow-section">
-		<div class="container">
+		<div class="container motion">
 			<div class="flow-header">
 				<h2>The AI Agent Flow</h2>
 				<p>
@@ -275,12 +270,12 @@ get_header();
 	========================================================= -->
 
 	<section class="governance-section">
-		<div class="container">
+		<div class="container motion">
 			<div class="governance-header">
 				<h2>Governance is <span class="highlight">Built-In.</span></h2>
 			</div>
 
-			<div class="governance-grid">
+			<div class="governance-grid motion">
 				<div class="gov-item">
 					<div class="gov-icon">🛡️</div>
 					<div class="gov-text">
@@ -324,36 +319,19 @@ get_header();
 	QUOTE
 	========================================================= -->
 
-	<section class="ai-quote">
-		<div class="container">
-			<div class="ai-quote-content">
-				<div class="ai-quote-photo">
-					<img src="<?php echo esc_url( hosho_asset_url('approach/ai/nadella.png' ) ); ?>" alt="Satya Nadella portrait">
-				</div>
-				<div class="ai-quote-text">
-					<div class="quote-mark">"</div>
-					<h2>
-						"The future belongs to organizations that combine
-						human expertise with artificial intelligence."
-					</h2>
-					<div class="quote-author">Satya Nadella</div>
-					<div class="quote-role">CEO of Microsoft</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	<?php hosho_render_quote( 'The future belongs to organizations that combine human expertise with artificial intelligence.', 'Satya Nadella', 'approach/ai/nadella.png' ); ?>
 
 	<!-- =========================================================
 	DESIGNED FOR OUTCOMES
 	========================================================= -->
 
 	<section class="outcomes-section">
-		<div class="container">
+		<div class="container motion">
 			<div class="outcomes-header">
 				<h2>Designed for <span class="highlight">Outcomes</span></h2>
 			</div>
 
-			<div class="outcomes-grid">
+			<div class="outcomes-grid motion">
 				<div class="outcome-card">
 					<div class="out-icon">🎯</div>
 					<div>
@@ -399,7 +377,7 @@ get_header();
 	========================================================= -->
 
 	<section class="logos-section">
-		<div class="container">
+		<div class="container motion">
 			<p class="logos-title">Powered by Leading AI Platforms</p>
 			<div class="logos-track-wrap">
 				<div class="logos-track">
@@ -434,8 +412,8 @@ get_header();
 			<img src="<?php echo esc_url( hosho_asset_url('approach/ai/cta.jpg' ) ); ?>" alt="Team planning an enterprise AI strategy">
 		</div>
 		<div class="ai-cta-overlay"></div>
-		<div class="container">
-			<div class="ai-cta-content">
+		<div class="container motion">
+			<div class="ai-cta-content motion">
 				<h2>Artificial Intelligence Should Strengthen Your Business, Not Complicate It</h2>
 				<p>
 					Stop compromising with a system that feels like it's

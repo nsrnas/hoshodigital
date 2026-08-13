@@ -18,19 +18,13 @@ get_header();
 			<img src="<?php echo esc_url( hosho_asset_url('approach/ams/hero.jpg' ) ); ?>" alt="Abstract dark red architectural texture">
 		</div>
 		<div class="ams-hero-overlay"></div>
-		<div class="container">
-			<div class="ams-hero-content">
+		<div class="container motion">
+			<div class="ams-hero-content motion">
 				<h1>
 					Our AMS Framework Is<br>
 					Designed for the Modern<br>
 					Enterprise
 				</h1>
-				<p>
-					AMS is the partnership that runs after implementation:
-					monitoring, maintaining, and improving the applications
-					and AI systems we build together, for as long as you need
-					us to.
-				</p>
 			</div>
 		</div>
 	</section>
@@ -40,7 +34,7 @@ get_header();
 	========================================================= -->
 
 	<section class="ams-intro">
-		<div class="container">
+		<div class="container motion">
 			<h2>Application <span class="highlight">Management Services</span></h2>
 		</div>
 	</section>
@@ -50,7 +44,7 @@ get_header();
 	========================================================= -->
 
 	<section class="ams-statement">
-		<div class="container">
+		<div class="container motion">
 			<h3>
 				Applications aren't static anymore, so support can't be either.
 			</h3>
@@ -68,7 +62,7 @@ get_header();
 	========================================================= -->
 
 	<section class="continuity-section">
-		<div class="container">
+		<div class="container motion">
 			<div class="continuity-grid">
 				<div class="continuity-left">
 					<span class="small-title">The Continuity Framework</span>
@@ -122,7 +116,7 @@ get_header();
 	========================================================= -->
 
 	<section class="stay-section">
-		<div class="container">
+		<div class="container motion">
 			<h2>We Stay With You Beyond Go-Live</h2>
 			<p>Our roadmap doesn't end at deployment. We engineer for the infinite horizon.</p>
 
@@ -166,7 +160,7 @@ get_header();
 	========================================================= -->
 
 	<section class="engine-section">
-		<div class="container">
+		<div class="container motion">
 			<div class="engine-header">
 				<h2>The AMS Engine</h2>
 				<p>
@@ -259,30 +253,14 @@ get_header();
 	QUOTE
 	========================================================= -->
 
-	<section class="ams-quote">
-		<div class="container">
-			<div class="ams-quote-content">
-				<div class="ams-quote-photo">
-					<img src="<?php echo esc_url( hosho_asset_url('approach/ams/drucker.png' ) ); ?>" alt="Peter Drucker portrait">
-				</div>
-				<div class="ams-quote-text">
-					<div class="quote-mark">"</div>
-					<h2>
-						"The best way to predict the future is to create it."
-					</h2>
-					<div class="quote-author">Peter Drucker</div>
-					<div class="quote-role">Management consultant, educator, and author</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	<?php hosho_render_quote( 'The best way to predict the future is to create it.', 'Peter Drucker', 'approach/ams/drucker.png' ); ?>
 
 	<!-- =========================================================
 	CORE COMPETENCIES
 	========================================================= -->
 
 	<section class="competencies-section">
-		<div class="container">
+		<div class="container motion">
 			<div class="competencies-header">
 				<span class="small-title">Service Portfolio</span>
 				<h2>Core Competencies</h2>
@@ -340,7 +318,7 @@ get_header();
 	========================================================= -->
 
 	<section class="advantage-section">
-		<div class="container">
+		<div class="container motion">
 			<div class="advantage-header">
 				<div>
 					<span class="small-title">The HOSHŌ Advantage</span>
@@ -408,8 +386,8 @@ get_header();
 			<img src="<?php echo esc_url( hosho_asset_url('approach/ams/cta.jpg' ) ); ?>" alt="Person planning on a project board">
 		</div>
 		<div class="ams-cta-overlay"></div>
-		<div class="container">
-			<div class="ams-cta-content">
+		<div class="container motion">
+			<div class="ams-cta-content motion">
 				<h2>Build Once. Improve Continuously.</h2>
 				<p>Start your long-term partnership with our dedicated AMS team.</p>
 				<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="btn-red">
