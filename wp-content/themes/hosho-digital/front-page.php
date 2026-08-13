@@ -31,7 +31,7 @@ get_header();
 				</p>
 				<div class="hero-buttons">
 					<a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn-red">
-						Contact Us →
+						Contact Us
 					</a>
 					<a href="#approach" class="btn-outline">
 						Explore Our Approach
@@ -48,7 +48,7 @@ get_header();
 	<section class="success-guarantee">
 		<div class="container">
 
-			<div class="success-card">
+			<div class="success-card motion">
 				<h2>
 					Your Success<br>
 					Our Guarantee
@@ -57,7 +57,7 @@ get_header();
 			</div>
 
 			<div class="guarantee-body">
-				<div class="guarantee-left">
+				<div class="guarantee-left motion">
 					<h3>
 						Our<br>
 						Guarantee
@@ -103,7 +103,7 @@ get_header();
 
 	<section class="digital-core" id="approach">
 		<div class="container">
-			<div class="digital-core-heading">
+			<div class="digital-core-heading motion">
 				<span class="small-title">
 					Our Approach
 				</span>
@@ -149,7 +149,7 @@ get_header();
 				</div>
 			</div>
 
-			<div style="text-align:center;">
+			<div class="motion" style="text-align:center;">
 				<a href="<?php echo esc_url(home_url('/approach')); ?>" class="btn-outline-dark">
 					Find Out More
 				</a>
@@ -163,7 +163,7 @@ get_header();
 
 	<section class="cognitive-shift">
 		<div class="container">
-			<div class="cognitive-header">
+			<div class="cognitive-header motion">
 				<span class="small-title">
 					The Cognitive Shift
 				</span>
@@ -211,15 +211,17 @@ get_header();
 
 	<section class="services-section">
 		<div class="container">
-			<h2 class="strategy-heading">
-				From Strategy to Continuous Value
-			</h2>
-			<p class="strategy-desc">
-				Unlike traditional software projects that end at delivery,
-				Solution as a Service combines <strong>advisory</strong>,
-				<strong>consulting</strong>, and <strong>engineering</strong>
-				into one continuous partnership that evolves with your business.
-			</p>
+			<div class="motion">
+				<h2 class="strategy-heading">
+					From Strategy to Continuous Value
+				</h2>
+				<p class="strategy-desc">
+					Unlike traditional software projects that end at delivery,
+					Solution as a Service combines <strong>advisory</strong>,
+					<strong>consulting</strong>, and <strong>engineering</strong>
+					into one continuous partnership that evolves with your business.
+				</p>
+			</div>
 
 			<div class="services-grid">
 				<!-- CARD 1 -->
@@ -285,7 +287,7 @@ get_header();
 				</div>
 			</div>
 
-			<div class="business-value-box">
+			<div class="business-value-box motion">
 				<span class="small-title white">
 					Convergence of Disciplines
 				</span>
@@ -326,7 +328,7 @@ get_header();
 
 	<section class="rapid-spectrum">
 		<div class="container">
-			<div class="rapid-header">
+			<div class="rapid-header motion">
 				<span class="small-title">
 					Rapid to Be Spoke
 				</span>
@@ -337,7 +339,7 @@ get_header();
 			</div>
 
 			<!-- Process -->
-			<div class="rapid-process">
+			<div class="rapid-process motion">
 				<div class="process-item">
 					Data
 				</div>
@@ -411,7 +413,7 @@ get_header();
 
 	<section class="ai-budget">
 		<div class="container">
-			<div class="budget-header">
+			<div class="budget-header motion">
 				<h2>
 					Treat your AI spend like a budget, not a blank check
 				</h2>
@@ -468,37 +470,34 @@ get_header();
 
 	<section class="solution-growth">
 		<div class="container">
-			<div class="growth-header">
+			<div class="growth-header motion">
 				<h2>SOLUTIONS GROWTH</h2>
 				<p>
 					"Solutions" = distinct systems we've taken from design to
 					live production
 				</p>
 			</div>
-
-			<div class="growth-timeline">
-				<div class="growth-step s1">
-					<div class="growth-box">
-						<h3>8 Solutions</h3>
-					</div>
-					<div class="growth-year">2023 — 2024</div>
-				</div>
-
-				<div class="growth-step s2">
-					<div class="growth-box">
-						<h3>15 Solutions</h3>
-					</div>
-					<div class="growth-year">2025</div>
-				</div>
-
-				<div class="growth-step s3">
-					<div class="growth-box">
-						<h3>30+ Solutions</h3>
-					</div>
-					<div class="growth-year">2026</div>
-				</div>
-			</div>
 		</div>
+
+		<div class="growth-timeline-wrap">
+			<div class="growth-full-bleed">
+				<div class="growth-riser r1"></div>
+				<div class="growth-riser r2"></div>
+				<div class="growth-box b1"><h3>8 Solutions</h3></div>
+				<div class="growth-box b2"><h3>15 Solutions</h3></div>
+				<div class="growth-box b3"><h3>30+ Solutions</h3></div>
+			</div>
+
+			<div class="growth-full-bleed growth-years-row">
+				<div class="growth-year">2023 — 2024</div>
+				<div class="growth-year">2025</div>
+				<div class="growth-year">2026</div>
+			</div>
+
+			<div class="growth-divider d1"></div>
+			<div class="growth-divider d2"></div>
+		</div>
+
 	</section>
 
 	<!-- ==========================================
@@ -554,7 +553,7 @@ get_header();
 	<section class="final-cta">
 		<div class="cta-overlay"></div>
 		<div class="container">
-			<div class="cta-content">
+			<div class="cta-content motion">
 				<span class="small-title white">
 					Redefine Your Architecture
 				</span>
@@ -567,8 +566,8 @@ get_header();
 					most suitable path—from rapid deployment to fully bespoke
 					enterprise AI platforms.
 				</p>
-				<a href="#" class="btn-red">
-					Consult Our Experts →
+				<a href="page-consult-our-experts" class="btn-red">
+					Consult Our Experts
 				</a>
 			</div>
 		</div>
