@@ -1769,7 +1769,7 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			overflow: hidden;
 		}
 
-		.approach-page section:not(.nodes-section) {
+		.approach-page section:not(.nodes-section):not(.quote-band) {
 			display: block;
 			width: 100%;
 			float: none;
@@ -1843,8 +1843,8 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			bottom: 0;
 			left: 0;
 			background:
-				radial-gradient(circle at 50% 0%, rgba(220, 40, 35, .45), transparent 55%),
-				linear-gradient(90deg, rgba(58, 6, 8, .92) 0%, rgba(90, 12, 15, .78) 45%, rgba(42, 5, 7, .55) 100%);
+				radial-gradient(circle at 50% 0%, rgba(14, 66, 120, .45), transparent 55%),
+				linear-gradient(90deg, rgba(7, 21, 35, .92) 0%, rgba(14, 42, 71, .78) 45%, rgba(4, 12, 20, .55) 100%);
 		}
 
 		.approach-hero-content {
@@ -3100,7 +3100,7 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			overflow: hidden;
 		}
 
-		.ai-page section {
+		.ai-page section:not(.quote-band) {
 			display: block;
 			width: 100%;
 			float: none;
@@ -3847,7 +3847,7 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			overflow: hidden;
 		}
 
-		.ams-page section:not(.ams-quote) {
+		.ams-page section:not(.ams-quote):not(.quote-band) {
 			display: block;
 			width: 100%;
 			float: none;
@@ -4601,7 +4601,7 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			overflow: hidden;
 		}
 
-		.erp-page section {
+		.erp-page section:not(.quote-band) {
 			display: block;
 			width: 100%;
 			float: none;

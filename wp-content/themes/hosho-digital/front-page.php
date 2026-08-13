@@ -24,11 +24,6 @@ get_header();
 					Or Get Left<br>
 					Behind.
 				</h1>
-				<p>
-					We rethink building and operating software in the AI era.
-					Transcend traditional consulting with a partner that builds
-					the digital core of tomorrow.
-				</p>
 				<div class="hero-buttons">
 					<a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn-red">
 						Contact Us

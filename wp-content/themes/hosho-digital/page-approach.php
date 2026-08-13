@@ -19,18 +19,12 @@ get_header();
 		</div>
 		<div class="approach-hero-overlay"></div>
 		<div class="container">
-			<div class="approach-hero-content">
+			<div class="approach-hero-content motion">
 				<h1>
 					We Don't Demolish<br>
 					What's Already<br>
 					Working.
 				</h1>
-				<p>
-					Most transformation projects fail because they try to
-					replace everything at once. We work with the systems you
-					already have and build the connective layer they're
-					missing.
-				</p>
 			</div>
 		</div>
 	</section>
@@ -40,7 +34,7 @@ get_header();
 	========================================================= -->
 
 	<section class="approach-intro">
-		<div class="container">
+		<div class="container motion">
 			<h2><span class="highlight">Our Approach</span>: The Intelligent Digital Core</h2>
 			<p>
 				The Digital Core is the data and workflow layer that connects
@@ -57,7 +51,7 @@ get_header();
 
 	<section class="architecture-scale">
 		<div class="container">
-			<div class="architecture-header">
+			<div class="architecture-header motion">
 				<span class="small-title">Architecture of Scale</span>
 				<h3>Strength in the Structure</h3>
 				<p>
@@ -67,7 +61,7 @@ get_header();
 				</p>
 			</div>
 
-			<div class="building-frame">
+			<div class="building-frame motion">
 				<div class="building-roof">The Roof: Measurable Outcomes</div>
 
 				<div class="building-layer">
@@ -107,7 +101,7 @@ get_header();
 	========================================================= -->
 
 	<section class="transformation-section">
-		<div class="container">
+		<div class="container motion">
 			<h2>
 				Transformation Begins With<br>
 				What You Already Have.
@@ -122,13 +116,19 @@ get_header();
 	</section>
 
 	<!-- =========================================================
+	QUOTE
+	========================================================= -->
+
+	<?php hosho_render_quote( 'Without continual growth and progress, such words as improvement, achievement, and success have no meaning.', 'Benjamin Franklin', 'approach/main/benjamin.png' ); ?>
+
+	<!-- =========================================================
 	PHILOSOPHY
 	========================================================= -->
 
 	<section class="philosophy-section">
-		<div class="container">
+		<div class="container motion" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
 			<h2>The HOSHŌ AI Delivery Philosophy</h2>
-			<p>
+			<p style="max-width: 800px; margin-bottom: 2rem;">
 				Every HOSHŌ engagement is anchored to our 8-stage delivery
 				philosophy—a rigorous framework designed to eliminate
 				strategic drift and guarantee measurable enterprise value.
@@ -142,7 +142,7 @@ get_header();
 	========================================================= -->
 
 	<section class="nodes-section">
-		<div class="nodes-left">
+		<div class="nodes-left motion">
 			<h2>The Seven<br>Nodes of Unity.</h2>
 			<p>
 				Every enterprise runs these seven functions somewhere, often
@@ -156,31 +156,10 @@ get_header();
 			</div>
 		</div>
 
-		<div class="nodes-right">
+		<div class="nodes-right motion">
 			<div class="nodes-diagram-image">
                 <img src="<?php echo esc_url( hosho_asset_url('approach/main/diagram.png' ) ); ?>" alt="The Seven Nodes of Unity diagram: Infrastructure, Data, Logic, Integration, Automation, AI, and Experience arranged around the Digital Core">
 			</div>
-		</div>
-	</section>
-
-	<!-- =========================================================
-	QUOTE
-	========================================================= -->
-
-	<section class="approach-quote">
-		<div class="container">
-			<div class="approach-quote-inner">
-				<div class="quote-mark">"</div>
-				<h2>
-					"Without continual growth and progress, such words as
-					improvement, achievement, and success have no meaning."
-				</h2>
-				<div class="quote-author">Benjamin Franklin</div>
-				<div class="quote-role">American polymath</div>
-			</div>
-		</div>
-		<div class="approach-quote-photo">
-            <img src="<?php echo esc_url( hosho_asset_url('approach/main/benjamin.png' ) ); ?>" alt="Benjamin Franklin portrait">
 		</div>
 	</section>
 
@@ -194,7 +173,7 @@ get_header();
 		</div>
 		<div class="approach-cta-overlay"></div>
 		<div class="container">
-			<div class="approach-cta-content">
+			<div class="approach-cta-content motion">
 				<span class="small-title">Partner With Us</span>
 				<h2>
 					Ready to Build Your<br>
