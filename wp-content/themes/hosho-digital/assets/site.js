@@ -132,6 +132,7 @@
     const track = carousel.querySelector('[data-track]');
     const slides = [...carousel.querySelectorAll('[data-slide]')];
     const current = carousel.querySelector('[data-current]');
+    const interval = Math.max(Number.parseInt(carousel.dataset.carouselInterval || '2000', 10) || 2000, 2000);
     const previous = carousel.querySelector('[data-prev]');
     const next = carousel.querySelector('[data-next]');
     let index = 0;
@@ -145,6 +146,7 @@
       index = (nextIndex + slides.length) % slides.length;
       track.style.transform = `translate3d(-${index * 100}%, 0, 0)`;
       if (current) current.textContent = String(index + 1).padStart(2, '0');
+      slides.forEach((slide, slideIndex) => slide.setAttribute('aria-hidden', slideIndex === index ? 'false' : 'true'));
     };
     const stop = () => {
       if (timer) window.clearInterval(timer);
@@ -153,7 +155,7 @@
     const start = () => {
       stop();
       if (reducedMotion || pausedByUser || !carouselVisible || document.hidden) return;
-      timer = window.setInterval(() => show(index + 1), 2000);
+      timer = window.setInterval(() => show(index + 1), interval);
     };
     const manualShow = (nextIndex) => {
       show(nextIndex);
@@ -179,6 +181,7 @@
       }, { threshold: 0.15 });
       carouselObserver.observe(carousel);
     }
+    show(0);
     start();
   });
 })();

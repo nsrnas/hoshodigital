@@ -88,7 +88,8 @@ button, input, select, textarea { font: inherit; }
 .page-hero--careers .page-hero__media::after { background: linear-gradient(90deg, rgba(0,0,0,.98) 0%, rgba(0,0,0,.88) 34%, rgba(0,0,0,.32) 63%, rgba(0,0,0,.06) 100%); }
 .page-hero--careers h1 { max-width: 690px; font-size: clamp(68px, 7.4vw, 112px); }
 .page-hero--careers h1 span { color: #f01f24; }
-.page-hero--sustainability .page-hero__media { background-position: 66% center; }
+.page-hero--sustainability .page-hero__media { background-position: 72% center; }
+.page-hero--sustainability .page-hero__media::after { background: linear-gradient(90deg, rgba(3,10,18,.98) 0%, rgba(7,24,43,.9) 35%, rgba(7,24,43,.42) 61%, rgba(116,6,10,.36) 100%); }
 .page-hero--press .page-hero__media { background-position: 62% center; }
 .page-hero--contact .page-hero__media { background-position: 60% center; }
 .page-hero--company .page-hero__media { background-position: 67% center; }
@@ -147,6 +148,19 @@ p { color: var(--muted); font-size: 16px; }
 .carousel-controls button:hover { background: var(--navy); color: white; transform: translateY(-2px); }
 .carousel-controls button:active { transform: scale(.96); }
 
+.company-values { background: #f5f7f8; overflow: hidden; }
+.company-values__intro { display: grid; gap: 28px; align-content: space-between; }
+.company-values__window { margin-top: 54px; overflow: hidden; background: var(--navy); }
+.company-values__track { display: flex; align-items: stretch; transition: transform 780ms var(--move-ease); will-change: transform; }
+.company-value { flex: 0 0 100%; min-width: 0; min-height: 600px; display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(420px, .92fr); background: var(--navy); color: white; }
+.company-value__visual { min-height: 600px; background-position: center; background-size: cover; filter: saturate(.72) contrast(1.04); }
+.company-value__copy { display: flex; flex-direction: column; justify-content: center; padding: clamp(52px, 6vw, 92px); background: linear-gradient(145deg, #0e2a47 0%, #07182b 72%); }
+.company-value__copy .feature__index { color: #ff6a65; }
+.company-value__copy h3 { margin: 20px 0 24px; color: white; font-size: clamp(38px, 4vw, 58px); letter-spacing: -.04em; }
+.company-value__copy > p { max-width: 620px; color: rgba(255,255,255,.78); font-size: 17px; line-height: 1.72; }
+.company-value__copy blockquote { max-width: 620px; margin: 46px 0 18px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,.2); color: white; font-size: clamp(22px, 2vw, 29px); font-weight: 500; letter-spacing: -.025em; line-height: 1.3; }
+.company-value__copy cite { color: #ff9a96; font-size: 11px; font-style: normal; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+
 .stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-block: 1px solid var(--line); }
 .stat { padding: 44px 36px; border-right: 1px solid var(--line); }
 .stat:last-child { border-right: 0; }
@@ -161,6 +175,11 @@ p { color: var(--muted); font-size: 16px; }
 .quote-band__mark { position: absolute; top: 28px; left: 32px; margin: 0; color: rgba(249,210,208,.6); font-family: Georgia, 'Times New Roman', serif; font-size: 128px; font-weight: 400; line-height: .72; }
 .quote-band blockquote { max-width: 638px; margin: 0 0 56px; color: white; font-size: clamp(26px, 2.5vw, 32px); font-weight: 600; letter-spacing: -.025em; line-height: 1.2; }
 .quote-band cite { color: white; font-style: normal; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.quote-band--standard .quote-band__portrait { display: flex; align-items: flex-end; justify-content: flex-end; }
+.quote-band--standard .quote-band__portrait img { width: auto; max-width: 100%; margin-left: auto; mix-blend-mode: normal; }
+.quote-band--lee { grid-template-columns: minmax(0, 68%) minmax(300px, 32%); }
+.quote-band--lee blockquote { max-width: 840px; margin-bottom: 38px; font-size: clamp(22px, 2vw, 29px); line-height: 1.28; }
+.quote-band--lee .quote-band__portrait img { max-width: 390px; }
 
 .logo-row { display: grid; grid-template-columns: repeat(4, 1fr); align-items: center; border-block: 1px solid var(--line); }
 .logo-row > div { min-height: 130px; display: grid; place-items: center; padding: 28px; border-right: 1px solid var(--line); }
@@ -5326,6 +5345,44 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			color: var(--red);
 			text-decoration: none;
 		}
+
+/* Sushil review: focused Company values and standard quote alignment. */
+body.hosho-remade .company-value__copy h3,
+body.hosho-remade .company-value__copy blockquote,
+body.hosho-remade .company-value__copy cite {
+	color: #fff !important;
+	-webkit-text-fill-color: #fff !important;
+}
+
+body.hosho-remade .company-value__copy > p {
+	color: rgba(255,255,255,.78) !important;
+	-webkit-text-fill-color: rgba(255,255,255,.78) !important;
+}
+
+@media (max-width: 980px) {
+	.company-value {
+		min-height: 0;
+		grid-template-columns: 1fr;
+	}
+
+	.company-value__visual { min-height: 430px; }
+	.company-value__copy { min-height: 500px; }
+	.quote-band--lee { grid-template-columns: 1fr; }
+	.quote-band--lee .quote-band__portrait img { max-width: 460px; }
+}
+
+@media (max-width: 620px) {
+	.page-hero--sustainability .page-hero__media { background-position: 70% center; }
+	.page-hero--sustainability .page-hero__media::after { background: linear-gradient(180deg, rgba(3,10,18,.38) 0%, rgba(7,24,43,.68) 42%, rgba(3,10,18,.98) 100%); }
+	.company-values__window { margin-top: 36px; }
+	.company-value__visual { min-height: 300px; }
+	.company-value__copy { min-height: 0; padding: 44px 24px 52px; }
+	.company-value__copy h3 { font-size: 40px; }
+	.company-value__copy blockquote { margin-top: 34px; font-size: 22px; }
+	.quote-band--standard .quote-band__portrait { height: 360px; min-height: 360px; }
+	.quote-band--lee .quote-band__copy { min-height: 520px; }
+	.quote-band--lee .quote-band__portrait img { max-width: 340px; }
+}
 
 /* =========================================================
    RESPONSIVE SYSTEM — shared across every merged page
