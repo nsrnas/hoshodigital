@@ -296,10 +296,6 @@ $hosho_phases = array(
 			<h2>Built for Cross-Industry Resilience</h2>
 			<div class="resilience-divider"></div>
 
-			<div class="resilience-image">
-				<img src="<?php echo esc_url( hosho_asset_url('approach/philosophy/built.jpg' ) ); ?>" alt="Abstract network of connected nodes, representing cross-industry resilience">
-			</div>
-
 			<div class="resilience-grid motion">
 				<div class="resilience-item">
 					<div class="icon">
