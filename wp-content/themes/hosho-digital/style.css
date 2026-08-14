@@ -1303,15 +1303,14 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 		==========================================*/
 
 		.rapid-spectrum {
-			padding: 120px 0;
-			background: #f8dddd;
+			padding: 80px 0;
 		}
 
 		.rapid-header {
 			text-align: center;
 			max-width: 760px;
 			margin: auto;
-			margin-bottom: 60px;
+			margin-bottom: 80px;
 		}
 
 		.rapid-header h2 {
@@ -1327,56 +1326,186 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 		}
 
 		.rapid-process {
-			display: flex;
-			justify-content: center;
-			align-items: stretch;
-			margin-bottom: 70px;
+			position: relative;
+			width: 780px;
+			height: 82px;
+			margin: 32px auto 30px;
 		}
 
-		.process-item {
-			width: 220px;
-			height: 66px;
-			flex: 0 0 auto;
+		.process-layer {
+			position: absolute;
 			display: flex;
 			align-items: center;
-			justify-content: center;
-			color: white;
-			font-size: 15px;
+			justify-content: flex-start;
+			color: #fff;
+			font-size: 14px;
 			font-weight: 800;
-			letter-spacing: .8px;
+			line-height: 1.05;
+			letter-spacing: .6px;
+			text-align: left;
 			text-transform: uppercase;
+			box-sizing: border-box;
+		}
+
+		.process-data {
+			top: -30px;
+			left: 0;
+			width: 100%;
+			height: 120px;
+			background: #ef1717;
+			z-index: 1;
+			padding-left: 10%;
+			clip-path: polygon(
+				0 0,
+				calc(100% - 42px) 0,
+				100% 50%,
+				calc(100% - 42px) 100%,
+				0 100%,
+				42px 50%
+			);
+		}
+
+		.process-automation {
+			top: -20px;
+			left: 17%;
+			width: 83%;
+			height: 100px;
+			background: #d10f0f;
+			z-index: 2;
+			padding-left: 10%;
+			clip-path: polygon(
+				0 0,
+				calc(100% - 42px) 0,
+				100% 50%,
+				calc(100% - 42px) 100%,
+				0 100%,
+				42px 50%
+			);
+		}
+
+		.process-ai {
+			top: -10px;
+			left: 42%;
+			width: 58%;
+			height: 80px;
+			background: #a70d0d;
 			text-align: center;
-			padding: 0 18px;
-			clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 14% 50%);
-			margin-left: -26px;
+			z-index: 3;
+			padding-left: 10%;
+			clip-path: polygon(
+				0 0,
+				calc(100% - 42px) 0,
+				100% 50%,
+				calc(100% - 42px) 100%,
+				0 100%,
+				42px 50%
+			);
 		}
 
-		.process-item:first-child {
-			margin-left: 0;
-			clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 0 100%);
-			padding-left: 26px;
+		.process-ux {
+			top: 0;
+			left: 67%;
+			width: 33%;
+			height: 60px;
+			background: #800808;
+			z-index: 4;
+			justify-content: center;
+			text-align: center;
+			clip-path: polygon(
+				0 0,
+				calc(100% - 42px) 0,
+				100% 50%,
+				calc(100% - 42px) 100%,
+				0 100%,
+				42px 50%
+			);
 		}
 
-		.process-item:nth-child(1) {
-			background: linear-gradient(135deg, #e2373c, #c31f24);
+		/* ==========================================
+		RESPONSIVE
+		========================================== */
+
+		@media (max-width: 900px) and (min-width: 769px) {
+			.rapid-process {
+				width: 90%;
+				max-width: 780px;
+				height: 72px;
+			}
+
+			.process-layer {
+				height: 72px;
+				font-size: 11px;
+			}
 		}
 
-		.process-item:nth-child(2) {
-			background: linear-gradient(135deg, #c31f24, #a8181d);
+		@media (max-width: 768px) {
+			.rapid-process {
+				position: relative;
+				width: 100%;
+				height: auto;
+				display: flex;
+				flex-direction: column;
+				gap: 12px;
+				margin: 32px 0 30px;
+			}
+
+			.process-layer {
+				position: static;
+				width: 100%;
+				height: 60px;
+				justify-content: center;
+				text-align: center;
+				padding: 0 20px;
+				left: auto;
+				top: auto;
+				clip-path: polygon(
+					0 0,
+					calc(100% - 26px) 0,
+					100% 50%,
+					calc(100% - 26px) 100%,
+					0 100%,
+					0 100%
+				);
+				opacity: 0;
+				transform: translate3d(-28px, 0, 0);
+				transition: opacity .5s var(--ease, ease), transform .5s var(--ease, ease);
+			}
+
+			.rapid-process.is-visible .process-layer {
+				opacity: 1;
+				transform: none;
+			}
+
+			.rapid-process.is-visible .process-data { transition-delay: .05s; }
+			.rapid-process.is-visible .process-automation { transition-delay: .15s; }
+			.rapid-process.is-visible .process-ai { transition-delay: .25s; }
+			.rapid-process.is-visible .process-ux { transition-delay: .35s; }
+
+			.process-layer span {
+				margin: 0 !important;
+			}
 		}
 
-		.process-item:nth-child(3) {
-			background: linear-gradient(135deg, #a8181d, #8c1213);
+		@media (max-width: 600px) {
+			.process-layer {
+				height: 52px;
+				font-size: 12px;
+				letter-spacing: .3px;
+			}
 		}
 
-		.process-item:nth-child(4) {
-			background: linear-gradient(135deg, #8c1213, #6f0e12);
+		@media (max-width: 420px) {
+			.process-layer {
+				height: 48px;
+				font-size: 10.5px;
+			}
 		}
 
 		.rapid-grid {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			gap: 28px;
+			margin-top: 70px;
 		}
 
 		.rapid-card {

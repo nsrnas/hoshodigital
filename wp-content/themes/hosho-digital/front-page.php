@@ -335,17 +335,17 @@ get_header();
 
 			<!-- Process -->
 			<div class="rapid-process motion">
-				<div class="process-item">
-					Data
+				<div class="process-layer process-data">
+					<span>DATA</span>
 				</div>
-				<div class="process-item">
-					Automation
+				<div class="process-layer process-automation">
+					<span>AUTOMATION</span>
 				</div>
-				<div class="process-item">
-					AI
+				<div class="process-layer process-ai">
+					<span>ARTIFICIAL<br>INTELLIGENCE</span>
 				</div>
-				<div class="process-item">
-					UX
+				<div class="process-layer process-ux">
+					<span>USER<br>EXPERIENCE</span>
 				</div>
 			</div>
 
