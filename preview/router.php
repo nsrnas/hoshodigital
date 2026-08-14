@@ -24,7 +24,6 @@ $route_map = array(
     'customer-experience'    => array('page' => 'customer-experience', 'file' => 'page-customer-experience.php'),
     'employee-experience'   => array('page' => 'employee-experience', 'file' => 'page-employee-experience.php'),
     'approach'               => array('page' => 'approach',            'file' => 'page-approach.php'),
-    'philosophy'             => array('page' => 'approach-philosophy', 'file' => 'page-approach-philosophy.php'),
     'ai'                     => array('page' => 'approach-ai',         'file' => 'page-approach-ai.php'),
     'ams'                    => array('page' => 'approach-ams',        'file' => 'page-approach-ams.php'),
     'erp'                    => array('page' => 'approach-erp',        'file' => 'page-approach-erp.php'),
