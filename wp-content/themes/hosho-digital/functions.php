@@ -95,5 +95,6 @@ function hosho_render_quote( $quote, $name, $image, $class = '' ) { ?>
   </section><?php
 }
 function hosho_render_cta( $eyebrow, $title, $body, $label, $url, $image ) { ?>
-  <section class="cta-panel" style="background-image:url('<?php echo esc_url( hosho_asset_url( $image ) ); ?>')"><div class="cta-panel__inner shell motion"><p class="eyebrow"><?php echo esc_html( $eyebrow ); ?></p><h2><?php echo wp_kses_post( $title ); ?></h2><p><?php echo esc_html( $body ); ?></p><a class="button" href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $label ); ?></a></div></section><?php
+  <?php $concise = in_array( hosho_current_page(), array( 'careers', 'sustainability', 'press', 'contact', 'company', 'ai-quick-win', 'eci', 'solutions', 'operational-experience', 'customer-experience', 'employee-experience' ), true ); ?>
+  <section class="cta-panel<?php echo $concise ? ' cta-panel--concise' : ''; ?>" style="background-image:url('<?php echo esc_url( hosho_asset_url( $image ) ); ?>')"><div class="cta-panel__inner shell motion"><?php if ( $concise ) : ?><h2><?php echo wp_kses_post( $title ); ?></h2><a class="button" href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $label ); ?><span class="button-arrow" aria-hidden="true"></span></a><?php else : ?><p class="eyebrow"><?php echo esc_html( $eyebrow ); ?></p><h2><?php echo wp_kses_post( $title ); ?></h2><p><?php echo esc_html( $body ); ?></p><a class="button" href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $label ); ?></a><?php endif; ?></div></section><?php
 }

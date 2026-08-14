@@ -252,5 +252,78 @@
     }
   }
 
+  // Interactive Venn Diagram
+  const vennContainer = document.querySelector('.venn-interactive-container');
+  if (vennContainer) {
+    const vennData = {
+      advisory: {
+        category: "Value Innovation",
+        title: "Solution Advisory",
+        description: "Helps organizations identify high-impact opportunities, define business priorities, and architect AI-driven solutions aligned with overarching strategic goals.",
+        capabilities: ["AI Strategy & Roadmap", "Business Re-engineering", "Low-Code Architecture", "ROI Modeling"],
+        icon: "💡"
+      },
+      consulting: {
+        category: "Operational Efficiency",
+        title: "Functional Consulting",
+        description: "Bridges strategic ambition with daily execution through process re-design, governance frameworks, and organizational change management.",
+        capabilities: ["Process Architecture", "Enterprise Governance", "Change Enablement", "Workflow Audit"],
+        icon: "🧩"
+      },
+      engineering: {
+        category: "Engineering Excellence",
+        title: "Software Engineering",
+        description: "Designs, builds, integrates, and continuously optimizes enterprise-grade digital systems and custom AI models with high engineering fidelity.",
+        capabilities: ["Cloud Native Architecture", "DevOps & CI/CD", "Custom AI & App Dev", "System Integration"],
+        icon: "</>"
+      },
+    };
+
+    const pills = vennContainer.querySelectorAll('.venn-pill');
+    const interactiveItems = vennContainer.querySelectorAll('[data-venn-id]');
+    const catElem = document.getElementById('vennCategory');
+    const iconElem = document.getElementById('vennIcon');
+    const titleElem = document.getElementById('vennTitle');
+    const descElem = document.getElementById('vennDesc');
+    const capListElem = document.getElementById('vennCapabilities');
+
+    const updateVennCard = (id) => {
+      const data = vennData[id];
+      if (!data) return;
+
+      if (catElem) catElem.textContent = data.category;
+      if (iconElem) iconElem.textContent = data.icon;
+      if (titleElem) titleElem.textContent = data.title;
+      if (descElem) descElem.textContent = data.description;
+
+      if (capListElem) {
+        capListElem.innerHTML = data.capabilities.map((cap) => `<span class="capability-tag">${cap}</span>`).join('');
+      }
+
+      pills.forEach((pill) => {
+        const target = pill.getAttribute('data-venn-target');
+        const isActive = target === id;
+        pill.classList.toggle('active', isActive);
+        pill.setAttribute('aria-selected', String(isActive));
+      });
+
+      interactiveItems.forEach((item) => {
+        const itemId = item.getAttribute('data-venn-id');
+        item.classList.toggle('active', itemId === id);
+      });
+    };
+
+    interactiveItems.forEach((item) => {
+      const id = item.getAttribute('data-venn-id');
+      item.addEventListener('click', () => updateVennCard(id));
+      item.addEventListener('mouseenter', () => updateVennCard(id));
+    });
+
+    pills.forEach((pill) => {
+      const target = pill.getAttribute('data-venn-target');
+      pill.addEventListener('click', () => updateVennCard(target));
+    });
+  }
+
 })();
 
