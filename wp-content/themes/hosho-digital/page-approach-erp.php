@@ -36,42 +36,52 @@ get_header();
 
 			<div class="opt-gap-grid">
 				<div class="opt-gap-card">
-					<div class="icon">
-						<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>
+					<div class="opt-gap-card__top">
+						<div class="icon">
+							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>
+						</div>
+						<h3>Underutilized Capabilities</h3>
 					</div>
-					<h3>Underutilized Capabilities</h3>
 					<p>Using less than 40% of the native feature set provided by Microsoft.</p>
 				</div>
 
 				<div class="opt-gap-card">
-					<div class="icon">
-						<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+					<div class="opt-gap-card__top">
+						<div class="icon">
+							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+						</div>
+						<h3>Difficult Customization</h3>
 					</div>
-					<h3>Difficult Customization</h3>
 					<p>Legacy code preventing upgrades and creating performance bottlenecks.</p>
 				</div>
 
 				<div class="opt-gap-card">
-					<div class="icon">
-						<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
+					<div class="opt-gap-card__top">
+						<div class="icon">
+							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
+						</div>
+						<h3>Manual Processes</h3>
 					</div>
-					<h3>Manual Processes</h3>
 					<p>Relying on spreadsheets for data that should live inside the ERP.</p>
 				</div>
 
 				<div class="opt-gap-card">
-					<div class="icon">
-						<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="18" y1="8" x2="23" y2="13"/><line x1="23" y1="8" x2="18" y2="13"/></svg>
+					<div class="opt-gap-card__top">
+						<div class="icon">
+							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="18" y1="8" x2="23" y2="13"/><line x1="23" y1="8" x2="18" y2="13"/></svg>
+						</div>
+						<h3>Low User Adoption</h3>
 					</div>
-					<h3>Low User Adoption</h3>
 					<p>Employees bypassing the system due to perceived complexity or friction.</p>
 				</div>
 
 				<div class="opt-gap-card">
-					<div class="icon">
-						<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.94 10.94 0 0 1 12 20c-7 0-11-8-11-8a18.5 18.5 0 0 1 5.06-5.94M9.9 4.24A10.94 10.94 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+					<div class="opt-gap-card__top">
+						<div class="icon">
+							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.94 10.94 0 0 1 12 20c-7 0-11-8-11-8a18.5 18.5 0 0 1 5.06-5.94M9.9 4.24A10.94 10.94 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+						</div>
+						<h3>Limited Insights</h3>
 					</div>
-					<h3>Limited Insights</h3>
 					<p>Data silos preventing a single source of truth for executive decisions.</p>
 				</div>
 			</div>
@@ -115,17 +125,17 @@ get_header();
 		</div>
 	</section>
 
-	<!-- =========================================================
+<!-- =========================================================
 	STRATEGIC INTERVENTION SERVICES
 	========================================================= -->
 
-	<section class="services-section">
+	<section class="intervention-section">
 		<div class="container motion">
 			<h2>Strategic Intervention Services</h2>
 			<p>Targeted consulting to bridge the gap between technical availability and business performance.</p>
 
-			<div class="services-grid">
-				<div class="service-item">
+			<div class="intervention-grid">
+				<div class="intervention-card">
 					<div class="icon-box">
 						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="12" y2="17"/></svg>
 					</div>
@@ -135,7 +145,7 @@ get_header();
 					</div>
 				</div>
 
-				<div class="service-item">
+				<div class="intervention-card">
 					<div class="icon-box">
 						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><circle cx="9" cy="9" r="1.4"/><circle cx="15" cy="9" r="1.4"/><path d="M8 15c1 1 2.2 1.4 4 1.4s3-.4 4-1.4"/></svg>
 					</div>
@@ -145,7 +155,7 @@ get_header();
 					</div>
 				</div>
 
-				<div class="service-item">
+				<div class="intervention-card">
 					<div class="icon-box">
 						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
 					</div>
@@ -155,7 +165,7 @@ get_header();
 					</div>
 				</div>
 
-				<div class="service-item">
+				<div class="intervention-card">
 					<div class="icon-box">
 						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
 					</div>
@@ -370,12 +380,8 @@ get_header();
 					Already Using Business Central?<br>
 					Let's Unlock Its Full Potential Together.
 				</h2>
-				<p>
-					Stop compromising with a system that feels like it's holding you back. Our senior experts
-					are ready to audit your platform and reveal the hidden efficiency within.
-				</p>
 				<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="btn-red">
-					Start Your Long-Term Partnership
+					Start Your Partnership
 				</a>
 			</div>
 		</div>
