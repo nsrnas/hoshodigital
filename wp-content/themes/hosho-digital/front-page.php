@@ -93,7 +93,7 @@ get_header();
 	</section>
 
 	<!-- =========================================================
-	THE INTELLIGENT DIGITAL CORE
+	TRANSFORMATION WITHOUT DISRUPTION
 	========================================================= -->
 
 	<section class="digital-core" id="approach">
@@ -103,13 +103,25 @@ get_header();
 					Our Approach
 				</span>
 				<h2>
-					The Intelligent Digital Core
+					Transformation without Disruption
 				</h2>
 				<p>
 					We transform disconnected systems into one Intelligent Digital
 					Core, connecting data, applications, automation, and AI so your
 					business can continuously evolve and scale.
 				</p>
+			</div>
+
+			<div class="idc-card motion">
+				<div class="idc-card-header">
+					<div class="idc-logo-wrapper">
+						<img src="<?php echo esc_url( hosho_asset_url( 'idc-logo.png' ) ); ?>" alt="Intelligent Digital Core Logo" class="idc-logo">
+					</div>
+					<div class="idc-card-title-group">
+						<span class="idc-card-label">Core Architectural Platform</span>
+						<h3>Intelligent Digital Core</h3>
+					</div>
+				</div>
 			</div>
 
 			<div class="digital-core-process">
@@ -206,7 +218,7 @@ get_header();
 
 	<section class="services-section">
 		<div class="container">
-			<div class="motion">
+			<div class="strategy-header-box motion">
 				<h2 class="strategy-heading">
 					From Strategy to Continuous Value
 				</h2>
@@ -218,66 +230,106 @@ get_header();
 				</p>
 			</div>
 
-			<div class="services-grid">
-				<!-- CARD 1 -->
-				<div class="service-card advisory">
-					<div class="service-card-head">
-						<span class="service-icon">💡</span>
-						<h3>Solution Advisory</h3>
-					</div>
-					<div class="service-category">Value Innovation</div>
-					<p class="service-desc">
-						Help organizations identify opportunities, define
-						business priorities, and design AI-driven solutions
-						aligned with strategic goals.
-					</p>
-					<span class="service-divider"></span>
-					<div class="capabilities-label">Capabilities</div>
-					<div class="capability-tags">
-						<span class="capability-tag">AI Strategy</span>
-						<span class="capability-tag">Business Re-engineering</span>
-						<span class="capability-tag">Low-Code</span>
-					</div>
-				</div>
+			<div class="venn-interactive-container motion">
+				<div class="venn-main-grid">
+					<!-- Interactive SVG Venn Diagram Column -->
+					<div class="venn-svg-wrapper">
+						<svg viewBox="0 0 600 560" class="venn-svg" xmlns="http://www.w3.org/2000/svg" aria-label="Interactive Solution Venn Diagram">
+							<defs>
+								<!-- Arc Paths for Curved Outer Text (Brought closer to circle borders) -->
+								<path id="arc-top" d="M 145,165 A 152,152 0 0,1 455,165" fill="none" />
+								<path id="arc-right" d="M 390,492 A 162,162 0 0,0 552,330" fill="none" />
+								<path id="arc-left" d="M 48,330 A 162,162 0 0,0 210,492" fill="none" />
 
-				<!-- CARD 2 -->
-				<div class="service-card consulting">
-					<div class="service-card-head">
-						<span class="service-icon">🧩</span>
-						<h3>Functional Consulting</h3>
-					</div>
-					<div class="service-category">Operational Efficiency</div>
-					<p class="service-desc">
-						Bridge business strategy with execution through
-						process optimization, governance, and organizational
-						change.
-					</p>
-					<span class="service-divider"></span>
-					<div class="capabilities-label">Capabilities</div>
-					<div class="capability-tags">
-						<span class="capability-tag">Process Design</span>
-						<span class="capability-tag">Governance</span>
-						<span class="capability-tag">Change Mgmt</span>
-					</div>
-				</div>
+								<!-- SVG ClipPaths for Mathematical Lens Overlaps -->
+								<clipPath id="clip-circle-1">
+									<circle cx="300" cy="165" r="135" />
+								</clipPath>
+								<clipPath id="clip-circle-2">
+									<circle cx="390" cy="330" r="135" />
+								</clipPath>
+								<clipPath id="clip-circle-3">
+									<circle cx="210" cy="330" r="135" />
+								</clipPath>
 
-				<!-- CARD 3 -->
-				<div class="service-card engineering">
-					<div class="service-card-head">
-						<span class="service-icon">&lt;/&gt;</span>
-						<h3>Software Engineering</h3>
+								<!-- Glow Filter -->
+								<filter id="vennGlow" x="-20%" y="-20%" width="140%" height="140%">
+									<feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#a81c1c" flood-opacity="0.3" />
+								</filter>
+							</defs>
+
+							<!-- Outer Arc Curved Labels (Color-coded per discipline shade) -->
+							<text class="venn-arc-label advisory-label">
+								<textPath href="#arc-top" startOffset="50%" text-anchor="middle">VALUE INNOVATION</textPath>
+							</text>
+							<text class="venn-arc-label consulting-label">
+								<textPath href="#arc-right" startOffset="50%" text-anchor="middle">OPERATIONAL EFFICIENCY</textPath>
+							</text>
+							<text class="venn-arc-label engineering-label">
+								<textPath href="#arc-left" startOffset="50%" text-anchor="middle">ENGINEERING EXCELLENCE</textPath>
+							</text>
+
+							<!-- Main 3 Base Circles (Distinct red strokes) -->
+							<circle class="venn-circle venn-circle-advisory active" data-venn-id="advisory" cx="300" cy="165" r="135" tabindex="0" role="button" aria-label="Solution Advisory" />
+							<circle class="venn-circle venn-circle-consulting" data-venn-id="consulting" cx="390" cy="330" r="135" tabindex="0" role="button" aria-label="Functional Consulting" />
+							<circle class="venn-circle venn-circle-engineering" data-venn-id="engineering" cx="210" cy="330" r="135" tabindex="0" role="button" aria-label="Software Engineering" />
+
+							<!-- Overlap Lenses (Static visual intersections, hover passes to main circles) -->
+                            <g class="venn-overlap-group">
+                                <circle cx="210" cy="330" r="135" clip-path="url(#clip-circle-1)" class="venn-petal" />
+                                <text x="245" y="235" class="venn-petal-text" transform="rotate(30, 240, 215)">Innovation</text>
+                            </g>
+
+                            <g class="venn-overlap-group">
+                                <circle cx="300" cy="165" r="135" clip-path="url(#clip-circle-2)" class="venn-petal" />
+                                <text x="355" y="235" class="venn-petal-text" transform="rotate(-30, 360, 215)">Alignment</text>
+                            </g>
+
+                            <g class="venn-overlap-group">
+                                <circle cx="390" cy="330" r="135" clip-path="url(#clip-circle-3)" class="venn-petal" />
+                                <text x="280" y="330" class="venn-petal-text" transform="rotate(-90, 300, 330)">Execution</text>
+                            </g>
+
+							<!-- Inner Circle Text Labels (Color-coded to matching discipline shade) -->
+							<g class="venn-label-group advisory-label" data-venn-id="advisory">
+								<text x="300" y="120" class="venn-circle-title">Solution</text>
+								<text x="300" y="146" class="venn-circle-title">Advisory</text>
+							</g>
+
+							<g class="venn-label-group consulting-label" data-venn-id="consulting">
+								<text x="412" y="348" class="venn-circle-title">Functional</text>
+								<text x="412" y="374" class="venn-circle-title">Consulting</text>
+							</g>
+
+							<g class="venn-label-group engineering-label" data-venn-id="engineering">
+								<text x="188" y="348" class="venn-circle-title">Software</text>
+								<text x="188" y="374" class="venn-circle-title">Engineering</text>
+							</g>
+						</svg>
 					</div>
-					<div class="service-category">Engineering Excellence</div>
-					<p class="service-desc">
-						Design, build, integrate, and continuously optimize
-						enterprise-grade digital solutions powered by AI.
-					</p>
-					<span class="service-divider"></span>
-					<div class="capabilities-label">Capabilities</div>
-					<div class="capability-tags">
-						<span class="capability-tag">Cloud Engineering</span>
-						<span class="capability-tag">DevOps</span>
-						<span class="capability-tag">Custom Dev</span>
+
+					<!-- Dynamic Details Card Column -->
+					<div class="venn-details-card" id="vennDetailsCard">
+						<div class="details-card-head">
+							<span class="details-badge" id="vennCategory">Value Innovation</span>
+							<span class="details-icon" id="vennIcon">💡</span>
+						</div>
+						<h3 class="details-title" id="vennTitle">Solution Advisory</h3>
+						<p class="details-desc" id="vennDesc">
+							Helps organizations identify high-impact opportunities, define business priorities, and architect AI-driven solutions aligned with strategic goals.
+						</p>
+
+						<div class="details-divider"></div>
+
+						<div class="details-capabilities">
+							<span class="capabilities-title">Key Capabilities &amp; Outcomes</span>
+							<div class="capabilities-tags-list" id="vennCapabilities">
+								<span class="capability-tag">AI Strategy &amp; Roadmap</span>
+								<span class="capability-tag">Business Re-engineering</span>
+								<span class="capability-tag">Low-Code Architecture</span>
+								<span class="capability-tag">ROI Modeling</span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
