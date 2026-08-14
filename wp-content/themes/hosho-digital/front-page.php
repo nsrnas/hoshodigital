@@ -222,7 +222,7 @@ get_header();
 				<!-- CARD 1 -->
 				<div class="service-card advisory">
 					<div class="service-card-head">
-						<span class="service-icon">💡</span>
+						<span class="service-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M8 14a6 6 0 1 1 8 0c-.7.7-1.5 1.8-1.5 3H9.5c0-1.2-.8-2.3-1.5-3Z"/></svg></span>
 						<h3>Solution Advisory</h3>
 					</div>
 					<div class="service-category">Value Innovation</div>
@@ -243,7 +243,7 @@ get_header();
 				<!-- CARD 2 -->
 				<div class="service-card consulting">
 					<div class="service-card-head">
-						<span class="service-icon">🧩</span>
+						<span class="service-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 1 3 3v1h2a2 2 0 0 1 2 2v2h1a2 2 0 0 1 2 2v3h-3a2 2 0 0 0-2 2v3h-3a2 2 0 0 1-2-2v-1H9a2 2 0 0 0-2 2v1H4a2 2 0 0 1-2-2v-3h1a2 2 0 0 0 2-2v-2H2v-3a2 2 0 0 1 2-2h2V5a3 3 0 0 1 3-3h3Z"/></svg></span>
 						<h3>Functional Consulting</h3>
 					</div>
 					<div class="service-category">Operational Efficiency</div>
@@ -353,7 +353,7 @@ get_header();
 			<div class="rapid-grid">
 				<article class="rapid-card">
 					<div class="rapid-card-head">
-						<span class="rapid-icon">🚀</span>
+						<span class="rapid-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 14l-1 5 5-1 8-8a8 8 0 0 0-4-4Z"/><path d="M14 5c2-2 5-3 5-3s-1 3-3 5"/><path d="M9 15l-2 2"/></svg></span>
 						<h3>Quick-Deploy AI</h3>
 					</div>
 					<p class="rapid-desc">
@@ -369,7 +369,7 @@ get_header();
 
 				<article class="rapid-card featured">
 					<div class="rapid-card-head">
-						<span class="rapid-icon">🧬</span>
+						<span class="rapid-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3c4 0 10 4 10 9s-6 9-10 9"/><path d="M17 3c-4 0-10 4-10 9s6 9 10 9"/><path d="M9 8h6"/><path d="M9 16h6"/></svg></span>
 						<h3>Integrated AI Layer</h3>
 					</div>
 					<p class="rapid-desc">
@@ -385,7 +385,7 @@ get_header();
 
 				<article class="rapid-card">
 					<div class="rapid-card-head">
-						<span class="rapid-icon">📐</span>
+						<span class="rapid-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M7 21V7l5-4v10l4-2v10"/></svg></span>
 						<h3>Bespoke AI Platform</h3>
 					</div>
 					<p class="rapid-desc">
@@ -421,7 +421,7 @@ get_header();
 
 			<div class="budget-grid">
 				<article class="budget-card">
-					<div class="budget-icon">📦</div>
+					<div class="budget-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8l9 5 9-5Z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg></div>
 					<h3>Intelligent Token Management</h3>
 					<p>
 						Advanced prompt engineering to minimize payload while
@@ -430,7 +430,7 @@ get_header();
 				</article>
 
 				<article class="budget-card">
-					<div class="budget-icon">📈</div>
+					<div class="budget-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-3 3 2 5-6"/><path d="M18 7h0"/></svg></div>
 					<h3>Cost Optimization</h3>
 					<p>
 						Dynamic routing to appropriate models based on task
@@ -439,7 +439,7 @@ get_header();
 				</article>
 
 				<article class="budget-card">
-					<div class="budget-icon">🎚️</div>
+					<div class="budget-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V9"/><path d="M4 9a2 2 0 1 0 0-4"/><path d="M12 21V5"/><path d="M12 11a2 2 0 1 0 0-4"/><path d="M20 21V13"/><path d="M20 13a2 2 0 1 0 0-4"/></svg></div>
 					<h3>Usage Optimization</h3>
 					<p>
 						Real-time monitoring of AI consumption with granular
@@ -448,7 +448,7 @@ get_header();
 				</article>
 
 				<article class="budget-card">
-					<div class="budget-icon">🛡️</div>
+					<div class="budget-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3Z"/></svg></div>
 					<h3>Responsible AI Deployment</h3>
 					<p>
 						Strict governance frameworks ensuring compliance and

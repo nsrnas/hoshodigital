@@ -80,7 +80,7 @@ get_header();
 					</p>
 
 					<div class="continuity-item">
-						<div class="icon-box">🛠️</div>
+						<div class="icon-box"><span class="icon-svg" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span></div>
 						<div>
 							<h4>Implementation</h4>
 							<p>The rigorous build and validation phase.</p>
@@ -88,7 +88,7 @@ get_header();
 					</div>
 
 					<div class="continuity-item">
-						<div class="icon-box">📡</div>
+						<div class="icon-box"><span class="icon-svg" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 19.5a10 10 0 1 1 15 0"/><path d="M8 16a6 6 0 1 1 8 0"/><circle cx="12" cy="18" r="1"/></svg></span></div>
 						<div>
 							<h4>Go Live</h4>
 							<p>Transitioning from project mode to live operations.</p>
@@ -96,7 +96,7 @@ get_header();
 					</div>
 
 					<div class="continuity-item final">
-						<div class="icon-box">🤝</div>
+						<div class="icon-box"><span class="icon-svg" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 12.5 4 9.5a3 3 0 0 1 4.2-4.2L12 9l3.8-3.7A3 3 0 1 1 20 9.5l-3 3"/><path d="M9 14l2 2 7-7"/></svg></span></div>
 						<div>
 							<h4>Continuous Partnership</h4>
 							<p>Our long-term commitment to your excellence.</p>
@@ -189,7 +189,7 @@ get_header();
 			<div class="capability-grid">
 				<div class="capability-card">
 					<div class="capability-card__top">
-						<div class="cap-icon">📈</div>
+						<div class="cap-icon"><span class="icon-svg" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-3 3 2 5-6"/></svg></span></div>
 						<h4>Application Monitoring</h4>
 					</div>
 					<p>
@@ -199,7 +199,7 @@ get_header();
 				</div>
 				<div class="capability-card">
 					<div class="capability-card__top">
-						<div class="cap-icon">🛠️</div>
+						<div class="cap-icon"><span class="icon-svg" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span></div>
 						<h4>Application Management</h4>
 					</div>
 					<p>
@@ -209,7 +209,7 @@ get_header();
 				</div>
 				<div class="capability-card">
 					<div class="capability-card__top">
-						<div class="cap-icon">🩹</div>
+						<div class="cap-icon"><span class="icon-svg" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M2 12h20"/><path d="M7 7l10 10"/><path d="M17 7 7 17"/></svg></span></div>
 						<h4>Maintanance &amp; Support</h4>
 					</div>
 					<p>
@@ -219,7 +219,7 @@ get_header();
 				</div>
 				<div class="capability-card">
 					<div class="capability-card__top">
-						<div class="cap-icon">✅</div>
+						<div class="cap-icon"><span class="icon-svg" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></div>
 						<h4>Security &amp; Complience</h4>
 					</div>
 					<p>
@@ -276,42 +276,42 @@ get_header();
 
 			<div class="competencies-grid">
 				<div class="competency-card pink">
-					<h4><span class="comp-icon">📊</span>Monitoring</h4>
+					<h4><span class="comp-icon"><span class="icon-svg" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="13" width="3" height="5"/><rect x="12" y="9" width="3" height="9"/><rect x="17" y="5" width="3" height="13"/></svg></span></span>Monitoring</h4>
 					<p>
 						Real-time observability and predictive analytics to
 						identify bottlenecks before they impact your users.
 					</p>
 				</div>
 				<div class="competency-card gray">
-					<h4><span class="comp-icon">🔧</span>Maintenance</h4>
+					<h4><span class="comp-icon"><span class="icon-svg" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span></span>Maintenance</h4>
 					<p>
 						Continuous technical health checks, dependency
 						updates, and platform performance tuning.
 					</p>
 				</div>
 				<div class="competency-card pink">
-					<h4><span class="comp-icon">🐞</span>Bug Fixing</h4>
+					<h4><span class="comp-icon"><span class="icon-svg" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 9h6"/><path d="M12 3v4"/><path d="M7 7 5 5"/><path d="M17 7 19 5"/><path d="M5 12h14"/><path d="M9 20a3 3 0 0 0 6 0"/><path d="M7 12a5 5 0 1 1 10 0v1a5 5 0 1 1-10 0z"/></svg></span></span>Bug Fixing</h4>
 					<p>
 						Rapid identification and resolution of regressions
 						with a zero-backlog philosophy for critical issues.
 					</p>
 				</div>
 				<div class="competency-card gray">
-					<h4><span class="comp-icon">🎧</span>Technical Support</h4>
+					<h4><span class="comp-icon"><span class="icon-svg" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a8 8 0 1 1 16 0"/><path d="M4 14v4a2 2 0 0 0 2 2h2v-6H4Z"/><path d="M20 14v4a2 2 0 0 1-2 2h-2v-6h4Z"/></svg></span></span>Technical Support</h4>
 					<p>
 						Tier 3 engineering support embedded within your team
 						to resolve complex architectural challenges.
 					</p>
 				</div>
 				<div class="competency-card pink">
-					<h4><span class="comp-icon">🛡️</span>Security</h4>
+					<h4><span class="comp-icon"><span class="icon-svg" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3Z"/></svg></span></span>Security</h4>
 					<p>
 						Ongoing threat modeling, vulnerability patching, and
 						compliance monitoring (SOC2, HIPAA, GDPR).
 					</p>
 				</div>
 				<div class="competency-card gray">
-					<h4><span class="comp-icon">✳️</span>Incident Response</h4>
+					<h4><span class="comp-icon"><span class="icon-svg" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a7.8 7.8 0 0 0 .1-6l2-1.2-2-3.4-2.3.9a8 8 0 0 0-5.2-3L11.6 0h-3.2l-.4 2.3a8 8 0 0 0-5.2 3L.5 4.4l-2 3.4 2 1.2a7.8 7.8 0 0 0 .1 6l-2 1.2 2 3.4 2.3-.9a8 8 0 0 0 5.2 3l.4 2.3h3.2l.4-2.3a8 8 0 0 0 5.2-3l2.3.9 2-3.4Z"/></svg></span></span>Incident Response</h4>
 					<p>
 						Defined RTO/RPO metrics and a battle-tested protocol
 						for system-wide failure recovery.
@@ -407,3 +407,4 @@ get_header();
 </main>
 <?php
 get_footer();
+
