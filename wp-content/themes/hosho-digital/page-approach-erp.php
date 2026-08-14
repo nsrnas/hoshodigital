@@ -370,12 +370,8 @@ get_header();
 					Already Using Business Central?<br>
 					Let's Unlock Its Full Potential Together.
 				</h2>
-				<p>
-					Stop compromising with a system that feels like it's holding you back. Our senior experts
-					are ready to audit your platform and reveal the hidden efficiency within.
-				</p>
 				<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="btn-red">
-					Start Your Long-Term Partnership
+					Start Your Partnership
 				</a>
 			</div>
 		</div>

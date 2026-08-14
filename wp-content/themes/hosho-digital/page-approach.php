@@ -179,12 +179,8 @@ get_header();
 					Ready to Build Your<br>
 					Intelligent Digital Core?
 				</h2>
-				<p>
-					Connect with our principals to begin architecting your
-					organization's future in the intelligence economy.
-				</p>
 				<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="btn-red">
-					Contact Our Experts
+					Speak to Us
 				</a>
 			</div>
 		</div>

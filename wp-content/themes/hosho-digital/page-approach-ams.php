@@ -389,9 +389,8 @@ get_header();
 		<div class="container motion">
 			<div class="ams-cta-content motion">
 				<h2>Build Once. Improve Continuously.</h2>
-				<p>Start your long-term partnership with our dedicated AMS team.</p>
 				<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="btn-red">
-					Start Your Long-Term Partnership
+					Start Your Partnership
 				</a>
 			</div>
 		</div>

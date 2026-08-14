@@ -415,11 +415,6 @@ get_header();
 		<div class="container motion">
 			<div class="ai-cta-content motion">
 				<h2>Artificial Intelligence Should Strengthen Your Business, Not Complicate It</h2>
-				<p>
-					Stop compromising with a system that feels like it's
-					holding you back. Our senior experts are ready to audit
-					your platform and reveal the hidden efficiency within.
-				</p>
 				<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="btn-red">
 					Let's Build Your Enterprise AI Strategy
 				</a>

@@ -3804,8 +3804,8 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 		.ai-cta {
 			position: relative;
 			overflow: hidden;
-			padding: 110px 0;
-			background: #1a1a1a;
+			background: var(--navy);
+			padding: 130px 0;
 		}
 
 		.ai-cta-image {
@@ -3820,6 +3820,7 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+			opacity: .35;
 		}
 
 		.ai-cta-overlay {
@@ -3828,7 +3829,7 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			right: 0;
 			bottom: 0;
 			left: 0;
-			background: linear-gradient(100deg, rgba(255, 255, 255, .55), rgba(190, 60, 55, .35));
+			background: linear-gradient(rgba(15, 41, 70, .3), rgba(15, 41, 70, .9));
 		}
 
 		.ai-cta-content {
@@ -3837,18 +3838,18 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			max-width: 780px;
 			margin: auto;
 			text-align: center;
+			color: #fff;
 		}
 
 		.ai-cta-content h2 {
 			font-size: 40px;
 			font-weight: 800;
-			color: #111;
 			line-height: 1.2;
 			margin-bottom: 20px;
 		}
 
 		.ai-cta-content p {
-			color: #333;
+			color: rgba(255, 255, 255, .75);
 			line-height: 1.7;
 			margin-bottom: 34px;
 			font-size: 16px;
@@ -4558,8 +4559,8 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 		.ams-cta {
 			position: relative;
 			overflow: hidden;
-			padding: 110px 0;
-			background: #1a1a1a;
+			background: var(--navy);
+			padding: 130px 0;
 		}
 
 		.ams-cta-image {
@@ -4574,6 +4575,7 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+			opacity: .35;
 		}
 
 		.ams-cta-overlay {
@@ -4582,7 +4584,7 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			right: 0;
 			bottom: 0;
 			left: 0;
-			background: linear-gradient(100deg, rgba(255, 255, 255, .55), rgba(190, 60, 55, .35));
+			background: linear-gradient(rgba(15, 41, 70, .3), rgba(15, 41, 70, .9));
 		}
 
 		.ams-cta-content {
@@ -4591,18 +4593,18 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			max-width: 780px;
 			margin: auto;
 			text-align: center;
+			color: #fff;
 		}
 
 		.ams-cta-content h2 {
 			font-size: 42px;
 			font-weight: 800;
-			color: #111;
 			line-height: 1.2;
 			margin-bottom: 20px;
 		}
 
 		.ams-cta-content p {
-			color: #333;
+			color: rgba(255, 255, 255, .75);
 			line-height: 1.7;
 			margin-bottom: 34px;
 			font-size: 16px;

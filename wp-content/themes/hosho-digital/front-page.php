@@ -549,20 +549,11 @@ get_header();
 		<div class="cta-overlay"></div>
 		<div class="container">
 			<div class="cta-content motion">
-				<span class="small-title white">
-					Redefine Your Architecture
-				</span>
 				<h2>
-					Ready to Build Your
-					Intelligent Digital Core?
+					Painless Transformation? 
 				</h2>
-				<p>
-					Discuss where you are in your AI journey and determine the
-					most suitable path—from rapid deployment to fully bespoke
-					enterprise AI platforms.
-				</p>
 				<a href="page-consult-our-experts" class="btn-red">
-					Consult Our Experts
+					Speak to Us
 				</a>
 			</div>
 		</div>
