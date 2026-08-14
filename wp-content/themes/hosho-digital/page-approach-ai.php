@@ -78,43 +78,59 @@ get_header();
 
 			<div class="principles-grid motion">
 				<div class="principle-card">
-					<div class="cap-icon">🔒</div>
-					<h4>Secure</h4>
+					<div class="principle-card__top">
+						<div class="cap-icon">🔒</div>
+						<h4>Secure</h4>
+					</div>
 					<p>Enterprise-grade security protocols embedded at every layer of the model lifecycle.</p>
 				</div>
 				<div class="principle-card">
-					<div class="cap-icon">⚡</div>
-					<h4>Efficient</h4>
+					<div class="principle-card__top">
+						<div class="cap-icon">⚡</div>
+						<h4>Efficient</h4>
+					</div>
 					<p>Optimized for performance and resource utilization to ensure sustainable ROI.</p>
 				</div>
 				<div class="principle-card">
-					<div class="cap-icon">🚀</div>
-					<h4>Fast</h4>
+					<div class="principle-card__top">
+						<div class="cap-icon">🚀</div>
+						<h4>Fast</h4>
+					</div>
 					<p>Rapid deployment cycles powered by our modular implementation frameworks.</p>
 				</div>
 				<div class="principle-card">
-					<div class="cap-icon">📈</div>
-					<h4>Scalable</h4>
+					<div class="principle-card__top">
+						<div class="cap-icon">📈</div>
+						<h4>Scalable</h4>
+					</div>
 					<p>Architected to handle massive enterprise data volumes and global user bases.</p>
 				</div>
 				<div class="principle-card">
-					<div class="cap-icon">🎛️</div>
-					<h4>Customizable</h4>
+					<div class="principle-card__top">
+						<div class="cap-icon">🎛️</div>
+						<h4>Customizable</h4>
+					</div>
 					<p>Tailored specifically to your proprietary business logic and industry constraints.</p>
 				</div>
 				<div class="principle-card">
-					<div class="cap-icon">🔄</div>
-					<h4>Future-Proof</h4>
+					<div class="principle-card__top">
+						<div class="cap-icon">🔄</div>
+						<h4>Future-Proof</h4>
+					</div>
 					<p>Designed to adapt seamlessly as underlying AI models and tech stacks evolve.</p>
 				</div>
 				<div class="principle-card">
-					<div class="cap-icon">📜</div>
-					<h4>Industry Standards</h4>
+					<div class="principle-card__top">
+						<div class="cap-icon">📜</div>
+						<h4>Industry Standards</h4>
+					</div>
 					<p>Strict adherence to global compliance, ISO standards, and ethical AI frameworks.</p>
 				</div>
 				<div class="principle-card">
-					<div class="cap-icon">🔍</div>
-					<h4>Auditable</h4>
+					<div class="principle-card__top">
+						<div class="cap-icon">🔍</div>
+						<h4>Auditable</h4>
+					</div>
 					<p>Every reasoning step and tool call is logged, so any decision can be reconstructed.</p>
 				</div>
 			</div>
@@ -332,42 +348,35 @@ get_header();
 			</div>
 
 			<div class="outcomes-grid motion">
-				<div class="outcome-card">
-					<div class="out-icon">🎯</div>
-					<div>
-						<h4>Intelligent Strategy</h4>
-						<p>Mapping AI capabilities directly to high-value business outcomes and legacy system transformation.</p>
-					</div>
-				</div>
-				<div class="outcome-card">
-					<div class="out-icon">⚙️</div>
-					<div>
-						<h4>Expert Engineering</h4>
-						<p>Deep technical implementation of custom LLMs, vector databases, and agentic orchestration flows.</p>
-					</div>
-				</div>
 				<div class="outcome-card accent">
-					<div class="out-icon">🚀</div>
-					<div>
-						<h4>Enterprise Execution</h4>
-						<p>Scaling from proof-of-concept to global deployment with rigorous stress-testing and governance.</p>
+					<div class="outcome-card__top">
+						<div class="out-icon">🎯</div>
+						<h4>Intelligent Strategy</h4>
 					</div>
+					<p>Mapping AI capabilities directly to high-value business outcomes and legacy system transformation.</p>
 				</div>
 				<div class="outcome-card">
-					<div class="out-icon">⚡</div>
-					<div>
-						<h4>Rapid Innovation</h4>
-						<p>Accelerated prototyping with our proprietary "AI-First" architectural components and toolkits.</p>
+					<div class="outcome-card__top">
+						<div class="out-icon">⚙️</div>
+						<h4>Expert Engineering</h4>
 					</div>
+					<p>Deep technical implementation of custom LLMs, vector databases, and agentic orchestration flows.</p>
+				</div>
+				<div class="outcome-card">
+					<div class="outcome-card__top">
+						<div class="out-icon">⚡</div>
+						<h4>Rapid Innovation</h4>
+					</div>
+					<p>Accelerated prototyping with our proprietary "AI-First" architectural components and toolkits.</p>
 				</div>
 			</div>
 
-			<div class="outcome-featured">
-				<div class="out-icon">🎯</div>
-				<div>
+			<div class="outcome-featured motion">
+				<div class="outcome-featured__top">
+					<div class="out-icon">🚀</div>
 					<h4>Enterprise Execution</h4>
-					<p>Scaling from proof-of-concept to global deployment with rigorous stress-testing and governance.</p>
 				</div>
+				<p>Scaling from proof-of-concept to global deployment with rigorous stress-testing and governance.</p>
 			</div>
 		</div>
 	</section>

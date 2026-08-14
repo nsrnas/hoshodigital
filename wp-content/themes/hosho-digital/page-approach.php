@@ -103,6 +103,7 @@ $hosho_phases = array(
 );
 ?>
 <main id="main-content" class="approach-page">
+	
 	<!-- =========================================================
 	HERO
 	========================================================= -->
@@ -396,7 +397,6 @@ $hosho_phases = array(
 	<!-- =========================================================
 	8-STAGE DELIVERY FRAMEWORK
 	========================================================= -->
-
 
     <section class="framework-section">
         <div class="framework-container">

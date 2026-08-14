@@ -866,6 +866,41 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			color: #667483;
 		}
 
+		/* RESPONSIVE */
+
+		@media (max-width: 900px) {
+			.guarantee-body {
+				grid-template-columns: 1fr;
+				text-align: center;
+			}
+
+			.guarantee-underline {
+				margin: 0 auto 18px;
+			}
+
+			.pillars-grid {
+				grid-template-columns: 1fr;
+			}
+
+			.pillar-card {
+				text-align: left; 
+			}
+		}
+
+		@media (max-width: 620px) {
+			.success-guarantee {
+				padding: 72px 0;
+			}
+
+			.success-card {
+				padding: 32px 22px;
+			}
+
+			.guarantee-body h3 {
+				font-size: clamp(30px, 9vw, 44px);
+			}
+		}
+
 		/*==================================================
 		THE INTELLIGENT DIGITAL CORE
 		==================================================*/
@@ -3860,22 +3895,63 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			width: 100%;
 		}
 
-		/* =========================================================
-		RESPONSIVE
-		========================================================= */
+		/* RESPONSIVE */
 
 		@media (max-width: 900px) {
-			.philosophy-hero h1 { font-size: 36px; }
-			.fail-grid { grid-template-columns: 1fr; }
-			.gap-columns { grid-template-columns: 1fr; }
-			.framework-body { grid-template-columns: 1fr; }
-			.framework-nav { position: static; flex-direction: row; flex-wrap: wrap; }
-			.stage-grid { grid-template-columns: 1fr; }
-			.resilience-grid { grid-template-columns: 1fr; }
-			.resilience-card { padding: 34px 24px; }
-			.phase-tabs { grid-template-columns: repeat(2, 1fr); }
+			.approach-page .philosophy-cta {
+				padding: 90px 0;
+			}
+
+			.approach-page .philosophy-cta-card {
+				max-width: 480px;
+				padding-inline: 36px;
+				padding-block: 44px;
+			}
 		}
 
+		@media (max-width: 640px) {
+			.approach-page .philosophy-cta {
+				padding: 64px 0;
+			}
+
+			.approach-page .philosophy-cta .container {
+				padding-inline: 20px;
+				box-sizing: border-box;
+			}
+
+			.approach-page .philosophy-cta-card {
+				width: 100%;
+				max-width: 100%;
+				padding-inline: 22px;   /* ini yang menang lawan rule global */
+				padding-block: 36px;
+				box-sizing: border-box;
+			}
+
+			.approach-page .philosophy-cta-card h2 {
+				font-size: clamp(24px, 7vw, 30px);
+			}
+
+			.approach-page .philosophy-cta-card p {
+				font-size: 14px;
+			}
+
+			.approach-page .cta-form input,
+			.approach-page .cta-form select {
+				min-height: 48px;
+				font-size: 16px; /* biar iOS Safari nggak auto-zoom pas fokus */
+			}
+
+			.approach-page .cta-form .btn-red {
+				min-height: 48px;
+			}
+		}
+
+		@media (max-width: 380px) {
+			.approach-page .philosophy-cta-card {
+				padding-inline: 16px;
+				padding-block: 30px;
+			}
+		}
 
 /* =========================================================
    APPROACH AI PAGE STYLES
@@ -4126,17 +4202,30 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			padding: 28px 24px;
 		}
 
+		.principle-card__top {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			margin-bottom: 10px;
+		}
+
 		.principle-card .cap-icon {
-			font-size: 22px;
-			color: var(--red);
-			margin-bottom: 14px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 28px;
+			height: 28px;
+			font-size: 20px;
+			line-height: 1;
+			flex: 0 0 auto;
 		}
 
 		.principle-card h4 {
 			font-size: 17px;
 			font-weight: 700;
 			color: #111;
-			margin-bottom: 10px;
+			line-height: 1.2;
+			margin: 0;
 		}
 
 		.principle-card p {
@@ -4427,19 +4516,21 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 
 		.outcomes-grid {
 			display: grid;
-			grid-template-columns: repeat(2, 1fr);
+			grid-template-columns: repeat(3, 1fr);
+			align-items: stretch;
 			gap: 24px;
 			text-align: left;
 			margin-bottom: 24px;
 		}
 
 		.outcome-card {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
 			border: 1px solid var(--border);
 			border-radius: 6px;
 			padding: 30px 28px;
-			display: flex;
-			gap: 18px;
-			align-items: flex-start;
+			box-sizing: border-box;
 		}
 
 		.outcome-card.accent {
@@ -4448,16 +4539,30 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			color: #fff;
 		}
 
+		.outcome-card__top {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			margin-bottom: 10px;
+		}
+
 		.outcome-card .out-icon {
-			font-size: 22px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 32px;
+			height: 32px;
+			font-size: 20px;
+			line-height: 1;
 			flex: 0 0 auto;
 		}
 
 		.outcome-card h4 {
 			font-size: 18px;
 			font-weight: 700;
-			margin-bottom: 8px;
+			margin: 0;
 			color: var(--navy);
+			line-height: 1.3;
 		}
 
 		.outcome-card.accent h4 {
@@ -4465,6 +4570,7 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 		}
 
 		.outcome-card p {
+			margin: 0;
 			font-size: 14.5px;
 			line-height: 1.65;
 			color: var(--gray);
@@ -4475,17 +4581,30 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 		}
 
 		.outcome-featured {
+			display: flex;
+			flex-direction: column;
 			border: 1px solid var(--border);
 			border-radius: 6px;
 			padding: 30px 28px;
-			display: flex;
-			gap: 18px;
-			align-items: flex-start;
 			text-align: left;
+			box-sizing: border-box;
+		}
+
+		.outcome-featured__top {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			margin-bottom: 10px;
 		}
 
 		.outcome-featured .out-icon {
-			font-size: 22px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 32px;
+			height: 32px;
+			font-size: 20px;
+			line-height: 1;
 			color: var(--red);
 			flex: 0 0 auto;
 		}
@@ -4493,14 +4612,22 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 		.outcome-featured h4 {
 			font-size: 18px;
 			font-weight: 700;
-			margin-bottom: 8px;
+			margin: 0;
 			color: var(--navy);
+			line-height: 1.3;
 		}
 
 		.outcome-featured p {
+			margin: 0;
 			font-size: 14.5px;
 			line-height: 1.65;
 			color: var(--gray);
+		}
+
+		@media (max-width: 900px) {
+			.outcomes-grid {
+				grid-template-columns: 1fr;
+			}
 		}
 
 		/* =========================================================
@@ -4838,6 +4965,7 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 
 		.continuity-item {
 			display: flex;
+			align-items: center;
 			gap: 18px;
 			margin-bottom: 26px;
 		}
@@ -4856,6 +4984,7 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			align-items: center;
 			justify-content: center;
 			font-size: 18px;
+			line-height: 1;
 			border-radius: 4px;
 		}
 
@@ -4868,10 +4997,11 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			font-size: 19px;
 			font-weight: 700;
 			color: var(--navy);
-			margin-bottom: 4px;
+			margin: 0 0 4px;
 		}
 
 		.continuity-item p {
+			margin: 0;
 			color: var(--gray);
 			font-size: 15px;
 			line-height: 1.6;
@@ -5049,21 +5179,34 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			padding: 30px 26px;
 		}
 
+		.capability-card__top {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			margin-bottom: 12px;
+		}
+
 		.capability-card .cap-icon {
-			font-size: 22px;
-			color: var(--red);
-			margin-bottom: 16px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 30px;
+			height: 30px;
+			font-size: 20px;
+			line-height: 1;
+			flex: 0 0 auto;
 		}
 
 		.capability-card h4 {
 			font-size: 19px;
 			font-weight: 700;
 			color: #111;
-			margin-bottom: 12px;
+			margin: 0;
 			line-height: 1.25;
 		}
 
 		.capability-card p {
+			margin: 0;
 			font-size: 14.5px;
 			color: var(--gray);
 			line-height: 1.65;
@@ -5454,7 +5597,7 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 
 		.erp-hero {
 			position: relative;
-			min-height: 760px;
+			min-height: 650px;
 			display: flex;
 			align-items: center;
 			overflow: hidden;
@@ -5536,20 +5679,33 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			background: #fff;
 		}
 
+		.opt-gap-card__top {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			margin-bottom: 10px;
+		}
+
 		.opt-gap-card .icon {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 26px;
+			height: 26px;
 			color: var(--red);
-			margin-bottom: 16px;
+			flex: 0 0 auto;
 		}
 
 		.opt-gap-card h3 {
 			font-size: 15px;
 			font-weight: 800;
 			color: var(--navy);
-			margin-bottom: 10px;
+			margin: 0;
 			line-height: 1.3;
 		}
 
 		.opt-gap-card p {
+			margin: 0;
 			font-size: 13.5px;
 			line-height: 1.7;
 			color: var(--gray);
@@ -5621,20 +5777,20 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 		STRATEGIC INTERVENTION SERVICES
 		========================================================= */
 
-		.services-section {
+		.intervention-section {
 			padding: 90px 0;
 			background: #fff;
 			text-align: center;
 		}
 
-		.services-section h2 {
+		.intervention-section h2 {
 			font-size: 28px;
 			font-weight: 800;
 			color: var(--navy);
 			margin-bottom: 14px;
 		}
 
-		.services-section > .container > p {
+		.intervention-section > .container > p {
 			max-width: 620px;
 			margin: 0 auto;
 			color: var(--gray);
@@ -5642,25 +5798,27 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			line-height: 1.75;
 		}
 
-		.services-grid {
+		.intervention-grid {
 			display: grid;
-			grid-template-columns: 1fr 1fr;
-			gap: 20px;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 24px;
 			text-align: left;
 			margin-top: 50px;
 		}
 
-		.service-item {
+		.intervention-card {
 			border: 1px solid var(--border);
+			border-radius: 6px;
 			padding: 30px 30px;
 			display: flex;
 			gap: 20px;
 			align-items: flex-start;
 		}
 
-		.service-item .icon-box {
+		.intervention-card .icon-box {
 			width: 44px;
 			height: 44px;
+			border-radius: 6px;
 			background: var(--navy);
 			color: #fff;
 			display: flex;
@@ -5669,17 +5827,22 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			flex: 0 0 auto;
 		}
 
-		.service-item h3 {
+		.intervention-card h3 {
 			font-size: 16px;
 			font-weight: 800;
 			color: var(--navy);
-			margin-bottom: 8px;
+			margin: 0 0 8px;
 		}
 
-		.service-item p {
+		.intervention-card p {
+			margin: 0;
 			font-size: 13.5px;
 			line-height: 1.7;
 			color: var(--gray);
+		}
+
+		@media (max-width: 760px) {
+			.intervention-grid { grid-template-columns: 1fr; }
 		}
 
 		/* =========================================================

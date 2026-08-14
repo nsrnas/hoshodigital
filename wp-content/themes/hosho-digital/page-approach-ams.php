@@ -80,7 +80,7 @@ get_header();
 					</p>
 
 					<div class="continuity-item">
-						<div class="icon-box"></div>
+						<div class="icon-box">🛠️</div>
 						<div>
 							<h4>Implementation</h4>
 							<p>The rigorous build and validation phase.</p>
@@ -188,32 +188,40 @@ get_header();
 
 			<div class="capability-grid">
 				<div class="capability-card">
-					<div class="cap-icon">📈</div>
-					<h4>Application Monitoring</h4>
+					<div class="capability-card__top">
+						<div class="cap-icon">📈</div>
+						<h4>Application Monitoring</h4>
+					</div>
 					<p>
 						Monitor for seamless operations, analysing performance
 						and availability in real-time.
 					</p>
 				</div>
 				<div class="capability-card">
-					<div class="cap-icon">🛠️</div>
-					<h4>Application Management</h4>
+					<div class="capability-card__top">
+						<div class="cap-icon">🛠️</div>
+						<h4>Application Management</h4>
+					</div>
 					<p>
 						Maximizing efficiency through continuous application
 						performance optimization and resource scaling.
 					</p>
 				</div>
 				<div class="capability-card">
-					<div class="cap-icon">🩹</div>
-					<h4>Maintanance &amp; Support</h4>
+					<div class="capability-card__top">
+						<div class="cap-icon">🩹</div>
+						<h4>Maintanance &amp; Support</h4>
+					</div>
 					<p>
 						Ensuring smooth functional availability via proactive
 						updates, bug fixes and technical expert support.
 					</p>
 				</div>
 				<div class="capability-card">
-					<div class="cap-icon">✅</div>
-					<h4>Security &amp; Complience</h4>
+					<div class="capability-card__top">
+						<div class="cap-icon">✅</div>
+						<h4>Security &amp; Complience</h4>
+					</div>
 					<p>
 						Implementing pertinent measures for data protection,
 						threat mitigation and regulatory adherence.
@@ -241,9 +249,9 @@ get_header();
 					</div>
 				</div>
 				<p class="stats-quote">
-					"Our AMS framework is designed for the modern enterprise,
+					Our AMS framework is designed for the modern enterprise,
 					ensuring that legacy reliability meets AI-driven
-					innovation."
+					innovation.
 				</p>
 			</div>
 		</div>
