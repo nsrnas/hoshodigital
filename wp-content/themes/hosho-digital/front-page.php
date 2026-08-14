@@ -597,19 +597,7 @@ get_header();
 	FINAL CTA
 	=========================================== -->
 
-	<section class="final-cta">
-		<div class="cta-overlay"></div>
-		<div class="container">
-			<div class="cta-content motion">
-				<h2>
-					Painless Transformation? 
-				</h2>
-				<a href="page-consult-our-experts" class="btn-red">
-					Speak to Us
-				</a>
-			</div>
-		</div>
-	</section>
+	<?php hosho_render_cta( '', 'Painless Transformation?', '', 'Speak to Us', 'page-consult-our-experts', 'homepage/cta.jpg' ); ?>
 
 </main>
 <?php

@@ -389,20 +389,7 @@ get_header();
 	FINAL CTA
 	========================================================= -->
 
-	<section class="ams-cta">
-		<div class="ams-cta-image">
-			<img src="<?php echo esc_url( hosho_asset_url('approach/ams/cta.jpg' ) ); ?>" alt="Person planning on a project board">
-		</div>
-		<div class="ams-cta-overlay"></div>
-		<div class="container motion">
-			<div class="ams-cta-content motion">
-				<h2>Build Once. Improve Continuously.</h2>
-				<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="btn-red">
-					Start Your Partnership
-				</a>
-			</div>
-		</div>
-	</section>
+	<?php hosho_render_cta( '', 'Build Once. Improve Continuously.', '', 'Start Your Partnership', home_url( '/contact' ), 'approach/ams/cta.jpg' ); ?>
 
 </main>
 <?php
