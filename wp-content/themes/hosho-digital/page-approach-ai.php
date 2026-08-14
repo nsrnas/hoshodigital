@@ -416,20 +416,7 @@ get_header();
 	FINAL CTA
 	========================================================= -->
 
-	<section class="ai-cta">
-		<div class="ai-cta-image">
-			<img src="<?php echo esc_url( hosho_asset_url('approach/ai/cta.jpg' ) ); ?>" alt="Team planning an enterprise AI strategy">
-		</div>
-		<div class="ai-cta-overlay"></div>
-		<div class="container motion">
-			<div class="ai-cta-content motion">
-				<h2>Artificial Intelligence Should Strengthen Your Business, Not Complicate It</h2>
-				<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="btn-red">
-					Let's Build Your Enterprise AI Strategy
-				</a>
-			</div>
-		</div>
-	</section>
+	<?php hosho_render_cta( '', 'Artificial Intelligence Should Strengthen Your Business, Not Complicate It', '', 'Let\'s Build Your Enterprise AI Strategy', home_url( '/contact' ), 'approach/ai/cta.jpg' ); ?>
 
 </main>
 <?php

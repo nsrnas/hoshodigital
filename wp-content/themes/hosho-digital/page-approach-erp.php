@@ -369,23 +369,7 @@ get_header();
 	FINAL CTA
 	========================================================= -->
 
-	<section class="erp-cta">
-		<div class="erp-cta-image">
-			<img src="<?php echo esc_url( hosho_asset_url('approach/erp/cta.jpg' ) ); ?>" alt="City skyline at dusk, representing the enterprise landscape">
-		</div>
-		<div class="erp-cta-overlay"></div>
-		<div class="container motion">
-			<div class="erp-cta-content motion">
-				<h2>
-					Already Using Business Central?<br>
-					Let's Unlock Its Full Potential Together.
-				</h2>
-				<a href="<?php echo esc_url( home_url( '/contact' ) ); ?>" class="btn-red">
-					Start Your Partnership
-				</a>
-			</div>
-		</div>
-	</section>
+	<?php hosho_render_cta( '', 'Already Using Business Central?<br>Let\'s Unlock Its Full Potential Together.', '', 'Start Your Partnership', home_url( '/contact' ), 'approach/erp/cta.jpg' ); ?>
 
 </main>
 <?php
