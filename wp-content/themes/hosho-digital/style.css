@@ -903,22 +903,90 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 		}
 
 		.digital-core-heading {
-			max-width: 780px;
-			margin-bottom: 60px;
+			max-width: 820px;
+			margin: 0 auto 50px;
+			text-align: center;
 		}
 
 		.digital-core-heading h2 {
 			font-size: 46px;
 			line-height: 1.1;
-			margin: 14px 0 22px;
+			margin: 14px auto 22px;
 			color: var(--navy);
 			font-weight: 800;
+			text-align: center;
 		}
 
 		.digital-core-heading p {
 			color: #444f5c;
 			line-height: 1.8;
 			font-size: 17px;
+			text-align: center;
+		}
+
+		.idc-card {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #f8fafc;
+			border: 1px solid #e2e8f0;
+			padding: 28px 36px;
+			border-radius: 0;
+			margin: 0 auto 55px;
+			max-width: 640px;
+			text-align: center;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+
+		.idc-card:hover {
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+			transform: translateY(-2px);
+		}
+
+		.idc-card-header {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 20px;
+			text-align: left;
+		}
+
+		.idc-logo-wrapper {
+			width: 84px;
+			height: 84px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #ffffff;
+			border-radius: 0;
+			padding: 10px;
+			box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+			border: 1px solid #f1f5f9;
+			flex-shrink: 0;
+		}
+
+		.idc-logo-wrapper img.idc-logo {
+			max-width: 100%;
+			max-height: 100%;
+			object-fit: contain;
+			display: block;
+		}
+
+		.idc-card-title-group .idc-card-label {
+			font-size: 13px;
+			font-weight: 800;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			color: var(--red);
+			display: block;
+			margin-bottom: 4px;
+		}
+
+		.idc-card-title-group h3 {
+			font-size: 26px;
+			font-weight: 800;
+			color: var(--navy);
+			margin: 0;
 		}
 
 		.digital-core-process {
@@ -1070,25 +1138,256 @@ body.hosho-remade .solutions-card__caps > span:last-child { font-size: 14px; col
 			background: #f8f8f8;
 		}
 
+		.strategy-header-box {
+			text-align: center;
+			max-width: 860px;
+			margin: 0 auto 72px;
+		}
+
 		.strategy-heading {
 			font-size: 30px;
 			font-weight: 800;
 			letter-spacing: .5px;
 			text-transform: uppercase;
 			color: var(--red);
-			margin-bottom: 22px;
+			margin-bottom: 18px;
+			text-align: center;
 		}
 
 		.strategy-desc {
-			max-width: 900px;
+			max-width: 820px;
+			margin: 0 auto;
 			font-size: 17px;
 			line-height: 1.8;
 			color: #2c3644;
-			margin-bottom: 45px;
+			text-align: center;
 		}
 
 		.strategy-desc strong {
 			color: var(--navy);
+		}
+
+		/*==================================================
+		INTERACTIVE VENN DIAGRAM (SOLUTION DISCIPLINE CONVERGENCE)
+		==================================================*/
+
+		.venn-interactive-container {
+			background: transparent;
+			border: none;
+			border-radius: 0;
+			padding: 0;
+			box-shadow: none;
+			margin-top: 16px;
+			margin-bottom: 60px;
+		}
+
+		.venn-main-grid {
+			display: grid;
+			grid-template-columns: 1.1fr 0.9fr;
+			gap: 40px;
+			align-items: center;
+		}
+
+		.venn-svg-wrapper {
+			width: 100%;
+			max-width: 540px;
+			margin: 0 auto;
+		}
+
+		.venn-svg {
+			width: 100%;
+			height: auto;
+			display: block;
+			overflow: visible;
+		}
+
+		.venn-arc-label {
+			font-size: 13px;
+			font-weight: 800;
+			letter-spacing: 1.5px;
+			text-transform: uppercase;
+			font-family: inherit;
+		}
+
+		.venn-circle {
+			fill: rgba(255, 255, 255, 0.5);
+			stroke-width: 5;
+			cursor: pointer;
+			outline: none !important;
+			transition: all 0.3s ease;
+		}
+
+		.venn-circle:focus,
+		.venn-circle:focus-visible,
+		.venn-circle:active {
+			outline: none !important;
+		}
+
+		/* Top Circle: Advisory */
+		.venn-circle-advisory {
+			stroke: #890c07;
+		}
+		.venn-circle-advisory:hover,
+		.venn-circle-advisory.active {
+			fill: rgba(89, 9, 9, 0.08);
+			stroke: #890c07;
+			stroke-width: 5;
+			filter: url(#vennGlow);
+		}
+		.advisory-label,
+		.advisory-label .venn-circle-title {
+			fill: #890c07;
+		}
+
+		/* Bottom-Right Circle: Consulting */
+		.venn-circle-consulting {
+			stroke: #ba110a;
+		}
+		.venn-circle-consulting:hover,
+		.venn-circle-consulting.active {
+			fill: rgba(148, 19, 19, 0.08);
+			stroke: #ba110a;
+			stroke-width: 5;
+			filter: url(#vennGlow);
+		}
+		.consulting-label,
+		.consulting-label .venn-circle-title {
+			fill: #ba110a;
+		}
+
+		/* Bottom-Left Circle: Engineering */
+		.venn-circle-engineering {
+			stroke: #e21c15;
+		}
+		.venn-circle-engineering:hover,
+		.venn-circle-engineering.active {
+			fill: rgba(220, 38, 38, 0.08);
+			stroke: #e21c15;
+			stroke-width: 5;
+			filter: url(#vennGlow);
+		}
+		.engineering-label,
+		.engineering-label .venn-circle-title {
+			fill: #e21c15;
+		}
+
+		.venn-overlap-group {
+			pointer-events: none;
+		}
+
+		.venn-petal {
+			fill: #b91c1c;
+			opacity: 0.88;
+			stroke: #800000;
+			stroke-width: 1.5;
+			pointer-events: none;
+		}
+
+		.venn-petal-text {
+			font-size: 15px;
+			font-weight: 700;
+			fill: #ffffff;
+			text-anchor: middle;
+			dominant-baseline: central;
+			pointer-events: none;
+			letter-spacing: 0.5px;
+		}
+
+		.venn-circle-title {
+			font-size: 20px;
+			font-weight: 800;
+			fill: #800000;
+			text-anchor: middle;
+			pointer-events: none;
+			letter-spacing: -0.2px;
+		}
+
+		.venn-details-card {
+			background: #ffffff;
+			border: 1px solid #e2e8f0;
+			border-left: 4px solid var(--red);
+			border-radius: 0;
+			padding: 28px 32px;
+			box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+			transition: opacity 0.25s ease, transform 0.25s ease;
+		}
+
+		.details-card-head {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 12px;
+		}
+
+		.details-badge {
+			font-size: 12px;
+			font-weight: 800;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			color: var(--red);
+			background: rgba(229, 62, 62, 0.1);
+			padding: 6px 12px;
+			border-radius: 4px;
+		}
+
+		.details-icon {
+			font-size: 28px;
+		}
+
+		.details-title {
+			font-size: 28px;
+			font-weight: 800;
+			color: var(--navy);
+			margin-bottom: 4px;
+		}
+
+		.details-desc {
+			font-size: 15px;
+			line-height: 1.7;
+			color: #334155;
+			margin-bottom: 24px;
+		}
+
+		.details-divider {
+			height: 1px;
+			background: #e2e8f0;
+			margin-bottom: 20px;
+		}
+
+		.capabilities-title {
+			font-size: 13px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.5px;
+			color: #64748b;
+			display: block;
+			margin-bottom: 12px;
+		}
+
+		.capabilities-tags-list {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
+			margin-bottom: 20px;
+		}
+
+		.details-footer-hint {
+			font-size: 12px;
+			color: #94a3b8;
+			font-style: italic;
+		}
+
+		@media (max-width: 900px) {
+			.venn-main-grid {
+				grid-template-columns: 1fr;
+				gap: 30px;
+			}
+			.venn-interactive-container {
+				padding: 24px;
+			}
+			.venn-details-card {
+				padding: 24px;
+			}
 		}
 
 		.services-grid {
