@@ -8,33 +8,11 @@
 get_header();
 ?>
 <main id="main-content" class="home-page">
-<!-- =========================================================
-	HERO SECTION
-	========================================================= -->
-
-	<section class="hero">
-		<div class="hero-image">
-			<img src="<?php echo esc_url( hosho_asset_url('homepage/hero.jpg' ) ); ?>" alt="Abstract red digital core visual">
-		</div>
-		<div class="hero-overlay"></div>
-		<div class="container">
-			<div class="hero-content">
-				<h1>
-					Lead with AI —<br>
-					Or Get Left<br>
-					Behind.
-				</h1>
-				<div class="hero-buttons">
-					<a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn-red">
-						Contact Us
-					</a>
-					<a href="#approach" class="btn-outline">
-						Explore Our Approach
-					</a>
-				</div>
-			</div>
-		</div>
-	</section>
+<?php hosho_render_hero(
+    'Lead with AI —<br>Or Get Left<br>Behind.',
+    'homepage/hero.jpg',
+    array( 'class' => 'page-hero--home' )
+); ?>
 
 	<!-- =========================================================
 	YOUR SUCCESS. OUR GUARANTEE.
@@ -500,7 +478,7 @@ get_header();
 				</article>
 
 				<article class="budget-card">
-					<div class="budget-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3Z"/></svg></div>
+					<div class="budget-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3Z"/></div>
 					<h3>Responsible AI Deployment</h3>
 					<p>
 						Strict governance frameworks ensuring compliance and

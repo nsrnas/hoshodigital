@@ -103,26 +103,11 @@ $hosho_phases = array(
 );
 ?>
 <main id="main-content" class="approach-page">
-	
-	<!-- =========================================================
-	HERO
-	========================================================= -->
-
-	<section class="approach-hero">
-		<div class="approach-hero-image">
-            <img src="<?php echo esc_url( hosho_asset_url('approach/main/hero.jpg' ) ); ?>" alt="Architectural steel structure, representing the foundations of the Digital Core">
-		</div>
-		<div class="approach-hero-overlay"></div>
-		<div class="container">
-			<div class="approach-hero-content motion">
-				<h1>
-					We Don't Demolish<br>
-					What's Already<br>
-					Working
-				</h1>
-			</div>
-		</div>
-	</section>
+	<?php hosho_render_hero(
+		"We Don't Demolish<br>What's Already<br>Working",
+		'approach/main/hero.jpg',
+		array( 'class' => 'page-hero--approach' )
+	); ?>
 
 	<!-- =========================================================
 	WHY 80% OF ENTERPRISE AI FAILS

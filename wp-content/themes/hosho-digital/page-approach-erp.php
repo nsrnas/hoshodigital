@@ -9,21 +9,11 @@
 get_header();
 ?>
 <main id="main-content" class="erp-page">
-<!-- =========================================================
-	HERO
-	========================================================= -->
-
-	<section class="erp-hero">
-		<div class="erp-hero-image">
-			<img src="<?php echo esc_url( hosho_asset_url('approach/erp/hero.jpeg' ) ); ?>" alt="Industrial gears over a mountain landscape, representing untapped ERP efficiency">
-		</div>
-		<div class="erp-hero-overlay"></div>
-		<div class="container motion">
-			<div class="erp-hero-content motion">
-				<h1>You're Using 40% Less Than What You're Paying For.</h1>
-			</div>
-		</div>
-	</section>
+<?php hosho_render_hero(
+    "You're Using 40% Less<br>Than What You're<br>Paying For.",
+    'approach/erp/hero.jpeg',
+    array( 'class' => 'page-hero--erp' )
+); ?>
 
 	<!-- =========================================================
 	OPTIMIZATION GAP
