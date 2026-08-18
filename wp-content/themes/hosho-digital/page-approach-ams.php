@@ -13,21 +13,13 @@ get_header();
 	HERO
 	========================================================= -->
 
-	<section class="ams-hero">
-		<div class="ams-hero-image">
-			<img src="<?php echo esc_url( hosho_asset_url('approach/ams/hero.jpg' ) ); ?>" alt="Abstract dark red architectural texture">
-		</div>
-		<div class="ams-hero-overlay"></div>
-		<div class="container motion">
-			<div class="ams-hero-content motion">
-				<h1>
-					Our AMS Framework Is<br>
-					Designed for the Modern<br>
-					Enterprise
-				</h1>
-			</div>
-		</div>
-	</section>
+	<?php
+	hosho_render_hero(
+		'Our AMS Framework Is<br>Designed for the Modern<br>Enterprise',
+		'approach/ams/hero.jpg',
+		array( 'class' => 'page-hero--ams page-hero--center' )
+	);
+	?>
 
 	<!-- =========================================================
 	INTRO

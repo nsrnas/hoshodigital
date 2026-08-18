@@ -13,21 +13,13 @@ get_header();
 	HERO
 	========================================================= -->
 
-	<section class="ai-hero">
-		<div class="ai-hero-image">
-			<img src="<?php echo esc_url( hosho_asset_url('approach/ai/hero.jpg' ) ); ?>" alt="Abstract red digital circuit texture">
-		</div>
-		<div class="ai-hero-overlay"></div>
-		<div class="container motion">
-			<div class="ai-hero-content motion">
-				<h1>
-					Architecting the<br>
-					Autonomous Enterprise:<br>
-					<span class="highlight">The AI Agent Flow</span>
-				</h1>
-			</div>
-		</div>
-	</section>
+	<?php
+	hosho_render_hero(
+		'Architecting the<br>Autonomous Enterprise:<br><span class="highlight">The AI Agent Flow</span>',
+		'approach/ai/hero.jpg',
+		array( 'class' => 'page-hero--ai page-hero--center' )
+	);
+	?>
 
 	<!-- =========================================================
 	INTRO

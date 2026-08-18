@@ -63,6 +63,7 @@ function hosho_render_hero( $headline, $image, $options = array() ) {
       'class' => '',
       'eyebrow' => '',
       'body' => array(),
+      'actions_html' => '',
       'cta_label' => '',
       'cta_url' => '',
     ),
@@ -77,6 +78,11 @@ function hosho_render_hero( $headline, $image, $options = array() ) {
       <?php if ( $options['body'] ) : ?>
         <div class="page-hero__body">
           <?php foreach ( (array) $options['body'] as $line ) : ?><p><?php echo esc_html( $line ); ?></p><?php endforeach; ?>
+        </div>
+      <?php endif; ?>
+      <?php if ( $options['actions_html'] ) : ?>
+        <div class="page-hero__actions">
+          <?php echo wp_kses_post( $options['actions_html'] ); ?>
         </div>
       <?php endif; ?>
       <?php if ( $options['cta_label'] && $options['cta_url'] ) : ?><a class="button page-hero__cta" href="<?php echo esc_url( $options['cta_url'] ); ?>"><?php echo esc_html( $options['cta_label'] ); ?><span class="button-arrow" aria-hidden="true"></span></a><?php endif; ?>
