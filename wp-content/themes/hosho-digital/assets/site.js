@@ -111,6 +111,13 @@
     item.style.setProperty('--motion-delay', `${Math.min(index, 5) * 45}ms`);
   });
 
+  document.querySelectorAll('.rapid-process').forEach((rapidProcess) => {
+    const layers = rapidProcess.querySelectorAll('.process-layer');
+    layers.forEach((layer, index) => {
+      layer.style.setProperty('--layer-order', String(index));
+    });
+  });
+
   const revealTargets = [
     ...document.querySelectorAll('.motion'),
     ...motionGroups,
@@ -326,4 +333,3 @@
   }
 
 })();
-

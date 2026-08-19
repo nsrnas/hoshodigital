@@ -996,6 +996,14 @@ p {
 	color: white;
 }
 
+.quote-band--blue {
+	background: linear-gradient(108deg, #071523 0%, #071523 38%, #0A192F 66%, #8a1913 88%, #071523 100%);
+}
+
+.quote-band--red {
+	background: linear-gradient(108deg, #E21C15 0%, #E21C15 40%, #B71712 68%, #071523 90%, #0A192F 100%);
+}
+
 .quote-band::before {
 	content: "";
 	position: absolute;
@@ -1078,6 +1086,22 @@ p {
 	max-width: 100%;
 	margin-left: auto;
 	mix-blend-mode: normal;
+}
+
+.quote-band--blue .quote-band__mark {
+	color: rgba(200, 224, 255, .65);
+}
+
+.quote-band--red .quote-band__mark {
+	color: rgba(255, 214, 214, .62);
+}
+
+.quote-band--blue::before {
+	background: linear-gradient(90deg, rgba(255, 255, 255, .02), transparent 40%, rgba(122, 23, 18, .16));
+}
+
+.quote-band--red::before {
+	background: linear-gradient(90deg, rgba(255, 255, 255, .025), transparent 40%, rgba(7, 21, 35, .16));
 }
 
 .quote-band--lee {
@@ -1420,6 +1444,7 @@ p {
 	border-radius: 50%;
 	color: #d4dde5;
 	font-size: 12px;
+	transition: color var(--motion-ui) ease, border-color var(--motion-ui) ease, transform var(--motion-fast) var(--ease), box-shadow var(--motion-ui) ease;
 }
 
 .footer-column {
@@ -1596,12 +1621,13 @@ p {
 	}
 
 	.footer-socials a {
-		transition: color var(--motion-ui) ease, border-color var(--motion-ui) ease, transform var(--motion-fast) var(--ease);
+		transition: color var(--motion-ui) ease, border-color var(--motion-ui) ease, transform var(--motion-fast) var(--ease), box-shadow var(--motion-ui) ease;
 	}
 
 	.footer-socials a:hover {
 		color: white;
-		border-color: rgba(255, 255, 255, .6);
+		border-color: var(--red);
+		box-shadow: 0 0 0 1px var(--red) inset;
 		transform: translate3d(0, -3px, 0);
 	}
 }
@@ -3522,9 +3548,7 @@ a {
 /*==================================================
 		INTERACTIVE VENN DIAGRAM (SOLUTION DISCIPLINE CONVERGENCE)
 		==================================================*/
-/* ── Venn Entrance Animations ───────────────────────────────────────────── */
 
-/* circle circumference ≈ 2π × 135 ≈ 848 */
 @keyframes venn-draw {
 	from {
 		stroke-dashoffset: 848;
@@ -3635,7 +3659,7 @@ a {
 .venn-main-grid {
 	display: grid;
 	grid-template-columns: 1fr;
-	gap: 40px;
+	gap: 0px;
 	align-items: center;
 }
 
@@ -3849,7 +3873,7 @@ a {
 @media (max-width: 900px) {
 	.venn-main-grid {
 		grid-template-columns: 1fr;
-		gap: 30px;
+		gap: 0;
 	}
 
 	.venn-interactive-container {
@@ -4149,6 +4173,8 @@ a {
 	text-align: left;
 	text-transform: uppercase;
 	box-sizing: border-box;
+	transform-origin: center;
+	transition: transform 260ms var(--ease), filter 260ms var(--ease), box-shadow 260ms var(--ease);
 }
 
 .process-data {
@@ -4215,6 +4241,29 @@ a {
 			calc(100% - 42px) 100%,
 			0 100%,
 			42px 50%);
+}
+
+.rapid-process.is-visible .process-layer {
+	animation: rapidLayerReveal 820ms var(--ease) both;
+	animation-delay: calc(var(--layer-order, 0) * 150ms);
+}
+
+@keyframes rapidLayerReveal {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, 10px, 0) scale(.985);
+		filter: saturate(.96);
+	}
+	100% {
+		opacity: 1;
+		transform: translate3d(0, 0, 0) scale(1);
+		filter: none;
+	}
+}
+
+.process-layer span {
+	transition: transform 260ms var(--ease);
+	will-change: transform;
 }
 
 /* ==========================================
@@ -4289,6 +4338,10 @@ a {
 	.process-layer span {
 		margin: 0 !important;
 	}
+
+	.rapid-process.is-visible .process-layer {
+		animation: none;
+	}
 }
 
 @media (max-width: 600px) {
@@ -4327,14 +4380,24 @@ a {
 
 .rapid-card-head {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	gap: 14px;
 	margin-bottom: 20px;
 }
 
 .rapid-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	line-height: 0;
+	flex: 0 0 auto;
+	margin-top: 2px;
 	font-size: 24px;
 	color: var(--red);
+}
+
+.rapid-icon svg {
+	display: block;
 }
 
 .rapid-card.featured .rapid-icon {
@@ -4344,6 +4407,8 @@ a {
 .rapid-card h3 {
 	font-size: 24px;
 	font-weight: 700;
+	line-height: 1.05;
+	margin: 0;
 }
 
 .rapid-card p.rapid-desc {
@@ -8275,10 +8340,12 @@ a {
 }
 
 .engine-chevron {
+	position: relative;
 	flex: 1;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	overflow: hidden;
 	color: #fff;
 	font-size: 12px;
 	font-weight: 800;
@@ -8287,6 +8354,63 @@ a {
 	padding: 18px 10px;
 	clip-path: polygon(0 0, 88% 0, 100% 50%, 88% 100%, 0 100%, 10% 50%);
 	margin-left: -14px;
+	transition: transform 220ms var(--ease), filter 220ms var(--ease), box-shadow 220ms var(--ease);
+	will-change: transform;
+}
+
+.engine-chevron::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(120deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .18) 18%, rgba(255, 255, 255, 0) 36%);
+	transform: translateX(-120%);
+	opacity: 0;
+	pointer-events: none;
+}
+
+.engine-chevron:nth-child(1) { animation: engineChevronFloat 6.2s ease-in-out infinite 0s; }
+.engine-chevron:nth-child(2) { animation: engineChevronFloat 6.2s ease-in-out infinite .15s; }
+.engine-chevron:nth-child(3) { animation: engineChevronFloat 6.2s ease-in-out infinite .3s; }
+.engine-chevron:nth-child(4) { animation: engineChevronFloat 6.2s ease-in-out infinite .45s; }
+.engine-chevron:nth-child(5) { animation: engineChevronFloat 6.2s ease-in-out infinite .6s; }
+.engine-chevron:nth-child(6) { animation: engineChevronFloat 6.2s ease-in-out infinite .75s; }
+.engine-chevron:nth-child(7) { animation: engineChevronFloat 6.2s ease-in-out infinite .9s; }
+
+.engine-chevron:hover,
+.engine-chevron:focus-visible {
+	transform: translateY(-2px) scale(1.01);
+	filter: brightness(1.06) saturate(1.04);
+	box-shadow: 0 12px 24px rgba(7, 21, 35, .12);
+	z-index: 2;
+}
+
+.engine-chevron:hover::after,
+.engine-chevron:focus-visible::after {
+	animation: engineChevronShine 780ms var(--ease) 1;
+}
+
+@keyframes engineChevronFloat {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-1px);
+	}
+}
+
+@keyframes engineChevronShine {
+	0% {
+		transform: translateX(-120%);
+		opacity: 0;
+	}
+	15% {
+		opacity: .85;
+	}
+	100% {
+		transform: translateX(120%);
+		opacity: 0;
+	}
 }
 
 .engine-chevron:first-child {
@@ -9131,46 +9255,106 @@ svg {
 		========================================================= */
 
 .success-section {
-	padding: 90px 0;
+	padding: 72px 0 78px;
 	background: #fff;
 	text-align: center;
 }
 
 .success-section h2 {
-	font-size: 28px;
-	font-weight: 800;
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: -.03em;
 	color: var(--navy);
+	margin-bottom: 26px;
 }
 
 .success-grid {
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	gap: 18px;
-	margin-top: 50px;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 10px;
+	max-width: 1200px;
+	margin: 40px auto 0;
+	overflow-x: auto;
 }
 
-.success-item .icon-box {
-	width: 50px;
-	height: 50px;
-	border: 1px solid var(--border);
+.success-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	flex: 1 1 0;
+	min-width: 0;
+	padding-inline: 2px;
+}
+
+.success-separator {
+	flex: 0 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin: 0 auto 16px;
+	align-self: center;
+	width: 18px;
+	min-width: 18px;
+	height: 18px;
+	color: rgba(225, 28, 21, .9);
+	margin-top: 3px;
+}
+
+.success-item .icon-box {
+	width: 44px;
+	height: 44px;
+	border: 1px solid rgba(225, 28, 21, .28);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 0px;
 	color: var(--red);
+	border-radius: 8px;
+	background: rgba(225, 28, 21, .03);
 }
 
 .success-item h3 {
-	font-size: 14px;
-	font-weight: 800;
+	display: block;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: .02em;
 	color: var(--navy);
-	margin-bottom: 6px;
+	margin: 0 0 0px;
+	line-height: 1.25;
 }
 
 .success-item p {
-	font-size: 12.5px;
-	color: var(--gray);
-	line-height: 1.6;
+	display: block;
+	font-size: 11.5px;
+	color: rgba(7, 21, 35, .72);
+	line-height: 1.32;
+	max-width: 124px;
+	margin: 0 auto;
+}
+
+@media (max-width: 1100px) {
+	.success-grid {
+		gap: 8px;
+		max-width: 1200px;
+	}
+}
+
+@media (max-width: 640px) {
+	.success-section {
+		padding: 64px 0;
+	}
+
+	.success-grid {
+		flex-wrap: nowrap;
+		gap: 8px;
+		max-width: 1200px;
+	}
+
+	.success-item p {
+		max-width: 100%;
+	}
 }
 
 /* =========================================================
@@ -10254,6 +10438,12 @@ canvas {
 		flex: 0 0 min(78vw, 290px);
 		min-width: 0;
 		scroll-snap-align: start;
+	}
+
+	.engine-chevron:hover,
+	.engine-chevron:focus-visible {
+		transform: none;
+		box-shadow: none;
 	}
 
 	.framework-nav {

@@ -175,12 +175,6 @@ get_header();
 	</section>
 
 	<!-- =========================================================
-	QUOTE
-	========================================================= -->
-
-	<?php hosho_render_quote( "It's not the strongest or the most intelligent who survive, but those most adaptable to change.", 'Charles Darwin', 'approach/erp/charles-darwin.png' ); ?>
-
-	<!-- =========================================================
 	WHY HOSHO DIGITAL
 	========================================================= -->
 
@@ -249,47 +243,83 @@ get_header();
 					<div class="icon-box">
 						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
 					</div>
-					<h3>01. Discovery</h3>
+					<h3>Discovery</h3>
 					<p>Audit and needs assessment</p>
+				</div>
+				<div class="success-separator" aria-hidden="true">
+					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M5 12h14"></path>
+						<path d="m13 6 6 6-6 6"></path>
+					</svg>
 				</div>
 				<div class="success-item">
 					<div class="icon-box">
 						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
 					</div>
-					<h3>02. Strategy</h3>
-					<p>Blueprint and roadmap design</p>
+					<h3>Strategy</h3>
+					<p>Blueprint and<br>roadmap design</p>
+				</div>
+				<div class="success-separator" aria-hidden="true">
+					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M5 12h14"></path>
+						<path d="m13 6 6 6-6 6"></path>
+					</svg>
 				</div>
 				<div class="success-item">
 					<div class="icon-box">
 						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
 					</div>
-					<h3>03. Build</h3>
+					<h3>Build</h3>
 					<p>Environment configuration</p>
+				</div>
+				<div class="success-separator" aria-hidden="true">
+					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M5 12h14"></path>
+						<path d="m13 6 6 6-6 6"></path>
+					</svg>
 				</div>
 				<div class="success-item">
 					<div class="icon-box">
 						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
 					</div>
-					<h3>04. Integrate</h3>
+					<h3>Integrate</h3>
 					<p>Data flow orchestration</p>
+				</div>
+				<div class="success-separator" aria-hidden="true">
+					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M5 12h14"></path>
+						<path d="m13 6 6 6-6 6"></path>
+					</svg>
 				</div>
 				<div class="success-item">
 					<div class="icon-box">
 						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
 					</div>
-					<h3>05. Launch</h3>
+					<h3>Launch</h3>
 					<p>Managed go-live support</p>
+				</div>
+				<div class="success-separator" aria-hidden="true">
+					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M5 12h14"></path>
+						<path d="m13 6 6 6-6 6"></path>
+					</svg>
 				</div>
 				<div class="success-item">
 					<div class="icon-box">
 						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10"/><path d="M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
 					</div>
-					<h3>06. Evolve</h3>
-					<p>AMS and scaling services</p>
+					<h3>Evolve</h3>
+					<p>AMS and <br>scaling services</p>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<!-- =========================================================
+	QUOTE
+	========================================================= -->
+
+	<?php hosho_render_quote( "It's not the strongest or the most intelligent who survive, but those most adaptable to change.", 'Charles Darwin', 'approach/erp/charles-darwin.png', 'quote-band--red' ); ?>
 
 	<!-- =========================================================
 	THE OPTIMIZED OUTCOME
