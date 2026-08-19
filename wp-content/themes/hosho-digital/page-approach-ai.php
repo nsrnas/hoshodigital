@@ -327,7 +327,7 @@ get_header();
 	QUOTE
 	========================================================= -->
 
-	<?php hosho_render_quote( 'The future belongs to organizations that combine human expertise with artificial intelligence.', 'Satya Nadella', 'approach/ai/nadella.png' ); ?>
+	<?php hosho_render_quote( 'The future belongs to organizations that combine human expertise with artificial intelligence.', 'Satya Nadella', 'approach/ai/nadella.png', 'quote-band--red' ); ?>
 
 	<!-- =========================================================
 	DESIGNED FOR OUTCOMES

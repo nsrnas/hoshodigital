@@ -358,7 +358,7 @@ $hosho_phases = array(
 	QUOTE
 	========================================================= -->
 
-	<?php hosho_render_quote( 'Without continual growth and progress, such words as improvement, achievement, and success have no meaning.', 'Benjamin Franklin', 'approach/main/benjamin.png' ); ?>
+	<?php hosho_render_quote( 'Without continual growth and progress, such words as improvement, achievement, and success have no meaning.', 'Benjamin Franklin', 'approach/main/benjamin.png', 'quote-band--blue' ); ?>
 
 	<!-- =========================================================
 	THE SEVEN NODES OF UNITY
