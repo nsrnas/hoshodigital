@@ -9,11 +9,17 @@
 get_header();
 ?>
 <main id="main-content" class="ams-page">
-<?php hosho_render_hero(
-    'Our AMS Framework Is<br>Designed for the Modern<br>Enterprise',
-    'approach/ams/hero.jpg',
-    array( 'class' => 'page-hero--ams' )
-); ?>
+<!-- =========================================================
+	HERO
+	========================================================= -->
+
+	<?php
+	hosho_render_hero(
+		'Our AMS Framework Is<br>Designed for the Modern<br>Enterprise',
+		'approach/ams/hero.jpg',
+		array( 'class' => 'page-hero--ams page-hero--center' )
+	);
+	?>
 
 	<!-- =========================================================
 	INTRO

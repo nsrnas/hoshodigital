@@ -103,11 +103,18 @@ $hosho_phases = array(
 );
 ?>
 <main id="main-content" class="approach-page">
-	<?php hosho_render_hero(
+	
+	<!-- =========================================================
+	HERO
+	========================================================= -->
+
+	<?php
+	hosho_render_hero(
 		"We Don't Demolish<br>What's Already<br>Working",
 		'approach/main/hero.jpg',
-		array( 'class' => 'page-hero--approach' )
-	); ?>
+		array( 'class' => 'page-hero--approach page-hero--center' )
+	);
+	?>
 
 	<!-- =========================================================
 	WHY 80% OF ENTERPRISE AI FAILS
@@ -374,10 +381,77 @@ $hosho_phases = array(
 
 		<div class="nodes-right motion">
 			<div class="nodes-diagram-image">
-                <img src="<?php echo esc_url( hosho_asset_url('approach/main/diagram.png' ) ); ?>" alt="The Seven Nodes of Unity diagram: Infrastructure, Data, Logic, Integration, Automation, AI, and Experience arranged around the Digital Core">
+                <div class="nodes-diagram-svg">
+                <svg viewBox="0 0 640 560" xmlns="http://www.w3.org/2000/svg" aria-label="The Seven Nodes of Unity diagram">
+                  <defs>
+                    <linearGradient id="nodeRingGradient" x1="220" y1="115" x2="385" y2="100" gradientUnits="userSpaceOnUse">
+                      <stop offset="0%" stop-color="#E21C15"/>
+                      <stop offset="100%" stop-color="#710E0A"/>
+                    </linearGradient>
+                    <filter id="nodeShadow" x="-20%" y="-20%" width="140%" height="160%">
+                      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="rgba(0,0,0,0.13)"/>
+                    </filter>
+                  </defs>
+
+                  <path class="node-arc" d="M 385,100 A 210,210 0 1 1 220,115"
+                        fill="none" stroke="url(#nodeRingGradient)" stroke-width="9" stroke-linecap="butt"/>
+
+                  <image class="node-logo" style="animation-delay: 1.6s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/salesforce.png' ) ); ?>" x="290" y="140" width="64" height="40" preserveAspectRatio="xMidYMid meet"/>
+                  
+                  <image class="node-logo" style="animation-delay: 1.7s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/microsoft.png' ) ); ?>" x="220" y="200" width="30" height="30" preserveAspectRatio="xMidYMid meet"/>
+                  <image class="node-logo" style="animation-delay: 1.8s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/dynamics.png' ) ); ?>" x="300" y="230" width="40" height="40" preserveAspectRatio="xMidYMid meet"/>
+                  <image class="node-logo" style="animation-delay: 1.9s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/sap.png' ) ); ?>" x="380" y="200" width="54" height="32" preserveAspectRatio="xMidYMid meet"/>
+                  
+                  <image class="node-logo" style="animation-delay: 2.0s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/ibm.png' ) ); ?>" x="205" y="285" width="64" height="28" preserveAspectRatio="xMidYMid meet"/>
+                  <image class="node-logo" style="animation-delay: 2.1s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/infor.png' ) ); ?>" x="280" y="330" width="92" height="28" preserveAspectRatio="xMidYMid meet"/>
+                  <image class="node-logo" style="animation-delay: 2.2s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/workday.png' ) ); ?>" x="370" y="280" width="80" height="28" preserveAspectRatio="xMidYMid meet"/>
+                  
+                  <image class="node-logo" style="animation-delay: 2.3s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/oracle.png' ) ); ?>" x="200" y="370" width="74" height="26" preserveAspectRatio="xMidYMid meet"/>
+                  <image class="node-logo" style="animation-delay: 2.4s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/hubspot.png' ) ); ?>" x="370" y="370" width="74" height="28" preserveAspectRatio="xMidYMid meet"/>
+                  
+                  <image class="node-logo" style="animation-delay: 2.5s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/service-now.png' ) ); ?>" x="248" y="410" width="144" height="24" preserveAspectRatio="xMidYMid meet"/>
+
+                  <g class="node-box" filter="url(#nodeShadow)">
+                    <rect x="255" y="71" width="130" height="38" fill="white" stroke="#710E0A" stroke-width="5"/>
+                    <text x="320" y="95" text-anchor="middle" font-family="Arial,sans-serif" font-size="13.5" font-weight="700" fill="#1a1c1d">Infrastructure</text>
+                  </g>
+
+                  <g class="node-box" filter="url(#nodeShadow)">
+                    <rect x="419" y="150" width="130" height="38" fill="white" stroke="#6F0E0A" stroke-width="5"/>
+                    <text x="484" y="174" text-anchor="middle" font-family="Arial,sans-serif" font-size="13.5" font-weight="700" fill="#1a1c1d">Data</text>
+                  </g>
+
+                  <g class="node-box" filter="url(#nodeShadow)">
+                    <rect x="460" y="328" width="130" height="38" fill="white" stroke="#6C0C09" stroke-width="5"/>
+                    <text x="525" y="352" text-anchor="middle" font-family="Arial,sans-serif" font-size="13.5" font-weight="700" fill="#1a1c1d">Logic</text>
+                  </g>
+
+                  <g class="node-box" filter="url(#nodeShadow)">
+                    <rect x="346" y="470" width="130" height="38" fill="white" stroke="#A81510" stroke-width="5"/>
+                    <text x="411" y="494" text-anchor="middle" font-family="Arial,sans-serif" font-size="13.5" font-weight="700" fill="#1a1c1d">Integration</text>
+                  </g>
+
+                  <g class="node-box" filter="url(#nodeShadow)">
+                    <rect x="164" y="470" width="130" height="38" fill="white" stroke="#DA1A13" stroke-width="5"/>
+                    <text x="229" y="494" text-anchor="middle" font-family="Arial,sans-serif" font-size="13.5" font-weight="700" fill="#1a1c1d">Automation</text>
+                  </g>
+
+                  <g class="node-box" filter="url(#nodeShadow)">
+                    <rect x="50" y="328" width="130" height="38" fill="white" stroke="#DE1B15" stroke-width="5"/>
+                    <text x="115" y="352" text-anchor="middle" font-family="Arial,sans-serif" font-size="13.5" font-weight="700" fill="#1a1c1d">AI</text>
+                  </g>
+
+                  <g class="node-box" filter="url(#nodeShadow)">
+                    <rect x="91" y="150" width="130" height="38" fill="white" stroke="#E21C15" stroke-width="5"/>
+                    <text x="156" y="174" text-anchor="middle" font-family="Arial,sans-serif" font-size="13.5" font-weight="700" fill="#1a1c1d">Experience</text>
+                  </g>
+				  
+                  <polygon class="node-arrowhead" points="250,95 207,101 223,129" fill="#e21c15"/>
+                </svg>
 			</div>
 		</div>
 	</section>
+
 
 	<!-- =========================================================
 	8-STAGE DELIVERY FRAMEWORK
@@ -493,6 +567,60 @@ $hosho_phases = array(
 	</section>
 
 	<!-- =========================================================
+	CORE PLATFORM
+	========================================================= -->
+
+	<section class="core-platform-section">
+		<div class="container motion">
+			<div class="core-platform-header">
+				<h2>Core Platform</h2>
+			</div>
+
+			<div class="core-platform-grid">
+				<a class="core-platform-card core-platform-card--power" href="<?php echo esc_url( home_url( '/technologies/microsoft-power/' ) ); ?>">
+					<div class="core-platform-card__orb">
+						<img src="<?php echo esc_url( hosho_asset_url( 'homepage/tech-partners/microsoft.jpg' ) ); ?>" alt="Microsoft Power Platform">
+					</div>
+					<div class="core-platform-card__overlay">
+						<span class="core-platform-card__eyebrow">Microsoft Power Platform</span>
+						<p>Power Platform brings together low code development, business intelligence and analytics, automation and Artificial Intelligence in a unified platform.</p>
+					</div>
+				</a>
+
+				<a class="core-platform-card core-platform-card--azure" href="<?php echo esc_url( home_url( '/technologies/azure/' ) ); ?>">
+					<div class="core-platform-card__orb">
+						<img src="<?php echo esc_url( hosho_asset_url( 'approach/ai/azure.png' ) ); ?>" alt="Microsoft Azure">
+					</div>
+					<div class="core-platform-card__overlay">
+						<span class="core-platform-card__eyebrow">Microsoft Azure</span>
+						<p>Cloud infrastructure and services that support secure enterprise workloads and scalable platform delivery.</p>
+					</div>
+				</a>
+
+				<a class="core-platform-card core-platform-card--copilot" href="<?php echo esc_url( home_url( '/technologies/copilot/' ) ); ?>">
+					<div class="core-platform-card__orb">
+						<img src="<?php echo esc_url( hosho_asset_url( 'approach/ai/copilot.png' ) ); ?>" alt="Microsoft Copilot">
+					</div>
+					<div class="core-platform-card__overlay">
+						<span class="core-platform-card__eyebrow">Microsoft Copilot</span>
+						<p>AI-assisted workflows that help teams draft, analyze, and act faster across daily operations.</p>
+					</div>
+				</a>
+
+				<a class="core-platform-card core-platform-card--openai" href="<?php echo esc_url( home_url( '/technologies/openai/' ) ); ?>">
+					<div class="core-platform-card__orb">
+						<img src="<?php echo esc_url( hosho_asset_url( 'homepage/tech-partners/openai.jpg' ) ); ?>" alt="OpenAI">
+					</div>
+					<div class="core-platform-card__overlay">
+						<span class="core-platform-card__eyebrow">OpenAI</span>
+						<p>Foundation models and generative AI capabilities for custom assistants, automation, and knowledge workflows.</p>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- =========================================================
 	FINAL CTA
 	========================================================= -->
 
@@ -526,8 +654,7 @@ $hosho_phases = array(
 						<option value="compliance">Ensure Regulatory Compliance</option>
 						<option value="other">Other</option>
 					</select>
-
-					<button type="submit" class="btn-red">Initiate Strategy Session</button>
+					<button type="submit" class="button">Initiate Strategy Session</button>
 				</form>
 			</div>
 		</div>

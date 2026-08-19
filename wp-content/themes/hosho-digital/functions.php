@@ -63,6 +63,7 @@ function hosho_render_hero( $headline, $image, $options = array() ) {
       'class' => '',
       'eyebrow' => '',
       'body' => array(),
+      'actions_html' => '',
       'cta_label' => '',
       'cta_url' => '',
     ),
@@ -73,10 +74,15 @@ function hosho_render_hero( $headline, $image, $options = array() ) {
     <div class="page-hero__media" style="background-image:url('<?php echo esc_url( hosho_asset_url( $image ) ); ?>')"></div>
     <div class="page-hero__content shell">
       <?php if ( $options['eyebrow'] ) : ?><p class="page-hero__eyebrow"><?php echo esc_html( $options['eyebrow'] ); ?></p><?php endif; ?>
-      <h1><?php echo wp_kses_post( $headline ); ?></h1>
+      <h1><?php echo wp_kses_post( strtoupper( $headline ) ); ?></h1>
       <?php if ( $options['body'] ) : ?>
         <div class="page-hero__body">
           <?php foreach ( (array) $options['body'] as $line ) : ?><p><?php echo esc_html( $line ); ?></p><?php endforeach; ?>
+        </div>
+      <?php endif; ?>
+      <?php if ( $options['actions_html'] ) : ?>
+        <div class="page-hero__actions">
+          <?php echo wp_kses_post( $options['actions_html'] ); ?>
         </div>
       <?php endif; ?>
       <?php if ( $options['cta_label'] && $options['cta_url'] ) : ?><a class="button page-hero__cta" href="<?php echo esc_url( $options['cta_url'] ); ?>"><?php echo esc_html( $options['cta_label'] ); ?><span class="button-arrow" aria-hidden="true"></span></a><?php endif; ?>
@@ -96,5 +102,6 @@ function hosho_render_quote( $quote, $name, $image, $class = '' ) { ?>
 }
 function hosho_render_cta( $eyebrow, $title, $body, $label, $url, $image ) { ?>
   <?php $concise = empty( $body ) || in_array( hosho_current_page(), array( 'careers', 'sustainability', 'press', 'contact', 'company', 'ai-quick-win', 'eci', 'solutions', 'operational-experience', 'customer-experience', 'employee-experience' ), true ); ?>
-  <section class="cta-panel<?php echo $concise ? ' cta-panel--concise' : ''; ?>" style="background-image:url('<?php echo esc_url( hosho_asset_url( $image ) ); ?>')"><div class="cta-panel__inner shell motion"><?php if ( $concise ) : ?><h2><?php echo wp_kses_post( $title ); ?></h2><a class="button" href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $label ); ?><span class="button-arrow" aria-hidden="true"></span></a><?php else : ?><p class="eyebrow"><?php echo esc_html( $eyebrow ); ?></p><h2><?php echo wp_kses_post( $title ); ?></h2><p><?php echo esc_html( $body ); ?></p><a class="button" href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $label ); ?></a><?php endif; ?></div></section><?php
+  <section class="cta-panel<?php echo $concise ? ' cta-panel--concise' : ''; ?>" style="background-image:url('<?php echo esc_url( hosho_asset_url( $image ) ); ?>')"><div class="cta-panel__inner shell motion">
+    <?php if ( $concise ) : ?><h2><?php echo wp_kses_post( $title ); ?></h2><a class="button" href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $label ); ?><span class="button-arrow" aria-hidden="true"></span></a><?php else : ?><p class="eyebrow"><?php echo esc_html( $eyebrow ); ?></p><h2><?php echo wp_kses_post( $title ); ?></h2><p><?php echo esc_html( $body ); ?></p><a class="button" href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $label ); ?></a><?php endif; ?></div></section><?php
 }

@@ -9,11 +9,17 @@
 get_header();
 ?>
 <main id="main-content" class="ai-page">
-<?php hosho_render_hero(
-    'Architecting the<br>Autonomous Enterprise:<br><span class="highlight">The AI Agent Flow</span>',
-    'approach/ai/hero.jpg',
-    array( 'class' => 'page-hero--ai' )
-); ?>
+<!-- =========================================================
+	HERO
+	========================================================= -->
+
+	<?php
+	hosho_render_hero(
+		'Architecting the<br>Autonomous Enterprise:<br><span class="highlight">The AI Agent Flow</span>',
+		'approach/ai/hero.jpg',
+		array( 'class' => 'page-hero--ai page-hero--center' )
+	);
+	?>
 
 	<!-- =========================================================
 	INTRO

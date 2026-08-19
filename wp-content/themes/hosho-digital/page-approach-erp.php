@@ -9,11 +9,17 @@
 get_header();
 ?>
 <main id="main-content" class="erp-page">
-<?php hosho_render_hero(
-    "You're Using 40% Less<br>Than What You're<br>Paying For.",
-    'approach/erp/hero.jpeg',
-    array( 'class' => 'page-hero--erp' )
-); ?>
+<!-- =========================================================
+	HERO
+	========================================================= -->
+
+	<?php
+	hosho_render_hero(
+		"You're Using 40% Less Than What You're Paying For.",
+		'approach/erp/hero.jpeg',
+		array( 'class' => 'page-hero--erp page-hero--center' )
+	);
+	?>
 
 	<!-- =========================================================
 	OPTIMIZATION GAP

@@ -8,11 +8,30 @@
 get_header();
 ?>
 <main id="main-content" class="home-page">
-<?php hosho_render_hero(
-    'Lead with AI —<br>Or Get Left<br>Behind.',
-    'homepage/hero.jpg',
-    array( 'class' => 'page-hero--home' )
-); ?>
+<!-- =========================================================
+	HERO SECTION
+	========================================================= -->
+
+	<section class="hero">
+		<div class="hero-image">
+			<img src="<?php echo esc_url( hosho_asset_url('homepage/hero.jpg' ) ); ?>" alt="Abstract red digital core visual">
+		</div>
+		<div class="hero-overlay"></div>
+		<div class="container">
+			<div class="hero-content">
+				<h1>
+					Lead with AI —<br>
+					Or Get Left<br>
+					Behind.
+				</h1>
+				<div class="hero-buttons">
+    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="button">Contact Us</a>
+    <a href="<?php echo esc_url( hosho_page_url( 'approach' ) ); ?>" class="button">Find Out More</a>
+</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<!-- =========================================================
 	YOUR SUCCESS. OUR GUARANTEE.
@@ -104,7 +123,7 @@ get_header();
 
 			<div class="digital-core-process">
 				<div class="core-step">
-					<div class="step-label">01 / Understanding</div>
+					<div class="step-label">Understanding</div>
 					<h3>Deep Discovery</h3>
 					<p>
 						We begin by auditing your existing data architecture and
@@ -114,7 +133,7 @@ get_header();
 				</div>
 
 				<div class="core-step">
-					<div class="step-label">02 / Architecting</div>
+					<div class="step-label">Architecting</div>
 					<h3>The Digital Core</h3>
 					<p>
 						We build a unified, self-evolving infrastructure that
@@ -124,7 +143,7 @@ get_header();
 				</div>
 
 				<div class="core-step">
-					<div class="step-label">03 / Scaling</div>
+					<div class="step-label">Scaling</div>
 					<h3>Exponential Growth</h3>
 					<p>
 						We deploy adaptive AI solutions that don't just automate
@@ -135,8 +154,8 @@ get_header();
 			</div>
 
 			<div class="motion" style="text-align:center;">
-				<a href="<?php echo esc_url(home_url('/approach')); ?>" class="btn-outline-dark">
-					Find Out More
+				<a href="<?php echo esc_url(home_url('/approach')); ?>" class="button">
+					Find Out More <span></span>
 				</a>
 			</div>
 		</div>
@@ -198,7 +217,7 @@ get_header();
 		<div class="container">
 			<div class="strategy-header-box motion">
 				<h2 class="strategy-heading">
-					From Strategy to Continuous Value
+				 	Ready for the Next
 				</h2>
 				<p class="strategy-desc">
 					Unlike traditional software projects that end at delivery,
@@ -210,16 +229,13 @@ get_header();
 
 			<div class="venn-interactive-container motion">
 				<div class="venn-main-grid">
-					<!-- Interactive SVG Venn Diagram Column -->
 					<div class="venn-svg-wrapper">
 						<svg viewBox="0 0 600 560" class="venn-svg" xmlns="http://www.w3.org/2000/svg" aria-label="Interactive Solution Venn Diagram">
 							<defs>
-								<!-- Arc Paths for Curved Outer Text (Brought closer to circle borders) -->
 								<path id="arc-top" d="M 145,165 A 152,152 0 0,1 455,165" fill="none" />
 								<path id="arc-right" d="M 390,492 A 162,162 0 0,0 552,330" fill="none" />
 								<path id="arc-left" d="M 48,330 A 162,162 0 0,0 210,492" fill="none" />
 
-								<!-- SVG ClipPaths for Mathematical Lens Overlaps -->
 								<clipPath id="clip-circle-1">
 									<circle cx="300" cy="165" r="135" />
 								</clipPath>
@@ -230,43 +246,44 @@ get_header();
 									<circle cx="210" cy="330" r="135" />
 								</clipPath>
 
-								<!-- Glow Filter -->
 								<filter id="vennGlow" x="-20%" y="-20%" width="140%" height="140%">
 									<feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#a81c1c" flood-opacity="0.3" />
 								</filter>
 							</defs>
 
-							<!-- Outer Arc Curved Labels (Color-coded per discipline shade) -->
-							<text class="venn-arc-label advisory-label">
+							<text class="venn-arc-label advisory-label" data-venn-id="advisory">
 								<textPath href="#arc-top" startOffset="50%" text-anchor="middle">VALUE INNOVATION</textPath>
 							</text>
-							<text class="venn-arc-label consulting-label">
+							<text class="venn-arc-label consulting-label" data-venn-id="consulting">
 								<textPath href="#arc-right" startOffset="50%" text-anchor="middle">OPERATIONAL EFFICIENCY</textPath>
 							</text>
-							<text class="venn-arc-label engineering-label">
+							<text class="venn-arc-label engineering-label" data-venn-id="engineering">
 								<textPath href="#arc-left" startOffset="50%" text-anchor="middle">ENGINEERING EXCELLENCE</textPath>
 							</text>
+
+							<!-- Overlap Lenses (Static visual intersections, hover passes to main circles) -->
+                            <g class="venn-overlap-group">
+                                <circle cx="210" cy="330" r="135" clip-path="url(#clip-circle-1)" class="venn-petal petal-3" />
+                                <circle cx="300" cy="165" r="135" clip-path="url(#clip-circle-3)" class="venn-petal petal-1" />
+                                <text x="245" y="235" class="venn-petal-text" transform="rotate(30, 240, 215)">Innovation</text>
+                            </g>
+
+                            <g class="venn-overlap-group">
+                                <circle cx="300" cy="165" r="135" clip-path="url(#clip-circle-2)" class="venn-petal petal-1" />
+                                <circle cx="390" cy="330" r="135" clip-path="url(#clip-circle-1)" class="venn-petal petal-2" />
+                                <text x="355" y="235" class="venn-petal-text" transform="rotate(-30, 360, 215)">Alignment</text>
+                            </g>
+
+                            <g class="venn-overlap-group">
+                                <circle cx="390" cy="330" r="135" clip-path="url(#clip-circle-3)" class="venn-petal petal-2" />
+                                <circle cx="210" cy="330" r="135" clip-path="url(#clip-circle-2)" class="venn-petal petal-3" />
+                                <text x="280" y="330" class="venn-petal-text" transform="rotate(-90, 300, 330)">Execution</text>
+                            </g>
 
 							<!-- Main 3 Base Circles (Distinct red strokes) -->
 							<circle class="venn-circle venn-circle-advisory active" data-venn-id="advisory" cx="300" cy="165" r="135" tabindex="0" role="button" aria-label="Solution Advisory" />
 							<circle class="venn-circle venn-circle-consulting" data-venn-id="consulting" cx="390" cy="330" r="135" tabindex="0" role="button" aria-label="Functional Consulting" />
 							<circle class="venn-circle venn-circle-engineering" data-venn-id="engineering" cx="210" cy="330" r="135" tabindex="0" role="button" aria-label="Software Engineering" />
-
-							<!-- Overlap Lenses (Static visual intersections, hover passes to main circles) -->
-                            <g class="venn-overlap-group">
-                                <circle cx="210" cy="330" r="135" clip-path="url(#clip-circle-1)" class="venn-petal" />
-                                <text x="245" y="235" class="venn-petal-text" transform="rotate(30, 240, 215)">Innovation</text>
-                            </g>
-
-                            <g class="venn-overlap-group">
-                                <circle cx="300" cy="165" r="135" clip-path="url(#clip-circle-2)" class="venn-petal" />
-                                <text x="355" y="235" class="venn-petal-text" transform="rotate(-30, 360, 215)">Alignment</text>
-                            </g>
-
-                            <g class="venn-overlap-group">
-                                <circle cx="390" cy="330" r="135" clip-path="url(#clip-circle-3)" class="venn-petal" />
-                                <text x="280" y="330" class="venn-petal-text" transform="rotate(-90, 300, 330)">Execution</text>
-                            </g>
 
 							<!-- Inner Circle Text Labels (Color-coded to matching discipline shade) -->
 							<g class="venn-label-group advisory-label" data-venn-id="advisory">
@@ -275,13 +292,13 @@ get_header();
 							</g>
 
 							<g class="venn-label-group consulting-label" data-venn-id="consulting">
-								<text x="412" y="348" class="venn-circle-title">Functional</text>
-								<text x="412" y="374" class="venn-circle-title">Consulting</text>
+								<text x="430" y="330" class="venn-circle-title">Functional</text>
+								<text x="430" y="356" class="venn-circle-title">Consulting</text>
 							</g>
 
 							<g class="venn-label-group engineering-label" data-venn-id="engineering">
-								<text x="188" y="348" class="venn-circle-title">Software</text>
-								<text x="188" y="374" class="venn-circle-title">Engineering</text>
+								<text x="170" y="330" class="venn-circle-title">Software</text>
+								<text x="170" y="356" class="venn-circle-title">Engineering</text>
 							</g>
 						</svg>
 					</div>
@@ -390,11 +407,6 @@ get_header();
 						Rapid integration of ready-to-use AI modules to solve
 						immediate business bottlenecks.
 					</p>
-					<div class="rapid-usecases-label">Ideal Use Cases</div>
-					<ul>
-						<li>Customer Support Bots</li>
-						<li>Automated Data Entry</li>
-					</ul>
 				</article>
 
 				<article class="rapid-card featured">
@@ -406,11 +418,6 @@ get_header();
 						A middleware approach that connects existing legacy
 						systems with a unified intelligent orchestration layer.
 					</p>
-					<div class="rapid-usecases-label">Ideal Use Cases</div>
-					<ul>
-						<li>ERP/CRM Intelligence</li>
-						<li>Cross-Dept Workflows</li>
-					</ul>
 				</article>
 
 				<article class="rapid-card">
@@ -422,11 +429,6 @@ get_header();
 						Custom-engineered AI infrastructure designed from the
 						ground up to redefine your competitive advantage.
 					</p>
-					<div class="rapid-usecases-label">Ideal Use Cases</div>
-					<ul>
-						<li>Proprietary Models</li>
-						<li>Industry-Specific Platforms</li>
-					</ul>
 				</article>
 			</div>
 		</div>
