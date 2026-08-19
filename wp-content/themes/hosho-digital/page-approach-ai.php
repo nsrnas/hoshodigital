@@ -312,7 +312,7 @@ get_header();
 				</div>
 
 				<div class="gov-item">
-					<div class="gov-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a7.8 7.8 0 0 0 .1-6l2-1.2-2-3.4-2.3.9a8 8 0 0 0-5.2-3L11.6 0h-3.2l-.4 2.3a8 8 0 0 0-5.2 3L.5 4.4l-2 3.4 2 1.2a7.8 7.8 0 0 0 .1 6l-2 1.2 2 3.4 2.3-.9a8 8 0 0 0 5.2 3l.4 2.3h3.2l.4-2.3a8 8 0 0 0 5.2-3l2.3.9 2-3.4Z"/></svg></div>
+					<div class="gov-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a7.8 7.8 0 0 0 .1-6l2-1.2-2-3.4-2.3.9a8 8 0 0 0-5.2-3L11.6 0h-3.2l-.4 2.3a8 8 0 0 0-5.2 3L.5 4.4l-2 3.4 2 1.2a7.8 7.8 0 0 0 .1 6l-2 1.2 2 3.4 2.3-.9a8 8 0 0 0 5.2 3l.4 2.3h3.2l.4-2.3a8 8 0 0 0 5.2-3l2.3.9 2-3.4Z"/></div>
 					<div class="gov-text">
 						<span class="small-title">Scale</span>
 						<h4>Organization Policies</h4>
@@ -349,7 +349,7 @@ get_header();
 				</div>
 				<div class="outcome-card">
 					<div class="outcome-card__top">
-						<div class="out-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a7.8 7.8 0 0 0 .1-6l2-1.2-2-3.4-2.3.9a8 8 0 0 0-5.2-3L11.6 0h-3.2l-.4 2.3a8 8 0 0 0-5.2 3L.5 4.4l-2 3.4 2 1.2a7.8 7.8 0 0 0 .1 6l-2 1.2 2 3.4 2.3-.9a8 8 0 0 0 5.2 3l.4 2.3h3.2l.4-2.3a8 8 0 0 0 5.2-3l2.3.9 2-3.4Z"/></svg></div>
+						<div class="out-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a7.8 7.8 0 0 0 .1-6l2-1.2-2-3.4-2.3.9a8 8 0 0 0-5.2-3L11.6 0h-3.2l-.4 2.3a8 8 0 0 0-5.2 3L.5 4.4l-2 3.4 2 1.2a7.8 7.8 0 0 0 .1 6l-2 1.2 2 3.4 2.3-.9a8 8 0 0 0 5.2 3l.4 2.3h3.2l.4-2.3a8 8 0 0 0 5.2-3l2.3.9 2-3.4Z"/></div>
 						<h4>Expert Engineering</h4>
 					</div>
 					<p>Deep technical implementation of custom LLMs, vector databases, and agentic orchestration flows.</p>
