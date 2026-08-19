@@ -4,7 +4,7 @@
 	<?php
 	hosho_render_hero(
 		'Customer<br>Experience Solutions',
-		'hero-customer-experience.png',
+		'hero-customer-experience.jpg',
 		['class' => 'page-hero--cx']
 	);
 	?>
@@ -23,10 +23,13 @@
 			<div class="opex-dual-cards__wrapper">
 
 				<div class="opex-stat-card">
-					<h2 class="opex-stat-card__number">5x to 25x</h2>
+					<h2 class="opex-stat-card__number"><span data-count-up data-count-end="5" data-count-suffix="x">5x</span> to <span data-count-up data-count-end="25" data-count-suffix="x">25x</span></h2>
 					<h3 class="opex-stat-card__heading">Acquiring a new customer can cost 5 to 25 times more than retaining an existing one.</h3>
 					<p class="opex-stat-card__body">Organizations that prioritize customer relationships, loyalty, and service quality create stronger long-term business value.</p>
-					<p class="eyebrow opex-stat-card__source">Source: Harvard Business Review | The Value of Keeping the Right Customers</p>
+					<div class="opex-stat-card__source">
+						<img class="source-logo source-logo--hbr" src="<?php echo esc_url( hosho_asset_url( 'hbr-logo.png' ) ); ?>" alt="" aria-hidden="true">
+						<span class="source-brand">Harvard Business Review</span>
+					</div>
 					<div class="opex-stat-card__blob" aria-hidden="true"></div>
 				</div>
 

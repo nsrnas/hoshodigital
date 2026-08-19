@@ -4,7 +4,7 @@
 	<?php
 	hosho_render_hero(
 		'Operational<br>Experience Solutions',
-		'hero-operational-experience.png',
+		'hero-operational-experience.jpg',
 		['class' => 'page-hero--opex']
 	);
 	?>
@@ -24,10 +24,13 @@
 			<div class="opex-dual-cards__wrapper">
 				
 				<div class="opex-stat-card">
-					<h2 class="opex-stat-card__number">87%</h2>
+					<h2 class="opex-stat-card__number"><span data-count-up data-count-end="87" data-count-suffix="%">87%</span></h2>
 					<h3 class="opex-stat-card__heading">of executives believe digital technologies are changing customer expectations faster than their organizations can adapt.</h3>
 					<p class="opex-stat-card__body">Organizations are under increasing pressure to modernize operations, improve efficiency, and respond faster to changing business demands.</p>
-					<p class="eyebrow opex-stat-card__source">Source: MIT Sloan Management Review</p>
+					<div class="opex-stat-card__source">
+						<img class="source-logo source-logo--mit" src="<?php echo esc_url( hosho_asset_url( 'mit-logo.png' ) ); ?>" alt="" aria-hidden="true">
+						<span class="source-brand">MIT Sloan Management Review</span>
+					</div>
 					<div class="opex-stat-card__blob" aria-hidden="true"></div>
 				</div>
 

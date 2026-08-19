@@ -7,9 +7,12 @@
   <section class="section section-mist"><div class="shell"><div class="solutions-insight motion">
     <span class="solutions-insight__bar" aria-hidden="true"></span>
     <div class="solutions-insight__body">
-      <h2 class="solutions-insight__heading">Only <strong class="solutions-insight__big">7%</strong> of organizations have successfully scaled AI across the enterprise.</h2>
+      <h2 class="solutions-insight__heading">Only <strong class="solutions-insight__big" data-count-up data-count-end="7" data-count-suffix="%">7%</strong> of organizations have successfully scaled AI across the enterprise.</h2>
       <p>While nearly 90% of organizations are already experimenting with AI, very few have successfully transformed AI initiatives into enterprise-wide business value.</p>
-      <p class="solutions-insight__source">Source: McKinsey &amp; Company</p>
+      <div class="solutions-insight__source">
+        <img class="source-logo source-logo--mckinsey" src="<?php echo esc_url( hosho_asset_url( 'mckinsey-logo.png' ) ); ?>" alt="" aria-hidden="true">
+        <span class="source-brand">McKinsey &amp; Company</span>
+      </div>
     </div>
   </div></div></section>
 
@@ -52,7 +55,7 @@
     </div>
   </div></section>
 
-  <section class="section"><div class="shell"><div class="intro-grid motion"><div><p class="eyebrow">Why choose us</p><h2>Why HOSHŌ Digital</h2></div><p>Six pillars that set our enterprise solutions apart from the competition.</p></div>
+  <section class="section"><div class="shell"><div class="intro-grid motion"><div><p class="eyebrow">Why choose us</p><h2>Our Value</h2></div></div>
     <div class="editorial-grid solutions-why-grid">
       <article class="feature" style="grid-column:span 4">
         <span class="feature__index"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 20V15.7C2.05 14.833 1.313 13.821.788 12.663.263 11.504 0 10.283 0 9 0 6.5.875 4.375 2.625 2.625 4.375.875 6.5 0 9 0 11.083 0 12.929.613 14.538 1.838 16.146 3.063 17.192 4.658 17.675 6.625L18.975 11.75C19.058 12.067 19 12.354 18.8 12.613 18.6 12.871 18.333 13 18 13H16V16C16 16.55 15.804 17.021 15.413 17.413 15.021 17.804 14.55 18 14 18H12V20H10V16H14V11H16.7L15.75 7.125C15.367 5.608 14.55 4.375 13.3 3.425 12.05 2.475 10.617 2 9 2 7.067 2 5.417 2.675 4.05 4.025 2.683 5.375 2 7.017 2 8.95 2 9.95 2.204 10.9 2.613 11.8 3.021 12.7 3.6 13.5 4.35 14.2L5 14.8V20H3Z" fill="currentColor"/></svg></span>
