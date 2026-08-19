@@ -259,6 +259,48 @@
     }
   }
 
+  const countTargets = [...document.querySelectorAll('[data-count-up]')];
+  if (countTargets.length) {
+    const animateCounter = (el) => {
+      if (el.dataset.countAnimated === 'true') return;
+      el.dataset.countAnimated = 'true';
+
+      const start = Number.parseFloat(el.dataset.countStart || '0');
+      const end = Number.parseFloat(el.dataset.countEnd || '0');
+      const prefix = el.dataset.countPrefix || '';
+      const suffix = el.dataset.countSuffix || '';
+      const duration = Number.parseInt(el.dataset.countDuration || '1200', 10) || 1200;
+      const decimals = Number.parseInt(el.dataset.countDecimals || '0', 10) || 0;
+      const format = (value) => `${prefix}${value.toFixed(decimals)}${suffix}`;
+
+      if (reducedMotion || !('IntersectionObserver' in window)) {
+        el.textContent = format(end);
+        return;
+      }
+
+      const startTime = performance.now();
+      const tick = (now) => {
+        const progress = Math.min((now - startTime) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = start + (end - start) * eased;
+        el.textContent = format(current);
+        if (progress < 1) window.requestAnimationFrame(tick);
+      };
+
+      window.requestAnimationFrame(tick);
+    };
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        animateCounter(entry.target);
+        counterObserver.unobserve(entry.target);
+      });
+    }, { threshold: 0.35 });
+
+    countTargets.forEach((target) => counterObserver.observe(target));
+  }
+
   // Interactive Venn Diagram
   const vennContainer = document.querySelector('.venn-interactive-container');
   if (vennContainer) {

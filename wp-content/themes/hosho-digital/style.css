@@ -2065,10 +2065,10 @@ body.hosho-remade .page-hero__cta:hover .button-arrow {
 	margin-top: 24px;
 	padding-top: 16px;
 	border-top: 1px solid rgba(232, 189, 182, .3);
-	font-size: 14px;
-	font-weight: 600;
-	color: var(--muted);
-	opacity: .7;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 38px;
 }
 
 .solutions-cards {
@@ -2310,14 +2310,12 @@ body.hosho-remade .solutions-card__caps>span:last-child {
 }
 
 .opex-stat-card__source {
-	font-size: 12px;
-	color: rgba(255, 255, 255, .5);
 	border-top: 1px solid rgba(255, 255, 255, .1);
 	padding-top: 16px;
 	margin-bottom: 0;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: .08em;
+	display: flex;
+	align-items: center;
+	min-height: 38px;
 }
 
 .opex-stat-card__blob {
@@ -2692,14 +2690,66 @@ body.hosho-remade .solutions-card__caps>span:last-child {
 }
 
 .ex-stat__source {
-	font-size: 12px;
-	color: rgba(199, 198, 198, .7);
 	border-top: 1px solid rgba(255, 255, 255, .1);
 	padding-top: 16px;
 	margin-bottom: 0;
-	font-weight: 600;
-	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	min-height: 38px;
+}
+
+.source-logo {
+	display: block;
+	max-width: none;
+	max-height: 18px;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+	flex-shrink: 0;
+}
+
+.source-brand {
+	font-size: 12px;
+	font-weight: 700;
 	letter-spacing: .08em;
+	text-transform: uppercase;
+	opacity: .8;
+	white-space: nowrap;
+}
+
+.source-label {
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: .08em;
+	text-transform: uppercase;
+	opacity: .7;
+	white-space: nowrap;
+}
+
+.solutions-insight__source,
+.opex-stat-card__source,
+.ex-stat__source {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	flex-wrap: wrap;
+}
+
+.source-logo--mckinsey {
+	max-height: 30px;
+}
+
+.source-logo--hbr {
+	max-height: 40px;
+}
+
+.source-logo--mit {
+	max-height: 25px;
+	filter: drop-shadow(0 0 1px rgba(255, 255, 255, .95));
+}
+
+.source-logo--gallup {
+	max-height: 50px;
 }
 
 .ex-stat__right {
