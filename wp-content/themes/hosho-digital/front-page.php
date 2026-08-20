@@ -6,83 +6,58 @@
  */
 
 get_header();
+$hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
+$hg_cards     = array(
+	array(
+		'eyebrow'  => 'Outcome',
+		'body'     => 'Measurable enterprise value through audited operational efficiency and radical innovation.',
+	),
+	array(
+		'eyebrow'  => 'Capability',
+		'body'     => 'Knowledge transfer that ensures your leadership can master the AI frontier independently.',
+	),
+	array(
+		'eyebrow'  => 'Integrity',
+		'body'     => 'Strategic alliances built on radical transparency and aligned long-term business goals.',
+	),
+);
+
 ?>
 <main id="main-content" class="home-page">
 <!-- =========================================================
 	HERO SECTION
 	========================================================= -->
-
-	<section class="hero">
-		<div class="hero-image">
-			<img src="<?php echo esc_url( hosho_asset_url('homepage/hero.jpg' ) ); ?>" alt="Abstract red digital core visual">
-		</div>
-		<div class="hero-overlay"></div>
-		<div class="container">
-			<div class="hero-content">
-				<h1>
-					Lead with AI —<br>
-					Or Get Left<br>
-					Behind.
-				</h1>
-				<div class="hero-buttons">
-    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="button">Contact Us</a>
-    <a href="<?php echo esc_url( hosho_page_url( 'approach' ) ); ?>" class="button">Find Out More</a>
-</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	<?php hosho_render_hero( 'Lead with AI<br>Or Get Left<br>Behind', 'homepage/hero.jpg', array( 'class' => 'page-hero--company' ) ); ?>
 
 	<!-- =========================================================
 	YOUR SUCCESS. OUR GUARANTEE.
 	========================================================= -->
-
-	<section class="success-guarantee">
-		<div class="container">
-
-			<div class="success-card motion">
-				<h2>
-					Your Success<br>
-					Our Guarantee
-				</h2>
-				<img class="success-seal" src="<?php echo esc_url( hosho_asset_url('homepage/stamp.png' ) ); ?>" alt="Guarantee seal">
-			</div>
-
-			<div class="guarantee-body">
-				<div class="guarantee-left motion">
-					<h3>
-						Our<br>
-						Guarantee
-					</h3>
-					<span class="guarantee-underline"></span>
+	<section class="intro-section">
+		<div class="hg-section" aria-label="Our Guarantee">
+			<div class="hg-layout">
+				<div class="hg-brand-box">
+					<p class="hg-tagline">Your Success<br>Our Guarantee</p>
+					<div class="hg-stamp-stage" id="hgStampStage">
+						<img class="hg-stamp-img" src="<?php echo esc_url( $hg_stamp_img ); ?>" alt="HOSHO ä¿è¨¼ (guarantee) stamp seal">
+					</div>
 				</div>
 
-				<div class="pillars-grid">
-					<div class="pillar-card outcome">
-						<div class="pillar-label">Outcome</div>
-						<h4>Precision Value</h4>
-						<p>
-							Measurable enterprise value through audited
-							operational efficiency and radical innovation.
-						</p>
-					</div>
-
-					<div class="pillar-card capability">
-						<div class="pillar-label">Capability</div>
-						<h4>Empowered Teams</h4>
-						<p>
-							Knowledge transfer that ensures your leadership
-							can master the AI frontier independently.
-						</p>
-					</div>
-
-					<div class="pillar-card integrity">
-						<div class="pillar-label">Integrity</div>
-						<h4>Principled Partnership</h4>
-						<p>
-							Strategic alliances built on radical transparency
-							and aligned long-term business goals.
-						</p>
+				<div class="hg-guarantee-col">
+					<h2 class="hg-heading">Our Guarantee</h2>
+					<div class="hg-cards-col">
+						<?php foreach ( $hg_cards as $hg_card ) : ?>
+							<button type="button" class="hg-flip-card" aria-pressed="false" aria-label="Tap to reveal <?php echo esc_attr( $hg_card['eyebrow'] ); ?> guarantee">
+								<img class="hg-corner-stamp" src="<?php echo esc_url( $hg_stamp_img ); ?>" alt="">
+								<div class="hg-card-head">
+									<div class="hg-card-title-wrap">
+										<h3 class="hg-card-title"><?php echo esc_html( $hg_card['eyebrow'] ); ?></h3>
+									</div>
+								</div>
+								<div class="hg-card-body-wrap">
+									<span class="hg-body"><?php echo esc_html( $hg_card['body'] ); ?></span>
+								</div>
+							</button>
+						<?php endforeach; ?>
 					</div>
 				</div>
 			</div>
@@ -96,9 +71,6 @@ get_header();
 	<section class="digital-core" id="approach">
 		<div class="container">
 			<div class="digital-core-heading motion">
-				<span class="small-title">
-					Our Approach
-				</span>
 				<h2>
 					Transformation without Disruption
 				</h2>
@@ -168,11 +140,8 @@ get_header();
 	<section class="cognitive-shift">
 		<div class="container">
 			<div class="cognitive-header motion">
-				<span class="small-title">
-					The Cognitive Shift
-				</span>
 				<h2 class="section-title">
-					Redefining Enterprise Software.
+					Redefining Enterprise Software
 				</h2>
 				<p class="section-desc">
 					Artificial Intelligence is redefining enterprise software.
@@ -206,7 +175,6 @@ get_header();
 					</p>
 				</div>
 			</div>
-		</div>
 	</section>
 
 	<!-- =========================================================
@@ -219,12 +187,6 @@ get_header();
 				<h2 class="strategy-heading">
 				 	Ready for the Next
 				</h2>
-				<p class="strategy-desc">
-					Unlike traditional software projects that end at delivery,
-					Solution as a Service combines <strong>advisory</strong>,
-					<strong>consulting</strong>, and <strong>engineering</strong>
-					into one continuous partnership that evolves with your business.
-				</p>
 			</div>
 
 			<div class="venn-interactive-container motion">
@@ -261,31 +223,32 @@ get_header();
 								<textPath href="#arc-left" startOffset="50%" text-anchor="middle">ENGINEERING EXCELLENCE</textPath>
 							</text>
 
-							<!-- Overlap Lenses (Static visual intersections, hover passes to main circles) -->
-                            <g class="venn-overlap-group">
-                                <circle cx="210" cy="330" r="135" clip-path="url(#clip-circle-1)" class="venn-petal petal-3" />
-                                <circle cx="300" cy="165" r="135" clip-path="url(#clip-circle-3)" class="venn-petal petal-1" />
-                                <text x="245" y="235" class="venn-petal-text" transform="rotate(30, 240, 215)">Innovation</text>
-                            </g>
-
-                            <g class="venn-overlap-group">
-                                <circle cx="300" cy="165" r="135" clip-path="url(#clip-circle-2)" class="venn-petal petal-1" />
-                                <circle cx="390" cy="330" r="135" clip-path="url(#clip-circle-1)" class="venn-petal petal-2" />
-                                <text x="355" y="235" class="venn-petal-text" transform="rotate(-30, 360, 215)">Alignment</text>
-                            </g>
-
-                            <g class="venn-overlap-group">
-                                <circle cx="390" cy="330" r="135" clip-path="url(#clip-circle-3)" class="venn-petal petal-2" />
-                                <circle cx="210" cy="330" r="135" clip-path="url(#clip-circle-2)" class="venn-petal petal-3" />
-                                <text x="280" y="330" class="venn-petal-text" transform="rotate(-90, 300, 330)">Execution</text>
-                            </g>
-
-							<!-- Main 3 Base Circles (Distinct red strokes) -->
-							<circle class="venn-circle venn-circle-advisory active" data-venn-id="advisory" cx="300" cy="165" r="135" tabindex="0" role="button" aria-label="Solution Advisory" />
+							<circle class="venn-circle venn-circle-advisory" data-venn-id="advisory" cx="300" cy="165" r="135" tabindex="0" role="button" aria-label="Solution Advisory" />
 							<circle class="venn-circle venn-circle-consulting" data-venn-id="consulting" cx="390" cy="330" r="135" tabindex="0" role="button" aria-label="Functional Consulting" />
 							<circle class="venn-circle venn-circle-engineering" data-venn-id="engineering" cx="210" cy="330" r="135" tabindex="0" role="button" aria-label="Software Engineering" />
 
-							<!-- Inner Circle Text Labels (Color-coded to matching discipline shade) -->
+							<g class="venn-overlap-group">
+								<circle cx="210" cy="330" r="135" clip-path="url(#clip-circle-1)" class="venn-petal petal-3" />
+								<circle cx="300" cy="165" r="135" clip-path="url(#clip-circle-3)" class="venn-petal petal-1" />
+								<text x="245" y="235" class="venn-petal-text" transform="rotate(30, 240, 215)">Innovation</text>
+							</g>
+
+							<g class="venn-overlap-group">
+								<circle cx="300" cy="165" r="135" clip-path="url(#clip-circle-2)" class="venn-petal petal-1" />
+								<circle cx="390" cy="330" r="135" clip-path="url(#clip-circle-1)" class="venn-petal petal-2" />
+								<text x="355" y="235" class="venn-petal-text" transform="rotate(-30, 360, 215)">Alignment</text>
+							</g>
+
+							<g class="venn-overlap-group">
+								<circle cx="390" cy="330" r="135" clip-path="url(#clip-circle-3)" class="venn-petal petal-2" />
+								<circle cx="210" cy="330" r="135" clip-path="url(#clip-circle-2)" class="venn-petal petal-3" />
+								<text x="280" y="330" class="venn-petal-text" transform="rotate(-90, 300, 330)">Execution</text>
+							</g>
+
+							<g class="venn-center" aria-hidden="true">
+								<image href="<?php echo esc_url( hosho_asset_url( 'homepage/hosho-white-logo.png' ) ); ?>" x="310" y="283" width="30" height="30" transform="translate(-25, -25)" />
+							</g>
+
 							<g class="venn-label-group advisory-label" data-venn-id="advisory">
 								<text x="300" y="120" class="venn-circle-title">Solution</text>
 								<text x="300" y="146" class="venn-circle-title">Advisory</text>
@@ -307,7 +270,6 @@ get_header();
 					<div class="venn-details-card" id="vennDetailsCard">
 						<div class="details-card-head">
 							<span class="details-badge" id="vennCategory">Value Innovation</span>
-							<span class="details-icon" id="vennIcon">💡</span>
 						</div>
 						<h3 class="details-title" id="vennTitle">Solution Advisory</h3>
 						<p class="details-desc" id="vennDesc">
@@ -329,32 +291,6 @@ get_header();
 				</div>
 			</div>
 
-			<div class="business-value-box motion">
-				<span class="small-title white">
-					Convergence of Disciplines
-				</span>
-				<h2>
-					Continuous Business Value
-				</h2>
-				<div class="value-items">
-					<div class="value-item">
-						<span></span>
-						End-to-End Delivery
-					</div>
-					<div class="value-item">
-						<span></span>
-						Industry Accelerators
-					</div>
-					<div class="value-item">
-						<span></span>
-						Risk Mitigation
-					</div>
-					<div class="value-item">
-						<span></span>
-						User Satisfaction
-					</div>
-				</div>
-			</div>
 		</div>
 	</section>
 
@@ -371,12 +307,9 @@ get_header();
 	<section class="rapid-spectrum">
 		<div class="container">
 			<div class="rapid-header motion">
-				<span class="small-title">
-					Rapid to Be Spoke
-				</span>
 				<h2>
 					Every engagement sits somewhere on this
-					<strong>spectrum</strong>, we'll help you find where.
+					<strong>spectrum</strong>, we'll help you find where
 				</h2>
 			</div>
 
@@ -409,10 +342,10 @@ get_header();
 					</p>
 				</article>
 
-				<article class="rapid-card featured">
+				<article class="rapid-card">
 					<div class="rapid-card-head">
-						<span class="rapid-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3c4 0 10 4 10 9s-6 9-10 9"/><path d="M17 3c-4 0-10 4-10 9s6 9 10 9"/><path d="M9 8h6"/><path d="M9 16h6"/></svg></span>
-						<h3>Integrated AI Layer</h3>
+						<span class="rapid-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M7 21V7l5-4v10l4-2v10"/></svg></span>
+						<h3>Integrated AI Layer<</h3>
 					</div>
 					<p class="rapid-desc">
 						A middleware approach that connects existing legacy
@@ -432,99 +365,6 @@ get_header();
 				</article>
 			</div>
 		</div>
-	</section>
-
-	<!-- ==========================================
-	AI BUDGET
-	=========================================== -->
-
-	<section class="ai-budget">
-		<div class="container">
-			<div class="budget-header motion">
-				<h2>
-					Treat your AI spend like a budget, not a blank check
-				</h2>
-				<p>
-					AI costs scale with usage in ways traditional software
-					licenses never did. We build in the controls to keep that
-					spend predictable.
-				</p>
-			</div>
-
-			<div class="budget-grid">
-				<article class="budget-card">
-					<div class="budget-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8l9 5 9-5Z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg></div>
-					<h3>Intelligent Token Management</h3>
-					<p>
-						Advanced prompt engineering to minimize payload while
-						maximizing output accuracy.
-					</p>
-				</article>
-
-				<article class="budget-card">
-					<div class="budget-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-3 3 2 5-6"/><path d="M18 7h0"/></svg></div>
-					<h3>Cost Optimization</h3>
-					<p>
-						Dynamic routing to appropriate models based on task
-						complexity and cost-efficiency.
-					</p>
-				</article>
-
-				<article class="budget-card">
-					<div class="budget-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V9"/><path d="M4 9a2 2 0 1 0 0-4"/><path d="M12 21V5"/><path d="M12 11a2 2 0 1 0 0-4"/><path d="M20 21V13"/><path d="M20 13a2 2 0 1 0 0-4"/></svg></div>
-					<h3>Usage Optimization</h3>
-					<p>
-						Real-time monitoring of AI consumption with granular
-						control over organizational access.
-					</p>
-				</article>
-
-				<article class="budget-card">
-					<div class="budget-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3Z"/></div>
-					<h3>Responsible AI Deployment</h3>
-					<p>
-						Strict governance frameworks ensuring compliance and
-						ethical AI utilization.
-					</p>
-				</article>
-			</div>
-		</div>
-	</section>
-
-	<!-- ==========================================
-	Solution Growth
-	=========================================== -->
-
-	<section class="solution-growth">
-		<div class="container">
-			<div class="growth-header motion">
-				<h2>SOLUTIONS GROWTH</h2>
-				<p>
-					"Solutions" = distinct systems we've taken from design to
-					live production
-				</p>
-			</div>
-		</div>
-
-		<div class="growth-timeline-wrap">
-			<div class="growth-full-bleed">
-				<div class="growth-riser r1"></div>
-				<div class="growth-riser r2"></div>
-				<div class="growth-box b1"><h3>8 Solutions</h3></div>
-				<div class="growth-box b2"><h3>15 Solutions</h3></div>
-				<div class="growth-box b3"><h3>30+ Solutions</h3></div>
-			</div>
-
-			<div class="growth-full-bleed growth-years-row">
-				<div class="growth-year">2023 — 2024</div>
-				<div class="growth-year">2025</div>
-				<div class="growth-year">2026</div>
-			</div>
-
-			<div class="growth-divider d1"></div>
-			<div class="growth-divider d2"></div>
-		</div>
-
 	</section>
 
 	<!-- ==========================================
@@ -580,5 +420,51 @@ get_header();
 	<?php hosho_render_cta( '', 'Painless Transformation?', '', 'Speak to Us', 'page-consult-our-experts', 'homepage/cta.jpg' ); ?>
 
 </main>
+
+<script>
+	(function () {
+		var section = document.querySelector('.hg-section');
+		if (section) {
+			var cards = section.querySelectorAll('.hg-flip-card');
+			cards.forEach(function (card) {
+				var hint = card.querySelector('.hg-tap-hint');
+				card.addEventListener('click', function () {
+					var wasOpen = card.classList.contains('is-open');
+					cards.forEach(function (other) {
+						other.classList.remove('is-open');
+						other.setAttribute('aria-pressed', 'false');
+						var otherHint = other.querySelector('.hg-tap-hint');
+						if (otherHint) otherHint.textContent = 'Tap to see more';
+					});
+
+					if (!wasOpen) {
+						card.classList.add('is-open');
+						card.setAttribute('aria-pressed', 'true');
+						if (hint) hint.textContent = 'Tap to close';
+					}
+				});
+			});
+		}
+
+		var stage = document.getElementById('hgStampStage');
+		if (stage) {
+			if ('IntersectionObserver' in window) {
+				var io = new IntersectionObserver(function (entries) {
+					entries.forEach(function (entry) {
+						if (entry.isIntersecting) {
+							stage.classList.add('is-stamped');
+							io.unobserve(stage);
+						}
+					});
+				}, { threshold: 0.4 });
+				io.observe(stage);
+			} else {
+				stage.classList.add('is-stamped');
+			}
+		}
+	})();
+</script>
+
 <?php
 get_footer();
+

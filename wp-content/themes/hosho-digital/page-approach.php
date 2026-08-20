@@ -110,7 +110,7 @@ $hosho_phases = array(
 
 	<?php
 	hosho_render_hero(
-		"We Don't Demolish<br>What's Already<br>Working",
+		"Don't Demolish<br>What's Already<br>Working",
 		'approach/main/hero.jpg',
 		array( 'class' => 'page-hero--approach page-hero--center' )
 	);
@@ -452,7 +452,6 @@ $hosho_phases = array(
 		</div>
 	</section>
 
-
 	<!-- =========================================================
 	8-STAGE DELIVERY FRAMEWORK
 	========================================================= -->
@@ -624,41 +623,8 @@ $hosho_phases = array(
 	FINAL CTA
 	========================================================= -->
 
-	<section class="philosophy-cta">
-		<div class="philosophy-cta-image">
-			<img src="<?php echo esc_url( hosho_asset_url('approach/philosophy/cta.jpg' ) ); ?>" alt="City skyline, representing the enterprise landscape">
-		</div>
-		<div class="philosophy-cta-overlay"></div>
+	<?php hosho_render_cta( '', 'Transformation Begins With What You Already Have', '', 'Speak to Us', 'page-consult-our-experts', 'approach/main/cta.jpg' ); ?>
 
-		<div class="container motion">
-			<div class="philosophy-cta-card">
-				<div class="icon">
-					<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-				</div>
-				<h2>Ready to Guarantee<br>Your AI Success?</h2>
-				<p>Let&rsquo;s map your enterprise infrastructure to the 8-stage philosophy.</p>
-
-				<form class="cta-form" action="<?php echo esc_url( home_url( '/contact' ) ); ?>" method="post">
-					<label for="hosho-work-email">Work Email</label>
-					<input type="email" id="hosho-work-email" name="work_email" placeholder="executive@enterprise.com" required>
-
-					<label for="hosho-company-name">Company Name</label>
-					<input type="text" id="hosho-company-name" name="company_name" placeholder="Acme Enterprises Inc." required>
-
-					<label for="hosho-ai-objective">Primary AI Objective</label>
-					<select id="hosho-ai-objective" name="ai_objective" required>
-						<option value="" disabled selected>Select your primary objective</option>
-						<option value="reduce-costs">Reduce Operational Costs</option>
-						<option value="customer-experience">Improve Customer Experience</option>
-						<option value="time-to-market">Accelerate Time-to-Market</option>
-						<option value="compliance">Ensure Regulatory Compliance</option>
-						<option value="other">Other</option>
-					</select>
-					<button type="submit" class="button">Initiate Strategy Session</button>
-				</form>
-			</div>
-		</div>
-	</section>
 </main>
 
 <script>

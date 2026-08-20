@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
   const root = document.documentElement;
   const body = document.body;
   const header = document.querySelector('[data-header]');
@@ -200,7 +200,7 @@
     start();
   });
 
-  // ── Homepage hero entrance ──────────────────────────────────────────────
+  // â”€â”€ Homepage hero entrance â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   const homeHero = document.querySelector('.home-page .hero');
   if (homeHero) {
     const heroImg = homeHero.querySelector('.hero-image img');
@@ -228,7 +228,7 @@
     }
   }
 
-  // ── Solutions Growth counter animation ──────────────────────────────────
+  // â”€â”€ Solutions Growth counter animation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   if (!reducedMotion && 'IntersectionObserver' in window) {
     const growthBoxes = document.querySelectorAll('.growth-box h3');
     if (growthBoxes.length) {
@@ -347,19 +347,26 @@
   const vennContainer = document.querySelector('.venn-interactive-container');
   if (vennContainer) {
     const vennData = {
+      default: {
+        category: "Convergence of Disciplines",
+        title: "Continuous Business Value",
+        description: "Unlike traditional software projects that end at delivery, Solution as a Service combines advisory, consulting, and engineering into one continuous partnership that evolves with your business.",
+        capabilities: ["End-to-End Delivery", "Industry Accelerators", "Risk Mitigation", "User Satisfaction"],
+        icon: "○"
+      },
       advisory: {
         category: "Value Innovation",
         title: "Solution Advisory",
         description: "Helps organizations identify high-impact opportunities, define business priorities, and architect AI-driven solutions aligned with overarching strategic goals.",
         capabilities: ["AI Strategy & Roadmap", "Business Re-engineering", "Low-Code Architecture", "ROI Modeling"],
-        icon: "💡"
+        icon: "ðŸ’¡"
       },
       consulting: {
         category: "Operational Efficiency",
         title: "Functional Consulting",
         description: "Bridges strategic ambition with daily execution through process re-design, governance frameworks, and organizational change management.",
         capabilities: ["Process Architecture", "Enterprise Governance", "Change Enablement", "Workflow Audit"],
-        icon: "🧩"
+        icon: "ðŸ§©"
       },
       engineering: {
         category: "Engineering Excellence",
@@ -404,16 +411,29 @@
       });
     };
 
+    const resetVennState = () => {
+      interactiveItems.forEach((item) => {
+        item.classList.remove('active');
+        item.setAttribute('aria-selected', 'false');
+      });
+      updateVennCard('default');
+    };
+
     interactiveItems.forEach((item) => {
       const id = item.getAttribute('data-venn-id');
       item.addEventListener('click', () => updateVennCard(id));
       item.addEventListener('mouseenter', () => updateVennCard(id));
     });
 
-    pills.forEach((pill) => {
-      const target = pill.getAttribute('data-venn-target');
-      pill.addEventListener('click', () => updateVennCard(target));
+    vennContainer.addEventListener('mouseleave', () => {
+      const activeItem = vennContainer.querySelector('.venn-circle.active');
+      if (!activeItem) {
+        resetVennState();
+      }
     });
+
+    resetVennState();
   }
 
 })();
+
