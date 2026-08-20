@@ -28,7 +28,7 @@
 					<h3 class="opex-stat-card__heading">of executives believe digital technologies are changing customer expectations faster than their organizations can adapt.</h3>
 					<p class="opex-stat-card__body">Organizations are under increasing pressure to modernize operations, improve efficiency, and respond faster to changing business demands.</p>
 					<div class="opex-stat-card__source">
-						<img class="source-logo source-logo--mit" src="<?php echo esc_url( hosho_asset_url( 'mit-logo.png' ) ); ?>" alt="" aria-hidden="true">
+						<img class="source-logo source-logo--mit" src="<?php echo esc_url( hosho_asset_url( 'MIT-logo.png' ) ); ?>" alt="" aria-hidden="true">
 						<span class="source-brand">MIT Sloan Management Review</span>
 					</div>
 					<div class="opex-stat-card__blob" aria-hidden="true"></div>

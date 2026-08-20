@@ -4,7 +4,7 @@
 	<?php
 	hosho_render_hero(
 		'Employee<br>Experience Solutions',
-		'hero-employee-experience.jpg',
+		'employee-cta.jpg',
 		['class' => 'page-hero--ex']
 	);
 	?>
