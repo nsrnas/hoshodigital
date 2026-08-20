@@ -37,7 +37,7 @@ function hosho_header_action() {
     'accessibility'  => array( 'Contact us', hosho_page_url( 'contact' ) ),
     'terms-of-use'   => array( 'Contact us', hosho_page_url( 'contact' ) ),
     'cookies'        => array( 'Contact us', hosho_page_url( 'contact' ) ),
-    'careers' => array( 'View opportunities', '#opportunities' ), 'sustainability' => array( 'Our commitments', '#commitments' ),
+    'careers' => array( 'View opportunities', home_url( '/job-opportunities/' ) ), 'sustainability' => array( 'Our commitments', '#commitments' ),
     'press' => array( 'Email media team', 'mailto:media@hoshodigital.com' ), 'contact' => array( 'Start a conversation', '#contact-form' ),
     'company' => array( 'Get in touch', hosho_page_url( 'contact' ) ), 'ai-quick-win' => array( 'Register interest', 'https://hoshodigital.com/ai-quick-win-form/' ),
     'eci' => array( 'Register interest', 'https://hoshodigital.com/eci-form/' ),
