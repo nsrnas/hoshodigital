@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main id="main-content">
-  <?php hosho_render_hero( 'Transform Every Business<br>Experience with<br><span style="color:#fee4cc">Intelligent Digital<br>Solutions</span>', 'hero-solutions.jpg', array( 'class' => 'page-hero--solutions' ) ); ?>
+  <?php hosho_render_hero( 'Transform Business<br>Experience with<br><span style="color:#fee4cc">Intelligent Digital<br>Solutions</span>', 'hero-solutions.jpg', array( 'class' => 'page-hero--solutions' ) ); ?>
 
   <section class="section"><div class="shell intro-grid motion"><div><p class="eyebrow">What we deliver</p><h2>Unify operations. Elevate productivity. Deliver exceptional journeys.</h2></div><div class="body-copy"><p class="lede">HOSHŌ DIGITAL empowers global enterprises to unify operations, elevate employee productivity, and deliver exceptional customer journeys through integrated AI and data-driven automation.</p></div></div></section>
 
@@ -19,7 +19,7 @@
   <section class="section cx-intro">
 		<div class="shell motion">
 			<h2 class="cx-intro__title">How HOSHŌ Digital Helps</h2>
-			<p class="cx-intro__body">We helps organizations bridge the gap between AI adoption and measurable business outcomes by delivering connected solutions across Customer Experience, Employee Experience, and Operational Experience. Our integrated approach enables businesses to modernize operations, improve collaboration, and accelerate digital transformation with confidence.</p>
+			<p class="cx-intro__body">We help organizations bridge the gap between AI adoption and measurable business outcomes by delivering connected solutions across Customer Experience, Employee Experience, and Operational Experience. Our integrated approach enables businesses to modernize operations, improve collaboration, and accelerate digital transformation with confidence.</p>
 		</div>
 	</section>
 
@@ -90,7 +90,7 @@
     </div>
   </div></section>
 
-  <?php hosho_render_quote( 'AI is the most powerful technology force of our time.', 'Jensen Huang', 'solutions-jensen-huang.png' ); ?>
+  <?php hosho_render_quote( 'The value of an idea lies in the using of it.', 'Thomas Edison', 'thomas-edison.png' ); ?>
 
   <?php hosho_render_cta( 'Start your transformation', 'Ready to Transform Your Business?', 'Talk to HOSHŌ DIGITAL about intelligent digital solutions for your enterprise.', 'Contact Us', hosho_page_url( 'contact' ), 'company-cta-singapore-night.jpg' ); ?>
 </main>

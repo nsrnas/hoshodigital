@@ -4,7 +4,7 @@
 	<?php
 	hosho_render_hero(
 		'Employee<br>Experience Solutions',
-		'hero-employee-experience.jpg',
+		'hero-employee-experience.jpeg',
 		['class' => 'page-hero--ex']
 	);
 	?>
@@ -21,7 +21,7 @@
 			<div class="ex-stat__wrapper">
 
 				<div class="ex-stat__left">
-					<h2 class="ex-stat__headline"><span class="ex-stat__highlight">Highly engaged<br>teams</span> show <span class="ex-stat__accent" data-count-up data-count-end="23" data-count-suffix="%">23%</span><br>greater<br>profitability.</h2>
+					<h2 class="ex-stat__headline"><span class="ex-stat__highlight">Highly engaged teams</span> show <span class="ex-stat__accent" data-count-up data-count-end="23" data-count-suffix="%">23%</span> greater profitability.</h2>
 					<div class="ex-stat__bar" aria-hidden="true"></div>
 					<p class="ex-stat__body">Organizations that invest in employee engagement and workplace experience consistently achieve stronger business performance and long-term success.</p>
 					<div class="ex-stat__source">
