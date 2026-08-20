@@ -301,6 +301,48 @@
     countTargets.forEach((target) => counterObserver.observe(target));
   }
 
+  // Count approved programme statistics once they enter the viewport.
+  const programmeCounters = [...document.querySelectorAll('[data-count-to]')];
+  if (programmeCounters.length) {
+    const setCounterValue = (element, value) => {
+      const prefix = element.dataset.countPrefix || '';
+      const suffix = element.dataset.countSuffix || '';
+      element.textContent = `${prefix}${Math.round(value)}${suffix}`;
+    };
+
+    const animateProgrammeCounter = (element) => {
+      const target = Number.parseFloat(element.dataset.countTo || '0');
+      if (!Number.isFinite(target)) return;
+      if (reducedMotion) {
+        setCounterValue(element, target);
+        return;
+      }
+
+      const duration = 1450;
+      const startedAt = performance.now();
+      const tick = (now) => {
+        const progress = Math.min((now - startedAt) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        setCounterValue(element, target * eased);
+        if (progress < 1) window.requestAnimationFrame(tick);
+      };
+      window.requestAnimationFrame(tick);
+    };
+
+    if (reducedMotion || !('IntersectionObserver' in window)) {
+      programmeCounters.forEach(animateProgrammeCounter);
+    } else {
+      const programmeCounterObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          animateProgrammeCounter(entry.target);
+          programmeCounterObserver.unobserve(entry.target);
+        });
+      }, { threshold: 0.55 });
+      programmeCounters.forEach((counter) => programmeCounterObserver.observe(counter));
+    }
+  }
+
   // Interactive Venn Diagram
   const vennContainer = document.querySelector('.venn-interactive-container');
   if (vennContainer) {

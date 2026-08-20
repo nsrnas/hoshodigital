@@ -1,7 +1,34 @@
 <?php get_header(); ?>
 <main id="main-content">
-  <?php hosho_render_hero( 'Press<br>Contact', 'hero-press-signal-v2.png', array( 'class' => 'page-hero--press' ) ); ?>
-  <section class="section"><div class="shell intro-grid motion"><div><p class="eyebrow">Media inquiries</p><h2>Direct access to our corporate communications team.</h2></div><div class="body-copy"><p class="lede">This contact is intended for journalists and media enquiries.</p><p>For service, partnership or general business questions, please use our contact form so your enquiry reaches the right team.</p></div></div></section>
-  <section class="media-split media-split--reverse media-split--light"><div class="media-split__content motion"><p class="eyebrow">Corporate communications</p><h2>HOSHŌ DIGITAL Pte. Ltd.</h2><p>60 Paya Lebar Road<br>#06-28 Paya Lebar Square<br>Singapore 409051</p><p><a href="mailto:media@hoshodigital.com">media@hoshodigital.com</a></p><a class="button" href="mailto:media@hoshodigital.com">Send an email</a></div><div class="media-split__image" style="background-image:url('<?php echo esc_url(hosho_asset_url('press-media-office-singapore.jpg')); ?>')"></div></section>
-  <?php hosho_render_cta('Beyond media enquiries','Looking for another HOSHŌ DIGITAL team?','Use our contact form for services, partnerships and other business enquiries.','Contact us',hosho_page_url('contact'),'press-cta-singapore-cbd.jpg'); ?>
+  <section class="section press-contact">
+    <div class="shell">
+      <div class="press-contact__intro motion">
+        <div>
+          <p class="eyebrow">Media contact</p>
+          <h1>Media enquiries.</h1>
+        </div>
+        <p class="lede">For interview requests, company information and other media enquiries, contact HOSHŌ DIGITAL corporate communications.</p>
+      </div>
+
+      <div class="press-contact__profile motion">
+        <figure class="press-contact__portrait press-contact__portrait--placeholder" aria-label="Portrait of Himari S will be added when the approved photograph is available">
+          <span aria-hidden="true">HS</span>
+        </figure>
+
+        <div class="press-contact__person">
+          <p class="eyebrow">Corporate communications</p>
+          <h2>Himari S</h2>
+          <p class="press-contact__role">Communications Manager</p>
+          <a class="press-contact__email" href="mailto:media@hoshodigital.com">media@hoshodigital.com</a>
+        </div>
+
+        <address class="press-contact__address">
+          <strong>HOSHŌ DIGITAL Pte. Ltd.</strong>
+          <span>60 Paya Lebar Road</span>
+          <span>#06-28 Paya Lebar Square</span>
+          <span>Singapore 409051</span>
+        </address>
+      </div>
+    </div>
+  </section>
 </main><?php get_footer(); ?>
