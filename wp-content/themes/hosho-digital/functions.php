@@ -7,7 +7,7 @@ function hosho_pages() {
     'careers' => 'Careers', 'esg' => 'ESG', 'sustainability' => 'ESG', 'media' => 'Media', 'press' => 'Media',
     'contact' => 'Contact', 'company' => 'Company', 'ai-quick-win' => 'AI Quick Win', 'eci' => 'Enterprise Compute Initiative',
     'solutions' => 'Solutions', 'operational-experience' => 'Operational Experience', 'customer-experience' => 'Customer Experience', 'employee-experience' => 'Employee Experience',
-    'innovation' => 'Innovation', 'assurance' => 'Assurance', 'ai' => 'AI',
+    'innovation' => 'Innovation', 'assurance' => 'Assurance', 'ai' => 'AI', 'strategy-session' => 'Strategy Session',
   );
 }
 function hosho_current_page() {
@@ -51,7 +51,7 @@ function hosho_header_action() {
 function hosho_primary_menu_fallback() { ?>
   <ul class="nav-links">
     <li class="menu-item-has-children"><a href="<?php echo esc_url( hosho_page_url( 'eci' ) ); ?>">Programmes</a><ul class="sub-menu"><li><a href="<?php echo esc_url( hosho_page_url( 'eci' ) ); ?>">Enterprise Compute Initiative</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'ai-quick-win' ) ); ?>">AI Quick Win</a></li></ul></li>
-    <li class="menu-item-has-children"><a href="<?php echo esc_url( hosho_page_url( 'approach' ) ); ?>">Approach</a><ul class="sub-menu"><li><a href="<?php echo esc_url( home_url( '/innovation/' ) ); ?>">Innovation</a></li><li><a href="<?php echo esc_url( home_url( '/assurance/' ) ); ?>">Assurance</a></li><li><a href="<?php echo esc_url( home_url( '/erp/' ) ); ?>">ERP</a></li></ul></li>
+    <li class="menu-item-has-children"><a href="<?php echo esc_url( hosho_page_url( 'approach' ) ); ?>">Approach</a><ul class="sub-menu"><li><a href="<?php echo esc_url( home_url( '/innovation/' ) ); ?>">Innovation</a></li><li><a href="<?php echo esc_url( home_url( '/assurance/' ) ); ?>">Assurance</a></li><li><a href="<?php echo esc_url( home_url( '/erp/' ) ); ?>">ERP</a></li><li><a href="<?php echo esc_url( home_url( '/optimization/' ) ); ?>">Optimization</a></li></ul></li>
     <li class="menu-item-has-children"><a href="<?php echo esc_url( hosho_page_url( 'solutions' ) ); ?>">Solutions</a><ul class="sub-menu"><li><a href="<?php echo esc_url( hosho_page_url( 'operational-experience' ) ); ?>">Operational Experience</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'customer-experience' ) ); ?>">Customer Experience</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'employee-experience' ) ); ?>">Employee Experience</a></li></ul></li>
     <li class="menu-item-has-children"><a href="<?php echo esc_url( hosho_page_url( 'company' ) ); ?>">Company</a><ul class="sub-menu"><li><a href="<?php echo esc_url( hosho_page_url( 'careers' ) ); ?>">Careers</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'esg' ) ); ?>">ESG</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'media' ) ); ?>">Media</a></li></ul></li>
     <li><a href="<?php echo esc_url( hosho_page_url( 'contact' ) ); ?>">Contact</a></li>
@@ -101,7 +101,7 @@ function hosho_render_quote( $quote, $name, $image, $class = '' ) { ?>
   </section><?php
 }
 function hosho_render_cta( $eyebrow, $title, $body, $label, $url, $image ) { ?>
-  <?php $concise = empty( $body ) || in_array( hosho_current_page(), array( 'careers', 'sustainability', 'press', 'contact', 'company', 'ai-quick-win', 'eci', 'solutions', 'operational-experience', 'customer-experience', 'employee-experience' ), true ); ?>
+  <?php $concise = empty( $body ) || in_array( hosho_current_page(), array( 'careers', 'sustainability', 'press', 'contact', 'company', 'ai-quick-win', 'eci', 'solutions', 'operational-experience', 'customer-experience', 'employee-experience', 'innovation', 'front-page', 'assurance', 'approach', 'erp' ), true ); ?>
   <section class="cta-panel<?php echo $concise ? ' cta-panel--concise' : ''; ?>" style="background-image:url('<?php echo esc_url( hosho_asset_url( $image ) ); ?>')"><div class="cta-panel__inner shell motion">
     <?php if ( $concise ) : ?><h2><?php echo wp_kses_post( $title ); ?></h2><a class="button" href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $label ); ?><span class="button-arrow" aria-hidden="true"></span></a><?php else : ?><p class="eyebrow"><?php echo esc_html( $eyebrow ); ?></p><h2><?php echo wp_kses_post( $title ); ?></h2><p><?php echo esc_html( $body ); ?></p><a class="button" href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $label ); ?></a><?php endif; ?></div></section><?php
 }
