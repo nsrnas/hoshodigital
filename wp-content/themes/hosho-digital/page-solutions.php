@@ -45,6 +45,55 @@
     </div>
   </div></section>
 
+  <section class="section section-mist speedo-section">
+    <div class="shell motion">
+      <div class="speedo-layout">
+        <div class="speedo-gauge">
+          <svg class="speedo-svg" viewBox="0 0 280 180" aria-hidden="true">
+            <!-- Background track (grey) -->
+            <path class="speedo-track" d="M30,160 A110,110 0 1,1 250,160" fill="none" stroke="#e5e7eb" stroke-width="18" stroke-linecap="round"/>
+            <!-- Colored arc: navy → red gradient -->
+            <defs>
+              <linearGradient id="speedo-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="var(--navy, #0e2a47)"/>
+                <stop offset="50%" stop-color="#4c5b71"/>
+                <stop offset="100%" stop-color="var(--red-dark, #b90004)"/>
+              </linearGradient>
+            </defs>
+            <path class="speedo-fill" d="M30,160 A110,110 0 1,1 250,160" fill="none" stroke="url(#speedo-grad)" stroke-width="18" stroke-linecap="round" stroke-dasharray="0 9999"/>
+
+            <g class="speedo-needle-group">
+              <line class="speedo-needle" x1="140" y1="155" x2="140" y2="55" stroke="var(--red-dark, #b90004)" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="140" cy="155" r="8" fill="var(--navy, #0e2a47)"/>
+              <circle cx="140" cy="155" r="4" fill="white"/>
+            </g>
+            <!-- Scale labels -->
+            <text x="10" y="164" class="speedo-label" text-anchor="middle">0</text>
+            <text x="35" y="88" class="speedo-label" text-anchor="middle">10</text>
+            <text x="100" y="40" class="speedo-label" text-anchor="middle">20</text>
+            <text x="180" y="40" class="speedo-label" text-anchor="middle">30</text>
+            <text x="245" y="88" class="speedo-label" text-anchor="middle">40</text>
+            <text x="270" y="164" class="speedo-label" text-anchor="middle">50</text>
+          </svg>
+          <div class="speedo-counter">
+            <span class="speedo-number" data-speedo-count data-count-end="40" data-count-suffix="+">0</span>
+            <span class="speedo-unit">Solutions</span>
+          </div>
+        </div>
+        <div class="speedo-copy">
+          <p class="eyebrow">Solutions Growth</p>
+          <h2>From Zero to <strong>40+</strong> and Growing</h2>
+          <p class="speedo-body">Since 2023, HOSHŌ Digital has rapidly built a comprehensive portfolio of over 40 intelligent enterprise solutions — spanning operational automation, customer engagement, and employee productivity — and we're just getting started.</p>
+          <!-- <div class="speedo-timeline">
+            <span class="speedo-year"><strong>2023</strong> Founded</span>
+            <span class="speedo-year-divider" aria-hidden="true"></span>
+            <span class="speedo-year"><strong>2025</strong> 40+ Solutions</span>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="section"><div class="shell"><div class="intro-grid motion"><div><h2>Our Value</h2></div></div>
     <div class="editorial-grid solutions-why-grid">
       <article class="feature" style="grid-column:span 4">

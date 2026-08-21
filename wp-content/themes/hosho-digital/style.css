@@ -2310,6 +2310,152 @@ body.hosho-remade .solutions-card:hover>p,
 	padding-bottom: 16px;
 }
 
+/* ── SPEEDOMETER SECTION ── */
+
+.speedo-layout {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: clamp(48px, 6vw, 96px);
+	align-items: center;
+}
+
+.speedo-gauge {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 380px;
+	margin: 0 auto;
+}
+
+.speedo-svg {
+	width: 100%;
+	height: auto;
+	overflow: visible;
+}
+
+.speedo-track {
+	opacity: .45;
+}
+
+.speedo-fill {
+	transition: stroke-dasharray 2s cubic-bezier(.22, 1, .36, 1);
+}
+
+.speedo-needle-group {
+	transform: rotate(-90deg);
+	transform-origin: 140px 155px;
+	transition: transform 2s cubic-bezier(.22, 1, .36, 1);
+}
+
+.speedo-label {
+	font-size: 11px;
+	font-weight: 600;
+	fill: var(--muted, #6b7280);
+	font-family: inherit;
+}
+
+.speedo-counter {
+	position: absolute;
+	bottom: -12px;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2px;
+}
+
+.speedo-number {
+	font-size: clamp(48px, 6vw, 72px);
+	font-weight: 800;
+	color: var(--navy, #0e2a47);
+	letter-spacing: -.03em;
+	line-height: 1;
+}
+
+.speedo-unit {
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	color: var(--muted, #6b7280);
+	margin-top: 4px;
+}
+
+.speedo-copy {
+	max-width: 520px;
+}
+
+.speedo-copy h2 {
+	font-size: clamp(28px, 3.5vw, 42px);
+	font-weight: 700;
+	color: var(--navy, #0e2a47);
+	line-height: 1.2;
+	margin-bottom: 20px;
+}
+
+.speedo-copy h2 strong {
+	color: var(--red-dark, #b90004);
+}
+
+.speedo-body {
+	font-size: 18px;
+	color: var(--muted, #6b7280);
+	line-height: 1.7;
+	margin-bottom: 32px;
+}
+
+.speedo-timeline {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.speedo-year {
+	font-size: 15px;
+	color: var(--ink, #1a1c1d);
+}
+
+.speedo-year strong {
+	display: block;
+	font-size: 22px;
+	font-weight: 700;
+	color: var(--navy, #0e2a47);
+	margin-bottom: 2px;
+}
+
+.speedo-year-divider {
+	width: 48px;
+	height: 2px;
+	background: linear-gradient(to right, var(--navy, #0e2a47), var(--red-dark, #b90004));
+	flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+	.speedo-layout {
+		grid-template-columns: 1fr;
+		gap: 40px;
+		text-align: center;
+	}
+
+	.speedo-gauge {
+		max-width: 300px;
+	}
+
+	.speedo-copy {
+		max-width: 100%;
+	}
+
+	.speedo-timeline {
+		justify-content: center;
+	}
+}
+
+/* ── END SPEEDOMETER ── */
+
 .solutions-why-grid .feature__index {
 	display: flex;
 	align-items: center;
