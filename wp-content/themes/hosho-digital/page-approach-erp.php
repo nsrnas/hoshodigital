@@ -27,11 +27,10 @@ get_header();
 
 	<section class="opt-gap-section">
 		<div class="container motion">
-			<span class="small-title">The Optimization Gap</span>
 			<h2>Is Your Business Central Delivering Everything It Should?</h2>
 
 			<div class="opt-gap-grid">
-				<div class="opt-gap-card">
+				<div class="opt-gap-card rapid-card">
 					<div class="opt-gap-card__top">
 						<div class="icon">
 							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>
@@ -41,7 +40,7 @@ get_header();
 					<p>Using less than 40% of the native feature set provided by Microsoft.</p>
 				</div>
 
-				<div class="opt-gap-card">
+				<div class="opt-gap-card rapid-card">
 					<div class="opt-gap-card__top">
 						<div class="icon">
 							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
@@ -51,7 +50,7 @@ get_header();
 					<p>Legacy code preventing upgrades and creating performance bottlenecks.</p>
 				</div>
 
-				<div class="opt-gap-card">
+				<div class="opt-gap-card rapid-card">
 					<div class="opt-gap-card__top">
 						<div class="icon">
 							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
@@ -61,7 +60,7 @@ get_header();
 					<p>Relying on spreadsheets for data that should live inside the ERP.</p>
 				</div>
 
-				<div class="opt-gap-card">
+				<div class="opt-gap-card rapid-card">
 					<div class="opt-gap-card__top">
 						<div class="icon">
 							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><line x1="18" y1="8" x2="23" y2="13"/><line x1="23" y1="8" x2="18" y2="13"/></svg>
@@ -71,7 +70,7 @@ get_header();
 					<p>Employees bypassing the system due to perceived complexity or friction.</p>
 				</div>
 
-				<div class="opt-gap-card">
+				<div class="opt-gap-card rapid-card">
 					<div class="opt-gap-card__top">
 						<div class="icon">
 							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10.94 10.94 0 0 1 12 20c-7 0-11-8-11-8a18.5 18.5 0 0 1 5.06-5.94M9.9 4.24A10.94 10.94 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
@@ -96,24 +95,29 @@ get_header();
 				processes, people, and systems toward a single vision of efficiency.
 			</p>
 
-			<div class="help-grid">
-				<div class="help-card">
-					<div class="num">1</div>
+			<div class="help-grid" style="display: flex; gap: 15px; align-items: stretch; overflow-x: auto; padding: 20px 0;">
+				<div class="help-card rapid-card">
 					<h3>Business Understanding</h3>
 					<p>Deep analysis of your current operational bottlenecks and long-term strategic objectives.</p>
 				</div>
-				<div class="help-card">
-					<div class="num">2</div>
+				<div class="help-arrow" aria-hidden="true" style="color: var(--red); display: flex; align-items: center;">
+					<svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+				</div>
+				<div class="help-card rapid-card">
 					<h3>Solution Design</h3>
 					<p>Architecting a tailored Business Central environment that fits your industry&rsquo;s unique requirements.</p>
 				</div>
-				<div class="help-card">
-					<div class="num">3</div>
+				<div class="help-arrow" aria-hidden="true" style="color: var(--red); display: flex; align-items: center;">
+					<svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+				</div>
+				<div class="help-card rapid-card">
 					<h3>Implementation</h3>
 					<p>Seamless migration and integration with your existing tech stack, minimizing operational downtime.</p>
 				</div>
-				<div class="help-card">
-					<div class="num">4</div>
+				<div class="help-arrow" aria-hidden="true" style="color: var(--red); display: flex; align-items: center;">
+					<svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+				</div>
+				<div class="help-card rapid-card">
 					<h3>Optimization</h3>
 					<p>Continuous refinement of systems to ensure you are capturing the maximum value from your investment.</p>
 				</div>
@@ -131,9 +135,9 @@ get_header();
 			<p>Targeted consulting to bridge the gap between technical availability and business performance.</p>
 
 			<div class="intervention-grid">
-				<div class="intervention-card">
+				<div class="intervention-card rapid-card">
 					<div class="icon-box">
-						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="12" y2="17"/></svg>
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="12" y2="17"/></svg>
 					</div>
 					<div>
 						<h3>ERP Optimization</h3>
@@ -141,9 +145,9 @@ get_header();
 					</div>
 				</div>
 
-				<div class="intervention-card">
+				<div class="intervention-card rapid-card">
 					<div class="icon-box">
-						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><circle cx="9" cy="9" r="1.4"/><circle cx="15" cy="9" r="1.4"/><path d="M8 15c1 1 2.2 1.4 4 1.4s3-.4 4-1.4"/></svg>
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2"><rect x="4" y="7" width="16" height="16" rx="2"/><circle cx="9" cy="9" r="1.4"/><circle cx="15" cy="9" r="1.4"/><path d="M8 15c1 1 2.2 1.4 4 1.4s3-.4 4-1.4"/></svg>
 					</div>
 					<div>
 						<h3>AI Integration</h3>
@@ -151,9 +155,9 @@ get_header();
 					</div>
 				</div>
 
-				<div class="intervention-card">
+				<div class="intervention-card rapid-card">
 					<div class="icon-box">
-						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
 					</div>
 					<div>
 						<h3>Custom Extensions</h3>
@@ -161,9 +165,9 @@ get_header();
 					</div>
 				</div>
 
-				<div class="intervention-card">
+				<div class="intervention-card rapid-card">
 					<div class="icon-box">
-						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
 					</div>
 					<div>
 						<h3>Long-Term Partnership</h3>
@@ -193,28 +197,28 @@ get_header();
 				</div>
 
 				<div class="why-hosho-features">
-					<div class="feature-card">
+					<div class="feature-card rapid-card">
 						<div class="icon">
 							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
 						</div>
 						<p>End-to-end implementation and migration support</p>
 					</div>
 
-					<div class="feature-card">
+					<div class="feature-card rapid-card">
 						<div class="icon">
 							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
 						</div>
 						<p>Customization and extension development tailored to your industry</p>
 					</div>
 
-					<div class="feature-card">
+					<div class="feature-card rapid-card">
 						<div class="icon">
 							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
 						</div>
 						<p>Integration with Microsoft 365, Power BI, and Power Platform</p>
 					</div>
 
-					<div class="feature-card">
+					<div class="feature-card rapid-card">
 						<div class="icon">
 							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
 						</div>
@@ -333,7 +337,7 @@ get_header();
 			</div>
 
 			<div class="outcome-grid">
-				<div class="outcome-card style-white">
+				<div class="outcome-card style-white rapid-card">
 					<div class="icon">
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
 					</div>
@@ -341,7 +345,7 @@ get_header();
 					<p>Reduce operational friction by up to 50% through targeted automation and UX refinement within Business Central.</p>
 				</div>
 
-				<div class="outcome-card style-navy">
+				<div class="outcome-card style-white rapid-card">
 					<div class="icon">
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
 					</div>
@@ -349,7 +353,7 @@ get_header();
 					<p>Real-time Power BI integration and AI predictive models turning ERP data into prescriptive action items.</p>
 				</div>
 
-				<div class="outcome-card style-white">
+				<div class="outcome-card style-white rapid-card">
 					<div class="icon">
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6"/><rect x="12" y="8" width="3" height="10"/><rect x="17" y="5" width="3" height="13"/></svg>
 					</div>
@@ -357,7 +361,7 @@ get_header();
 					<p>Architecture that grows with your transaction volume without requiring additional headcount or infrastructure spend.</p>
 				</div>
 
-				<div class="outcome-card style-gray">
+				<div class="outcome-card style-white rapid-card">
 					<div class="icon">
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5.25 3.75 9.5 9 11 5.25-1.5 9-5.75 9-11V7z"/></svg>
 					</div>

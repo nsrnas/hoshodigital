@@ -436,11 +436,6 @@ $hosho_phases = array(
                 </p>
             </div>
 
-            <div class="framework-visual">
-                <div class="framework-watermark">HACHIDAN</div>
-                <img src="<?php echo esc_url( hosho_asset_url( 'approach/main/hachidan.png' ) ); ?>" alt="HOSHŌ 8-Stage Delivery Framework" class="framework-spiral-image">
-            </div>
-
             <div class="phase-tabs">
                 <?php if ( ! empty( $hosho_phases ) ) : ?>
                     <?php foreach ( $hosho_phases as $index => $phase ) : ?>
