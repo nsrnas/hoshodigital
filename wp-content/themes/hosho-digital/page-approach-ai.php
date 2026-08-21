@@ -15,9 +15,9 @@ get_header();
 
 	<?php
 	hosho_render_hero(
-		'Architecting the<br>Autonomous Enterprise:<br><span class="highlight">The AI Agent Flow</span>',
+		'Architecting the<br>Autonomous Enterprise',
 		'approach/ai/hero.jpg',
-		array( 'class' => 'page-hero--ai page-hero--center' )
+		array( 'class' => 'page-hero--company' )
 	);
 	?>
 
@@ -148,37 +148,69 @@ get_header();
 			<div class="flow-timeline">
 
 				<div class="flow-step">
-					<div class="flow-num">01</div>
+					<div class="flow-num">07</div>
 					<div class="flow-content">
-						<h3>Interaction Layer</h3>
+						<h3>Source Data Layer</h3>
 						<p>
-							The interface people and other systems actually
-							use to send a request, a chat window, an API
-							call, a voice channel.
+							Your existing warehouses, lakehouses, and live
+							feature stores, the ground truth every layer
+							above ultimately reads from.
 						</p>
 						<div class="flow-tags">
-							<span>APIs</span>
-							<span>Web/Mobile</span>
-							<span>Omni-Channel</span>
-							<span>Voice &amp; Chat</span>
+							<span>Warehouses</span>
+							<span>Data Lakehouse</span>
+							<span>Feature Stores</span>
 						</div>
 					</div>
 				</div>
 
 				<div class="flow-step reverse">
-					<div class="flow-num">02</div>
+					<div class="flow-num">06</div>
 					<div class="flow-content">
-						<h3>Agent Layer</h3>
+						<h3>Memory &amp; Knowledge</h3>
 						<p>
-							The specialized agents that actually do the work,
-							each one built for a narrow task, operating
-							inside rules your team sets.
+							Where an agent keeps track of what it already
+							knows and has already done, so it doesn't ask
+							your team the same question twice.
 						</p>
 						<div class="flow-tags">
-							<span>Runtime Agents</span>
-							<span>Multi-Agent</span>
-							<span>Validators</span>
-							<span>Task Solvers</span>
+							<span>Vector DB</span>
+							<span>RAG Pipelines</span>
+							<span>Semantic Graphs</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="flow-step">
+					<div class="flow-num">05</div>
+					<div class="flow-content">
+						<h3>Workflow &amp; Human in the Loop</h3>
+						<p>
+							Approval checkpoints that pause an agent before
+							high-stakes actions, a refund, a contract, an
+							external email, until a human signs off.
+						</p>
+						<div class="flow-tags">
+							<span>Approval Gates</span>
+							<span>Human Loops</span>
+							<span>Workflow Engines</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="flow-step reverse">
+					<div class="flow-num">04</div>
+					<div class="flow-content">
+						<h3>Orchestration</h3>
+						<p>
+							The layer that breaks one request into smaller
+							steps, decides what order to run them in, and
+							runs independent steps at once to save time.
+						</p>
+						<div class="flow-tags">
+							<span>Reasoning Engines</span>
+							<span>Task Decomposition</span>
+							<span>Parallel Logic</span>
 						</div>
 					</div>
 				</div>
@@ -202,69 +234,37 @@ get_header();
 				</div>
 
 				<div class="flow-step reverse">
-					<div class="flow-num">04</div>
+					<div class="flow-num">02</div>
 					<div class="flow-content">
-						<h3>Orchestration</h3>
+						<h3>Agent Layer</h3>
 						<p>
-							The layer that breaks one request into smaller
-							steps, decides what order to run them in, and
-							runs independent steps at once to save time.
+							The specialized agents that actually do the work,
+							each one built for a narrow task, operating
+							inside rules your team sets.
 						</p>
 						<div class="flow-tags">
-							<span>Reasoning Engines</span>
-							<span>Task Decomposition</span>
-							<span>Parallel Logic</span>
+							<span>Runtime Agents</span>
+							<span>Multi-Agent</span>
+							<span>Validators</span>
+							<span>Task Solvers</span>
 						</div>
 					</div>
 				</div>
 
 				<div class="flow-step">
-					<div class="flow-num">05</div>
+					<div class="flow-num">01</div>
 					<div class="flow-content">
-						<h3>Workflow &amp; Human in the Loop</h3>
+						<h3>Interaction Layer</h3>
 						<p>
-							Approval checkpoints that pause an agent before
-							high-stakes actions, a refund, a contract, an
-							external email, until a human signs off.
+							The interface people and other systems actually
+							use to send a request, a chat window, an API
+							call, a voice channel.
 						</p>
 						<div class="flow-tags">
-							<span>Approval Gates</span>
-							<span>Human Loops</span>
-							<span>Workflow Engines</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="flow-step reverse">
-					<div class="flow-num">06</div>
-					<div class="flow-content">
-						<h3>Memory &amp; Knowledge</h3>
-						<p>
-							Where an agent keeps track of what it already
-							knows and has already done, so it doesn't ask
-							your team the same question twice.
-						</p>
-						<div class="flow-tags">
-							<span>Vector DB</span>
-							<span>RAG Pipelines</span>
-							<span>Semantic Graphs</span>
-						</div>
-					</div>
-				</div>
-				
-				<div class="flow-step">
-					<div class="flow-num">07</div>
-					<div class="flow-content">
-						<h3>Source Data Layer</h3>
-						<p>
-							Your existing warehouses, lakehouses, and live
-							feature stores, the ground truth every layer
-							above ultimately reads from.
-						</p>
-						<div class="flow-tags">
-							<span>Warehouses</span>
-							<span>Data Lakehouse</span>
-							<span>Feature Stores</span>
+							<span>APIs</span>
+							<span>Web/Mobile</span>
+							<span>Omni-Channel</span>
+							<span>Voice &amp; Chat</span>
 						</div>
 					</div>
 				</div>
@@ -408,7 +408,7 @@ get_header();
 	FINAL CTA
 	========================================================= -->
 
-	<?php hosho_render_cta( '', 'Artificial Intelligence Should Strengthen Your Business, Not Complicate It', '', 'Let\'s Build Your Enterprise AI Strategy', home_url( '/contact' ), 'approach/ai/cta.jpg' ); ?>
+	<?php hosho_render_cta( '', 'ARTIFICIAL INTELLIGENCE SHOULD STRENGTHEN YOUR BUSINESS, NOT COMPLICATE IT', '', 'Let\'s Build Your Enterprise AI Strategy', home_url( '/contact' ), 'approach/ai/cta.jpg' ); ?>
 
 </main>
 <?php

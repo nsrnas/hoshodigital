@@ -27,6 +27,7 @@ $route_map = array(
     'innovation'             => array('page' => 'approach-ai',         'file' => 'page-approach-ai.php'),
     'assurance'              => array('page' => 'approach-ams',        'file' => 'page-approach-ams.php'),
     'erp'                    => array('page' => 'approach-erp',        'file' => 'page-approach-erp.php'),
+    'optimization'           => array('page' => 'approach-optimization', 'file' => 'page-approach-optimization.php'),
     'privacy-policy'         => array('page' => 'privacy-policy',      'file' => 'page-privacy-policy.php'),
     'privacy'                => array('page' => 'privacy-policy',      'file' => 'page-privacy-policy.php'),
     'terms-of-use'           => array('page' => 'terms-of-use',        'file' => 'page-terms-of-use.php'),

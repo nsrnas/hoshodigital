@@ -1,4 +1,4 @@
-﻿/*
+/*
 Theme Name: HOSHO Digital Remade
 Description: Clean editorial WordPress theme for HOSHO Digital.
 Version: 1.0.0
@@ -1359,6 +1359,7 @@ p {
 .cta-panel h2 {
 	max-width: 900px;
 	margin-bottom: 26px;
+	text-transform: uppercase;
 }
 
 .cta-panel p {
@@ -3504,10 +3505,6 @@ COGNITIVE SHIFT
 	gap: 45px;
 	margin-bottom: 45px;
 	padding: 36px 28px;
-	border: 1px solid rgba(7, 21, 35, .08);
-	background: rgba(255, 255, 255, .42);
-	backdrop-filter: blur(8px);
-	box-shadow: 0 24px 60px rgba(7, 21, 35, .06);
 	position: relative;
 }
 
@@ -4727,6 +4724,14 @@ COGNITIVE SHIFT
 	padding: 38px;
 	border: 1px solid var(--line);
 	box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+	transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease, border-color 0.3s ease;
+	cursor: default;
+}
+
+.rapid-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+	border-color: #e21c15;
 }
 
 .rapid-card.featured {
@@ -5117,7 +5122,7 @@ COGNITIVE SHIFT
 	overflow: hidden;
 }
 
-.approach-page section:not(.nodes-section):not(.quote-band) {
+.approach-page section:not(.nodes-section):not(.quote-band):not(.page-hero):not(.cta-panel) {
 	display: block;
 	width: 100%;
 	float: none;
@@ -5257,7 +5262,6 @@ a {
 
 .architecture-scale {
 	padding: 80px 0 110px;
-	background: linear-gradient(180deg, #fbe4e4 0%, var(--mist) 45%);
 }
 
 .architecture-header {
@@ -5301,7 +5305,7 @@ a {
 
 .building-roof {
 	text-align: center;
-	font-size: 12px;
+	font-size: 18px;
 	font-weight: 800;
 	letter-spacing: 1px;
 	text-transform: uppercase;
@@ -5332,7 +5336,7 @@ a {
 	background: var(--navy);
 	color: #fff;
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 12px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -5347,7 +5351,7 @@ a {
 
 .building-layer p {
 	color: var(--gray);
-	font-size: 15px;
+	font-size: 18px;
 }
 
 .building-tab {
@@ -5376,7 +5380,7 @@ a {
 	background: var(--navy);
 	color: #fff;
 	padding: 26px 30px;
-	font-size: 15px;
+	font-size: 18px;
 	line-height: 1.6;
 	box-shadow: 0 20px 40px rgba(0, 0, 0, .18);
 }
@@ -5518,7 +5522,7 @@ a {
 
 .nodes-diagram-image {
 	width: 100%;
-	max-width: 560px;
+	max-width: 680px;
 }
 
 .nodes-diagram-image img {
@@ -5529,7 +5533,7 @@ a {
 
 .nodes-diagram-svg {
 	width: 100%;
-	max-width: 560px;
+	max-width: 680px;
 }
 
 .nodes-diagram-svg svg {
@@ -6173,7 +6177,7 @@ svg {
 }
 
 .gap-item p {
-	font-size: 14.5px;
+	font-size: 15px;
 	line-height: 1.75;
 	color: #4a5561;
 }
@@ -6217,7 +6221,7 @@ svg {
 
 .framework-header h2 {
 	margin: 0 0 24px;
-	font-size: 30px;
+	font-size: 38px;
 	line-height: 1.15;
 	font-weight: 800;
 	letter-spacing: -1px;
@@ -6227,8 +6231,8 @@ svg {
 .framework-header p {
 	max-width: 820px;
 	margin: 0 auto;
-	font-size: 13px;
-	line-height: 1.35;
+	font-size: 15px;
+	line-height: 1.5;
 	font-weight: 400;
 	color: #111;
 }
@@ -6240,7 +6244,7 @@ svg {
 	position: relative;
 	z-index: 1;
 	width: 100%;
-	height: 235px;
+	height: 350px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -6252,7 +6256,7 @@ svg {
 		========================================================= */
 .framework-watermark {
 	position: absolute;
-	top: 80px;
+	top: 130px;
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 0;
@@ -6272,9 +6276,9 @@ svg {
 	position: relative;
 	z-index: 2;
 	display: block;
-	width: 180px;
+	width: 270px;
 	height: auto;
-	max-height: 220px;
+	max-height: 330px;
 	object-fit: contain;
 }
 
@@ -6374,15 +6378,16 @@ svg {
 .phase-number {
 	display: block;
 	margin-bottom: 3px;
-	font-size: 7px;
+	font-size: 10px;
 	line-height: 1;
 	font-weight: 400;
 	color: rgba(255, 255, 255, .9);
 }
 
 .phase-title {
+	padding: 5px;
 	display: block;
-	font-size: 10px;
+	font-size: 18px;
 	line-height: 1.15;
 	font-weight: 700;
 	color: #fff;
@@ -6391,7 +6396,7 @@ svg {
 .phase-range {
 	display: block;
 	margin-top: 3px;
-	font-size: 7px;
+	font-size: 10px;
 	line-height: 1;
 	color: rgba(255, 255, 255, .9);
 }
@@ -6430,7 +6435,7 @@ svg {
 }
 
 .phase-panel-number {
-	font-size: 28px;
+	font-size: 20px;
 	line-height: 1;
 	font-weight: 800;
 	letter-spacing: -1px;
@@ -6509,7 +6514,7 @@ svg {
 		========================================================= */
 .stage-number {
 	margin-bottom: 5px;
-	font-size: 27px;
+	font-size: 18px;
 	line-height: 1;
 	font-weight: 800;
 	letter-spacing: -1px;
@@ -6521,7 +6526,7 @@ svg {
 		========================================================= */
 .stage-card h4 {
 	margin: 0 0 16px;
-	font-size: 14px;
+	font-size: 20px;
 	line-height: 1.2;
 	font-weight: 700;
 	color: #111;
@@ -6533,7 +6538,7 @@ svg {
 .stage-label {
 	display: block;
 	margin-bottom: 7px;
-	font-size: 7px;
+	font-size: 12px;
 	line-height: 1;
 	font-weight: 800;
 	text-transform: uppercase;
@@ -6551,7 +6556,7 @@ svg {
 .stage-focus-block p {
 	max-width: 350px;
 	margin: 0;
-	font-size: 9px;
+	font-size: 12px;
 	line-height: 1.45;
 	color: #222;
 }
@@ -6576,7 +6581,7 @@ svg {
 .stage-guarantee p {
 	max-width: 350px;
 	margin: 0;
-	font-size: 9px;
+	font-size: 12px;
 	line-height: 1.45;
 	font-weight: 600;
 	color: #111;
@@ -6686,7 +6691,7 @@ svg {
 	}
 
 	.phase-panel-number {
-		font-size: 25px;
+		font-size: 18px;
 	}
 
 	.phase-panel-heading h3 {
@@ -6743,7 +6748,7 @@ svg {
 	}
 
 	.phase-title {
-		font-size: 9px;
+		font-size: 15px;
 	}
 
 	.phase-panel-heading {
@@ -6999,7 +7004,7 @@ svg {
 	}
 
 	.phase-panel-number {
-		font-size: 27px;
+		font-size: 20px;
 	}
 
 	.phase-panel-heading h3 {
@@ -7036,6 +7041,7 @@ svg {
 	font-size: 30px;
 	font-weight: 800;
 	margin-bottom: 18px;
+	color: white;
 }
 
 .resilience-divider {
@@ -7065,10 +7071,25 @@ svg {
 	text-align: left;
 }
 
+.rapid-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 28px;
+	margin-top: 70px;
+}
+
 .resilience-item {
 	padding: 26px 24px;
 	background: rgba(255, 255, 255, .04);
 	border: 1px solid rgba(255, 255, 255, .12);
+	transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease, border-color 0.3s ease;
+	cursor: default;
+}
+
+.resilience-item:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+	border-color: #e21c15;
 }
 
 .resilience-item .icon {
@@ -7454,7 +7475,7 @@ svg {
 	overflow: hidden;
 }
 
-.ai-page section:not(.quote-band) {
+.ai-page section:not(.quote-band):not(.page-hero):not(.cta-panel) {
 	display: block;
 	width: 100%;
 	float: none;
@@ -8322,7 +8343,7 @@ a {
 	overflow: hidden;
 }
 
-.ams-page section:not(.ams-quote):not(.quote-band) {
+.ams-page section:not(.ams-quote):not(.quote-band):not(.page-hero):not(.cta-panel) {
 	display: block;
 	width: 100%;
 	float: none;
@@ -9149,7 +9170,7 @@ a {
 	overflow: hidden;
 }
 
-.erp-page section:not(.quote-band) {
+.erp-page section:not(.quote-band):not(.page-hero):not(.cta-panel) {
 	display: block;
 	width: 100%;
 	float: none;
@@ -11606,8 +11627,8 @@ canvas {
 
 /* Seven Nodes Diagram Animations */
 .nodes-right.motion .node-arc {
-    stroke-dasharray: 1250;
-    stroke-dashoffset: 1250;
+    stroke-dasharray: 1450;
+    stroke-dashoffset: 1450;
 }
 
 .nodes-right.motion.is-visible .node-arc {
@@ -12361,3 +12382,20 @@ body:is(.page-careers, .page-company, .page-ai-quick-win, .page-eci) .cta-panel-
 	.hg-tap-hint { transition: none; }
 }
 
+/* --- Hover Effects for fail-card --- */
+.fail-card {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.fail-card:hover {
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+    transform: translateY(-8px);
+    border-color: #e21c15;
+}
+
+/* --- Hover Effects for process-layer --- */
+.process-layer:hover {
+    transform: translateY(-6px) scale(1.04);
+    filter: drop-shadow(0 12px 20px rgba(0,0,0,0.35)) brightness(1.12);
+    z-index: 10;
+}

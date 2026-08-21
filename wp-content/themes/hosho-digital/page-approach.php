@@ -112,7 +112,7 @@ $hosho_phases = array(
 	hosho_render_hero(
 		"Don't Demolish<br>What's Already<br>Working",
 		'approach/main/hero.jpg',
-		array( 'class' => 'page-hero--approach page-hero--center' )
+		array( 'class' => 'page-hero--company' )
 	);
 	?>
 
@@ -124,7 +124,7 @@ $hosho_phases = array(
 		<div class="fail-container">
 			<div class="fail-intro">
 				<div class="fail-intro__stat">
-					<strong>80%</strong>
+					<strong data-count-up data-count-end="80" data-count-suffix="%">80%</strong>
 					<span>
 						of enterprise AI <br>
 						initiatives never <br>
@@ -146,9 +146,9 @@ $hosho_phases = array(
 
 
 			<!-- CARDS -->
-			<div class="fail-grid">
+			<div class="rapid-grid">
 
-				<div class="fail-card">
+				<div class="rapid-card">
 					<div class="fail-card__top">
 						<div class="fail-card__icon">
 							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -168,7 +168,7 @@ $hosho_phases = array(
 					</p>
 				</div>
 
-				<div class="fail-card">
+				<div class="rapid-card">
 					<div class="fail-card__top">
 						<div class="fail-card__icon">
 							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -189,15 +189,7 @@ $hosho_phases = array(
 				</div>
 
 
-				<div class="fail-card fail-card--highlight">
-					<div class="fail-card__watermark" aria-hidden="true">
-						<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" >
-							<path d="M35 48L47 36C50 33 55 33 58 36L67 45" stroke="currentColor" stroke-width="9" stroke-linecap="round" />
-							<path d="M65 48L53 60C50 63 45 63 42 60L33 51" stroke="currentColor" stroke-width="9" stroke-linecap="round" />
-							<path d="M43 43L58 58" stroke="currentColor" stroke-width="9" stroke-linecap="round" />
-							<path d="M57 43L42 58" stroke="currentColor" stroke-width="9" stroke-linecap="round"/>
-						</svg>
-					</div>
+				<div class="rapid-card fail-card--highlight">
 					<div class="fail-card__top">
 						<div class="fail-card__icon">
 							<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -224,7 +216,7 @@ $hosho_phases = array(
 
 	<section class="approach-intro">
 		<div class="container motion">
-			<h2><span class="highlight">Our Approach</span>: The Intelligent Digital Core</h2>
+			<h2>Intelligent Digital Core</h2>
 			<p>
 				The Digital Core is the data and workflow layer that connects
 				your existing systems so AI can act on real, current
@@ -235,13 +227,104 @@ $hosho_phases = array(
 	</section>
 
 	<!-- =========================================================
+	THE SEVEN NODES OF UNITY
+	========================================================= -->
+
+	<section class="nodes-section">
+		<div class="nodes-left motion">
+			<h2>The Seven<br>Nodes of Unity.</h2>
+			<p>
+				Every enterprise runs these seven functions somewhere, often
+				in disconnected tools. Our Digital Core links them into a
+				single loop, so a change in one place is reflected everywhere
+				else automatically.
+			</p>
+			<div class="nodes-tags">
+				<div class="tag"><span></span>Integrated Ecosystem</div>
+				<div class="tag"><span></span>Zero-Disruption Flow</div>
+			</div>
+		</div>
+
+		<div class="nodes-right motion">
+			<div class="nodes-diagram-image">
+                <div class="nodes-diagram-svg">
+                <svg viewBox="0 0 640 560" xmlns="http://www.w3.org/2000/svg" aria-label="The Seven Nodes of Unity diagram">
+                  <defs>
+                    <linearGradient id="nodeRingGradient" x1="480" y1="120" x2="160" y2="120" gradientUnits="userSpaceOnUse">
+                      <stop offset="0%" stop-color="#710E0A"/>
+                      <stop offset="100%" stop-color="#E21C15"/>
+                    </linearGradient>
+                    <filter id="nodeShadow" x="-20%" y="-20%" width="140%" height="160%">
+                      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="rgba(0,0,0,0.13)"/>
+                    </filter>
+                  </defs>
+
+                  <path class="node-arc" d="M 385,90 A 210,210 0 1 1 236,96"
+                        fill="none" stroke="url(#nodeRingGradient)" stroke-width="8" stroke-linecap="round"/>
+
+                  <image class="node-logo" style="animation-delay: 1.6s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/salesforce.png' ) ); ?>" x="288" y="145" width="64" height="40" preserveAspectRatio="xMidYMid meet"/>
+                  
+                  <image class="node-logo" style="animation-delay: 1.7s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/microsoft.png' ) ); ?>" x="215" y="200" width="30" height="30" preserveAspectRatio="xMidYMid meet"/>
+                  <image class="node-logo" style="animation-delay: 1.8s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/dynamics.png' ) ); ?>" x="298" y="230" width="44" height="44" preserveAspectRatio="xMidYMid meet"/>
+                  <image class="node-logo" style="animation-delay: 1.9s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/sap.png' ) ); ?>" x="380" y="200" width="54" height="32" preserveAspectRatio="xMidYMid meet"/>
+                  
+                  <image class="node-logo" style="animation-delay: 2.0s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/ibm.png' ) ); ?>" x="200" y="285" width="64" height="28" preserveAspectRatio="xMidYMid meet"/>
+                  <image class="node-logo" style="animation-delay: 2.1s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/infor.png' ) ); ?>" x="274" y="328" width="92" height="28" preserveAspectRatio="xMidYMid meet"/>
+                  <image class="node-logo" style="animation-delay: 2.2s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/workday.png' ) ); ?>" x="376" y="280" width="80" height="28" preserveAspectRatio="xMidYMid meet"/>
+                  
+                  <image class="node-logo" style="animation-delay: 2.3s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/oracle.png' ) ); ?>" x="195" y="370" width="74" height="26" preserveAspectRatio="xMidYMid meet"/>
+                  <image class="node-logo" style="animation-delay: 2.4s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/hubspot.png' ) ); ?>" x="370" y="370" width="74" height="28" preserveAspectRatio="xMidYMid meet"/>
+                  
+                  <image class="node-logo" style="animation-delay: 2.5s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/service-now.png' ) ); ?>" x="248" y="412" width="144" height="24" preserveAspectRatio="xMidYMid meet"/>
+
+                  <g class="node-box" filter="url(#nodeShadow)">
+                    <rect x="255" y="60" width="130" height="40" rx="6" ry="6" fill="white" stroke="#710E0A" stroke-width="4"/>
+                    <text x="320" y="80" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="13.5" font-weight="700" fill="#1a1c1d">Infrastructure</text>
+                  </g>
+
+                  <g class="node-box" filter="url(#nodeShadow)">
+                    <rect x="419" y="139" width="130" height="40" rx="6" ry="6" fill="white" stroke="#6F0E0A" stroke-width="4"/>
+                    <text x="484" y="159" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="13.5" font-weight="700" fill="#1a1c1d">Data</text>
+                  </g>
+
+                  <g class="node-box" filter="url(#nodeShadow)">
+                    <rect x="460" y="317" width="130" height="40" rx="6" ry="6" fill="white" stroke="#6C0C09" stroke-width="4"/>
+                    <text x="525" y="337" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="13.5" font-weight="700" fill="#1a1c1d">Logic</text>
+                  </g>
+
+                  <g class="node-box" filter="url(#nodeShadow)">
+                    <rect x="346" y="459" width="130" height="40" rx="6" ry="6" fill="white" stroke="#A81510" stroke-width="4"/>
+                    <text x="411" y="479" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="13.5" font-weight="700" fill="#1a1c1d">Integration</text>
+                  </g>
+
+                  <g class="node-box" filter="url(#nodeShadow)">
+                    <rect x="164" y="459" width="130" height="40" rx="6" ry="6" fill="white" stroke="#DA1A13" stroke-width="4"/>
+                    <text x="229" y="479" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="13.5" font-weight="700" fill="#1a1c1d">Automation</text>
+                  </g>
+
+                  <g class="node-box" filter="url(#nodeShadow)">
+                    <rect x="50" y="317" width="130" height="40" rx="6" ry="6" fill="white" stroke="#DE1B15" stroke-width="4"/>
+                    <text x="115" y="337" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="13.5" font-weight="700" fill="#1a1c1d">AI</text>
+                  </g>
+
+                  <g class="node-box" filter="url(#nodeShadow)">
+                    <rect x="91" y="139" width="130" height="40" rx="6" ry="6" fill="white" stroke="#E21C15" stroke-width="4"/>
+                    <text x="156" y="159" text-anchor="middle" dominant-baseline="central" font-family="Arial,sans-serif" font-size="13.5" font-weight="700" fill="#1a1c1d">Experience</text>
+                  </g>
+				  
+				  <polygon class="node-arrowhead" points="255,90 235,78.5 235,101.5" fill="#E21C15" transform="rotate(-17.5 255 90)"/>
+                </svg>
+			</div>
+		</div>
+	</section>
+
+	<!-- =========================================================
 	ARCHITECTURE OF SCALE
 	========================================================= -->
 	
 	<section class="architecture-scale">
 		<div class="container">
 			<div class="architecture-header motion">
-				<span class="small-title">Architecture of Scale</span>
 				<h3>Strength in the Structure</h3>
 				<p>
 					We treat your enterprise architecture like a building:
@@ -292,14 +375,10 @@ $hosho_phases = array(
 	<section class="gap-section">
 		<div class="container motion">
 			<h2>The corporate execution gap, and<br>the managed-risk alternative</h2>
-			<p>
-				Four out of five enterprise AI initiatives never yield a clear return. We treat AI as a
-				disciplined engineering framework, not a science project.
-			</p>
 
 			<div class="gap-columns">
 				<div class="gap-col gap-col-left">
-					<span class="col-label">The Execution Gap</span>
+					<span class="col-label">Execution Gap</span>
 
 					<div class="gap-item">
 						<h4>80% Failure Rate</h4>
@@ -316,7 +395,7 @@ $hosho_phases = array(
 				</div>
 
 				<div class="gap-col gap-col-right">
-					<span class="col-label">The HOSHŌ Architecture</span>
+					<span class="col-label">HOSHŌ Architecture</span>
 
 					<div class="gap-item">
 						<h4>Gated Capital Allocation</h4>
@@ -336,121 +415,10 @@ $hosho_phases = array(
 	</section>
 
 	<!-- =========================================================
-	TRANSFORMATION
-	========================================================= -->
-
-	<section class="transformation-section">
-		<div class="container motion">
-			<h2>
-				Transformation Begins With<br>
-				What You Already Have.
-			</h2>
-			<p>
-				We believe the next era of enterprise growth is not about
-				finding the next "killer app," but about unlocking the
-				intelligence latent within your current structure.
-			</p>
-			<div class="transformation-divider"></div>
-		</div>
-	</section>
-
-	<!-- =========================================================
 	QUOTE
 	========================================================= -->
 
 	<?php hosho_render_quote( 'Without continual growth and progress, such words as improvement, achievement, and success have no meaning.', 'Benjamin Franklin', 'approach/main/benjamin.png', 'quote-band--blue' ); ?>
-
-	<!-- =========================================================
-	THE SEVEN NODES OF UNITY
-	========================================================= -->
-
-	<section class="nodes-section">
-		<div class="nodes-left motion">
-			<h2>The Seven<br>Nodes of Unity.</h2>
-			<p>
-				Every enterprise runs these seven functions somewhere, often
-				in disconnected tools. Our Digital Core links them into a
-				single loop, so a change in one place is reflected everywhere
-				else automatically.
-			</p>
-			<div class="nodes-tags">
-				<div class="tag"><span></span>Integrated Ecosystem</div>
-				<div class="tag"><span></span>Zero-Disruption Flow</div>
-			</div>
-		</div>
-
-		<div class="nodes-right motion">
-			<div class="nodes-diagram-image">
-                <div class="nodes-diagram-svg">
-                <svg viewBox="0 0 640 560" xmlns="http://www.w3.org/2000/svg" aria-label="The Seven Nodes of Unity diagram">
-                  <defs>
-                    <linearGradient id="nodeRingGradient" x1="220" y1="115" x2="385" y2="100" gradientUnits="userSpaceOnUse">
-                      <stop offset="0%" stop-color="#E21C15"/>
-                      <stop offset="100%" stop-color="#710E0A"/>
-                    </linearGradient>
-                    <filter id="nodeShadow" x="-20%" y="-20%" width="140%" height="160%">
-                      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="rgba(0,0,0,0.13)"/>
-                    </filter>
-                  </defs>
-
-                  <path class="node-arc" d="M 385,100 A 210,210 0 1 1 220,115"
-                        fill="none" stroke="url(#nodeRingGradient)" stroke-width="9" stroke-linecap="butt"/>
-
-                  <image class="node-logo" style="animation-delay: 1.6s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/salesforce.png' ) ); ?>" x="290" y="140" width="64" height="40" preserveAspectRatio="xMidYMid meet"/>
-                  
-                  <image class="node-logo" style="animation-delay: 1.7s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/microsoft.png' ) ); ?>" x="220" y="200" width="30" height="30" preserveAspectRatio="xMidYMid meet"/>
-                  <image class="node-logo" style="animation-delay: 1.8s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/dynamics.png' ) ); ?>" x="300" y="230" width="40" height="40" preserveAspectRatio="xMidYMid meet"/>
-                  <image class="node-logo" style="animation-delay: 1.9s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/sap.png' ) ); ?>" x="380" y="200" width="54" height="32" preserveAspectRatio="xMidYMid meet"/>
-                  
-                  <image class="node-logo" style="animation-delay: 2.0s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/ibm.png' ) ); ?>" x="205" y="285" width="64" height="28" preserveAspectRatio="xMidYMid meet"/>
-                  <image class="node-logo" style="animation-delay: 2.1s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/infor.png' ) ); ?>" x="280" y="330" width="92" height="28" preserveAspectRatio="xMidYMid meet"/>
-                  <image class="node-logo" style="animation-delay: 2.2s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/workday.png' ) ); ?>" x="370" y="280" width="80" height="28" preserveAspectRatio="xMidYMid meet"/>
-                  
-                  <image class="node-logo" style="animation-delay: 2.3s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/oracle.png' ) ); ?>" x="200" y="370" width="74" height="26" preserveAspectRatio="xMidYMid meet"/>
-                  <image class="node-logo" style="animation-delay: 2.4s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/hubspot.png' ) ); ?>" x="370" y="370" width="74" height="28" preserveAspectRatio="xMidYMid meet"/>
-                  
-                  <image class="node-logo" style="animation-delay: 2.5s;" href="<?php echo esc_url( hosho_asset_url( 'approach/main/logo/service-now.png' ) ); ?>" x="248" y="410" width="144" height="24" preserveAspectRatio="xMidYMid meet"/>
-
-                  <g class="node-box" filter="url(#nodeShadow)">
-                    <rect x="255" y="71" width="130" height="38" fill="white" stroke="#710E0A" stroke-width="5"/>
-                    <text x="320" y="95" text-anchor="middle" font-family="Arial,sans-serif" font-size="13.5" font-weight="700" fill="#1a1c1d">Infrastructure</text>
-                  </g>
-
-                  <g class="node-box" filter="url(#nodeShadow)">
-                    <rect x="419" y="150" width="130" height="38" fill="white" stroke="#6F0E0A" stroke-width="5"/>
-                    <text x="484" y="174" text-anchor="middle" font-family="Arial,sans-serif" font-size="13.5" font-weight="700" fill="#1a1c1d">Data</text>
-                  </g>
-
-                  <g class="node-box" filter="url(#nodeShadow)">
-                    <rect x="460" y="328" width="130" height="38" fill="white" stroke="#6C0C09" stroke-width="5"/>
-                    <text x="525" y="352" text-anchor="middle" font-family="Arial,sans-serif" font-size="13.5" font-weight="700" fill="#1a1c1d">Logic</text>
-                  </g>
-
-                  <g class="node-box" filter="url(#nodeShadow)">
-                    <rect x="346" y="470" width="130" height="38" fill="white" stroke="#A81510" stroke-width="5"/>
-                    <text x="411" y="494" text-anchor="middle" font-family="Arial,sans-serif" font-size="13.5" font-weight="700" fill="#1a1c1d">Integration</text>
-                  </g>
-
-                  <g class="node-box" filter="url(#nodeShadow)">
-                    <rect x="164" y="470" width="130" height="38" fill="white" stroke="#DA1A13" stroke-width="5"/>
-                    <text x="229" y="494" text-anchor="middle" font-family="Arial,sans-serif" font-size="13.5" font-weight="700" fill="#1a1c1d">Automation</text>
-                  </g>
-
-                  <g class="node-box" filter="url(#nodeShadow)">
-                    <rect x="50" y="328" width="130" height="38" fill="white" stroke="#DE1B15" stroke-width="5"/>
-                    <text x="115" y="352" text-anchor="middle" font-family="Arial,sans-serif" font-size="13.5" font-weight="700" fill="#1a1c1d">AI</text>
-                  </g>
-
-                  <g class="node-box" filter="url(#nodeShadow)">
-                    <rect x="91" y="150" width="130" height="38" fill="white" stroke="#E21C15" stroke-width="5"/>
-                    <text x="156" y="174" text-anchor="middle" font-family="Arial,sans-serif" font-size="13.5" font-weight="700" fill="#1a1c1d">Experience</text>
-                  </g>
-				  
-                  <polygon class="node-arrowhead" points="250,95 207,101 223,129" fill="#e21c15"/>
-                </svg>
-			</div>
-		</div>
-	</section>
 
 	<!-- =========================================================
 	8-STAGE DELIVERY FRAMEWORK
@@ -623,51 +591,27 @@ $hosho_phases = array(
 	FINAL CTA
 	========================================================= -->
 
-	<?php hosho_render_cta( '', 'Transformation Begins With What You Already Have', '', 'Speak to Us', 'page-consult-our-experts', 'approach/main/cta.jpg' ); ?>
+	<?php hosho_render_cta( '', 'TRANSFORMATION BEGINS WITH WHAT YOU ALREADY HAVE', '', 'Speak to Us', 'page-consult-our-experts', 'approach/main/cta.jpg' ); ?>
 
 </main>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+    var phaseTabs = document.querySelectorAll('.phase-tab');
+    var phasePanels = document.querySelectorAll('.phase-panel');
 
-    const phaseTabs = document.querySelectorAll('.phase-tab');
-    const phasePanels = document.querySelectorAll('.phase-panel');
-
-    if (!phaseTabs.length || !phasePanels.length) {
-        return;
-    }
+    if (!phaseTabs.length || !phasePanels.length) return;
 
     phaseTabs.forEach(function (tab) {
-
         tab.addEventListener('click', function () {
-
-            const targetPhase = this.dataset.phase;
-
-            /* Remove active from tabs */
-            phaseTabs.forEach(function (item) {
-                item.classList.remove('active');
-            });
-
-            /* Remove active from panels */
-            phasePanels.forEach(function (panel) {
-                panel.classList.remove('active');
-            });
-
-            /* Activate selected */
+            var targetPhase = this.dataset.phase;
+            phaseTabs.forEach(function (item) { item.classList.remove('active'); });
+            phasePanels.forEach(function (panel) { panel.classList.remove('active'); });
             this.classList.add('active');
-
-            const targetPanel = document.querySelector(
-                '.phase-panel[data-phase="' + targetPhase + '"]'
-            );
-
-            if (targetPanel) {
-                targetPanel.classList.add('active');
-            }
-
+            var targetPanel = document.querySelector('.phase-panel[data-phase="' + targetPhase + '"]');
+            if (targetPanel) { targetPanel.classList.add('active'); }
         });
-
     });
-
 });
 </script>
 

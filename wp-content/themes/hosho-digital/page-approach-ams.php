@@ -17,7 +17,7 @@ get_header();
 	hosho_render_hero(
 		'Our AMS Framework Is<br>Designed for the Modern<br>Enterprise',
 		'approach/ams/hero.jpg',
-		array( 'class' => 'page-hero--ams page-hero--center' )
+		array( 'class' => 'page-hero--company' )
 	);
 	?>
 
@@ -57,7 +57,6 @@ get_header();
 		<div class="container motion">
 			<div class="continuity-grid">
 				<div class="continuity-left">
-					<span class="small-title">The Continuity Framework</span>
 					<h3>
 						Beyond Service Level Agreements:<br>
 						A Strategic Lifecycle
@@ -381,7 +380,7 @@ get_header();
 	FINAL CTA
 	========================================================= -->
 
-	<?php hosho_render_cta( '', 'Build Once. Improve Continuously.', '', 'Start Your Partnership', home_url( '/contact' ), 'approach/ams/cta.jpg' ); ?>
+	<?php hosho_render_cta( '', 'BUILD ONCE<br>IMPROVE CONTINUOUSLY', '', 'Start Your Partnership', home_url( '/contact' ), 'approach/ams/cta.jpg' ); ?>
 
 </main>
 <?php

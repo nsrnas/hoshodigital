@@ -46,7 +46,7 @@ $hg_cards     = array(
 					<h2 class="hg-heading">Our Guarantee</h2>
 					<div class="hg-cards-col">
 						<?php foreach ( $hg_cards as $hg_card ) : ?>
-							<button type="button" class="hg-flip-card" aria-pressed="false" aria-label="Tap to reveal <?php echo esc_attr( $hg_card['eyebrow'] ); ?> guarantee">
+							<div class="hg-flip-card" aria-label="<?php echo esc_attr( $hg_card['eyebrow'] ); ?> guarantee">
 								<img class="hg-corner-stamp" src="<?php echo esc_url( $hg_stamp_img ); ?>" alt="">
 								<div class="hg-card-head">
 									<div class="hg-card-title-wrap">
@@ -56,7 +56,7 @@ $hg_cards     = array(
 								<div class="hg-card-body-wrap">
 									<span class="hg-body"><?php echo esc_html( $hg_card['body'] ); ?></span>
 								</div>
-							</button>
+							</div>
 						<?php endforeach; ?>
 					</div>
 				</div>
@@ -308,8 +308,7 @@ $hg_cards     = array(
 		<div class="container">
 			<div class="rapid-header motion">
 				<h2>
-					Every engagement sits somewhere on this
-					<strong>spectrum</strong>, we'll help you find where
+					Covering Every Part of The transformation spectrum
 				</h2>
 			</div>
 
@@ -345,7 +344,7 @@ $hg_cards     = array(
 				<article class="rapid-card">
 					<div class="rapid-card-head">
 						<span class="rapid-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M7 21V7l5-4v10l4-2v10"/></svg></span>
-						<h3>Integrated AI Layer<</h3>
+						<h3>Integrated AI Layer</h3>
 					</div>
 					<p class="rapid-desc">
 						A middleware approach that connects existing legacy

@@ -1,12 +1,26 @@
 <?php
 /**
- * Homepage template.
+ * Template Name: Approach - Optimization
+ * Template Post Type: page
  *
  * @package Hosho_Digital
  */
 
+get_header();
 ?>
 <main id="main-content" class="optimization-page">
+	<!-- =========================================================
+	HERO
+	========================================================= -->
+
+	<?php
+	hosho_render_hero(
+		"Treat your AI spend like a budget,<br>not a blank check",
+		'approach/main/hero.jpg',
+		array( 'class' => 'page-hero--company' )
+	);
+	?>
+
     <!-- ==========================================
 	AI BUDGET
 	=========================================== -->
@@ -14,9 +28,6 @@
 	<section class="ai-budget">
 		<div class="container">
 			<div class="budget-header motion">
-				<h2>
-					Treat your AI spend like a budget, not a blank check
-				</h2>
 				<p>
 					AI costs scale with usage in ways traditional software
 					licenses never did. We build in the controls to keep that
@@ -63,6 +74,13 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- =========================================================
+	FINAL CTA
+	========================================================= -->
+
+	<?php hosho_render_cta( '', 'READY TO OPTIMIZE YOUR AI SPEND?', '', 'Speak to Us', home_url( '/contact' ), 'approach/main/cta.jpg' ); ?>
+
 </main>
 
 <?php

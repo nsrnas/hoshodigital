@@ -15,9 +15,9 @@ get_header();
 
 	<?php
 	hosho_render_hero(
-		"You're Using 40% Less Than What You're Paying For.",
-		'approach/erp/hero.jpeg',
-		array( 'class' => 'page-hero--erp page-hero--center' )
+		"You're Using 40% Less Than What You're Paying For",
+		'approach/erp/hero.jpg',
+		array( 'class' => 'page-hero--company' )
 	);
 	?>
 
@@ -395,7 +395,7 @@ get_header();
 	FINAL CTA
 	========================================================= -->
 
-	<?php hosho_render_cta( '', 'Already Using Business Central?<br>Let\'s Unlock Its Full Potential Together.', '', 'Start Your Partnership', home_url( '/contact' ), 'approach/erp/cta.jpg' ); ?>
+	<?php hosho_render_cta( '', 'ALREADY USING BUSINESS CENTRAL?<br>LET\'S UNLOCK ITS FULL<br> POTENTIAL TOGETHER.', '', 'Start Your Partnership', home_url( '/contact' ), 'approach/erp/cta.jpg' ); ?>
 
 </main>
 <?php
