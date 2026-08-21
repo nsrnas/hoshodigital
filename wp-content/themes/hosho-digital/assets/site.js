@@ -301,6 +301,54 @@
     countTargets.forEach((target) => counterObserver.observe(target));
   }
 
+  const speedoSection = document.querySelector('.speedo-section');
+  if (speedoSection) {
+    const fill = speedoSection.querySelector('.speedo-fill');
+    const needleGroup = speedoSection.querySelector('.speedo-needle-group');
+    const numberEl = speedoSection.querySelector('[data-speedo-count]');
+
+    const totalArc = Math.PI * 110;
+    const maxValue = 50;
+    const targetValue = 40;
+    const fillRatio = targetValue / maxValue;
+    const fillLength = totalArc * fillRatio;
+
+    const targetAngle = -90 + (targetValue / maxValue) * 180;
+
+    const animateSpeedo = () => {
+      fill.style.strokeDasharray = `${fillLength} ${totalArc}`;
+      needleGroup.style.transform = `rotate(${targetAngle}deg)`;
+
+      // Animate counter number
+      if (numberEl && numberEl.dataset.speedoAnimated !== 'true') {
+        numberEl.dataset.speedoAnimated = 'true';
+        const end = parseInt(numberEl.dataset.countEnd || '40', 10);
+        const suffix = numberEl.dataset.countSuffix || '';
+        const duration = 2000;
+        const startTime = performance.now();
+
+        const tick = (now) => {
+          const progress = Math.min((now - startTime) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          const current = Math.round(end * eased);
+          numberEl.textContent = `${current}${suffix}`;
+          if (progress < 1) window.requestAnimationFrame(tick);
+        };
+        window.requestAnimationFrame(tick);
+      }
+    };
+
+    const speedoObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        animateSpeedo();
+        speedoObserver.unobserve(entry.target);
+      });
+    }, { threshold: 0.3 });
+
+    speedoObserver.observe(speedoSection);
+  }
+
   // Count approved programme statistics once they enter the viewport.
   const programmeCounters = [...document.querySelectorAll('[data-count-to]')];
   if (programmeCounters.length) {
