@@ -4,10 +4,10 @@
     <div class="shell">
       <div class="press-contact__intro motion">
         <div>
-          <p class="eyebrow">Media contact</p>
-          <h1>Media enquiries.</h1>
+          <p class="eyebrow">HOSHŌ DIGITAL</p>
+          <h1>Media contact.</h1>
         </div>
-        <p class="lede">For interview requests, company information and other media enquiries, contact HOSHŌ DIGITAL corporate communications.</p>
+        <p class="lede">For interview requests, company information and other media enquiries, contact Himari S.</p>
       </div>
 
       <div class="press-contact__profile motion">
@@ -16,10 +16,8 @@
         </figure>
 
         <div class="press-contact__person">
-          <p class="eyebrow">Corporate communications</p>
           <h2>Himari S</h2>
           <p class="press-contact__role">Communications Manager</p>
-          <a class="press-contact__email" href="mailto:media@hoshodigital.com">media@hoshodigital.com</a>
         </div>
 
         <address class="press-contact__address">
