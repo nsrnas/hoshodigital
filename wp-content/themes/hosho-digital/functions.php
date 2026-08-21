@@ -4,7 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 function hosho_pages() {
   return array(
     'privacy-policy' => 'Privacy Policy', 'accessibility' => 'Accessibility Statement', 'terms-of-use' => 'Terms of Use', 'cookies' => 'Cookies Policy',
-    'careers' => 'Careers', 'sustainability' => 'Sustainability', 'press' => 'Press',
+    'careers' => 'Careers', 'esg' => 'ESG', 'sustainability' => 'ESG', 'media' => 'Media', 'press' => 'Media',
     'contact' => 'Contact', 'company' => 'Company', 'ai-quick-win' => 'AI Quick Win', 'eci' => 'Enterprise Compute Initiative',
     'solutions' => 'Solutions', 'operational-experience' => 'Operational Experience', 'customer-experience' => 'Customer Experience', 'employee-experience' => 'Employee Experience',
     'innovation' => 'Innovation', 'assurance' => 'Assurance', 'ai' => 'AI', 'strategy-session' => 'Strategy Session',
@@ -37,8 +37,8 @@ function hosho_header_action() {
     'accessibility'  => array( 'Contact us', hosho_page_url( 'contact' ) ),
     'terms-of-use'   => array( 'Contact us', hosho_page_url( 'contact' ) ),
     'cookies'        => array( 'Contact us', hosho_page_url( 'contact' ) ),
-    'careers' => array( 'View opportunities', home_url( '/job-opportunities/' ) ), 'sustainability' => array( 'Our commitments', '#commitments' ),
-    'press' => array( 'Email media team', 'mailto:media@hoshodigital.com' ), 'contact' => array( 'Start a conversation', '#contact-form' ),
+    'careers' => array( 'View opportunities', home_url( '/job-opportunities/' ) ), 'esg' => array( 'Our commitments', '#commitments' ), 'sustainability' => array( 'Our commitments', '#commitments' ),
+    'media' => array( 'Media contact', '#main-content' ), 'press' => array( 'Media contact', '#main-content' ), 'contact' => array( 'Get in touch', '#contact-form' ),
     'company' => array( 'Get in touch', hosho_page_url( 'contact' ) ), 'ai-quick-win' => array( 'Register interest', 'https://hoshodigital.com/ai-quick-win-form/' ),
     'eci' => array( 'Register interest', 'https://hoshodigital.com/eci-form/' ),
     'solutions' => array( 'Get in touch', hosho_page_url( 'contact' ) ),
@@ -53,7 +53,7 @@ function hosho_primary_menu_fallback() { ?>
     <li class="menu-item-has-children"><a href="<?php echo esc_url( hosho_page_url( 'eci' ) ); ?>">Programmes</a><ul class="sub-menu"><li><a href="<?php echo esc_url( hosho_page_url( 'eci' ) ); ?>">Enterprise Compute Initiative</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'ai-quick-win' ) ); ?>">AI Quick Win</a></li></ul></li>
     <li class="menu-item-has-children"><a href="<?php echo esc_url( hosho_page_url( 'approach' ) ); ?>">Approach</a><ul class="sub-menu"><li><a href="<?php echo esc_url( home_url( '/innovation/' ) ); ?>">Innovation</a></li><li><a href="<?php echo esc_url( home_url( '/assurance/' ) ); ?>">Assurance</a></li><li><a href="<?php echo esc_url( home_url( '/erp/' ) ); ?>">ERP</a></li><li><a href="<?php echo esc_url( home_url( '/optimization/' ) ); ?>">Optimization</a></li></ul></li>
     <li class="menu-item-has-children"><a href="<?php echo esc_url( hosho_page_url( 'solutions' ) ); ?>">Solutions</a><ul class="sub-menu"><li><a href="<?php echo esc_url( hosho_page_url( 'operational-experience' ) ); ?>">Operational Experience</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'customer-experience' ) ); ?>">Customer Experience</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'employee-experience' ) ); ?>">Employee Experience</a></li></ul></li>
-    <li class="menu-item-has-children"><a href="<?php echo esc_url( hosho_page_url( 'company' ) ); ?>">Company</a><ul class="sub-menu"><li><a href="<?php echo esc_url( hosho_page_url( 'careers' ) ); ?>">Careers</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'sustainability' ) ); ?>">Sustainability</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'press' ) ); ?>">Press</a></li></ul></li>
+    <li class="menu-item-has-children"><a href="<?php echo esc_url( hosho_page_url( 'company' ) ); ?>">Company</a><ul class="sub-menu"><li><a href="<?php echo esc_url( hosho_page_url( 'careers' ) ); ?>">Careers</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'esg' ) ); ?>">ESG</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'media' ) ); ?>">Media</a></li></ul></li>
     <li><a href="<?php echo esc_url( hosho_page_url( 'contact' ) ); ?>">Contact</a></li>
   </ul><?php
 }
@@ -97,7 +97,7 @@ function hosho_render_quote( $quote, $name, $image, $class = '' ) { ?>
       <blockquote><?php echo esc_html( $quote ); ?></blockquote>
       <cite><?php echo esc_html( $name ); ?> </cite>
     </div>
-    <div class="quote-band__portrait"><img src="<?php echo esc_url( hosho_asset_url( $image ) ); ?>" alt="Portrait of <?php echo esc_attr( $name ); ?>"></div>
+    <div class="quote-band__portrait"><img loading="lazy" decoding="async" src="<?php echo esc_url( hosho_asset_url( $image ) ); ?>" alt="Portrait of <?php echo esc_attr( $name ); ?>"></div>
   </section><?php
 }
 function hosho_render_cta( $eyebrow, $title, $body, $label, $url, $image ) { ?>

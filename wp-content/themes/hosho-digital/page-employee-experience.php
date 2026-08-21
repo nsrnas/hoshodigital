@@ -3,16 +3,23 @@
 <main id="main-content">
 	<?php
 	hosho_render_hero(
-		'Employee<br>Experience Solutions',
-		'hero-employee-experience.jpeg',
+		'Redefine the<br>Workplace',
+		'hero-employee-experience.jpg',
 		['class' => 'page-hero--ex']
 	);
 	?>
 
-	<section class="section section-mist ex-intro">
-		<div class="shell motion">
-			<h2 class="ex-intro__title">Redefining the Digital Workplace</h2>
-			<p class="ex-intro__body">Our Employee Experience portfolio helps organizations create a smarter digital workplace by simplifying employee services, automating HR processes, and streamlining internal requests through intelligent enterprise solutions.</p>
+	<section class="section">
+		<div class="shell">
+			<div class="intro-grid motion">
+				<div>
+					<p class="eyebrow">Employee Experience</p>
+					<h2>Empowering Teams with Intelligent Tools</h2>
+				</div>
+				<div class="body-copy">
+					<p>Our Employee Experience portfolio helps organizations create a smarter digital workplace by simplifying employee services, automating HR processes, and streamlining internal requests through intelligent enterprise solutions.</p>
+				</div>
+			</div>
 		</div>
 	</section>
 

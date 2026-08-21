@@ -16,13 +16,6 @@
     </div>
   </div></div></section>
 
-  <section class="section cx-intro">
-		<div class="shell motion">
-			<h2 class="cx-intro__title">How HOSHŌ Digital Helps</h2>
-			<p class="cx-intro__body">We help organizations bridge the gap between AI adoption and measurable business outcomes by delivering connected solutions across Customer Experience, Employee Experience, and Operational Experience. Our integrated approach enables businesses to modernize operations, improve collaboration, and accelerate digital transformation with confidence.</p>
-		</div>
-	</section>
-
   <section class="section section-navy"><div class="shell"><div class="intro-grid motion"><div><p class="eyebrow">Our solutions</p><h2>Transforming Business Through Connected Experiences</h2></div><div class="body-copy"><p>Business transformation creates the greatest impact when organizations improve the way customers interact, employees work, and operations perform together. Rather than treating these areas separately, HOSHŌ Digital structures its solutions around three connected business experiences that enable sustainable growth and operational excellence.</p></div></div>
     <div class="solutions-cards">
       <article class="solutions-card solutions-card--ops motion">
@@ -31,7 +24,6 @@
         </div>
         <h3>Operational Experience</h3>
         <p>Improve business performance through connected operations, intelligent automation, and enterprise-wide process optimization.</p>
-        <div class="solutions-card__caps"><span class="solutions-card__caps-label">Key Capabilities</span><span>Finance Operations, Procurement, Governance, Industry Solutions</span></div>
         <a href="<?php echo esc_url( hosho_page_url( 'operational-experience' ) ); ?>" class="solutions-card__link">Explore Solutions <span aria-hidden="true">&#8599;</span></a>
       </article>
       <article class="solutions-card solutions-card--cx motion">
@@ -40,22 +32,69 @@
         </div>
         <h3>Customer Experience</h3>
         <p>Create meaningful customer interactions through intelligent engagement, AI-powered service, and connected sales processes.</p>
-        <div class="solutions-card__caps"><span class="solutions-card__caps-label">Key Capabilities</span><span>Customer Engagement, Sales Management, AI Assistants, Workflow Automation</span></div>
         <a href="<?php echo esc_url( hosho_page_url( 'customer-experience' ) ); ?>" class="solutions-card__link solutions-card__link--cx">Explore Solutions <span aria-hidden="true">&#8599;</span></a>
       </article>
       <article class="solutions-card solutions-card--ex motion">
         <div class="solutions-card__icon solutions-card__icon--ex">
-          <svg width="48" height="24" viewBox="0 0 48 24" fill="none"><path d="M0 24V20.85C0 19.417.733 18.25 2.2 17.35 3.667 16.45 5.6 16 8 16 8.433 16 8.85 16.008 9.25 16.025 9.65 16.042 10.033 16.083 10.4 16.15 9.933 16.85 9.583 17.583 9.35 18.35 9.117 19.117 9 19.917 9 20.75V24H0ZM12 24V20.75C12 19.683 12.292 18.708 12.875 17.825 13.458 16.942 14.283 16.167 15.35 15.5 16.417 14.833 17.692 14.333 19.175 14 20.658 13.667 22.267 13.5 24 13.5 25.767 13.5 27.392 13.667 28.875 14 30.358 14.333 31.633 14.833 32.7 15.5 33.767 16.167 34.583 16.942 35.15 17.825 35.717 18.708 36 19.683 36 20.75V24H12ZM39 24V20.75C39 19.883 38.892 19.067 38.675 18.3 38.458 17.533 38.133 16.817 37.7 16.15 38.067 16.083 38.442 16.042 38.825 16.025 39.208 16.008 39.6 16 40 16 42.4 16 44.333 16.442 45.8 17.325 47.267 18.208 48 19.383 48 20.85V24H39ZM24 12C22.333 12 20.917 11.417 19.75 10.25 18.583 9.083 18 7.667 18 6 18 4.3 18.583 2.875 19.75 1.725 20.917.575 22.333 0 24 0 25.7 0 27.125.575 28.275 1.725 29.425 2.875 30 4.3 30 6 30 7.667 29.425 9.083 28.275 10.25 27.125 11.417 25.7 12 24 12Z" fill="currentColor"/></svg>
+          <svg width="48" height="24" viewBox="0 0 48 24" fill="none"><path d="M0 24V20.85C0 19.417.733 18.25 2.2 17.35 3.667 16.45 5.6 16 8 16 8.433 16 8.85 16.008 9.25 16.025 9.65 16.042 10.033 16.083 10.4 16.15 9.933 16.85 9.583 17.583 9.35 18.35 9.117 19.117 9 19.917 9 20.75V24H0ZM12 24V20.75C12 19.683 12.292 18.708 12.875 17.825 13.458 16.942 14.283 16.167 15.35 15.5 16.417 14.833 17.692 14.333 19.175 14 20.658 13.667 22.267 13.5 24 13.5 25.767 13.5 27.392 13.667 28.875 14 30.358 14.333 31.633 14.833 32.7 15.5 33.767 16.167 34.583 16.942 35.15 17.825 35.717 18.708 36 19.683 36 20.75V24H12ZM39 24V20.75C39 19.883 38.892 19.067 38.675 18.3 38.458 17.533 38.133 16.817 37.7 16.15 38.067 16.083 38.442 16.042 38.825 16.008 39.208 16.008 39.6 16 40 16 42.4 16 44.333 16.442 45.8 17.325 47.267 18.208 48 19.383 48 20.85V24H39ZM24 12C22.333 12 20.917 11.417 19.75 10.25 18.583 9.083 18 7.667 18 6 18 4.3 18.583 2.875 19.75 1.725 20.917.575 22.333 0 24 0 25.7 0 27.125.575 28.275 1.725 29.425 2.875 30 4.3 30 6 30 7.667 29.425 9.083 28.275 10.25 27.125 11.417 25.7 12 24 12Z" fill="currentColor"/></svg>
         </div>
         <h3>Employee Experience</h3>
         <p>Empower employees with digital workplace solutions that simplify HR processes, collaboration, and everyday work.</p>
-        <div class="solutions-card__caps"><span class="solutions-card__caps-label">Key Capabilities</span><span>HR Solutions, Employee Services, Procurement Requests, Intelligent Workplace</span></div>
         <a href="<?php echo esc_url( hosho_page_url( 'employee-experience' ) ); ?>" class="solutions-card__link solutions-card__link--ex">Explore Solutions <span aria-hidden="true">&#8599;</span></a>
       </article>
     </div>
   </div></section>
 
-  <section class="section"><div class="shell"><div class="intro-grid motion"><div><p class="eyebrow">Why choose us</p><h2>Our Value</h2></div></div>
+  <section class="section section-mist speedo-section">
+    <div class="shell motion">
+      <div class="speedo-layout">
+        <div class="speedo-gauge">
+          <svg class="speedo-svg" viewBox="0 0 280 180" aria-hidden="true">
+            <!-- Background track (grey) -->
+            <path class="speedo-track" d="M30,160 A110,110 0 1,1 250,160" fill="none" stroke="#e5e7eb" stroke-width="18" stroke-linecap="round"/>
+            <!-- Colored arc: navy → red gradient -->
+            <defs>
+              <linearGradient id="speedo-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="var(--navy, #0e2a47)"/>
+                <stop offset="50%" stop-color="#4c5b71"/>
+                <stop offset="100%" stop-color="var(--red-dark, #b90004)"/>
+              </linearGradient>
+            </defs>
+            <path class="speedo-fill" d="M30,160 A110,110 0 1,1 250,160" fill="none" stroke="url(#speedo-grad)" stroke-width="18" stroke-linecap="round" stroke-dasharray="0 9999"/>
+
+            <g class="speedo-needle-group">
+              <line class="speedo-needle" x1="140" y1="155" x2="140" y2="55" stroke="var(--red-dark, #b90004)" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="140" cy="155" r="8" fill="var(--navy, #0e2a47)"/>
+              <circle cx="140" cy="155" r="4" fill="white"/>
+            </g>
+            <!-- Scale labels -->
+            <text x="10" y="164" class="speedo-label" text-anchor="middle">0</text>
+            <text x="35" y="88" class="speedo-label" text-anchor="middle">10</text>
+            <text x="100" y="40" class="speedo-label" text-anchor="middle">20</text>
+            <text x="180" y="40" class="speedo-label" text-anchor="middle">30</text>
+            <text x="245" y="88" class="speedo-label" text-anchor="middle">40</text>
+            <text x="270" y="164" class="speedo-label" text-anchor="middle">50</text>
+          </svg>
+          <div class="speedo-counter">
+            <span class="speedo-number" data-speedo-count data-count-end="40" data-count-suffix="+">0</span>
+            <span class="speedo-unit">Solutions</span>
+          </div>
+        </div>
+        <div class="speedo-copy">
+          <p class="eyebrow">Solutions Growth</p>
+          <h2>From Zero to <strong>40+</strong> and Growing</h2>
+          <p class="speedo-body">Since 2023, HOSHŌ Digital has rapidly built a comprehensive portfolio of over 40 intelligent enterprise solutions — spanning operational automation, customer engagement, and employee productivity — and we're just getting started.</p>
+          <!-- <div class="speedo-timeline">
+            <span class="speedo-year"><strong>2023</strong> Founded</span>
+            <span class="speedo-year-divider" aria-hidden="true"></span>
+            <span class="speedo-year"><strong>2025</strong> 40+ Solutions</span>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section"><div class="shell"><div class="intro-grid motion"><div><h2>Our Value</h2></div></div>
     <div class="editorial-grid solutions-why-grid">
       <article class="feature" style="grid-column:span 4">
         <span class="feature__index"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 20V15.7C2.05 14.833 1.313 13.821.788 12.663.263 11.504 0 10.283 0 9 0 6.5.875 4.375 2.625 2.625 4.375.875 6.5 0 9 0 11.083 0 12.929.613 14.538 1.838 16.146 3.063 17.192 4.658 17.675 6.625L18.975 11.75C19.058 12.067 19 12.354 18.8 12.613 18.6 12.871 18.333 13 18 13H16V16C16 16.55 15.804 17.021 15.413 17.413 15.021 17.804 14.55 18 14 18H12V20H10V16H14V11H16.7L15.75 7.125C15.367 5.608 14.55 4.375 13.3 3.425 12.05 2.475 10.617 2 9 2 7.067 2 5.417 2.675 4.05 4.025 2.683 5.375 2 7.017 2 8.95 2 9.95 2.204 10.9 2.613 11.8 3.021 12.7 3.6 13.5 4.35 14.2L5 14.8V20H3Z" fill="currentColor"/></svg></span>
