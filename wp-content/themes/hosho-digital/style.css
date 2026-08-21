@@ -2608,25 +2608,6 @@ body.hosho-remade .solutions-card:hover>p,
 	background-position: center center;
 }
 
-.cx-intro {
-	text-align: center;
-}
-
-.cx-intro__title {
-	font-size: clamp(28px, 4vw, 36px);
-	font-weight: 600;
-	color: var(--navy);
-	margin-bottom: 20px;
-}
-
-.cx-intro__body {
-	font-size: 20px;
-	color: var(--muted);
-	line-height: 1.6;
-	max-width: 900px;
-	margin: 0 auto;
-}
-
 .cx-categories .cx-category {
 	margin-bottom: 64px;
 }
@@ -2698,25 +2679,6 @@ body.hosho-remade .solutions-card:hover>p,
 
 .page-hero--ex .page-hero__media {
 	background-position: center center;
-}
-
-.ex-intro {
-	text-align: center;
-}
-
-.ex-intro__title {
-	font-size: clamp(28px, 4vw, 36px);
-	font-weight: 600;
-	color: var(--navy);
-	margin-bottom: 20px;
-}
-
-.ex-intro__body {
-	font-size: 20px;
-	color: var(--muted);
-	line-height: 1.6;
-	max-width: 1018px;
-	margin: 0 auto;
 }
 
 .ex-stat {
