@@ -416,4 +416,71 @@
     });
   }
 
+  // Careers: type the four beliefs once the section enters the viewport.
+  const careerBeliefs = document.querySelector('[data-career-beliefs]');
+  if (careerBeliefs) {
+    const lines = [...careerBeliefs.querySelectorAll('[data-typed-line]')];
+    const originals = lines.map((line) => line.textContent.trim());
+    let hasPlayed = false;
+
+    const showAllBeliefs = () => lines.forEach((line, index) => {
+      line.textContent = originals[index];
+      line.classList.add('is-typed');
+    });
+
+    const playBeliefs = async () => {
+      if (hasPlayed) return;
+      hasPlayed = true;
+      if (reducedMotion) {
+        showAllBeliefs();
+        return;
+      }
+      lines.forEach((line) => { line.textContent = ''; });
+      for (let lineIndex = 0; lineIndex < lines.length; lineIndex += 1) {
+        const line = lines[lineIndex];
+        line.classList.add('is-typing');
+        for (const character of originals[lineIndex]) {
+          line.textContent += character;
+          await new Promise((resolve) => window.setTimeout(resolve, 24));
+        }
+        line.classList.remove('is-typing');
+        line.classList.add('is-typed');
+        await new Promise((resolve) => window.setTimeout(resolve, 180));
+      }
+    };
+
+    if (reducedMotion || !('IntersectionObserver' in window)) {
+      showAllBeliefs();
+    } else {
+      const beliefObserver = new IntersectionObserver(([entry]) => {
+        if (!entry.isIntersecting) return;
+        beliefObserver.disconnect();
+        playBeliefs();
+      }, { threshold: 0.35 });
+      beliefObserver.observe(careerBeliefs);
+    }
+  }
+
+  // ESG: one active commitment expands while its siblings retain context.
+  document.querySelectorAll('[data-esg-cards]').forEach((group) => {
+    const cards = [...group.querySelectorAll('.esg-card')];
+    const activate = (activeCard) => {
+      cards.forEach((card) => {
+        const active = card === activeCard;
+        card.classList.toggle('is-active', active);
+        card.setAttribute('aria-expanded', String(active));
+      });
+    };
+    cards.forEach((card) => {
+      card.addEventListener('pointerenter', () => activate(card));
+      card.addEventListener('focus', () => activate(card));
+      card.addEventListener('click', () => activate(card));
+      card.addEventListener('keydown', (event) => {
+        if (event.key !== 'Enter' && event.key !== ' ') return;
+        event.preventDefault();
+        activate(card);
+      });
+    });
+  });
+
 })();

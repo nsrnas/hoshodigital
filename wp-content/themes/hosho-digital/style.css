@@ -11598,11 +11598,11 @@ body.page-company .company-value__visual {
 body.page-company .company-value__copy h3 { margin-top: 0; }
 
 /* Clean, full-width editorial contact and media-contact pages. */
-body:is(.page-contact, .page-press) #main-content {
+body:is(.page-contact, .page-media, .page-press) #main-content {
 	padding-top: 86px;
 }
 
-body:is(.page-contact, .page-press) .site-header:not(.is-scrolled) {
+body:is(.page-contact, .page-media, .page-press) .site-header:not(.is-scrolled) {
 	background: var(--navy);
 	border-color: rgba(255,255,255,.12);
 }
@@ -11633,7 +11633,7 @@ body.page-contact .contact-page__intro > div {
 	min-width: 0;
 }
 
-body:is(.page-contact, .page-press) .contact-page__intro h1,
+body:is(.page-contact, .page-media, .page-press) .contact-page__intro h1,
 body.page-press .press-contact__intro h1 {
 	max-width: 900px;
 	margin: 0;
@@ -11852,7 +11852,7 @@ body.page-eci .eci-hero-partners .shell > div > img {
 	body.page-company .company-value:nth-child(even) .company-value__visual { order: initial; }
 	body.page-company .company-value__visual { min-height: 440px; }
 
-	body:is(.page-contact, .page-press) .contact-page__intro,
+	body:is(.page-contact, .page-media, .page-press) .contact-page__intro,
 	body.page-press .press-contact__intro,
 	body.page-press .press-contact__profile {
 		grid-template-columns: 1fr;
@@ -11902,7 +11902,7 @@ body.page-eci .eci-hero-partners .shell > div > img {
 	body.page-company .company-value__visual { min-height: 320px; }
 	body.page-company .company-value__copy { padding: 44px 24px 52px; }
 
-	body:is(.page-contact, .page-press) #main-content { padding-top: 74px; }
+	body:is(.page-contact, .page-media, .page-press) #main-content { padding-top: 74px; }
 	body.page-contact .contact-form { grid-template-columns: 1fr; padding: 26px 20px; }
 	body.page-contact .contact-form .field-full,
 	body.page-contact .contact-form .consent { grid-column: auto; }
@@ -11920,4 +11920,183 @@ body.page-eci .eci-hero-partners .shell > div > img {
 body:is(.page-careers, .page-company, .page-ai-quick-win, .page-eci) .cta-panel--concise h2 {
 		font-size: clamp(40px, 12vw, 58px);
 	}
+}
+/* ==========================================================================
+   EVAN SEVEN-PAGE REVISION · 2026-08-20
+   Scoped to Careers, ESG, Media, Contact, Company, AI Quick Win and ECI.
+   ========================================================================== */
+
+:is(.page-careers,.page-esg,.page-sustainability,.page-media,.page-press,.page-contact,.page-company,.page-ai-quick-win,.page-eci) .page-hero {
+  min-height: 100svh;
+}
+
+:is(.page-careers,.page-esg,.page-sustainability,.page-company,.page-ai-quick-win,.page-eci) .page-hero h1 {
+  max-width: 12ch;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(3.25rem, 7vw, 7.75rem);
+  font-weight: 600;
+  line-height: .92;
+  letter-spacing: -.055em;
+}
+
+/* Careers */
+.careers-belief__grid {
+  display: grid;
+  grid-template-columns: minmax(220px,.7fr) minmax(420px,1.3fr);
+  gap: clamp(3rem,7vw,8rem);
+  align-items: start;
+}
+.careers-belief__title { max-width: 12ch; font-size: clamp(2rem,3vw,3.6rem); }
+.careers-belief__lines { min-height: clamp(17rem,32vw,34rem); }
+.careers-belief__lines p {
+  position: relative;
+  margin: 0 0 .28em;
+  color: #071b2c;
+  font-family: "Poppins",sans-serif;
+  font-size: clamp(2.25rem,5vw,6.4rem);
+  font-weight: 500;
+  line-height: .98;
+  letter-spacing: -.055em;
+}
+.careers-belief__lines p:nth-child(2) { color:#e91a1a; }
+.careers-belief__lines p.is-typing::after { content:""; display:inline-block; width:.06em; height:.82em; margin-left:.08em; background:#e91a1a; animation:hosho-caret .8s steps(1) infinite; }
+.careers-belief__body { grid-column:2; max-width:56ch; margin:0; font-size:1.08rem; line-height:1.75; color:#56616d; }
+@keyframes hosho-caret { 50% { opacity:0; } }
+.careers-diversity .media-split__image { background-position:center 46%; }
+.careers-voices { padding-block:clamp(3.75rem,7vw,7rem); }
+.careers-voices .testimonial-window { max-width:1080px; }
+.careers-voices .testimonial { padding:clamp(1.75rem,3vw,3rem); min-height:320px; }
+.careers-voices .testimonial blockquote { max-width:32ch; font-size:clamp(1.35rem,2.3vw,2.25rem); line-height:1.32; }
+.page-careers .cta-panel { background-position:center 48%; }
+
+/* ESG commitment accordion */
+.esg-commitments { display:flex; min-height:640px; gap:14px; margin-top:clamp(2rem,4vw,4rem); overflow:hidden; }
+.esg-card { position:relative; flex:1 1 0; min-width:0; overflow:hidden; cursor:pointer; outline:none; background:#071b2c; transition:flex .7s cubic-bezier(.22,1,.36,1), transform .35s ease; }
+.esg-card.is-active { flex:2.25 1 0; }
+.esg-card:focus-visible { box-shadow:inset 0 0 0 3px #e91a1a; }
+.esg-card img { width:100%; height:100%; object-fit:cover; filter:saturate(.78) contrast(1.03); transition:transform 1s cubic-bezier(.22,1,.36,1), filter .5s ease; }
+.esg-card.is-active img { transform:scale(1.035); filter:saturate(.9) contrast(1.06); }
+.esg-card::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,transparent 38%,rgba(3,15,27,.9) 100%); }
+.esg-card__overlay { position:absolute; z-index:1; inset:auto clamp(1.25rem,2.4vw,2.5rem) clamp(1.5rem,3vw,3rem); color:#fff; }
+.esg-card__overlay h3 { max-width:14ch; margin:0; color:#fff; font-size:clamp(1.25rem,2vw,2.15rem); line-height:1.05; }
+.esg-card__overlay p { max-width:42ch; max-height:0; margin:0; opacity:0; overflow:hidden; transform:translateY(14px); transition:max-height .45s ease, opacity .35s ease .12s, transform .45s ease .08s, margin .45s ease; }
+.esg-card.is-active .esg-card__overlay p { max-height:8rem; margin-top:1rem; opacity:1; transform:none; }
+.logo-row__panel--dark { background:#071b2c; }
+.logo-row__panel--dark img { filter:none!important; }
+.logo-row--credentials { grid-template-columns:repeat(3,minmax(0,1fr)); }
+
+/* Standard quote composition */
+:is(.page-careers,.page-esg,.page-sustainability,.page-company) .quote-band {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(300px,36%);
+  min-height:520px;
+  overflow:hidden;
+  background:linear-gradient(105deg,#bd0711 0%,#76101b 34%,#071b2c 76%);
+}
+:is(.page-careers,.page-esg,.page-sustainability,.page-company) .quote-band--balanced { background:linear-gradient(105deg,#9b0d18 0%,#4b1423 38%,#0a2944 100%); }
+:is(.page-careers,.page-esg,.page-sustainability,.page-company) .quote-band--red-soft { background:linear-gradient(105deg,#ad0b17 0%,#501522 43%,#0b2439 100%); }
+:is(.page-careers,.page-esg,.page-sustainability,.page-company) .quote-band__copy { align-self:center; padding:clamp(3rem,6vw,7rem) clamp(2rem,6vw,7rem); }
+:is(.page-careers,.page-esg,.page-sustainability,.page-company) .quote-band blockquote { max-width:27ch; margin:1.5rem 0 2.4rem; color:#fff; font-size:clamp(2rem,3.7vw,4.65rem); font-style:normal; font-weight:500; line-height:1.08; letter-spacing:-.045em; }
+:is(.page-careers,.page-esg,.page-sustainability,.page-company) .quote-band cite { color:#fff; font-size:.8rem; font-style:normal; font-weight:700; letter-spacing:.16em; text-transform:uppercase; }
+:is(.page-careers,.page-esg,.page-sustainability,.page-company) .quote-band__portrait { min-height:520px; background:transparent; }
+:is(.page-careers,.page-esg,.page-sustainability,.page-company) .quote-band__portrait img { width:100%; height:100%; object-fit:cover; object-position:center top; filter:grayscale(1) contrast(1.08); mix-blend-mode:luminosity; }
+
+/* Media */
+.press-contact { padding-block:clamp(5rem,10vw,10rem); }
+.press-contact__profile { display:grid; grid-template-columns:minmax(180px,240px) minmax(240px,1fr) minmax(240px,.8fr); gap:clamp(2rem,5vw,6rem); align-items:center; min-height:420px; padding:clamp(1.5rem,3vw,3.25rem); border:1px solid #dce1e6; background:#fff; box-shadow:0 28px 80px rgba(7,21,35,.08); }
+.press-contact__portrait { position:relative; display:grid; width:min(100%,220px); aspect-ratio:4/5; min-height:0; margin:0; place-items:center; overflow:hidden; border:1px solid rgba(7,27,44,.16); box-shadow:0 22px 55px rgba(7,27,44,.12); }
+.press-contact__portrait--placeholder { background:linear-gradient(145deg,#122d47 0%,#071b2c 56%,#710e0a 100%); color:#fff; }
+.press-contact__portrait--placeholder::before { width:72%; border-color:rgba(255,255,255,.12); }
+.press-contact__portrait--placeholder::after { width:42%; border-color:rgba(255,255,255,.18); }
+.press-contact__portrait--placeholder span { display:grid; width:5.25rem; height:5.25rem; place-items:center; border:1px solid rgba(255,255,255,.3); border-radius:50%; background:rgba(255,255,255,.07); font-size:1.35rem!important; font-weight:600!important; letter-spacing:.08em!important; }
+.press-contact__person,.press-contact__address { display:flex; flex-direction:column; justify-content:center; padding:clamp(1rem,2.5vw,2.5rem); }
+.press-contact__person { border-right:1px solid #dce1e6; }
+.press-contact__person h2 { font-size:clamp(2.4rem,4vw,4.4rem); }
+.press-contact__address { gap:.4rem; color:#5c6570; font-style:normal; line-height:1.6; }
+.press-contact__address strong { margin-bottom:1rem; color:#071b2c; }
+
+/* Contact, full-width transparent form */
+.contact-page--immersive { position:relative; min-height:calc(100svh - 76px); padding:clamp(6rem,9vw,10rem) 0; color:#fff; background:#020b13 var(--contact-bg) center/cover no-repeat; isolation:isolate; }
+.contact-page--immersive::before { content:""; position:absolute; z-index:-1; inset:0; background:linear-gradient(90deg,rgba(1,11,20,.96),rgba(2,18,31,.8) 52%,rgba(75,6,17,.66)); }
+.contact-page__canvas { display:grid; grid-template-columns:minmax(260px,.7fr) minmax(560px,1.3fr); gap:clamp(3rem,8vw,9rem); align-items:start; }
+.contact-page__heading h1 { max-width:7ch; margin:0; color:#fff; font-family:"Poppins",sans-serif; font-size:clamp(3.8rem,7vw,8rem); line-height:.9; letter-spacing:-.06em; }
+.contact-page__heading p { max-width:35ch; margin-top:2rem; color:rgba(255,255,255,.76); font-size:1.1rem; line-height:1.7; }
+body.page-contact .contact-form.contact-form--glass { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.2rem; padding:clamp(1.5rem,3vw,3.25rem); border:1px solid rgba(255,255,255,.26); background:linear-gradient(145deg,rgba(4,17,30,.82),rgba(17,32,49,.68)); box-shadow:0 32px 80px rgba(0,0,0,.3); backdrop-filter:blur(18px); }
+body.page-contact .contact-form--glass label { color:#fff; }
+body.page-contact .contact-form--glass :is(input,select,textarea) { width:100%; color:#fff; border:1px solid rgba(255,255,255,.5); background:rgba(255,255,255,.065); border-radius:0; box-shadow:none; }
+body.page-contact .contact-form--glass :is(input,select,textarea)::placeholder { color:rgba(255,255,255,.62); }
+body.page-contact .contact-form--glass :is(input,select,textarea):focus { border-color:#fff; outline:2px solid rgba(233,26,26,.75); outline-offset:2px; }
+body.page-contact .contact-form--glass select option { color:#071b2c; background:#fff; }
+body.page-contact .contact-form--glass .consent { grid-column:1/-1; color:rgba(255,255,255,.8); }
+body.page-contact .contact-form--glass .consent label { color:rgba(255,255,255,.8); }
+
+/* Company values */
+.company-value__visual--portrait { background-position:center top!important; background-size:cover!important; filter:grayscale(1) contrast(1.04); }
+.company-value__copy blockquote { font-size:clamp(1.25rem,2vw,2rem); }
+
+/* Quick Win */
+.quickwin-stat-grid .stat { border-top:3px solid #e91a1a; }
+.quickwin-outcomes { grid-template-columns:repeat(4,minmax(0,1fr)); gap:1px; background:#dce1e6; }
+.quickwin-outcomes .feature { grid-column:auto!important; background:#fff; }
+.process--four { grid-template-columns:repeat(4,minmax(0,1fr)); }
+.process--four article { position:relative; min-width:0; }
+.process--four article:not(:last-child)::after { content:""; position:absolute; z-index:3; top:50%; right:-19px; width:38px; height:38px; transform:translateY(-50%) rotate(45deg); border-top:1px solid currentColor; border-right:1px solid currentColor; opacity:.55; }
+
+/* ECI */
+.page-hero--eci .page-hero__actions { display:grid; grid-template-columns:repeat(4,minmax(120px,190px)); gap:10px; max-width:800px; }
+.eci-hero-partner { display:grid; place-items:center; min-height:76px; padding:1rem 1.2rem; border:1px solid rgba(255,255,255,.28); background-color:rgba(2,13,24,.62); background-position:center; background-repeat:no-repeat; background-size:min(72%,150px) auto; backdrop-filter:blur(12px); }
+.eci-hero-partner--microsoft { background-image:url('assets/images/eci-logo-microsoft.png'); }
+.eci-hero-partner--imda { background-image:url('assets/images/eci-logo-imda.png'); }
+.eci-hero-partner--enterprise { background-image:url('assets/images/eci-logo-enterprise-sg.png'); }
+.eci-hero-partner--edb { background-image:url('assets/images/eci-logo-edb.png'); }
+.eci-benefit-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1px; margin-top:clamp(2rem,4vw,4rem); background:#d9dee3; }
+.eci-benefit-grid article { min-height:340px; padding:clamp(2rem,4vw,4rem); background:#fff; transition:transform .4s cubic-bezier(.22,1,.36,1), background .35s ease, color .35s ease; }
+.eci-benefit-grid article:hover { z-index:1; transform:translateY(-10px); background:#071b2c; color:#fff; }
+.eci-benefit-grid article span { display:block; margin-bottom:clamp(3rem,7vw,7rem); color:#e91a1a; font-size:2rem; }
+.eci-benefit-grid article h3 { font-size:clamp(1.5rem,2.2vw,2.45rem); }
+.eci-benefit-grid article:hover h3 { color:#fff; }
+
+/* Shared interaction polish */
+:is(.page-careers,.page-esg,.page-sustainability,.page-media,.page-press,.page-contact,.page-company,.page-ai-quick-win,.page-eci) .button { transition:transform .35s cubic-bezier(.22,1,.36,1),background .3s ease,color .3s ease,box-shadow .35s ease; }
+:is(.page-careers,.page-esg,.page-sustainability,.page-media,.page-press,.page-contact,.page-company,.page-ai-quick-win,.page-eci) .button:hover { transform:translateY(-3px); box-shadow:0 16px 34px rgba(0,0,0,.2); }
+.site-footer .footer-socials a { position:relative; }
+.site-footer .footer-socials a::after { content:""; position:absolute; left:20%; right:20%; bottom:-8px; height:2px; background:#e91a1a; transform:scaleX(0); transform-origin:left; transition:transform .32s cubic-bezier(.22,1,.36,1); }
+.site-footer .footer-socials a:hover::after,.site-footer .footer-socials a:focus-visible::after { transform:scaleX(1); }
+
+@media (max-width:980px) {
+  :is(.page-careers,.page-esg,.page-sustainability,.page-company,.page-ai-quick-win,.page-eci) .page-hero { min-height:100svh; }
+  .careers-belief__grid,.contact-page__canvas { grid-template-columns:1fr; }
+  .careers-belief__body { grid-column:auto; }
+  .careers-belief__lines { min-height:0; }
+  .esg-commitments { min-height:560px; }
+  .quickwin-outcomes,.process--four,.eci-benefit-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .process--four article:nth-child(2)::after { display:none; }
+  .press-contact__profile { grid-template-columns:minmax(160px,220px) 1fr; }
+  .press-contact__address { grid-column:2; }
+}
+
+@media (max-width:680px) {
+  :is(.page-careers,.page-esg,.page-sustainability,.page-company,.page-ai-quick-win,.page-eci) .page-hero { min-height:100svh; }
+  .careers-belief__lines p { font-size:clamp(2.05rem,10vw,3.4rem); }
+  .esg-commitments { display:grid; min-height:0; overflow:visible; }
+  .esg-card,.esg-card.is-active { min-height:300px; }
+  .esg-card__overlay p { max-height:0; margin-top:0; opacity:0; transform:translateY(10px); }
+  .esg-card.is-active .esg-card__overlay p { max-height:8rem; margin-top:.75rem; opacity:1; transform:none; }
+  :is(.page-careers,.page-esg,.page-sustainability,.page-company) .quote-band { grid-template-columns:1fr; min-height:0; }
+  :is(.page-careers,.page-esg,.page-sustainability,.page-company) .quote-band__copy { min-height:430px; }
+  :is(.page-careers,.page-esg,.page-sustainability,.page-company) .quote-band__portrait { min-height:380px; }
+  .press-contact__profile { grid-template-columns:1fr; justify-items:start; min-height:0; }
+  .press-contact__portrait { width:180px; }
+  .press-contact__person { border-right:0; border-bottom:1px solid #dce1e6; }
+  .press-contact__address { grid-column:auto; }
+  body.page-contact .contact-form.contact-form--glass { grid-template-columns:1fr; }
+  body.page-contact .contact-form--glass .field-full,body.page-contact .contact-form--glass .consent { grid-column:1; }
+  .page-hero--eci .page-hero__actions { grid-template-columns:repeat(2,minmax(0,1fr)); width:100%; }
+  .quickwin-outcomes,.process--four,.eci-benefit-grid { grid-template-columns:1fr; }
+  .process--four article::after { display:none!important; }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .careers-belief__lines p.is-typing::after { display:none; }
+  .esg-card,.esg-card img,.eci-benefit-grid article { transition:none; }
 }
