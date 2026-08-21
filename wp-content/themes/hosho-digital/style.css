@@ -695,6 +695,7 @@ p {
 }
 
 .lede {
+	padding-top: 10px;
 	font-size: clamp(19px, 2vw, 25px);
 	line-height: 1.55;
 }
@@ -1445,6 +1446,121 @@ p {
 .consent label {
 	color: var(--muted);
 	font-size: 13px;
+}
+
+.strategy-session-page {
+	padding: 0;
+	background: var(--paper);
+}
+
+body.page-strategy-session #main-content {
+	padding-top: 86px;
+}
+
+body.page-strategy-session .site-header:not(.is-scrolled) {
+	background: var(--navy);
+	border-color: rgba(255,255,255,.12);
+}
+
+.strategy-session-page__intro {
+	grid-template-columns: minmax(0, 1.1fr) minmax(340px, .9fr);
+	gap: clamp(40px, 5vw, 72px);
+	align-items: end;
+	margin-bottom: clamp(58px, 8vw, 110px);
+	padding-bottom: clamp(44px, 6vw, 72px);
+	border-bottom: 1px solid var(--line);
+}
+
+.strategy-session-page__intro h1 {
+	max-width: 900px;
+	margin: 0;
+	font-family: "Poppins", "Helvetica Neue", Arial, sans-serif;
+	font-size: clamp(56px, 6.4vw, 92px);
+	font-weight: 600;
+	letter-spacing: -.06em;
+	line-height: .94;
+	text-transform: uppercase;
+}
+
+.strategy-session-page__intro .lede {
+	max-width: 520px;
+	font-size: clamp(18px, 2vw, 22px);
+	line-height: 1.55;
+	color: var(--muted);
+}
+
+.strategy-session-form {
+	width: 100%;
+	margin: 0;
+	padding: clamp(28px, 5vw, 72px);
+	border: 1px solid rgba(0, 0, 0, .08);
+	background: rgba(255,255,255,.88);
+	box-shadow: 0 28px 80px rgba(7,21,35,.08);
+}
+
+.strategy-session-form-wrap {
+	width: 100%;
+	margin: 0 auto;
+	padding-inline: 0;
+}
+
+@media (min-width: 1200px) {
+	.strategy-session-form-wrap {
+		width: 100vw;
+		margin-left: calc(50% - 50vw);
+		margin-right: calc(50% - 50vw);
+	}
+}
+
+body.page-strategy-session .site-footer {
+	margin-top: 0;
+}
+
+.strategy-session-form .field {
+	gap: 10px;
+}
+
+.strategy-session-form .field label {
+	font-size: 11px;
+	font-weight: 600;
+	letter-spacing: .1em;
+}
+
+.strategy-session-form .field input,
+.strategy-session-form .field select,
+.strategy-session-form .field textarea {
+	padding: 14px 0;
+	border: 0;
+	border-bottom: 1px solid #9ca5ad;
+	border-radius: 0;
+	background: transparent;
+	box-shadow: none;
+}
+
+.strategy-session-form .field select {
+	appearance: none;
+	background-image: linear-gradient(45deg, transparent 50%, #7b8390 50%), linear-gradient(135deg, #7b8390 50%, transparent 50%);
+	background-position: calc(100% - 20px) calc(50% - 2px), calc(100% - 14px) calc(50% - 2px);
+	background-size: 6px 6px, 6px 6px;
+	background-repeat: no-repeat;
+	padding-right: 42px;
+}
+
+.strategy-session-form .field input::placeholder,
+.strategy-session-form .field textarea::placeholder {
+	color: #98a2b3;
+}
+
+.strategy-session-form .field textarea {
+	min-height: 150px;
+}
+
+.strategy-session-form__button {
+	width: 100%;
+	min-height: 52px;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: .01em;
 }
 
 .site-footer {
@@ -3654,7 +3770,8 @@ COGNITIVE SHIFT
 .compare-arrow .arrow-glyph {
 	font-size: 34px;
 	color: var(--red);
-	font-weight: bold;
+	font-weight: 900;
+	-webkit-text-stroke: 5px var(--red);
 	line-height: 1;
 	display: inline-block;
 	animation: arrowPulse 2s ease-in-out infinite;

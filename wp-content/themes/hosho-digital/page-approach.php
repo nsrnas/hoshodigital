@@ -586,7 +586,7 @@ $hosho_phases = array(
 	FINAL CTA
 	========================================================= -->
 
-	<?php hosho_render_cta( '', 'TRANSFORMATION BEGINS WITH WHAT YOU ALREADY HAVE', '', 'Speak to Us', 'page-consult-our-experts', 'approach/main/cta.jpg' ); ?>
+	<?php hosho_render_cta( '', 'TRANSFORMATION BEGINS WITH WHAT YOU ALREADY HAVE', '', 'Speak to Us', hosho_page_url( 'strategy-session' ), 'approach/main/cta.jpg' ); ?>
 
 </main>
 

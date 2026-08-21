@@ -7,7 +7,7 @@ function hosho_pages() {
     'careers' => 'Careers', 'sustainability' => 'Sustainability', 'press' => 'Press',
     'contact' => 'Contact', 'company' => 'Company', 'ai-quick-win' => 'AI Quick Win', 'eci' => 'Enterprise Compute Initiative',
     'solutions' => 'Solutions', 'operational-experience' => 'Operational Experience', 'customer-experience' => 'Customer Experience', 'employee-experience' => 'Employee Experience',
-    'innovation' => 'Innovation', 'assurance' => 'Assurance', 'ai' => 'AI',
+    'innovation' => 'Innovation', 'assurance' => 'Assurance', 'ai' => 'AI', 'strategy-session' => 'Strategy Session',
   );
 }
 function hosho_current_page() {
