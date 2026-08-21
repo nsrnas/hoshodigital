@@ -16,13 +16,6 @@
     </div>
   </div></div></section>
 
-  <section class="section cx-intro">
-		<div class="shell motion">
-			<h2 class="cx-intro__title">How HOSHŌ Digital Helps</h2>
-			<p class="cx-intro__body">We help organizations bridge the gap between AI adoption and measurable business outcomes by delivering connected solutions across Customer Experience, Employee Experience, and Operational Experience. Our integrated approach enables businesses to modernize operations, improve collaboration, and accelerate digital transformation with confidence.</p>
-		</div>
-	</section>
-
   <section class="section section-navy"><div class="shell"><div class="intro-grid motion"><div><p class="eyebrow">Our solutions</p><h2>Transforming Business Through Connected Experiences</h2></div><div class="body-copy"><p>Business transformation creates the greatest impact when organizations improve the way customers interact, employees work, and operations perform together. Rather than treating these areas separately, HOSHŌ Digital structures its solutions around three connected business experiences that enable sustainable growth and operational excellence.</p></div></div>
     <div class="solutions-cards">
       <article class="solutions-card solutions-card--ops motion">
@@ -31,7 +24,6 @@
         </div>
         <h3>Operational Experience</h3>
         <p>Improve business performance through connected operations, intelligent automation, and enterprise-wide process optimization.</p>
-        <div class="solutions-card__caps"><span class="solutions-card__caps-label">Key Capabilities</span><span>Finance Operations, Procurement, Governance, Industry Solutions</span></div>
         <a href="<?php echo esc_url( hosho_page_url( 'operational-experience' ) ); ?>" class="solutions-card__link">Explore Solutions <span aria-hidden="true">&#8599;</span></a>
       </article>
       <article class="solutions-card solutions-card--cx motion">
@@ -40,22 +32,20 @@
         </div>
         <h3>Customer Experience</h3>
         <p>Create meaningful customer interactions through intelligent engagement, AI-powered service, and connected sales processes.</p>
-        <div class="solutions-card__caps"><span class="solutions-card__caps-label">Key Capabilities</span><span>Customer Engagement, Sales Management, AI Assistants, Workflow Automation</span></div>
         <a href="<?php echo esc_url( hosho_page_url( 'customer-experience' ) ); ?>" class="solutions-card__link solutions-card__link--cx">Explore Solutions <span aria-hidden="true">&#8599;</span></a>
       </article>
       <article class="solutions-card solutions-card--ex motion">
         <div class="solutions-card__icon solutions-card__icon--ex">
-          <svg width="48" height="24" viewBox="0 0 48 24" fill="none"><path d="M0 24V20.85C0 19.417.733 18.25 2.2 17.35 3.667 16.45 5.6 16 8 16 8.433 16 8.85 16.008 9.25 16.025 9.65 16.042 10.033 16.083 10.4 16.15 9.933 16.85 9.583 17.583 9.35 18.35 9.117 19.117 9 19.917 9 20.75V24H0ZM12 24V20.75C12 19.683 12.292 18.708 12.875 17.825 13.458 16.942 14.283 16.167 15.35 15.5 16.417 14.833 17.692 14.333 19.175 14 20.658 13.667 22.267 13.5 24 13.5 25.767 13.5 27.392 13.667 28.875 14 30.358 14.333 31.633 14.833 32.7 15.5 33.767 16.167 34.583 16.942 35.15 17.825 35.717 18.708 36 19.683 36 20.75V24H12ZM39 24V20.75C39 19.883 38.892 19.067 38.675 18.3 38.458 17.533 38.133 16.817 37.7 16.15 38.067 16.083 38.442 16.042 38.825 16.025 39.208 16.008 39.6 16 40 16 42.4 16 44.333 16.442 45.8 17.325 47.267 18.208 48 19.383 48 20.85V24H39ZM24 12C22.333 12 20.917 11.417 19.75 10.25 18.583 9.083 18 7.667 18 6 18 4.3 18.583 2.875 19.75 1.725 20.917.575 22.333 0 24 0 25.7 0 27.125.575 28.275 1.725 29.425 2.875 30 4.3 30 6 30 7.667 29.425 9.083 28.275 10.25 27.125 11.417 25.7 12 24 12Z" fill="currentColor"/></svg>
+          <svg width="48" height="24" viewBox="0 0 48 24" fill="none"><path d="M0 24V20.85C0 19.417.733 18.25 2.2 17.35 3.667 16.45 5.6 16 8 16 8.433 16 8.85 16.008 9.25 16.025 9.65 16.042 10.033 16.083 10.4 16.15 9.933 16.85 9.583 17.583 9.35 18.35 9.117 19.117 9 19.917 9 20.75V24H0ZM12 24V20.75C12 19.683 12.292 18.708 12.875 17.825 13.458 16.942 14.283 16.167 15.35 15.5 16.417 14.833 17.692 14.333 19.175 14 20.658 13.667 22.267 13.5 24 13.5 25.767 13.5 27.392 13.667 28.875 14 30.358 14.333 31.633 14.833 32.7 15.5 33.767 16.167 34.583 16.942 35.15 17.825 35.717 18.708 36 19.683 36 20.75V24H12ZM39 24V20.75C39 19.883 38.892 19.067 38.675 18.3 38.458 17.533 38.133 16.817 37.7 16.15 38.067 16.083 38.442 16.042 38.825 16.008 39.208 16.008 39.6 16 40 16 42.4 16 44.333 16.442 45.8 17.325 47.267 18.208 48 19.383 48 20.85V24H39ZM24 12C22.333 12 20.917 11.417 19.75 10.25 18.583 9.083 18 7.667 18 6 18 4.3 18.583 2.875 19.75 1.725 20.917.575 22.333 0 24 0 25.7 0 27.125.575 28.275 1.725 29.425 2.875 30 4.3 30 6 30 7.667 29.425 9.083 28.275 10.25 27.125 11.417 25.7 12 24 12Z" fill="currentColor"/></svg>
         </div>
         <h3>Employee Experience</h3>
         <p>Empower employees with digital workplace solutions that simplify HR processes, collaboration, and everyday work.</p>
-        <div class="solutions-card__caps"><span class="solutions-card__caps-label">Key Capabilities</span><span>HR Solutions, Employee Services, Procurement Requests, Intelligent Workplace</span></div>
         <a href="<?php echo esc_url( hosho_page_url( 'employee-experience' ) ); ?>" class="solutions-card__link solutions-card__link--ex">Explore Solutions <span aria-hidden="true">&#8599;</span></a>
       </article>
     </div>
   </div></section>
 
-  <section class="section"><div class="shell"><div class="intro-grid motion"><div><p class="eyebrow">Why choose us</p><h2>Our Value</h2></div></div>
+  <section class="section"><div class="shell"><div class="intro-grid motion"><div><h2>Our Value</h2></div></div>
     <div class="editorial-grid solutions-why-grid">
       <article class="feature" style="grid-column:span 4">
         <span class="feature__index"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 20V15.7C2.05 14.833 1.313 13.821.788 12.663.263 11.504 0 10.283 0 9 0 6.5.875 4.375 2.625 2.625 4.375.875 6.5 0 9 0 11.083 0 12.929.613 14.538 1.838 16.146 3.063 17.192 4.658 17.675 6.625L18.975 11.75C19.058 12.067 19 12.354 18.8 12.613 18.6 12.871 18.333 13 18 13H16V16C16 16.55 15.804 17.021 15.413 17.413 15.021 17.804 14.55 18 14 18H12V20H10V16H14V11H16.7L15.75 7.125C15.367 5.608 14.55 4.375 13.3 3.425 12.05 2.475 10.617 2 9 2 7.067 2 5.417 2.675 4.05 4.025 2.683 5.375 2 7.017 2 8.95 2 9.95 2.204 10.9 2.613 11.8 3.021 12.7 3.6 13.5 4.35 14.2L5 14.8V20H3Z" fill="currentColor"/></svg></span>
