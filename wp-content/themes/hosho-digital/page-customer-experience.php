@@ -3,16 +3,23 @@
 <main id="main-content">
 	<?php
 	hosho_render_hero(
-		'Customer<br>Experience Solutions',
+		'Strategic Customer<br>Engagement',
 		'hero-customer-experience.jpg',
 		['class' => 'page-hero--cx']
 	);
 	?>
 
-	<section class="section cx-intro">
-		<div class="shell motion">
-			<h2 class="cx-intro__title">Strategic Customer Engagement</h2>
-			<p class="cx-intro__body">Our Customer Experience portfolio empowers organizations to build stronger customer relationships through intelligent sales management, AI-powered customer engagement, workflow automation, and digital workplace solutions. Every solution is designed to improve responsiveness, collaboration, and customer satisfaction.</p>
+	<section class="section">
+		<div class="shell">
+			<div class="intro-grid motion">
+				<div>
+					<p class="eyebrow">Customer Experience</p>
+					<h2>Personalized AI-Powered Touchpoints</h2>
+				</div>
+				<div class="body-copy">
+					<p>Our Customer Experience portfolio empowers organizations to build stronger customer relationships through intelligent sales management, AI-powered customer engagement, workflow automation, and digital workplace solutions. Every solution is designed to improve responsiveness, collaboration, and customer satisfaction.</p>
+				</div>
+			</div>
 		</div>
 	</section>
 

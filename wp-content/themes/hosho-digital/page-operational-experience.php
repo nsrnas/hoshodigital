@@ -3,16 +3,23 @@
 <main id="main-content">
 	<?php
 	hosho_render_hero(
-		'Operational<br>Experience Solutions',
+		'Driving Operational<br>Excellence',
 		'hero-operational-experience.jpg',
 		['class' => 'page-hero--opex']
 	);
 	?>
 
-	<section class="section cx-intro">
-		<div class="shell motion">
-			<h2 class="cx-intro__title">Driving Operational Excellence</h2>
-			<p class="cx-intro__body">Our Operational Experience portfolio provides digital solutions that simplify complex business operations across finance, procurement, workforce management, governance, and industry-specific processes. Each solution is designed to improve efficiency, reduce manual work, and support scalable business operations.</p>
+	<section class="section">
+		<div class="shell">
+			<div class="intro-grid motion">
+				<div>
+					<p class="eyebrow">Operational Experience</p>
+					<h2>Streamlining Core Systems with Automation</h2>
+				</div>
+				<div class="body-copy">
+					<p>Our Operational Experience portfolio provides digital solutions that simplify complex business operations across finance, procurement, workforce management, governance, and industry-specific processes. Each solution is designed to improve efficiency, reduce manual work, and support scalable business operations.</p>
+				</div>
+			</div>
 		</div>
 	</section>
 
