@@ -427,7 +427,7 @@ $hosho_phases = array(
     <section class="framework-section">
         <div class="framework-container">
             <div class="framework-header">
-                <h2>The 8-Stage Delivery Framework</h2>
+                <h2>Eight Stages. One Guarantee.</h2>
                 <p>
                     Every HOSHŌ engagement is anchored to this delivery philosophy, a spiral framework designed to eliminate strategic drift and
                     guarantee measurable enterprise value, stage by stage. It runs
@@ -463,22 +463,39 @@ $hosho_phases = array(
                                         <div class="stage-number"><?php echo esc_html( $stage['num'] ); ?></div>
                                         <h4><?php echo esc_html( $stage['title'] ); ?></h4>
 
-                                        <div class="stage-focus-block">
-                                            <span class="stage-label">The Focus</span>
-                                            <p><?php echo esc_html( $stage['focus'] ); ?></p>
-                                        </div>
+                                        <div class="stage-reveal-blocks">
+                                            <div class="stage-reveal">
+                                                <button type="button" class="stage-reveal-label" aria-expanded="false">
+                                                    <span>The Focus</span>
+                                                    <svg class="stage-reveal-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                                                </button>
+                                                <div class="stage-reveal-content">
+                                                    <p><?php echo esc_html( $stage['focus'] ); ?></p>
+                                                </div>
+                                            </div>
 
-                                        <div class="stage-guarantee">
-                                            <span class="stage-label">The Guarantee</span>
-                                            <p><?php echo esc_html( $stage['guarantee'] ); ?></p>
-                                        </div>
+                                            <div class="stage-reveal">
+                                                <button type="button" class="stage-reveal-label" aria-expanded="false">
+                                                    <span>The Guarantee</span>
+                                                    <svg class="stage-reveal-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                                                </button>
+                                                <div class="stage-reveal-content">
+                                                    <p><?php echo esc_html( $stage['guarantee'] ); ?></p>
+                                                </div>
+                                            </div>
 
-                                        <div class="stage-deliverables">
-                                            <span class="stage-label">Deliverables</span>
-                                            <div class="capability-tags">
-                                                <?php foreach ( $stage['deliverables'] as $deliverable ) : ?>
-                                                    <span class="capability-tag"><?php echo esc_html( $deliverable ); ?></span>
-                                                <?php endforeach; ?>
+                                            <div class="stage-reveal">
+                                                <button type="button" class="stage-reveal-label" aria-expanded="false">
+                                                    <span>Deliverables</span>
+                                                    <svg class="stage-reveal-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                                                </button>
+                                                <div class="stage-reveal-content">
+                                                    <div class="capability-tags">
+                                                        <?php foreach ( $stage['deliverables'] as $deliverable ) : ?>
+                                                            <span class="capability-tag"><?php echo esc_html( $deliverable ); ?></span>
+                                                        <?php endforeach; ?>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </article>
@@ -586,7 +603,7 @@ $hosho_phases = array(
 	FINAL CTA
 	========================================================= -->
 
-	<?php hosho_render_cta( '', 'TRANSFORMATION BEGINS WITH WHAT YOU ALREADY HAVE', '', 'Speak to Us', hosho_page_url( 'strategy-session' ), 'approach/main/cta.jpg' ); ?>
+	<?php hosho_render_cta( '', 'Don\'t Wait for the Perfect AI Strategy', 'Start with the opportunity that matters most.', 'Find Your First Win', hosho_page_url( 'strategy-session' ), 'approach/main/cta.jpg' ); ?>
 
 </main>
 
@@ -594,17 +611,29 @@ $hosho_phases = array(
 document.addEventListener('DOMContentLoaded', function () {
     var phaseTabs = document.querySelectorAll('.phase-tab');
     var phasePanels = document.querySelectorAll('.phase-panel');
+    var stageRevealButtons = document.querySelectorAll('.stage-reveal-label');
 
-    if (!phaseTabs.length || !phasePanels.length) return;
+    if (phaseTabs.length) {
+        phaseTabs.forEach(function (tab) {
+            tab.addEventListener('click', function () {
+                var targetPhase = this.dataset.phase;
+                phaseTabs.forEach(function (item) { item.classList.remove('active'); });
+                phasePanels.forEach(function (panel) { panel.classList.remove('active'); });
+                this.classList.add('active');
+                var targetPanel = document.querySelector('.phase-panel[data-phase="' + targetPhase + '"]');
+                if (targetPanel) { targetPanel.classList.add('active'); }
+            });
+        });
+    }
 
-    phaseTabs.forEach(function (tab) {
-        tab.addEventListener('click', function () {
-            var targetPhase = this.dataset.phase;
-            phaseTabs.forEach(function (item) { item.classList.remove('active'); });
-            phasePanels.forEach(function (panel) { panel.classList.remove('active'); });
-            this.classList.add('active');
-            var targetPanel = document.querySelector('.phase-panel[data-phase="' + targetPhase + '"]');
-            if (targetPanel) { targetPanel.classList.add('active'); }
+    stageRevealButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            var reveal = this.closest('.stage-reveal');
+            if (!reveal) return;
+
+            var isOpen = reveal.classList.contains('is-open');
+            reveal.classList.toggle('is-open', !isOpen);
+            this.setAttribute('aria-expanded', String(!isOpen));
         });
     });
 });

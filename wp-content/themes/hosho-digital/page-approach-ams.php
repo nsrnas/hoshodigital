@@ -15,7 +15,7 @@ get_header();
 
 	<?php
 	hosho_render_hero(
-		'Our AMS Framework Is<br>Designed for the Modern<br>Enterprise',
+		'BUILD ONCE. <br>IMPROVE CONTINUOUSLY.',
 		'approach/ams/hero.jpg',
 		array( 'class' => 'page-hero--company' )
 	);
@@ -308,6 +308,27 @@ get_header();
 	</section>
 
 	<!-- =========================================================
+	STATEMENT BANNER 2
+	========================================================= -->
+
+	<section class="ams-statement">
+		<div class="container motion">
+			<h3>
+				AI systems evolve. Models drift. Data changes. Business needs change.
+			</h3>
+			<p>
+				HOSHŌ stays with you to monitor, maintain, optimise and continuously improve what we've built.
+			</p>
+			<div class="ams-animated-text">
+				<span>Build.</span>
+				<span>Run.</span>
+				<span>Improve.</span>
+				<span>Repeat.</span>
+			</div>
+		</div>
+	</section>
+
+	<!-- =========================================================
 	THE HOSHO ADVANTAGE
 	========================================================= -->
 
@@ -368,7 +389,7 @@ get_header();
 	FINAL CTA
 	========================================================= -->
 
-	<?php hosho_render_cta( '', 'BUILD ONCE<br>IMPROVE CONTINUOUSLY', '', 'Start Your Partnership', home_url( '/contact' ), 'approach/ams/cta.jpg' ); ?>
+	<?php hosho_render_cta( '', 'Go Live. Then Get Better.', 'Keep your AI working, improving and creating value.', 'Build Your Advantage', home_url( '/contact' ), 'approach/ams/cta.jpg' ); ?>
 
 </main>
 <?php
