@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+﻿<?php get_header(); ?>
 
 <main id="main-content">
 	<?php
@@ -13,11 +13,11 @@
 		<div class="shell">
 			<div class="intro-grid motion">
 				<div>
-					<p class="eyebrow">Employee Experience</p>
-					<h2>Empowering Teams with Intelligent Tools</h2>
+					<p class="eyebrow">Workforce Intelligence</p>
+					<h2>Give Your People AI-Powered Leverage</h2>
 				</div>
 				<div class="body-copy">
-					<p>Our Employee Experience portfolio helps organizations create a smarter digital workplace by simplifying employee services, automating HR processes, and streamlining internal requests through intelligent enterprise solutions.</p>
+					<p>Our Workforce Intelligence portfolio helps organizations create a smarter digital workplace by simplifying employee services, automating HR processes, and streamlining internal requests through intelligent enterprise solutions.</p>
 				</div>
 			</div>
 		</div>
