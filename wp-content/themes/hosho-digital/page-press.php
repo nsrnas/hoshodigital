@@ -11,13 +11,29 @@
       </div>
 
       <div class="press-contact__profile motion">
-        <figure class="press-contact__portrait press-contact__portrait--placeholder" aria-label="Portrait of Himari S will be added when the approved photograph is available">
-          <span aria-hidden="true">HS</span>
-        </figure>
+        <?php
+          $himari_portrait_file = '';
+          foreach ( array( 'media-himari-s.png', 'media-himari-s.jpg', 'media-himari-s.jpeg', 'media-himari-s.webp' ) as $candidate ) {
+            if ( file_exists( get_theme_file_path( 'assets/images/' . $candidate ) ) ) {
+              $himari_portrait_file = $candidate;
+              break;
+            }
+          }
+        ?>
+        <?php if ( $himari_portrait_file ) : ?>
+          <figure class="press-contact__portrait">
+            <img loading="eager" decoding="async" src="<?php echo esc_url( hosho_asset_url( $himari_portrait_file ) ); ?>" alt="Himari S, Communications Manager">
+          </figure>
+        <?php else : ?>
+          <figure class="press-contact__portrait press-contact__portrait--placeholder" aria-label="Portrait of Himari S is awaiting the approved source file">
+            <span aria-hidden="true">HS</span>
+          </figure>
+        <?php endif; ?>
 
         <div class="press-contact__person">
           <h2>Himari S</h2>
           <p class="press-contact__role">Communications Manager</p>
+          <a class="press-contact__email" href="mailto:media@hoshodigital.com">media@hoshodigital.com</a>
         </div>
 
         <address class="press-contact__address">

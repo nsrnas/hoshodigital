@@ -89,6 +89,9 @@ function is_page($pages) {
     $pages = (array)$pages;
     return in_array(HOSHO_PREVIEW_PAGE, $pages, true) || in_array(HOSHO_PREVIEW_SLUG, $pages, true);
 }
+function is_front_page() {
+    return HOSHO_PREVIEW_PAGE === 'front-page' || HOSHO_PREVIEW_SLUG === '';
+}
 
 function esc_url($v) { return htmlspecialchars($v, ENT_QUOTES, 'UTF-8'); }
 function esc_attr($v) { return htmlspecialchars($v, ENT_QUOTES, 'UTF-8'); }
