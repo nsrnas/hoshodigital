@@ -3017,34 +3017,6 @@ body.hosho-remade .solutions-card:hover>p,
 	background-position: center center;
 }
 
-.cx-categories .cx-category {
-	margin-bottom: 64px;
-}
-
-.cx-categories .cx-category:last-child {
-	margin-bottom: 0;
-}
-
-.cx-category__header {
-	border-left: 4px solid var(--red);
-	padding-left: 24px;
-	margin-bottom: 40px;
-}
-
-.cx-category__title {
-	font-size: 28px;
-	font-weight: 600;
-	color: var(--navy);
-	margin-bottom: 8px;
-}
-
-.cx-category__desc {
-	font-size: 18px;
-	color: var(--muted);
-	line-height: 1.5;
-	max-width: 672px;
-}
-
 .cx-cta {
 	background: var(--red);
 	text-align: center;
@@ -10916,9 +10888,7 @@ canvas {
 .contact-layout>*,
 .framework>*,
 .solutions-cards>*,
-.opex-category__grid>*,
-.cx-categories>*,
-.ex-categories>* {
+.opex-category__grid>* {
 	min-width: 0;
 }
 
@@ -11141,8 +11111,6 @@ canvas {
 	.solutions-cards,
 	.solutions-why-grid,
 	.opex-category__grid,
-	.cx-categories,
-	.ex-categories,
 	.opex-dual-cards__wrapper {
 		grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
 	}
@@ -11426,8 +11394,6 @@ canvas {
 	.solutions-cards,
 	.solutions-why-grid,
 	.opex-category__grid,
-	.cx-categories,
-	.ex-categories,
 	.opex-dual-cards__wrapper {
 		grid-template-columns: minmax(0, 1fr) !important;
 	}
@@ -14006,6 +13972,201 @@ body.page-eci .eci-hero-partners .shell>div>img {
 		.press-contact__address {
 			grid-column: auto;
 		}
+		background-size: min(72%, 150px) auto;
+		backdrop-filter: blur(12px);
+	}
+
+	.eci-hero-partner--microsoft {
+		background-image: url('assets/images/eci-logo-microsoft.png');
+	}
+
+	.eci-hero-partner--imda {
+		background-image: url('assets/images/eci-logo-imda.png');
+	}
+
+	.eci-hero-partner--enterprise {
+		background-image: url('assets/images/eci-logo-enterprise-sg.png');
+	}
+
+	.eci-hero-partner--edb {
+		background-image: url('assets/images/eci-logo-edb.png');
+	}
+
+	.eci-benefit-grid {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 1px;
+		margin-top: clamp(2rem, 4vw, 4rem);
+		background: #d9dee3;
+	}
+
+	.eci-benefit-grid article {
+		min-height: 340px;
+		padding: clamp(2rem, 4vw, 4rem);
+		background: #fff;
+		transition: transform .4s cubic-bezier(.22, 1, .36, 1), background .35s ease, color .35s ease;
+	}
+
+	.eci-benefit-grid article:hover {
+		z-index: 1;
+		transform: translateY(-10px);
+		background: #071b2c;
+		color: #fff;
+	}
+
+	.eci-benefit-grid article span {
+		display: block;
+		margin-bottom: clamp(3rem, 7vw, 7rem);
+		color: #e91a1a;
+		font-size: 2rem;
+	}
+
+	.eci-benefit-grid article h3 {
+		font-size: clamp(1.5rem, 2.2vw, 2.45rem);
+	}
+
+	.eci-benefit-grid article:hover h3 {
+		color: #fff;
+	}
+
+	/* Shared interaction polish */
+	:is(.page-careers, .page-esg, .page-sustainability, .page-media, .page-press, .page-contact, .page-company, .page-ai-quick-win, .page-eci) .button {
+		transition: transform .35s cubic-bezier(.22, 1, .36, 1), background .3s ease, color .3s ease, box-shadow .35s ease;
+	}
+
+	:is(.page-careers, .page-esg, .page-sustainability, .page-media, .page-press, .page-contact, .page-company, .page-ai-quick-win, .page-eci) .button:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 16px 34px rgba(0, 0, 0, .2);
+	}
+
+	.site-footer .footer-socials a {
+		position: relative;
+	}
+
+	.site-footer .footer-socials a::after {
+		content: "";
+		position: absolute;
+		left: 20%;
+		right: 20%;
+		bottom: -8px;
+		height: 2px;
+		background: #e91a1a;
+		transform: scaleX(0);
+		transform-origin: left;
+		transition: transform .32s cubic-bezier(.22, 1, .36, 1);
+	}
+
+	.site-footer .footer-socials a:hover::after,
+	.site-footer .footer-socials a:focus-visible::after {
+		transform: scaleX(1);
+	}
+
+	@media (max-width:980px) {
+		:is(.page-careers, .page-esg, .page-sustainability, .page-company, .page-ai-quick-win, .page-eci) .page-hero {
+			min-height: 100svh;
+		}
+
+		.careers-belief__grid,
+		.contact-page__canvas {
+			grid-template-columns: 1fr;
+		}
+
+		.careers-belief__body {
+			grid-column: auto;
+		}
+
+		.careers-belief__lines {
+			min-height: 0;
+		}
+
+		.esg-commitments {
+			min-height: 560px;
+		}
+
+		.quickwin-outcomes,
+		.process--four,
+		.eci-benefit-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		.process--four article:nth-child(2)::after {
+			display: none;
+		}
+
+		.press-contact__profile {
+			grid-template-columns: minmax(160px, 220px) 1fr;
+		}
+
+		.press-contact__address {
+			grid-column: 2;
+		}
+	}
+
+	@media (max-width:680px) {
+		:is(.page-careers, .page-esg, .page-sustainability, .page-company, .page-ai-quick-win, .page-eci) .page-hero {
+			min-height: 100svh;
+		}
+
+		.careers-belief__lines p {
+			font-size: clamp(2.05rem, 10vw, 3.4rem);
+		}
+
+		.esg-commitments {
+			display: grid;
+			min-height: 0;
+			overflow: visible;
+		}
+
+		.esg-card,
+		.esg-card.is-active {
+			min-height: 300px;
+		}
+
+		.esg-card__overlay p {
+			max-height: 0;
+			margin-top: 0;
+			opacity: 0;
+			transform: translateY(10px);
+		}
+
+		.esg-card.is-active .esg-card__overlay p {
+			max-height: 8rem;
+			margin-top: .75rem;
+			opacity: 1;
+			transform: none;
+		}
+
+		:is(.page-careers, .page-esg, .page-sustainability, .page-company) .quote-band {
+			grid-template-columns: 1fr;
+			min-height: 0;
+		}
+
+		:is(.page-careers, .page-esg, .page-sustainability, .page-company) .quote-band__copy {
+			min-height: 430px;
+		}
+
+		:is(.page-careers, .page-esg, .page-sustainability, .page-company) .quote-band__portrait {
+			min-height: 380px;
+		}
+
+		.press-contact__profile {
+			grid-template-columns: 1fr;
+			justify-items: start;
+			min-height: 0;
+		}
+
+		.press-contact__portrait {
+			width: 180px;
+		}
+
+		.press-contact__person {
+			border-right: 0;
+			border-bottom: 1px solid #dce1e6;
+		}
+
+		.press-contact__address {
+			grid-column: auto;
+		}
 
 		body.page-contact .contact-form.contact-form--glass {
 			grid-template-columns: 1fr;
@@ -14043,3 +14204,104 @@ body.page-eci .eci-hero-partners .shell>div>img {
 			transition: none;
 		}
 	}
+}
+
+/* ==========================================================================
+   Category Alternating Background Blocks (Compact Spacing & High Contrast)
+   ========================================================================== */
+
+.opex-category-block {
+	padding: 40px 0 !important;
+	margin: 0 !important;
+}
+
+.opex-category-block .opex-category {
+	margin-bottom: 0 !important;
+}
+
+/* Alternate State 1: Executive Navy background (#071523), Navy Soft cards (#0e2a47) */
+.opex-category-block--navy,
+.opex-category-block--slate {
+	background-color: #071523 !important;
+	border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+	color: #ffffff !important;
+}
+
+.opex-category-block--navy .opex-category__title,
+.opex-category-block--slate .opex-category__title {
+	color: #ffffff !important;
+}
+
+.opex-category-block--navy .opex-category__line,
+.opex-category-block--slate .opex-category__line {
+	background: rgba(255, 255, 255, 0.25) !important;
+}
+
+.opex-category-block--navy .opex-scard,
+.opex-category-block--slate .opex-scard {
+	background-color: #0e2a47 !important;
+	border: 1px solid rgba(255, 255, 255, 0.12) !important;
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25) !important;
+	color: #ffffff !important;
+}
+
+.opex-category-block--navy .opex-scard__title,
+.opex-category-block--slate .opex-scard__title {
+	color: #ffffff !important;
+}
+
+.opex-category-block--navy .opex-scard__desc,
+.opex-category-block--slate .opex-scard__desc {
+	color: #b0c4de !important;
+}
+
+.opex-category-block--navy .opex-scard__icon,
+.opex-category-block--slate .opex-scard__icon {
+	color: #ff5252 !important;
+}
+
+.opex-category-block--navy .opex-scard__link,
+.opex-category-block--slate .opex-scard__link {
+	color: #ffffff !important;
+}
+
+.opex-category-block--navy .opex-scard:hover,
+.opex-category-block--slate .opex-scard:hover {
+	background-color: #123456 !important;
+	transform: translateY(-4px) !important;
+	box-shadow: 0 14px 32px rgba(0, 0, 0, 0.4) !important;
+	border-color: #e21c15 !important;
+}
+
+/* Alternate State 2: Pure White background (#ffffff), Light cards (#f4f6fa) */
+.opex-category-block--white {
+	background-color: #ffffff !important;
+}
+
+.opex-category-block--white .opex-category__title {
+	color: #071523 !important;
+}
+
+.opex-category-block--white .opex-category__line {
+	background: rgba(7, 21, 35, 0.15) !important;
+}
+
+.opex-category-block--white .opex-scard {
+	background-color: #f4f6fa !important;
+	border: 1px solid #d0dce8 !important;
+}
+
+.opex-category-block--white .opex-scard:hover {
+	background-color: #ffffff !important;
+	transform: translateY(-4px) !important;
+	box-shadow: 0 12px 28px rgba(7, 21, 35, 0.1) !important;
+	border-color: #e21c15 !important;
+}
+
+@media (max-width: 768px) {
+	.opex-category-block {
+		padding: 28px 0 !important;
+	}
+}
+

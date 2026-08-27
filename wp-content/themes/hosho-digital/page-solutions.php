@@ -131,6 +131,6 @@
 
   <?php hosho_render_quote( 'The value of an idea lies in the using of it.', 'Thomas Edison', 'thomas-edison.png' ); ?>
 
-  <?php hosho_render_cta( 'Start your transformation', 'What Could Your Business Do Better With Intelligence?', 'Talk to HOSHŌ DIGITAL about intelligent digital solutions for your enterprise.', 'Explore Your Opportunities', hosho_page_url( 'contact' ), 'company-cta-singapore-night.jpg' ); ?>
+  <?php hosho_render_cta( 'Start your transformation', 'What Could Your Business Do Better With Intelligence?', "Let's find out", 'Explore Your Opportunities', hosho_page_url( 'contact' ), 'company-cta-singapore-night.jpg' ); ?>
 </main>
 <?php get_footer(); ?>
