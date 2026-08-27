@@ -1,4 +1,4 @@
-﻿<?php get_header(); ?>
+<?php get_header(); ?>
 
 <main id="main-content">
 	<?php
@@ -217,7 +217,7 @@
 
 	</div>
 
-	<?php hosho_render_cta('Strategic Customer Engagement','Ready to Elevate Your Customer Experience?',"Discover how HOSH&#332; Digital's Customer Experience solutions can strengthen customer relationships, streamline operations, and improve every interaction across your business.", 'Contact Us', hosho_page_url('contact'), 'contact-singapore-waterfront.jpg'); ?>
+	<?php hosho_render_cta('', 'Ready to Elevate Your Customer Experience?', '', 'Contact Us', hosho_page_url('contact'), 'contact-singapore-waterfront.jpg'); ?>
 
 </main>
 

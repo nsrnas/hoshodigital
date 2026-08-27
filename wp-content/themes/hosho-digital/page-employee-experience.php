@@ -1,4 +1,4 @@
-﻿<?php get_header(); ?>
+<?php get_header(); ?>
 
 <main id="main-content">
 	<?php
@@ -315,7 +315,7 @@
 	<?php hosho_render_quote("Take care of your employees and they'll take care of your business.", 'Richard Branson', 'richard-branson.png', 'motion'); 	?>
 
 
-	<?php hosho_render_cta('Empower Your Workforce','Build a Better Employee Experience','Help your employees work more efficiently with intelligent HR, workplace, and procurement solutions designed for modern organizations.', 'Contact Us', hosho_page_url('contact'), 'employee-cta.jpg'); ?>
+	<?php hosho_render_cta('', 'Build a Better Employee Experience', '', 'Contact Us', hosho_page_url('contact'), 'employee-cta.jpg'); ?>
 
 </main>
 

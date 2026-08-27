@@ -1,4 +1,4 @@
-﻿<?php get_header(); ?>
+<?php get_header(); ?>
 
 <main id="main-content">
 	<?php
@@ -313,7 +313,7 @@
 
 	</div>
 
-	<?php hosho_render_cta('Modernize Your Operations','Build Smarter Operations with HOSHŌ Digital','Empower your organization with intelligent operational solutions that improve efficiency, reduce complexity, and support sustainable business growth.','Contact Us',hosho_page_url('contact'),'company-urban-waterfront.jpg'); ?>
+	<?php hosho_render_cta('', 'Build Smarter Operations with HOSHŌ Digital', '', 'Contact Us', hosho_page_url('contact'), 'company-urban-waterfront.jpg'); ?>
 
 </main>
 
