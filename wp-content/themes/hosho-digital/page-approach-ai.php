@@ -407,7 +407,7 @@ get_header();
 	FINAL CTA
 	========================================================= -->
 
-	<?php hosho_render_cta( '', 'ARTIFICIAL INTELLIGENCE SHOULD STRENGTHEN YOUR BUSINESS, NOT COMPLICATE IT', '', 'Let\'s Build Your Enterprise AI Strategy', home_url( '/contact' ), 'approach/ai/cta.jpg' ); ?>
+	<?php hosho_render_cta( '', 'AI Should Strengthen Your Business. Not Complicate It.', 'Let\'s find where AI can create measurable advantage.', 'Build Your AI Strategy', home_url( '/contact' ), 'approach/ai/cta.jpg' ); ?>
 
 </main>
 <?php

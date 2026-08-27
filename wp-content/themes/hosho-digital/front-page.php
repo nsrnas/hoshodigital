@@ -7,131 +7,13 @@
 
 get_header();
 $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
-$hg_cards     = array(
-	array(
-		'eyebrow'  => 'Outcome',
-		'body'     => 'Measurable enterprise value through audited operational efficiency and radical innovation.',
-	),
-	array(
-		'eyebrow'  => 'Capability',
-		'body'     => 'Knowledge transfer that ensures your leadership can master the AI frontier independently.',
-	),
-	array(
-		'eyebrow'  => 'Integrity',
-		'body'     => 'Strategic alliances built on radical transparency and aligned long-term business goals.',
-	),
-);
 
 ?>
 <main id="main-content" class="home-page">
 <!-- =========================================================
 	HERO SECTION
 	========================================================= -->
-	<?php hosho_render_hero( 'Lead with AI<br>Or Get Left<br>Behind', 'homepage/hero.jpg', array( 'class' => 'page-hero--company' ) ); ?>
-
-	<!-- =========================================================
-	YOUR SUCCESS. OUR GUARANTEE.
-	========================================================= -->
-	<section class="intro-section">
-		<div class="hg-section" aria-label="Our Guarantee">
-			<div class="hg-layout">
-				<div class="hg-brand-box">
-					<p class="hg-tagline">Your Success<br>Our Guarantee</p>
-					<div class="hg-stamp-stage" id="hgStampStage">
-						<img class="hg-stamp-img" src="<?php echo esc_url( $hg_stamp_img ); ?>" alt="HOSHO ä¿è¨¼ (guarantee) stamp seal">
-					</div>
-				</div>
-
-				<div class="hg-guarantee-col">
-					<h2 class="hg-heading">Our Guarantee</h2>
-					<div class="hg-cards-col">
-						<?php foreach ( $hg_cards as $hg_card ) : ?>
-							<div class="hg-flip-card" aria-label="<?php echo esc_attr( $hg_card['eyebrow'] ); ?> guarantee">
-								<img class="hg-corner-stamp" src="<?php echo esc_url( $hg_stamp_img ); ?>" alt="">
-								<div class="hg-card-head">
-									<div class="hg-card-title-wrap">
-										<h3 class="hg-card-title"><?php echo esc_html( $hg_card['eyebrow'] ); ?></h3>
-									</div>
-								</div>
-								<div class="hg-card-body-wrap">
-									<span class="hg-body"><?php echo esc_html( $hg_card['body'] ); ?></span>
-								</div>
-							</div>
-						<?php endforeach; ?>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- =========================================================
-	TRANSFORMATION WITHOUT DISRUPTION
-	========================================================= -->
-
-	<section class="digital-core" id="approach">
-		<div class="container">
-			<div class="digital-core-heading motion">
-				<h2>
-					Transformation without Disruption
-				</h2>
-				<p>
-					We transform disconnected systems into one Intelligent Digital
-					Core, connecting data, applications, automation, and AI so your
-					business can continuously evolve and scale.
-				</p>
-			</div>
-
-			<div class="idc-card motion">
-				<div class="idc-card-header">
-					<div class="idc-logo-wrapper">
-						<img src="<?php echo esc_url( hosho_asset_url( 'idc-logo.png' ) ); ?>" alt="Intelligent Digital Core Logo" class="idc-logo">
-					</div>
-					<div class="idc-card-title-group">
-						<span class="idc-card-label">Core Architectural Platform</span>
-						<h3>Intelligent Digital Core</h3>
-					</div>
-				</div>
-			</div>
-
-			<div class="digital-core-process">
-				<div class="core-step">
-					<div class="step-label">Understanding</div>
-					<h3>Deep Discovery</h3>
-					<p>
-						We begin by auditing your existing data architecture and
-						identifying the high-impact nodes where intelligence can
-						drive immediate operational leverage.
-					</p>
-				</div>
-
-				<div class="core-step">
-					<div class="step-label">Architecting</div>
-					<h3>The Digital Core</h3>
-					<p>
-						We build a unified, self-evolving infrastructure that
-						connects disparate data streams into a single,
-						high-fidelity intelligence loop.
-					</p>
-				</div>
-
-				<div class="core-step">
-					<div class="step-label">Scaling</div>
-					<h3>Exponential Growth</h3>
-					<p>
-						We deploy adaptive AI solutions that don't just automate
-						tasks, but autonomously optimize for business outcomes
-						as your data grows.
-					</p>
-				</div>
-			</div>
-
-			<div class="motion" style="text-align:center;">
-				<a href="<?php echo esc_url(home_url('/approach')); ?>" class="button">
-					Find Out More <span></span>
-				</a>
-			</div>
-		</div>
-	</section>
+	<?php hosho_render_hero( 'INTELLIGENT. <br>SOLUTIONS. <br>GUARANTEED.', 'homepage/hero.jpg', array( 'class' => 'page-hero--company' ) ); ?>
 
 	<!-- =========================================================
 	THE COGNITIVE SHIFT
@@ -141,13 +23,13 @@ $hg_cards     = array(
 		<div class="container">
 			<div class="cognitive-header motion">
 				<h2 class="section-title">
-					Redefining Enterprise Software
+					Software Was Built to Run. Solutions Are Built to Evolve.
 				</h2>
+				<p class="section-title2">
+					From SaaS to Solution as a Service.
+				</p>
 				<p class="section-desc">
-					Artificial Intelligence is redefining enterprise software.
-					Organizations no longer need static applications, but they
-					need intelligent solutions that continuously adapt, improve,
-					and create measurable business value.
+					Technology shouldn't become obsolete the moment it's deployed. HOSHŌ combines business expertise, AI, automation and continuous improvement to create solutions that evolve with your business.
 				</p>
 			</div>
 
@@ -175,6 +57,86 @@ $hg_cards     = array(
 					</p>
 				</div>
 			</div>
+	</section>
+
+	<!-- =========================================================
+	YOUR SUCCESS. OUR GUARANTEE.
+	========================================================= -->
+	<section class="intro-section">
+		<div class="hg-section" aria-label="Our Guarantee">
+			<div class="hg-layout">
+				<div class="hg-brand-box">
+					<p class="hg-tagline">Your Success<br>Our Guarantee</p>
+					<div class="hg-stamp-stage" id="hgStampStage">
+						<img class="hg-stamp-img" src="<?php echo esc_url( $hg_stamp_img ); ?>" alt="HOSHO ä¿è¨¼ (guarantee) stamp seal">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- =========================================================
+	DON'T RIP OUT. BUILD ON.
+	========================================================= -->
+
+	<section class="digital-core" id="approach">
+		<div class="container">
+			<div class="digital-core-heading motion">
+				<h2>
+					Don't Rip Out. Build On.
+				</h2>
+				<h3>
+				Your business already works. We don't replace it. We make it intelligent.
+				</h3>
+				<p>
+					Our Intelligent Digital Core connects your existing data, applications, workflows and AI, creating a foundation that gets smarter over time.
+				</p>
+			</div>
+
+			<div class="idc-card motion">
+				<div class="idc-card-header">
+					<div class="idc-logo-wrapper">
+						<img src="<?php echo esc_url( hosho_asset_url( 'idc-logo.png' ) ); ?>" alt="Intelligent Digital Core Logo" class="idc-logo">
+					</div>
+					<div class="idc-card-title-group">
+						<h3>Intelligence at your Core.</h3>
+						<p>Understand. Connect. Automate. Optimise.</p>
+						<h4>We connect the systems, data and processes you already have, then introduce intelligence where it creates the greatest business impact.</h4>
+					</div>
+				</div>
+			</div>
+
+			<div class="digital-core-process">
+				<div class="core-step rapid-card">
+					<h3>Understand</h3>
+					<p>
+						Find where AI can create real value.
+					</p>
+				</div>
+
+				<div class="core-step rapid-card">
+					<h3>Connect</h3>
+					<p>
+						Bring data, systems and workflows together.
+					</p>
+				</div>
+
+				<div class="core-step rapid-card">
+					<h3>Accelerate</h3>
+					<p>
+						Deploy intelligence that continuously improves the way you operate.
+					</p>
+				</div>
+			</div>
+
+			<p class="motion" style="text-align:center;">No rip-and-replace. No endless pilots. Just measurable progress.</p>
+
+			<div class="motion" style="text-align:center; margin-top: 24px;">
+				<a href="<?php echo esc_url(home_url('/approach')); ?>" class="button">
+					Find Out More <span class="button-arrow" aria-hidden="true"></span>
+				</a>
+			</div>
+		</div>
 	</section>
 
 	<!-- =========================================================
@@ -416,7 +378,7 @@ $hg_cards     = array(
 	FINAL CTA
 	=========================================== -->
 
-	<?php hosho_render_cta( '', 'Painless Transformation?', '', 'Speak to Us', 'page-consult-our-experts', 'homepage/cta.jpg' ); ?>
+	<?php hosho_render_cta( '', 'Ready to Turn AI Into Value?', 'Let\'s identify where intelligence can make the biggest difference to your business.', 'Discover The Opportunity', 'page-consult-our-experts', 'homepage/cta.jpg' ); ?>
 
 </main>
 
