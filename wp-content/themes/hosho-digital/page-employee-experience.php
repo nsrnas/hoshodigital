@@ -4,7 +4,7 @@
 	<?php
 	hosho_render_hero(
 		'Redefine the<br>Workplace',
-		'hero-employee-experience.jpg',
+		'hero-employee-experience.jpeg',
 		['class' => 'page-hero--ex']
 	);
 	?>

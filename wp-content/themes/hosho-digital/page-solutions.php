@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main id="main-content">
-  <?php hosho_render_hero( 'Transform Business<br>Experience with<br><span style="color:#fee4cc">Intelligent Digital<br>Solutions</span>', 'hero-solutions.jpg', array( 'class' => 'page-hero--solutions' ) ); ?>
+  <?php hosho_render_hero( 'Solve the Business.<br>Then Apply the Technology.', 'hero-solutions.jpg', array( 'class' => 'page-hero--solutions' ) ); ?>
 
   <section class="section"><div class="shell intro-grid motion"><div><p class="eyebrow">What we deliver</p><h2>Unify operations. Elevate productivity. Deliver exceptional journeys.</h2></div><div class="body-copy"><p class="lede">HOSHŌ DIGITAL empowers global enterprises to unify operations, elevate employee productivity, and deliver exceptional customer journeys through integrated AI and data-driven automation.</p></div></div></section>
 
@@ -131,6 +131,6 @@
 
   <?php hosho_render_quote( 'The value of an idea lies in the using of it.', 'Thomas Edison', 'thomas-edison.png' ); ?>
 
-  <?php hosho_render_cta( 'Start your transformation', 'Ready to Transform Your Business?', 'Talk to HOSHŌ DIGITAL about intelligent digital solutions for your enterprise.', 'Contact Us', hosho_page_url( 'contact' ), 'company-cta-singapore-night.jpg' ); ?>
+  <?php hosho_render_cta( 'Start your transformation', 'What Could Your Business Do Better With Intelligence?', 'Talk to HOSHŌ DIGITAL about intelligent digital solutions for your enterprise.', 'Explore Your Opportunities', hosho_page_url( 'contact' ), 'company-cta-singapore-night.jpg' ); ?>
 </main>
 <?php get_footer(); ?>
