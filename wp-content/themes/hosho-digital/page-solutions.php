@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main id="main-content">
-  <?php hosho_render_hero( 'Transform Business<br>Experience with<br><span style="color:#fee4cc">Intelligent Digital<br>Solutions</span>', 'hero-solutions.jpg', array( 'class' => 'page-hero--solutions' ) ); ?>
+  <?php hosho_render_hero( 'Solve the Business.<br>Then Apply the Technology.', 'hero-solutions.jpg', array( 'class' => 'page-hero--solutions' ) ); ?>
 
   <section class="section"><div class="shell intro-grid motion"><div><p class="eyebrow">What we deliver</p><h2>Unify operations. Elevate productivity. Deliver exceptional journeys.</h2></div><div class="body-copy"><p class="lede">HOSHŌ DIGITAL empowers global enterprises to unify operations, elevate employee productivity, and deliver exceptional customer journeys through integrated AI and data-driven automation.</p></div></div></section>
 
@@ -16,36 +16,7 @@
     </div>
   </div></div></section>
 
-  <section class="section section-navy"><div class="shell"><div class="intro-grid motion"><div><p class="eyebrow">Our solutions</p><h2>Transforming Business Through Connected Experiences</h2></div><div class="body-copy"><p>Business transformation creates the greatest impact when organizations improve the way customers interact, employees work, and operations perform together. Rather than treating these areas separately, HOSHŌ Digital structures its solutions around three connected business experiences that enable sustainable growth and operational excellence.</p></div></div>
-    <div class="solutions-cards">
-      <article class="solutions-card solutions-card--ops motion">
-        <div class="solutions-card__icon solutions-card__icon--ops">
-          <svg width="48" height="46" viewBox="0 0 48 46" fill="none"><path d="M12 46C10.333 46 8.917 45.417 7.75 44.25 6.583 43.083 6 41.667 6 40 6 38.333 6.583 36.917 7.75 35.75 8.917 34.583 10.333 34 12 34 12.467 34 12.9 34.05 13.3 34.15 13.7 34.25 14.083 34.383 14.45 34.55L17.3 31C16.367 29.967 15.717 28.8 15.35 27.5 14.983 26.2 14.9 24.9 15.1 23.6L11.05 22.25C10.483 23.083 9.767 23.75 8.9 24.25 8.033 24.75 7.067 25 6 25 4.333 25 2.917 24.417 1.75 23.25.583 22.083 0 20.667 0 19 0 17.333.583 15.917 1.75 14.75 2.917 13.583 4.333 13 6 13 7.667 13 9.083 13.583 10.25 14.75 11.417 15.917 12 17.333 12 19V19.2 19.4L16.05 20.8C16.717 19.6 17.608 18.583 18.725 17.75 19.842 16.917 21.1 16.383 22.5 16.15V11.8C21.2 11.433 20.125 10.725 19.275 9.675 18.425 8.625 18 7.4 18 6 18 4.333 18.583 2.917 19.75 1.75 20.917.583 22.333 0 24 0 25.667 0 27.083.583 28.25 1.75 29.417 2.917 30 4.333 30 6 30 7.4 29.567 8.625 28.7 9.675 27.833 10.725 26.767 11.433 25.5 11.8V16.15C26.9 16.383 28.158 16.917 29.275 17.75 30.392 18.583 31.283 19.6 31.95 20.8L36 19.4V19.2 19C36 17.333 36.583 15.917 37.75 14.75 38.917 13.583 40.333 13 42 13 43.667 13 45.083 13.583 46.25 14.75 47.417 15.917 48 17.333 48 19 48 20.667 47.417 22.083 46.25 23.25 45.083 24.417 43.667 25 42 25 40.933 25 39.958 24.75 39.075 24.25 38.192 23.75 37.483 23.083 36.95 22.25L32.9 23.6C33.1 24.9 33.017 26.192 32.65 27.475 32.283 28.758 31.633 29.933 30.7 31L33.55 34.5C33.917 34.333 34.3 34.208 34.7 34.125 35.1 34.042 35.533 34 36 34 37.667 34 39.083 34.583 40.25 35.75 41.417 36.917 42 38.333 42 40 42 41.667 41.417 43.083 40.25 44.25 39.083 45.417 37.667 46 36 46 34.333 46 32.917 45.417 31.75 44.25 30.583 43.083 30 41.667 30 40 30 39.333 30.108 38.692 30.325 38.075 30.542 37.458 30.833 36.9 31.2 36.4L28.35 32.85C26.983 33.617 25.525 34 23.975 34 22.425 34 20.967 33.617 19.6 32.85L16.8 36.4C17.167 36.9 17.458 37.458 17.675 38.075 17.892 38.692 18 39.333 18 40 18 41.667 17.417 43.083 16.25 44.25 15.083 45.417 13.667 46 12 46ZM24 30C25.4 30 26.583 29.517 27.55 28.55 28.517 27.583 29 26.4 29 25 29 23.6 28.517 22.417 27.55 21.45 26.583 20.483 25.4 20 24 20 22.6 20 21.417 20.483 20.45 21.45 19.483 22.417 19 23.6 19 25 19 26.4 19.483 27.583 20.45 28.55 21.417 29.517 22.6 30 24 30Z" fill="currentColor"/></svg>
-        </div>
-        <h3>Operational Experience</h3>
-        <p>Improve business performance through connected operations, intelligent automation, and enterprise-wide process optimization.</p>
-        <a href="<?php echo esc_url( hosho_page_url( 'operational-experience' ) ); ?>" class="solutions-card__link">Explore Solutions <span aria-hidden="true">&#8599;</span></a>
-      </article>
-      <article class="solutions-card solutions-card--cx motion">
-        <div class="solutions-card__icon solutions-card__icon--cx">
-          <svg width="41" height="39" viewBox="0 0 41 39" fill="none"><path d="M16 16C13.8 16 11.917 15.217 10.35 13.65 8.783 12.083 8 10.2 8 8 8 5.8 8.783 3.917 10.35 2.35 11.917.783 13.8 0 16 0 18.2 0 20.083.783 21.65 2.35 23.217 3.917 24 5.8 24 8 24 10.2 23.217 12.083 21.65 13.65 20.083 15.217 18.2 16 16 16ZM38.2 39L31.8 32.6C31.1 33 30.35 33.333 29.55 33.6 28.75 33.867 27.9 34 27 34 24.5 34 22.375 33.125 20.625 31.375 18.875 29.625 18 27.5 18 25 18 22.5 18.875 20.375 20.625 18.625 22.375 16.875 24.5 16 27 16 29.5 16 31.625 16.875 33.375 18.625 35.125 20.375 36 22.5 36 25 36 25.9 35.867 26.75 35.6 27.55 35.333 28.35 35 29.1 34.6 29.8L41 36.2 38.2 39ZM27 30C28.4 30 29.583 29.517 30.55 28.55 31.517 27.583 32 26.4 32 25 32 23.6 31.517 22.417 30.55 21.45 29.583 20.483 28.4 20 27 20 25.6 20 24.417 20.483 23.45 21.45 22.483 22.417 22 23.6 22 25 22 26.4 22.483 27.583 23.45 28.55 24.417 29.517 25.6 30 27 30ZM0 32V26.45C0 25.317.283 24.267.85 23.3 1.417 22.333 2.2 21.6 3.2 21.1 4.9 20.233 6.817 19.5 8.95 18.9 11.083 18.3 13.45 18 16.05 18 15.65 18.6 15.308 19.242 15.025 19.925 14.742 20.608 14.517 21.317 14.35 22.05 12.35 22.217 10.567 22.558 9 23.075 7.433 23.592 6.117 24.133 5.05 24.7 4.717 24.867 4.458 25.108 4.275 25.425 4.092 25.742 4 26.083 4 26.45V28H14.35C14.517 28.733 14.742 29.433 15.025 30.1 15.308 30.767 15.65 31.4 16.05 32H0Z" fill="currentColor"/></svg>
-        </div>
-        <h3>Customer Experience</h3>
-        <p>Create meaningful customer interactions through intelligent engagement, AI-powered service, and connected sales processes.</p>
-        <a href="<?php echo esc_url( hosho_page_url( 'customer-experience' ) ); ?>" class="solutions-card__link solutions-card__link--cx">Explore Solutions <span aria-hidden="true">&#8599;</span></a>
-      </article>
-      <article class="solutions-card solutions-card--ex motion">
-        <div class="solutions-card__icon solutions-card__icon--ex">
-          <svg width="48" height="24" viewBox="0 0 48 24" fill="none"><path d="M0 24V20.85C0 19.417.733 18.25 2.2 17.35 3.667 16.45 5.6 16 8 16 8.433 16 8.85 16.008 9.25 16.025 9.65 16.042 10.033 16.083 10.4 16.15 9.933 16.85 9.583 17.583 9.35 18.35 9.117 19.117 9 19.917 9 20.75V24H0ZM12 24V20.75C12 19.683 12.292 18.708 12.875 17.825 13.458 16.942 14.283 16.167 15.35 15.5 16.417 14.833 17.692 14.333 19.175 14 20.658 13.667 22.267 13.5 24 13.5 25.767 13.5 27.392 13.667 28.875 14 30.358 14.333 31.633 14.833 32.7 15.5 33.767 16.167 34.583 16.942 35.15 17.825 35.717 18.708 36 19.683 36 20.75V24H12ZM39 24V20.75C39 19.883 38.892 19.067 38.675 18.3 38.458 17.533 38.133 16.817 37.7 16.15 38.067 16.083 38.442 16.042 38.825 16.008 39.208 16.008 39.6 16 40 16 42.4 16 44.333 16.442 45.8 17.325 47.267 18.208 48 19.383 48 20.85V24H39ZM24 12C22.333 12 20.917 11.417 19.75 10.25 18.583 9.083 18 7.667 18 6 18 4.3 18.583 2.875 19.75 1.725 20.917.575 22.333 0 24 0 25.7 0 27.125.575 28.275 1.725 29.425 2.875 30 4.3 30 6 30 7.667 29.425 9.083 28.275 10.25 27.125 11.417 25.7 12 24 12Z" fill="currentColor"/></svg>
-        </div>
-        <h3>Employee Experience</h3>
-        <p>Empower employees with digital workplace solutions that simplify HR processes, collaboration, and everyday work.</p>
-        <a href="<?php echo esc_url( hosho_page_url( 'employee-experience' ) ); ?>" class="solutions-card__link solutions-card__link--ex">Explore Solutions <span aria-hidden="true">&#8599;</span></a>
-      </article>
-    </div>
-  </div></section>
-
-  <section class="section section-mist speedo-section">
+  <section class="section speedo-section">
     <div class="shell motion">
       <div class="speedo-layout">
         <div class="speedo-gauge">
@@ -94,6 +65,35 @@
     </div>
   </section>
 
+  <section class="section section-navy"><div class="shell"><div class="intro-grid motion"><div><p class="eyebrow">Our solutions</p><h2>Transforming Business Through Connected Experiences</h2></div><div class="body-copy"><p>Business transformation creates the greatest impact when organizations improve the way customers interact, employees work, and operations perform together. Rather than treating these areas separately, HOSHŌ Digital structures its solutions around three connected business experiences that enable sustainable growth and operational excellence.</p></div></div>
+    <div class="solutions-cards">
+      <article class="solutions-card solutions-card--ops motion">
+        <div class="solutions-card__icon solutions-card__icon--ops">
+          <svg width="48" height="46" viewBox="0 0 48 46" fill="none"><path d="M12 46C10.333 46 8.917 45.417 7.75 44.25 6.583 43.083 6 41.667 6 40 6 38.333 6.583 36.917 7.75 35.75 8.917 34.583 10.333 34 12 34 12.467 34 12.9 34.05 13.3 34.15 13.7 34.25 14.083 34.383 14.45 34.55L17.3 31C16.367 29.967 15.717 28.8 15.35 27.5 14.983 26.2 14.9 24.9 15.1 23.6L11.05 22.25C10.483 23.083 9.767 23.75 8.9 24.25 8.033 24.75 7.067 25 6 25 4.333 25 2.917 24.417 1.75 23.25.583 22.083 0 20.667 0 19 0 17.333.583 15.917 1.75 14.75 2.917 13.583 4.333 13 6 13 7.667 13 9.083 13.583 10.25 14.75 11.417 15.917 12 17.333 12 19V19.2 19.4L16.05 20.8C16.717 19.6 17.608 18.583 18.725 17.75 19.842 16.917 21.1 16.383 22.5 16.15V11.8C21.2 11.433 20.125 10.725 19.275 9.675 18.425 8.625 18 7.4 18 6 18 4.333 18.583 2.917 19.75 1.75 20.917.583 22.333 0 24 0 25.667 0 27.083.583 28.25 1.75 29.417 2.917 30 4.333 30 6 30 7.4 29.567 8.625 28.7 9.675 27.833 10.725 26.767 11.433 25.5 11.8V16.15C26.9 16.383 28.158 16.917 29.275 17.75 30.392 18.583 31.283 19.6 31.95 20.8L36 19.4V19.2 19C36 17.333 36.583 15.917 37.75 14.75 38.917 13.583 40.333 13 42 13 43.667 13 45.083 13.583 46.25 14.75 47.417 15.917 48 17.333 48 19 48 20.667 47.417 22.083 46.25 23.25 45.083 24.417 43.667 25 42 25 40.933 25 39.958 24.75 39.075 24.25 38.192 23.75 37.483 23.083 36.95 22.25L32.9 23.6C33.1 24.9 33.017 26.192 32.65 27.475 32.283 28.758 31.633 29.933 30.7 31L33.55 34.5C33.917 34.333 34.3 34.208 34.7 34.125 35.1 34.042 35.533 34 36 34 37.667 34 39.083 34.583 40.25 35.75 41.417 36.917 42 38.333 42 40 42 41.667 41.417 43.083 40.25 44.25 39.083 45.417 37.667 46 36 46 34.333 46 32.917 45.417 31.75 44.25 30.583 43.083 30 41.667 30 40 30 39.333 30.108 38.692 30.325 38.075 30.542 37.458 30.833 36.9 31.2 36.4L28.35 32.85C26.983 33.617 25.525 34 23.975 34 22.425 34 20.967 33.617 19.6 32.85L16.8 36.4C17.167 36.9 17.458 37.458 17.675 38.075 17.892 38.692 18 39.333 18 40 18 41.667 17.417 43.083 16.25 44.25 15.083 45.417 13.667 46 12 46ZM24 30C25.4 30 26.583 29.517 27.55 28.55 28.517 27.583 29 26.4 29 25 29 23.6 28.517 22.417 27.55 21.45 26.583 20.483 25.4 20 24 20 22.6 20 21.417 20.483 20.45 21.45 19.483 22.417 19 23.6 19 25 19 26.4 19.483 27.583 20.45 28.55 21.417 29.517 22.6 30 24 30Z" fill="currentColor"/></svg>
+        </div>
+        <h3>Operational Experience</h3>
+        <p>Improve business performance through connected operations, intelligent automation, and enterprise-wide process optimization.</p>
+        <a href="<?php echo esc_url( hosho_page_url( 'operational-experience' ) ); ?>" class="solutions-card__link">Explore Solutions <span aria-hidden="true">&#8599;</span></a>
+      </article>
+      <article class="solutions-card solutions-card--cx motion">
+        <div class="solutions-card__icon solutions-card__icon--cx">
+          <svg width="41" height="39" viewBox="0 0 41 39" fill="none"><path d="M16 16C13.8 16 11.917 15.217 10.35 13.65 8.783 12.083 8 10.2 8 8 8 5.8 8.783 3.917 10.35 2.35 11.917.783 13.8 0 16 0 18.2 0 20.083.783 21.65 2.35 23.217 3.917 24 5.8 24 8 24 10.2 23.217 12.083 21.65 13.65 20.083 15.217 18.2 16 16 16ZM38.2 39L31.8 32.6C31.1 33 30.35 33.333 29.55 33.6 28.75 33.867 27.9 34 27 34 24.5 34 22.375 33.125 20.625 31.375 18.875 29.625 18 27.5 18 25 18 22.5 18.875 20.375 20.625 18.625 22.375 16.875 24.5 16 27 16 29.5 16 31.625 16.875 33.375 18.625 35.125 20.375 36 22.5 36 25 36 25.9 35.867 26.75 35.6 27.55 35.333 28.35 35 29.1 34.6 29.8L41 36.2 38.2 39ZM27 30C28.4 30 29.583 29.517 30.55 28.55 31.517 27.583 32 26.4 32 25 32 23.6 31.517 22.417 30.55 21.45 29.583 20.483 28.4 20 27 20 25.6 20 24.417 20.483 23.45 21.45 22.483 22.417 22 23.6 22 25 22 26.4 22.483 27.583 23.45 28.55 24.417 29.517 25.6 30 27 30ZM0 32V26.45C0 25.317.283 24.267.85 23.3 1.417 22.333 2.2 21.6 3.2 21.1 4.9 20.233 6.817 19.5 8.95 18.9 11.083 18.3 13.45 18 16.05 18 15.65 18.6 15.308 19.242 15.025 19.925 14.742 20.608 14.517 21.317 14.35 22.05 12.35 22.217 10.567 22.558 9 23.075 7.433 23.592 6.117 24.133 5.05 24.7 4.717 24.867 4.458 25.108 4.275 25.425 4.092 25.742 4 26.083 4 26.45V28H14.35C14.517 28.733 14.742 29.433 15.025 30.1 15.308 30.767 15.65 31.4 16.05 32H0Z" fill="currentColor"/></svg>
+        </div>
+        <h3>Customer Experience</h3>
+        <p>Create meaningful customer interactions through intelligent engagement, AI-powered service, and connected sales processes.</p>
+        <a href="<?php echo esc_url( hosho_page_url( 'customer-experience' ) ); ?>" class="solutions-card__link solutions-card__link--cx">Explore Solutions <span aria-hidden="true">&#8599;</span></a>
+      </article>
+      <article class="solutions-card solutions-card--ex motion">
+        <div class="solutions-card__icon solutions-card__icon--ex">
+          <svg width="48" height="24" viewBox="0 0 48 24" fill="none"><path d="M0 24V20.85C0 19.417.733 18.25 2.2 17.35 3.667 16.45 5.6 16 8 16 8.433 16 8.85 16.008 9.25 16.025 9.65 16.042 10.033 16.083 10.4 16.15 9.933 16.85 9.583 17.583 9.35 18.35 9.117 19.117 9 19.917 9 20.75V24H0ZM12 24V20.75C12 19.683 12.292 18.708 12.875 17.825 13.458 16.942 14.283 16.167 15.35 15.5 16.417 14.833 17.692 14.333 19.175 14 20.658 13.667 22.267 13.5 24 13.5 25.767 13.5 27.392 13.667 28.875 14 30.358 14.333 31.633 14.833 32.7 15.5 33.767 16.167 34.583 16.942 35.15 17.825 35.717 18.708 36 19.683 36 20.75V24H12ZM39 24V20.75C39 19.883 38.892 19.067 38.675 18.3 38.458 17.533 38.133 16.817 37.7 16.15 38.067 16.083 38.442 16.042 38.825 16.008 39.208 16.008 39.6 16 40 16 42.4 16 44.333 16.442 45.8 17.325 47.267 18.208 48 19.383 48 20.85V24H39ZM24 12C22.333 12 20.917 11.417 19.75 10.25 18.583 9.083 18 7.667 18 6 18 4.3 18.583 2.875 19.75 1.725 20.917.575 22.333 0 24 0 25.7 0 27.125.575 28.275 1.725 29.425 2.875 30 4.3 30 6 30 7.667 29.425 9.083 28.275 10.25 27.125 11.417 25.7 12 24 12Z" fill="currentColor"/></svg>
+        </div>
+        <h3>Employee Experience</h3>
+        <p>Empower employees with digital workplace solutions that simplify HR processes, collaboration, and everyday work.</p>
+        <a href="<?php echo esc_url( hosho_page_url( 'employee-experience' ) ); ?>" class="solutions-card__link solutions-card__link--ex">Explore Solutions <span aria-hidden="true">&#8599;</span></a>
+      </article>
+    </div>
+  </div></section>
+
   <section class="section"><div class="shell"><div class="intro-grid motion"><div><h2>Our Value</h2></div></div>
     <div class="editorial-grid solutions-why-grid">
       <article class="feature" style="grid-column:span 4">
@@ -131,6 +131,6 @@
 
   <?php hosho_render_quote( 'The value of an idea lies in the using of it.', 'Thomas Edison', 'thomas-edison.png' ); ?>
 
-  <?php hosho_render_cta( 'Start your transformation', 'Ready to Transform Your Business?', 'Talk to HOSHŌ DIGITAL about intelligent digital solutions for your enterprise.', 'Contact Us', hosho_page_url( 'contact' ), 'company-cta-singapore-night.jpg' ); ?>
+  <?php hosho_render_cta( 'Start your transformation', 'What Could Your Business Do Better With Intelligence?', 'Talk to HOSHŌ DIGITAL about intelligent digital solutions for your enterprise.', 'Explore Your Opportunities', hosho_page_url( 'contact' ), 'company-cta-singapore-night.jpg' ); ?>
 </main>
 <?php get_footer(); ?>
