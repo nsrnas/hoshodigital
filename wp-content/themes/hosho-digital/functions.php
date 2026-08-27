@@ -6,7 +6,7 @@ function hosho_pages() {
     'privacy-policy' => 'Privacy Policy', 'accessibility' => 'Accessibility Statement', 'terms-of-use' => 'Terms of Use', 'cookies' => 'Cookies Policy',
     'careers' => 'Careers', 'esg' => 'ESG', 'sustainability' => 'ESG', 'media' => 'Media', 'press' => 'Media',
     'contact' => 'Contact', 'company' => 'Company', 'ai-quick-win' => 'AI Quick Win', 'eci' => 'Enterprise Compute Initiative',
-    'solutions' => 'Solutions', 'operational-experience' => 'Operational Experience', 'customer-experience' => 'Customer Experience', 'employee-experience' => 'Employee Experience',
+    'solutions' => 'Solutions', 'operational-experience' => 'Operational Intelligence', 'customer-experience' => 'Customer Intelligence', 'employee-experience' => 'Workforce Intelligence',
     'innovation' => 'Innovation', 'assurance' => 'Assurance', 'ai' => 'AI', 'strategy-session' => 'Strategy Session',
   );
 }
@@ -52,7 +52,7 @@ function hosho_primary_menu_fallback() { ?>
   <ul class="nav-links">
     <li class="menu-item-has-children"><a href="<?php echo esc_url( hosho_page_url( 'eci' ) ); ?>">Programmes</a><ul class="sub-menu"><li><a href="<?php echo esc_url( hosho_page_url( 'eci' ) ); ?>">Enterprise Compute Initiative</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'ai-quick-win' ) ); ?>">AI Quick Win</a></li></ul></li>
     <li class="menu-item-has-children"><a href="<?php echo esc_url( hosho_page_url( 'approach' ) ); ?>">Approach</a><ul class="sub-menu"><li><a href="<?php echo esc_url( home_url( '/innovation/' ) ); ?>">Innovation</a></li><li><a href="<?php echo esc_url( home_url( '/optimization/' ) ); ?>">Optimization</a></li><li><a href="<?php echo esc_url( home_url( '/assurance/' ) ); ?>">Assurance</a></li><li><a href="<?php echo esc_url( home_url( '/erp/' ) ); ?>">ERP</a></li></ul></li>
-    <li class="menu-item-has-children"><a href="<?php echo esc_url( hosho_page_url( 'solutions' ) ); ?>">Solutions</a><ul class="sub-menu"><li><a href="<?php echo esc_url( hosho_page_url( 'operational-experience' ) ); ?>">Operational Experience</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'customer-experience' ) ); ?>">Customer Experience</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'employee-experience' ) ); ?>">Employee Experience</a></li></ul></li>
+    <li class="menu-item-has-children"><a href="<?php echo esc_url( hosho_page_url( 'solutions' ) ); ?>">Solutions</a><ul class="sub-menu"><li><a href="<?php echo esc_url( hosho_page_url( 'operational-experience' ) ); ?>">Operational Intelligence</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'customer-experience' ) ); ?>">Customer Intelligence</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'employee-experience' ) ); ?>">Workforce Intelligence</a></li></ul></li>
     <li class="menu-item-has-children"><a href="<?php echo esc_url( hosho_page_url( 'company' ) ); ?>">Company</a><ul class="sub-menu"><li><a href="<?php echo esc_url( hosho_page_url( 'careers' ) ); ?>">Careers</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'esg' ) ); ?>">ESG</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'media' ) ); ?>">Media</a></li></ul></li>
     <li><a href="<?php echo esc_url( hosho_page_url( 'contact' ) ); ?>">Contact</a></li>
   </ul><?php

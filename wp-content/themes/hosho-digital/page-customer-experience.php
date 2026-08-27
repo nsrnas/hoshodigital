@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+﻿<?php get_header(); ?>
 
 <main id="main-content">
 	<?php
@@ -13,11 +13,11 @@
 		<div class="shell">
 			<div class="intro-grid motion">
 				<div>
-					<p class="eyebrow">Customer Experience</p>
-					<h2>Personalized AI-Powered Touchpoints</h2>
+					<p class="eyebrow">Customer Intelligence</p>
+					<h2>Make Every Interaction Smarter</h2>
 				</div>
 				<div class="body-copy">
-					<p>Our Customer Experience portfolio empowers organizations to build stronger customer relationships through intelligent sales management, AI-powered customer engagement, workflow automation, and digital workplace solutions. Every solution is designed to improve responsiveness, collaboration, and customer satisfaction.</p>
+					<p>Our Customer Intelligence portfolio empowers organizations to build stronger customer relationships through intelligent sales management, AI-powered customer engagement, workflow automation, and digital workplace solutions. Every solution is designed to improve responsiveness, collaboration, and customer satisfaction.</p>
 				</div>
 			</div>
 		</div>

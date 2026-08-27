@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+﻿<?php get_header(); ?>
 
 <main id="main-content">
 	<?php
@@ -13,11 +13,11 @@
 		<div class="shell">
 			<div class="intro-grid motion">
 				<div>
-					<p class="eyebrow">Operational Experience</p>
-					<h2>Streamlining Core Systems with Automation</h2>
+					<p class="eyebrow">Operational Intelligence</p>
+					<h2>Make the Business Faster, Smarter and More Efficient</h2>
 				</div>
 				<div class="body-copy">
-					<p>Our Operational Experience portfolio provides digital solutions that simplify complex business operations across finance, procurement, workforce management, governance, and industry-specific processes. Each solution is designed to improve efficiency, reduce manual work, and support scalable business operations.</p>
+					<p>Our Operational Intelligence portfolio provides digital solutions that simplify complex business operations across finance, procurement, workforce management, governance, and industry-specific processes. Each solution is designed to improve efficiency, reduce manual work, and support scalable business operations.</p>
 				</div>
 			</div>
 		</div>
