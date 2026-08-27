@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
   const root = document.documentElement;
   const body = document.body;
   const header = document.querySelector('[data-header]');
