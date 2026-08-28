@@ -67,7 +67,6 @@ function hosho_navigation_items() {
         array( 'label' => 'Innovation', 'slug' => 'innovation' ),
         array( 'label' => 'Optimization', 'slug' => 'optimization' ),
         array( 'label' => 'Assurance', 'slug' => 'assurance' ),
-        array( 'label' => 'ERP', 'slug' => 'erp' ),
       ),
     ),
     array(
