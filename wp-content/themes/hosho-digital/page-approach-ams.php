@@ -99,42 +99,42 @@ get_header();
 			<p>Our roadmap doesn't end at deployment. We engineered for the infinite horizon.</p>
 
 			<div class="timeline-row" style="display: flex; gap: 15px; align-items: stretch; overflow-x: auto; padding: 20px 0;">
-				<div class="timeline-step rapid-card">
+				<div class="timeline-step">
 					<h4>Discovery</h4>
 					<p>Understanding architectural debt and future goals.</p>
 				</div>
 				<div class="timeline-arrow" aria-hidden="true" style="color: var(--red); display: flex; align-items: center;">
 					<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
 				</div>
-				<div class="timeline-step rapid-card">
+				<div class="timeline-step">
 					<h4>Development</h4>
 					<p>Agile sprints with quality-first engineering.</p>
 				</div>
 				<div class="timeline-arrow" aria-hidden="true" style="color: var(--red); display: flex; align-items: center;">
 					<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
 				</div>
-				<div class="timeline-step rapid-card">
+				<div class="timeline-step">
 					<h4>Deployment</h4>
 					<p>Seamless CI/CD orchestration and validation.</p>
 				</div>
 				<div class="timeline-arrow" aria-hidden="true" style="color: var(--red); display: flex; align-items: center;">
 					<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
 				</div>
-				<div class="timeline-step rapid-card">
+				<div class="timeline-step">
 					<h4>Optimization</h4>
 					<p>Fine-tuning for scale and resource efficiency.</p>
 				</div>
 				<div class="timeline-arrow" aria-hidden="true" style="color: var(--red); display: flex; align-items: center;">
 					<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
 				</div>
-				<div class="timeline-step rapid-card">
+				<div class="timeline-step">
 					<h4>Support</h4>
 					<p>24/7 dedicated engineering expertise.</p>
 				</div>
 				<div class="timeline-arrow" aria-hidden="true" style="color: var(--red); display: flex; align-items: center;">
 					<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
 				</div>
-				<div class="timeline-step rapid-card">
+				<div class="timeline-step">
 					<h4>Innovation</h4>
 					<p>AI-driven updates and next-gen feature sets.</p>
 				</div>
@@ -149,7 +149,7 @@ get_header();
 	<section class="engine-section">
 		<div class="container motion">
 			<div class="engine-header">
-				<h2>The AMS Engine</h2>
+				<h2>Design for The Modern Enterprise</h2>
 				<p>
 					Where the framework above shows the three phases of an
 					engagement, this is the operating rhythm we run
@@ -174,40 +174,40 @@ get_header();
 			</p>
 
 			<div class="capability-grid">
-				<div class="capability-card rapid-card">
+				<div class="capability-card">
 					<div class="capability-card__top">
 						<div class="cap-icon"><span class="icon-svg" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-3 3 2 5-6"/></svg></span></div>
-						<h4>Application Monitoring</h4>
+						<h4>Application  <br> Monitoring</h4>
 					</div>
 					<p>
 						Monitor for seamless operations, analysing performance
 						and availability in real-time.
 					</p>
 				</div>
-				<div class="capability-card rapid-card">
+				<div class="capability-card">
 					<div class="capability-card__top">
 						<div class="cap-icon"><span class="icon-svg" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span></div>
-						<h4>Application Management</h4>
+						<h4>Application  <br> Management</h4>
 					</div>
 					<p>
 						Maximizing efficiency through continuous application
 						performance optimization and resource scaling.
 					</p>
 				</div>
-				<div class="capability-card rapid-card">
+				<div class="capability-card">
 					<div class="capability-card__top">
 						<div class="cap-icon"><span class="icon-svg" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M2 12h20"/><path d="M7 7l10 10"/><path d="M17 7 7 17"/></svg></span></div>
-						<h4>Maintanance &amp; Support</h4>
+						<h4>Maintanance <br> &amp; Support</h4>
 					</div>
 					<p>
 						Ensuring smooth functional availability via proactive
 						updates, bug fixes and technical expert support.
 					</p>
 				</div>
-				<div class="capability-card rapid-card">
+				<div class="capability-card">
 					<div class="capability-card__top">
 						<div class="cap-icon"><span class="icon-svg" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></div>
-						<h4>Security &amp; Complience</h4>
+						<h4>Security <br> &amp; Compliance</h4>
 					</div>
 					<p>
 						Implementing pertinent measures for data protection,
@@ -235,11 +235,6 @@ get_header();
 						<span class="tag">Compliant</span>
 					</div>
 				</div>
-				<p class="stats-quote">
-					Our AMS framework is designed for the modern enterprise,
-					ensuring that legacy reliability meets AI-driven
-					innovation.
-				</p>
 			</div>
 		</div>
 	</section>
@@ -248,7 +243,7 @@ get_header();
 	QUOTE
 	========================================================= -->
 
-	<?php hosho_render_quote( 'The best way to predict the future is to create it.', 'Peter Drucker', 'approach/ams/drucker.png' ); ?>
+	<?php hosho_render_quote( 'Continuous improvement is better than delayed perfection.', 'Mark Twain', 'approach/ams/twain.png' ); ?>
 
 	<!-- =========================================================
 	CORE COMPETENCIES
@@ -261,42 +256,42 @@ get_header();
 			</div>
 
 			<div class="competencies-grid">
-				<div class="competency-card rapid-card">
+				<div class="competency-card">
 					<h4><span class="comp-icon"><span class="icon-svg" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="13" width="3" height="5"/><rect x="12" y="9" width="3" height="9"/><rect x="17" y="5" width="3" height="13"/></svg></span></span>Monitoring</h4>
 					<p>
 						Real-time observability and predictive analytics to
 						identify bottlenecks before they impact your users.
 					</p>
 				</div>
-				<div class="competency-card rapid-card">
+				<div class="competency-card">
 					<h4><span class="comp-icon"><span class="icon-svg" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span></span>Maintenance</h4>
 					<p>
 						Continuous technical health checks, dependency
 						updates, and platform performance tuning.
 					</p>
 				</div>
-				<div class="competency-card rapid-card">
+				<div class="competency-card">
 					<h4><span class="comp-icon"><span class="icon-svg" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 9h6"/><path d="M12 3v4"/><path d="M7 7 5 5"/><path d="M17 7 19 5"/><path d="M5 12h14"/><path d="M9 20a3 3 0 0 0 6 0"/><path d="M7 12a5 5 0 1 1 10 0v1a5 5 0 1 1-10 0z"/></svg></span></span>Bug Fixing</h4>
 					<p>
 						Rapid identification and resolution of regressions
 						with a zero-backlog philosophy for critical issues.
 					</p>
 				</div>
-				<div class="competency-card rapid-card">
+				<div class="competency-card">
 					<h4><span class="comp-icon"><span class="icon-svg" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a8 8 0 1 1 16 0"/><path d="M4 14v4a2 2 0 0 0 2 2h2v-6H4Z"/><path d="M20 14v4a2 2 0 0 1-2 2h-2v-6h4Z"/></svg></span></span>Technical Support</h4>
 					<p>
 						Tier 3 engineering support embedded within your team
 						to resolve complex architectural challenges.
 					</p>
 				</div>
-				<div class="competency-card rapid-card">
+				<div class="competency-card">
 					<h4><span class="comp-icon"><span class="icon-svg" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3Z"/></svg></span></span>Security</h4>
 					<p>
 						Ongoing threat modeling, vulnerability patching, and
 						compliance monitoring (SOC2, HIPAA, GDPR).
 					</p>
 				</div>
-				<div class="competency-card rapid-card">
+				<div class="competency-card">
 					<h4><span class="comp-icon"><span class="icon-svg" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a7.8 7.8 0 0 0 .1-6l2-1.2-2-3.4-2.3.9a8 8 0 0 0-5.2-3L11.6 0h-3.2l-.4 2.3a8 8 0 0 0-5.2 3L.5 4.4l-2 3.4 2 1.2a7.8 7.8 0 0 0 .1 6l-2 1.2 2 3.4 2.3-.9a8 8 0 0 0 5.2 3l.4 2.3h3.2l.4-2.3a8 8 0 0 0 5.2-3l2.3.9 2-3.4Z"/></svg></span></span>Incident Response</h4>
 					<p>
 						Defined RTO/RPO metrics and a battle-tested protocol
@@ -339,42 +334,78 @@ get_header();
 			</div>
 
 			<div class="advantage-grid">
-				<div class="advantage-item rapid-card">
+				<div class="advantage-item">
+					<div class="adv-icon" aria-hidden="true">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<circle cx="12" cy="12" r="10"/>
+							<path d="M8 12l3 3 5-6"/>
+						</svg>
+					</div>
 					<h4>Proactive</h4>
 					<p>
 						We solve problems before they reach your dashboard.
 						Our AI-driven anomaly detection works 24/7.
 					</p>
 				</div>
-				<div class="advantage-item rapid-card">
+				<div class="advantage-item">
+					<div class="adv-icon" aria-hidden="true">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M12 2l8 4v6c0 5-3.5 9.5-8 10-4.5-.5-8-5-8-10V6l8-4z"/>
+						</svg>
+					</div>
 					<h4>Reliable</h4>
 					<p>
 						Our infrastructure is engineered
 						for resilience and high-availability.
 					</p>
 				</div>
-				<div class="advantage-item rapid-card">
+				<div class="advantage-item">
+					<div class="adv-icon" aria-hidden="true">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M12 22s8-4 8-10V6l-8-3-8 3v6c0 6 8 10 8 10z"/>
+							<path d="M9 12l2 2 4-4"/>
+						</svg>
+					</div>
 					<h4>Secure</h4>
 					<p>
 						Security is not an afterthought. It's woven into
 						every ticket, update, and architectural decision.
 					</p>
 				</div>
-				<div class="advantage-item rapid-card">
+				<div class="advantage-item">
+					<div class="adv-icon" aria-hidden="true">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M4 4h6v6H4z"/>
+							<path d="M14 4h6v6h-6z"/>
+							<path d="M4 14h6v6H4z"/>
+							<path d="M14 14h6v6h-6z"/>
+						</svg>
+					</div>
 					<h4>Scalable</h4>
 					<p>
 						Our AMS frameworks grow with you. We handle traffic
 						spikes and market expansions without friction.
 					</p>
 				</div>
-				<div class="advantage-item accent rapid-card">
+				<div class="advantage-item">
+					<div class="adv-icon" aria-hidden="true">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M13 2L4 14h6l-1 8 9-12h-6z"/>
+						</svg>
+					</div>
 					<h4>Responsive</h4>
 					<p>
 						No tickets in the void. Direct Slack/Teams access to
 						lead engineers who know your stack intimately.
 					</p>
 				</div>
-				<div class="advantage-item rapid-card">
+				<div class="advantage-item">
+					<div class="adv-icon" aria-hidden="true">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M12 3c4.4 0 8 3.6 8 8 0 5.5-8 10-8 10s-8-4.5-8-10c0-4.4 3.6-8 8-8z"/>
+							<path d="M9.5 11.5 11.5 13.5 14.5 9.5"/>
+						</svg>
+					</div>
 					<h4>Partnership</h4>
 					<p>
 						We align our KPIs with your business outcomes. Your
