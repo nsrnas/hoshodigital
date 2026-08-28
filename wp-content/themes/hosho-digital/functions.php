@@ -3,14 +3,16 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 
 function hosho_pages() {
   return array(
+    'home' => 'Home',
     'privacy-policy' => 'Privacy Policy', 'accessibility' => 'Accessibility Statement', 'terms-of-use' => 'Terms of Use', 'cookies' => 'Cookies Policy',
     'careers' => 'Careers', 'esg' => 'ESG', 'sustainability' => 'ESG', 'media' => 'Media', 'press' => 'Media',
     'contact' => 'Contact', 'company' => 'Company', 'ai-quick-win' => 'AI Quick Win', 'eci' => 'Enterprise Compute Initiative',
-    'solutions' => 'Solutions', 'operational-experience' => 'Operational Experience', 'customer-experience' => 'Customer Experience', 'employee-experience' => 'Employee Experience',
-    'innovation' => 'Innovation', 'assurance' => 'Assurance', 'ai' => 'AI', 'strategy-session' => 'Strategy Session',
+    'solutions' => 'Solutions', 'operational-experience' => 'Operational Intelligence', 'customer-experience' => 'Customer Intelligence', 'employee-experience' => 'Workforce Intelligence',
+    'approach' => 'Approach', 'innovation' => 'Innovation', 'assurance' => 'Assurance', 'erp' => 'ERP', 'optimization' => 'Optimization', 'ai' => 'AI', 'strategy-session' => 'Strategy Session',
   );
 }
 function hosho_current_page() {
+  if ( is_front_page() ) return 'home';
   foreach ( array_keys( hosho_pages() ) as $slug ) { if ( is_page( $slug ) ) return $slug; }
   return '';
 }
@@ -48,13 +50,79 @@ function hosho_header_action() {
   );
   return $actions[ hosho_current_page() ] ?? array( 'Get in touch', hosho_page_url( 'contact' ) );
 }
-function hosho_primary_menu_fallback() { ?>
-  <ul class="nav-links">
-    <li class="menu-item-has-children"><a href="<?php echo esc_url( hosho_page_url( 'eci' ) ); ?>">Programmes</a><ul class="sub-menu"><li><a href="<?php echo esc_url( hosho_page_url( 'eci' ) ); ?>">Enterprise Compute Initiative</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'ai-quick-win' ) ); ?>">AI Quick Win</a></li></ul></li>
-    <li class="menu-item-has-children"><a href="<?php echo esc_url( hosho_page_url( 'approach' ) ); ?>">Approach</a><ul class="sub-menu"><li><a href="<?php echo esc_url( home_url( '/innovation/' ) ); ?>">Innovation</a></li><li><a href="<?php echo esc_url( home_url( '/optimization/' ) ); ?>">Optimization</a></li><li><a href="<?php echo esc_url( home_url( '/assurance/' ) ); ?>">Assurance</a></li><li><a href="<?php echo esc_url( home_url( '/erp/' ) ); ?>">ERP</a></li></ul></li>
-    <li class="menu-item-has-children"><a href="<?php echo esc_url( hosho_page_url( 'solutions' ) ); ?>">Solutions</a><ul class="sub-menu"><li><a href="<?php echo esc_url( hosho_page_url( 'operational-experience' ) ); ?>">Operational Experience</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'customer-experience' ) ); ?>">Customer Experience</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'employee-experience' ) ); ?>">Employee Experience</a></li></ul></li>
-    <li class="menu-item-has-children"><a href="<?php echo esc_url( hosho_page_url( 'company' ) ); ?>">Company</a><ul class="sub-menu"><li><a href="<?php echo esc_url( hosho_page_url( 'careers' ) ); ?>">Careers</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'esg' ) ); ?>">ESG</a></li><li><a href="<?php echo esc_url( hosho_page_url( 'media' ) ); ?>">Media</a></li></ul></li>
-    <li><a href="<?php echo esc_url( hosho_page_url( 'contact' ) ); ?>">Contact</a></li>
+function hosho_navigation_items() {
+  return array(
+    array(
+      'label' => 'Programmes',
+      'slug' => 'eci',
+      'children' => array(
+        array( 'label' => 'Enterprise Compute Initiative', 'slug' => 'eci' ),
+        array( 'label' => 'AI Quick Win', 'slug' => 'ai-quick-win' ),
+      ),
+    ),
+    array(
+      'label' => 'Approach',
+      'slug' => 'approach',
+      'children' => array(
+        array( 'label' => 'Innovation', 'slug' => 'innovation' ),
+        array( 'label' => 'Optimization', 'slug' => 'optimization' ),
+        array( 'label' => 'Assurance', 'slug' => 'assurance' ),
+        array( 'label' => 'ERP', 'slug' => 'erp' ),
+      ),
+    ),
+    array(
+      'label' => 'Solutions',
+      'slug' => 'solutions',
+      'children' => array(
+        array( 'label' => 'Operational Intelligence', 'slug' => 'operational-experience' ),
+        array( 'label' => 'Customer Intelligence', 'slug' => 'customer-experience' ),
+        array( 'label' => 'Workforce Intelligence', 'slug' => 'employee-experience' ),
+      ),
+    ),
+    array(
+      'label' => 'Company',
+      'slug' => 'company',
+      'children' => array(
+        array( 'label' => 'Careers', 'slug' => 'careers' ),
+        array( 'label' => 'ESG', 'slug' => 'esg', 'aliases' => array( 'sustainability' ) ),
+        array( 'label' => 'Media', 'slug' => 'media', 'aliases' => array( 'press' ) ),
+      ),
+    ),
+    array( 'label' => 'Contact', 'slug' => 'contact' ),
+  );
+}
+
+function hosho_navigation_item_is_current( $item, $current ) {
+  $matches = array_merge( array( $item['slug'] ), $item['aliases'] ?? array() );
+  return in_array( $current, $matches, true );
+}
+
+function hosho_primary_menu_fallback() {
+  $current = hosho_current_page(); ?>
+  <ul class="nav-links" role="list">
+    <?php foreach ( hosho_navigation_items() as $item ) :
+      $children = $item['children'] ?? array();
+      $is_exact = hosho_navigation_item_is_current( $item, $current );
+      $is_parent = $is_exact;
+      foreach ( $children as $child ) {
+        if ( hosho_navigation_item_is_current( $child, $current ) ) $is_parent = true;
+      }
+      $classes = array( 'menu-item' );
+      if ( $children ) $classes[] = 'menu-item-has-children';
+      if ( $is_exact ) $classes[] = 'current-menu-item';
+      elseif ( $is_parent ) $classes[] = 'current-menu-ancestor'; ?>
+      <li class="<?php echo esc_attr( implode( ' ', $classes ) ); ?>">
+        <a href="<?php echo esc_url( hosho_page_url( $item['slug'] ) ); ?>"<?php echo $is_exact ? ' aria-current="page"' : ''; ?>><?php echo esc_html( $item['label'] ); ?></a>
+        <?php if ( $children ) : ?>
+          <ul class="sub-menu" role="list" aria-label="<?php echo esc_attr( $item['label'] ); ?>">
+            <?php foreach ( $children as $child ) :
+              $child_current = hosho_navigation_item_is_current( $child, $current ); ?>
+              <li class="menu-item<?php echo $child_current ? ' current-menu-item' : ''; ?>"><a href="<?php echo esc_url( hosho_page_url( $child['slug'] ) ); ?>"<?php echo $child_current ? ' aria-current="page"' : ''; ?>><?php echo esc_html( $child['label'] ); ?></a></li>
+            <?php endforeach; ?>
+          </ul>
+        <?php endif; ?>
+      </li>
+    <?php endforeach; ?>
   </ul><?php
 }
 function hosho_render_hero( $headline, $image, $options = array() ) {

@@ -10,7 +10,7 @@
     <p class="careers-belief__body">We respect the unique qualities and experiences that each individual brings. We create an inclusive environment that supports learning, collaboration and practical innovation.</p>
   </div></section>
 
-  <section class="media-split careers-diversity"><div class="media-split__image" style="background-image:url('<?php echo esc_url(hosho_asset_url('careers-culture-team.jpg')); ?>')"></div><div class="media-split__content motion"><p class="eyebrow">Diversity and Inclusion</p><h2>Different perspectives make stronger work.</h2><p>Our people bring different backgrounds, disciplines and experiences to the same table. We create space for every voice to contribute, learn and grow.</p></div></section>
+  <section class="media-split careers-diversity"><div class="media-split__image" style="background-image:url('<?php echo esc_url(hosho_asset_url('careers-singapore-red-stairs.jpg')); ?>')" role="img" aria-label="Contemporary red architectural interior in Singapore"></div><div class="media-split__content motion"><p class="eyebrow">Diversity and Inclusion</p><h2>Different perspectives make stronger work.</h2><p>Our people bring different backgrounds, disciplines and experiences to the same table. We create space for every voice to contribute, learn and grow.</p></div></section>
 
   <section class="section section-mist careers-voices" data-carousel data-carousel-interval="3000"><div class="shell"><div class="intro-grid"><div><p class="eyebrow">Life at HOSHŌ DIGITAL</p><h2>Our people, in their own words.</h2></div><div class="carousel-controls"><button type="button" data-prev aria-label="Previous testimonial">←</button><button type="button" data-next aria-label="Next testimonial">→</button></div></div><div class="testimonial-window"><div class="testimonial-track" data-track>
     <?php $voices=array(
@@ -25,7 +25,7 @@
     <?php endforeach; ?>
   </div></div></div></section>
 
-  <?php hosho_render_quote('We believe constant evolution is our most powerful competitive advantage.','Masayoshi Son','quote-masayoshi-son.jpg','quote-band--standard quote-band--red-soft'); ?>
+  <?php hosho_render_quote('We believe constant evolution is our most powerful competitive advantage.','Masayoshi Son','quote-masayoshi-son-cutout-v2.png','quote-band--standard quote-band--red-soft quote-band--masayoshi'); ?>
 
   <section class="section" id="opportunities"><div class="shell intro-grid motion"><div><h2>Where do you want to make an impact?</h2></div><div class="editorial-grid career-links"><a class="feature" href="<?php echo esc_url(hosho_page_url('company')); ?>"><h3>Our story</h3><p>Learn what HOSHŌ DIGITAL stands for.</p></a><a class="feature" href="<?php echo esc_url(hosho_page_url('solutions')); ?>"><h3>Our solution</h3><p>Explore the enterprise outcomes behind our work.</p></a><a class="feature" href="<?php echo esc_url(home_url('/approach/')); ?>"><h3>Our approach</h3><p>See how we turn ambition into dependable progress.</p></a></div></div></section>
   <?php hosho_render_cta('Come soar with us','COME SOAR WITH US','','View opportunities',home_url('/job-opportunities/'),'careers-cta-flight.jpg'); ?>

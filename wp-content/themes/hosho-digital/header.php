@@ -4,6 +4,6 @@
 <header class="site-header" data-header><nav class="nav shell" aria-label="Main navigation">
   <a class="brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" aria-label="HOSHŌ DIGITAL homepage"><img src="<?php echo esc_url( hosho_asset_url( 'logo.webp' ) ); ?>" alt=""></a>
   <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation"><span></span></button>
-  <div class="primary-navigation" id="primary-navigation"><?php wp_nav_menu( array( 'theme_location'=>'primary', 'container'=>false, 'menu_class'=>'nav-links', 'fallback_cb'=>'hosho_primary_menu_fallback', 'depth'=>2 ) ); ?></div>
+  <div class="primary-navigation" id="primary-navigation"><?php hosho_primary_menu_fallback(); ?></div>
   <a class="nav-cta" href="<?php echo esc_url( $action[1] ); ?>"><?php echo esc_html( $action[0] ); ?></a>
 </nav></header>
