@@ -2345,6 +2345,16 @@ body.hosho-remade .page-hero__cta:hover .button-arrow {
 	letter-spacing: -.04em;
 }
 
+.solutions-insight__medium {
+	font-size: clamp(26px, 3.2vw, 36px);
+	font-weight: 700;
+	color: var(--navy);
+	line-height: 1;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 2px;
+}
+
 .solutions-insight__body p {
 	max-width: 640px;
 	margin: 0 auto;
@@ -2398,29 +2408,22 @@ body.hosho-remade .page-hero__cta:hover .button-arrow {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 78px;
-	height: 78px;
-	padding: 16px;
-	border-radius: 0;
-	margin: 0 auto 16px;
+	height: 52px;
+	width: auto;
+	padding: 0;
+	background: transparent;
+	margin: 0 auto 20px;
 	box-sizing: border-box;
 	flex-shrink: 0;
+	color: #0e2a47;
 	transition: margin .4s var(--ease);
 }
 
-.solutions-card__icon--ops {
-	background: rgba(93, 94, 97, .05);
-	color: #5d5e61;
-}
-
-.solutions-card__icon--cx {
-	background: rgba(185, 0, 4, .05);
-	color: var(--red-dark);
-}
-
+.solutions-card__icon--ops,
+.solutions-card__icon--cx,
 .solutions-card__icon--ex {
-	background: rgba(76, 91, 113, .05);
-	color: #4c5b71;
+	background: transparent;
+	color: #0e2a47;
 }
 
 body.hosho-remade .solutions-card h3 {
@@ -2501,23 +2504,15 @@ body.hosho-remade .solutions-card__caps>span:last-child {
 	color: white;
 }
 
-.solutions-card__link--cx {
-	border-color: var(--red-dark);
-	color: var(--red-dark);
-}
-
-.solutions-card__link--cx:hover {
-	background: var(--red-dark);
-	color: white;
-}
-
+.solutions-card__link--cx,
 .solutions-card__link--ex {
-	border-color: #4c5b71;
-	color: #4c5b71;
+	border-color: #5d5e61;
+	color: #5d5e61;
 }
 
+.solutions-card__link--cx:hover,
 .solutions-card__link--ex:hover {
-	background: #4c5b71;
+	background: #5d5e61;
 	color: white;
 }
 
@@ -2710,6 +2705,21 @@ body.hosho-remade .solutions-card:hover>p,
 }
 
 /* ── END SPEEDOMETER ── */
+
+.solutions-advantage-header {
+	margin-bottom: 48px;
+}
+
+.solutions-advantage-header h2 {
+	font-size: clamp(28px, 4vw, 44px);
+	white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+	.solutions-advantage-header h2 {
+		white-space: normal;
+	}
+}
 
 .solutions-why-grid .feature__index {
 	display: flex;
@@ -2935,19 +2945,13 @@ body.hosho-remade .solutions-card:hover>p,
 .opex-scard__desc {
 	font-size: 15px;
 	color: var(--muted);
-	margin-bottom: 24px;
+	margin-bottom: 0;
 	line-height: 1.6;
 	flex-grow: 1;
 }
 
 .opex-scard__link {
-	display: inline-flex;
-	align-items: center;
-	gap: 8px;
-	font-size: 14px;
-	font-weight: 700;
-	color: var(--red-dark);
-	transition: color .2s;
+	display: none !important;
 }
 
 .opex-scard__link:hover {
@@ -3181,6 +3185,7 @@ body.hosho-remade .solutions-card:hover>p,
 .ex-stat__source {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	gap: 12px;
 	flex-wrap: wrap;
 }
@@ -3190,11 +3195,11 @@ body.hosho-remade .solutions-card:hover>p,
 }
 
 .source-logo--hbr {
-	max-height: 40px;
+	max-height: 50px;
 }
 
 .source-logo--mit {
-	max-height: 25px;
+	max-height: 50px;
 	filter: drop-shadow(0 0 1px rgba(255, 255, 255, .95));
 }
 

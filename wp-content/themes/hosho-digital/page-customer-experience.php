@@ -13,17 +13,16 @@
 		<div class="shell">
 			<div class="intro-grid motion">
 				<div>
-					<p class="eyebrow">Customer Intelligence</p>
 					<h2>Make Every Interaction Smarter</h2>
 				</div>
 				<div class="body-copy">
-					<p>Our Customer Intelligence portfolio empowers organizations to build stronger customer relationships through intelligent sales management, AI-powered customer engagement, workflow automation, and digital workplace solutions. Every solution is designed to improve responsiveness, collaboration, and customer satisfaction.</p>
+					<p>We empower organizations to build stronger customer relationships through intelligent sales management, AI-powered customer engagement, workflow automation, and digital workplace solutions. Every solution is designed to improve responsiveness, collaboration, and customer satisfaction.</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<?php hosho_render_quote("If you do build a great experience, customers tell each other about that. Word of mouth is very powerful.", 'Jeff Bezos', 'jeff-bezos.png', 'motion'); 	?>
+	<?php hosho_render_quote("There is only one boss—the customer. And he can fire everybody in the company from the chairman on down, simply by spending his money somewhere else.", 'Sam Walton', 'sam-walton.png', 'motion'); 	?>
 
 	<section class="section opex-dual-cards">
 		<div class="shell motion">
@@ -35,13 +34,11 @@
 					<p class="opex-stat-card__body">Organizations that prioritize customer relationships, loyalty, and service quality create stronger long-term business value.</p>
 					<div class="opex-stat-card__source">
 						<img class="source-logo source-logo--hbr" src="<?php echo esc_url( hosho_asset_url( 'hbr-logo.png' ) ); ?>" alt="" aria-hidden="true">
-						<span class="source-brand">Harvard Business Review</span>
 					</div>
 					<div class="opex-stat-card__blob" aria-hidden="true"></div>
 				</div>
 
 				<div class="opex-help-card">
-					<h2 class="opex-help-card__title">How HOSH&#332; Digital Helps</h2>
 					<p class="body-copy">Our AI-powered solutions strengthen relationships by unifying customer data, automating service workflows, and enabling intelligent, proactive engagement. We help you deliver seamless experiences that turn everyday interactions into long-term customer loyalty.</p>
 				</div>
 
@@ -66,7 +63,6 @@
 							</div>
 							<h3 class="opex-scard__title">Lead Management System</h3>
 							<p class="opex-scard__desc">Sales platform capturing, scoring, and nurturing leads into qualified revenue opportunities.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -75,7 +71,6 @@
 							</div>
 							<h3 class="opex-scard__title">Opportunity Management</h3>
 							<p class="opex-scard__desc">Centralized sales platform tracking pipeline stages, deal health, and revenue forecasting.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -84,7 +79,6 @@
 							</div>
 							<h3 class="opex-scard__title">Account Management System</h3>
 							<p class="opex-scard__desc">Centralized platform providing complete customer account visibility, relationship health, and expansion.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -93,7 +87,6 @@
 							</div>
 							<h3 class="opex-scard__title">Customer Experience Management</h3>
 							<p class="opex-scard__desc">Integrated solution connecting customer journeys across sales, quotation, and billing touchpoints.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 					</div>
@@ -116,7 +109,6 @@
 							</div>
 							<h3 class="opex-scard__title">Quotation Generator</h3>
 							<p class="opex-scard__desc">AI tool automating consistent, accurate sales quotation generation using pricing rules.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -125,7 +117,6 @@
 							</div>
 							<h3 class="opex-scard__title">Intelligent Order Assistant</h3>
 							<p class="opex-scard__desc">Digital assistant streamlining order capture, product SKU validation, tracking, and fulfillment.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 					</div>
@@ -148,7 +139,6 @@
 							</div>
 							<h3 class="opex-scard__title">Intelligent Customer Service</h3>
 							<p class="opex-scard__desc">Centralized customer support platform automating ticket routing, prioritization, and SLA tracking.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -157,7 +147,6 @@
 							</div>
 							<h3 class="opex-scard__title">Intelligent Customer Service Assistant</h3>
 							<p class="opex-scard__desc">AI assistant delivering instant, personalized customer answers and smart troubleshooting guidance.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -166,7 +155,6 @@
 							</div>
 							<h3 class="opex-scard__title">iGuide</h3>
 							<p class="opex-scard__desc">AI conversational assistant enabling natural product discovery, SKU validation, and recommendations.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 					</div>
@@ -189,7 +177,6 @@
 							</div>
 							<h3 class="opex-scard__title">Customer Portal</h3>
 							<p class="opex-scard__desc">Secure self-service portal giving customers real-time access to orders, invoices, and requests.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -198,7 +185,6 @@
 							</div>
 							<h3 class="opex-scard__title">Partner Portal</h3>
 							<p class="opex-scard__desc">Collaborative platform managing partner onboarding, deal registration, resources, and channel growth.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -207,7 +193,6 @@
 							</div>
 							<h3 class="opex-scard__title">Franchise Management</h3>
 							<p class="opex-scard__desc">Centralized platform connecting franchise operations, network compliance, onboarding, and performance tracking.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 					</div>
@@ -217,7 +202,7 @@
 
 	</div>
 
-	<?php hosho_render_cta('', 'Ready to Elevate Your Customer Experience?', '', 'Contact Us', hosho_page_url('contact'), 'contact-singapore-waterfront.jpg'); ?>
+	<?php hosho_render_cta('', 'Elevate Your Customer Experience', '', 'Contact Us', hosho_page_url('contact'), 'cta-customer.jpg'); ?>
 
 </main>
 
