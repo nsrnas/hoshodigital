@@ -37,7 +37,7 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 				<div class="st-wrap solution-transform__split-inner">
 
 			<div class="st-actions">
-				<button type="button" class="st-btn is-active-saas" id="stBtnSaas">SaaS Model</button>
+				<button type="button" class="st-btn is-active-saas" id="stBtnSaas">Software as a Service</button>
 				<div class="st-divider-v"></div>
 				<button type="button" class="st-btn" id="stBtnSol">Solution as a Service</button>
 			</div>
@@ -51,8 +51,20 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 					<div>
 						<p class="st-side-desc st-side-desc--saas" id="stSaasDesc">Static tools, manual workflows, and high maintenance overhead.</p>
 						<div class="st-metrics">
-							<div class="st-metric st-metric--saas"><span class="num" id="stSaasMetric1">99</span><span class="unit">% retention</span></div>
-							<div class="st-metric st-metric--saas"><span class="num" id="stSaasMetric2">14</span><span class="unit">-day cycles</span></div>
+							<div class="st-metric st-metric--saas">
+								<span class="metric-label" id="stSaasMetric1Label">Setup Time</span>
+								<div class="metric-value">
+									<span class="num" id="stSaasMetric1">10</span>
+									<span class="unit" id="stSaasMetric1Unit">weeks</span>
+								</div>
+							</div>
+							<div class="st-metric st-metric--saas">
+								<span class="metric-label" id="stSaasMetric2Label">Hours to Maintain / Mo</span>
+								<div class="metric-value">
+									<span class="num" id="stSaasMetric2">40</span>
+									<span class="unit" id="stSaasMetric2Unit">hrs / mo</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -73,8 +85,20 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 					<div>
 						<p class="st-side-desc st-side-desc--sol" id="stSolDesc">Continuous evolution combining business expertise and intelligent technology.</p>
 						<div class="st-metrics">
-							<div class="st-metric st-metric--sol"><span class="num" id="stSolMetric1">85</span><span class="unit">% ROI</span></div>
-							<div class="st-metric st-metric--sol"><span class="num" id="stSolMetric2">25</span><span class="unit">% outcomes met</span></div>
+							<div class="st-metric st-metric--sol">
+								<span class="metric-label" id="stSolMetric1Label">Setup Time</span>
+								<div class="metric-value">
+									<span class="num" id="stSolMetric1">3</span>
+									<span class="unit" id="stSolMetric1Unit">weeks</span>
+								</div>
+							</div>
+							<div class="st-metric st-metric--sol">
+								<span class="metric-label" id="stSolMetric2Label">Hours per Month</span>
+								<div class="metric-value">
+									<span class="num" id="stSolMetric2">8</span>
+									<span class="unit" id="stSolMetric2Unit">hours</span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -116,13 +140,13 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 								<path id="arc-left" d="M 62,350 A 182,182 0 0,0 244,532" fill="none" />
 
 								<clipPath id="clip-circle-1">
-									<circle cx="340" cy="180" r="165" />
-								</clipPath>
-								<clipPath id="clip-circle-2">
-									<circle cx="442" cy="350" r="165" />
-								</clipPath>
-								<clipPath id="clip-circle-3">
-									<circle cx="238" cy="350" r="165" />
+									<circle cx="340" cy="180" r="190" />
+									</clipPath>
+									<clipPath id="clip-circle-2">
+										<circle cx="442" cy="350" r="190" />
+									</clipPath>
+									<clipPath id="clip-circle-3">
+										<circle cx="238" cy="350" r="190" />
 								</clipPath>
 
 								<filter id="vennGlow" x="-20%" y="-20%" width="140%" height="140%">
@@ -131,54 +155,48 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 							</defs>
 
 							<text class="venn-arc-label advisory-label" data-venn-id="advisory">
-								<textPath href="#arc-top" startOffset="50%" text-anchor="middle" dy="12">VALUE INNOVATION</textPath>
+								<textPath href="#arc-top" startOffset="50%" text-anchor="middle">VALUE INNOVATION</textPath>
 							</text>
 							<text class="venn-arc-label consulting-label" data-venn-id="consulting">
-								<textPath href="#arc-right" startOffset="50%" text-anchor="middle" dy="16">OPERATIONAL EFFICIENCY</textPath>
+								<textPath href="#arc-right" startOffset="50%" text-anchor="middle">OPERATIONAL EFFICIENCY</textPath>
 							</text>
 							<text class="venn-arc-label engineering-label" data-venn-id="engineering">
-								<textPath href="#arc-left" startOffset="50%" text-anchor="middle" dy="16">ENGINEERING EXCELLENCE</textPath>
+								<textPath href="#arc-left" startOffset="50%" text-anchor="middle">ENGINEERING EXCELLENCE</textPath>
 							</text>
 
-							<circle class="venn-circle venn-circle-advisory" data-venn-id="advisory" cx="340" cy="180" r="165" tabindex="0" role="button" aria-label="Solution Advisory" />
-							<circle class="venn-circle venn-circle-consulting" data-venn-id="consulting" cx="442" cy="350" r="165" tabindex="0" role="button" aria-label="Functional Consulting" />
-							<circle class="venn-circle venn-circle-engineering" data-venn-id="engineering" cx="238" cy="350" r="165" tabindex="0" role="button" aria-label="Software Engineering" />
+							<circle class="venn-circle venn-circle-advisory" data-venn-id="advisory" cx="340" cy="180" r="140" tabindex="0" role="button" aria-label="Solution Advisory" />
+							<circle class="venn-circle venn-circle-consulting" data-venn-id="consulting" cx="442" cy="350" r="140" tabindex="0" role="button" aria-label="Functional Consulting" />
+							<circle class="venn-circle venn-circle-engineering" data-venn-id="engineering" cx="238" cy="350" r="140" tabindex="0" role="button" aria-label="Software Engineering" />
 
 							<g class="venn-overlap-group">
-								<circle cx="238" cy="350" r="165" clip-path="url(#clip-circle-1)" class="venn-petal petal-3" />
-								<circle cx="340" cy="180" r="165" clip-path="url(#clip-circle-3)" class="venn-petal petal-1" />
-								<text x="292" y="255" class="venn-petal-text" transform="rotate(30, 300, 232)">Innovation</text>
+								<text x="292" y="255" class="venn-petal-text" transform="rotate(30, 280, 225)">Innovation</text>
 							</g>
 
 							<g class="venn-overlap-group">
-								<circle cx="340" cy="180" r="165" clip-path="url(#clip-circle-2)" class="venn-petal petal-1" />
-								<circle cx="442" cy="350" r="165" clip-path="url(#clip-circle-1)" class="venn-petal petal-2" />
 								<text x="390" y="255" class="venn-petal-text" transform="rotate(-30, 400, 232)">Alignment</text>
 							</g>
 
 							<g class="venn-overlap-group">
-								<circle cx="442" cy="350" r="165" clip-path="url(#clip-circle-3)" class="venn-petal petal-2" />
-								<circle cx="238" cy="350" r="165" clip-path="url(#clip-circle-2)" class="venn-petal petal-3" />
-								<text x="322" y="350" class="venn-petal-text" transform="rotate(-90, 340, 350)">Execution</text>
+								<text x="320" y="350" class="venn-petal-text" transform="rotate(-90, 340, 350)">Execution</text>
 							</g>
 
 							<g class="venn-center" aria-hidden="true">
-								<image href="<?php echo esc_url( hosho_asset_url( 'homepage/hosho-white-logo.png' ) ); ?>" x="350" y="307" width="38" height="38" transform="translate(-25, -25)" />
+								<image href="<?php echo esc_url( hosho_asset_url( 'homepage/hosho-white-logo.png' ) ); ?>" x="350" y="307" width="30" height="30" transform="translate(-25, -25)" />
 							</g>
 
 							<g class="venn-label-group advisory-label" data-venn-id="advisory">
-								<text x="340" y="114" class="venn-circle-title">Solution</text>
-								<text x="340" y="140" class="venn-circle-title">Advisory</text>
+								<text x="340" y="168" class="venn-circle-title">Solution</text>
+								<text x="340" y="194" class="venn-circle-title">Advisory</text>
 							</g>
 
 							<g class="venn-label-group consulting-label" data-venn-id="consulting">
-								<text x="486" y="352" class="venn-circle-title">Functional</text>
-								<text x="486" y="378" class="venn-circle-title">Consulting</text>
+								<text x="472" y="352" class="venn-circle-title">Functional</text>
+								<text x="472" y="378" class="venn-circle-title">Consulting</text>
 							</g>
 
 							<g class="venn-label-group engineering-label" data-venn-id="engineering">
-								<text x="194" y="352" class="venn-circle-title">Software</text>
-								<text x="194" y="378" class="venn-circle-title">Engineering</text>
+								<text x="208" y="352" class="venn-circle-title">Software</text>
+								<text x="208" y="378" class="venn-circle-title">Engineering</text>
 							</g>
 						</svg>
 					</div>
@@ -255,7 +273,7 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 
 				<article class="rapid-card">
 					<div class="rapid-card-head">
-						<span class="rapid-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M7 21V7l5-4v10l4-2v10"/></svg></span>
+						<span class="rapid-icon" aria-hidden="true"><svg width="40" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></span>
 						<h3>Bespoke AI Platform</h3>
 					</div>
 					<p class="rapid-desc">
@@ -273,7 +291,6 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 
 	<section class="partners-section">
 		<div class="container">
-			<!-- Technology Partners -->
 			<div class="partner-category-section">
 				<span class="partner-category-title">Technology Partners</span>
 				<div class="partner-logos-wrap">
@@ -282,7 +299,6 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/tech-partners/microsoft.jpg' ) ); ?>" alt="Microsoft"></div>
 						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/tech-partners/google-cloud.jpg' ) ); ?>" alt="Google Cloud"></div>
 						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/tech-partners/anthropic.jpg' ) ); ?>" alt="Anthropic"></div>
-						<!-- duplicated for a seamless infinite loop -->
 						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/tech-partners/openai.jpg' ) ); ?>" alt="OpenAI"></div>
 						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/tech-partners/microsoft.jpg' ) ); ?>" alt="Microsoft"></div>
 						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/tech-partners/google-cloud.jpg' ) ); ?>" alt="Google Cloud"></div>
@@ -291,7 +307,6 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 				</div>
 			</div>
 
-			<!-- Business Partners -->
 			<div class="partner-category-section">
 				<span class="partner-category-title">Business Partners</span>
 				<div class="partner-logos-wrap">
@@ -408,6 +423,10 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 			var stSaasMetric2 = document.getElementById('stSaasMetric2');
 			var stSolMetric1  = document.getElementById('stSolMetric1');
 			var stSolMetric2  = document.getElementById('stSolMetric2');
+			var stSaasMetric1Unit = document.getElementById('stSaasMetric1Unit');
+			var stSaasMetric2Unit = document.getElementById('stSaasMetric2Unit');
+			var stSolMetric1Unit  = document.getElementById('stSolMetric1Unit');
+			var stSolMetric2Unit  = document.getElementById('stSolMetric2Unit');
 			var stProgressSaas= document.getElementById('stProgressSaas');
 			var stLabelSaas   = document.getElementById('stLabelSaas');
 			var stLabelSol    = document.getElementById('stLabelSol');
@@ -429,10 +448,16 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 				if (stSaasDesc) stSaasDesc.style.display = p > 0.4 ? 'block' : 'none';
 				if (stSolDesc)  stSolDesc.style.display  = p < 0.6 ? 'block' : 'none';
 
-				if (stSaasMetric1) stSaasMetric1.textContent = Math.round(99 - (1 - p) * 60);
-				if (stSaasMetric2) stSaasMetric2.textContent = Math.round(14 - (1 - p) * 8);
-				if (stSolMetric1)  stSolMetric1.textContent  = Math.round((1 - p) * 340);
-				if (stSolMetric2)  stSolMetric2.textContent  = Math.round((1 - p) * 98);
+				/* Fixed comparative metrics */
+				if (stSaasMetric1) stSaasMetric1.textContent = 10;
+				if (stSaasMetric1Unit) stSaasMetric1Unit.textContent = 'weeks';
+				if (stSaasMetric2) stSaasMetric2.textContent = 40;
+				if (stSaasMetric2Unit) stSaasMetric2Unit.textContent = 'hrs / mo';
+
+				if (stSolMetric1) stSolMetric1.textContent = 3;
+				if (stSolMetric1Unit) stSolMetric1Unit.textContent = 'weeks';
+				if (stSolMetric2) stSolMetric2.textContent = 8;
+				if (stSolMetric2Unit) stSolMetric2Unit.textContent = 'hrs / mo';
 
 				if (stProgressSaas) stProgressSaas.style.width = (p * 100) + '%';
 
