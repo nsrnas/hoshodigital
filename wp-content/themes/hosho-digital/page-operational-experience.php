@@ -13,11 +13,10 @@
 		<div class="shell">
 			<div class="intro-grid motion">
 				<div>
-					<p class="eyebrow">Operational Intelligence</p>
-					<h2>Make the Business Faster, Smarter and More Efficient</h2>
+					<h2>Faster, Smarter and More Efficient</h2>
 				</div>
 				<div class="body-copy">
-					<p>Our Operational Intelligence portfolio provides digital solutions that simplify complex business operations across finance, procurement, workforce management, governance, and industry-specific processes. Each solution is designed to improve efficiency, reduce manual work, and support scalable business operations.</p>
+					<p>We provide digital solutions that simplify complex business operations across finance, procurement, workforce management, governance, and industry-specific processes. Each solution is designed to improve efficiency, reduce manual work, and support scalable business operations.</p>
 				</div>
 			</div>
 		</div>
@@ -36,13 +35,11 @@
 					<p class="opex-stat-card__body">Organizations are under increasing pressure to modernize operations, improve efficiency, and respond faster to changing business demands.</p>
 					<div class="opex-stat-card__source">
 						<img class="source-logo source-logo--mit" src="<?php echo esc_url( hosho_asset_url( 'MIT-logo.png' ) ); ?>" alt="" aria-hidden="true">
-						<span class="source-brand">MIT Sloan Management Review</span>
 					</div>
 					<div class="opex-stat-card__blob" aria-hidden="true"></div>
 				</div>
 
 				<div class="opex-help-card">
-					<h2 class="opex-help-card__title">How HOSH&#332; Digital Helps</h2>
 					<p class="body-copy">We modernize enterprise operations through intelligent automation, workflow optimization, finance, procurement, governance, and industry-specific solutions that enable organizations to operate more efficiently and scale with confidence.</p>
 				</div>
 
@@ -67,7 +64,6 @@
 							</div>
 							<h3 class="opex-scard__title">Intelligent Invoice Automation</h3>
 							<p class="opex-scard__desc">AI solution automating invoice data extraction, validation, matching, and approval workflows.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -76,7 +72,6 @@
 							</div>
 							<h3 class="opex-scard__title">Intelligent Receivables</h3>
 							<p class="opex-scard__desc">AI solution automating payment tracking, collection prioritization, and cash flow forecasting.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -85,7 +80,6 @@
 							</div>
 							<h3 class="opex-scard__title">Automated Account Receivables</h3>
 							<p class="opex-scard__desc">Automated platform streamlining invoicing, payment reconciliation, collection prioritization, and customer reminders.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -94,7 +88,6 @@
 							</div>
 							<h3 class="opex-scard__title">Budget Planner</h3>
 							<p class="opex-scard__desc">Centralized budgeting platform managing financial plans, spending variances, and cost control.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 					</div>
@@ -117,7 +110,6 @@
 							</div>
 							<h3 class="opex-scard__title">iProcure</h3>
 							<p class="opex-scard__desc">AI procurement platform managing end-to-end requisitions, vendor evaluation, and spending approvals.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -126,7 +118,6 @@
 							</div>
 							<h3 class="opex-scard__title">Intelligent Procurement Assistant</h3>
 							<p class="opex-scard__desc">AI assistant streamlining purchase requests, vendor quote comparisons, and sourcing decisions.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -135,7 +126,6 @@
 							</div>
 							<h3 class="opex-scard__title">Vendor Management</h3>
 							<p class="opex-scard__desc">Centralized platform managing supplier onboarding, contract compliance, and vendor performance monitoring.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -144,7 +134,6 @@
 							</div>
 							<h3 class="opex-scard__title">CapEx Procurement Management</h3>
 							<p class="opex-scard__desc">Centralized platform evaluating, prioritizing, and approving capital expenditure investment requests efficiently.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -153,7 +142,6 @@
 							</div>
 							<h3 class="opex-scard__title">Emergency Purchase Process Management</h3>
 							<p class="opex-scard__desc">Centralized platform managing urgent procurement requests with fast, policy-compliant approval workflows.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 					</div>
@@ -176,7 +164,6 @@
 							</div>
 							<h3 class="opex-scard__title">Single Line Diagram Reader</h3>
 							<p class="opex-scard__desc">AI tool converting electrical single line diagrams into structured digital component data.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -185,7 +172,6 @@
 							</div>
 							<h3 class="opex-scard__title">Intelligent Document Analyzer</h3>
 							<p class="opex-scard__desc">AI platform transforming unstructured enterprise documents into actionable, structured business data.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -194,7 +180,6 @@
 							</div>
 							<h3 class="opex-scard__title">License Management System</h3>
 							<p class="opex-scard__desc">Centralized platform optimizing software licenses, subscription tracking, compliance, and cost efficiency.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -203,7 +188,6 @@
 							</div>
 							<h3 class="opex-scard__title">Security Incident Management System (SIMS)</h3>
 							<p class="opex-scard__desc">Centralized platform automating security incident logging, triage, prioritization, and resolution workflows.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 					</div>
@@ -226,7 +210,6 @@
 							</div>
 							<h3 class="opex-scard__title">Intelligent Workflow Automation</h3>
 							<p class="opex-scard__desc">Intelligent automation platform orchestrating cross-department tasks, dynamic routing, and approval rules.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -235,7 +218,6 @@
 							</div>
 							<h3 class="opex-scard__title">Contract Management System</h3>
 							<p class="opex-scard__desc">Centralized platform managing complete contract lifecycles, renewal risks, and compliance obligations.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -244,7 +226,6 @@
 							</div>
 							<h3 class="opex-scard__title">Case Management</h3>
 							<p class="opex-scard__desc">Centralized platform streamlining case intake, investigation workflows, tracking, and fast resolution.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -253,7 +234,6 @@
 							</div>
 							<h3 class="opex-scard__title">iRespond</h3>
 							<p class="opex-scard__desc">AI proposal intelligence platform accelerating context-aware responses for RFPs and RFIs.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -262,7 +242,6 @@
 							</div>
 							<h3 class="opex-scard__title">iESG</h3>
 							<p class="opex-scard__desc">Centralized sustainability platform structuring ESG disclosures, evidence tracking, and audit-ready reporting.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 					</div>
@@ -285,7 +264,6 @@
 							</div>
 							<h3 class="opex-scard__title">Clinic Management System</h3>
 							<p class="opex-scard__desc">Centralized healthcare platform streamlining patient records, appointments, prescriptions, and billing workflows.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -294,7 +272,6 @@
 							</div>
 							<h3 class="opex-scard__title">Roster Management System (RMS)</h3>
 							<p class="opex-scard__desc">Intelligent system automating employee shift scheduling, availability matching, and conflict resolution.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -303,7 +280,36 @@
 							</div>
 							<h3 class="opex-scard__title">iScreen</h3>
 							<p class="opex-scard__desc">AI hiring platform screening candidates through skill assessments and transparent scoring.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
+						</article>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="opex-category-block opex-category-block--white">
+			<div class="shell motion">
+				<div class="opex-category">
+					<div class="opex-category__header">
+						<h2 class="opex-category__title">Governance, Risk &amp; Security</h2>
+						<div class="opex-category__line"></div>
+					</div>
+					<div class="opex-category__grid" style="grid-template-columns: repeat(2, 1fr);">
+
+						<article class="opex-scard">
+							<div class="opex-scard__icon">
+								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							</div>
+							<h3 class="opex-scard__title">Hosho Vault</h3>
+							<p class="opex-scard__desc">Encrypted credential management vault providing access control, password monitoring, and security.</p>
+						</article>
+
+						<article class="opex-scard">
+							<div class="opex-scard__icon">
+								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="currentColor" stroke-width="2"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							</div>
+							<h3 class="opex-scard__title">iGRC</h3>
+							<p class="opex-scard__desc">Centralized governance platform managing enterprise risk, compliance obligations, and vendor audits.</p>
 						</article>
 
 					</div>
@@ -313,7 +319,7 @@
 
 	</div>
 
-	<?php hosho_render_cta('', 'Build Smarter Operations with HOSHŌ Digital', '', 'Contact Us', hosho_page_url('contact'), 'company-urban-waterfront.jpg'); ?>
+	<?php hosho_render_cta('', 'Build Smarter Operations with HOSHŌ Digital', '', 'Contact Us', hosho_page_url('contact'), 'cta-operational.jpg'); ?>
 
 </main>
 

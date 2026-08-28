@@ -23,6 +23,7 @@ desktop.ini
 node_modules/
 vendor/
 dist/
+dist-plugin/
 build/
 coverage/
 .cache/

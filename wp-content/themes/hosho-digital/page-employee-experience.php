@@ -13,11 +13,10 @@
 		<div class="shell">
 			<div class="intro-grid motion">
 				<div>
-					<p class="eyebrow">Workforce Intelligence</p>
 					<h2>Give Your People AI-Powered Leverage</h2>
 				</div>
 				<div class="body-copy">
-					<p>Our Workforce Intelligence portfolio helps organizations create a smarter digital workplace by simplifying employee services, automating HR processes, and streamlining internal requests through intelligent enterprise solutions.</p>
+					<p>We help organizations create a smarter digital workplace by simplifying employee services, automating HR processes, and streamlining internal requests through intelligent enterprise solutions.</p>
 				</div>
 			</div>
 		</div>
@@ -33,7 +32,6 @@
 					<p class="ex-stat__body">Organizations that invest in employee engagement and workplace experience consistently achieve stronger business performance and long-term success.</p>
 					<div class="ex-stat__source">
 						<img class="source-logo source-logo--gallup" src="<?php echo esc_url( hosho_asset_url( 'gallup-logo.png' ) ); ?>" alt="" aria-hidden="true">
-						<span class="source-brand">Gallup</span>
 					</div>
 				</div>
 
@@ -45,7 +43,6 @@
 					</div>
 					<div class="ex-stat__glass">
 						<svg width="17" height="27" fill="none" viewBox="0 0 17 27"><path d="M.375 27L0 23.7l4.275-11.775c.375.35.781.644 1.219.881.437.238.906.419 1.406.544L2.775 24.675.375 27zm15.75 0l-2.4-2.325-4.125-11.325c.5-.125.969-.306 1.406-.544.438-.237.844-.531 1.219-.881L16.5 23.7 16.125 27zM8.25 12c-1.25 0-2.313-.438-3.188-1.313C4.188 9.813 3.75 8.75 3.75 7.5c0-.975.281-1.844.844-2.606A4.494 4.494 0 016.75 3.3V0h3v3.3c.875.3 1.594.831 2.156 1.594.563.762.844 1.631.844 2.606 0 1.25-.438 2.313-1.313 3.188C10.563 11.563 9.5 12 8.25 12zm0-3c.425 0 .781-.144 1.069-.431.287-.288.431-.644.431-1.069s-.144-.781-.431-1.069A1.451 1.451 0 008.25 6c-.425 0-.781.144-1.069.431A1.451 1.451 0 006.75 7.5c0 .425.144.781.431 1.069.288.287.644.431 1.069.431z" fill="#F9D2D0"/></svg>
-						<h3>How HOSH&#332; Digital Helps</h3>
 						<p>We design intelligent, consumer-grade digital experiences for internal processes, connecting siloed systems into unified workflows.</p>
 					</div>
 				</div>
@@ -56,7 +53,7 @@
 
 	<div class="opex-categories-wrapper">
 
-		<div class="opex-category-block opex-category-block--navy">
+		<div class="opex-category-block opex-category-block--white">
 			<div class="shell motion">
 				<div class="opex-category">
 					<div class="opex-category__header">
@@ -71,7 +68,6 @@
 							</div>
 							<h3 class="opex-scard__title">Human Resource Management System (HRMS)</h3>
 							<p class="opex-scard__desc">Centralized HR platform managing employee records, attendance, performance, and operational workflows.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -80,7 +76,6 @@
 							</div>
 							<h3 class="opex-scard__title">Leave Management</h3>
 							<p class="opex-scard__desc">Centralized platform streamlining employee leave requests, approval routing, and workforce availability.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -89,7 +84,6 @@
 							</div>
 							<h3 class="opex-scard__title">Timesheet Management</h3>
 							<p class="opex-scard__desc">Centralized tool capturing employee working hours, project effort, overtime, and attendance.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -98,7 +92,6 @@
 							</div>
 							<h3 class="opex-scard__title">Appraisal Management</h3>
 							<p class="opex-scard__desc">Centralized platform streamlining employee performance reviews, continuous feedback, and skill development.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -107,7 +100,6 @@
 							</div>
 							<h3 class="opex-scard__title">Employee Onboarding and Exit</h3>
 							<p class="opex-scard__desc">Centralized platform orchestrating joining formalities, access provisioning, asset handovers, and clearances.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -116,7 +108,6 @@
 							</div>
 							<h3 class="opex-scard__title">Employee Training</h3>
 							<p class="opex-scard__desc">Centralized learning platform managing training programs, skill gaps, assessments, and certifications.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -125,7 +116,6 @@
 							</div>
 							<h3 class="opex-scard__title">Employee Benefits Management</h3>
 							<p class="opex-scard__desc">Centralized platform managing employee benefit plans, eligibility validation, claims, and enrollment.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -134,7 +124,6 @@
 							</div>
 							<h3 class="opex-scard__title">Payroll Management</h3>
 							<p class="opex-scard__desc">Centralized payroll platform automating salary calculations, tax deductions, allowances, and payslips.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -143,7 +132,6 @@
 							</div>
 							<h3 class="opex-scard__title">Internship Management</h3>
 							<p class="opex-scard__desc">Centralized platform managing intern applications, onboarding, mentor matching, and performance tracking.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -152,7 +140,6 @@
 							</div>
 							<h3 class="opex-scard__title">Hiring Request Management</h3>
 							<p class="opex-scard__desc">Centralized platform managing recruitment requests, budget justifications, approvals, and workforce planning.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 					</div>
@@ -160,7 +147,7 @@
 			</div>
 		</div>
 
-		<div class="opex-category-block opex-category-block--white">
+		<div class="opex-category-block opex-category-block--navy">
 			<div class="shell motion">
 				<div class="opex-category">
 					<div class="opex-category__header">
@@ -175,7 +162,6 @@
 							</div>
 							<h3 class="opex-scard__title">Intelligent HR Assistant</h3>
 							<p class="opex-scard__desc">AI assistant delivering instant answers regarding HR policies, payroll, leave, and benefits.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -184,7 +170,6 @@
 							</div>
 							<h3 class="opex-scard__title">Intelligent Self Service Assistant</h3>
 							<p class="opex-scard__desc">AI platform enabling employees to complete routine requests and access business information.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -193,7 +178,6 @@
 							</div>
 							<h3 class="opex-scard__title">Grievance Management</h3>
 							<p class="opex-scard__desc">Centralized platform managing employee concerns, automated case routing, and transparent resolutions.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -202,7 +186,6 @@
 							</div>
 							<h3 class="opex-scard__title">Whistle-Blower Management</h3>
 							<p class="opex-scard__desc">Secure, confidential reporting platform managing misconduct cases, investigations, and compliance resolution.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -211,7 +194,6 @@
 							</div>
 							<h3 class="opex-scard__title">iTicket</h3>
 							<p class="opex-scard__desc">Centralized service desk platform automating request routing, prioritization, and internal ticketing.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 					</div>
@@ -219,7 +201,7 @@
 			</div>
 		</div>
 
-		<div class="opex-category-block opex-category-block--navy">
+		<div class="opex-category-block opex-category-block--white">
 			<div class="shell motion">
 				<div class="opex-category">
 					<div class="opex-category__header">
@@ -234,7 +216,6 @@
 							</div>
 							<h3 class="opex-scard__title">Ashistanto</h3>
 							<p class="opex-scard__desc">AI workplace assistant automating emails, calendar scheduling, reminders, and daily tasks.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -243,7 +224,6 @@
 							</div>
 							<h3 class="opex-scard__title">Travel and Expense Management</h3>
 							<p class="opex-scard__desc">Centralized platform automating travel bookings, expense submissions, policy checks, and reimbursements.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -252,7 +232,6 @@
 							</div>
 							<h3 class="opex-scard__title">Seating Management</h3>
 							<p class="opex-scard__desc">Centralized workplace platform managing desk bookings, floor plans, and office space utilization.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -261,7 +240,6 @@
 							</div>
 							<h3 class="opex-scard__title">Project Management</h3>
 							<p class="opex-scard__desc">Centralized workspace managing project timelines, task assignments, resource allocation, and budgets.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 						<article class="opex-scard">
@@ -270,39 +248,6 @@
 							</div>
 							<h3 class="opex-scard__title">Purchase Request</h3>
 							<p class="opex-scard__desc">Centralized portal managing internal purchase requests, budget validations, and approval paths.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
-						</article>
-
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="opex-category-block opex-category-block--white">
-			<div class="shell motion">
-				<div class="opex-category">
-					<div class="opex-category__header">
-						<h2 class="opex-category__title">Governance, Risk &amp; Security</h2>
-						<div class="opex-category__line"></div>
-					</div>
-					<div class="opex-category__grid" style="grid-template-columns: repeat(2, 1fr);">
-
-						<article class="opex-scard">
-							<div class="opex-scard__icon">
-								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-							</div>
-							<h3 class="opex-scard__title">Hosho Vault</h3>
-							<p class="opex-scard__desc">Encrypted credential management vault providing access control, password monitoring, and security.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
-						</article>
-
-						<article class="opex-scard">
-							<div class="opex-scard__icon">
-								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="currentColor" stroke-width="2"/><path d="M2 12h20M12 2a15.3 15.3 0 010 20M12 2a15.3 15.3 0 000 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-							</div>
-							<h3 class="opex-scard__title">iGRC</h3>
-							<p class="opex-scard__desc">Centralized governance platform managing enterprise risk, compliance obligations, and vendor audits.</p>
-							<a class="opex-scard__link" href="#">Learn More <span aria-hidden="true">&#8594;</span></a>
 						</article>
 
 					</div>
@@ -315,7 +260,7 @@
 	<?php hosho_render_quote("Take care of your employees and they'll take care of your business.", 'Richard Branson', 'richard-branson.png', 'motion'); 	?>
 
 
-	<?php hosho_render_cta('', 'Build a Better Employee Experience', '', 'Contact Us', hosho_page_url('contact'), 'employee-cta.jpg'); ?>
+	<?php hosho_render_cta('', 'Build a Better Employee Experience', '', 'Contact Us', hosho_page_url('contact'), 'cta-employee.jpg'); ?>
 
 </main>
 
