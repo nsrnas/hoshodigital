@@ -20,102 +20,66 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 	========================================================= -->
 
 	<section class="cognitive-shift">
-		<div class="container">
-			<div class="cognitive-header motion">
-				<h2 class="section-title">
-					Software Was Built to Run. Solutions Are Built to Evolve.
-				</h2>
-				<p class="section-title2">
-					From Software as a Service to Solution as a Service.
-				</p>
-				<p class="section-desc">
-					Technology shouldn't become obsolete the moment it's deployed. HOSHŌ combines business expertise, AI, automation and continuous improvement to create solutions that evolve with your business.
-				</p>
-			</div>
-			
-			<div class="solution-transform__split">
-				<div class="st-wrap solution-transform__split-inner">
 
-			<div class="st-actions">
-				<button type="button" class="st-btn is-active-saas" id="stBtnSaas">Software as a Service</button>
-				<div class="st-divider-v"></div>
-				<button type="button" class="st-btn" id="stBtnSol">Solution as a Service</button>
-			</div>
-
-			<div class="st-split-view" id="stSplitView">
-				<div class="st-side st-side--saas" id="stSideSaas">
-					<div>
-						<p class="st-side-tag st-side-tag--saas">TRADITIONAL MODEL</p>
-						<p class="st-side-heading st-side-heading--saas">Software as a Service</p>
-					</div>
-					<div>
-						<p class="st-side-desc st-side-desc--saas" id="stSaasDesc">Static tools, manual workflows, and high maintenance overhead.</p>
-						<div class="st-metrics">
-							<div class="st-metric st-metric--saas">
-								<span class="metric-label" id="stSaasMetric1Label">Setup Time</span>
-								<div class="metric-value">
-									<span class="num" id="stSaasMetric1">10</span>
-									<span class="unit" id="stSaasMetric1Unit">weeks</span>
-								</div>
-							</div>
-							<div class="st-metric st-metric--saas">
-								<span class="metric-label" id="stSaasMetric2Label">Hours to Maintain / Mo</span>
-								<div class="metric-value">
-									<span class="num" id="stSaasMetric2">40</span>
-									<span class="unit" id="stSaasMetric2Unit">hrs / mo</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="st-center-divider" id="stCenterDivider">
-					<div class="st-handle">
-						<svg width="12" height="18" viewBox="0 0 12 18" fill="none">
-							<path d="M3 2L1 9l2 7M9 2l2 7-2 7" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-						</svg>
-					</div>
-				</div>
-
-				<div class="st-side st-side--sol" id="stSideSol">
-					<div>
-						<p class="st-side-tag st-side-tag--sol">THE NEW STANDARD</p>
-						<p class="st-side-heading st-side-heading--sol">Solution as a Service</p>
-					</div>
-					<div>
-						<p class="st-side-desc st-side-desc--sol" id="stSolDesc">Continuous evolution combining business expertise and intelligent technology.</p>
-						<div class="st-metrics">
-							<div class="st-metric st-metric--sol">
-								<span class="metric-label" id="stSolMetric1Label">Setup Time</span>
-								<div class="metric-value">
-									<span class="num" id="stSolMetric1">3</span>
-									<span class="unit" id="stSolMetric1Unit">weeks</span>
-								</div>
-							</div>
-							<div class="st-metric st-metric--sol">
-								<span class="metric-label" id="stSolMetric2Label">Hours per Month</span>
-								<div class="metric-value">
-									<span class="num" id="stSolMetric2">8</span>
-									<span class="unit" id="stSolMetric2Unit">hours</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="st-progress-track">
-				<div class="st-progress-saas" id="stProgressSaas"></div>
-				<div class="st-progress-mid"></div>
-				<div class="st-progress-sol" id="stProgressSol"></div>
-			</div>
-			<div class="st-progress-labels">
-				<span class="st-label-saas" id="stLabelSaas">TRADITIONAL MODEL — 75%</span>
-				<span class="st-label-sol" id="stLabelSol">SOLUTION AS A SERVICE — 25%</span>
-			</div>
-
-			</div>
+		<div class="cognitive-header motion">
+			<h2 class="section-title">
+				Software Was Built to Run. Solutions Are Built to Evolve.
+			</h2>
+			<p class="section-title2">
+				From Software as a Service to Solution as a Service.
+			</p>
+			<p class="section-desc">
+				Technology shouldn't become obsolete the moment it's deployed. HOSHŌ combines business expertise, AI, automation and continuous improvement to create solutions that evolve with your business.
+			</p>
 		</div>
+
+		<div class="cs-split">
+			<div class="cs-panel cs-saas">
+				<div class="cs-panel-content">
+					<p class="cs-panel-eyebrow">Traditional Model</p>
+					<h3>Software<br>as a Service</h3>
+					<div class="cs-verb-wrapper">
+						<span class="cs-verb cs-verb-saas">Ships.</span>
+					</div>
+
+					<div class="cs-lines">
+						<p>Built around the product</p>
+						<p>Progress gated by versions</p>
+						<p>One roadmap for every client</p>
+						<p>You adapt to the software</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="cs-divider">
+				<div class="cs-divider-node">
+					<svg width="20" height="20" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+						<path d="M2 7h10M8 3l4 4-4 4" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</div>
+			</div>
+
+			<div class="cs-panel cs-solution">
+				<div class="cs-panel-content">
+					<p class="cs-panel-eyebrow">Evolved Model</p>
+					<h3>Solution<br>as a Service</h3>
+					<div class="cs-verb-wrapper">
+						<span class="cs-verb cs-verb-solution">Evolves.</span>
+					</div>
+
+					<div class="cs-lines">
+						<p>Built around your outcomes</p>
+						<p>Continuous, contextual growth</p>
+						<p>Shaped by your specific needs</p>
+						<p>The solution adapts to you</p>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
 	</section>
 
 	<!-- =========================================================
@@ -135,9 +99,9 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 					<div class="venn-svg-wrapper">
 						<svg viewBox="0 0 680 640" class="venn-svg" xmlns="http://www.w3.org/2000/svg" aria-label="Interactive Solution Venn Diagram">
 							<defs>
-								<path id="arc-top" d="M 155,178 A 172,172 0 0,1 525,178" fill="none" />
-								<path id="arc-right" d="M 436,532 A 182,182 0 0,0 618,350" fill="none" />
-								<path id="arc-left" d="M 62,350 A 182,182 0 0,0 244,532" fill="none" />
+								<path id="arc-top" d="M 155,200 A 172,172 0 0,1 525,200" fill="none" />
+								<path id="arc-right" d="M 436,495 A 182,182 0 0,0 618,360" fill="none" />
+								<path id="arc-left" d="M 62,360 A 182,182 0 0,0 244,495" fill="none" />
 
 								<clipPath id="clip-circle-1">
 									<circle cx="340" cy="180" r="190" />
@@ -153,16 +117,6 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 									<feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#a81c1c" flood-opacity="0.3" />
 								</filter>
 							</defs>
-
-							<text class="venn-arc-label advisory-label" data-venn-id="advisory">
-								<textPath href="#arc-top" startOffset="50%" text-anchor="middle">VALUE INNOVATION</textPath>
-							</text>
-							<text class="venn-arc-label consulting-label" data-venn-id="consulting">
-								<textPath href="#arc-right" startOffset="50%" text-anchor="middle">OPERATIONAL EFFICIENCY</textPath>
-							</text>
-							<text class="venn-arc-label engineering-label" data-venn-id="engineering">
-								<textPath href="#arc-left" startOffset="50%" text-anchor="middle">ENGINEERING EXCELLENCE</textPath>
-							</text>
 
 							<circle class="venn-circle venn-circle-advisory" data-venn-id="advisory" cx="340" cy="180" r="140" tabindex="0" role="button" aria-label="Solution Advisory" />
 							<circle class="venn-circle venn-circle-consulting" data-venn-id="consulting" cx="442" cy="350" r="140" tabindex="0" role="button" aria-label="Functional Consulting" />
@@ -181,12 +135,12 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 							</g>
 
 							<g class="venn-center" aria-hidden="true">
-								<image href="<?php echo esc_url( hosho_asset_url( 'homepage/hosho-white-logo.png' ) ); ?>" x="350" y="307" width="30" height="30" transform="translate(-25, -25)" />
+								<image href="<?php echo esc_url( hosho_asset_url( 'homepage/logo-white-nobg.png' ) ); ?>" x="350" y="307" width="30" height="30" transform="translate(-25, -25)" />
 							</g>
 
 							<g class="venn-label-group advisory-label" data-venn-id="advisory">
-								<text x="340" y="168" class="venn-circle-title">Solution</text>
-								<text x="340" y="194" class="venn-circle-title">Advisory</text>
+								<text x="340" y="140" class="venn-circle-title">Solution</text>
+								<text x="340" y="166" class="venn-circle-title">Advisory</text>
 							</g>
 
 							<g class="venn-label-group consulting-label" data-venn-id="consulting">
@@ -203,10 +157,10 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 
 					<!-- Dynamic Details Card Column -->
 					<div class="venn-details-card" id="vennDetailsCard">
+						<h3 class="details-title" id="vennTitle">Solution Advisory</h3>
 						<div class="details-card-head">
 							<span class="details-badge" id="vennCategory">Value Innovation</span>
 						</div>
-						<h3 class="details-title" id="vennTitle">Solution Advisory</h3>
 						<p class="details-desc" id="vennDesc">
 							Helps organizations identify high-impact opportunities, define business priorities, and architect AI-driven solutions aligned with strategic goals.
 						</p>
@@ -233,53 +187,45 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 	STEVE JOBS QUOTE
 	========================================================= -->
 
-	<?php hosho_render_quote( 'Innovation is the ability to see change as an opportunity, not a threat.', 'Steve Jobs', 'homepage/steve-jobs.png' ); ?>
+	<?php hosho_render_quote('<strong>Innovation is the ability <br>to see changeas <br>an opportunity, <br>not a threat.</strong>','Steve Jobs','homepage/steve-jobs.png','quote-band--standard quote-band--red-soft quote-band--masayoshi'); ?>
 
 	<!-- ==========================================
 	RAPID TO BE SPOKE
 	=========================================== -->
 
-	<section class="rapid-spectrum">
-		<div class="container">
-			<div class="rapid-header motion">
-				<h2>
-					Covering the transformation spectrum
-				</h2>
+	<section class="section">
+		<div class="shell">
+			<div class="intro-grid motion">
+				<div>
+					<h2>Covering the Transformation Spectrum</h2>
+				</div>
+				<div class="body-copy">
+					<p>Every organization sits at a different point on the AI maturity curve. HOSHŌ Digital meets you where you are with three implementation models — from rapid deployment to fully bespoke platforms.</p>
+				</div>
 			</div>
 
-			<!-- Cards -->
-			<div class="rapid-grid">
-				<article class="rapid-card">
-					<div class="rapid-card-head">
-						<span class="rapid-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 14l-1 5 5-1 8-8a8 8 0 0 0-4-4Z"/><path d="M14 5c2-2 5-3 5-3s-1 3-3 5"/><path d="M9 15l-2 2"/></svg></span>
-						<h3>Quick-Deploy AI</h3>
-					</div>
-					<p class="rapid-desc">
-						Rapid integration of ready-to-use AI modules to solve
-						immediate business bottlenecks.
-					</p>
+			<div class="solutions-cards solutions-cards--timeline">
+				<article class="solutions-card solutions-card--red motion">
+					<h3>Rapid Deployment</h3>
+					<p>Rapid integration of ready-to-use AI modules to solve immediate business bottlenecks.</p>
 				</article>
 
-				<article class="rapid-card">
-					<div class="rapid-card-head">
-						<span class="rapid-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M7 21V7l5-4v10l4-2v10"/></svg></span>
-						<h3>Integrated AI Layer</h3>
-					</div>
-					<p class="rapid-desc">
-						A middleware approach that connects existing legacy
-						systems with a unified intelligent orchestration layer.
-					</p>
+				<div class="timeline-arrow" aria-hidden="true">
+					<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+				</div>
+
+				<article class="solutions-card solutions-card--red motion">
+					<h3>Custom Solutions</h3>
+					<p>A middleware approach that connects existing legacy systems with a unified intelligent orchestration layer.</p>
 				</article>
 
-				<article class="rapid-card">
-					<div class="rapid-card-head">
-						<span class="rapid-icon" aria-hidden="true"><svg width="40" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></span>
-						<h3>Bespoke AI Platform</h3>
-					</div>
-					<p class="rapid-desc">
-						Custom-engineered AI infrastructure designed from the
-						ground up to redefine your competitive advantage.
-					</p>
+				<div class="timeline-arrow" aria-hidden="true">
+					<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+				</div>
+
+				<article class="solutions-card solutions-card--red motion">
+					<h3>Bespoke Platforms</h3>
+					<p>Custom-engineered AI infrastructure designed from the ground up to redefine your competitive advantage.</p>
 				</article>
 			</div>
 		</div>
@@ -331,222 +277,240 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 	<!-- ==========================================
 	FINAL CTA
 	=========================================== -->
-
-	<?php hosho_render_cta( '', 'Ready to Turn AI Into Value?', 'Let\'s identify where intelligence can make the biggest difference to your business.', 'Discover The Opportunity', 'page-consult-our-experts', 'homepage/cta.jpg' ); ?>
+	<?php hosho_render_cta( '', '<strong>Ready to Turn AI Into Value?</strong>', 'Let\'s identify where intelligence can make the biggest difference to your business.', 'Discover The Opportunity', hosho_page_url('consult-our-experts'), 'homepage/cta.jpg' ); ?>
 
 </main>
 
 <script>
-	(function () {
-		var section = document.querySelector('.hg-section');
-		if (section) {
-			var cards = section.querySelectorAll('.hg-flip-card');
-			cards.forEach(function (card) {
-				var hint = card.querySelector('.hg-tap-hint');
-				card.addEventListener('click', function () {
-					var wasOpen = card.classList.contains('is-open');
-					cards.forEach(function (other) {
-						other.classList.remove('is-open');
-						other.setAttribute('aria-pressed', 'false');
-						var otherHint = other.querySelector('.hg-tap-hint');
-						if (otherHint) otherHint.textContent = 'Tap to see more';
-					});
+(function () {
 
-					if (!wasOpen) {
-						card.classList.add('is-open');
-						card.setAttribute('aria-pressed', 'true');
-						if (hint) hint.textContent = 'Tap to close';
+	/* =====================================================
+	 * HACHIDAN / HG FLIP CARDS
+	 * ===================================================== */
+
+	var section = document.querySelector('.hg-section');
+
+	if (section) {
+
+		var cards = section.querySelectorAll('.hg-flip-card');
+
+		cards.forEach(function (card) {
+
+			var hint = card.querySelector('.hg-tap-hint');
+
+			card.addEventListener('click', function () {
+
+				var wasOpen = card.classList.contains('is-open');
+
+				cards.forEach(function (other) {
+
+					other.classList.remove('is-open');
+					other.setAttribute('aria-pressed', 'false');
+
+					var otherHint =
+						other.querySelector('.hg-tap-hint');
+
+					if (otherHint) {
+						otherHint.textContent = 'Tap to see more';
 					}
+
 				});
-			});
-		}
 
-		var stage = document.getElementById('hgStampStage');
-		if (stage) {
-			if ('IntersectionObserver' in window) {
-				var io = new IntersectionObserver(function (entries) {
+				if (!wasOpen) {
+
+					card.classList.add('is-open');
+					card.setAttribute('aria-pressed', 'true');
+
+					if (hint) {
+						hint.textContent = 'Tap to close';
+					}
+
+				}
+
+			});
+
+		});
+
+	}
+
+
+	/* =====================================================
+	 * HACHIDAN STAMP ANIMATION
+	 * ===================================================== */
+
+	var stage = document.getElementById('hgStampStage');
+
+	if (stage) {
+
+		if ('IntersectionObserver' in window) {
+
+			var io = new IntersectionObserver(
+				function (entries) {
+
 					entries.forEach(function (entry) {
+
 						if (entry.isIntersecting) {
+
 							stage.classList.add('is-stamped');
+
 							io.unobserve(stage);
+
 						}
+
 					});
-				}, { threshold: 0.4 });
-				io.observe(stage);
-			} else {
-				stage.classList.add('is-stamped');
-			}
-		}
-	})();
 
-	/* ===================== SOLUTION TRANSFORM INTERACTIVE PANEL ===================== */
-	(function () {
-		var ST_DIMENSIONS = [
-			{
-				label: "BUSINESS MODEL",
-				saas: { heading: "Subscription License", body: "Pay monthly for software access, regardless of whether the technology delivers any measurable business value.", stat: "$99 / seat / mo" },
-				solution: { heading: "Outcome-Based Partnership", body: "Investment is tied directly to business results. We only grow when you do. Risk and reward are shared.", stat: "Value-aligned pricing" },
-			},
-			{
-				label: "DELIVERY",
-				saas: { heading: "Feature Release Cycles", body: "Quarterly roadmap drops and changelog updates. What ships is what the vendor decides — not what you need.", stat: "14-day sprint cycles" },
-				solution: { heading: "Continuous Co-Evolution", body: "Embedded teams that adapt in real time. Automation and AI continuously improve around your operational reality.", stat: "Real-time adaptation" },
-			},
-			{
-				label: "RELATIONSHIP",
-				saas: { heading: "Vendor & Customer", body: "Ticket-based support, SLA guarantees, and account managers whose incentive is renewal, not your transformation.", stat: "NPS target: 40+" },
-				solution: { heading: "Strategic Partner", body: "Shared accountability. Co-investment in outcomes. Joint KPIs that keep both sides focused on the same goals.", stat: "Shared P&L exposure" },
-			},
-			{
-				label: "FOCUS",
-				saas: { heading: "Software Adoption", body: "Success is measured in DAU, feature usage, and retention curves — metrics that tell you about the product, not your business.", stat: "MAU: 12,400 users" },
-				solution: { heading: "Business Transformation", body: "Success is measured in revenue impact, operational efficiency, and strategic advantage — metrics that actually matter.", stat: "ROI: 340% in Year 1" },
-			},
-			{
-				label: "INTEGRATION",
-				saas: { heading: "API & Webhooks", body: "Self-serve docs, REST endpoints, and sandbox environments. Integration is your problem to solve, forever.", stat: "99.9% uptime SLA" },
-				solution: { heading: "Deep System Fusion", body: "Full-stack integration across your processes, people, and technology. No gaps, no maintenance debt, no silos.", stat: "Zero integration gaps" },
-			},
-		];
-
-		var stProgress = 0.75;
-		var stDragging = false;
-		var stRafId = null;
-
-		var stSplitView = document.getElementById('stSplitView');
-		if (stSplitView) {
-			var stSideSaas    = document.getElementById('stSideSaas');
-			var stSideSol     = document.getElementById('stSideSol');
-			var stSaasDesc    = document.getElementById('stSaasDesc');
-			var stSolDesc     = document.getElementById('stSolDesc');
-			var stSaasMetric1 = document.getElementById('stSaasMetric1');
-			var stSaasMetric2 = document.getElementById('stSaasMetric2');
-			var stSolMetric1  = document.getElementById('stSolMetric1');
-			var stSolMetric2  = document.getElementById('stSolMetric2');
-			var stSaasMetric1Unit = document.getElementById('stSaasMetric1Unit');
-			var stSaasMetric2Unit = document.getElementById('stSaasMetric2Unit');
-			var stSolMetric1Unit  = document.getElementById('stSolMetric1Unit');
-			var stSolMetric2Unit  = document.getElementById('stSolMetric2Unit');
-			var stProgressSaas= document.getElementById('stProgressSaas');
-			var stLabelSaas   = document.getElementById('stLabelSaas');
-			var stLabelSol    = document.getElementById('stLabelSol');
-			var stBtnSaas     = document.getElementById('stBtnSaas');
-			var stBtnSol      = document.getElementById('stBtnSol');
-			var stSummaryNum  = document.getElementById('stSummaryNumber');
-
-			function stClamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
-
-			function stRender() {
-				var p     = stClamp(stProgress, 0.18, 0.82);
-				var saasPct = Math.round(p * 100);
-				var solPct = 100 - saasPct;
-
-				stSideSaas.style.width   = (p * 100) + '%';
-				stSideSaas.style.opacity = 0.5 + p * 0.5;
-				stSideSol.style.opacity  = 0.4 + (1 - p) * 0.6;
-
-				if (stSaasDesc) stSaasDesc.style.display = p > 0.4 ? 'block' : 'none';
-				if (stSolDesc)  stSolDesc.style.display  = p < 0.6 ? 'block' : 'none';
-
-				/* Fixed comparative metrics */
-				if (stSaasMetric1) stSaasMetric1.textContent = 10;
-				if (stSaasMetric1Unit) stSaasMetric1Unit.textContent = 'weeks';
-				if (stSaasMetric2) stSaasMetric2.textContent = 40;
-				if (stSaasMetric2Unit) stSaasMetric2Unit.textContent = 'hrs / mo';
-
-				if (stSolMetric1) stSolMetric1.textContent = 3;
-				if (stSolMetric1Unit) stSolMetric1Unit.textContent = 'weeks';
-				if (stSolMetric2) stSolMetric2.textContent = 8;
-				if (stSolMetric2Unit) stSolMetric2Unit.textContent = 'hrs / mo';
-
-				if (stProgressSaas) stProgressSaas.style.width = (p * 100) + '%';
-
-				if (stLabelSaas) stLabelSaas.textContent = 'TRADITIONAL MODEL — ' + saasPct + '%';
-				if (stLabelSol)  stLabelSol.textContent  = 'SOLUTION AS A SERVICE — ' + solPct + '%';
-
-				if (stBtnSaas) {
-					stBtnSaas.classList.toggle('is-active-saas', p > 0.6);
-					stBtnSaas.classList.toggle('is-active-sol',  false);
+				},
+				{
+					threshold: 0.4
 				}
-				if (stBtnSol) {
-					stBtnSol.classList.toggle('is-active-sol',  p < 0.4);
-					stBtnSol.classList.toggle('is-active-saas', false);
-				}
-				if (stSummaryNum)   stSummaryNum.textContent   = solPct + '%';
-			}
-			stRender();
+			);
 
-			function stPointerToProgress(clientX) {
-				var rect = stSplitView.getBoundingClientRect();
-				return stClamp((clientX - rect.left) / rect.width, 0.18, 0.82);
-			}
+			io.observe(stage);
 
-			stSplitView.addEventListener('pointerdown', function (e) {
-				stDragging = true;
-				if (e.target.setPointerCapture && e.pointerId !== undefined) {
-					stSplitView.setPointerCapture(e.pointerId);
-				}
-			});
-			stSplitView.addEventListener('pointermove', function (e) {
-				if (!stDragging) return;
-				stProgress = stPointerToProgress(e.clientX);
-				stRender();
-			});
-			stSplitView.addEventListener('pointerup',    function () { stDragging = false; });
-			stSplitView.addEventListener('pointerleave', function () { stDragging = false; });
+		} else {
 
-			function stAnimateTo(target) {
-				if (stRafId) cancelAnimationFrame(stRafId);
-				var from = stProgress;
-				var t0 = performance.now();
-				var duration = 900;
-				(function tick(now) {
-					var t = stClamp((now - t0) / duration, 0, 1);
-					var ease = 1 - Math.pow(1 - t, 4);
-					stProgress = from + (target - from) * ease;
-					stRender();
-					if (t < 1) stRafId = requestAnimationFrame(tick);
-				})(performance.now());
-			}
+			stage.classList.add('is-stamped');
 
-			if (stBtnSaas)     stBtnSaas.addEventListener('click',     function () { stAnimateTo(0.82); });
-			if (stBtnSol)      stBtnSol.addEventListener('click',      function () { stAnimateTo(0.18); });
 		}
 
-		/* Build dimension strip rows */
-		var stStripsContainer = document.getElementById('stStrips');
-		if (stStripsContainer) {
-			ST_DIMENSIONS.forEach(function (dim) {
-				var row = document.createElement('div');
-				row.className = 'st-strip-row';
-				row.innerHTML =
-					'<div class="st-strip-grid">' +
-						'<div class="st-strip-col">' +
-							'<p class="st-strip-label st-strip-label--left">' + dim.label + '</p>' +
-							'<p class="st-strip-heading st-strip-heading--left">' + dim.saas.heading + '</p>' +
-							'<p class="st-strip-body">' + dim.saas.body + '</p>' +
-							'<span class="st-strip-stat st-strip-stat--left">' + dim.saas.stat + '</span>' +
-						'</div>' +
-						'<div class="st-strip-arrow-col">' +
-							'<div class="st-arrow-line"></div>' +
-							'<div class="st-arrow-box">' +
-								'<svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 6h8M7 3l3 3-3 3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>' +
-							'</div>' +
-							'<div class="st-arrow-line"></div>' +
-						'</div>' +
-						'<div class="st-strip-col st-right-col">' +
-							'<p class="st-strip-label st-strip-label--right">THE NEW WAY</p>' +
-							'<p class="st-strip-heading st-strip-heading--right">' + dim.solution.heading + '</p>' +
-							'<p class="st-strip-body st-strip-body--right">' + dim.solution.body + '</p>' +
-							'<span class="st-strip-stat st-strip-stat--right">' + dim.solution.stat + '</span>' +
-						'</div>' +
-					'</div>';
-				row.addEventListener('mouseenter', function () { row.classList.add('is-active'); });
-				row.addEventListener('mouseleave', function () { row.classList.remove('is-active'); });
-				stStripsContainer.appendChild(row);
+	}
+
+
+	/* =====================================================
+	 * COGNITIVE SHIFT
+	 * SaaS → Solution as a Service
+	 * ===================================================== */
+
+	var cognitiveShift =
+		document.querySelector('.cognitive-shift');
+
+	if (!cognitiveShift) {
+		return;
+	}
+
+
+	/* =====================================================
+	 * HERO ANIMATION
+	 * ===================================================== */
+
+	var heroElements =
+		cognitiveShift.querySelectorAll('.cs-hero-animate');
+
+	if (heroElements.length) {
+
+		setTimeout(function () {
+
+			heroElements.forEach(function (element) {
+
+				element.classList.add('cs-visible');
+
 			});
+
+		}, 80);
+
+	}
+
+
+	/* =====================================================
+	 * VERB ROTATION
+	 * ===================================================== */
+
+	var pairs = [
+
+		{
+			saas: 'Ships.',
+			sol: 'Evolves.'
+		},
+
+		{
+			saas: 'Scales.',
+			sol: 'Adapts.'
+		},
+
+		{
+			saas: 'Runs.',
+			sol: 'Transforms.'
+		},
+
+		{
+			saas: 'Deploys.',
+			sol: 'Compounds.'
+		},
+
+		{
+			saas: 'Repeats.',
+			sol: 'Grows.'
 		}
-	})();
+
+	];
+
+
+	var saasVerb =
+		cognitiveShift.querySelector('.cs-verb-saas');
+
+	var solutionVerb =
+		cognitiveShift.querySelector('.cs-verb-solution');
+
+
+	var pairIndex = 0;
+
+
+	if (saasVerb && solutionVerb) {
+
+		setInterval(function () {
+
+			/*
+			 * Fade out
+			 */
+
+			saasVerb.style.opacity = '0';
+			saasVerb.style.transform =
+				'translateY(-16px)';
+
+			solutionVerb.style.opacity = '0';
+			solutionVerb.style.transform =
+				'translateY(16px)';
+
+
+			/*
+			 * Change words
+			 */
+
+			setTimeout(function () {
+
+				pairIndex =
+					(pairIndex + 1) % pairs.length;
+
+
+				saasVerb.textContent =
+					pairs[pairIndex].saas;
+
+				solutionVerb.textContent =
+					pairs[pairIndex].sol;
+
+
+				/*
+				 * Fade in
+				 */
+
+				saasVerb.style.opacity = '1';
+
+				saasVerb.style.transform =
+					'translateY(0)';
+
+
+				solutionVerb.style.opacity = '1';
+
+				solutionVerb.style.transform =
+					'translateY(0)';
+
+			}, 460);
+
+		}, 2700);
+
+	}
+
+})();
 </script>
 
 <?php
