@@ -40,7 +40,6 @@ function hosho_header_action() {
     'terms-of-use'   => array( 'Contact us', hosho_page_url( 'contact' ) ),
     'cookies'        => array( 'Contact us', hosho_page_url( 'contact' ) ),
     'careers' => array( 'View opportunities', home_url( '/job-opportunities/' ) ), 'esg' => array( 'Our commitments', '#commitments' ), 'sustainability' => array( 'Our commitments', '#commitments' ),
-    'media' => array( 'Media contact', '#main-content' ), 'press' => array( 'Media contact', '#main-content' ), 'contact' => array( 'Get in touch', '#contact-form' ),
     'company' => array( 'Get in touch', hosho_page_url( 'contact' ) ), 'ai-quick-win' => array( 'Register interest', 'https://hoshodigital.com/ai-quick-win-form/' ),
     'eci' => array( 'Register interest', 'https://hoshodigital.com/eci-form/' ),
     'solutions' => array( 'Get in touch', hosho_page_url( 'contact' ) ),
@@ -161,7 +160,7 @@ function hosho_render_quote( $quote, $name, $image, $class = '' ) { ?>
   <section class="quote-band <?php echo esc_attr( $class ); ?>">
     <div class="quote-band__copy motion">
       <span class="quote-band__mark" aria-hidden="true">&ldquo;</span>
-      <blockquote><?php echo esc_html( $quote ); ?></blockquote>
+      <blockquote><?php echo wp_kses_post( $quote ); ?></blockquote>
       <cite><?php echo esc_html( $name ); ?> </cite>
     </div>
     <div class="quote-band__portrait"><img loading="lazy" decoding="async" src="<?php echo esc_url( hosho_asset_url( $image ) ); ?>" alt="Portrait of <?php echo esc_attr( $name ); ?>"></div>
