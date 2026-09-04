@@ -18485,3 +18485,52 @@ body.page-press .press-contact__intro .lede {
 		grid-template-columns: 1fr;
 	}
 }
+
+/* WordPress runtime isolation.
+ * The production site runs Astra and several Elementor add-ons. Keep their
+ * generic page/container rules from shrinking or offsetting the custom pages.
+ */
+html:has(body.hosho-remade) {
+	margin: 0 !important;
+	padding: 0 !important;
+	font-size: 100% !important;
+}
+
+body.hosho-remade {
+	width: 100% !important;
+	max-width: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	color: var(--ink) !important;
+	background: var(--paper) !important;
+	font-family: "Inter", "Arimo", Arial, sans-serif !important;
+	font-size: 16px !important;
+	line-height: 1.6 !important;
+}
+
+body.hosho-remade :where(*, *::before, *::after) {
+	box-sizing: border-box;
+}
+
+body.hosho-remade > .site-header,
+body.hosho-remade > .site-main,
+body.hosho-remade > .site-footer {
+	width: 100% !important;
+	max-width: none !important;
+	margin-inline: 0 !important;
+}
+
+body.hosho-remade > .site-main {
+	display: block !important;
+	padding: 0 !important;
+	overflow: clip;
+}
+
+body.hosho-remade :where(h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd) {
+	margin-top: 0;
+}
+
+body.hosho-remade img {
+	display: block;
+	max-width: 100%;
+}
