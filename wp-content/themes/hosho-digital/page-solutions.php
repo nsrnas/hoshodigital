@@ -90,34 +90,34 @@
   <section class="section"><div class="shell"><div class="solutions-advantage-header motion"><h2>The HOSHŌ DIGITAL Advantage</h2></div>
     <div class="editorial-grid solutions-why-grid">
       <article class="feature" style="grid-column:span 4">
-        <span class="feature__index"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 20V15.7C2.05 14.833 1.313 13.821.788 12.663.263 11.504 0 10.283 0 9 0 6.5.875 4.375 2.625 2.625 4.375.875 6.5 0 9 0 11.083 0 12.929.613 14.538 1.838 16.146 3.063 17.192 4.658 17.675 6.625L18.975 11.75C19.058 12.067 19 12.354 18.8 12.613 18.6 12.871 18.333 13 18 13H16V16C16 16.55 15.804 17.021 15.413 17.413 15.021 17.804 14.55 18 14 18H12V20H10V16H14V11H16.7L15.75 7.125C15.367 5.608 14.55 4.375 13.3 3.425 12.05 2.475 10.617 2 9 2 7.067 2 5.417 2.675 4.05 4.025 2.683 5.375 2 7.017 2 8.95 2 9.95 2.204 10.9 2.613 11.8 3.021 12.7 3.6 13.5 4.35 14.2L5 14.8V20H3Z" fill="currentColor"/></svg></span>
-        <h3>AI-Powered Core</h3>
-        <p>Machine learning is baked into every module, providing predictive insights and automated logic.</p>
+        <span class="feature__index"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <h3>Outcome-Anchored Guarantee</h3>
+        <p>True to our name (保証), every initiative is tied to explicit business KPIs and provable commercial value before capital is deployed.</p>
       </article>
       <article class="feature" style="grid-column:span 4">
-        <span class="feature__index"><svg width="20" height="10" viewBox="0 0 20 10" fill="none"><path d="M9 10H5C3.617 10 2.438 9.513 1.463 8.538.488 7.563 0 6.383 0 5 0 3.617.488 2.438 1.463 1.463 2.438.488 3.617 0 5 0H9V2H5C4.167 2 3.458 2.292 2.875 2.875 2.292 3.458 2 4.167 2 5 2 5.833 2.292 6.542 2.875 7.125 3.458 7.708 4.167 8 5 8H9V10ZM6 6V4H14V6H6ZM11 10V8H15C15.833 8 16.542 7.708 17.125 7.125 17.708 6.542 18 5.833 18 5 18 4.167 17.708 3.458 17.125 2.875 16.542 2.292 15.833 2 15 2H11V0H15C16.383 0 17.563.488 18.538 1.463 19.513 2.438 20 3.617 20 5 20 6.383 19.513 7.563 18.538 8.538 17.563 9.513 16.383 10 15 10H11Z" fill="currentColor"/></svg></span>
-        <h3>Fully Integrated</h3>
-        <p>Pre-built connectors for industry-standard ERPs, CRMs, and legacy enterprise stacks.</p>
+        <span class="feature__index"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1"/></svg></span>
+        <h3>Gated Transformation Governance</h3>
+        <p>Disciplined phase-gate milestones with embedded InfoSec and compliance charters mitigate execution risk before engineering begins.</p>
       </article>
       <article class="feature" style="grid-column:span 4">
-        <span class="feature__index"><svg width="15" height="22" viewBox="0 0 15 22" fill="none"><path d="M2 22C1.45 22 .979 21.804.588 21.413.196 21.021 0 20.55 0 20V2C0 1.45.196.979.588.588.979.196 1.45 0 2 0H12C12.55 0 13.021.196 13.413.588 13.804.979 14 1.45 14 2V5.1C14.3 5.217 14.542 5.4 14.725 5.65 14.908 5.9 15 6.183 15 6.5V8.5C15 8.817 14.908 9.1 14.725 9.35 14.542 9.6 14.3 9.783 14 9.9V20C14 20.55 13.804 21.021 13.413 21.413 13.021 21.804 12.55 22 12 22H2ZM2 20H12V2H2V20ZM6.05 14L11 9.05 9.6 7.65 6.05 11.2 4.65 9.8 3.25 11.2 6.05 14Z" fill="currentColor"/></svg></span>
-        <h3>Enterprise Security</h3>
-        <p>SOC 2 Type II compliant with end-to-end encryption and regional data sovereignty.</p>
+        <span class="feature__index"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 12 10 5 10-5"/><path d="m2 17 10 5 10-5"/></svg></span>
+        <h3>Legacy-Preserving Modernization</h3>
+        <p>We orchestrate an Intelligent Digital Core on top of existing enterprise stacks (ERP/CRM) without high-risk rip-and-replace projects.</p>
       </article>
       <article class="feature" style="grid-column:span 4">
-        <span class="feature__index"><svg width="16" height="20" viewBox="0 0 16 20" fill="none"><path d="M6.55 16.2L11.725 10H7.725L8.45 4.325 3.825 11H7.3L6.55 16.2ZM4 20L5 13H0L9 0H11L10 8H16L6 20H4Z" fill="currentColor"/></svg></span>
-        <h3>Rapid Deployment</h3>
-        <p>Low-code/No-code tools allow for fast configuration and immediate ROI for stakeholders.</p>
+        <span class="feature__index"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.5 2v6h-6"/><path d="M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg></span>
+        <h3>Adaptive Solution-as-a-Service</h3>
+        <p>Moving beyond static software, our tailored solutions continuously evolve alongside your dynamic business strategies and operational scale.</p>
       </article>
       <article class="feature" style="grid-column:span 4">
-        <span class="feature__index"><svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M0 18V16L2 14V18H0ZM4 18V12L6 10V18H4ZM8 18V10L10 12.025V18H8ZM12 18V12.025L14 10.025V18H12ZM16 18V8L18 6V18H16ZM0 12.825V10L7 3 11 7 18 0V2.825L11 9.825 7 5.825 0 12.825Z" fill="currentColor"/></svg></span>
-        <h3>Real-Time Data</h3>
-        <p>Streaming analytics ensure you are acting on data that is seconds old, not days.</p>
+        <span class="feature__index"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="3"/><circle cx="5" cy="18" r="3"/><circle cx="19" cy="18" r="3"/><path d="M12 8v4"/><path d="M9.5 15.5 7 17"/><path d="M14.5 15.5 17 17"/><path d="M8 18h8"/></svg></span>
+        <h3>Full-Spectrum Triad Synergy</h3>
+        <p>Unifying strategic advisory, functional domain consulting, and bespoke engineering to bridge the corporate execution gap.</p>
       </article>
       <article class="feature" style="grid-column:span 4">
-        <span class="feature__index"><svg width="20" height="18" viewBox="0 0 20 18" fill="none"><path d="M9 18V16H17V8.9C17 6.95 16.321 5.296 14.963 3.938 13.604 2.579 11.95 1.9 10 1.9 8.05 1.9 6.396 2.579 5.038 3.938 3.679 5.296 3 6.95 3 8.9V15H2C1.45 15 .979 14.804.588 14.413.196 14.021 0 13.55 0 13V11C0 10.65.088 10.321.263 10.013.438 9.704.683 9.458 1 9.275L1.075 7.95C1.208 6.817 1.538 5.767 2.063 4.8 2.588 3.833 3.246 2.992 4.038 2.275 4.829 1.558 5.738 1 6.763.6 7.788.2 8.867 0 10 0 11.133 0 12.208.2 13.225.6 14.242 1 15.15 1.554 15.95 2.263 16.75 2.971 17.408 3.808 17.925 4.775 18.442 5.742 18.775 6.792 18.925 7.925L19 9.225C19.317 9.375 19.563 9.6 19.738 9.9 19.913 10.2 20 10.517 20 10.85V13.15C20 13.483 19.913 13.8 19.738 14.1 19.563 14.4 19.317 14.625 19 14.775V16C19 16.55 18.804 17.021 18.413 17.413 18.021 17.804 17.55 18 17 18H9Z" fill="currentColor"/></svg></span>
-        <h3>Strategic Support</h3>
-        <p>Dedicated transformation partners to guide your roadmap and ensure adoption success.</p>
+        <span class="feature__index"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>
+        <h3>Active Drift & Model Longevity</h3>
+        <p>Continuous 24/7 telemetry and model drift guardrails ensure enterprise AI systems gain value over time rather than suffering performance decay.</p>
       </article>
     </div>
   </div></section>
