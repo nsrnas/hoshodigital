@@ -1,4 +1,4 @@
-﻿<?php get_header(); ?>
+<?php get_header(); ?>
 
 <main id="main-content">
 	<?php
@@ -42,6 +42,20 @@
 					<p class="body-copy">Our AI-powered solutions strengthen relationships by unifying customer data, automating service workflows, and enabling intelligent, proactive engagement. We help you deliver seamless experiences that turn everyday interactions into long-term customer loyalty.</p>
 				</div>
 
+			</div>
+		</div>
+	<section class="section solutions-intro-callout">
+		<div class="shell motion">
+			<div class="solutions-intro-callout__inner">
+				<div class="solutions-intro-callout__content">
+					<h2 class="solutions-intro-callout__title">Examples of Our Customer Intelligence Solutions</h2>
+					<p class="solutions-intro-callout__desc">
+						Below are selected highlights from our portfolio. Looking for bespoke customer engagement platforms, specialized CRM integrations, or additional customer intelligence solutions? <strong>Reach out to our team</strong> and tell us about your specific business needs.
+					</p>
+				</div>
+				<div class="solutions-intro-callout__action">
+					<a href="<?php echo esc_url( hosho_page_url( 'contact' ) ); ?>" class="button button--red">Tell Us About Your Needs &rarr;</a>
+				</div>
 			</div>
 		</div>
 	</section>
