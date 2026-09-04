@@ -1,12 +1,12 @@
 param(
-  [string]$Version = '1.6.7',
+  [string]$Version = '1.7.1',
   [string]$PythonExecutable = ''
 )
 
 $ErrorActionPreference = 'Stop'
 $repo = Split-Path -Parent $PSScriptRoot
 $theme = Join-Path $repo 'wp-content\themes\hosho-digital'
-$sourcePlugin = Join-Path $repo 'wordpress-stage-v166\hosho-remade-pages'
+$sourcePlugin = Join-Path $repo 'wordpress-stage-v170\hosho-remade-pages'
 $stageRoot = Join-Path $repo ('wordpress-stage-v' + ($Version -replace '\.', ''))
 $pluginRoot = Join-Path $stageRoot 'hosho-remade-pages'
 $uploadRoot = Join-Path $repo 'upload-material'
@@ -169,7 +169,7 @@ foreach ($assetRoot in $assetRoots) {
     if ($asset.Extension.ToLowerInvariant() -notin @('.avif', '.gif', '.jpeg', '.jpg', '.png', '.svg', '.webp')) { continue }
     $relative = $asset.FullName.Substring($rootPath.Length).TrimStart('\', '/').Replace('\', '/')
     if ($copiedAssets.ContainsKey($relative)) { continue }
-    if (-not $sourceText.Contains($relative, [StringComparison]::OrdinalIgnoreCase)) { continue }
+    if ($sourceText.IndexOf($relative, [StringComparison]::OrdinalIgnoreCase) -lt 0) { continue }
 
     $destination = Join-Path $imageTarget ($relative.Replace('/', '\'))
     $destinationDirectory = Split-Path -Parent $destination
@@ -195,6 +195,53 @@ if ($missingAssets.Count -gt 0) {
   throw ('Referenced assets are missing from the package: ' + (($missingAssets | Sort-Object -Unique) -join ', '))
 }
 
+# Fail closed when the generated package has lost a core stylesheet, runtime
+# hook, or template call. This prevents a valid-looking ZIP that renders as
+# unstyled WordPress markup.
+$cssPath = Join-Path $pluginRoot 'assets\css\hosho-remade.css'
+$jsPath = Join-Path $pluginRoot 'assets\js\site.js'
+$headerPath = Join-Path $pluginRoot 'templates\header.php'
+$footerPath = Join-Path $pluginRoot 'templates\footer.php'
+$requiredFiles = @($pluginFile, $cssPath, $jsPath, $headerPath, $footerPath)
+foreach ($requiredFile in $requiredFiles) {
+  if (-not (Test-Path -LiteralPath $requiredFile -PathType Leaf)) {
+    throw "Required plugin file is missing: $requiredFile"
+  }
+}
+
+$cssFile = Get-Item -LiteralPath $cssPath
+if ($cssFile.Length -lt 300000) {
+  throw "Generated stylesheet is unexpectedly small ($($cssFile.Length) bytes): $cssPath"
+}
+
+$generatedCss = Get-Content -Raw -LiteralPath $cssPath
+$requiredSelectors = @(
+  'body.hosho-remade',
+  '.site-header',
+  '.page-hero',
+  'body.page-company .company-why',
+  '.site-footer'
+)
+foreach ($selector in $requiredSelectors) {
+  if ($generatedCss.IndexOf($selector, [StringComparison]::Ordinal) -lt 0) {
+    throw "Required selector is missing from generated stylesheet: $selector"
+  }
+}
+
+$generatedPlugin = Get-Content -Raw -LiteralPath $pluginFile
+foreach ($runtimeMarker in @('filemtime( $css_path )', 'nocache_headers()', "do_action( 'litespeed_purge_all' )")) {
+  if ($generatedPlugin.IndexOf($runtimeMarker, [StringComparison]::Ordinal) -lt 0) {
+    throw "Required WordPress runtime hardening is missing: $runtimeMarker"
+  }
+}
+
+if ((Get-Content -Raw -LiteralPath $headerPath).IndexOf('wp_head()', [StringComparison]::Ordinal) -lt 0) {
+  throw 'Generated header template is missing wp_head().'
+}
+if ((Get-Content -Raw -LiteralPath $footerPath).IndexOf('wp_footer()', [StringComparison]::Ordinal) -lt 0) {
+  throw 'Generated footer template is missing wp_footer().'
+}
+
 if (-not $PythonExecutable) {
   $pythonCommand = Get-Command python -ErrorAction SilentlyContinue
   if ($pythonCommand) {
@@ -213,6 +260,21 @@ if ($PythonExecutable -and (Test-Path -LiteralPath $PythonExecutable)) {
 
 if (Test-Path -LiteralPath $zipPath) { Remove-Item -LiteralPath $zipPath -Force }
 Compress-Archive -LiteralPath $pluginRoot -DestinationPath $zipPath -CompressionLevel Optimal
+
+$zipEntries = [IO.Compression.ZipFile]::OpenRead($zipPath)
+try {
+  $entryNames = @($zipEntries.Entries | ForEach-Object { $_.FullName.Replace('\', '/') })
+  $invalidRoots = @($entryNames | Where-Object { $_ -and -not $_.StartsWith('hosho-remade-pages/', [StringComparison]::OrdinalIgnoreCase) })
+  if ($invalidRoots.Count -gt 0) {
+    throw ('ZIP contains entries outside the single plugin root: ' + ($invalidRoots -join ', '))
+  }
+  $entryPoint = 'hosho-remade-pages/hosho-remade-pages.php'
+  if ($entryNames -notcontains $entryPoint) {
+    throw "ZIP plugin entry point is missing: $entryPoint"
+  }
+} finally {
+  $zipEntries.Dispose()
+}
 
 [PSCustomObject]@{
   Version = $Version
