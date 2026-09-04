@@ -327,7 +327,7 @@ get_header();
 	QUOTE
 	========================================================= -->
 
-	<?php hosho_render_quote( 'Without tradition, art is a flock of sheep without a shepherd. Without innovation, it is a corpse.', 'Winston Churchill', 'approach\ai\churcill.png', 'quote-band--red' ); ?>
+	<?php hosho_render_quote( '<strong>Without tradition, <br>art is a flock of sheep <br>without a shepherd.<br> Without innovation, <br>it is a corpse.</strong>', 'Winston Churchill', 'approach\ai\churcill.png', 'quote-band--red' ); ?>
 
 	<!-- =========================================================
 	DESIGNED FOR OUTCOMES
@@ -407,7 +407,7 @@ get_header();
 	FINAL CTA
 	========================================================= -->
 
-	<?php hosho_render_cta( '', 'AI Should Strengthen Your Business. Not Complicate It.', 'Let\'s find where AI can create measurable advantage.', 'Build Your AI Strategy', home_url( '/contact' ), 'approach/ai/cta.jpg' ); ?>
+	<?php hosho_render_cta( '', '<strong>AI Should Strengthen Your Business. Not Complicate It.</strong>', 'Let\'s find where AI can create measurable advantage.', 'Build Your AI Strategy', home_url( '/contact' ), 'approach/ai/cta.jpg' ); ?>
 
 </main>
 <?php

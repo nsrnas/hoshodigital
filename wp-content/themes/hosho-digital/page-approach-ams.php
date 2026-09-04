@@ -243,7 +243,7 @@ get_header();
 	QUOTE
 	========================================================= -->
 
-	<?php hosho_render_quote( 'Continuous improvement is better than delayed perfection.', 'Mark Twain', 'approach/ams/twain.png' ); ?>
+	<?php hosho_render_quote( '<strong>Continuous improvement <br>is better than delayed <br>perfection.</strong>', 'Mark Twain', 'approach/ams/twain.png' ); ?>
 
 	<!-- =========================================================
 	CORE COMPETENCIES
@@ -420,7 +420,7 @@ get_header();
 	FINAL CTA
 	========================================================= -->
 
-	<?php hosho_render_cta( '', 'Go Live. Then Get Better.', 'Keep your AI working, improving and creating value.', 'Build Your Advantage', home_url( '/contact' ), 'approach/ams/cta.jpg' ); ?>
+	<?php hosho_render_cta( '', '<strong>Go Live. Then Get Better.</strong>', 'Keep your AI working, improving and creating value.', 'Build Your Advantage', home_url( '/contact' ), 'approach/ams/cta.jpg' ); ?>
 
 </main>
 <?php

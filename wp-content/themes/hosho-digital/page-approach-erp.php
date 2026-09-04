@@ -323,7 +323,7 @@ get_header();
 	QUOTE
 	========================================================= -->
 
-	<?php hosho_render_quote( "It's not the strongest or the most intelligent who survive, but those most adaptable to change.", 'Charles Darwin', 'approach/erp/charles-darwin.png', 'quote-band--red' ); ?>
+	<?php hosho_render_quote( "<strong>It's not the strongest <br>or the most intelligent <br>who survive, but those <br>most adaptable to change.<strong>", 'Charles Darwin', 'approach/erp/charles-darwin.png', 'quote-band--red' ); ?>
 
 	<!-- =========================================================
 	THE OPTIMIZED OUTCOME
@@ -399,7 +399,7 @@ get_header();
 	FINAL CTA
 	========================================================= -->
 
-	<?php hosho_render_cta( '', 'ALREADY USING BUSINESS CENTRAL?<br>LET\'S UNLOCK ITS FULL<br> POTENTIAL TOGETHER.', '', 'Start Your Partnership', home_url( '/contact' ), 'approach/erp/cta.jpg' ); ?>
+	<?php hosho_render_cta( '', '<strong>ALREADY USING BUSINESS CENTRAL?<br>LET\'S UNLOCK ITS FULL<br> POTENTIAL TOGETHER.</strong>', '', 'Start Your Partnership', home_url( '/contact' ), 'approach/erp/cta.jpg' ); ?>
 
 </main>
 <?php

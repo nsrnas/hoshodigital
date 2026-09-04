@@ -79,7 +79,7 @@ get_header();
 	TOYODA QUOTE
 	========================================================= -->
 
-	<?php hosho_render_quote( "Before you say you can't do something… try it.", 'Sakichi Toyoda', 'approach/optimization/sakichi-toyoda.png' ); ?>
+	<?php hosho_render_quote( "<strong>Before you say you <br>can't do something… <br>try it.</strong>", 'Sakichi Toyoda', 'approach/optimization/sakichi-toyoda.png' ); ?>
 
 	<!-- =========================================================
 	ERP TEASER
@@ -102,7 +102,7 @@ get_header();
 	FINAL CTA
 	========================================================= -->
 
-	<?php hosho_render_cta( '', 'READY TO OPTIMIZE YOUR AI SPEND?', '', 'Speak to Us', home_url( '/contact' ), 'approach/optimization/cta.jpg' ); ?>
+	<?php hosho_render_cta( '', '<strong>READY TO OPTIMIZE YOUR AI SPEND?</strong>', '', 'Speak to Us', home_url( '/contact' ), 'approach/optimization/cta.jpg' ); ?>
 
 </main>
 

@@ -4,7 +4,6 @@
     <div class="shell">
       <div class="press-contact__intro motion">
         <div>
-          <p class="eyebrow">HOSHŌ DIGITAL</p>
           <h1>Media contact.</h1>
         </div>
         <p class="lede">For interview requests, company information and other media enquiries, contact Himari S.</p>
@@ -36,12 +35,6 @@
           <a class="press-contact__email" href="mailto:media@hoshodigital.com">media@hoshodigital.com</a>
         </div>
 
-        <address class="press-contact__address">
-          <strong>HOSHŌ DIGITAL Pte. Ltd.</strong>
-          <span>60 Paya Lebar Road</span>
-          <span>#06-28 Paya Lebar Square</span>
-          <span>Singapore 409051</span>
-        </address>
       </div>
     </div>
   </section>
