@@ -323,7 +323,7 @@ get_header();
 	QUOTE
 	========================================================= -->
 
-	<?php hosho_render_quote( "<strong>It's not the strongest <br>or the most intelligent <br>who survive, but those <br>most adaptable to change.<strong>", 'Charles Darwin', 'approach/erp/charles-darwin.png', 'quote-band--red' ); ?>
+	<?php hosho_render_quote( "<strong>It's not the strongest <br>or the most intelligent <br>who survive, but those <br>most adaptable to change.<strong>", 'Charles Darwin', 'approach/erp/charles-darwin.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi' ); ?>
 
 	<!-- =========================================================
 	THE OPTIMIZED OUTCOME

@@ -79,7 +79,7 @@ get_header();
 	TOYODA QUOTE
 	========================================================= -->
 
-	<?php hosho_render_quote( "<strong>Before you say you <br>can't do something… <br>try it.</strong>", 'Sakichi Toyoda', 'approach/optimization/sakichi-toyoda.png' ); ?>
+	<?php hosho_render_quote( "<strong>Before you say you <br>can't do something… <br>try it.</strong>", 'Sakichi Toyoda', 'approach/optimization/sakichi-toyoda.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi' ); ?>
 
 	<!-- =========================================================
 	ERP TEASER
@@ -94,7 +94,7 @@ get_header();
 				run your business. See how our ERP approach turns that cost
 				discipline into a genuine operational advantage.
 			</p>
-			<a href="<?php echo esc_url(home_url('/erp')); ?>" class="btn-red">Explore Our ERP Approach</a>
+			<a href="<?php echo esc_url(home_url('/erp')); ?>" class="button">Explore Our ERP Approach</a>
 		</div>
 	</section>
 

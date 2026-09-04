@@ -243,7 +243,7 @@ get_header();
 	QUOTE
 	========================================================= -->
 
-	<?php hosho_render_quote( '<strong>Continuous improvement <br>is better than delayed <br>perfection.</strong>', 'Mark Twain', 'approach/ams/twain.png' ); ?>
+	<?php hosho_render_quote( '<strong>Continuous improvement <br>is better than delayed <br>perfection.</strong>', 'Mark Twain', 'approach/ams/twain.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi' ); ?>
 
 	<!-- =========================================================
 	CORE COMPETENCIES

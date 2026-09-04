@@ -127,8 +127,8 @@
     </div>
   </div></section>
 
-  <?php hosho_render_quote( 'The value of an idea lies in the using of it.', 'Thomas Edison', 'thomas-edison.png' ); ?>
+  <?php hosho_render_quote( '<strong>The value of an idea <br>lies in the using of it.</strong>', 'Thomas Edison', 'thomas-edison.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi' ); ?>
 
-  <?php hosho_render_cta( 'Start your transformation', 'What would your business do with intelligence?', "Let's find out.", 'Explore Your Opportunities', hosho_page_url( 'contact' ), 'cta-solutions.jpg' ); ?>
+  <?php hosho_render_cta( 'Start your transformation', '<strong>What would your business do with intelligence?</strong>', "Let's find out.", 'Explore Your Opportunities', hosho_page_url( 'contact' ), 'cta-solutions.jpg' ); ?>
 </main>
 <?php get_footer(); ?>

@@ -14,7 +14,6 @@ $route_map = array(
     '/'                      => array('page' => 'front-page',          'file' => 'front-page.php'),
     'careers'                => array('page' => 'careers',             'file' => 'page-careers.php'),
     'esg'                    => array('page' => 'esg',                 'file' => 'page-sustainability.php'),
-    'sustainability'         => array('page' => 'sustainability',      'file' => 'page-sustainability.php'),
     'media'                  => array('page' => 'media',               'file' => 'page-press.php'),
     'press'                  => array('page' => 'press',               'file' => 'page-press.php'),
     'contact'                => array('page' => 'contact',             'file' => 'page-contact.php'),

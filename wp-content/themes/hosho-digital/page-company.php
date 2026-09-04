@@ -93,7 +93,7 @@
     </div>
   </section>
 
-  <?php hosho_render_quote( 'Change is the very essence of life. The moment we cease to change, to be able to adapt, to adjust, to respond effectively to new situations, then we have begun to die.', 'Lee Kuan Yew', 'lee-kuan-yew-editorial-v2.png', 'quote-band--standard quote-band--balanced quote-band--lee' ); ?>
+  <?php hosho_render_quote( '<strong>Change is the very essence of life. <br>The moment we cease to change, <br>to be able to adapt, to adjust, <br>to respond effectively to new situations, <br>then we have begun to die.</strong>', 'Lee Kuan Yew', 'lee-kuan-yew-editorial-v2.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi' ); ?>
 
   <section class="section company-standard">
     <div class="shell">
@@ -138,7 +138,6 @@
     </div>
   </section>
 
-  <section class="section-sm"><div class="shell stat-grid"><article class="stat"><strong>3</strong><p>Locations</p></article><article class="stat"><strong>60+</strong><p>Colleagues</p></article><article class="stat"><strong>6</strong><p>Nationalities</p></article></div></section>
-  <?php hosho_render_cta( 'Your digital guarantee', 'TURN POTENTIAL INTO PROGRESS.', '', 'Get in touch', hosho_page_url( 'contact' ), 'quickwin-digital-landscape.jpg' ); ?>
+  <?php hosho_render_cta( 'Your digital guarantee', '<strong>TURN POTENTIAL INTO PROGRESS.</strong>', '', 'Get in touch', hosho_page_url( 'contact' ), 'quickwin-digital-landscape.jpg' ); ?>
 </main>
 <?php get_footer(); ?>

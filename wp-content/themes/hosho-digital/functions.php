@@ -35,13 +35,15 @@ function hosho_body_classes( $classes ) { $classes[] = 'hosho-remade'; $classes[
 add_filter( 'body_class', 'hosho_body_classes' );
 function hosho_header_action() {
   $actions = array(
-    'privacy-policy' => array( 'Contact us', hosho_page_url( 'contact' ) ),
-    'accessibility'  => array( 'Contact us', hosho_page_url( 'contact' ) ),
-    'terms-of-use'   => array( 'Contact us', hosho_page_url( 'contact' ) ),
-    'cookies'        => array( 'Contact us', hosho_page_url( 'contact' ) ),
-    'careers' => array( 'View opportunities', home_url( '/job-opportunities/' ) ), 'esg' => array( 'Our commitments', '#commitments' ), 'sustainability' => array( 'Our commitments', '#commitments' ),
-    'company' => array( 'Get in touch', hosho_page_url( 'contact' ) ), 'ai-quick-win' => array( 'Register interest', 'https://hoshodigital.com/ai-quick-win-form/' ),
-    'eci' => array( 'Register interest', 'https://hoshodigital.com/eci-form/' ),
+    'privacy-policy' => array( 'Get in touch', hosho_page_url( 'contact' ) ),
+    'accessibility'  => array( 'Get in touch', hosho_page_url( 'contact' ) ),
+    'terms-of-use'   => array( 'Get in touch', hosho_page_url( 'contact' ) ),
+    'cookies'        => array( 'Get in touch', hosho_page_url( 'contact' ) ),
+    'careers' => array( 'Get in touch', hosho_page_url( 'contact' ) ),
+    'esg' => array( 'Get in touch', hosho_page_url( 'contact' ) ), 
+    'company' => array( 'Get in touch', hosho_page_url( 'contact' ) ), 
+    'ai-quick-win' => array( 'Get in touch', hosho_page_url( 'contact' ) ),
+    'eci' => array( 'Get in touch', hosho_page_url( 'contact' ) ),
     'solutions' => array( 'Get in touch', hosho_page_url( 'contact' ) ),
     'operational-experience' => array( 'Get in touch', hosho_page_url( 'contact' ) ),
     'customer-experience' => array( 'Get in touch', hosho_page_url( 'contact' ) ),

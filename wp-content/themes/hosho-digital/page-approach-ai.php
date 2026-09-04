@@ -327,7 +327,7 @@ get_header();
 	QUOTE
 	========================================================= -->
 
-	<?php hosho_render_quote( '<strong>Without tradition, <br>art is a flock of sheep <br>without a shepherd.<br> Without innovation, <br>it is a corpse.</strong>', 'Winston Churchill', 'approach\ai\churcill.png', 'quote-band--red' ); ?>
+	<?php hosho_render_quote( '<strong>Without tradition, <br>art is a flock of sheep <br>without a shepherd.<br> Without innovation, <br>it is a corpse.</strong>', 'Winston Churchill', 'approach\ai\churcill.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi' ); ?>
 
 	<!-- =========================================================
 	DESIGNED FOR OUTCOMES

@@ -1,4 +1,4 @@
-﻿<?php get_header(); ?>
+<?php get_header(); ?>
 
 <main id="main-content">
 	<?php
@@ -23,7 +23,7 @@
 	</section>
 
 	<?php
-	hosho_render_quote("The advance of technology is based on making it fit in so that you don't really even notice it.", 'Bill Gates', 'bill-gates.png', 'motion'); ?>
+	hosho_render_quote("<strong>The advance of technology <br>is based on making it fit in <br>so that you don't really even notice it.</strong>", 'Bill Gates', 'bill-gates.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi'); ?>
 
 	<section class="section opex-dual-cards">
 		<div class="shell motion">
@@ -319,7 +319,7 @@
 
 	</div>
 
-	<?php hosho_render_cta('', 'Build Smarter Operations with HOSHŌ Digital', '', 'Contact Us', hosho_page_url('contact'), 'cta-operational.jpg'); ?>
+	<?php hosho_render_cta('', '<strong>Build Smarter Operations with HOSHŌ Digital</strong>', '', 'Contact Us', hosho_page_url('contact'), 'cta-operational.jpg'); ?>
 
 </main>
 

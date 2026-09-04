@@ -1,4 +1,4 @@
-﻿<?php get_header(); ?>
+<?php get_header(); ?>
 
 <main id="main-content">
 	<?php
@@ -22,7 +22,7 @@
 		</div>
 	</section>
 
-	<?php hosho_render_quote("There is only one boss—the customer. And he can fire everybody in the company from the chairman on down, simply by spending his money somewhere else.", 'Sam Walton', 'sam-walton.png', 'motion'); 	?>
+	<?php hosho_render_quote("<strong>There is only one boss—the customer. <br>And he can fire everybody in the company <br>from the chairman on down, <br>simply by spending his money somewhere else.</strong>", 'Sam Walton', 'sam-walton.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi'); 	?>
 
 	<section class="section opex-dual-cards">
 		<div class="shell motion">
@@ -202,7 +202,7 @@
 
 	</div>
 
-	<?php hosho_render_cta('', 'Elevate Your Customer Experience', '', 'Contact Us', hosho_page_url('contact'), 'cta-customer.jpg'); ?>
+	<?php hosho_render_cta('', '<strong>Elevate Your Customer Experience</strong>', '', 'Contact Us', hosho_page_url('contact'), 'cta-customer.jpg'); ?>
 
 </main>
 
