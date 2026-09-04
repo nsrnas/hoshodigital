@@ -7,7 +7,7 @@ function hosho_pages() {
     'privacy-policy' => 'Privacy Policy', 'accessibility' => 'Accessibility Statement', 'terms-of-use' => 'Terms of Use', 'cookies' => 'Cookies Policy',
     'careers' => 'Careers', 'esg' => 'ESG', 'sustainability' => 'ESG', 'media' => 'Media', 'press' => 'Media',
     'contact' => 'Contact', 'company' => 'Company', 'ai-quick-win' => 'AI Quick Win', 'eci' => 'Enterprise Compute Initiative',
-    'solutions' => 'Solutions', 'operational-experience' => 'Operational Intelligence', 'customer-experience' => 'Customer Intelligence', 'employee-experience' => 'Workforce Intelligence',
+    'solutions' => 'Solutions', 'operational-intelligence' => 'Operational Intelligence', 'customer-intelligence' => 'Customer Intelligence', 'workforce-intelligence' => 'Workforce Intelligence', 'operational-experience' => 'Operational Intelligence', 'customer-experience' => 'Customer Intelligence', 'employee-experience' => 'Workforce Intelligence',
     'approach' => 'Approach', 'innovation' => 'Innovation', 'assurance' => 'Assurance', 'erp' => 'ERP', 'optimization' => 'Optimization', 'ai' => 'AI', 'strategy-session' => 'Strategy Session',
   );
 }
@@ -45,6 +45,9 @@ function hosho_header_action() {
     'ai-quick-win' => array( 'Get in touch', hosho_page_url( 'contact' ) ),
     'eci' => array( 'Get in touch', hosho_page_url( 'contact' ) ),
     'solutions' => array( 'Get in touch', hosho_page_url( 'contact' ) ),
+    'operational-intelligence' => array( 'Get in touch', hosho_page_url( 'contact' ) ),
+    'customer-intelligence' => array( 'Get in touch', hosho_page_url( 'contact' ) ),
+    'workforce-intelligence' => array( 'Get in touch', hosho_page_url( 'contact' ) ),
     'operational-experience' => array( 'Get in touch', hosho_page_url( 'contact' ) ),
     'customer-experience' => array( 'Get in touch', hosho_page_url( 'contact' ) ),
     'employee-experience' => array( 'Get in touch', hosho_page_url( 'contact' ) ),
@@ -74,9 +77,9 @@ function hosho_navigation_items() {
       'label' => 'Solutions',
       'slug' => 'solutions',
       'children' => array(
-        array( 'label' => 'Operational Intelligence', 'slug' => 'operational-experience' ),
-        array( 'label' => 'Customer Intelligence', 'slug' => 'customer-experience' ),
-        array( 'label' => 'Workforce Intelligence', 'slug' => 'employee-experience' ),
+        array( 'label' => 'Operational Intelligence', 'slug' => 'operational-intelligence', 'aliases' => array( 'operational-experience' ) ),
+        array( 'label' => 'Customer Intelligence', 'slug' => 'customer-intelligence', 'aliases' => array( 'customer-experience' ) ),
+        array( 'label' => 'Workforce Intelligence', 'slug' => 'workforce-intelligence', 'aliases' => array( 'employee-experience' ) ),
       ),
     ),
     array(
@@ -169,7 +172,7 @@ function hosho_render_quote( $quote, $name, $image, $class = '' ) { ?>
   </section><?php
 }
 function hosho_render_cta( $eyebrow, $title, $body, $label, $url, $image ) { ?>
-  <?php $concise = empty( $body ) || in_array( hosho_current_page(), array( 'careers', 'sustainability', 'press', 'contact', 'company', 'ai-quick-win', 'eci', 'solutions', 'operational-experience', 'customer-experience', 'employee-experience', 'innovation', 'front-page', 'assurance', 'approach', 'erp' ), true ); ?>
+  <?php $concise = empty( $body ) || in_array( hosho_current_page(), array( 'careers', 'sustainability', 'press', 'contact', 'company', 'ai-quick-win', 'eci', 'solutions', 'operational-intelligence', 'customer-intelligence', 'workforce-intelligence', 'operational-experience', 'customer-experience', 'employee-experience', 'innovation', 'front-page', 'assurance', 'approach', 'erp' ), true ); ?>
   <section class="cta-panel<?php echo $concise ? ' cta-panel--concise' : ''; ?>" style="background-image:url('<?php echo esc_url( hosho_asset_url( $image ) ); ?>')"><div class="cta-panel__inner shell motion">
     <?php if ( $concise ) : ?><h2><?php echo wp_kses_post( $title ); ?></h2><?php if(!empty($body)) : ?><p><?php echo esc_html( $body ); ?></p><?php endif; ?><a class="button" href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $label ); ?><span class="button-arrow" aria-hidden="true"></span></a><?php else : ?><p class="eyebrow"><?php echo esc_html( $eyebrow ); ?></p><h2><?php echo wp_kses_post( $title ); ?></h2><p><?php echo esc_html( $body ); ?></p><a class="button" href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $label ); ?><span class="button-arrow" aria-hidden="true"></span></a><?php endif; ?></div></section><?php
 }

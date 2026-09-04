@@ -2804,27 +2804,29 @@ body.hosho-remade .page-hero__cta:hover .button-arrow {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 40px 32px;
-	border-radius: 0;
+	padding: 44px 32px;
+	border-radius: 8px;
 	background: white;
-	border: 1px solid rgba(232, 189, 182, .6);
-	box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
+	border-top: 4px solid var(--red-dark, #b90004);
+	border-left: 1px solid rgba(226, 28, 21, .25);
+	border-right: 1px solid rgba(226, 28, 21, .25);
+	border-bottom: 1px solid rgba(226, 28, 21, .25);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, .08), 0 2px 6px rgba(0, 0, 0, .04);
 	min-height: 0;
 	overflow: hidden;
 	cursor: pointer;
-	transition: transform .4s var(--ease), box-shadow .4s var(--ease), border-color .4s var(--ease), padding .4s var(--ease);
+	transition: transform .4s cubic-bezier(.2, 1, .3, 1), box-shadow .4s cubic-bezier(.2, 1, .3, 1), border-color .4s, padding .4s var(--ease);
 }
 
 .solutions-card:hover {
-	transform: translateY(-8px);
-	box-shadow: 0 20px 48px rgba(0, 0, 0, .12);
-	border-color: rgba(185, 0, 4, .3);
+	transform: translateY(-12px) scale(1.015);
+	box-shadow: 0 24px 50px rgba(185, 0, 4, .25), 0 8px 20px rgba(0, 0, 0, .12);
+	border-color: var(--red-dark, #b90004);
 	align-items: stretch;
 	justify-content: flex-start;
-	padding: 36px 32px;
+	padding: 38px 32px;
 }
 
-/* Icon + Title: always visible, centered by default */
 .solutions-card__icon {
 	display: flex;
 	align-items: center;
@@ -2833,6 +2835,8 @@ body.hosho-remade .page-hero__cta:hover .button-arrow {
 	width: auto;
 	padding: 0;
 	background: transparent;
+	border: none;
+	border-radius: 0;
 	margin: 0 auto 20px;
 	box-sizing: border-box;
 	flex-shrink: 0;
@@ -2840,19 +2844,43 @@ body.hosho-remade .page-hero__cta:hover .button-arrow {
 	transition: margin .4s var(--ease);
 }
 
+.solutions-card:hover .solutions-card__icon {
+	background: transparent;
+	color: #0e2a47;
+	transform: none;
+}
+
+.solutions-card__icon svg {
+	display: block;
+	height: auto;
+	width: auto;
+	max-width: 52px;
+	max-height: 48px;
+}
+
 .solutions-card__icon--ops,
 .solutions-card__icon--cx,
 .solutions-card__icon--ex {
 	background: transparent;
+	border: none;
 	color: #0e2a47;
 }
 
+.solutions-pillars-title,
+body.hosho-remade .solutions-pillars-title {
+	font-size: clamp(24px, 2.8vw, 36px) !important;
+	font-weight: 700;
+	line-height: 1.3;
+}
+
 body.hosho-remade .solutions-card h3 {
-	font-size: 24px;
-	font-weight: 600;
+	font-size: clamp(26px, 2.2vw, 30px);
+	font-weight: 700;
+	letter-spacing: -.02em;
+	line-height: 1.25;
 	margin-bottom: 0;
-	color: #1a1c1d !important;
-	-webkit-text-fill-color: #1a1c1d !important;
+	color: #0e2a47 !important;
+	-webkit-text-fill-color: #0e2a47 !important;
 	text-align: center;
 	transition: margin .4s var(--ease);
 }
@@ -3040,10 +3068,11 @@ body.hosho-remade .solutions-card:hover>p,
 /* ── SPEEDOMETER SECTION ── */
 
 .speedo-layout {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: clamp(48px, 6vw, 96px);
+	display: flex;
+	flex-direction: column;
 	align-items: center;
+	text-align: center;
+	gap: clamp(36px, 4vw, 56px);
 }
 
 .speedo-gauge {
@@ -3052,7 +3081,8 @@ body.hosho-remade .solutions-card:hover>p,
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	max-width: 380px;
+	width: 100%;
+	max-width: 560px;
 	margin: 0 auto;
 }
 
@@ -3085,43 +3115,35 @@ body.hosho-remade .solutions-card:hover>p,
 
 .speedo-counter {
 	position: absolute;
-	bottom: -12px;
+	bottom: -6px;
 	left: 50%;
 	transform: translateX(-50%);
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 2px;
-}
-
-.speedo-number {
-	font-size: clamp(48px, 6vw, 72px);
-	font-weight: 800;
-	color: var(--navy, #0e2a47);
-	letter-spacing: -.03em;
-	line-height: 1;
 }
 
 .speedo-unit {
-	font-size: 14px;
-	font-weight: 600;
+	font-size: clamp(16px, 2.5vw, 22px);
+	font-weight: 800;
 	text-transform: uppercase;
-	letter-spacing: .1em;
-	color: var(--muted, #6b7280);
-	margin-top: 4px;
+	letter-spacing: .15em;
+	color: var(--navy, #0e2a47);
 }
 
 .speedo-copy {
-	max-width: 520px;
+	max-width: 720px;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .speedo-copy h2 {
-	font-size: clamp(28px, 3.5vw, 42px);
+	font-size: clamp(30px, 4vw, 44px);
 	font-weight: 700;
 	color: var(--navy, #0e2a47);
 	line-height: 1.2;
-	margin-bottom: 20px;
+	margin-bottom: 16px;
 }
 
 .speedo-copy h2 strong {
@@ -3129,10 +3151,10 @@ body.hosho-remade .solutions-card:hover>p,
 }
 
 .speedo-body {
-	font-size: 18px;
+	font-size: 19px;
 	color: var(--muted, #6b7280);
 	line-height: 1.7;
-	margin-bottom: 32px;
+	margin-bottom: 0;
 }
 
 .speedo-timeline {
@@ -3162,14 +3184,8 @@ body.hosho-remade .solutions-card:hover>p,
 }
 
 @media (max-width: 768px) {
-	.speedo-layout {
-		grid-template-columns: 1fr;
-		gap: 40px;
-		text-align: center;
-	}
-
 	.speedo-gauge {
-		max-width: 300px;
+		max-width: 340px;
 	}
 
 	.speedo-copy {
@@ -3696,20 +3712,72 @@ body.hosho-remade .solutions-card:hover>p,
 }
 
 .source-logo--mckinsey {
-	max-height: 30px;
+	max-height: 40px;
 }
 
 .source-logo--hbr {
-	max-height: 50px;
+	max-height: 60px;
 }
 
 .source-logo--mit {
-	max-height: 50px;
-	filter: drop-shadow(0 0 1px rgba(255, 255, 255, .95));
+	max-height: 60px;
+	filter: none;
 }
 
 .source-logo--gallup {
-	max-height: 50px;
+	max-height: 40px;
+}
+
+/* Solutions Intro Header (Clean, No Box) */
+.solutions-intro-callout {
+	padding: 56px 0 32px;
+}
+
+.solutions-intro-callout__inner {
+	background: transparent;
+	border: none;
+	padding: 0;
+	border-radius: 0;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 32px;
+	box-shadow: none;
+}
+
+.solutions-intro-callout__content {
+	max-width: 760px;
+}
+
+.solutions-intro-callout__title {
+	font-size: clamp(26px, 3vw, 36px);
+	font-weight: 700;
+	color: #0e2a47 !important;
+	margin-bottom: 12px;
+	line-height: 1.25;
+}
+
+.solutions-intro-callout__desc {
+	font-size: 17px;
+	line-height: 1.65;
+	color: #4c5b71;
+	margin-bottom: 0;
+}
+
+.solutions-intro-callout__desc strong {
+	color: #0e2a47;
+}
+
+.solutions-intro-callout__action {
+	flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+	.solutions-intro-callout__inner {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0;
+	}
 }
 
 .ex-stat__right {

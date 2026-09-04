@@ -45,6 +45,20 @@
 
 			</div>
 		</div>
+	<section class="section solutions-intro-callout">
+		<div class="shell motion">
+			<div class="solutions-intro-callout__inner">
+				<div class="solutions-intro-callout__content">
+					<h2 class="solutions-intro-callout__title">Examples of Our Operational Intelligence Solutions</h2>
+					<p class="solutions-intro-callout__desc">
+						Below are selected highlights from our portfolio. Looking for custom enterprise automation, tailored workflow integrations, or additional operational intelligence solutions? <strong>Reach out to our team</strong> and tell us about your specific business needs.
+					</p>
+				</div>
+				<div class="solutions-intro-callout__action">
+					<a href="<?php echo esc_url( hosho_page_url( 'contact' ) ); ?>" class="button button--red">Tell Us About Your Needs &rarr;</a>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<div class="opex-categories-wrapper">
