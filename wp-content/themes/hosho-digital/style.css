@@ -18402,6 +18402,35 @@ body.page-press .press-contact__intro .lede {
   line-height: 1 !important;
 }
 
+/* Shared CTA typography: keep every page aligned with the ECI CTA. */
+body .cta-panel.cta-panel .cta-panel__title {
+  max-width: 980px;
+  font-family: "Poppins", "Helvetica Neue", Arial, sans-serif !important;
+  font-size: clamp(48px, 6.4vw, 92px) !important;
+  font-weight: 700 !important;
+  letter-spacing: -.055em !important;
+  line-height: .98 !important;
+  text-transform: uppercase !important;
+}
+
+body .cta-panel.cta-panel--concise .cta-panel__title {
+  margin: 0;
+}
+
+body .cta-panel.cta-panel .cta-panel__title strong {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+}
+
+@media (max-width: 991px) {
+  body .cta-panel.cta-panel .cta-panel__title {
+    font-size: clamp(40px, 12vw, 58px) !important;
+  }
+}
+
 /* ===== Japanese House: image left, hoverable label cards right ===== */
 
 .japanese-house-card {
