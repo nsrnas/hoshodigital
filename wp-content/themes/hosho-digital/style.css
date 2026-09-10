@@ -2995,47 +2995,47 @@ body.hosho-remade .solutions-card__caps>span:last-child {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	gap: 10px;
-	padding: 16px 24px;
+	gap: 0;
+	width: 100%;
+	min-height: 48px;
+	padding: 0 24px !important;
 	margin-top: auto;
-	border: 1px solid #5d5e61;
+	background: var(--red, #e21c15) !important;
+	border: 1px solid var(--red, #e21c15) !important;
 	border-radius: 0;
-	font-size: 14px;
-	font-weight: 700;
-	color: #5d5e61;
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: .02em;
+	color: white !important;
+	-webkit-text-fill-color: white !important;
 	opacity: 0;
 	max-height: 0;
 	overflow: hidden;
 	transform: translateY(12px);
-	transition: opacity .3s var(--ease) .1s, transform .3s var(--ease) .1s, max-height .4s var(--ease) .1s, background .2s, color .2s, border-color .2s, padding .4s var(--ease) .1s;
-	padding-top: 0;
-	padding-bottom: 0;
+	transition: opacity .3s var(--ease) .1s, transform .3s var(--ease) .1s, max-height .4s var(--ease) .1s, background-color .25s var(--ease), color .25s var(--ease), border-color .25s var(--ease);
 }
 
-.solutions-card__link:hover {
-	background: #5d5e61;
-	color: white;
+.solutions-card:hover .solutions-card__link {
+	opacity: 1;
+	max-height: 60px;
+	transform: translateY(0);
 }
 
-.solutions-card__link--cx,
-.solutions-card__link--ex {
-	border-color: #5d5e61;
-	color: #5d5e61;
+.solutions-card__link:hover,
+body.hosho-remade .solutions-card__link:hover {
+	background: white !important;
+	border-color: var(--red, #e21c15) !important;
+	color: var(--red, #e21c15) !important;
+	-webkit-text-fill-color: var(--red, #e21c15) !important;
 }
 
-.solutions-card__link--cx:hover,
-.solutions-card__link--ex:hover {
-	background: #5d5e61;
-	color: white;
-}
-
-.solutions-card__link span {
-	font-size: 16px;
+body.hosho-remade .solutions-card__link .button-arrow {
+	margin-left: 8px !important;
 	transition: transform .25s var(--ease);
 }
 
-.solutions-card__link:hover span {
-	transform: translate(3px, -3px);
+body.hosho-remade .solutions-card__link:hover .button-arrow {
+	transform: translate(3px, -3px) rotate(-45deg) !important;
 }
 
 /* --- HOVER STATE: Expand card and reveal content --- */
@@ -3303,22 +3303,33 @@ body.hosho-remade .solutions-card:hover>p,
 	border-bottom: 4px solid var(--red-dark);
 }
 
+.opex-stat-card__headline {
+	font-size: 22px;
+	font-weight: 500;
+	color: white;
+	line-height: 1.4;
+	margin-bottom: 20px;
+}
+
 .opex-stat-card__number {
 	font-size: clamp(64px, 8vw, 84px);
 	font-weight: 700;
 	color: var(--red);
 	line-height: 1;
-	margin-bottom: 24px;
+	display: inline-block;
+	margin-inline: 6px;
+	margin-bottom: 0;
 	letter-spacing: -.03em;
+	vertical-align: baseline;
 }
 
 .opex-stat-card__heading {
+	display: inline;
 	font-size: 22px;
 	font-weight: 500;
 	color: white;
 	line-height: 1.4;
-	margin-bottom: 16px;
-	text-wrap: balance;
+	margin-bottom: 0;
 }
 
 .opex-stat-card__body {
@@ -3727,15 +3738,15 @@ body.hosho-remade .solutions-card:hover>p,
 }
 
 .source-logo--mckinsey {
-	max-height: 40px;
+	max-height: 60px;
 }
 
 .source-logo--hbr {
-	max-height: 60px;
+	max-height: 80px;
 }
 
 .source-logo--mit {
-	max-height: 60px;
+	max-height: 80px;
 	filter: none;
 }
 
@@ -19321,6 +19332,35 @@ body.page-press .press-contact__intro .lede {
 	letter-spacing: -0.045em !important;
 	text-transform: uppercase !important;
 	line-height: 1 !important;
+}
+
+/* Shared CTA typography: keep every page aligned with the ECI CTA. */
+body .cta-panel.cta-panel .cta-panel__title {
+  max-width: 980px;
+  font-family: "Poppins", "Helvetica Neue", Arial, sans-serif !important;
+  font-size: clamp(48px, 6.4vw, 92px) !important;
+  font-weight: 700 !important;
+  letter-spacing: -.055em !important;
+  line-height: .98 !important;
+  text-transform: uppercase !important;
+}
+
+body .cta-panel.cta-panel--concise .cta-panel__title {
+  margin: 0;
+}
+
+body .cta-panel.cta-panel .cta-panel__title strong {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+}
+
+@media (max-width: 991px) {
+  body .cta-panel.cta-panel .cta-panel__title {
+    font-size: clamp(40px, 12vw, 58px) !important;
+  }
 }
 
 /* ===== Japanese House: image left, hoverable label cards right ===== */

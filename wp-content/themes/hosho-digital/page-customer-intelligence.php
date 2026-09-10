@@ -1,4 +1,4 @@
-﻿<?php get_header(); ?>
+<?php get_header(); ?>
 
 <main id="main-content">
 	<?php
@@ -29,8 +29,9 @@
 			<div class="opex-dual-cards__wrapper">
 
 				<div class="opex-stat-card">
-					<h2 class="opex-stat-card__number"><span data-count-up data-count-end="5" data-count-suffix="x">5x</span> to <span data-count-up data-count-end="25" data-count-suffix="x">25x</span></h2>
-					<h3 class="opex-stat-card__heading">Acquiring a new customer can cost 5 to 25 times more than retaining an existing one.</h3>
+					<h2 class="opex-stat-card__headline">
+						Acquiring a new customer can cost <span class="opex-stat-card__number"><span data-count-up data-count-end="5" data-count-suffix="x">5x</span> to <span data-count-up data-count-end="25" data-count-suffix="x">25x</span></span> more than retaining an existing one.
+					</h2>
 					<p class="opex-stat-card__body">Organizations that prioritize customer relationships, loyalty, and service quality create stronger long-term business value.</p>
 					<div class="opex-stat-card__source">
 						<img class="source-logo source-logo--hbr" src="<?php echo esc_url( hosho_asset_url( 'hbr-logo.png' ) ); ?>" alt="" aria-hidden="true">

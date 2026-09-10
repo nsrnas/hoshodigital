@@ -24,7 +24,7 @@
         </div>
         <h3>Operational Intelligence</h3>
         <p>Make the business faster, smarter and more efficient through connected operations, intelligent automation, and enterprise-wide process optimization.</p>
-        <a href="<?php echo esc_url( hosho_page_url( 'operational-intelligence' ) ); ?>" class="solutions-card__link">Explore Solutions <span aria-hidden="true">&#8599;</span></a>
+        <a href="<?php echo esc_url( hosho_page_url( 'operational-intelligence' ) ); ?>" class="button button--red solutions-card__link">Explore Solutions <span class="button-arrow" aria-hidden="true"></span></a>
       </article>
       <article class="solutions-card solutions-card--cx motion">
         <div class="solutions-card__icon solutions-card__icon--cx">
@@ -33,7 +33,7 @@
         </div>
         <h3>Customer Intelligence</h3>
         <p>Make every interaction smarter through predictive engagement, AI-powered service, and connected sales processes.</p>
-        <a href="<?php echo esc_url( hosho_page_url( 'customer-intelligence' ) ); ?>" class="solutions-card__link solutions-card__link--cx">Explore Solutions <span aria-hidden="true">&#8599;</span></a>
+        <a href="<?php echo esc_url( hosho_page_url( 'customer-intelligence' ) ); ?>" class="button button--red solutions-card__link">Explore Solutions <span class="button-arrow" aria-hidden="true"></span></a>
       </article>
       <article class="solutions-card solutions-card--ex motion">
         <div class="solutions-card__icon solutions-card__icon--ex">
@@ -42,7 +42,7 @@
         </div>
         <h3>Workforce Intelligence</h3>
         <p>Give your people AI-powered leverage with digital workplace solutions that simplify HR processes, collaboration, and everyday work.</p>
-        <a href="<?php echo esc_url( hosho_page_url( 'workforce-intelligence' ) ); ?>" class="solutions-card__link solutions-card__link--ex">Explore Solutions <span aria-hidden="true">&#8599;</span></a>
+        <a href="<?php echo esc_url( hosho_page_url( 'workforce-intelligence' ) ); ?>" class="button button--red solutions-card__link">Explore Solutions <span class="button-arrow" aria-hidden="true"></span></a>
       </article>
     </div>
   </div></section>
@@ -87,7 +87,7 @@
     </div>
   </section>
 
-  <section class="section"><div class="shell"><div class="solutions-advantage-header motion"><h2>The HOSHŌ DIGITAL Advantage</h2></div>
+  <section class="section"><div class="shell"><div class="solutions-advantage-header motion"><h2>The Intelligence Solution Advantages</h2></div>
     <div class="editorial-grid solutions-why-grid">
       <article class="feature" style="grid-column:span 4">
         <span class="feature__index"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span>
@@ -111,7 +111,7 @@
       </article>
       <article class="feature" style="grid-column:span 4">
         <span class="feature__index"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="3"/><circle cx="5" cy="18" r="3"/><circle cx="19" cy="18" r="3"/><path d="M12 8v4"/><path d="M9.5 15.5 7 17"/><path d="M14.5 15.5 17 17"/><path d="M8 18h8"/></svg></span>
-        <h3>Full-Spectrum Triad Synergy</h3>
+        <h3>Full-Spectrum<br>Triad Synergy</h3>
         <p>Unifying strategic advisory, functional domain consulting, and bespoke engineering to bridge the corporate execution gap.</p>
       </article>
       <article class="feature" style="grid-column:span 4">
