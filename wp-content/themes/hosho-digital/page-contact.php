@@ -2,7 +2,7 @@
 <main id="main-content">
   <section class="contact-page contact-page--immersive" id="contact-form" style="--contact-bg:url('<?php echo esc_url(hosho_asset_url('hero-contact-connection.png')); ?>')">
     <div class="shell contact-page__canvas motion">
-      <div class="contact-page__heading"><h1>Get in Touch.</h1><p>Tell us what you are working on and the right HOSHŌ DIGITAL team will respond.</p></div>
+      <div class="contact-page__heading"><h1>GET IN TOUCH</h1><p>Tell us what you are working on and the right HOSHŌ DIGITAL team will respond.</p></div>
       <style>
         .contact-form .field input,
         .contact-form .field select,
@@ -10,6 +10,35 @@
           padding-left: 16px !important;
           background-color: rgba(0, 0, 0, 0.5) !important;
           border: 1px solid rgba(255, 255, 255, 0.5) !important;
+          color: #ffffff !important;
+          -webkit-text-fill-color: #ffffff !important;
+        }
+        .contact-form .field input::placeholder,
+        .contact-form .field textarea::placeholder {
+          color: rgba(255, 255, 255, 0.6) !important;
+          -webkit-text-fill-color: rgba(255, 255, 255, 0.6) !important;
+        }
+        .contact-form .field label,
+        .contact-form .consent label {
+          color: #ffffff !important;
+        }
+        .contact-form .field select option {
+          color: #071523 !important;
+          background-color: #ffffff !important;
+        }
+        .contact-form input:-webkit-autofill,
+        .contact-form input:-webkit-autofill:hover,
+        .contact-form input:-webkit-autofill:focus,
+        .contact-form textarea:-webkit-autofill,
+        .contact-form textarea:-webkit-autofill:hover,
+        .contact-form textarea:-webkit-autofill:focus,
+        .contact-form select:-webkit-autofill,
+        .contact-form select:-webkit-autofill:hover,
+        .contact-form select:-webkit-autofill:focus {
+          -webkit-text-fill-color: #ffffff !important;
+          -webkit-box-shadow: 0 0 0 1000px rgba(7, 21, 35, 0.95) inset !important;
+          box-shadow: 0 0 0 1000px rgba(7, 21, 35, 0.95) inset !important;
+          transition: background-color 5000s ease-in-out 0s;
         }
       </style>
       <form class="contact-form contact-form--glass" action="#" method="post">

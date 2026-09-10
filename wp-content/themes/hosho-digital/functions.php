@@ -67,7 +67,7 @@ function hosho_navigation_items() {
     ),
     array(
       'label' => 'Services',
-      'slug' => 'services',
+      'slug' => 'ai-transformation',
       'children' => array(
         array( 'label' => 'AI Transformation', 'slug' => 'ai-transformation',  'aliases' => array( 'ai' ) ),
         array( 'label' => 'ERP Optimization', 'slug' => 'erp-optimization' ),

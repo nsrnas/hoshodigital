@@ -16,7 +16,7 @@ get_header();
 
 	<?php
 	hosho_render_hero(
-		'Transform the way <br>your businessthinks, operates, <br>and evolves',
+		'Transform How Business Evolves',
 		'services/hero-ai.jpg',
 		array( 'class' => 'page-hero--company' )
 	);

@@ -33,6 +33,7 @@ $route_map = array(
     'erp-optimization'        => array('page' => 'approach-erp',       'file' => 'page-approach-erp.php'),
     'ai-transformation'       => array('page' => 'ai-transformation',  'file' => 'page-service-ai.php'),
     'ai'                      => array('page' => 'ai-transformation',  'file' => 'page-service-ai.php'),
+    'services'                => array('page' => 'ai-transformation',  'file' => 'page-service-ai.php'),
     'optimization'           => array('page' => 'approach-optimization', 'file' => 'page-approach-optimization.php'),
     'privacy-policy'         => array('page' => 'privacy-policy',      'file' => 'page-privacy-policy.php'),
     'privacy'                => array('page' => 'privacy-policy',      'file' => 'page-privacy-policy.php'),

@@ -15,7 +15,7 @@ get_header();
 
 	<?php
 	hosho_render_hero(
-		'Architecting the<br>Autonomous Enterprise',
+		'Architecting the Autonomous Enterprise',
 		'approach/ai/hero.jpg',
 		array( 'class' => 'page-hero--company' )
 	);

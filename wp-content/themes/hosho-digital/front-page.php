@@ -58,14 +58,6 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 				</div>
 			</div>
 
-			<div class="cs-divider">
-				<div class="cs-divider-node">
-					<svg width="20" height="20" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-						<path d="M2 7h10M8 3l4 4-4 4" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-					</svg>
-				</div>
-			</div>
-
 			<div class="cs-panel cs-solution">
 				<div class="cs-panel-content">
 					<h3>Solution<br>as a Service</h3>

@@ -15,7 +15,7 @@ get_header();
 
 	<?php
 	hosho_render_hero(
-		"Treat your AI spend like a budget,<br>not a blank check",
+		"Treat your AI spend like a budget, not a blank check",
 		'approach/optimization/hero.jpg',
 		array( 'class' => 'page-hero--company' )
 	);
