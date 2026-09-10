@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+﻿<?php get_header(); ?>
 
 <main id="main-content">
 	<?php
@@ -69,50 +69,35 @@
 
 	<div class="opex-categories-wrapper">
 
-		<div class="opex-category-block opex-category-block--white">
+		<!-- Category 1: Talent Acquisition -->
+		<div class="opex-category-block opex-category-block--navy">
 			<div class="shell motion">
 				<div class="opex-category">
 					<div class="opex-category__header">
-						<h2 class="opex-category__title">HR &amp; Workforce Management</h2>
+						<h2 class="opex-category__title">Talent Acquisition</h2>
 						<div class="opex-category__line"></div>
 					</div>
 					<div class="opex-category__grid" style="grid-template-columns: repeat(4, 1fr);">
 
 						<article class="opex-scard">
 							<div class="opex-scard__icon">
-								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/><path d="M22 11l-3 3-2-2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 							</div>
-							<h3 class="opex-scard__title">Human Resource Management System (HRMS)</h3>
-							<p class="opex-scard__desc">Centralized HR platform managing employee records, attendance, performance, and operational workflows.</p>
+							<h3 class="opex-scard__title">iScreen</h3>
+							<p class="opex-scard__desc">AI hiring platform screening candidates through skill assessments, coding evaluations, and unbiased screening.</p>
 						</article>
 
 						<article class="opex-scard">
 							<div class="opex-scard__icon">
-								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 2v4M8 2v4M3 10h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/><path d="M19 8v6M16 11h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 							</div>
-							<h3 class="opex-scard__title">Leave Management</h3>
-							<p class="opex-scard__desc">Centralized platform streamlining employee leave requests, approval routing, and workforce availability.</p>
+							<h3 class="opex-scard__title">Hiring Requests Manager</h3>
+							<p class="opex-scard__desc">Centralized platform managing recruitment requests, budget justifications, approvals, and workforce planning.</p>
 						</article>
 
 						<article class="opex-scard">
 							<div class="opex-scard__icon">
-								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-							</div>
-							<h3 class="opex-scard__title">Timesheet Management</h3>
-							<p class="opex-scard__desc">Centralized tool capturing employee working hours, project effort, overtime, and attendance.</p>
-						</article>
-
-						<article class="opex-scard">
-							<div class="opex-scard__icon">
-								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-							</div>
-							<h3 class="opex-scard__title">Appraisal Management</h3>
-							<p class="opex-scard__desc">Centralized platform streamlining employee performance reviews, continuous feedback, and skill development.</p>
-						</article>
-
-						<article class="opex-scard">
-							<div class="opex-scard__icon">
-								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/><path d="M22 21v-2a4 4 0 00-3-3.87M19 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 012 2v14a2 2 0 01-2 2h-4M10 17l5-5-5-5M13 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 							</div>
 							<h3 class="opex-scard__title">Employee Onboarding and Exit</h3>
 							<p class="opex-scard__desc">Centralized platform orchestrating joining formalities, access provisioning, asset handovers, and clearances.</p>
@@ -122,16 +107,31 @@
 							<div class="opex-scard__icon">
 								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M22 10l-10-5L2 10l10 5 10-5zM6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 							</div>
-							<h3 class="opex-scard__title">Employee Training</h3>
-							<p class="opex-scard__desc">Centralized learning platform managing training programs, skill gaps, assessments, and certifications.</p>
+							<h3 class="opex-scard__title">Internship 360</h3>
+							<p class="opex-scard__desc">Comprehensive management platform tracking intern performance, mentor assignments, and talent pipeline conversions.</p>
 						</article>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Category 2: HR Operations -->
+		<div class="opex-category-block opex-category-block--white">
+			<div class="shell motion">
+				<div class="opex-category">
+					<div class="opex-category__header">
+						<h2 class="opex-category__title">HR Operations</h2>
+						<div class="opex-category__line"></div>
+					</div>
+					<div class="opex-category__grid" style="grid-template-columns: repeat(3, 1fr);">
 
 						<article class="opex-scard">
 							<div class="opex-scard__icon">
-								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M20 12v10H4V12M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 							</div>
-							<h3 class="opex-scard__title">Employee Benefits Management</h3>
-							<p class="opex-scard__desc">Centralized platform managing employee benefit plans, eligibility validation, claims, and enrollment.</p>
+							<h3 class="opex-scard__title">iHRMS</h3>
+							<p class="opex-scard__desc">Centralized core HR platform managing employee records, organization structures, and workforce lifecycles.</p>
 						</article>
 
 						<article class="opex-scard">
@@ -144,18 +144,26 @@
 
 						<article class="opex-scard">
 							<div class="opex-scard__icon">
-								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M20 12v10H4V12M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 							</div>
-							<h3 class="opex-scard__title">Internship Management</h3>
-							<p class="opex-scard__desc">Centralized platform managing intern applications, onboarding, mentor matching, and performance tracking.</p>
+							<h3 class="opex-scard__title">Employee Benefits Management</h3>
+							<p class="opex-scard__desc">Centralized platform managing employee benefit plans, eligibility validation, claims, and enrollment.</p>
 						</article>
 
 						<article class="opex-scard">
 							<div class="opex-scard__icon">
-								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 2v4M8 2v4M3 10h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 							</div>
-							<h3 class="opex-scard__title">Hiring Request Management</h3>
-							<p class="opex-scard__desc">Centralized platform managing recruitment requests, budget justifications, approvals, and workforce planning.</p>
+							<h3 class="opex-scard__title">Leave Management</h3>
+							<p class="opex-scard__desc">Centralized platform streamlining employee leave requests, approval routing, and workforce availability.</p>
+						</article>
+
+						<article class="opex-scard">
+							<div class="opex-scard__icon">
+								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="currentColor" stroke-width="2"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							</div>
+							<h3 class="opex-scard__title">HR Self Service Assistant</h3>
+							<p class="opex-scard__desc">Conversational HR portal guiding employees through routine form submissions and administrative requests.</p>
 						</article>
 
 					</div>
@@ -163,38 +171,101 @@
 			</div>
 		</div>
 
+		<!-- Category 3: Workplace Management -->
 		<div class="opex-category-block opex-category-block--navy">
 			<div class="shell motion">
 				<div class="opex-category">
 					<div class="opex-category__header">
-						<h2 class="opex-category__title">Employee Services &amp; Engagement</h2>
+						<h2 class="opex-category__title">Workplace Management</h2>
+						<div class="opex-category__line"></div>
+					</div>
+					<div class="opex-category__grid" style="grid-template-columns: repeat(4, 1fr);">
+
+						<article class="opex-scard">
+							<div class="opex-scard__icon">
+								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							</div>
+							<h3 class="opex-scard__title">Timesheet Management</h3>
+							<p class="opex-scard__desc">Centralized tool capturing employee working hours, project effort, overtime, and attendance.</p>
+						</article>
+
+						<article class="opex-scard">
+							<div class="opex-scard__icon">
+								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 9h18M9 21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							</div>
+							<h3 class="opex-scard__title">Roster Manager</h3>
+							<p class="opex-scard__desc">Intelligent shift scheduling system optimizing workforce coverage, shift rotations, and labor rule compliance.</p>
+						</article>
+
+						<article class="opex-scard">
+							<div class="opex-scard__icon">
+								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 9h18M9 21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							</div>
+							<h3 class="opex-scard__title">Desk Management</h3>
+							<p class="opex-scard__desc">Smart hot-desking platform optimizing office space allocation, hybrid seating reservations, and occupancy analytics.</p>
+						</article>
+
+						<article class="opex-scard">
+							<div class="opex-scard__icon">
+								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							</div>
+							<h3 class="opex-scard__title">Ashistanto</h3>
+							<p class="opex-scard__desc">AI workplace assistant automating emails, calendar scheduling, reminders, and daily tasks.</p>
+						</article>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Category 4: Talent Development & Performance -->
+		<div class="opex-category-block opex-category-block--white">
+			<div class="shell motion">
+				<div class="opex-category">
+					<div class="opex-category__header">
+						<h2 class="opex-category__title">Talent Development &amp; Performance</h2>
 						<div class="opex-category__line"></div>
 					</div>
 					<div class="opex-category__grid" style="grid-template-columns: repeat(3, 1fr);">
 
 						<article class="opex-scard">
 							<div class="opex-scard__icon">
-								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="10" r="1.5" fill="currentColor"/><circle cx="15" cy="10" r="1.5" fill="currentColor"/><path d="M9 15h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 							</div>
-							<h3 class="opex-scard__title">Intelligent HR Assistant</h3>
-							<p class="opex-scard__desc">AI assistant delivering instant answers regarding HR policies, payroll, leave, and benefits.</p>
+							<h3 class="opex-scard__title">Appraisal Management</h3>
+							<p class="opex-scard__desc">Centralized platform streamlining employee performance reviews, continuous feedback, and skill development.</p>
 						</article>
 
 						<article class="opex-scard">
 							<div class="opex-scard__icon">
-								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="currentColor" stroke-width="2"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M22 10l-10-5L2 10l10 5 10-5zM6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 							</div>
-							<h3 class="opex-scard__title">Intelligent Self Service Assistant</h3>
-							<p class="opex-scard__desc">AI platform enabling employees to complete routine requests and access business information.</p>
+							<h3 class="opex-scard__title">Employee Training</h3>
+							<p class="opex-scard__desc">Centralized learning platform managing training programs, skill gaps, assessments, and certifications.</p>
 						</article>
 
 						<article class="opex-scard">
 							<div class="opex-scard__icon">
-								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M2 20V17L8 11 2 5V2h20v5h-3l-5 4 5 4h3v5H2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 							</div>
-							<h3 class="opex-scard__title">Grievance Management</h3>
-							<p class="opex-scard__desc">Centralized platform managing employee concerns, automated case routing, and transparent resolutions.</p>
+							<h3 class="opex-scard__title">Travel and Expense Management</h3>
+							<p class="opex-scard__desc">Expense management platform streamlining travel requests, receipt scanning, policy checks, and reimbursements.</p>
 						</article>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Category 5: Employee Support & Governance -->
+		<div class="opex-category-block opex-category-block--navy">
+			<div class="shell motion">
+				<div class="opex-category">
+					<div class="opex-category__header">
+						<h2 class="opex-category__title">Employee Support &amp; Governance</h2>
+						<div class="opex-category__line"></div>
+					</div>
+					<div class="opex-category__grid" style="grid-template-columns: repeat(4, 1fr);">
 
 						<article class="opex-scard">
 							<div class="opex-scard__icon">
@@ -206,64 +277,26 @@
 
 						<article class="opex-scard">
 							<div class="opex-scard__icon">
+								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 01-2-2h14a2 2 0 012 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							</div>
+							<h3 class="opex-scard__title">Grievance Management</h3>
+							<p class="opex-scard__desc">Centralized platform managing employee concerns, automated case routing, and transparent resolutions.</p>
+						</article>
+
+						<article class="opex-scard">
+							<div class="opex-scard__icon">
+								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="10" r="1.5" fill="currentColor"/><circle cx="15" cy="10" r="1.5" fill="currentColor"/><path d="M9 15h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+							</div>
+							<h3 class="opex-scard__title">Intelligent HR Assistant</h3>
+							<p class="opex-scard__desc">AI assistant delivering instant answers regarding HR policies, payroll, leave, and benefits.</p>
+						</article>
+
+						<article class="opex-scard">
+							<div class="opex-scard__icon">
 								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 							</div>
 							<h3 class="opex-scard__title">iTicket</h3>
-							<p class="opex-scard__desc">Centralized service desk platform automating request routing, prioritization, and internal ticketing.</p>
-						</article>
-
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="opex-category-block opex-category-block--white">
-			<div class="shell motion">
-				<div class="opex-category">
-					<div class="opex-category__header">
-						<h2 class="opex-category__title">Workplace &amp; Business Productivity</h2>
-						<div class="opex-category__line"></div>
-					</div>
-					<div class="opex-category__grid" style="grid-template-columns: repeat(3, 1fr);">
-
-						<article class="opex-scard">
-							<div class="opex-scard__icon">
-								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-							</div>
-							<h3 class="opex-scard__title">Ashistanto</h3>
-							<p class="opex-scard__desc">AI workplace assistant automating emails, calendar scheduling, reminders, and daily tasks.</p>
-						</article>
-
-						<article class="opex-scard">
-							<div class="opex-scard__icon">
-								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M2 20V17L8 11 2 5V2h20v5h-3l-5 4 5 4h3v5H2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-							</div>
-							<h3 class="opex-scard__title">Travel and Expense Management</h3>
-							<p class="opex-scard__desc">Centralized platform automating travel bookings, expense submissions, policy checks, and reimbursements.</p>
-						</article>
-
-						<article class="opex-scard">
-							<div class="opex-scard__icon">
-								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 9h18M9 21V9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-							</div>
-							<h3 class="opex-scard__title">Seating Management</h3>
-							<p class="opex-scard__desc">Centralized workplace platform managing desk bookings, floor plans, and office space utilization.</p>
-						</article>
-
-						<article class="opex-scard">
-							<div class="opex-scard__icon">
-								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-							</div>
-							<h3 class="opex-scard__title">Project Management</h3>
-							<p class="opex-scard__desc">Centralized workspace managing project timelines, task assignments, resource allocation, and budgets.</p>
-						</article>
-
-						<article class="opex-scard">
-							<div class="opex-scard__icon">
-								<svg width="28" height="28" fill="none" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="21" r="1" stroke="currentColor" stroke-width="2"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-							</div>
-							<h3 class="opex-scard__title">Purchase Request</h3>
-							<p class="opex-scard__desc">Centralized portal managing internal purchase requests, budget validations, and approval paths.</p>
+							<p class="opex-scard__desc">Centralized internal helpdesk platform routing IT, DevOps, and operational HR support service requests.</p>
 						</article>
 
 					</div>
@@ -274,7 +307,6 @@
 	</div>
 
 	<?php hosho_render_quote("<strong>Take care of your employees <br>and they'll take care <br>of your business.</strong>", 'Richard Branson', 'richard-branson.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi'); 	?>
-
 
 	<?php hosho_render_cta('', '<strong>Build a Better Employee Experience</strong>', '', 'Contact Us', hosho_page_url('contact'), 'cta-employee.jpg'); ?>
 
