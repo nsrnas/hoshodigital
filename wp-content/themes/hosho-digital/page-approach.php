@@ -498,7 +498,7 @@ $foundationText = isset($_GET['foundationText'])  ? $_GET['foundationText'] : "T
 	QUOTE
 	========================================================= -->
 
-	<?php hosho_render_quote( '<strong>Without continual growth and progress, such words as improvement, achievement, and success have no meaning.</strong>', 'Benjamin Franklin', 'approach/main/benjamin.png', 'quote-band--blue' ); ?>
+	<?php hosho_render_quote( '<strong>Without continual growth and progress, such words as improvement, achievement, and success have no meaning.</strong>', 'Benjamin Franklin', 'approach/main/benjamin.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi' ); ?>
 
 	<!-- =========================================================
 	8-STAGE DELIVERY FRAMEWORK

@@ -33,10 +33,17 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 			</p>
 		</div>
 
+		<div class="cs-split-header">
+			<div class="cs-split-header__left">
+				<p>Stop managing software.</p>
+			</div>
+			<div class="cs-split-header__right">
+				<p><span class="cs-split-header__lead">Start scaling solutions.</span></p>
+			</div>
+		</div>
 		<div class="cs-split">
 			<div class="cs-panel cs-saas">
 				<div class="cs-panel-content">
-					<p class="cs-panel-eyebrow">Traditional Model</p>
 					<h3>Software<br>as a Service</h3>
 					<div class="cs-verb-wrapper">
 						<span class="cs-verb cs-verb-saas">Ships.</span>
@@ -51,17 +58,8 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 				</div>
 			</div>
 
-			<div class="cs-divider">
-				<div class="cs-divider-node">
-					<svg width="20" height="20" viewBox="0 0 14 14" fill="none" aria-hidden="true">
-						<path d="M2 7h10M8 3l4 4-4 4" stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-					</svg>
-				</div>
-			</div>
-
 			<div class="cs-panel cs-solution">
 				<div class="cs-panel-content">
-					<p class="cs-panel-eyebrow">Evolved Model</p>
 					<h3>Solution<br>as a Service</h3>
 					<div class="cs-verb-wrapper">
 						<span class="cs-verb cs-verb-solution">Evolves.</span>
@@ -104,13 +102,13 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 								<path id="arc-left" d="M 62,360 A 182,182 0 0,0 244,495" fill="none" />
 
 								<clipPath id="clip-circle-1">
-									<circle cx="340" cy="180" r="190" />
-									</clipPath>
-									<clipPath id="clip-circle-2">
-										<circle cx="442" cy="350" r="190" />
-									</clipPath>
-									<clipPath id="clip-circle-3">
-										<circle cx="238" cy="350" r="190" />
+									<circle cx="340" cy="165" r="190" />
+								</clipPath>
+								<clipPath id="clip-circle-2">
+									<circle cx="457" cy="365" r="190" />
+								</clipPath>
+								<clipPath id="clip-circle-3">
+									<circle cx="223" cy="358" r="190" />
 								</clipPath>
 
 								<filter id="vennGlow" x="-20%" y="-20%" width="140%" height="140%">
@@ -118,39 +116,40 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 								</filter>
 							</defs>
 
-							<circle class="venn-circle venn-circle-advisory" data-venn-id="advisory" cx="340" cy="180" r="140" tabindex="0" role="button" aria-label="Solution Advisory" />
-							<circle class="venn-circle venn-circle-consulting" data-venn-id="consulting" cx="442" cy="350" r="140" tabindex="0" role="button" aria-label="Functional Consulting" />
-							<circle class="venn-circle venn-circle-engineering" data-venn-id="engineering" cx="238" cy="350" r="140" tabindex="0" role="button" aria-label="Software Engineering" />
+							<circle class="venn-circle venn-circle-advisory" data-venn-id="advisory" cx="340" cy="162" r="140" tabindex="0" role="button" aria-label="Solution Advisory" />
+							<circle class="venn-circle venn-circle-consulting" data-venn-id="consulting" cx="457" cy="365" r="140" tabindex="0" role="button" aria-label="Functional Consulting" />
+							<circle class="venn-circle venn-circle-engineering" data-venn-id="engineering" cx="223" cy="365" r="140" tabindex="0" role="button" aria-label="Software Engineering" />
 
 							<g class="venn-overlap-group">
-								<text x="292" y="255" class="venn-petal-text" transform="rotate(30, 280, 225)">Innovation</text>
+								<text x="290" y="255" class="venn-petal-text" transform="rotate(30, 272, 230)">Innovation</text>
 							</g>
 
 							<g class="venn-overlap-group">
-								<text x="390" y="255" class="venn-petal-text" transform="rotate(-30, 400, 232)">Alignment</text>
+								<text x="390" y="255" class="venn-petal-text" transform="rotate(-30, 408, 232)">Alignment</text>
 							</g>
 
 							<g class="venn-overlap-group">
-								<text x="320" y="350" class="venn-petal-text" transform="rotate(-90, 340, 350)">Execution</text>
+								<text x="335" y="365" class="venn-petal-text" transform="rotate(-90, 340, 365)">Execution</text>
 							</g>
 
 							<g class="venn-center" aria-hidden="true">
+								<circle cx="340" cy="297" r="24" class="venn-center-circle" />
 								<image href="<?php echo esc_url( hosho_asset_url( 'homepage/logo-white-nobg.png' ) ); ?>" x="350" y="307" width="30" height="30" transform="translate(-25, -25)" />
 							</g>
 
 							<g class="venn-label-group advisory-label" data-venn-id="advisory">
-								<text x="340" y="140" class="venn-circle-title">Solution</text>
-								<text x="340" y="166" class="venn-circle-title">Advisory</text>
+								<text x="340" y="124" class="venn-circle-title">Solution</text>
+								<text x="340" y="150" class="venn-circle-title">Advisory</text>
 							</g>
 
 							<g class="venn-label-group consulting-label" data-venn-id="consulting">
-								<text x="472" y="352" class="venn-circle-title">Functional</text>
-								<text x="472" y="378" class="venn-circle-title">Consulting</text>
+								<text x="487" y="365" class="venn-circle-title">Functional</text>
+								<text x="487" y="391" class="venn-circle-title">Consulting</text>
 							</g>
 
 							<g class="venn-label-group engineering-label" data-venn-id="engineering">
-								<text x="208" y="352" class="venn-circle-title">Software</text>
-								<text x="208" y="378" class="venn-circle-title">Engineering</text>
+								<text x="193" y="365" class="venn-circle-title">Software</text>
+								<text x="193" y="391" class="venn-circle-title">Engineering</text>
 							</g>
 						</svg>
 					</div>
@@ -205,7 +204,7 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 			</div>
 
 			<div class="solutions-cards solutions-cards--timeline">
-				<article class="solutions-card solutions-card--red motion">
+				<article class="solutions-card solutions-card--1 motion">
 					<h3>Rapid Deployment</h3>
 					<p>Rapid integration of ready-to-use AI modules to solve immediate business bottlenecks.</p>
 				</article>
@@ -214,7 +213,7 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 					<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
 				</div>
 
-				<article class="solutions-card solutions-card--red motion">
+				<article class="solutions-card solutions-card--2 motion">
 					<h3>Custom Solutions</h3>
 					<p>A middleware approach that connects existing legacy systems with a unified intelligent orchestration layer.</p>
 				</article>
@@ -223,7 +222,7 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 					<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
 				</div>
 
-				<article class="solutions-card solutions-card--red motion">
+				<article class="solutions-card solutions-card--3 motion">
 					<h3>Bespoke Platforms</h3>
 					<p>Custom-engineered AI infrastructure designed from the ground up to redefine your competitive advantage.</p>
 				</article>
