@@ -60,8 +60,8 @@ $templateMap = [ordered]@{
   'page-approach.php'              = 'page-approach.php'
   'page-approach-innovation.php'           = 'page-innovation.php'
   'page-approach-assurance.php'          = 'page-assurance.php'
-  'page-approach-erp.php'          = 'page-erp.php'
-  'page-approach-assurance.php' = 'page-optimization.php'
+  'page-approach-erp.php'          = 'page-erp-optimization.php'
+  'page-approach-optimization.php' = 'page-optimization.php'
   'page-careers.php'               = 'page-careers.php'
   'page-company.php'               = 'page-company.php'
   'page-contact.php'               = 'page-contact.php'
@@ -70,6 +70,7 @@ $templateMap = [ordered]@{
   'page-eci.php'                   = 'page-eci.php'
   'page-operational-intelligence.php'= 'page-operational-intelligence.php'
   'page-workforce-intelligence.php'= 'page-workforce-intelligence.php'
+  'page-service-ai.php'             = 'page-ai-transformation.php'
   'page-press.php'                 = 'page-press.php'
   'page-privacy-policy.php'        = 'page-privacy-policy.php'
   'page-solutions.php'             = 'page-solutions.php'
@@ -83,6 +84,11 @@ foreach ($entry in $templateMap.GetEnumerator()) {
 }
 Copy-Item -LiteralPath (Join-Path $pluginRoot 'templates\page-press.php') -Destination (Join-Path $pluginRoot 'templates\page-media.php') -Force
 Copy-Item -LiteralPath (Join-Path $pluginRoot 'templates\page-sustainability.php') -Destination (Join-Path $pluginRoot 'templates\page-esg.php') -Force
+Copy-Item -LiteralPath (Join-Path $pluginRoot 'templates\page-ai-transformation.php') -Destination (Join-Path $pluginRoot 'templates\page-ai.php') -Force
+Copy-Item -LiteralPath (Join-Path $pluginRoot 'templates\page-erp-optimization.php') -Destination (Join-Path $pluginRoot 'templates\page-erp.php') -Force
+Copy-Item -LiteralPath (Join-Path $pluginRoot 'templates\page-operational-intelligence.php') -Destination (Join-Path $pluginRoot 'templates\page-operational-experience.php') -Force
+Copy-Item -LiteralPath (Join-Path $pluginRoot 'templates\page-customer-intelligence.php') -Destination (Join-Path $pluginRoot 'templates\page-customer-experience.php') -Force
+Copy-Item -LiteralPath (Join-Path $pluginRoot 'templates\page-workforce-intelligence.php') -Destination (Join-Path $pluginRoot 'templates\page-employee-experience.php') -Force
 Convert-ThemePhp -Source (Join-Path $theme 'header.php') -Destination (Join-Path $pluginRoot 'templates\header.php')
 Convert-ThemePhp -Source (Join-Path $theme 'footer.php') -Destination (Join-Path $pluginRoot 'templates\footer.php')
 
@@ -93,6 +99,25 @@ $plugin = [regex]::Replace($plugin, "const VERSION = '[^']+';", "const VERSION =
 $plugin = $plugin.Replace("'operational-experience' => 'Operational Experience'", "'operational-experience' => 'Operational Intelligence'")
 $plugin = $plugin.Replace("'customer-experience'    => 'Customer Experience'", "'customer-experience'    => 'Customer Intelligence'")
 $plugin = $plugin.Replace("'employee-experience'    => 'Employee Experience'", "'employee-experience'    => 'Workforce Intelligence'")
+
+$routeLineReplacements = [ordered]@{
+  "      'eci'           => 'Enterprise Compute Initiative'," = "      'eci'           => 'Enterprise Compute Initiative',`r`n      'ai-transformation'         => 'AI Transformation',`r`n      'ai'                        => 'AI Transformation (legacy URL)',"
+  "      'operational-experience' => 'Operational Intelligence'," = "      'operational-intelligence' => 'Operational Intelligence',`r`n      'operational-experience'   => 'Operational Intelligence (legacy URL)',"
+  "      'customer-experience'    => 'Customer Intelligence'," = "      'customer-intelligence'    => 'Customer Intelligence',`r`n      'customer-experience'      => 'Customer Intelligence (legacy URL)',"
+  "      'employee-experience'    => 'Workforce Intelligence'," = "      'workforce-intelligence'   => 'Workforce Intelligence',`r`n      'employee-experience'      => 'Workforce Intelligence (legacy URL)',"
+  "      'erp'                    => 'ERP'," = "      'erp-optimization'       => 'ERP Optimization',`r`n      'erp'                    => 'ERP Optimization (legacy URL)',"
+  "    'eci'           => array( 'Register interest', 'https://hoshodigital.com/eci-form/' )," = "    'eci'           => array( 'Register interest', 'https://hoshodigital.com/eci-form/' ),`r`n    'ai-transformation'       => array( 'Get in touch', hosho_remade_page_url( 'contact' ) ),`r`n    'ai'                      => array( 'Get in touch', hosho_remade_page_url( 'contact' ) ),"
+  "    'operational-experience' => array( 'Get in touch', hosho_remade_page_url( 'contact' ) )," = "    'operational-intelligence' => array( 'Get in touch', hosho_remade_page_url( 'contact' ) ),`r`n    'operational-experience'   => array( 'Get in touch', hosho_remade_page_url( 'contact' ) ),"
+  "    'customer-experience'    => array( 'Get in touch', hosho_remade_page_url( 'contact' ) )," = "    'customer-intelligence'    => array( 'Get in touch', hosho_remade_page_url( 'contact' ) ),`r`n    'customer-experience'      => array( 'Get in touch', hosho_remade_page_url( 'contact' ) ),"
+  "    'employee-experience'    => array( 'Get in touch', hosho_remade_page_url( 'contact' ) )," = "    'workforce-intelligence'   => array( 'Get in touch', hosho_remade_page_url( 'contact' ) ),`r`n    'employee-experience'      => array( 'Get in touch', hosho_remade_page_url( 'contact' ) ),"
+  "    'erp'                    => array( 'Get in touch', hosho_remade_page_url( 'contact' ) )," = "    'erp-optimization'       => array( 'Get in touch', hosho_remade_page_url( 'contact' ) ),`r`n    'erp'                    => array( 'Get in touch', hosho_remade_page_url( 'contact' ) ),"
+}
+foreach ($entry in $routeLineReplacements.GetEnumerator()) {
+  if ($plugin.IndexOf($entry.Key, [StringComparison]::Ordinal) -lt 0) {
+    throw "Unable to update package route mapping: $($entry.Key)"
+  }
+  $plugin = $plugin.Replace($entry.Key, $entry.Value)
+}
 
 $themeFunctions = Get-Content -Raw -LiteralPath (Join-Path $theme 'functions.php')
 $themeFunctions = $themeFunctions.Replace('hosho_', 'hosho_remade_')

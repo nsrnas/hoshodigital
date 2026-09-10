@@ -154,6 +154,7 @@
     let timer = 0;
     let carouselVisible = true;
     let pausedByUser = false;
+    let swipeStart = null;
 
     if (!track || slides.length < 2) return;
 
@@ -179,6 +180,29 @@
 
     previous?.addEventListener('click', () => manualShow(index - 1));
     next?.addEventListener('click', () => manualShow(index + 1));
+    carousel.addEventListener('pointerdown', (event) => {
+      if (event.pointerType === 'mouse' || event.target.closest('button, a, input, textarea, select')) return;
+      swipeStart = { id: event.pointerId, x: event.clientX, y: event.clientY };
+      pausedByUser = true;
+      stop();
+    });
+    carousel.addEventListener('pointerup', (event) => {
+      if (!swipeStart || swipeStart.id !== event.pointerId) return;
+      const deltaX = event.clientX - swipeStart.x;
+      const deltaY = event.clientY - swipeStart.y;
+      swipeStart = null;
+      pausedByUser = false;
+      if (Math.abs(deltaX) >= 48 && Math.abs(deltaX) > Math.abs(deltaY) * 1.15) {
+        manualShow(index + (deltaX < 0 ? 1 : -1));
+        return;
+      }
+      start();
+    });
+    carousel.addEventListener('pointercancel', () => {
+      swipeStart = null;
+      pausedByUser = false;
+      start();
+    });
     carousel.addEventListener('pointerenter', () => { pausedByUser = true; stop(); });
     carousel.addEventListener('pointerleave', () => { pausedByUser = false; start(); });
     carousel.addEventListener('focusin', () => { pausedByUser = true; stop(); });

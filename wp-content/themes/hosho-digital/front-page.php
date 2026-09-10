@@ -186,7 +186,7 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 	STEVE JOBS QUOTE
 	========================================================= -->
 
-	<?php hosho_render_quote('<strong>Innovation is the ability <br>to see changeas <br>an opportunity, <br>not a threat.</strong>','Steve Jobs','homepage/steve-jobs.png','quote-band--standard quote-band--red-soft quote-band--masayoshi'); ?>
+	<?php hosho_render_quote('<strong>Innovation is the ability <br>to see change as <br>an opportunity, <br>not a threat.</strong>','Steve Jobs','homepage/steve-jobs.png','quote-band--standard quote-band--red-soft quote-band--masayoshi'); ?>
 
 	<!-- ==========================================
 	RAPID TO BE SPOKE

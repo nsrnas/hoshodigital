@@ -20174,3 +20174,272 @@ body.hosho-remade img {
 		animation: none !important;
 	}
 }
+
+/* Global quote sizing standard: Company is the reference across the site. */
+body.hosho-remade #main-content .quote-band {
+	display: grid;
+	grid-template-columns: minmax(0, 64%) minmax(0, 36%);
+	height: clamp(500px, 44.31vw, 638px);
+	min-height: 0;
+	overflow: hidden;
+}
+
+body.hosho-remade #main-content .quote-band__copy {
+	min-width: 0;
+	height: 100%;
+	min-height: 0;
+	padding: clamp(4rem, 5.5vw, 5.5rem) clamp(3rem, 5.5vw, 5.5rem) clamp(3rem, 4.5vw, 4.5rem);
+	overflow: hidden;
+}
+
+body.hosho-remade #main-content .quote-band blockquote {
+	max-width: 25ch;
+	margin-bottom: clamp(2rem, 3vw, 3rem);
+	font-size: clamp(2rem, 2.75vw, 2.8rem);
+	font-weight: 600;
+	line-height: 1.16;
+	letter-spacing: -.035em;
+}
+
+body.hosho-remade #main-content .quote-band blockquote br {
+	display: none;
+}
+
+body.hosho-remade #main-content .quote-band__portrait {
+	min-width: 0;
+	height: 100%;
+	min-height: 0;
+	padding: clamp(1.5rem, 2.5vw, 2.75rem) clamp(1.75rem, 3vw, 3.25rem) 0 0;
+	align-self: stretch;
+	justify-content: center;
+	overflow: visible;
+}
+
+body.hosho-remade #main-content .quote-band__portrait img {
+	width: auto;
+	max-width: min(100%, 430px);
+	height: 100%;
+	max-height: 100%;
+	object-fit: contain;
+	object-position: center bottom;
+	transform: none;
+	-webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 92%, transparent 100%);
+	mask-image: linear-gradient(to bottom, #000 0%, #000 92%, transparent 100%);
+}
+
+/* Company value quotes: isolated from generic carousel and quote-band rules. */
+body.page-company #our-values.company-values--quotes .company-values__window {
+	background: #07182b;
+}
+
+body.page-company #our-values.company-values--quotes .company-values__track {
+	align-items: stretch;
+	touch-action: pan-y;
+	user-select: none;
+	cursor: grab;
+}
+
+body.page-company #our-values.company-values--quotes .company-values__track:active {
+	cursor: grabbing;
+}
+
+body.page-company #our-values.company-values--quotes .company-value--statement {
+	grid-template-columns: minmax(320px, 42%) minmax(0, 58%);
+	min-height: clamp(620px, 50vw, 720px);
+	background: #07182b;
+}
+
+body.page-company #our-values.company-values--quotes .company-value__portrait {
+	position: relative;
+	display: grid;
+	place-items: stretch;
+	min-width: 0;
+	min-height: inherit;
+	padding: 0;
+	isolation: isolate;
+	overflow: hidden;
+	background: radial-gradient(circle at 50% 28%, #304254 0%, #17283a 42%, #07182b 100%);
+}
+
+body.page-company #our-values.company-values--quotes .company-value__portrait::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	background: linear-gradient(90deg, transparent 56%, rgba(7, 24, 43, .72) 100%), linear-gradient(0deg, rgba(7, 24, 43, .72) 0%, transparent 30%);
+	pointer-events: none;
+}
+
+body.page-company #our-values.company-values--quotes .company-value__portrait img {
+	width: 100%;
+	height: 100%;
+	min-height: inherit;
+	object-fit: cover;
+	object-position: center 30%;
+	filter: grayscale(1) contrast(1.08);
+	transform: scale(1.01);
+	transition: transform .7s var(--move-ease), filter .35s ease;
+}
+
+body.page-company #our-values.company-values--quotes .company-value--statement:hover .company-value__portrait img {
+	filter: grayscale(1) contrast(1.12);
+	transform: scale(1.035);
+}
+
+body.page-company #our-values.company-values--quotes .company-value__portrait figcaption {
+	position: absolute;
+	left: clamp(1.25rem, 2.5vw, 2.5rem);
+	bottom: clamp(1.25rem, 2.5vw, 2.5rem);
+	z-index: 2;
+	padding: .5rem .75rem;
+	background: rgba(7, 24, 43, .72);
+	color: #fff;
+	font-size: .72rem;
+	font-weight: 700;
+	letter-spacing: .14em;
+	text-transform: uppercase;
+}
+
+body.page-company #our-values.company-values--quotes .company-value__copy {
+	min-width: 0;
+	padding: clamp(3rem, 5vw, 5.5rem);
+	background: linear-gradient(145deg, #102d4a 0%, #07182b 76%);
+}
+
+body.page-company #our-values.company-values--quotes .company-value__copy .eyebrow {
+	color: #ff8b87;
+}
+
+body.page-company #our-values.company-values--quotes .company-value__copy h3 {
+	max-width: none;
+	margin: 1rem 0 1.25rem;
+	color: #fff;
+	font-size: clamp(3rem, 5vw, 5.25rem);
+	font-weight: 650;
+	line-height: .92;
+	letter-spacing: -.055em;
+	text-transform: uppercase;
+	text-wrap: balance;
+}
+
+body.page-company #our-values.company-values--quotes .company-value__definition {
+	max-width: 43rem;
+	margin: 0;
+	color: rgba(255, 255, 255, .76);
+	font-size: clamp(1rem, 1.2vw, 1.2rem);
+	line-height: 1.62;
+}
+
+body.page-company #our-values.company-values--quotes .company-value__copy blockquote {
+	max-width: 38rem;
+	margin: clamp(1.75rem, 3vw, 2.75rem) 0 1rem;
+	padding-top: clamp(1.5rem, 2.5vw, 2.25rem);
+	border-top: 1px solid rgba(255, 255, 255, .22);
+	color: #fff;
+	font-size: clamp(1.4rem, 2vw, 2rem);
+	font-weight: 500;
+	font-style: normal;
+	line-height: 1.34;
+	letter-spacing: -.025em;
+}
+
+body.page-company #our-values.company-values--quotes .company-value__copy cite {
+	color: #ff9a96;
+	font-size: .75rem;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: .14em;
+	text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+	body.hosho-remade #main-content .quote-band {
+		grid-template-columns: minmax(0, 60%) minmax(0, 40%);
+		height: 500px;
+	}
+
+	body.hosho-remade #main-content .quote-band__copy {
+		padding-inline: clamp(2rem, 5vw, 3.5rem);
+	}
+
+	body.hosho-remade #main-content .quote-band blockquote {
+		font-size: clamp(1.85rem, 3.8vw, 2.5rem);
+	}
+
+	body.page-company #our-values.company-values--quotes .company-value--statement {
+		grid-template-columns: minmax(270px, 40%) minmax(0, 60%);
+	}
+
+	body.page-company #our-values.company-values--quotes .company-value__copy {
+		padding: clamp(2.5rem, 5vw, 4rem);
+	}
+}
+
+@media (max-width: 680px) {
+	body.hosho-remade #main-content .quote-band {
+		grid-template-columns: 1fr;
+		grid-template-rows: 433px 430px;
+		height: 863px;
+	}
+
+	body.hosho-remade #main-content .quote-band__copy {
+		height: 433px;
+		min-height: 0;
+		padding: 3.25rem 1.5rem 1.375rem;
+	}
+
+	body.hosho-remade #main-content .quote-band blockquote {
+		max-width: 100%;
+		margin-bottom: 2rem;
+		font-size: clamp(1.75rem, 7.5vw, 2.25rem);
+		line-height: 1.18;
+	}
+
+	body.hosho-remade #main-content .quote-band__portrait {
+		height: min(112vw, 430px);
+		min-height: 0;
+		padding: 0 1rem;
+		align-self: auto;
+		justify-content: center;
+	}
+
+	body.hosho-remade #main-content .quote-band__portrait img {
+		width: min(80vw, 320px);
+		max-width: none;
+		height: auto;
+		max-height: none;
+	}
+
+	body.page-company #our-values.company-values--quotes .company-value--statement {
+		grid-template-columns: 1fr;
+		grid-template-rows: 360px auto;
+		min-height: 0;
+	}
+
+	body.page-company #our-values.company-values--quotes .company-value__portrait {
+		min-height: 360px;
+	}
+
+	body.page-company #our-values.company-values--quotes .company-value__portrait::after {
+		background: linear-gradient(0deg, rgba(7, 24, 43, .82) 0%, transparent 38%);
+	}
+
+	body.page-company #our-values.company-values--quotes .company-value__copy {
+		min-height: 520px;
+		padding: 2.5rem 1.5rem 3rem;
+	}
+
+	body.page-company #our-values.company-values--quotes .company-value__copy h3 {
+		font-size: clamp(2.65rem, 13vw, 4.25rem);
+	}
+
+	body.page-company #our-values.company-values--quotes .company-value__copy blockquote {
+		font-size: clamp(1.3rem, 6vw, 1.65rem);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	body.page-company #our-values.company-values--quotes .company-value__portrait img {
+		transition: none;
+	}
+}
