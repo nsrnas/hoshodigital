@@ -20443,3 +20443,13 @@ body.page-company #our-values.company-values--quotes .company-value__copy cite {
 		transition: none;
 	}
 }
+
+/* Contact page: form-only composition. */
+body.page-contact .contact-page__canvas--form-only {
+	grid-template-columns: minmax(0, 1fr);
+}
+
+body.page-contact .contact-page__canvas--form-only .contact-form--glass {
+	width: min(100%, 960px);
+	margin-inline: auto;
+}
