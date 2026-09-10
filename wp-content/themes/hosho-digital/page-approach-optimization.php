@@ -15,7 +15,7 @@ get_header();
 
 	<?php
 	hosho_render_hero(
-		"Treat your AI spend like a budget,<br>not a blank check",
+		"Treat your AI spend like a budget, not a blank check",
 		'approach/optimization/hero.jpg',
 		array( 'class' => 'page-hero--company' )
 	);
@@ -79,24 +79,7 @@ get_header();
 	TOYODA QUOTE
 	========================================================= -->
 
-	<?php hosho_render_quote( "<strong>Before you say you <br>can't do something… <br>try it.</strong>", 'Sakichi Toyoda', 'approach/optimization/sakichi-toyoda.png' ); ?>
-
-	<!-- =========================================================
-	ERP TEASER
-	========================================================= -->
-
-	<section class="philosophy-section">
-		<div class="container motion" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
-			<h2>Budgets Are Only Half the Story</h2>
-			<p style="max-width: 800px; margin-bottom: 2rem;">
-				Controlling spend keeps AI sustainable, but the real leverage
-				comes from wiring it directly into the systems that already
-				run your business. See how our ERP approach turns that cost
-				discipline into a genuine operational advantage.
-			</p>
-			<a href="<?php echo esc_url(home_url('/erp')); ?>" class="btn-red">Explore Our ERP Approach</a>
-		</div>
-	</section>
+	<?php hosho_render_quote( "<strong>Before you say you <br>can't do something… <br>try it.</strong>", 'Sakichi Toyoda', 'approach/optimization/sakichi-toyoda.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi' ); ?>
 
 	<!-- =========================================================
 	FINAL CTA

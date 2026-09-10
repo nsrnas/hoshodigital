@@ -25,8 +25,8 @@
     <?php endforeach; ?>
   </div></div></div></section>
 
-  <?php hosho_render_quote('We believe constant evolution is our most powerful competitive advantage.','Masayoshi Son','quote-masayoshi-son-cutout-v2.png','quote-band--standard quote-band--red-soft quote-band--masayoshi'); ?>
+  <?php hosho_render_quote('<strong>We believe constant evolution <br>is our most powerful <br>competitive advantage.</strong>','Masayoshi Son','quote-masayoshi-son-cutout-v2.png','quote-band--standard quote-band--red-soft quote-band--masayoshi'); ?>
 
   <section class="section" id="opportunities"><div class="shell intro-grid motion"><div><h2>Where do you want to make an impact?</h2></div><div class="editorial-grid career-links"><a class="feature" href="<?php echo esc_url(hosho_page_url('company')); ?>"><h3>Our story</h3><p>Learn what HOSHŌ DIGITAL stands for.</p></a><a class="feature" href="<?php echo esc_url(hosho_page_url('solutions')); ?>"><h3>Our solution</h3><p>Explore the enterprise outcomes behind our work.</p></a><a class="feature" href="<?php echo esc_url(home_url('/approach/')); ?>"><h3>Our approach</h3><p>See how we turn ambition into dependable progress.</p></a></div></div></section>
-  <?php hosho_render_cta('Come soar with us','COME SOAR WITH US','','View opportunities',home_url('/job-opportunities/'),'careers-cta-flight.jpg'); ?>
+  <?php hosho_render_cta('Come soar with us','<strong>COME SOAR WITH US</strong>','','View opportunities',home_url('/job-opportunities/'),'careers-cta-flight.jpg'); ?>
 </main><?php get_footer(); ?>
