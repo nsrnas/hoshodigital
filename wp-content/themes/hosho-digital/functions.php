@@ -78,6 +78,7 @@ function hosho_navigation_items() {
         array( 'label' => 'Operational Intelligence', 'slug' => 'operational-intelligence', 'aliases' => array( 'operational-experience' ) ),
         array( 'label' => 'Customer Intelligence', 'slug' => 'customer-intelligence', 'aliases' => array( 'customer-experience' ) ),
         array( 'label' => 'Workforce Intelligence', 'slug' => 'workforce-intelligence', 'aliases' => array( 'employee-experience' ) ),
+        array( 'label' => 'Ashistanto', 'url' => 'https://ashistanto.com/', 'slug' => '', 'external' => true ),
       ),
     ),
     array(
@@ -117,8 +118,11 @@ function hosho_primary_menu_fallback() {
         <?php if ( $children ) : ?>
           <ul class="sub-menu" role="list" aria-label="<?php echo esc_attr( $item['label'] ); ?>">
             <?php foreach ( $children as $child ) :
-              $child_current = hosho_navigation_item_is_current( $child, $current ); ?>
-              <li class="menu-item<?php echo $child_current ? ' current-menu-item' : ''; ?>"><a href="<?php echo esc_url( hosho_page_url( $child['slug'] ) ); ?>"<?php echo $child_current ? ' aria-current="page"' : ''; ?>><?php echo esc_html( $child['label'] ); ?></a></li>
+              $child_current = ! empty( $child['slug'] ) && hosho_navigation_item_is_current( $child, $current );
+              $child_href    = ! empty( $child['url'] ) ? $child['url'] : esc_url( hosho_page_url( $child['slug'] ) );
+              $child_target  = ! empty( $child['external'] ) ? ' target="_blank" rel="noopener noreferrer"' : '';
+              ?>
+              <li class="menu-item<?php echo $child_current ? ' current-menu-item' : ''; ?>"><a href="<?php echo esc_url( $child_href ); ?>"<?php echo $child_current ? ' aria-current="page"' : ''; echo $child_target; ?>><?php echo esc_html( $child['label'] ); ?></a></li>
             <?php endforeach; ?>
           </ul>
         <?php endif; ?>

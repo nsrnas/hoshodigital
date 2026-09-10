@@ -1,4 +1,4 @@
-﻿<?php get_header(); ?>
+<?php get_header(); ?>
 
 <main id="main-content">
 	<?php
@@ -30,8 +30,10 @@
 			<div class="opex-dual-cards__wrapper">
 				
 				<div class="opex-stat-card">
-					<h2 class="opex-stat-card__number"><span data-count-up data-count-end="87" data-count-suffix="%">87%</span></h2>
-					<h3 class="opex-stat-card__heading">of executives believe digital technologies are changing customer expectations faster than their organizations can adapt.</h3>
+					<h2 class="opex-stat-card__headline">
+						<span class="opex-stat-card__number" data-count-up data-count-end="87" data-count-suffix="%">87%</span>
+						<span class="opex-stat-card__heading">of executives believe digital technologies are changing customer expectations faster than their organizations can adapt.</span>
+					</h2>
 					<p class="opex-stat-card__body">Organizations are under increasing pressure to modernize operations, improve efficiency, and respond faster to changing business demands.</p>
 					<div class="opex-stat-card__source">
 						<img class="source-logo source-logo--mit" src="<?php echo esc_url( hosho_asset_url( 'MIT-logo.png' ) ); ?>" alt="" aria-hidden="true">
