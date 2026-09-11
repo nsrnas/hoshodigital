@@ -151,7 +151,7 @@ $foundationText = isset($_GET['foundationText'])  ? $_GET['foundationText'] : "T
 
 				<article class="solutions-card solutions-card--red motion">
 					<div class="solutions-card__icon">
-						<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+						<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#e21c15" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 							<path d="M12 3 3 8l9 5 9-5-9-5Z"/>
 							<path d="M3 8v8l9 5 9-5V8"/>
 							<path d="M12 13v8"/>
@@ -163,7 +163,7 @@ $foundationText = isset($_GET['foundationText'])  ? $_GET['foundationText'] : "T
 
 				<article class="solutions-card solutions-card--red motion">
 					<div class="solutions-card__icon">
-						<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FFF" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+						<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#e21c15" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 							<circle cx="12" cy="12" r="9"/>
 							<path d="M4 12h16"/>
 							<path d="M12 4v16"/>
@@ -278,46 +278,49 @@ $foundationText = isset($_GET['foundationText'])  ? $_GET['foundationText'] : "T
                   </g>
                 </svg>
 
-                <div class="node-tooltip">
-                  <p class="node-tooltip__text"></p>
-                </div>
 
 				<script>
-				  document.addEventListener('DOMContentLoaded', function () {
-					var svg         = document.querySelector('.nodes-right svg');
-					var tooltip     = document.querySelector('.nodes-right .node-tooltip');
-					var tooltipText = tooltip ? tooltip.querySelector('.node-tooltip__text') : null;
-					var defaultText = tooltipText ? tooltipText.textContent : '';
+					document.addEventListener('DOMContentLoaded', function () {
+						var wrap = document.querySelector('.nodes-diagram-svg');
+						var svg  = wrap ? wrap.querySelector('svg') : null;
+						if (!svg || !wrap) return;
 
-					if (!svg) return;
+						var vb    = svg.viewBox.baseVal;
+						var boxes = svg.querySelectorAll('.node-box');
 
-					var boxes = svg.querySelectorAll('.node-box');
-					boxes.forEach(function (box) {
-					  // Bekukan animasi entrance setelah selesai (mencegah box "hilang" saat di-hover)
-					  box.addEventListener('animationend', function () {
-						box.style.animation = 'none';
-						box.style.opacity = '1';
-						box.style.transform = 'none';
-					  });
+						boxes.forEach(function (box) {
+							box.addEventListener('animationend', function () {
+								box.style.animation = 'none';
+								box.style.opacity = '1';
+								box.style.transform = 'none';
+							});
 
-					  function showDetail() {
-						if (!tooltipText) return;
-						tooltipText.textContent = box.getAttribute('data-detail') || defaultText;
-						tooltip.classList.add('is-active');
-					  }
+							var rect = box.querySelector('rect');
+							if (!rect) return;
 
-					  function hideDetail() {
-						if (!tooltipText) return;
-						tooltipText.textContent = defaultText;
-						tooltip.classList.remove('is-active');
-					  }
+							var bbox = rect.getBBox();
+							var cx   = bbox.x + bbox.width / 2;
+							var topY = bbox.y;
 
-					  box.addEventListener('mouseenter', showDetail);
-					  box.addEventListener('mouseleave', hideDetail);
-					  box.addEventListener('focus', showDetail);
-					  box.addEventListener('blur', hideDetail);
+							var leftPct = ((cx - vb.x) / vb.width) * 100;
+							var topPct  = ((topY - vb.y) / vb.height) * 100;
+
+							var popup = document.createElement('div');
+							popup.className = 'node-popup';
+							popup.style.left = leftPct + '%';
+							popup.style.top  = topPct + '%';
+							popup.textContent = box.getAttribute('data-detail') || '';
+							wrap.appendChild(popup);
+
+							function show() { popup.classList.add('is-visible'); }
+							function hide() { popup.classList.remove('is-visible'); }
+
+							box.addEventListener('mouseenter', show);
+							box.addEventListener('mouseleave', hide);
+							box.addEventListener('focus', show);
+							box.addEventListener('blur', hide);
+						});
 					});
-				  });
 				</script>
 			</div>
 			</div>

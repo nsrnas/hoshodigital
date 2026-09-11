@@ -45,7 +45,7 @@ get_header();
 	========================================================= -->
 
 	<?php hosho_render_quote(
-		'<strong>“Artificial intelligence will be<br> the most transformative technology<br> of the 21st century.”</strong>',
+		'<strong>“Artificial intelligence will be<br>the most transformative technology<br>of the 21st century.”</strong>',
 		'Jensen Huang',
 		'jensen-huang-editorial-v2.png',
 		'quote-band--standard quote-band--red-soft quote-band--masayoshi'
@@ -311,7 +311,7 @@ get_header();
 	<?php hosho_render_cta(
 		'',
 		'<strong>READY TO TRANSFORM WHAT\'S NEXT?</strong>',
-		'Move from digital ambition to intelligent execution. Build AI capabilities that connect your people, processes, data, and technology — and evolve with your business.',
+		'',
 		'Start Your AI Transformation',
 		home_url( '/contact' ),
 		'services/cta-ai.jpg'
