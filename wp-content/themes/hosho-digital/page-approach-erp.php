@@ -95,7 +95,7 @@ get_header();
 				processes, people, and systems toward a single vision of efficiency.
 			</p>
 
-			<div class="help-grid" style="display: flex; gap: 15px; align-items: stretch; overflow-x: auto; padding: 20px 0;">
+			<div class="help-grid" style="display: flex; gap: 15px; align-items: stretch; overflow-x: auto; padding: 20px 10px;">
 				<div class="help-card">
 					<h3>Business Understanding</h3>
 					<p>Deep analysis of your current operational bottlenecks and long-term strategic objectives.</p>

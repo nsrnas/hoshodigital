@@ -58,6 +58,12 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 				</div>
 			</div>
 
+			<div class="cs-divider" aria-hidden="true" style="--divider-shift-x: 50px; --divider-shift-y: -20px;">
+				<div class="cs-divider-node">
+					<div class="cs-divider-arrow"></div>
+				</div>
+			</div>
+
 			<div class="cs-panel cs-solution">
 				<div class="cs-panel-content">
 					<h3>Solution<br>as a Service</h3>
@@ -129,7 +135,7 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 							</g>
 
 							<g class="venn-overlap-group">
-								<text x="335" y="365" class="venn-petal-text" transform="rotate(-90, 340, 365)">Execution</text>
+								<text x="335" y="363" class="venn-petal-text" transform="rotate(-90, 340, 365)">Execution</text>
 							</g>
 
 							<g class="venn-center" aria-hidden="true">
@@ -138,18 +144,18 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 							</g>
 
 							<g class="venn-label-group advisory-label" data-venn-id="advisory">
-								<text x="340" y="124" class="venn-circle-title">Solution</text>
-								<text x="340" y="150" class="venn-circle-title">Advisory</text>
+								<text x="340" y="140" class="venn-circle-title">Solution</text>
+								<text x="340" y="165" class="venn-circle-title">Advisory</text>
 							</g>
 
 							<g class="venn-label-group consulting-label" data-venn-id="consulting">
-								<text x="487" y="365" class="venn-circle-title">Functional</text>
-								<text x="487" y="391" class="venn-circle-title">Consulting</text>
+								<text x="470" y="365" class="venn-circle-title">Functional</text>
+								<text x="470" y="391" class="venn-circle-title">Consulting</text>
 							</g>
 
 							<g class="venn-label-group engineering-label" data-venn-id="engineering">
-								<text x="193" y="365" class="venn-circle-title">Software</text>
-								<text x="193" y="391" class="venn-circle-title">Engineering</text>
+								<text x="205" y="365" class="venn-circle-title">Software</text>
+								<text x="205" y="391" class="venn-circle-title">Engineering</text>
 							</g>
 						</svg>
 					</div>
