@@ -45,12 +45,12 @@ get_header();
 	========================================================= -->
 
 	<?php hosho_render_quote(
-		'<strong>“Artificial intelligence will be<br>the most transformative technology<br>of the 21st century.”</strong>',
+		'<strong>Artificial intelligence will be the most transformative technology of the 21st century.</strong>',
 		'Jensen Huang',
 		'jensen-huang-editorial-v2.png',
 		'quote-band--standard quote-band--red-soft quote-band--masayoshi'
 	); ?>
-
+	
 	<!-- =========================================================
 	05 — WHY AI TRANSFORMATION?
 	========================================================= -->
