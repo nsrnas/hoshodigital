@@ -209,7 +209,7 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 				</div>
 			</div>
 
-			<div class="solutions-cards solutions-cards--timeline">
+			<div class="solutions-cards">
 				<article class="solutions-card solutions-card--1 motion">
 					<h3>Rapid Deployment</h3>
 					<p>Rapid integration of ready-to-use AI modules to solve immediate business bottlenecks.</p>

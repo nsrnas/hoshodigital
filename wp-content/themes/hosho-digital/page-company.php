@@ -93,8 +93,6 @@
     </div>
   </section>
 
-  <?php hosho_render_quote( '<strong>Change is the very essence of life. <br>The moment we cease to change, <br>to be able to adapt, to adjust, <br>to respond effectively to new situations, <br>then we have begun to die.</strong>', 'Lee Kuan Yew', 'lee-kuan-yew-editorial-v2.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi' ); ?>
-
   <section class="section company-standard">
     <div class="shell">
       <div class="intro-grid motion">

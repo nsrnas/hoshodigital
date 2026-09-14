@@ -507,6 +507,19 @@
     resetVennState();
   }
 
+  // Solutions card toggle for mobile tap interaction
+  document.querySelectorAll('.solutions-card').forEach((card) => {
+    card.addEventListener('click', () => {
+      const parent = card.closest('.solutions-cards');
+      if (parent) {
+        parent.querySelectorAll('.solutions-card').forEach((other) => {
+          if (other !== card) other.classList.remove('is-open');
+        });
+      }
+      card.classList.toggle('is-open');
+    });
+  });
+
   // Careers: type the four beliefs once the section enters the viewport.
   const careerBeliefs = document.querySelector('[data-career-beliefs]');
   if (careerBeliefs) {

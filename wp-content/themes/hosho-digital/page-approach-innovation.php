@@ -283,41 +283,41 @@ get_header();
 				<h2>Built In Governance</h2>
 			</div>
 
-			<div class="governance-grid motion">
-				<div class="gov-item">
-					<div class="gov-icon" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3Z"/></svg></div>
-					<div class="gov-text">
+			<div class="outcomes-grid motion">
+				<div class="outcome-card">
+					<div class="outcome-card__top">
+						<div class="out-icon" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3Z"/></svg></div>
 						<span class="small-title">Integrity</span>
 						<h4>Data Governance</h4>
-						<p>PII masking, data lineage cataloging, and automated retention policies across all agents.</p>
 					</div>
+					<p>PII masking, data lineage cataloging, and automated retention policies across all agents.</p>
 				</div>
 
-				<div class="gov-item">
-					<div class="gov-icon" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M9 10.5c0-1.4 1.3-2.5 3-2.5s3 1 3 2.2-1.1 1.9-3 2.3-3 1.2-3 2.5 1.3 2.5 3 2.5 3-1.1 3-2.5"/><path d="M12 7v10"/></svg></div>
-					<div class="gov-text">
+				<div class="outcome-card">
+					<div class="outcome-card__top">
+						<div class="out-icon" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M9 10.5c0-1.4 1.3-2.5 3-2.5s3 1 3 2.2-1.1 1.9-3 2.3-3 1.2-3 2.5 1.3 2.5 3 2.5 3-1.1 3-2.5"/><path d="M12 7v10"/></svg></div>
 						<span class="small-title">Control</span>
 						<h4>Cost Governance</h4>
-						<p>Token usage tracking, budget limits, and predictive alerts before spend runs ahead of the value it's producing.</p>
 					</div>
+					<p>Token usage tracking, budget limits, and predictive alerts before spend runs ahead of the value it's producing.</p>
 				</div>
 
-				<div class="gov-item">
-					<div class="gov-icon" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18"/><path d="M9 3v4h6V3"/><path d="M8 9h8"/><path d="M8 13h8"/><path d="M8 17h5"/></svg></div>
-					<div class="gov-text">
+				<div class="outcome-card">
+					<div class="outcome-card__top">
+						<div class="out-icon" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18"/><path d="M9 3v4h6V3"/><path d="M8 9h8"/><path d="M8 13h8"/><path d="M8 17h5"/></svg></div>
 						<span class="small-title">Trust</span>
 						<h4>Compliance &amp; Audit</h4>
-						<p>Automated audit trails built for regulatory review (GDPR, SOC 2) from the first agent you deploy, not retrofitted later.</p>
 					</div>
+					<p>Automated audit trails built for regulatory review (GDPR, SOC 2) from the first agent you deploy, not retrofitted later.</p>
 				</div>
 
-				<div class="gov-item">
-					<div class="gov-icon" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a7.8 7.8 0 0 0 .1-6l2-1.2-2-3.4-2.3.9a8 8 0 0 0-5.2-3L11.6 0h-3.2l-.4 2.3a8 8 0 0 0-5.2 3L.5 4.4l-2 3.4 2 1.2a7.8 7.8 0 0 0 .1 6l-2 1.2 2 3.4 2.3-.9a8 8 0 0 0 5.2 3l.4 2.3h3.2l.4-2.3a8 8 0 0 0 5.2-3l2.3.9 2-3.4Z"/></svg></div>
-					<div class="gov-text">
+				<div class="outcome-card">
+					<div class="outcome-card__top">
+						<div class="out-icon" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a7.8 7.8 0 0 0 .1-6l2-1.2-2-3.4-2.3.9a8 8 0 0 0-5.2-3L11.6 0h-3.2l-.4 2.3a8 8 0 0 0-5.2 3L.5 4.4l-2 3.4 2 1.2a7.8 7.8 0 0 0 .1 6l-2 1.2 2 3.4 2.3-.9a8 8 0 0 0 5.2 3l.4 2.3h3.2l.4-2.3a8 8 0 0 0 5.2-3l2.3.9 2-3.4Z"/></svg></div>
 						<span class="small-title">Scale</span>
 						<h4>Organization Policies</h4>
-						<p>A change-management framework and role-based training so the team knows how to safely adjust an agent's boundaries.</p>
 					</div>
+					<p>A change-management framework and role-based training so the team knows how to safely adjust an agent's boundaries.</p>
 				</div>
 			</div>
 		</div>
@@ -327,7 +327,7 @@ get_header();
 	QUOTE
 	========================================================= -->
 
-	<?php hosho_render_quote( '<strong>Without tradition, <br>art is a flock of sheep <br>without a shepherd.<br> Without innovation, <br>it is a corpse.</strong>', 'Winston Churchill', 'approach\ai\churcill.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi' ); ?>
+	<?php hosho_render_quote( '<strong>Without tradition, <br>art is a flock of sheep <br>without a shepherd.<br> Without innovation, <br>it is a corpse.</strong>', 'Winston Churchill', 'approach/ai/churcill.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi' ); ?>
 
 	<!-- =========================================================
 	DESIGNED FOR OUTCOMES

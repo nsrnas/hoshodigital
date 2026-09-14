@@ -199,7 +199,6 @@ $foundationText = isset($_GET['foundationText'])  ? $_GET['foundationText'] : "T
 				information. It sits underneath what you already run. It
 				doesn't replace it.
 			</p>
-			<p style="color:red;">_______</p>
 			<p>
 				The intelligent Digital core links the 7 often disconnected elements of the enterprise digital core  into a single loop, unifying the enterprise. 
 			</p>
