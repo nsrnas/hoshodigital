@@ -1,9 +1,9 @@
-<?php get_header(); ?>
+﻿<?php get_header(); ?>
 
 <main id="main-content">
 	<?php
 	hosho_render_hero(
-		'Strategic Customer<br>Engagement',
+		'Anticipate what matters.',
 		'hero-customer-experience.jpg',
 		['class' => 'page-hero--cx']
 	);

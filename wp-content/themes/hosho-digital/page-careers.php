@@ -5,7 +5,7 @@
   <section class="section careers-belief"><div class="shell careers-belief__grid motion">
     <h2 class="careers-belief__title">A better way of working starts here.</h2>
     <div class="careers-belief__lines" data-career-beliefs aria-label="Not better than everyone. Better under pressure. Better in learning. Better than yesterday.">
-      <p data-typed-line>Not better than everyone.</p><p data-typed-line>Better under pressure.</p><p data-typed-line>Better in learning.</p><p data-typed-line>Better than yesterday.</p>
+      <p data-typed-line>Not better than everyone.</p><p data-typed-line>Better under pressure.</p><p data-typed-line>Better in learning.</p><p class="careers-belief__line--gradient" data-typed-line>Better than yesterday.</p>
     </div>
     <p class="careers-belief__body">We respect the unique qualities and experiences that each individual brings. We create an inclusive environment that supports learning, collaboration and practical innovation.</p>
   </div></section>

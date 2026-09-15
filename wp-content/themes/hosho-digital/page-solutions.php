@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 <main id="main-content">
-  <?php hosho_render_hero( 'Solve the Business.<br>Then Apply the Technology.', 'hero-solutions.jpg', array( 'class' => 'page-hero--solutions' ) ); ?>
+  <?php hosho_render_hero( "Build on what works.<br>Unlock what’s possible.", 'hero-solutions.jpg', array( 'class' => 'page-hero--solutions' ) ); ?>
 
-  <section class="section"><div class="shell intro-grid motion"><div><h2>AI isn't the starting point. Your business challenge is.</h2></div><div class="body-copy"><p class="lede">We identify where value is being lost, then bring together AI, automation, and data wrapped in an optimized user experience.</p></div></div></section>
+  <section class="section"><div class="shell intro-grid motion"><div><h2>AI isn't the starting point. Your business challenge is.</h2></div><div class="body-copy"><p class="lede">Transformation starts with the digital core and the data within it. Hosho Digital builds on existing capabilities, thoughtfully infuses AI and creates human-centred experiences to unlock greater intelligence, performance and value.</p></div></div></section>
 
   <section class="section section-mist"><div class="shell"><div class="solutions-insight motion">
     <span class="solutions-insight__bar" aria-hidden="true"></span>
