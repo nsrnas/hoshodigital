@@ -20530,6 +20530,127 @@ body.page-contact .contact-page__canvas--form-only .contact-form--glass {
 	margin-inline: auto;
 }
 
+/* Media page: quiet contact treatment. */
+body:is(.page-media, .page-press) .press-contact {
+	padding-block: clamp(56px, 8vw, 96px);
+}
+
+body:is(.page-media, .page-press) .press-contact__intro {
+	display: block;
+	margin-bottom: clamp(28px, 5vw, 52px);
+	padding-bottom: clamp(20px, 3vw, 32px);
+	border-bottom: 0;
+}
+
+body:is(.page-media, .page-press) .press-contact__intro h1 {
+	max-width: none;
+	font-size: clamp(32px, 4.6vw, 56px) !important;
+	font-weight: 500;
+	letter-spacing: 0;
+	line-height: 1;
+	text-transform: none;
+}
+
+body:is(.page-media, .page-press) .press-contact__profile {
+	grid-template-columns: minmax(112px, 148px) minmax(0, 1fr);
+	gap: clamp(20px, 4vw, 44px);
+	align-items: center;
+	min-height: 0;
+	padding: clamp(20px, 3vw, 36px);
+	box-shadow: 0 18px 48px rgba(7, 21, 35, .06);
+}
+
+body:is(.page-media, .page-press) .press-contact__portrait {
+	width: min(100%, 148px);
+	max-width: 148px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+body:is(.page-media, .page-press) .press-contact__portrait::before,
+body:is(.page-media, .page-press) .press-contact__portrait::after {
+	content: none;
+}
+
+body:is(.page-media, .page-press) .press-contact__portrait img {
+	width: 100% !important;
+	height: 100% !important;
+	object-fit: cover !important;
+	object-position: center 18%;
+	transform: scale(1.62);
+	transform-origin: center 34%;
+}
+
+body:is(.page-media, .page-press) .press-contact__person {
+	gap: 8px;
+	padding: 0;
+	border: 0 !important;
+}
+
+body:is(.page-media, .page-press) .press-contact__person h2,
+body:is(.page-media, .page-press) .press-contact__role {
+	margin: 0;
+	color: #111;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: 0;
+	line-height: 1.35;
+}
+
+body:is(.page-media, .page-press) .press-contact__role {
+	color: #5c6570;
+	white-space: normal;
+}
+
+body:is(.page-media, .page-press) .press-contact__note {
+	max-width: 54ch;
+	margin: clamp(10px, 2vw, 16px) 0 0;
+	color: #3f4852;
+	font-size: 14px;
+	line-height: 1.55;
+}
+
+body:is(.page-media, .page-press) .press-contact__actions {
+	gap: 12px;
+	margin-top: 8px;
+}
+
+body:is(.page-media, .page-press) .press-contact__email-box {
+	gap: 10px;
+	padding: 10px 14px;
+	font-size: 14px;
+	line-height: 1.2;
+}
+
+body.page-careers .careers-belief__line--gradient {
+	display: inline-block;
+	width: fit-content;
+	color: #e11a12;
+	background: linear-gradient(90deg, var(--red-dark), #e11a12);
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 680px) {
+	body:is(.page-media, .page-press) .press-contact__profile {
+		grid-template-columns: 96px minmax(0, 1fr);
+		justify-items: stretch;
+		padding: 18px;
+	}
+
+	body:is(.page-media, .page-press) .press-contact__portrait {
+		width: 96px;
+	}
+}
+
+@media (max-width: 480px) {
+	body:is(.page-media, .page-press) .press-contact__profile {
+		grid-template-columns: 1fr;
+	}
+}
+
 /* ===== APPROACH PAGE: unify section rhythm ===== */
 .approach-page .fail-section,
 .approach-page .nodes-section,

@@ -4,9 +4,8 @@
     <div class="shell">
       <div class="press-contact__intro motion">
         <div>
-          <h1 style="font-size: clamp(72px, 9vw, 140px);">Media Contact</h1>
+          <h1>Media Contact</h1>
         </div>
-        <p class="lede" style="font-size: 16px !important;">For interview requests, company information and other media enquiries, contact Himari S.</p>
       </div>
 
       <div class="press-contact__profile motion">
@@ -24,8 +23,9 @@
         <?php endif; ?>
 
         <div class="press-contact__person">
-          <p class="press-contact__role" style="white-space: nowrap;">Communications Manager</p>
           <h2>Himari S.</h2>
+          <p class="press-contact__role">Communications Manager</p>
+          <p class="press-contact__note">For interview requests, company information and other media enquiries, contact:</p>
           
           <div class="press-contact__actions">
             <a class="press-contact__email-box" href="mailto:media@hoshodigital.com">

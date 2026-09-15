@@ -3,7 +3,7 @@
 <main id="main-content">
 	<?php
 	hosho_render_hero(
-		'Redefine the<br>Workplace',
+		'Unlock human potential.',
 		'hero-employee-experience.jpeg',
 		['class' => 'page-hero--ex']
 	);
