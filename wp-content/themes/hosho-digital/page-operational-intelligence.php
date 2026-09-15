@@ -3,7 +3,7 @@
 <main id="main-content">
 	<?php
 	hosho_render_hero(
-		'Driving Operational<br>Excellence',
+		'Drive greater performance.',
 		'hero-operational-experience.jpg',
 		['class' => 'page-hero--opex']
 	);

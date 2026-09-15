@@ -50,7 +50,7 @@
         <div class="field field-full"><label for="solution">Solution interest *</label><select id="solution" name="solution" required><option value="">Select</option><option>Customer Intelligence</option><option>Employee Intelligence</option><option>Operational Intelligence</option></select></div>
         <div class="field field-full"><label for="message">How can we help?</label><textarea id="message" name="message"></textarea></div>
         <div class="consent"><input id="consent" name="consent" type="checkbox" required><label for="consent">HOSHŌ DIGITAL will use your information in accordance with our privacy policy and handle it with care wherever it is processed.</label></div>
-        <div class="field-full"><button class="button" type="submit">Submit enquiry</button></div>
+        <div class="field-full"><button class="button" type="submit">Submit</button></div>
       </form>
     </div>
   </section>
