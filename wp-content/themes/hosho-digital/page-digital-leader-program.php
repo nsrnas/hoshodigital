@@ -1,12 +1,8 @@
 <?php get_header(); ?>
 <main id="main-content">
-  <?php
-    $eci_partner_marks =
-      '<span class="eci-hero-partner eci-hero-partner--imda" role="img" aria-label="Infocomm Media Development Authority"></span>' .
-      hosho_render_hero('Quick wins.<br>Guaranteed outcomes.','hero-quickwin-corridor-v2.png',array('class'=>'page-hero--quickwin'));
-  ?>
+  <?php hosho_render_hero('Quick wins.<br>Guaranteed outcomes.','hero-quickwin-corridor-v2.png',array('class'=>'page-hero--quickwin')); ?>
 
-  <section class="section"><div class="shell intro-grid motion"><div><h2>A focused path from use case to measurable result.</h2></div><div class="body-copy"><p class="lede">AI Quick Win solutions are pre-defined, outcome-driven Generative AI packages for digitally ready SMEs.</p><p>Under the MSFT-IMDA GenAIxDigital Leaders Programme, these packages help businesses adopt secure, enterprise-grade AI solutions that are quick to scope, fast to deploy and aligned with operational needs.</p></div></div></section>
+  <section class="section"><div class="shell intro-grid motion"><div><h2>A focused path from use case to measurable result.</h2></div><div class="body-copy"><p class="lede">Digital Leader Program solutions are pre-defined, outcome-driven Generative AI packages for digitally ready SMEs.</p><p>Under the MSFT-IMDA GenAIxDigital Leaders Programme, these packages help businesses adopt secure, enterprise-grade AI solutions that are quick to scope, fast to deploy and aligned with operational needs.</p></div></div></section>
 
   <section class="section section-mist"><div class="shell"><div class="intro-grid motion"><div><h2>AI adoption is moving from exploration into everyday work.</h2></div><div class="body-copy"><p class="lede">The Stanford HAI 2026 AI Index reports that 88% of surveyed organisations used AI in at least one business function in 2025.</p><p>HOSHŌ DIGITAL helps convert that momentum into a governed, practical use case from opportunity discovery through deployment.</p><p><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/economy" target="_blank" rel="noopener">Source: Stanford HAI, 2026 AI Index Report</a></p></div></div><div class="stat-grid quickwin-stat-grid"><article class="stat"><strong data-count-to="88" data-count-suffix="%">88%</strong><p>of surveyed organisations used AI in at least one business function in 2025.</p></article><article class="stat"><strong data-count-to="70" data-count-suffix="%">70%</strong><p>used generative AI in at least one business function.</p></article><article class="stat"><strong data-count-to="61" data-count-suffix="%">61%</strong><p>reported generative AI adoption in Singapore.</p></article></div></div></section>
 

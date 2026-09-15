@@ -200,7 +200,7 @@ $foundationText = isset($_GET['foundationText'])  ? $_GET['foundationText'] : "T
 				doesn't replace it.
 			</p>
 			<p>
-				The intelligent Digital core links the 7 often disconnected elements of the enterprise digital core  into a single loop, unifying the enterprise. 
+				The intelligent Digital core links the 7 often disconnected elements of the enterprise digital core into a single loop, unifying the enterprise. 
 			</p>
 		</div>
 

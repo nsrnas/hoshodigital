@@ -2,7 +2,6 @@
 <main id="main-content">
   <?php
     $eci_partner_marks =
-      '<span class="eci-hero-partner eci-hero-partner--microsoft" role="img" aria-label="Microsoft"></span>' .
       '<span class="eci-hero-partner eci-hero-partner--imda" role="img" aria-label="Infocomm Media Development Authority"></span>' .
       '<span class="eci-hero-partner eci-hero-partner--enterprise" role="img" aria-label="Enterprise Singapore"></span>' .
       '<span class="eci-hero-partner eci-hero-partner--edb" role="img" aria-label="Singapore Economic Development Board"></span>';

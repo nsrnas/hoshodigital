@@ -236,6 +236,87 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 		</div>
 	</section>
 
+	<!-- =========================================================
+	EXPLORE HOSHO — APPROACH / SERVICES / SOLUTIONS
+	========================================================= -->
+
+	<section class="overview-links-section">
+		<div class="shell">
+
+			<div class="overview-links-header motion">
+				<h2 class="section-title">One Partner. Three Ways In.</h2>
+				<p class="section-desc">
+					Whether you're starting with a strategic question, a specific service, or a ready-made solution, there's a clear path forward.
+				</p>
+			</div>
+
+			<div class="overview-links-grid">
+
+				<!-- APPROACH -->
+				<article class="overview-card motion">
+					<span class="overview-card__eyebrow">Approach</span>
+					<h3>A Disciplined Path From Idea to Impact</h3>
+					<p>
+						An eight-stage framework built on gated milestones, an
+						Intelligent Digital Core, and a "don't demolish what's
+						working" philosophy — so transformation compounds
+						instead of disrupting what already runs.
+					</p>
+					<ul class="overview-card__tags">
+						<li>Innovation</li>
+						<li>Optimization</li>
+						<li>Assurance</li>
+					</ul>
+					<a href="<?php echo esc_url( hosho_page_url( 'approach' ) ); ?>" class="overview-card__link">
+						Explore Our Approach
+						<span class="button-arrow"></span>
+					</a>
+				</article>
+
+				<!-- SERVICES -->
+				<article class="overview-card motion">
+					<span class="overview-card__eyebrow">Services</span>
+					<h3>Hands-On Delivery, Not Just Advice</h3>
+					<p>
+						From AI Transformation programmes that connect data,
+						systems and people, to ERP Optimization that recovers
+						the value you're already paying Microsoft for.
+					</p>
+					<ul class="overview-card__tags">
+						<li>AI Transformation</li>
+						<li>ERP Optimization</li>
+					</ul>
+					<a href="<?php echo esc_url( hosho_page_url( 'services' ) ); ?>" class="overview-card__link">
+						Explore Our Services
+						<span class="button-arrow"></span>
+					</a>
+				</article>
+
+				<!-- SOLUTIONS -->
+				<article class="overview-card motion">
+					<span class="overview-card__eyebrow">Solutions</span>
+					<h3>40+ Intelligent Solutions, Three Pillars</h3>
+					<p>
+						A rapidly growing portfolio of enterprise AI solutions
+						spanning connected operations, predictive customer
+						engagement, and AI-powered workforce experience.
+					</p>
+					<ul class="overview-card__tags">
+						<li>Operational Intelligence</li>
+						<li>Customer Intelligence</li>
+						<li>Workforce Intelligence</li>
+					</ul>
+					<a href="<?php echo esc_url( hosho_page_url( 'solutions' ) ); ?>" class="overview-card__link">
+						Explore Our Solutions
+						<span class="button-arrow"></span>
+					</a>
+				</article>
+
+			</div>
+
+		</div>
+	</section>
+
 	<!-- ==========================================
 	PARTNERS
 	=========================================== -->
@@ -282,7 +363,7 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 	<!-- ==========================================
 	FINAL CTA
 	=========================================== -->
-	<?php hosho_render_cta( '', '<strong>Ready to Turn AI Into Value?</strong>', 'Let\'s identify where intelligence can make the biggest difference to your business.', 'Discover The Opportunity', hosho_page_url('consult-our-experts'), 'homepage/cta.jpg' ); ?>
+	<?php hosho_render_cta( '', '<strong>Ready to Turn AI Into Value?</strong>', 'Let\'s identify where intelligence can make the biggest difference to your business.', 'Discover The Opportunity', hosho_page_url('contact'), 'homepage/cta.jpg' ); ?>
 
 </main>
 
