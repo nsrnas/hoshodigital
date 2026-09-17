@@ -99,7 +99,7 @@ function is_front_page() {
 function esc_url($v) { return htmlspecialchars($v, ENT_QUOTES, 'UTF-8'); }
 function esc_attr($v) { return htmlspecialchars($v, ENT_QUOTES, 'UTF-8'); }
 function esc_html($v) { return htmlspecialchars($v, ENT_QUOTES, 'UTF-8'); }
-function wp_kses_post($v) { return strip_tags($v, '<br><span><strong><em>'); }
+function wp_kses_post($v) { return strip_tags($v, '<br><span><strong><em><img><a>'); }
 function __($v) { return $v; }
 function language_attributes() { echo 'lang="en"'; }
 function bloginfo($key) { if ($key === 'charset') echo 'UTF-8'; }

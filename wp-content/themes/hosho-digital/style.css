@@ -15409,6 +15409,30 @@ body.page-contact .contact-form--glass .consent label {
 	width: 85px;
 }
 
+/* Actual <img> variants (imda.webp, esingapore.png, edbs.jpg) */
+.eci-hero-partner-img {
+	display: block;
+	height: 38px;
+	width: auto;
+	max-width: 130px;
+	object-fit: contain;
+	object-position: left center;
+	opacity: 0.95;
+	transition: opacity .2s ease;
+}
+
+.eci-hero-partner-img--imda {
+	max-width: 115px;
+}
+
+.eci-hero-partner-img--enterprise {
+	max-width: 130px;
+}
+
+.eci-hero-partner-img--edb {
+	max-width: 90px;
+}
+
 .eci-benefit-grid {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
