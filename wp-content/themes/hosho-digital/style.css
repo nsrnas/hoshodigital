@@ -1597,16 +1597,10 @@ p {
 	position: relative;
 	width: 100%;
 	max-width: 420px;
-
 	padding: 35px;
-
 	background: rgba(255, 255, 255, .97);
-
-	border-left: 4px solid var(--red, #E21C15);
-
-	box-shadow:
-		0 25px 70px rgba(0, 0, 0, .12);
-
+	border: 4px solid var(--red, #E21C15);
+	box-shadow: 0 25px 70px rgba(0, 0, 0, .12);
 	align-self: center;
 }
 
@@ -7902,10 +7896,6 @@ svg {
 	background: var(--mist);
 }
 
-.nodes-section+.framework-section .framework-header {
-	margin-bottom: 22px;
-}
-
 .nodes-section+.framework-section .framework-container {
 	max-width: 1180px;
 }
@@ -8722,7 +8712,7 @@ svg {
 	}
 
 	.framework-header h2 {
-		font-size: 28px;
+		font-size: 48px
 	}
 
 	.framework-watermark {
@@ -8744,11 +8734,6 @@ svg {
 
 	.framework-header {
 		padding: 0;
-	}
-
-	.framework-header h2 {
-		font-size: 25px;
-		margin-bottom: 17px;
 	}
 
 	.framework-header p {
@@ -12878,6 +12863,7 @@ canvas {
 	.success-section h2,
 	.outcome-section h2,
 	.philosophy-strip h2,
+	.framework-header h2,
 	.legal-title {
 		font-size: clamp(30px, 9vw, 44px);
 		line-height: 1.08;
@@ -21033,3 +21019,196 @@ body.page-solutions .section-navy .intro-grid h2 {
 		font-size: 42px;
 	}
 }
+
+/* ===== Cognitive Shift — visual banner (saas-sol.png) ===== */
+
+.cognitive-shift .cs-visual {
+	position: relative;
+	overflow: hidden;
+	background-color: #06060e;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: clamp(64px, 9vw, 120px) clamp(24px, 6vw, 80px) clamp(56px, 7vw, 96px);
+}
+
+.cognitive-shift .cs-visual::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.7);
+	pointer-events: none;
+	z-index: 0;
+}
+
+.cognitive-shift .cs-visual > * {
+	position: relative;
+	z-index: 1;
+}
+
+.cognitive-shift .cs-hero-title {
+	max-width: 900px;
+	margin: 0 auto clamp(48px, 7vw, 88px);
+	text-align: center;
+}
+
+.cognitive-shift .cs-hero-title p {
+	margin: 0;
+	color: #fff;
+	font-size: clamp(28px, 4.2vw, 52px);
+	font-weight: 800;
+	line-height: 1.2;
+	letter-spacing: -.02em;
+}
+
+.cognitive-shift .cs-hero-title__accent {
+	color: #f6b9b9;
+}
+
+.cognitive-shift .cs-split {
+	position: relative;
+	display: flex;
+	align-items: center;
+	min-height: clamp(300px, 34vw, 420px);
+	overflow: visible;
+	background: transparent;
+}
+
+.cognitive-shift .cs-panel {
+	width: 50%;
+	background: transparent !important;
+	border: 0;
+	padding: 0 clamp(20px, 5vw, 64px);
+}
+
+.cognitive-shift .cs-saas {
+	padding-right: clamp(40px, 8vw, 100px);
+}
+
+.cognitive-shift .cs-solution {
+	padding-left: clamp(40px, 8vw, 100px);
+}
+
+.cognitive-shift .cs-panel h3 {
+	margin: 0 0 18px;
+	color: rgba(255, 255, 255, .72);
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: .15em;
+	text-transform: uppercase;
+	line-height: 1.4;
+}
+
+.cognitive-shift .cs-verb-wrapper {
+	min-height: auto;
+	margin-bottom: 22px;
+}
+
+.cognitive-shift .cs-verb {
+	font-size: clamp(3rem, 6vw, 5.5rem);
+}
+
+.cognitive-shift .cs-lines p {
+	font-size: clamp(1rem, 1.4vw, 1.15rem);
+	color: rgba(255, 255, 255, .85);
+	border-left-color: rgba(255, 255, 255, .5);
+}
+
+.cognitive-shift .cs-divider {
+	position: relative;
+	top: auto;
+	left: auto;
+	z-index: 5;
+	flex: 0 0 auto;
+	width: auto;
+	height: auto;
+	pointer-events: auto;
+	margin-top: -100px;
+}
+
+.cognitive-shift .cs-divider-node {
+	width: 72px;
+	height: 72px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(12px);
+	-webkit-backdrop-filter: blur(12px);
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 4px 32px rgba(0, 0, 0, 0.2);
+}
+
+.cognitive-shift .cs-divider-arrow {
+	background: #fff;
+}
+
+.cognitive-shift .cs-divider-arrow::after {
+	content: "";
+	position: absolute;
+	right: 1px;
+	top: 50%;
+	width: 14px;
+	height: 14px;
+	border-top: 2.5px solid #fff;
+	border-right: 2.5px solid #fff;
+	border-radius: 1.5px;
+	transform: translateY(-50%) rotate(45deg);
+	transform-origin: right center;
+}
+
+@media (max-width: 900px) {
+	.cognitive-shift .cs-split {
+		flex-direction: column;
+		gap: 32px;
+		min-height: 0;
+	}
+
+	.cognitive-shift .cs-panel {
+		width: 100%;
+		padding-inline: 0;
+		text-align: center;
+	}
+
+	.cognitive-shift .cs-saas,
+	.cognitive-shift .cs-solution {
+		padding-inline: 0;
+	}
+
+	.cognitive-shift .cs-lines p {
+		text-align: left;
+	}
+}
+
+/* ==========================================================
+   FRAMEWORK S-PUZZLE (8-STAGE)
+   ========================================================== */
+
+.s-puzzle-container {
+	position: relative;
+	width: 100%;
+	max-width: 380px;
+	aspect-ratio: 461 / 577;
+	margin: 0 auto;
+}
+
+.s-piece {
+	position: absolute;
+	transition: transform 0.3s ease;
+}
+
+.s-piece:hover {
+	transform: scale(1.05);
+	z-index: 10;
+}
+
+/* Approximate positioning to form the S curve */
+.s-piece-1 { top: 7%; left: 4%; width: 24%; }
+.s-piece-2 { top: -0.4%; left: 21%; width: 46%; }
+.s-piece-3 { top: 3%; left: 62.5%; width: 35%; }
+.s-piece-4 { top: 37%; left: 51%; width: 42%; }
+.s-piece-5 { top: 46.4%; left: 11%; width: 43%; }
+.s-piece-6 { top: 63.5%; left: 5.4%; width: 26%; }
+.s-piece-7 { top: 86%; left: 26%; width: 43%; }
+.s-piece-8 { top: 61.8%; left: 66%; width: 28%; }

@@ -2,7 +2,7 @@
 $project_root = dirname(__DIR__);
 $theme_root   = $project_root . '/wp-content/themes/hosho-digital';
 
-$request_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+$request_path = urldecode(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 $asset_path   = realpath($project_root . $request_path);
 
 if ($asset_path && str_starts_with($asset_path, realpath($project_root)) && is_file($asset_path)) {
