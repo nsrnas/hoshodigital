@@ -5,7 +5,6 @@
   <section class="section company-why">
     <div class="shell company-why__grid motion">
       <div class="company-why__heading">
-        <p class="eyebrow">Why HOSHŌ?</p>
         <h2>Because technology is uncertain.<br>Your partner shouldn't be.</h2>
         <div class="company-seal" role="img" aria-label="Japanese seal for guarantee">
           <span lang="ja">保証</span>
@@ -69,24 +68,24 @@
       <div class="company-values__window">
         <div class="company-values__track" data-track>
           <article class="company-value company-value--statement company-value--courageous" data-slide aria-label="Courageous value">
-            <figure class="company-value__media company-value__portrait"><img src="<?php echo esc_url( hosho_asset_url( 'company-values/courageous-aristotle.webp' ) ); ?>" alt="Portrait of Aristotle" loading="lazy" decoding="async" draggable="false"><figcaption>Aristotle</figcaption></figure>
-            <div class="company-value__copy"><p class="eyebrow">Our values</p><h3>Courageous</h3><p class="company-value__definition">We speak up, take ownership of hard calls, and act with conviction, even when it's uncomfortable.</p><blockquote>&ldquo;Moral excellence comes about as a result of habit. We become just by doing just acts, temperate by doing temperate acts, brave by doing brave acts.&rdquo;</blockquote><cite>Aristotle</cite></div>
+            <figure class="company-value__media company-value__portrait"><img src="<?php echo esc_url( hosho_asset_url( 'company-values/courageous-aristotle.webp' ) ); ?>" alt="Portrait of Aristotle" loading="lazy" decoding="async" draggable="false"></figure>
+            <div class="company-value__copy"><h3>Courageous</h3><p class="company-value__definition">We speak up, take ownership of hard calls, and act with conviction, even when it's uncomfortable.</p><blockquote>&ldquo;Moral excellence comes about as a result of habit. We become just by doing just acts, temperate by doing temperate acts, brave by doing brave acts.&rdquo;</blockquote><cite>Aristotle</cite></div>
           </article>
           <article class="company-value company-value--statement company-value--curious" data-slide aria-label="Curious value">
-            <figure class="company-value__media company-value__portrait"><img src="<?php echo esc_url( hosho_asset_url( 'company-values/curious-voltaire.webp' ) ); ?>" alt="Portrait of Voltaire" loading="lazy" decoding="async" draggable="false"><figcaption>Voltaire</figcaption></figure>
-            <div class="company-value__copy"><p class="eyebrow">Our values</p><h3>Curious</h3><p class="company-value__definition">We ask questions, stay open to new ideas, and never assume we already have all the answers.</p><blockquote>&ldquo;Judge a man by his questions rather than by his answers.&rdquo;</blockquote><cite>Voltaire</cite></div>
+            <figure class="company-value__media company-value__portrait"><img src="<?php echo esc_url( hosho_asset_url( 'company-values/curious-voltaire.webp' ) ); ?>" alt="Portrait of Voltaire" loading="lazy" decoding="async" draggable="false"></figure>
+            <div class="company-value__copy"><h3>Curious</h3><p class="company-value__definition">We ask questions, stay open to new ideas, and never assume we already have all the answers.</p><blockquote>&ldquo;Judge a man by his questions rather than by his answers.&rdquo;</blockquote><cite>Voltaire</cite></div>
           </article>
           <article class="company-value company-value--statement company-value--accountable" data-slide aria-label="Accountable value">
-            <figure class="company-value__media company-value__portrait"><img src="<?php echo esc_url( hosho_asset_url( 'company-values/accountable-moliere.webp' ) ); ?>" alt="Portrait of Molière" loading="lazy" decoding="async" draggable="false"><figcaption>Molière</figcaption></figure>
-            <div class="company-value__copy"><p class="eyebrow">Our values</p><h3>Accountable</h3><p class="company-value__definition">We do what we say we'll do. We own our outcomes, good or bad, and follow through for the people counting on us.</p><blockquote>&ldquo;It is not only what we do, but also what we do not do, for which we are accountable.&rdquo;</blockquote><cite>Molière</cite></div>
+            <figure class="company-value__media company-value__portrait"><img src="<?php echo esc_url( hosho_asset_url( 'company-values/accountable-moliere.webp' ) ); ?>" alt="Portrait of Molière" loading="lazy" decoding="async" draggable="false"></figure>
+            <div class="company-value__copy"><h3>Accountable</h3><p class="company-value__definition">We do what we say we'll do. We own our outcomes, good or bad, and follow through for the people counting on us.</p><blockquote>&ldquo;It is not only what we do, but also what we do not do, for which we are accountable.&rdquo;</blockquote><cite>Molière</cite></div>
           </article>
-          <article class="company-value company-value--statement company-value--human" data-slide aria-label="Human value">
-            <figure class="company-value__media company-value__portrait"><img src="<?php echo esc_url( hosho_asset_url( 'company-values/human-tolstoy.webp' ) ); ?>" alt="Portrait of Leo Tolstoy" loading="lazy" decoding="async" draggable="false"><figcaption>Leo Tolstoy</figcaption></figure>
-            <div class="company-value__copy"><p class="eyebrow">Our values</p><h3>Human</h3><p class="company-value__definition">We lead with empathy and treat everyone, including ourselves, with respect and care.</p><blockquote>&ldquo;The sole meaning of life is to serve humanity.&rdquo;</blockquote><cite>Leo Tolstoy</cite></div>
+          <article class="company-value company-value--statement company-value--human" data-slide aria-label="Humanity value">
+            <figure class="company-value__media company-value__portrait"><img src="<?php echo esc_url( hosho_asset_url( 'company-values/human-tolstoy.webp' ) ); ?>" alt="Portrait of Leo Tolstoy" loading="lazy" decoding="async" draggable="false"></figure>
+            <div class="company-value__copy"><h3>Humanity</h3><p class="company-value__definition">We lead with empathy and treat everyone, including ourselves, with respect and care.</p><blockquote>&ldquo;To understand the world, one must look at it from the perspective of the individual, not the crowd.&rdquo;</blockquote><cite>Kenzabur&#333; &#332;e</cite></div>
           </article>
           <article class="company-value company-value--statement company-value--kaizen" data-slide aria-label="Kaizen value">
-            <figure class="company-value__media company-value__portrait"><img src="<?php echo esc_url( hosho_asset_url( 'company-values/kaizen-van-gogh.webp' ) ); ?>" alt="Self-portrait of Vincent van Gogh" loading="lazy" decoding="async" draggable="false"><figcaption>Vincent van Gogh</figcaption></figure>
-            <div class="company-value__copy"><p class="eyebrow">Our values</p><h3>Kaizen</h3><p class="company-value__definition">We believe in small, steady improvement. Every day is a chance to do a little better than the last.</p><blockquote>&ldquo;For the great doesn't happen through impulse alone, and is a succession of little things that are brought together.&rdquo;</blockquote><cite>Vincent van Gogh</cite></div>
+            <figure class="company-value__media company-value__portrait"><img src="<?php echo esc_url( hosho_asset_url( 'company-values/kaizen-van-gogh.webp' ) ); ?>" alt="Self-portrait of Vincent van Gogh" loading="lazy" decoding="async" draggable="false"></figure>
+            <div class="company-value__copy"><h3>Kaizen</h3><p class="company-value__definition">We believe in small, steady improvement. Every day is a chance to do a little better than the last.</p><blockquote>&ldquo;For the great doesn't happen through impulse alone, and is a succession of little things that are brought together.&rdquo;</blockquote><cite>Vincent van Gogh</cite></div>
           </article>
         </div>
       </div>
