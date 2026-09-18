@@ -10,17 +10,8 @@ get_header();
 ?>
 <main id="main-content" class="ai-transformation-page">
 
-	<!-- =========================================================
-	HERO
-	========================================================= -->
-
-	<?php
-	hosho_render_hero(
-		'Transform How Business Evolves',
-		'services/hero-ai.jpg',
-		array( 'class' => 'page-hero--company' )
-	);
-	?>
+	<!-- HERO -->
+	<?php hosho_render_hero('Transform How Business Evolves', 'services/hero-ai.jpg', array( 'class' => 'page-hero--company' )); ?>
 
 	<section class="transformation-brief">
 		<div class="container">
@@ -28,33 +19,17 @@ get_header();
 				<p class="transformation-brief__tag">AI Transformation</p>
 				<div class="transformation-brief__copy">
 					<p>
-						AI creates value when it is connected to the way your
-						business actually works. HOSHŌ helps organizations
-						identify opportunities, connect data and systems,
-						automate workflows, orchestrate intelligent solutions,
-						and build AI capabilities that continuously evolve
-						with the business.
+						AI creates value when it is connected to the way your business actually works. HOSHŌ helps organizations identify opportunities, connect data and systems, automate workflows, orchestrate intelligent solutions, and build AI capabilities that continuously evolve with the business.
 					</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-    <!-- =========================================================
-	QUOTE
-	========================================================= -->
+	<!-- QUOTE -->
+	<?php hosho_render_quote('<strong>Artificial intelligence will be the most transformative technology of the 21st century.</strong>', 'Jensen Huang', 'jensen-huang-editorial-v2.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi'); ?>
 
-	<?php hosho_render_quote(
-		'<strong>Artificial intelligence will be the most transformative technology of the 21st century.</strong>',
-		'Jensen Huang',
-		'jensen-huang-editorial-v2.png',
-		'quote-band--standard quote-band--red-soft quote-band--masayoshi'
-	); ?>
-	
-	<!-- =========================================================
-	05 — WHY AI TRANSFORMATION?
-	========================================================= -->
-
+	<!-- WHY AI TRANSFORMATION? -->
 	<section id="why-ai" class="beyond-the-model">
 		<div class="container">
 			<h2 class="tx-headline motion">AI transformation happens beyond the model.</h2>
@@ -84,10 +59,7 @@ get_header();
 		</div>
 	</section>
 
-	<!-- =========================================================
-	06 — THREE TRANSFORMATION FRONTIERS
-	========================================================= -->
-
+	<!-- THREE TRANSFORMATION FRONTIERS -->
 	<section id="transformation" class="inside-out">
 		<div class="container">
 			<p class="tx-kicker motion">AI-Powered Enterprise</p>
@@ -97,40 +69,28 @@ get_header();
 				<article class="frontier-panel motion">
 					<h3>Intelligent Operations</h3>
 					<p>
-						Harness AI, automation, and connected enterprise
-						systems to streamline operations, improve efficiency,
-						and enable agile, data-driven decision-making across
-						the business.
+						Harness AI, automation, and connected enterprise systems to streamline operations, improve efficiency, and enable agile, data-driven decision-making across the business.
 					</p>
 				</article>
 
 				<article class="frontier-panel motion">
 					<h3>Retain and Delight Customers</h3>
 					<p>
-						Create AI-powered, personalized experiences that
-						anticipate customer needs, simplify interactions, and
-						build stronger, long-lasting relationships across
-						every touchpoint.
+						Create AI-powered, personalized experiences that anticipate customer needs, simplify interactions, and build stronger, long-lasting relationships across every touchpoint.
 					</p>
 				</article>
 
 				<article class="frontier-panel motion">
 					<h3>Empower an Intelligent Workforce</h3>
 					<p>
-						Equip employees with AI-powered tools, automation, and
-						intelligent applications that simplify work, enhance
-						productivity, and enable people to focus on
-						higher-value outcomes.
+						Equip employees with AI-powered tools, automation, and intelligent applications that simplify work, enhance productivity, and enable people to focus on higher-value outcomes.
 					</p>
 				</article>
 			</div>
 		</div>
 	</section>
 
-	<!-- =========================================================
-	09 — ORCHESTRATION ENGINE
-	========================================================= -->
-
+	<!-- ORCHESTRATION ENGINE -->
 	<section id="orchestration" class="act-on-intelligence">
 		<div class="container">
 			<h2 class="tx-headline motion">Intelligence becomes powerful when it can act.</h2>
@@ -158,9 +118,9 @@ get_header();
 						<h3>Reasoning Engine</h3>
 					</div>
 					<ul>Planning</ul>
-                    <ul>Validation</ul>
-                    <ul>Structured outputs</ul>  
-                    <ul>Decision logic</ul>
+					<ul>Validation</ul>
+					<ul>Structured outputs</ul>
+					<ul>Decision logic</ul>
 				</article>
 
 				<article class="opt-gap-card engine-panel">
@@ -171,7 +131,7 @@ get_header();
 						<h3>Tool &amp; Integration Hub</h3>
 					</div>
 					<ul>APIs</ul>
-                    <ul>Internal systems</ul>
+					<ul>Internal systems</ul>
 					<ul>External SaaS</ul>
 					<ul>Function calling</ul>
 					<ul>Workflow engines</ul>
@@ -180,10 +140,7 @@ get_header();
 		</div>
 	</section>
 
-	<!-- =========================================================
-	12 — RESPONSIBLE AI
-	========================================================= -->
-
+	<!-- RESPONSIBLE AI -->
 	<section id="responsible-ai" class="trusted-by-design">
 		<div class="container">
 			<h2 class="tx-headline motion">AI that is powerful because it is trusted.</h2>
@@ -197,10 +154,10 @@ get_header();
 						<h3>Responsible AI</h3>
 					</div>
 					<ul>Bias detection &amp; mitigation</ul>
-                    <ul>Hallucination monitoring</ul>
-                    <ul>Output validation</ul>
-                    <ul>Safety checks</ul>
-                    <ul>Fairness &amp; transparency</ul>
+					<ul>Hallucination monitoring</ul>
+					<ul>Output validation</ul>
+					<ul>Safety checks</ul>
+					<ul>Fairness &amp; transparency</ul>
 				</article>
 
 				<article class="opt-gap-card governance-pillar">
@@ -211,10 +168,10 @@ get_header();
 						<h3>Data Governance</h3>
 					</div>
 					<ul>Data lineage</ul>
-                    <ul>Data catalog</ul>
-                    <ul>PII detection &amp; masking</ul>
-                    <ul>Data quality</ul>
-                    <ul>Retention &amp; deletion policies</ul>
+					<ul>Data catalog</ul>
+					<ul>PII detection &amp; masking</ul>
+					<ul>Data quality</ul>
+					<ul>Retention &amp; deletion policies</ul>
 				</article>
 
 				<article class="opt-gap-card governance-pillar">
@@ -225,11 +182,11 @@ get_header();
 						<h3>Model Management</h3>
 					</div>
 					<ul>Model versioning</ul>
-                    <ul>Model registry</ul>
-                    <ul>A/B testing</ul>
-                    <ul>Canary releases</ul>
-                    <ul>Fallback models</ul>
-                    <ul>Performance evaluation</ul>
+					<ul>Model registry</ul>
+					<ul>A/B testing</ul>
+					<ul>Canary releases</ul>
+					<ul>Fallback models</ul>
+					<ul>Performance evaluation</ul>
 				</article>
 
 				<article class="opt-gap-card governance-pillar">
@@ -240,10 +197,10 @@ get_header();
 						<h3>Security &amp; Access</h3>
 					</div>
 					<ul>Identity &amp; access management</ul>
-                    <ul>SSO</ul>
-                    <ul>OAuth</ul>
-                    <ul>RBAC / ABAC</ul>
-                    <ul>Encryption in transit and at rest</ul>
+					<ul>SSO</ul>
+					<ul>OAuth</ul>
+					<ul>RBAC / ABAC</ul>
+					<ul>Encryption in transit and at rest</ul>
 				</article>
 
 				<article class="opt-gap-card governance-pillar">
@@ -254,9 +211,9 @@ get_header();
 						<h3>Compliance &amp; Audit</h3>
 					</div>
 					<ul>Regulatory compliance</ul>
-                    <ul>Audit trails</ul>
-                    <ul>Risk assessments</ul>
-                    <ul>Policy management</ul>
+					<ul>Audit trails</ul>
+					<ul>Risk assessments</ul>
+					<ul>Policy management</ul>
 				</article>
 
 				<article class="opt-gap-card governance-pillar">
@@ -267,18 +224,15 @@ get_header();
 						<h3>Organization &amp; Policies</h3>
 					</div>
 					<ul>AI usage policies</ul>
-                    <ul>Training &amp; awareness</ul>
-                    <ul>Change management</ul>
-                    <ul>Incident response</ul>
+					<ul>Training &amp; awareness</ul>
+					<ul>Change management</ul>
+					<ul>Incident response</ul>
 				</article>
 			</div>
 		</div>
 	</section>
 
-	<!-- =========================================================
-	13 — OBSERVABILITY
-	========================================================= -->
-
+	<!-- OBSERVABILITY -->
 	<section id="observability" class="measured-to-improve">
 		<div class="container">
 			<h2 class="tx-headline motion">What gets measured can continuously improve.</h2>
@@ -304,18 +258,8 @@ get_header();
 		</div>
 	</section>
 
-	<!-- =========================================================
-	18 — FINAL CTA
-	========================================================= -->
-
-	<?php hosho_render_cta(
-		'',
-		'<strong>READY TO TRANSFORM WHAT\'S NEXT?</strong>',
-		'',
-		'Start Your AI Transformation',
-		home_url( '/contact' ),
-		'services/cta-ai.jpg'
-	); ?>
+	<!-- FINAL CTA -->
+	<?php hosho_render_cta('', '<strong>READY TO TRANSFORM WHAT\'S NEXT?</strong>', '',	'Start Your AI Transformation',	home_url( '/contact' ),	'services/cta-ai.jpg'); ?>
 
 </main>
 
