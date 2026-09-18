@@ -20306,3 +20306,214 @@ body.page-solutions .section-navy .intro-grid h2 {
 		font-size: 42px;
 	}
 }
+
+body.page-company .company-why {
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(46.44deg, #011222 15.9%, #2e0e16 37.86%, #ab0a07 78.19%);
+	padding: 0 !important;
+}
+
+body.page-company .company-why::before {
+	display: none;
+}
+
+body.page-company .company-why__inner {
+	display: grid;
+	grid-template-columns: 1fr 0.85fr;
+	min-height: clamp(480px, 55vw, 700px);
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+/* --- Left column --- */
+body.page-company .company-why__left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: clamp(2.5rem, 5vw, 5rem) clamp(2rem, 4.5vw, 5rem);
+	padding-right: clamp(1.5rem, 3vw, 3.5rem);
+}
+
+body.page-company .company-why__hero-title {
+	font-size: clamp(2.75rem, 6vw, 5.5rem);
+	font-weight: 800;
+	line-height: .92;
+	color: rgba(255, 255, 255, .92);
+	margin: 0 0 clamp(1rem, 2vw, 1.75rem);
+	letter-spacing: -.02em;
+}
+
+body.page-company .company-why__sub-title {
+	font-size: clamp(1.4rem, 2.75vw, 3.25rem);
+	font-weight: 700;
+	color: #fff;
+	margin: 0 0 clamp(1rem, 1.75vw, 1.5rem);
+	line-height: 1.1;
+}
+
+body.page-company .company-why__divider {
+	width: 100%;
+	height: 14px;
+	margin-bottom: clamp(1rem, 1.75vw, 1.5rem);
+	flex-shrink: 0;
+}
+
+body.page-company .company-why__body {
+	color: #fff;
+	margin-bottom: clamp(1.5rem, 2.75vw, 2.5rem);
+}
+
+body.page-company .company-why__body p {
+	font-size: clamp(.875rem, 1.1vw, 1.05rem);
+	line-height: 1.65;
+	margin: 0 0 .6em;
+	color: #fff;
+}
+
+/* HOSHŌ row at bottom-left */
+body.page-company .company-why__definition {
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+	gap: .2rem .6rem;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+body.page-company .company-why__definition strong {
+	font-size: clamp(1.5rem, 2.75vw, 3rem);
+	font-weight: 800;
+	color: #fff;
+	letter-spacing: -.02em;
+}
+
+body.page-company .company-why__definition [lang="ja"] {
+	font-size: clamp(1.125rem, 2vw, 2.25rem);
+	font-weight: 700;
+	color: #fff;
+}
+
+body.page-company .company-why__definition > span:last-child {
+	font-size: clamp(.875rem, 1.1vw, 1.15rem);
+	font-weight: 600;
+	color: #fff;
+	align-self: center;
+}
+
+/* --- Right column --- */
+body.page-company .company-why__right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: clamp(2.5rem, 5vw, 5rem) clamp(1.75rem, 3.5vw, 4rem) clamp(2.5rem, 5vw, 5rem) clamp(1.25rem, 2.25vw, 2.25rem);
+}
+
+body.page-company .company-why__principles {
+	display: flex;
+	flex-direction: column;
+	gap: clamp(.5rem, .9vw, .85rem);
+	margin: 0 0 clamp(.75rem, 1.4vw, 1.25rem);
+}
+
+body.page-company .company-why__card {
+	background: rgba(217, 217, 217, .2);
+	border-radius: clamp(8px, .75vw, 13px);
+	box-shadow: -10px 10px 24px 6px rgba(0, 0, 0, .3);
+	padding: clamp(.7rem, 1.1vw, 1.1rem) clamp(1rem, 1.6vw, 1.6rem);
+	display: flex;
+	align-items: center;
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
+	border-left: 3px solid transparent;
+	cursor: default;
+	/* Transition for inversion effect */
+	transition:
+		background 0.35s ease,
+		border-color 0.35s ease,
+		box-shadow 0.35s ease,
+		transform 0.25s ease;
+}
+
+body.page-company .company-why__card:hover {
+	background: rgba(255, 255, 255, .95);
+	border-left-color: #ab0a07;
+	box-shadow: -6px 8px 28px 4px rgba(0, 0, 0, .45);
+	transform: translateX(4px);
+}
+
+body.page-company .company-why__card--tall {
+	min-height: clamp(60px, 8vw, 100px);
+}
+
+body.page-company .company-why__card span {
+	font-size: clamp(.875rem, 1.2vw, 1.2rem);
+	font-weight: 700;
+	color: #fff;
+	line-height: 1.3;
+	transition: color 0.35s ease;
+}
+
+body.page-company .company-why__card:hover span {
+	color: #011222;
+}
+
+body.page-company .company-why__difference {
+	font-size: clamp(.875rem, 1.2vw, 1.2rem);
+	font-weight: 700;
+	color: #fff !important;
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	opacity: .85;
+}
+
+/* Stamp image */
+body.page-company .company-why__stamp {
+	display: block;
+	width: clamp(80px, 8.5vw, 140px);
+	height: auto;
+	margin-left: auto;
+	margin-bottom: clamp(.6rem, 1.1vw, 1rem);
+	opacity: .92;
+	filter: drop-shadow(0 4px 20px rgba(255,255,255,.08));
+	pointer-events: none;
+	user-select: none;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1024px) {
+	body.page-company .company-why__inner {
+		grid-template-columns: 1fr;
+	}
+
+	body.page-company .company-why__left {
+		padding-right: clamp(2rem, 4.5vw, 5rem);
+		padding-bottom: clamp(1.5rem, 3vw, 2.5rem);
+	}
+
+	body.page-company .company-why__right {
+		padding-top: 0;
+	}
+
+	body.page-company .company-why__difference {
+		text-align: left;
+	}
+
+	body.page-company .company-why__stamp {
+		width: clamp(70px, 13vw, 120px);
+		margin-left: 0;
+	}
+}
+
+@media (max-width: 600px) {
+	body.page-company .company-why__hero-title {
+		font-size: clamp(2.5rem, 12vw, 3.75rem);
+	}
+
+	body.page-company .company-why__sub-title {
+		font-size: clamp(1.25rem, 6vw, 2rem);
+	}
+}
+

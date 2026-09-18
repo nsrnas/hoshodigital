@@ -3,22 +3,42 @@
   <?php hosho_render_hero( 'TECHNOLOGY CHANGES.<br>OUR PROMISE DOESN\'T.', 'hero-company-structure.png', array( 'class' => 'page-hero--company' ) ); ?>
 
   <section class="section company-why">
-    <div class="shell company-why__grid motion">
-      <div class="company-why__heading">
-        <h2>Because technology is uncertain.<br>Your partner shouldn't be.</h2>
-        <div class="company-seal" role="img" aria-label="Japanese seal for guarantee">
+    <div class="company-why__inner">
+      <!-- Left column -->
+      <div class="company-why__left motion">
+        <h2 class="company-why__hero-title">Technology<br>moves fast.</h2>
+        <p class="company-why__sub-title">Your trust shouldn't be a gamble.</p>
+        <div class="company-why__divider" aria-hidden="true">
+          <svg width="100%" height="17" viewBox="0 0 833 17" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <line y1="8.5" x2="833" y2="8.5" stroke="url(#cw-grad)" stroke-width="17"/>
+            <defs>
+              <linearGradient id="cw-grad" x1="0" y1="17.5" x2="833" y2="17.5" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FF2F34"/>
+                <stop offset="0.216" stop-color="#AB0A07"/>
+                <stop offset="1" stop-color="#2E0E16" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="company-why__body">
+          <p>It captures the promise at the heart of our business: If we say we can do it, we stand behind it.</p>
+          <p>We don't believe transformation should mean betting your business on the latest technology.</p>
+        </div>
+        <div class="company-why__definition">
+          <strong>HOSHŌ</strong>
           <span lang="ja">保証</span>
+          <span>"guarantee" in Japanese.</span>
         </div>
       </div>
-      <div class="company-why__copy">
-        <p class="company-why__definition"><strong>HOSHŌ</strong> <span lang="ja">保証</span> <span>“guarantee” in Japanese.</span></p>
-        <p class="lede">It captures the promise at the heart of our business: If we say we can do it, we stand behind it.</p>
-        <p>We don't believe transformation should mean betting your business on the latest technology.</p>
-        <div class="company-why__principles" aria-label="The HOSHŌ difference">
-          <span>We believe in understanding first.</span>
-          <span>Building intelligently.</span>
-          <span>Measuring what matters.</span>
-          <span>And staying accountable for the value created.</span>
+
+      <!-- Right column: principle cards -->
+      <div class="company-why__right">
+        <img src="<?php echo esc_url( hosho_asset_url( 'stamp-white.png' ) ); ?>" alt="HOSHŌ guarantee stamp" class="company-why__stamp" loading="lazy" decoding="async">
+        <div class="company-why__principles motion">
+          <div class="company-why__card"><span>We believe in understanding first.</span></div>
+          <div class="company-why__card"><span>Measuring what matters.</span></div>
+          <div class="company-why__card"><span>Building intelligently.</span></div>
+          <div class="company-why__card company-why__card--tall"><span>And staying accountable for the value created.</span></div>
         </div>
         <p class="company-why__difference">That's the HOSHŌ difference.</p>
       </div>
