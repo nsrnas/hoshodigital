@@ -520,88 +520,116 @@ $foundationText = isset($_GET['foundationText'])  ? $_GET['foundationText'] : "T
 
 			<div class="framework-s-layout">
 				<div class="framework-s-visual">
-				<svg class="framework-s-svg" viewBox="0 0 461 577" xmlns="http://www.w3.org/2000/svg" aria-label="Eight-stage reversed S delivery framework">
-					<defs>
-						<linearGradient id="sGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-							<stop offset="0%" stop-color="#E21C15"/>
-							<stop offset="100%" stop-color="#071A2B"/>
-						</linearGradient>
-					</defs>
+				<div class="s-puzzle-container">
+					<img src="<?php echo esc_url(hosho_asset_url('approach/main/1 - envision.png')); ?>" class="s-piece s-piece-1" alt="Envision"
+						data-num="01" data-title="Envision"
+						data-focus="Diagnose cross-industry business friction and map executive priorities."
+						data-guarantee="Eliminates strategic misalignment before engineering begins."
+						data-deliverables="Strategic AI Opportunity Matrix||ROI Projection Model">
+					<img src="<?php echo esc_url(hosho_asset_url('approach/main/2 - energise.png')); ?>" class="s-piece s-piece-2" alt="Energise"
+						data-num="02" data-title="Energise"
+						data-focus="Mobilize multi-disciplinary squads and audit existing data estates."
+						data-guarantee="Removes compliance and security roadblocks early."
+						data-deliverables="Enterprise Readiness Scorecard||Data Governance Charter">
+					<img src="<?php echo esc_url(hosho_asset_url('approach/main/3 - sythesize.png')); ?>" class="s-piece s-piece-3" alt="Synthesize"
+						data-num="03" data-title="Synthesize"
+						data-focus="Harmonize data pipelines and engineer custom model architectures."
+						data-guarantee="De-risks development by validating data viability prior to major investment."
+						data-deliverables="Validated Model Prototype||Production-Ready Blueprint">
+					<img src="<?php echo esc_url(hosho_asset_url('approach/main/4 - launch.png')); ?>" class="s-piece s-piece-4" alt="Launch"
+						data-num="04" data-title="Launch"
+						data-focus="Deploy the initial high-priority AI application into production."
+						data-guarantee="Proves immediate operational utility with real-world feedback loops."
+						data-deliverables="Live Production AI Solution||Success Metric Baselines">
+					<img src="<?php echo esc_url(hosho_asset_url('approach/main/5 - grow.png')); ?>" class="s-piece s-piece-5" alt="Grow"
+						data-num="05" data-title="Grow"
+						data-focus="Track user adoption and iteratively fine-tune model accuracy."
+						data-guarantee="Secures early ROI by optimizing daily employee engagement."
+						data-deliverables="User Adoption Analytics Hub||Feedback Audits">
+					<img src="<?php echo esc_url(hosho_asset_url('approach/main/6 - scale.png')); ?>" class="s-piece s-piece-6" alt="Scale"
+						data-num="06" data-title="Scale"
+						data-focus="Transition the AI capability to robust, enterprise-wide infrastructure."
+						data-guarantee="Expands operational footprint across business units without performance loss."
+						data-deliverables="Auto-Scaling Infrastructure Blueprint||Deployment Plan">
+					<img src="<?php echo esc_url(hosho_asset_url('approach/main/7 - amplify.png')); ?>" class="s-piece s-piece-7" alt="Amplify"
+						data-num="07" data-title="Amplify"
+						data-focus="Overlay advanced automation, predictive analytics, and agentic workflows."
+						data-guarantee="Multiplies business outcomes to turn tools into competitive advantages."
+						data-deliverables="Cross-System Automation Playbook||Value Matrix">
+					<img src="<?php echo esc_url(hosho_asset_url('approach/main/8 - sustain.png')); ?>" class="s-piece s-piece-8" alt="Sustain"
+						data-num="08" data-title="Sustain"
+						data-focus="Monitor for model drift, update compliance, and run improvement cycles."
+						data-guarantee="Locks in permanent, long-term value so the system evolves with your business."
+						data-deliverables="24/7 Model Drift Guardrails||Value Improvement Log">
+				</div>	
 
-					<path class="s-segment s-segment--01" d="M 55 70 
-						C 240 45, 385 75, 385 185 C 385 250, 300 285, 175 288 
-						C 55 292, 50 355, 50 410 C 50 505, 215 530, 405 500"/>
+				<div class="s-stage-info" id="s-stage-info">
+					<div class="s-info-number" id="s-info-num">01</div>
+					<h3 id="s-info-title">Envision</h3>
+					<div class="s-info-block">
+						<span>THE FOCUS</span>
+						<p class="s-info-focus" id="s-info-focus">Diagnose cross-industry business friction and map executive priorities.</p>
+					</div>
 
-					<path class="s-segment s-segment--02" d="M 55 70
-						C 240 45, 385 75, 385 185 C 385 250, 300 285, 175 288
-						C 55 292, 50 355, 50 410 C 50 505, 215 530, 405 500"/>
+					<div class="s-info-block">
+						<span>THE GUARANTEE</span>
+						<p class="s-info-guarantee" id="s-info-guarantee">Eliminates strategic misalignment before engineering begins.</p>
+					</div>
 
-					<path class="s-segment s-segment--03" d="M 55 70
-						C 240 45, 385 75, 385 185 C 385 250, 300 285, 175 288
-						C 55 292, 50 355, 50 410 C 50 505, 215 530, 405 500"/>
-
-					<path class="s-segment s-segment--04" d="M 55 70
-						C 240 45, 385 75, 385 185 C 385 250, 300 285, 175 288
-						C 55 292, 50 355, 50 410 C 50 505, 215 530, 405 500"/>
-
-					<path class="s-segment s-segment--05" d="M 55 70
-						C 240 45, 385 75, 385 185 C 385 250, 300 285, 175 288
-						C 55 292, 50 355, 50 410 C 50 505, 215 530, 405 500"/>
-
-					<path class="s-segment s-segment--06" d="M 55 70
-						C 240 45, 385 75, 385 185 C 385 250, 300 285, 175 288
-						C 55 292, 50 355, 50 410 C 50 505, 215 530, 405 500"/>
-
-					<path class="s-segment s-segment--07" d="M 55 70
-						C 240 45, 385 75, 385 185 C 385 250, 300 285, 175 288
-						C 55 292, 50 355, 50 410 C 50 505, 215 530, 405 500"/>
-
-					<path class="s-segment s-segment--08" d="M 55 70
-						C 240 45, 385 75, 385 185 C 385 250, 300 285, 175 288
-						C 55 292, 50 355, 50 410 C 50 505, 215 530, 405 500"
-					/>
-
-				</svg>
-
-				<?php foreach ( $hosho_phases as $phase ) : ?>
-					<?php foreach ( $phase['stages'] as $stage ) : ?>
-						<button type="button" class="s-stage s-stage-<?php echo esc_attr( $stage['num'] ); ?>"
-							data-stage="<?php echo esc_attr( $stage['num'] ); ?>" data-title="<?php echo esc_attr( $stage['title'] ); ?>"
-							data-focus="<?php echo esc_attr( $stage['focus'] ); ?>" data-guarantee="<?php echo esc_attr( $stage['guarantee'] ); ?>"
-							data-deliverables="<?php echo esc_attr( implode( '||', $stage['deliverables'] ) ); ?>">
-								<span class="s-stage-number">
-									<?php echo esc_html( $stage['num'] ); ?>
-								</span>
-
-								<span class="s-stage-title">
-									<?php echo esc_html( $stage['title'] ); ?>
-								</span>
-							</button>
-						<?php endforeach; ?>
-					<?php endforeach; ?>
-
-					<div class="s-stage-info">
-						<div class="s-info-number">01</div>
-						<h3>Envision</h3>
-						<div class="s-info-block">
-							<span>THE FOCUS</span>
-							<p class="s-info-focus"> Diagnose cross-industry business friction and map executive priorities.</p>
-						</div>
-
-						<div class="s-info-block">
-							<span>THE GUARANTEE</span>
-							<p class="s-info-guarantee">Eliminates strategic misalignment before engineering begins.</p>
-						</div>
-
-						<div class="s-info-block s-info-deliverables">
-							<span>DELIVERABLES</span>
-							<div class="s-deliverable-list">
-								<em>Strategic AI Opportunity Matrix</em>
-								<em>ROI Projection Model</em>
-							</div>
+					<div class="s-info-block s-info-deliverables">
+						<span>DELIVERABLES</span>
+						<div class="s-deliverable-list" id="s-info-deliverables">
+							<em>Strategic AI Opportunity Matrix</em>
+							<em>ROI Projection Model</em>
 						</div>
 					</div>
 				</div>
+
+<script>
+(function() {
+	var defaultData = {
+		num: '01', title: 'Envision',
+		focus: 'Diagnose cross-industry business friction and map executive priorities.',
+		guarantee: 'Eliminates strategic misalignment before engineering begins.',
+		deliverables: 'Strategic AI Opportunity Matrix||ROI Projection Model'
+	};
+
+	var pieces = document.querySelectorAll('.s-piece');
+	var infoBox = document.getElementById('s-stage-info');
+
+	function updateInfo(data) {
+		document.getElementById('s-info-num').textContent = data.num;
+		document.getElementById('s-info-title').textContent = data.title;
+		document.getElementById('s-info-focus').textContent = data.focus;
+		document.getElementById('s-info-guarantee').textContent = data.guarantee;
+		var delivList = document.getElementById('s-info-deliverables');
+		delivList.innerHTML = '';
+		data.deliverables.split('||').forEach(function(d) {
+			var em = document.createElement('em');
+			em.textContent = d.trim();
+			delivList.appendChild(em);
+		});
+	}
+
+	pieces.forEach(function(piece) {
+		piece.addEventListener('mouseenter', function() {
+			if (!this.dataset.num) return;
+			updateInfo({
+				num: this.dataset.num,
+				title: this.dataset.title,
+				focus: this.dataset.focus,
+				guarantee: this.dataset.guarantee,
+				deliverables: this.dataset.deliverables
+			});
+			infoBox.classList.add('s-stage-info--active');
+		});
+		piece.addEventListener('mouseleave', function() {
+			updateInfo(defaultData);
+			infoBox.classList.remove('s-stage-info--active');
+		});
+	});
+})();
+</script>
 			</div>
 		</div>
 	</section>

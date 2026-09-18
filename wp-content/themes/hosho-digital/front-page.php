@@ -33,53 +33,51 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 			</p>
 		</div>
 
-		<div class="cs-split-header">
-			<div class="cs-split-header__left">
+		<div class="cs-visual" style="background-image:url('<?php echo esc_url( hosho_asset_url( 'homepage/saas-sol.png' ) ); ?>');">
+
+			<div class="cs-hero-title">
 				<p>Stop managing software.</p>
+				<p class="cs-hero-title__accent">Start scaling solutions.</p>
 			</div>
-			<div class="cs-split-header__right">
-				<p><span class="cs-split-header__lead">Start scaling solutions.</span></p>
-			</div>
-		</div>
-		<div class="cs-split">
-			<div class="cs-panel cs-saas">
-				<div class="cs-panel-content">
-					<h3>Software<br>as a Service</h3>
-					<div class="cs-verb-wrapper">
-						<span class="cs-verb cs-verb-saas">Ships.</span>
-					</div>
 
-					<div class="cs-lines">
-						<p>Built around the product</p>
-						<p>Progress gated by versions</p>
-						<p>One roadmap for every client</p>
-						<p>You adapt to the software</p>
+			<div class="cs-split">
+				<div class="cs-panel cs-saas">
+					<div class="cs-panel-content">
+						<h3>Software as a Service</h3>
+						<div class="cs-verb-wrapper">
+							<span class="cs-verb cs-verb-saas">Ships.</span>
+						</div>
+
+						<div class="cs-lines">
+							<p>Built around the product</p>
+							<p>Progress gated by versions</p>
+							<p>One roadmap for every client</p>
+							<p>You adapt to the software</p>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="cs-divider" aria-hidden="true" style="--divider-shift-x: 50px; --divider-shift-y: -20px;">
-				<div class="cs-divider-node">
-					<div class="cs-divider-arrow"></div>
-				</div>
-			</div>
-
-			<div class="cs-panel cs-solution">
-				<div class="cs-panel-content">
-					<h3>Solution<br>as a Service</h3>
-					<div class="cs-verb-wrapper">
-						<span class="cs-verb cs-verb-solution">Evolves.</span>
+				<div class="cs-divider" aria-hidden="true">
+					<div class="cs-divider-node">
+						<div class="cs-divider-arrow"></div>
 					</div>
-
-					<div class="cs-lines">
-						<p>Built around your outcomes</p>
-						<p>Continuous, contextual growth</p>
-						<p>Shaped by your specific needs</p>
-						<p>The solution adapts to you</p>
-					</div>
-
 				</div>
 
+				<div class="cs-panel cs-solution">
+					<div class="cs-panel-content">
+						<h3>Solution as a Service</h3>
+						<div class="cs-verb-wrapper">
+							<span class="cs-verb cs-verb-solution">Evolves.</span>
+						</div>
+
+						<div class="cs-lines">
+							<p>Built around your outcomes</p>
+							<p>Continuous, contextual growth</p>
+							<p>Shaped by your specific needs</p>
+							<p>The solution adapts to you</p>
+						</div>
+					</div>
+				</div>
 			</div>
 
 		</div>

@@ -1,11 +1,19 @@
 <?php get_header(); ?>
 <main id="main-content">
   <?php
-    $eci_partner_marks =
-      '<span class="eci-hero-partner eci-hero-partner--imda" role="img" aria-label="Infocomm Media Development Authority"></span>' .
-      '<span class="eci-hero-partner eci-hero-partner--enterprise" role="img" aria-label="Enterprise Singapore"></span>' .
-      '<span class="eci-hero-partner eci-hero-partner--edb" role="img" aria-label="Singapore Economic Development Board"></span>';
-    hosho_render_hero('Innovate with<br>Intelligence.','hero-eci-lattice.png',array('class'=>'page-hero--eci','actions_html'=>$eci_partner_marks));
+    $dlp_partner_marks =
+      '<img src="' . esc_url( hosho_asset_url( 'imda.webp' ) ) . '" alt="Infocomm Media Development Authority" class="eci-hero-partner-img eci-hero-partner-img--imda" loading="lazy" decoding="async">' .
+      '<img src="' . esc_url( hosho_asset_url( 'esingapore.png' ) ) . '" alt="Enterprise Singapore" class="eci-hero-partner-img eci-hero-partner-img--enterprise" loading="lazy" decoding="async">' .
+      '<img src="' . esc_url( hosho_asset_url( 'edbs.jpg' ) ) . '" alt="Singapore Economic Development Board" class="eci-hero-partner-img eci-hero-partner-img--edb" loading="lazy" decoding="async">';
+
+    hosho_render_hero(
+      'Quick wins.<br>Guaranteed outcomes.',
+      'hero-quickwin-corridor-v2.png',
+      array(
+        'class'        => 'page-hero--quickwin',
+        'actions_html' => $dlp_partner_marks,
+      )
+    );
   ?>
 
   <section class="section"><div class="shell intro-grid motion"><div><h2>From AI ambition to operational value.</h2></div><div class="body-copy"><p class="lede">The Enterprise Compute Initiative is a Singapore Government programme enabling AI transformation.</p><p>It provides companies with AI tools and consultancy support to deliver AI MVPs and solutions that promote adoption beyond the initial project.</p></div></div></section>

@@ -1,6 +1,18 @@
 <?php get_header(); ?>
 <main id="main-content">
-  <?php hosho_render_hero('Quick wins.<br>Guaranteed outcomes.','hero-quickwin-corridor-v2.png',array('class'=>'page-hero--quickwin')); ?>
+  <?php
+    $dlp_partner_marks =
+      '<img src="' . esc_url( hosho_asset_url( 'imda.webp' ) ) . '" alt="Infocomm Media Development Authority" class="eci-hero-partner-img eci-hero-partner-img--imda" loading="lazy" decoding="async">';
+
+    hosho_render_hero(
+      'Quick wins.<br>Guaranteed outcomes.',
+      'hero-quickwin-corridor-v2.png',
+      array(
+        'class'       => 'page-hero--quickwin',
+        'actions_html' => $dlp_partner_marks,
+      )
+    );
+  ?>
 
   <section class="section"><div class="shell intro-grid motion"><div><h2>A focused path from use case to measurable result.</h2></div><div class="body-copy"><p class="lede">Digital Leader Program solutions are pre-defined, outcome-driven Generative AI packages for digitally ready SMEs.</p><p>Under the MSFT-IMDA GenAIxDigital Leaders Programme, these packages help businesses adopt secure, enterprise-grade AI solutions that are quick to scope, fast to deploy and aligned with operational needs.</p></div></div></section>
 

@@ -2,7 +2,7 @@
 $project_root = dirname(__DIR__);
 $theme_root   = $project_root . '/wp-content/themes/hosho-digital';
 
-$request_path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+$request_path = urldecode(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 $asset_path   = realpath($project_root . $request_path);
 
 if ($asset_path && str_starts_with($asset_path, realpath($project_root)) && is_file($asset_path)) {
@@ -99,7 +99,7 @@ function is_front_page() {
 function esc_url($v) { return htmlspecialchars($v, ENT_QUOTES, 'UTF-8'); }
 function esc_attr($v) { return htmlspecialchars($v, ENT_QUOTES, 'UTF-8'); }
 function esc_html($v) { return htmlspecialchars($v, ENT_QUOTES, 'UTF-8'); }
-function wp_kses_post($v) { return strip_tags($v, '<br><span><strong><em>'); }
+function wp_kses_post($v) { return strip_tags($v, '<br><span><strong><em><img><a>'); }
 function __($v) { return $v; }
 function language_attributes() { echo 'lang="en"'; }
 function bloginfo($key) { if ($key === 'charset') echo 'UTF-8'; }
