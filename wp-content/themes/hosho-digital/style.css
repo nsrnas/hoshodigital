@@ -16793,24 +16793,6 @@ body.page-contact .contact-form--glass .consent label {
 	color: #071b2c;
 }
 
-/* Contact, full-width transparent form */
-.contact-page--immersive {
-	position: relative;
-	min-height: calc(100svh - 76px);
-	padding: clamp(6rem, 9vw, 10rem) 0;
-	color: #fff;
-	background: #020b13 var(--contact-bg) center/cover no-repeat;
-	isolation: isolate;
-}
-
-.contact-page--immersive::before {
-	content: "";
-	position: absolute;
-	z-index: -1;
-	inset: 0;
-	background: linear-gradient(90deg, rgba(1, 11, 20, .96), rgba(2, 18, 31, .8) 52%, rgba(75, 6, 17, .66));
-}
-
 .contact-page__canvas {
 	display: grid;
 	grid-template-columns: minmax(260px, .7fr) minmax(560px, 1.3fr);
@@ -20538,6 +20520,34 @@ body.page-contact .contact-page__canvas--form-only {
 body.page-contact .contact-page__canvas--form-only .contact-form--glass {
 	width: min(100%, 960px);
 	margin-inline: auto;
+}
+
+body.page-contact .contact-page--immersive::before {
+	background: linear-gradient(
+		90deg,
+		rgba(1, 11, 20, .38),
+		rgba(2, 18, 31, .24) 52%,
+		rgba(75, 6, 17, .18)
+	);
+}
+
+body.page-contact .contact-page--immersive {
+	background-position: center top !important;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+}
+
+body.page-contact .contact-form.contact-form--glass {
+	border: 1px solid rgba(255, 255, 255, .32);
+	background: linear-gradient(145deg, rgba(7, 21, 35, .38), rgba(7, 21, 35, .18)) !important;
+	box-shadow: 0 28px 70px rgba(0, 0, 0, .24), inset 0 1px 0 rgba(255, 255, 255, .18);
+	backdrop-filter: blur(22px) saturate(135%);
+	-webkit-backdrop-filter: blur(22px) saturate(135%);
+}
+
+body.page-contact .contact-form--glass :is(input, select, textarea) {
+	background: rgba(255, 255, 255, .12) !important;
+	border-color: rgba(255, 255, 255, .36) !important;
 }
 
 /* Media page: quiet contact treatment. */

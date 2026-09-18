@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 <main id="main-content">
-  <section class="contact-page contact-page--immersive" id="contact-form" style="--contact-bg:url('<?php echo esc_url(hosho_asset_url('hero-contact-connection.png')); ?>')">
+  <section class="contact-page contact-page--immersive" id="contact-form" style="--contact-bg:url('<?php echo esc_url(hosho_asset_url('contact-background.png')); ?>')">
     <div class="shell contact-page__canvas contact-page__canvas--form-only motion">
       <style>
         .contact-form .field input,
         .contact-form .field select,
         .contact-form .field textarea {
           padding-left: 16px !important;
-          background-color: rgba(0, 0, 0, 0.5) !important;
-          border: 1px solid rgba(255, 255, 255, 0.5) !important;
+          background-color: rgba(255, 255, 255, 0.12) !important;
+          border: 1px solid rgba(255, 255, 255, 0.36) !important;
           color: #ffffff !important;
           -webkit-text-fill-color: #ffffff !important;
         }
@@ -35,8 +35,8 @@
         .contact-form select:-webkit-autofill:hover,
         .contact-form select:-webkit-autofill:focus {
           -webkit-text-fill-color: #ffffff !important;
-          -webkit-box-shadow: 0 0 0 1000px rgba(7, 21, 35, 0.95) inset !important;
-          box-shadow: 0 0 0 1000px rgba(7, 21, 35, 0.95) inset !important;
+          -webkit-box-shadow: 0 0 0 1000px rgba(7, 21, 35, 0.55) inset !important;
+          box-shadow: 0 0 0 1000px rgba(7, 21, 35, 0.55) inset !important;
           transition: background-color 5000s ease-in-out 0s;
         }
       </style>
