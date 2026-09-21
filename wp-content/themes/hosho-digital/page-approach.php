@@ -529,7 +529,6 @@ $foundationText = isset($_GET['foundationText']) ? $_GET['foundationText'] : "Te
 	<section class="resilience-section">
 		<div class="resilience-card">
 			<h2 style="font-size: clamp(36px, 5vw, 48px); margin-bottom: 30px;">Built for Cross-Industry Resilience</h2>
-			<div class="resilience-divider"></div>
 
 			<div class="resilience-grid motion">
 				<div class="resilience-item">
