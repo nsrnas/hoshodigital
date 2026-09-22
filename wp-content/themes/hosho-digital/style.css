@@ -19538,9 +19538,9 @@ body:is(.page-media, .page-press) .press-contact__portrait img {
 	width: 100% !important;
 	height: 100% !important;
 	object-fit: cover !important;
-	object-position: center 18%;
-	transform: scale(1.62);
-	transform-origin: center 34%;
+	object-position: center center;
+	transform: scale(1.23);
+	transform-origin: center 32%;
 }
 
 body:is(.page-media, .page-press) .press-contact__person {
