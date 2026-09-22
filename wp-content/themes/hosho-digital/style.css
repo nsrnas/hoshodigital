@@ -21019,3 +21019,142 @@ body.page-solutions .section-navy .intro-grid h2 {
 		font-size: 42px;
 	}
 }
+
+/* Company values: compact Figma-inspired cards, 2-up on desktop. */
+body.page-company #our-values.company-values--quotes {
+	--company-value-gap: clamp(18px, 2vw, 28px);
+	--carousel-visible: 2;
+	--carousel-step: 50;
+}
+
+body.page-company #our-values.company-values--quotes .company-values__window {
+	overflow: hidden;
+	background: transparent;
+	box-shadow: none;
+}
+
+body.page-company #our-values.company-values--quotes .company-values__track {
+	gap: 0;
+	align-items: stretch;
+}
+
+body.page-company #our-values.company-values--quotes .company-value--statement {
+	flex: 0 0 50%;
+	min-width: 0;
+	min-height: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto minmax(280px, .95fr) auto auto auto;
+	align-content: start;
+	border: calc(var(--company-value-gap) / 2) solid transparent;
+	background: linear-gradient(to bottom, #aa0b06 0%, #2f0f16 76.81%, #011222 100%) padding-box;
+	color: #fff;
+}
+
+body.page-company #our-values.company-values--quotes .company-value__copy {
+	display: contents;
+}
+
+body.page-company #our-values.company-values--quotes .company-value__copy h3 {
+	order: 1;
+	max-width: none;
+	margin: 0;
+	padding: clamp(18px, 2.4vw, 26px) clamp(18px, 2.8vw, 32px) clamp(12px, 1.8vw, 18px);
+	color: #fff;
+	font-size: clamp(1.55rem, 2.7vw, 3rem);
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+body.page-company #our-values.company-values--quotes .company-value__portrait {
+	order: 2;
+	min-height: 0;
+	aspect-ratio: 1;
+	margin: 0;
+	background: transparent;
+}
+
+body.page-company #our-values.company-values--quotes .company-value__portrait::after {
+	content: none;
+}
+
+body.page-company #our-values.company-values--quotes .company-value__portrait img {
+	width: 100%;
+	height: 100%;
+	min-height: 0;
+	object-fit: cover;
+	object-position: center 28%;
+	filter: grayscale(1) contrast(1.06);
+	transform: none;
+}
+
+body.page-company #our-values.company-values--quotes .company-value--statement:hover .company-value__portrait img {
+	filter: grayscale(1) contrast(1.1);
+	transform: scale(1.025);
+}
+
+body.page-company #our-values.company-values--quotes .company-value__definition,
+body.page-company #our-values.company-values--quotes .company-value__copy blockquote,
+body.page-company #our-values.company-values--quotes .company-value__copy cite {
+	width: auto;
+	max-width: none;
+	margin-inline: clamp(22px, 3vw, 34px);
+	color: #fff;
+	letter-spacing: 0;
+}
+
+body.page-company #our-values.company-values--quotes .company-value__definition {
+	order: 3;
+	margin-top: clamp(20px, 2.8vw, 32px);
+	font-size: clamp(.98rem, 1.25vw, 1.25rem);
+	line-height: 1.45;
+}
+
+body.page-company #our-values.company-values--quotes .company-value__copy blockquote {
+	order: 4;
+	margin-top: clamp(16px, 2vw, 24px);
+	margin-bottom: 0;
+	padding-top: clamp(16px, 2vw, 24px);
+	border-top: 1px solid rgba(255, 255, 255, .88);
+	font-size: clamp(1.05rem, 1.55vw, 1.45rem);
+	font-weight: 600;
+	font-style: italic;
+	line-height: 1.32;
+}
+
+body.page-company #our-values.company-values--quotes .company-value__copy cite {
+	order: 5;
+	display: block;
+	margin-top: clamp(16px, 2vw, 24px);
+	margin-bottom: clamp(24px, 3.3vw, 36px);
+	font-size: clamp(.95rem, 1.25vw, 1.2rem);
+	font-weight: 700;
+	font-style: normal;
+	text-transform: uppercase;
+}
+
+@media (max-width: 980px) {
+	body.page-company #our-values.company-values--quotes {
+		--carousel-visible: 1;
+		--carousel-step: 100;
+	}
+
+	body.page-company #our-values.company-values--quotes .company-value--statement {
+		flex-basis: 100%;
+	}
+}
+
+@media (max-width: 620px) {
+	body.page-company #our-values.company-values--quotes .company-value__copy h3 {
+		font-size: clamp(1.75rem, 8vw, 2.4rem);
+	}
+
+	body.page-company #our-values.company-values--quotes .company-value__definition,
+	body.page-company #our-values.company-values--quotes .company-value__copy blockquote,
+	body.page-company #our-values.company-values--quotes .company-value__copy cite {
+		margin-inline: 22px;
+	}
+}

@@ -3,22 +3,42 @@
   <?php hosho_render_hero( 'TECHNOLOGY CHANGES.<br>OUR PROMISE DOESN\'T.', 'hero-company-structure.png', array( 'class' => 'page-hero--company' ) ); ?>
 
   <section class="section company-why">
-    <div class="shell company-why__grid motion">
-      <div class="company-why__heading">
-        <h2>Because technology is uncertain.<br>Your partner shouldn't be.</h2>
-        <div class="company-seal" role="img" aria-label="Japanese seal for guarantee">
+    <div class="company-why__inner">
+      <!-- Left column -->
+      <div class="company-why__left motion">
+        <h2 class="company-why__hero-title">Technology<br>moves fast.</h2>
+        <p class="company-why__sub-title">Your trust shouldn't be a gamble.</p>
+        <div class="company-why__divider" aria-hidden="true">
+          <svg width="100%" height="17" viewBox="0 0 833 17" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <line y1="8.5" x2="833" y2="8.5" stroke="url(#cw-grad)" stroke-width="17"/>
+            <defs>
+              <linearGradient id="cw-grad" x1="0" y1="17.5" x2="833" y2="17.5" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FF2F34"/>
+                <stop offset="0.216" stop-color="#AB0A07"/>
+                <stop offset="1" stop-color="#2E0E16" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="company-why__body">
+          <p>It captures the promise at the heart of our business: If we say we can do it, we stand behind it.</p>
+          <p>We don't believe transformation should mean betting your business on the latest technology.</p>
+        </div>
+        <div class="company-why__definition">
+          <strong>HOSHŌ</strong>
           <span lang="ja">保証</span>
+          <span>"guarantee" in Japanese.</span>
         </div>
       </div>
-      <div class="company-why__copy">
-        <p class="company-why__definition"><strong>HOSHŌ</strong> <span lang="ja">保証</span> <span>“guarantee” in Japanese.</span></p>
-        <p class="lede">It captures the promise at the heart of our business: If we say we can do it, we stand behind it.</p>
-        <p>We don't believe transformation should mean betting your business on the latest technology.</p>
-        <div class="company-why__principles" aria-label="The HOSHŌ difference">
-          <span>We believe in understanding first.</span>
-          <span>Building intelligently.</span>
-          <span>Measuring what matters.</span>
-          <span>And staying accountable for the value created.</span>
+
+      <!-- Right column: principle cards -->
+      <div class="company-why__right">
+        <img src="<?php echo esc_url( hosho_asset_url( 'stamp-white.png' ) ); ?>" alt="HOSHŌ guarantee stamp" class="company-why__stamp" loading="lazy" decoding="async">
+        <div class="company-why__principles motion">
+          <div class="company-why__card"><span>We believe in understanding first.</span></div>
+          <div class="company-why__card"><span>Measuring what matters.</span></div>
+          <div class="company-why__card"><span>Building intelligently.</span></div>
+          <div class="company-why__card company-why__card--tall"><span>And staying accountable for the value created.</span></div>
         </div>
         <p class="company-why__difference">That's the HOSHŌ difference.</p>
       </div>
@@ -68,23 +88,23 @@
       <div class="company-values__window">
         <div class="company-values__track" data-track>
           <article class="company-value company-value--statement company-value--courageous" data-slide aria-label="Courageous value">
-            <figure class="company-value__media company-value__portrait"><img src="<?php echo esc_url( hosho_asset_url( 'company-values/courageous-aristotle.webp' ) ); ?>" alt="Portrait of Aristotle" loading="lazy" decoding="async" draggable="false"></figure>
+            <figure class="company-value__media company-value__portrait"><img src="<?php echo esc_url( hosho_asset_url( 'company-values/aristotle.png' ) ); ?>" alt="Portrait of Aristotle" loading="lazy" decoding="async" draggable="false"></figure>
             <div class="company-value__copy"><h3>Courageous</h3><p class="company-value__definition">We speak up, take ownership of hard calls, and act with conviction, even when it's uncomfortable.</p><blockquote>&ldquo;Moral excellence comes about as a result of habit. We become just by doing just acts, temperate by doing temperate acts, brave by doing brave acts.&rdquo;</blockquote><cite>Aristotle</cite></div>
           </article>
           <article class="company-value company-value--statement company-value--curious" data-slide aria-label="Curious value">
-            <figure class="company-value__media company-value__portrait"><img src="<?php echo esc_url( hosho_asset_url( 'company-values/curious-voltaire.webp' ) ); ?>" alt="Portrait of Voltaire" loading="lazy" decoding="async" draggable="false"></figure>
+            <figure class="company-value__media company-value__portrait"><img src="<?php echo esc_url( hosho_asset_url( 'company-values/voltaire.png' ) ); ?>" alt="Portrait of Voltaire" loading="lazy" decoding="async" draggable="false"></figure>
             <div class="company-value__copy"><h3>Curious</h3><p class="company-value__definition">We ask questions, stay open to new ideas, and never assume we already have all the answers.</p><blockquote>&ldquo;Judge a man by his questions rather than by his answers.&rdquo;</blockquote><cite>Voltaire</cite></div>
           </article>
           <article class="company-value company-value--statement company-value--accountable" data-slide aria-label="Accountable value">
-            <figure class="company-value__media company-value__portrait"><img src="<?php echo esc_url( hosho_asset_url( 'company-values/accountable-moliere.webp' ) ); ?>" alt="Portrait of Molière" loading="lazy" decoding="async" draggable="false"></figure>
+            <figure class="company-value__media company-value__portrait"><img src="<?php echo esc_url( hosho_asset_url( 'company-values/moliere.png' ) ); ?>" alt="Portrait of Molière" loading="lazy" decoding="async" draggable="false"></figure>
             <div class="company-value__copy"><h3>Accountable</h3><p class="company-value__definition">We do what we say we'll do. We own our outcomes, good or bad, and follow through for the people counting on us.</p><blockquote>&ldquo;It is not only what we do, but also what we do not do, for which we are accountable.&rdquo;</blockquote><cite>Molière</cite></div>
           </article>
           <article class="company-value company-value--statement company-value--human" data-slide aria-label="Humanity value">
-            <figure class="company-value__media company-value__portrait"><img src="<?php echo esc_url( hosho_asset_url( 'company-values/human-tolstoy.webp' ) ); ?>" alt="Portrait of Leo Tolstoy" loading="lazy" decoding="async" draggable="false"></figure>
+            <figure class="company-value__media company-value__portrait"><img src="<?php echo esc_url( hosho_asset_url( 'company-values/kenzaburo.png' ) ); ?>" alt="Portrait of Leo Tolstoy" loading="lazy" decoding="async" draggable="false"></figure>
             <div class="company-value__copy"><h3>Humanity</h3><p class="company-value__definition">We lead with empathy and treat everyone, including ourselves, with respect and care.</p><blockquote>&ldquo;To understand the world, one must look at it from the perspective of the individual, not the crowd.&rdquo;</blockquote><cite>Kenzabur&#333; &#332;e</cite></div>
           </article>
           <article class="company-value company-value--statement company-value--kaizen" data-slide aria-label="Kaizen value">
-            <figure class="company-value__media company-value__portrait"><img src="<?php echo esc_url( hosho_asset_url( 'company-values/kaizen-van-gogh.webp' ) ); ?>" alt="Self-portrait of Vincent van Gogh" loading="lazy" decoding="async" draggable="false"></figure>
+            <figure class="company-value__media company-value__portrait"><img src="<?php echo esc_url( hosho_asset_url( 'company-values/van-gogh.png' ) ); ?>" alt="Self-portrait of Vincent van Gogh" loading="lazy" decoding="async" draggable="false"></figure>
             <div class="company-value__copy"><h3>Kaizen</h3><p class="company-value__definition">We believe in small, steady improvement. Every day is a chance to do a little better than the last.</p><blockquote>&ldquo;For the great doesn't happen through impulse alone, and is a succession of little things that are brought together.&rdquo;</blockquote><cite>Vincent van Gogh</cite></div>
           </article>
         </div>
