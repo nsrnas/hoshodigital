@@ -158,11 +158,24 @@
 
     if (!track || slides.length < 2) return;
 
+    const readCarouselNumber = (name, fallback) => {
+      const value = Number.parseFloat(window.getComputedStyle(carousel).getPropertyValue(name));
+      return Number.isFinite(value) && value > 0 ? value : fallback;
+    };
+
     const show = (nextIndex) => {
-      index = (nextIndex + slides.length) % slides.length;
-      track.style.transform = `translate3d(-${index * 100}%, 0, 0)`;
+      const visibleCount = Math.min(slides.length, Math.max(1, Math.round(readCarouselNumber('--carousel-visible', 1))));
+      const lastIndex = Math.max(slides.length - visibleCount, 0);
+      const loopLength = lastIndex + 1;
+      const step = readCarouselNumber('--carousel-step', 100);
+
+      index = ((nextIndex % loopLength) + loopLength) % loopLength;
+      track.style.transform = `translate3d(-${index * step}%, 0, 0)`;
       if (current) current.textContent = String(index + 1).padStart(2, '0');
-      slides.forEach((slide, slideIndex) => slide.setAttribute('aria-hidden', slideIndex === index ? 'false' : 'true'));
+      slides.forEach((slide, slideIndex) => {
+        const isVisible = slideIndex >= index && slideIndex < index + visibleCount;
+        slide.setAttribute('aria-hidden', isVisible ? 'false' : 'true');
+      });
     };
     const stop = () => {
       if (timer) window.clearInterval(timer);
@@ -212,6 +225,7 @@
       start();
     });
     document.addEventListener('visibilitychange', start);
+    window.addEventListener('resize', () => show(index));
 
     if ('IntersectionObserver' in window) {
       const carouselObserver = new IntersectionObserver(([entry]) => {
