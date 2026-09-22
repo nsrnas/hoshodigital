@@ -19435,7 +19435,7 @@ body.page-contact .contact-page__canvas--form-only {
 }
 
 body.page-contact .contact-page__canvas--form-only .contact-form--glass {
-	width: min(100%, 960px);
+	width: min(92vw, 780px);
 	margin-inline: auto;
 }
 
@@ -19454,17 +19454,41 @@ body.page-contact .contact-page--immersive {
 	background-size: contain !important;
 }
 
+@media (min-aspect-ratio: 16/9) {
+	body.page-contact .contact-page--immersive {
+		background-position: center center !important;
+		background-size: cover !important;
+	}
+}
+
 body.page-contact .contact-form.contact-form--glass {
 	border: 1px solid rgba(255, 255, 255, .32);
+	gap: .9rem;
+	padding: clamp(1.1rem, 2.2vw, 2rem);
 	background: linear-gradient(145deg, rgba(7, 21, 35, .38), rgba(7, 21, 35, .18)) !important;
 	box-shadow: 0 28px 70px rgba(0, 0, 0, .24), inset 0 1px 0 rgba(255, 255, 255, .18);
 	backdrop-filter: blur(22px) saturate(135%);
 	-webkit-backdrop-filter: blur(22px) saturate(135%);
 }
 
+body.page-contact .contact-form.contact-form--glass label {
+	font-size: .9rem;
+}
+
 body.page-contact .contact-form--glass :is(input, select, textarea) {
 	background: rgba(255, 255, 255, .12) !important;
 	border-color: rgba(255, 255, 255, .36) !important;
+	font-size: .95rem;
+}
+
+@media (max-width: 1180px) and (min-width: 681px) {
+	body.page-contact .contact-page__canvas--form-only .contact-form--glass {
+		width: min(88vw, 700px);
+	}
+
+	body.page-contact .contact-form.contact-form--glass {
+		padding: clamp(1rem, 1.8vw, 1.45rem);
+	}
 }
 
 /* Media page: quiet contact treatment. */
@@ -19945,7 +19969,6 @@ body.page-solutions .section-navy .intro-grid h2 {
 	}
 }
 
-<<<<<<< HEAD
 /* Company values: compact Figma-inspired cards, 2-up on desktop. */
 body.page-company #our-values.company-values--quotes {
 	--company-value-gap: clamp(18px, 2vw, 28px);
@@ -20084,7 +20107,7 @@ body.page-company #our-values.company-values--quotes .company-value__copy cite {
 		margin-inline: 22px;
 	}
 }
-=======
+
 /* ===== Cognitive Shift — visual banner (saas-sol.png) ===== */
 
 .cognitive-shift .cs-visual {
@@ -20486,5 +20509,3 @@ body.page-company .company-why__stamp {
 		font-size: clamp(1.25rem, 6vw, 2rem);
 	}
 }
-
->>>>>>> 29897ed8969d616d0bb330ba8e9da007d5154f5d
