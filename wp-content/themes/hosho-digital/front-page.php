@@ -138,7 +138,7 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 
 							<g class="venn-center" aria-hidden="true">
 								<circle cx="340" cy="297" r="24" class="venn-center-circle" />
-								<image href="<?php echo esc_url( hosho_asset_url( 'homepage/logo-white-nobg.png' ) ); ?>" x="350" y="307" width="30" height="30" transform="translate(-25, -25)" />
+								<image href="<?php echo esc_url( hosho_asset_url( 'homepage/hosho-logo-red.png' ) ); ?>" x="350" y="307" width="30" height="30" transform="translate(-25, -25)" />
 							</g>
 
 							<g class="venn-label-group advisory-label" data-venn-id="advisory">
@@ -203,7 +203,7 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 					<h2>Covering the Transformation Spectrum</h2>
 				</div>
 				<div class="body-copy">
-					<p>Every organization sits at a different point on the AI maturity curve. HOSHŌ Digital meets you where you are with three implementation models — from rapid deployment to fully bespoke platforms.</p>
+					<p>Every organization sits at a different point on the AI maturity curve. HOSHŌ Digital meets you where you are with three implementation models, from rapid deployment to fully bespoke platforms.</p>
 				</div>
 			</div>
 
@@ -242,7 +242,7 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 		<div class="shell">
 
 			<div class="overview-links-header motion">
-				<h2 class="section-title">One Partner. Three Ways In.</h2>
+				<h2 class="section-title">One Partner for your Business</h2>
 				<p class="section-desc">
 					Whether you're starting with a strategic question, a specific service, or a ready-made solution, there's a clear path forward.
 				</p>
@@ -256,8 +256,8 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 					<h3>A Disciplined Path From Idea to Impact</h3>
 					<p>
 						An eight-stage framework built on gated milestones, an
-						Intelligent Digital Core, and a "don't demolish what's
-						working" philosophy — so transformation compounds
+						Intelligent Digital Core, and a &quot;don't demolish what's
+						working&quot; philosophy, so transformation compounds
 						instead of disrupting what already runs.
 					</p>
 					<ul class="overview-card__tags">

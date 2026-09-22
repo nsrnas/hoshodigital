@@ -123,17 +123,17 @@ $foundationText = isset($_GET['foundationText']) ? $_GET['foundationText'] : "Te
 			<div class="solutions-cards">
 				<article class="solutions-card solutions-card--red motion">
 					<div class="solutions-card__icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#e21c15" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg></div>
-					<h3>The Drift Problem</h3>
+					<h3>Drift Problem</h3>
 					<p>Most AI deployments lose value over time due to unmonitored model drift.</p>
 				</article>
 				<article class="solutions-card solutions-card--red motion">
 					<div class="solutions-card__icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#e21c15" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M4 12h16"/><path d="M12 4v16"/></svg></div>
-					<h3>The Scaling Wall</h3>
+					<h3>Scaling Wall</h3>
 					<p>Point solutions routinely fail when migrating to enterprise infrastructure.</p>
 				</article>
 				<article class="solutions-card solutions-card--red motion">
 					<div class="solutions-card__icon"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/hosho-white-logo.png' ) ); ?>" alt="HOSHŌ logo"></div>
-					<h3>The HOSHŌ Answer</h3>
+					<h3>HOSHŌ Answer</h3>
 					<p>A gated, 8-stage delivery architecture where every step is anchored to an explicit commercial guarantee.</p>
 				</article>
 			</div>
