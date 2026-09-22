@@ -8,14 +8,10 @@ get_header();
 
 <main id="main-content" class="services-hub-page">
 
-	<!-- =========================================================
-	HERO
-	========================================================= -->
+	<!-- HERO -->
 	<?php hosho_render_hero( 'SERVICES BUILT <br>TO DELIVER', 'services/hero-main.jpg', array( 'class' => 'page-hero--services' ) ); ?>
 
-	<!-- =========================================================
-	INTRO
-	========================================================= -->
+	<!-- INTRO -->
 	<section class="section svc-intro">
 		<div class="shell">
 			<div class="intro-grid motion">
@@ -25,26 +21,18 @@ get_header();
 				</div>
 				<div class="body-copy">
 					<p>
-						Strategy and diagrams don't move a business forward,
-						deployed, adopted systems do. Our services take you
-						from where you are today to a measurably better
-						state, whether that means connecting AI to how your
-						business actually runs, or finally getting the value
-						you're already paying for out of your ERP.
+						Strategy and diagrams don't move a business forward, deployed, adopted systems do. Our services take you from where you are today to a measurably better state, 
+						whether that means connecting AI to how your business actually runs, or finally getting the value you're already paying for out of your ERP.
 					</p>
 					<p>
-						Every engagement is anchored to explicit business
-						outcomes and delivered by the same team from
-						discovery through go-live and beyond.
+						Every engagement is anchored to explicit business outcomes and delivered by the same team from discovery through go-live and beyond.
 					</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- =========================================================
-	SERVICES GRID
-	========================================================= -->
+	<!-- SERVICES GRID -->
 	<section class="section section-mist svc-grid-section">
 		<div class="shell">
 			<div class="svc-grid">
@@ -53,11 +41,8 @@ get_header();
 					<span class="small-title">Service</span>
 					<h3>AI Transformation</h3>
 					<p>
-						AI creates value when it's connected to how your
-						business actually works. We help you identify
-						opportunities, connect data and systems, automate
-						workflows, and build AI capabilities that continuously
-						evolve with the business.
+						AI creates value when it's connected to how your business actually works. We help you identify opportunities, connect data and systems, 
+						automate workflows, and build AI capabilities that continuously evolve with the business.
 					</p>
 					<ul class="capability-tags">
 						<li class="capability-tag">Strategy &amp; Roadmap</li>
@@ -75,12 +60,8 @@ get_header();
 					<span class="small-title">Service</span>
 					<h3>ERP Optimization</h3>
 					<p>
-						Most organizations use less than 40% of the ERP
-						they're already paying for. We audit your existing
-						Business Central environment, eliminate technical
-						debt, embed AI directly into your workflows, and
-						build custom extensions that fit your industry,
-						so your ERP finally earns its keep.
+						Most organizations use less than 40% of the ERP they're already paying for. We audit your existing Business Central environment, eliminate technical
+						debt, embed AI directly into your workflows, and build custom extensions that fit your industry, so your ERP finally earns its keep.
 					</p>
 					<ul class="capability-tags">
 						<li class="capability-tag">ERP Audit &amp; Optimization</li>
@@ -98,14 +79,10 @@ get_header();
 		</div>
 	</section>
 
-    <!-- =========================================================
-	QUOTE
-	========================================================= -->
+	<!-- QUOTE -->
 	<?php hosho_render_quote( '<strong>The value of an idea <br>lies in the using <br>of it.</strong>', 'Thomas Edison', 'services\thomas-edison.png', 'quote-band--standard quote-band--red-soft' ); ?>
 
-	<!-- =========================================================
-	HOW WE DELIVER
-	========================================================= -->
+	<!-- HOW WE DELIVER -->
 	<section class="section">
 		<div class="shell">
 			<div class="strategy-header-box motion" style="margin-bottom: 50px;">
@@ -157,9 +134,7 @@ get_header();
 		</div>
 	</section>
 
-	<!-- =========================================================
-	FINAL CTA
-	========================================================= -->
+	<!-- FINAL CTA -->
 	<?php hosho_render_cta( '', '<strong>Ready to Put a Service to Work?</strong>', '', 'Talk to Our Team', hosho_page_url( 'company' ), 'services/cta-main.jpg' ); ?>
 
 </main>
