@@ -4370,13 +4370,9 @@ a {
 
 .cs-lines p {
 	margin: 0 0 0.55rem;
-
 	padding-left: 0.9rem;
-
-	font-size: clamp(0.72rem, 0.9vw, 0.86rem);
-
+	font-size: clamp(0.5rem, 0.75vw, 0.6rem);
 	line-height: 1.72;
-
 	color: #fff;
 }
 
@@ -4756,8 +4752,7 @@ a {
 }
 
 .venn-center-circle {
-	fill: #07182b;
-	stroke: rgba(255, 255, 255, 0.3);
+	fill: #e21c15;
 	stroke-width: 1.5;
 	filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35));
 }
@@ -20695,4 +20690,16 @@ body.page-approach .solutions-card {
 	body.page-solutions .solutions-card:not(:hover):not(.is-open) {
 		height: 300px;
 	}
+}
+
+/* Standardize all titles on the front page */
+.home-page .section-title,
+.home-page .strategy-heading,
+.home-page .intro-grid h2,
+.home-page .cs-hero-title p,
+.home-page .cs-hero-title__accent {
+	font-size: clamp(40px, 4.5vw, 50px) !important;
+	font-weight: 800 !important;
+	line-height: 1.2 !important;
+	letter-spacing: -0.02em !important;
 }

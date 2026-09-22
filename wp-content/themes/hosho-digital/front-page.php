@@ -138,7 +138,7 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 
 							<g class="venn-center" aria-hidden="true">
 								<circle cx="340" cy="297" r="24" class="venn-center-circle" />
-								<image href="<?php echo esc_url( hosho_asset_url( 'homepage/hosho-logo-red.png' ) ); ?>" x="350" y="307" width="30" height="30" transform="translate(-25, -25)" />
+								<image href="<?php echo esc_url( hosho_asset_url( 'homepage/hosho-logo-red.webp' ) ); ?>" x="352" y="309" width="26" height="26" transform="translate(-25, -25)" />
 							</g>
 
 							<g class="venn-label-group advisory-label" data-venn-id="advisory">
