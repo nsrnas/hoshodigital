@@ -10,14 +10,13 @@
     ));
   ?>
 
-  <section class="section">
-    <div class="shell intro-grid motion">
-      <div>
-        <h2>A focused path from use case to measurable result.</h2>
-      </div>
-      <div class="body-copy">
+  <section class="section section-dark-path">
+    <div class="shell motion">
+      <h2 class="dark-path__title">A focused path from use case to <span class="dark-path__accent">measurable result.</span></h2>
+      <div class="dark-path__divider"></div>
+      <div class="dark-path__body">
         <p class="lede">Digital Leader Program solutions are pre-defined, outcome-driven Generative AI packages for digitally ready SMEs.</p>
-        <p>Under the MSFT-IMDA GenAIxDigital Leaders Programme, these packages help businesses adopt secure, enterprise-grade AI solutions that are quick to scope, fast to deploy and aligned with operational needs.</p>
+        <p>Under the <strong>MSFT-IMDA GenAIxDigital Leaders Programme</strong>, these packages help businesses adopt secure, enterprise-grade AI solutions that are quick to scope, fast to deploy and aligned with operational needs.</p>
       </div>
     </div>
   </section>
@@ -31,7 +30,7 @@
         <div class="body-copy">
           <p class="lede">The Stanford HAI 2026 AI Index reports that 88% of surveyed organisations used AI in at least one business function in 2025.</p>
           <p>HOSHŌ DIGITAL helps convert that momentum into a governed, practical use case from opportunity discovery through deployment.</p>
-          <p><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/economy" target="_blank" rel="noopener">Source: Stanford HAI, 2026 AI Index Report</a></p>
+          <p><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/economy" target="_blank" rel="noopener"><img src="<?php echo esc_url( hosho_asset_url( 'hai.png' ) ); ?>" alt="Stanford HAI, 2026 AI Index Report" style="height: 22px; width: auto;"></a></p>
         </div>
       </div>
       <div class="stat-grid quickwin-stat-grid">

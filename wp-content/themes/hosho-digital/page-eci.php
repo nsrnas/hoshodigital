@@ -52,24 +52,38 @@
         </div>
         <p>HOSHŌ DIGITAL combines programme support, enterprise architecture and implementation discipline to keep AI investment tied to measurable business outcomes.</p>
       </div>
-      <div class="eci-benefit-grid"></div>
-      <article>
-        <span aria-hidden="true">↗</span>
-        <h3>Co-funding support</h3>
+    </div>
+    <div class="capability-grid capability-grid--3col">
+      <div class="capability-card">
+        <div class="capability-card__top">
+          <div class="cap-icon">
+            <span class="icon-svg" aria-hidden="true">↗</span>
+          </div>
+          <h4>Co-funding support</h4>
+        </div>
         <p>Reduce upfront investment through eligible programme funding.</p>
-      </article>
-      <article>
-        <span aria-hidden="true">◎</span>
-        <h3>AI outcomes</h3>
+      </div>
+      <div class="capability-card">
+        <div class="capability-card__top">
+          <div class="cap-icon">
+            <span class="icon-svg" aria-hidden="true">◎</span>
+          </div>
+          <h4>AI outcomes</h4>
+        </div>
         <p>Design production-ready MVPs and agentic AI solutions around business value.</p>
-      </article>
-      <article>
-        <span aria-hidden="true">◇</span>
-        <h3>Lower risk, higher ROI</h3>
+      </div>
+      <div class="capability-card">
+        <div class="capability-card__top">
+          <div class="cap-icon">
+            <span class="icon-svg" aria-hidden="true">◇</span>
+          </div>
+          <h4>Lower risk, higher ROI</h4>
+        </div>
         <p>Use structured delivery and expert guidance to support sustainable growth.</p>
-      </article>
+      </div>
     </div>
   </section>
+
 
   <?php hosho_render_quote( '<strong>Change is the very essence of life. <br>The moment we cease to change, <br>to be able to adapt, to adjust, <br>to respond effectively to new situations, <br>then we have begun to die.</strong>', 'Lee Kuan Yew', 'lee-kuan-yew-editorial-v2.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi' ); ?>
 
@@ -81,23 +95,14 @@
         </div>
         <p>Each stage adds evidence, governance and internal capability so the solution can continue delivering value after launch.</p>
       </div>
-      <div class="process process--arrow process--four">
-        <article>
-          <h3>Discover</h3>
-          <p>Identify and validate high-impact use cases aligned with business priorities.</p>
-        </article>
-        <article>
-          <h3>Prepare</h3>
-          <p>Assess data readiness and define the target architecture.</p>
-        </article>
-        <article>
-          <h3>Deliver</h3>
-          <p>Build and pilot an AI MVP using Microsoft technologies.</p>
-        </article>
-        <article>
-          <h3>Embed</h3>
-          <p>Support change, capability building and an AI Centre of Excellence blueprint.</p>
-        </article>
+      <div class="timeline-row" style="display: flex; gap: 15px; align-items: stretch; overflow-x: auto; padding: 20px 0;">
+        <div class="timeline-step"><h4>Discover</h4><p>Identify and validate high-impact use cases aligned with business priorities.</p></div>
+        <div class="timeline-arrow" aria-hidden="true" style="color: var(--red); display: flex; align-items: center;"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div>
+        <div class="timeline-step"><h4>Prepare</h4><p>Assess data readiness and define the target architecture.</p></div>
+        <div class="timeline-arrow" aria-hidden="true" style="color: var(--red); display: flex; align-items: center;"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div>
+        <div class="timeline-step"><h4>Deliver</h4><p>Build and pilot an AI MVP using Microsoft technologies.</p></div>
+        <div class="timeline-arrow" aria-hidden="true" style="color: var(--red); display: flex; align-items: center;"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div>
+        <div class="timeline-step"><h4>Embed</h4><p>Support change, capability building and an AI Centre of Excellence blueprint.</p></div>
       </div>
     </div>
   </section>

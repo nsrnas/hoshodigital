@@ -28,7 +28,7 @@ get_header();
 	<section class="stay-section"><div class="container motion">
 		<h2>We Stay With You Beyond Go-Live</h2>
 		<p>Our roadmap doesn't end at deployment. We engineered for the infinite horizon.</p>
-		<div class="timeline-row" style="display: flex; gap: 15px; align-items: stretch; overflow-x: auto; padding: 20px 0;">
+		<div class="timeline-row" style="display: flex; gap: 15px; align-items: stretch; overflow-x: auto; padding: 20px 0; margin-top: 48px;">
 			<div class="timeline-step"><h4>Discovery</h4><p>Understanding architectural debt and future goals.</p></div>
 			<div class="timeline-arrow" aria-hidden="true" style="color: var(--red); display: flex; align-items: center;"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div>
 			<div class="timeline-step"><h4>Development</h4><p>Agile sprints with quality-first engineering.</p></div>
@@ -60,18 +60,77 @@ get_header();
 		<p class="engine-note">Everything the engine does rolls up into four capability groups, each one staffed by the specific competencies covered in the Core Competencies section below.</p>
 
 		<div class="capability-grid">
-			<div class="capability-card"><div class="capability-card__top"><div class="cap-icon"><span class="icon-svg" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-3 3 2 5-6"/></svg></span></div><h4>Application  <br> Monitoring</h4></div><p>Monitor for seamless operations, analysing performance and availability in real-time.</p></div>
-			<div class="capability-card"><div class="capability-card__top"><div class="cap-icon"><span class="icon-svg" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span></div><h4>Application  <br> Management</h4></div><p>Maximizing efficiency through continuous application performance optimization and resource scaling.</p></div>
-			<div class="capability-card"><div class="capability-card__top"><div class="cap-icon"><span class="icon-svg" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M2 12h20"/><path d="M7 7l10 10"/><path d="M17 7 7 17"/></svg></span></div><h4>Maintanance <br> &amp; Support</h4></div><p>Ensuring smooth functional availability via proactive updates, bug fixes and technical expert support.</p></div>
-			<div class="capability-card"><div class="capability-card__top"><div class="cap-icon"><span class="icon-svg" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span></div><h4>Security <br> &amp; Compliance</h4></div><p>Implementing pertinent measures for data protection, threat mitigation and regulatory adherence.</p></div>
+			<div class="capability-card">
+				<div class="capability-card__top">
+					<div class="cap-icon">
+						<span class="icon-svg" aria-hidden="true">
+							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M3 3v18h18"/><path d="m7 14 3-3 3 2 5-6"/>
+							</svg>
+						</span>
+					</div>
+					<h4>Application  <br> Monitoring</h4>
+				</div>
+				<p>Monitor for seamless operations, analysing performance and availability in real-time.</p>
+			</div>
+			<div class="capability-card">
+				<div class="capability-card__top">
+					<div class="cap-icon"><span class="icon-svg" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+										<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+							</svg></span>
+					</div>
+					<h4>Application  <br> Management</h4>
+				</div>
+				<p>Maximizing efficiency through continuous application performance optimization and resource scaling.</p>
+			</div>
+			<div class="capability-card">
+				<div class="capability-card__top">
+					<div class="cap-icon"><span class="icon-svg" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+							<path d="M12 2v20"/>
+							<path d="M2 12h20"/>
+							<path d="M7 7l10 10"/>
+							<path d="M17 7 7 17"/>
+						</svg></span>
+					</div>
+					<h4>Maintanance <br> &amp; Support</h4>
+				</div>
+				<p>Ensuring smooth functional availability via proactive updates, bug fixes and technical expert support.</p>
+			</div>
+			<div class="capability-card">
+				<div class="capability-card__top">
+					<div class="cap-icon">
+						<span class="icon-svg" aria-hidden="true">
+							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+								<path d="M20 6 9 17l-5-5"/>
+							</svg>
+						</span>
+					</div>
+					<h4>Security <br> &amp; Compliance</h4>
+				</div>
+				<p>Implementing pertinent measures for data protection, threat mitigation and regulatory adherence.</p>
+			</div>
 		</div>
 
-		<div class="stats-bar"><div class="stats-row">
-			<div class="stat"><span class="label">Efficient</span><span class="tag">Agile</span></div>
-			<div class="stat"><span class="label">Scalable</span><span class="tag">Reliable</span></div>
-			<div class="stat"><span class="label">Predictable</span><span class="tag">Frictionless</span></div>
-			<div class="stat"><span class="label">Resilient</span><span class="tag">Compliant</span></div>
-		</div></div>
+		<div class="stats-bar">
+			<div class="stats-row">
+			<div class="stat">
+				<span class="label">Efficient</span>
+				<span class="tag">Agile</span>
+			</div>
+			<div class="stat">
+				<span class="label">Scalable</span>
+				<span class="tag">Reliable</span>
+			</div>
+			<div class="stat">
+				<span class="label">Predictable</span>
+				<span class="tag">Frictionless</span>	
+			</div>
+			<div class="stat">
+				<span class="label">Resilient</span>
+				<span class="tag">Compliant</span>
+			</div>
+		</div>
+		</div>
 	</div></section>
 
 	<!-- QUOTE -->
