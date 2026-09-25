@@ -321,40 +321,28 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 
 	<section class="partners-section">
 		<div class="container">
-			<div class="partner-category-section">
-				<span class="partner-category-title">Technology Partners</span>
-				<div class="partner-logos-wrap">
-					<div class="partner-logos-track">
-						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/tech-partners/openai.jpg' ) ); ?>" alt="OpenAI"></div>
-						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/tech-partners/microsoft.jpg' ) ); ?>" alt="Microsoft"></div>
-						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/tech-partners/google-cloud.jpg' ) ); ?>" alt="Google Cloud"></div>
-						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/tech-partners/anthropic.jpg' ) ); ?>" alt="Anthropic"></div>
-						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/tech-partners/openai.jpg' ) ); ?>" alt="OpenAI"></div>
-						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/tech-partners/microsoft.jpg' ) ); ?>" alt="Microsoft"></div>
-						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/tech-partners/google-cloud.jpg' ) ); ?>" alt="Google Cloud"></div>
-						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/tech-partners/anthropic.jpg' ) ); ?>" alt="Anthropic"></div>
-					</div>
-				</div>
-			</div>
+			<?php
+			hosho_render_partner_category(
+				'Technology Partners',
+				array(
+					array( 'src' => 'homepage/tech-partners/openai.jpg', 'alt' => 'OpenAI' ),
+					array( 'src' => 'homepage/tech-partners/microsoft.jpg', 'alt' => 'Microsoft' ),
+					array( 'src' => 'homepage/tech-partners/google-cloud.jpg', 'alt' => 'Google Cloud' ),
+					array( 'src' => 'homepage/tech-partners/anthropic.jpg', 'alt' => 'Anthropic' ),
+				)
+			);
 
-			<div class="partner-category-section">
-				<span class="partner-category-title">Business Partners</span>
-				<div class="partner-logos-wrap">
-					<div class="partner-logos-track">
-						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/buss-partners/ingram.png' ) ); ?>" alt="Ingram Micro"></div>
-						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/buss-partners/sbf.png' ) ); ?>" alt="SBF"></div>
-						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/buss-partners/sg-tech.png' ) ); ?>" alt="SG Tech"></div>
-						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/buss-partners/pax8.png' ) ); ?>" alt="Pax8"></div>
-						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/buss-partners/crayon.png' ) ); ?>" alt="Partner"></div>
-						<!-- duplicated for a seamless infinite loop -->
-						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/buss-partners/ingram.png' ) ); ?>" alt="Ingram Micro"></div>
-						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/buss-partners/sbf.png' ) ); ?>" alt="SBF"></div>
-						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/buss-partners/sg-tech.png' ) ); ?>" alt="SG Tech"></div>
-						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/buss-partners/pax8.png' ) ); ?>" alt="Pax8"></div>
-						<div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( 'homepage/buss-partners/crayon.png' ) ); ?>" alt="Partner"></div>
-					</div>
-				</div>
-			</div>
+			hosho_render_partner_category(
+				'Business Partners',
+				array(
+					array( 'src' => 'homepage/buss-partners/ingram.png', 'alt' => 'Ingram Micro' ),
+					array( 'src' => 'homepage/buss-partners/sbf.png', 'alt' => 'SBF' ),
+					array( 'src' => 'homepage/buss-partners/sg-tech.png', 'alt' => 'SG Tech' ),
+					array( 'src' => 'homepage/buss-partners/pax8.png', 'alt' => 'Pax8' ),
+					array( 'src' => 'homepage/buss-partners/crayon.png', 'alt' => 'Partner' ),
+				)
+			);
+			?>
 		</div>
 	</section>
 

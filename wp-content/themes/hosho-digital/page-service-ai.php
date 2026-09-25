@@ -103,11 +103,13 @@ get_header();
 						</div>
 						<h3>Orchestration Engine</h3>
 					</div>
-					<ul>Task decomposition</ul>
-					<ul>Parallel execution</ul>
-					<ul>Retry / fallback</ul>
-					<ul>Prompt pipelines</ul>
-					<ul>Planning strategies</ul>
+					<ul>
+						<li>Task decomposition</li>
+						<li>Parallel execution</li>
+						<li>Retry / fallback</li>
+						<li>Prompt pipelines</li>
+						<li>Planning strategies</li>
+					</ul>
 				</article>
 
 				<article class="opt-gap-card engine-panel">
@@ -117,10 +119,12 @@ get_header();
 						</div>
 						<h3>Reasoning Engine</h3>
 					</div>
-					<ul>Planning</ul>
-					<ul>Validation</ul>
-					<ul>Structured outputs</ul>
-					<ul>Decision logic</ul>
+					<ul>
+						<li>Planning</li>
+						<li>Validation</li>
+						<li>Structured outputs</li>
+						<li>Decision logic</li>
+					</ul>
 				</article>
 
 				<article class="opt-gap-card engine-panel">
@@ -130,11 +134,13 @@ get_header();
 						</div>
 						<h3>Tool &amp; Integration Hub</h3>
 					</div>
-					<ul>APIs</ul>
-					<ul>Internal systems</ul>
-					<ul>External SaaS</ul>
-					<ul>Function calling</ul>
-					<ul>Workflow engines</ul>
+					<ul>
+						<li>APIs</li>
+						<li>Internal systems</li>
+						<li>External SaaS</li>
+						<li>Function calling</li>
+						<li>Workflow engines</li>
+					</ul>
 				</article>
 			</div>
 		</div>
@@ -149,84 +155,96 @@ get_header();
 				<article class="opt-gap-card governance-pillar">
 					<div class="opt-gap-card__top">
 						<div class="icon">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
 						</div>
 						<h3>Responsible AI</h3>
 					</div>
-					<ul>Bias detection &amp; mitigation</ul>
-					<ul>Hallucination monitoring</ul>
-					<ul>Output validation</ul>
-					<ul>Safety checks</ul>
-					<ul>Fairness &amp; transparency</ul>
+					<ul>
+						<li>Bias detection &amp; mitigation</li>
+						<li>Hallucination monitoring</li>
+						<li>Output validation</li>
+						<li>Safety checks</li>
+						<li>Fairness &amp; transparency</li>
+					</ul>
 				</article>
 
 				<article class="opt-gap-card governance-pillar">
 					<div class="opt-gap-card__top">
 						<div class="icon">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
 						</div>
 						<h3>Data Governance</h3>
 					</div>
-					<ul>Data lineage</ul>
-					<ul>Data catalog</ul>
-					<ul>PII detection &amp; masking</ul>
-					<ul>Data quality</ul>
-					<ul>Retention &amp; deletion policies</ul>
+					<ul>
+						<li>Data lineage</li>
+						<li>Data catalog</li>
+						<li>PII detection &amp; masking</li>
+						<li>Data quality</li>
+						<li>Retention &amp; deletion policies</li>
+					</ul>
 				</article>
 
 				<article class="opt-gap-card governance-pillar">
 					<div class="opt-gap-card__top">
 						<div class="icon">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
 						</div>
 						<h3>Model Management</h3>
 					</div>
-					<ul>Model versioning</ul>
-					<ul>Model registry</ul>
-					<ul>A/B testing</ul>
-					<ul>Canary releases</ul>
-					<ul>Fallback models</ul>
-					<ul>Performance evaluation</ul>
+					<ul>
+						<li>Model versioning</li>
+						<li>Model registry</li>
+						<li>A/B testing</li>
+						<li>Canary releases</li>
+						<li>Fallback models</li>
+						<li>Performance evaluation</li>
+					</ul>
 				</article>
 
 				<article class="opt-gap-card governance-pillar">
 					<div class="opt-gap-card__top">
 						<div class="icon">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
 						</div>
 						<h3>Security &amp; Access</h3>
 					</div>
-					<ul>Identity &amp; access management</ul>
-					<ul>SSO</ul>
-					<ul>OAuth</ul>
-					<ul>RBAC / ABAC</ul>
-					<ul>Encryption in transit and at rest</ul>
+					<ul>
+						<li>Identity &amp; access management</li>
+						<li>SSO</li>
+						<li>OAuth</li>
+						<li>RBAC / ABAC</li>
+						<li>Encryption in transit and at rest</li>
+					</ul>
 				</article>
 
 				<article class="opt-gap-card governance-pillar">
 					<div class="opt-gap-card__top">
 						<div class="icon">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
 						</div>
 						<h3>Compliance &amp; Audit</h3>
 					</div>
-					<ul>Regulatory compliance</ul>
-					<ul>Audit trails</ul>
-					<ul>Risk assessments</ul>
-					<ul>Policy management</ul>
+					<ul>
+						<li>Regulatory compliance</li>
+						<li>Audit trails</li>
+						<li>Risk assessments</li>
+						<li>Policy management</li>
+					</ul>
 				</article>
 
 				<article class="opt-gap-card governance-pillar">
 					<div class="opt-gap-card__top">
 						<div class="icon">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
 						</div>
 						<h3>Organization &amp; Policies</h3>
 					</div>
-					<ul>AI usage policies</ul>
-					<ul>Training &amp; awareness</ul>
-					<ul>Change management</ul>
-					<ul>Incident response</ul>
+					<ul>
+						<li>AI usage policies</li>
+						<li>Training &amp; awareness</li>
+						<li>Change management</li>
+						<li>Incident response</li>
+					</ul>
 				</article>
 			</div>
 		</div>

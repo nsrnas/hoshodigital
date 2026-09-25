@@ -189,3 +189,18 @@ function hosho_render_cta( $eyebrow, $title, $body, $label, $url, $image ) { ?>
   <section class="cta-panel<?php echo $concise ? ' cta-panel--concise' : ''; ?>" style="background-image:url('<?php echo esc_url( hosho_asset_url( $image ) ); ?>')"><div class="cta-panel__inner shell motion">
     <?php if ( $concise ) : ?><h2 class="cta-panel__title"><?php echo wp_kses_post( $title ); ?></h2><?php if(!empty($body)) : ?><p><?php echo esc_html( $body ); ?></p><?php endif; ?><a class="button" href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $label ); ?><span class="button-arrow" aria-hidden="true"></span></a><?php else : ?><p class="eyebrow"><?php echo esc_html( $eyebrow ); ?></p><h2 class="cta-panel__title"><?php echo wp_kses_post( $title ); ?></h2><p><?php echo esc_html( $body ); ?></p><a class="button" href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $label ); ?><span class="button-arrow" aria-hidden="true"></span></a><?php endif; ?></div></section><?php
 }
+function hosho_render_partner_category( $title, $partners, $repeat = 2 ) { ?>
+  <div class="partner-category-section">
+    <span class="partner-category-title"><?php echo esc_html( $title ); ?></span>
+    <div class="partner-logos-wrap">
+      <div class="partner-logos-track">
+        <?php for ( $i = 0; $i < $repeat; $i++ ) : ?>
+          <?php foreach ( (array) $partners as $partner ) : ?>
+            <div class="partner-logo"><img src="<?php echo esc_url( hosho_asset_url( $partner['src'] ) ); ?>" alt="<?php echo esc_attr( $partner['alt'] ); ?>"></div>
+          <?php endforeach; ?>
+        <?php endfor; ?>
+      </div>
+    </div>
+  </div><?php
+}
+
