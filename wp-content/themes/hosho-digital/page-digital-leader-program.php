@@ -98,7 +98,7 @@
     </div>
   </section>
 
-  <?php hosho_render_quote( '<strong>The only way to avoid making mistakes <br>is not to do anything. <br>And that … will be <br>the ultimate mistake.</strong>', 'Goh Keng Swee', 'lee-kuan-yew-editorial-v2.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi' ); ?>
+  <?php hosho_render_quote( '<strong>The only way to avoid making mistakes <br>is not to do anything. <br>And that … will be <br>the ultimate mistake.</strong>', 'Goh Keng Swee', 'goh-keng-swee.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi' ); ?>
 
   <section class="section section-navy">
     <div class="shell">
@@ -158,6 +158,6 @@
         <p>If you are a Singapore-registered company with less than S$100 million in annual turnover or fewer than 200 employees, you may qualify. Fill in the form below to register your interest.</p>
         <a class="button" href="https://smesgodigital.gov.sg/web/solution/dl_22/genaixdl-hosho" target="_blank" rel="noopener">Fill in Form<span class="button-arrow" aria-hidden="true"></span></a></div></div></section>
 
-  <?php hosho_render_cta('','<strong>Quick wins. Guaranteed outcomes.</strong>','','Check eligibility','#eligibility','quickwin-singapore-city.jpg'); ?>
+  <?php hosho_render_cta('','Check your eligibility','','Check eligibility', hosho_page_url('contact'),'quickwin-singapore-city.jpg'); ?>
   
 </main><?php get_footer(); ?>

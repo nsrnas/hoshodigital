@@ -33,7 +33,7 @@ get_header();
 			<div class="timeline-arrow" aria-hidden="true" style="color: var(--red); display: flex; align-items: center;"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div>
 			<div class="timeline-step"><h4>Development</h4><p>Agile sprints with quality-first engineering.</p></div>
 			<div class="timeline-arrow" aria-hidden="true" style="color: var(--red); display: flex; align-items: center;"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div>
-			<div class="timeline-step"><h4>Deployment</h4><p>Seamless CI/CD orchestration and validation.</p></div>
+			<div class="timeline-step"><h4>Maintenance</h4><p>Seamless CI/CD orchestration and validation.</p></div>
 			<div class="timeline-arrow" aria-hidden="true" style="color: var(--red); display: flex; align-items: center;"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div>
 			<div class="timeline-step"><h4>Optimization</h4><p>Fine-tuning for scale and resource efficiency.</p></div>
 			<div class="timeline-arrow" aria-hidden="true" style="color: var(--red); display: flex; align-items: center;"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></div>
@@ -281,6 +281,6 @@ get_header();
 	</div></section>
 
 	<!-- FINAL CTA -->
-	<?php hosho_render_cta( '', '<strong>Go Live. Then Get Better.</strong>', 'Keep your AI working, improving and creating value.', 'Build Your Advantage', home_url( '/contact' ), 'approach/ams/cta.jpg' ); ?>
+	<?php hosho_render_cta( '', 'get live, get better', '', 'Build Your Advantage', home_url( '/contact' ), 'approach/ams/cta.jpg' ); ?>
 </main>
 <?php get_footer(); ?>

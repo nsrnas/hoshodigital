@@ -9,7 +9,27 @@ get_header();
 ?>
 <main id="main-content" class="optimization-page">
 	<!-- HERO -->
-	<?php hosho_render_hero( "Treat your AI spend like a budget, not a blank check", 'approach/optimization/hero.jpg', array( 'class' => 'page-hero--company' ) ); ?>
+	<?php hosho_render_hero( "Spend. Governance. Security.", 'approach/optimization/hero.jpg', array( 'class' => 'page-hero--company' ) ); ?>
+
+	
+	<!-- GENAI COST REALITY -->
+	<section class="optimization-reality" aria-labelledby="optimization-reality-title">
+		<div class="container optimization-reality__grid">
+			<div class="optimization-reality__stat">
+				<p class="optimization-reality__eyebrow">The Reality</p>
+				<p class="optimization-reality__number" aria-hidden="true">50%</p>
+				<h2 id="optimization-reality-title">of GenAI projects will overrun their budget.</h2>
+				<div class="optimization-reality__source">
+					<p>Source: </p>
+					<img src="<?php echo esc_url( hosho_asset_url( 'approach/optimization/gartner.png' ) ); ?>" alt="Gartner" loading="lazy" decoding="async">
+				</div>
+			</div>
+			<div class="optimization-reality__copy">
+				<p>AI incurs a cost every time it is used. Over a model's lifetime, usage accounts for at least 70% of its total cost.</p>
+				<p>Budget overruns are driven by architecture and operations choices. Cost controls need to be built into the system from day one.</p>
+			</div>
+		</div>
+	</section>
 
 	<!-- AI BUDGET -->
 	<section class="ai-budget"><div class="container">

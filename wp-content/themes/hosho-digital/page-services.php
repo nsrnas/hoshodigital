@@ -9,23 +9,21 @@ get_header();
 <main id="main-content" class="services-hub-page">
 
 	<!-- HERO -->
-	<?php hosho_render_hero( 'SERVICES BUILT <br>TO DELIVER', 'services/hero-main.jpg', array( 'class' => 'page-hero--services' ) ); ?>
+	<?php hosho_render_hero( 'BUILT TO DELIVER. <br>PROVEN IN PRODUCTION.', 'services/hero-main.jpg', array( 'class' => 'page-hero--services' ) ); ?>
 
 	<!-- INTRO -->
 	<section class="section svc-intro">
 		<div class="shell">
 			<div class="intro-grid motion">
 				<div>
-					<span class="small-title">What We Do</span>
-					<h2>Two Services. One Standard of Delivery.</h2>
+					<h2>From Plan to Production.</h2>
 				</div>
 				<div class="body-copy">
 					<p>
-						Strategy and diagrams don't move a business forward, deployed, adopted systems do. Our services take you from where you are today to a measurably better state, 
-						whether that means connecting AI to how your business actually runs, or finally getting the value you're already paying for out of your ERP.
+						Strategy alone is not enough. Roadmaps, decks and diagrams look good on paper, but they don't change how a business runs. Only systems that are built, deployed and adopted by your people do.
 					</p>
 					<p>
-						Every engagement is anchored to explicit business outcomes and delivered by the same team from discovery through go-live and beyond.
+						Every engagement is anchored to clear business outcomes and delivered by the same team, from the first discovery session through go-live and long after.
 					</p>
 				</div>
 			</div>
@@ -38,7 +36,6 @@ get_header();
 			<div class="svc-grid">
 
 				<article class="svc-card motion">
-					<span class="small-title">Service</span>
 					<h3>AI Transformation</h3>
 					<p>
 						AI creates value when it's connected to how your business actually works. We help you identify opportunities, connect data and systems, 
@@ -51,16 +48,15 @@ get_header();
 						<li class="capability-tag">Responsible AI</li>
 					</ul>
 					<a href="<?php echo esc_url( hosho_page_url( 'ai-transformation' ) ); ?>" class="button">
-						Explore AI Transformation
+						Explore
 						<span class="button-arrow"></span>
 					</a>
 				</article>
 
 				<article class="svc-card motion">
-					<span class="small-title">Service</span>
 					<h3>ERP Optimization</h3>
 					<p>
-						Most organizations use less than 40% of the ERP they're already paying for. We audit your existing Business Central environment, eliminate technical
+						Most organizations use less than what they're already paying for. We audit your existing Business Central environment, eliminate technical
 						debt, embed AI directly into your workflows, and build custom extensions that fit your industry, so your ERP finally earns its keep.
 					</p>
 					<ul class="capability-tags">
@@ -70,7 +66,7 @@ get_header();
 						<li class="capability-tag">Managed Support</li>
 					</ul>
 					<a href="<?php echo esc_url( hosho_page_url( 'erp-optimization' ) ); ?>" class="button">
-						Explore ERP Optimization
+						Explore
 						<span class="button-arrow"></span>
 					</a>
 				</article>
@@ -86,7 +82,6 @@ get_header();
 	<section class="section">
 		<div class="shell">
 			<div class="strategy-header-box motion" style="margin-bottom: 50px;">
-				<span class="small-title" style="display:block; text-align:center;">How We Work</span>
 				<h2 class="section-title" style="font-size: clamp(30px, 3.6vw, 44px);">Delivery, Not Just Design</h2>
 			</div>
 

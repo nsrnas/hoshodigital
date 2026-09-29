@@ -113,6 +113,10 @@ $foundationText = isset($_GET['foundationText']) ? $_GET['foundationText'] : "Te
 				<div class="fail-intro__stat">
 					<strong data-count-up data-count-end="80" data-count-suffix="%">80%</strong>
 					<span>of enterprise AI <br>initiatives never <br>yield a clear return</span>
+					<div class="fail-intro__source">
+						<span>Source</span>
+						<img src="<?php echo esc_url( hosho_asset_url( 'approach/main/rand.png' ) ); ?>" alt="Research source" loading="lazy" decoding="async">
+					</div>
 				</div>
 				<div class="fail-intro__copy">
 					<h2>Why, and How We Fix It.</h2>

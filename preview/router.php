@@ -18,6 +18,7 @@ $route_map = array(
     'press'                  => array('page' => 'press',               'file' => 'page-press.php'),
     'contact'                => array('page' => 'contact',             'file' => 'page-contact.php'),
     'company'                => array('page' => 'company',             'file' => 'page-company.php'),
+    'programmes'             => array('page' => 'programmes',          'file' => 'page-programmes.php'),
     'digital-leader-program'           => array('page' => 'digital-leader-program',        'file' => 'page-digital-leader-program.php'),
     'eci'                    => array('page' => 'eci',                 'file' => 'page-eci.php'),
     'solutions'              => array('page' => 'solutions',           'file' => 'page-solutions.php'),
