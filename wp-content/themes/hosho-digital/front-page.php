@@ -120,9 +120,11 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 								</filter>
 							</defs>
 
-							<circle class="venn-circle venn-circle-advisory" data-venn-id="advisory" cx="340" cy="162" r="140" tabindex="0" role="button" aria-label="Solution Advisory" />
-							<circle class="venn-circle venn-circle-consulting" data-venn-id="consulting" cx="457" cy="365" r="140" tabindex="0" role="button" aria-label="Functional Consulting" />
-							<circle class="venn-circle venn-circle-engineering" data-venn-id="engineering" cx="223" cy="365" r="140" tabindex="0" role="button" aria-label="Software Engineering" />
+							<!-- Adjust these three r values together to resize the circles. -->
+							<!-- Increase the distance between these centers to reduce circle overlap. -->
+							<circle class="venn-circle venn-circle-advisory" data-venn-id="advisory" cx="340" cy="135" r="180" tabindex="0" role="button" aria-label="Solution Advisory" />
+							<circle class="venn-circle venn-circle-consulting" data-venn-id="consulting" cx="477" cy="380" r="180" tabindex="0" role="button" aria-label="Functional Consulting" />
+							<circle class="venn-circle venn-circle-engineering" data-venn-id="engineering" cx="203" cy="380" r="180" tabindex="0" role="button" aria-label="Software Engineering" />
 
 							<g class="venn-overlap-group">
 								<text x="290" y="255" class="venn-petal-text" transform="rotate(30, 272, 230)">Innovation</text>
@@ -142,18 +144,18 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 							</g>
 
 							<g class="venn-label-group advisory-label" data-venn-id="advisory">
-								<text x="340" y="140" class="venn-circle-title">Solution</text>
-								<text x="340" y="165" class="venn-circle-title">Advisory</text>
+								<text x="290" y="110" class="venn-circle-title">Solution</text>
+								<text x="285" y="135" class="venn-circle-title">Advisory</text>
 							</g>
 
 							<g class="venn-label-group consulting-label" data-venn-id="consulting">
-								<text x="470" y="365" class="venn-circle-title">Functional</text>
-								<text x="470" y="391" class="venn-circle-title">Consulting</text>
+								<text x="435" y="380" class="venn-circle-title">Functional</text>
+								<text x="435" y="406" class="venn-circle-title">Consulting</text>
 							</g>
 
 							<g class="venn-label-group engineering-label" data-venn-id="engineering">
-								<text x="205" y="365" class="venn-circle-title">Software</text>
-								<text x="205" y="391" class="venn-circle-title">Engineering</text>
+								<text x="130" y="380" class="venn-circle-title">Software</text>
+								<text x="110" y="406" class="venn-circle-title">Engineering</text>
 							</g>
 						</svg>
 					</div>
@@ -349,7 +351,7 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 	<!-- ==========================================
 	FINAL CTA
 	=========================================== -->
-	<?php hosho_render_cta( '', '<strong>Ready to Turn AI Into Value?</strong>', 'Let\'s identify where intelligence can make the biggest difference to your business.', 'Discover The Opportunity', hosho_page_url('contact'), 'homepage/cta.jpg' ); ?>
+	<?php hosho_render_cta( '', '<strong>Ready to Turn AI Into Value?</strong>', '', 'Discover The Opportunity', hosho_page_url('contact'), 'homepage/cta.jpg' ); ?>
 
 </main>
 

@@ -9,7 +9,19 @@ get_header();
 ?>
 <main id="main-content" class="erp-page">
 	<!-- HERO -->
-	<?php hosho_render_hero( "You're Using 40% Less Than You're Paying For", 'approach/erp/hero.jpg', array( 'class' => 'page-hero--company' ) ); ?>
+	<?php hosho_render_hero( "UNLOCK THE SYSTEM YOU ALREADY OWN.", 'approach/erp/hero.jpg', array( 'class' => 'page-hero--company' ) ); ?>
+
+	<!-- ERP CAPABILITY GAP -->
+	<section class="erp-capability-gap" aria-labelledby="erp-capability-gap-title">
+		<div class="container motion">
+			<p class="erp-capability-gap__number" aria-hidden="true">27.6%</p>
+			<h2 id="erp-capability-gap-title">average share of available functionality companies actually use.</h2>
+			<div class="erp-capability-gap__source">
+				<span>Source</span>
+				<img src="<?php echo esc_url( hosho_asset_url( 'services/abardeen.png' ) ); ?>" alt="Aberdeen Group" loading="lazy" decoding="async">
+			</div>
+		</div>
+	</section>
 
 	<!-- OPTIMIZATION GAP -->
 	<section class="opt-gap-section"><div class="container motion">
@@ -108,6 +120,6 @@ get_header();
 	</div></section>
 
 	<!-- FINAL CTA -->
-	<?php hosho_render_cta( '', '<strong>ALREADY USING BUSINESS CENTRAL?<br>LET\'S UNLOCK ITS FULL<br> POTENTIAL TOGETHER.</strong>', '', 'Start Your Partnership', home_url( '/contact' ), 'approach/erp/cta.jpg' ); ?>
+	<?php hosho_render_cta( '', 'Unlock Business Central\'s full potential', '', 'Start Your Partnership', home_url( '/contact' ), 'approach/erp/cta.jpg' ); ?>
 </main>
 <?php get_footer(); ?>

@@ -11,7 +11,7 @@ get_header();
 <main id="main-content" class="ai-transformation-page">
 
 	<!-- HERO -->
-	<?php hosho_render_hero('Transform How Business Evolves', 'services/hero-ai.jpg', array( 'class' => 'page-hero--company' )); ?>
+	<?php hosho_render_hero('transform. <br>evolve. <br>thrive.', 'services/hero-ai.jpg', array( 'class' => 'page-hero--company' )); ?>
 
 	<section class="transformation-brief">
 		<div class="container">
@@ -27,7 +27,7 @@ get_header();
 	</section>
 
 	<!-- QUOTE -->
-	<?php hosho_render_quote('<strong>Artificial intelligence will be the most transformative technology of the 21st century.</strong>', 'Jensen Huang', 'jensen-huang-editorial-v2.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi'); ?>
+	<?php hosho_render_quote('<strong>Artificial intelligence will be the most transformative technology of the 21st century.</strong>', 'Jensen Huang', 'jensen-huang.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi'); ?>
 
 	<!-- WHY AI TRANSFORMATION? -->
 	<section id="why-ai" class="beyond-the-model">
@@ -62,7 +62,6 @@ get_header();
 	<!-- THREE TRANSFORMATION FRONTIERS -->
 	<section id="transformation" class="inside-out">
 		<div class="container">
-			<p class="tx-kicker motion">AI-Powered Enterprise</p>
 			<h2 class="tx-headline motion">Transform the business from the inside out.</h2>
 
 			<div class="inside-out__panels">
@@ -277,7 +276,7 @@ get_header();
 	</section>
 
 	<!-- FINAL CTA -->
-	<?php hosho_render_cta('', '<strong>READY TO TRANSFORM WHAT\'S NEXT?</strong>', '',	'Start Your AI Transformation',	home_url( '/contact' ),	'services/cta-ai.jpg'); ?>
+	<?php hosho_render_cta('', 'READY TO TRANSFORM', '',	'Start Your AI Transformation',	home_url( '/contact' ),	'services/cta-ai.jpg'); ?>
 
 </main>
 

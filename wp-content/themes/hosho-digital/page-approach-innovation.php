@@ -9,7 +9,7 @@ get_header();
 ?>
 <main id="main-content" class="ai-page">
 	<!-- HERO -->
-	<?php hosho_render_hero( 'Architecting the Autonomous Enterprise', 'approach/ai/hero.jpg', array( 'class' => 'page-hero--company' ) ); ?>
+	<?php hosho_render_hero( 'Architect the Autonomous Enterprise', 'approach/ai/hero.jpg', array( 'class' => 'page-hero--company' ) ); ?>
 
 	<!-- INTRO -->
 	<section class="ai-intro-section"><div class="container motion">
@@ -97,6 +97,6 @@ get_header();
 	</div></section>
 
 	<!-- FINAL CTA -->
-	<?php hosho_render_cta( '', '<strong>AI Should Strengthen Your Business. Not Complicate It.</strong>', 'Let\'s find where AI can create measurable advantage.', 'Build Your AI Strategy', home_url( '/contact' ), 'approach/ai/cta.jpg' ); ?>
+	<?php hosho_render_cta( '', 'strengthen you business', '', 'Build Your AI Strategy', home_url( '/contact' ), 'approach/ai/cta.jpg' ); ?>
 </main>
 <?php get_footer(); ?>
