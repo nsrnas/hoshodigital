@@ -70,6 +70,7 @@ $templateMap = [ordered]@{
   'page-eci.php'                   = 'page-eci.php'
   'page-operational-intelligence.php'= 'page-operational-intelligence.php'
   'page-workforce-intelligence.php'= 'page-workforce-intelligence.php'
+  'page-ashistanto.php'             = 'page-ashistanto.php'
   'page-service-ai.php'             = 'page-ai-transformation.php'
   'page-media.php'                 = 'page-media.php'
   'page-privacy-policy.php'        = 'page-privacy-policy.php'

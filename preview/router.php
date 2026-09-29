@@ -23,6 +23,7 @@ $route_map = array(
     'operational-intelligence' => array('page' => 'operational-intelligence', 'file' => 'page-operational-intelligence.php'),
     'customer-intelligence'    => array('page' => 'customer-intelligence',    'file' => 'page-customer-intelligence.php'),
     'workforce-intelligence'   => array('page' => 'workforce-intelligence',   'file' => 'page-workforce-intelligence.php'),
+    'ashistanto'               => array('page' => 'ashistanto',               'file' => 'page-ashistanto.php'),
     'operational-experience'   => array('page' => 'operational-intelligence', 'file' => 'page-operational-intelligence.php'),
     'customer-experience'      => array('page' => 'customer-intelligence',    'file' => 'page-customer-intelligence.php'),
     'employee-experience'      => array('page' => 'workforce-intelligence',   'file' => 'page-workforce-intelligence.php'),
