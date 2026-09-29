@@ -75,10 +75,10 @@
     </div>
   </section>
 
-  <section id="our-values" class="section company-values company-values--director company-values--quotes" data-carousel data-carousel-interval="9000" aria-roledescription="carousel" aria-label="HOSHŌ values">
+  <section id="our-values" class="section company-values company-values--director company-values--quotes" data-carousel data-carousel-interval="5000" aria-roledescription="carousel" aria-label="HOSHŌ values">
     <div class="shell">
       <div class="company-values__header motion">
-        <div><p class="eyebrow">The way we work</p><h2>Our Values</h2></div>
+        <div><h2>Our Values</h2></div>
         <div class="carousel-controls" aria-label="Values carousel controls">
           <p class="screen-reader-text"><span data-current>01</span> of 05</p>
           <button type="button" data-prev aria-label="Previous value">←</button>
@@ -115,22 +115,21 @@
   <section class="section company-standard">
     <div class="shell">
       <div class="intro-grid motion">
-        <div><p class="eyebrow">The HOSHŌ Standard</p><h2>We don't promise everything.<br>We promise what matters.</h2></div>
-        <p>Every engagement is anchored around three things.</p>
+        <div><h2>We don't promise everything.<br>We promise what matters.</h2></div>
       </div>
       <dl class="company-standard__grid">
-        <div class="company-standard__item motion"><dt>Outcome</dt><dd>What measurable business result are we creating?</dd></div>
-        <div class="company-standard__item motion"><dt>Capability</dt><dd>What will your organisation be able to do better when we're finished?</dd></div>
-        <div class="company-standard__item motion"><dt>Continuity</dt><dd>How will that value continue to grow after implementation?</dd></div>
+        <div class="company-standard__item motion"><dt>Outcome Guarantee</dt><dd>We create measurable business results.</dd></div>
+        <div class="company-standard__item motion"><dt>Capability Guarantee</dt><dd>Your organisation will be able to perform better when our work is complete.</dd></div>
+        <div class="company-standard__item motion"><dt>Continuity Guarantee</dt><dd>The value we create will continue to grow after implementation.</dd></div>
       </dl>
     </div>
   </section>
 
   <section class="section section-navy company-exists">
     <div class="shell company-exists__grid">
-      <div class="motion"><p class="eyebrow">Why HOSHŌ exists</p><h2>Because technology got easier.<br>Transformation didn't.</h2><p class="lede">AI has made extraordinary capabilities accessible to almost every business.</p></div>
+      <div class="motion"><h2>Technology got easier.<br>Transformation didn't.</h2><p class="lede">AI has made extraordinary capabilities accessible to almost every business.</p></div>
       <div class="company-exists__copy motion">
-        <p>But having access to technology doesn't mean knowing:</p>
+        <p>Access to technology doesn't equate to knowledge</p>
         <ul class="company-exists__questions">
           <li>Where to start</li><li>What to build</li><li>What to integrate</li><li>How to manage risk</li><li>How to get people to adopt it</li><li>How to turn it into measurable value</li>
         </ul>
@@ -151,7 +150,6 @@
         <li class="company-journey__stage motion"><span>Performance</span><strong>Improve</strong></li>
         <li class="company-journey__stage motion"><span>Advantage</span><strong>Evolve</strong></li>
       </ol>
-      <div class="company-journey__guarantee motion"><span lang="ja">保証</span><strong>HOSHŌ</strong><p>The guarantee that connects every stage.</p></div>
     </div>
   </section>
 
