@@ -147,7 +147,7 @@
     const track = carousel.querySelector('[data-track]');
     const slides = [...carousel.querySelectorAll('[data-slide]')];
     const current = carousel.querySelector('[data-current]');
-    const interval = Math.max(Number.parseInt(carousel.dataset.carouselInterval || '2000', 10) || 2000, 2000);
+    const interval = Math.max(Number.parseInt(carousel.dataset.carouselInterval || '6000', 10) || 6000, 1000);
     const previous = carousel.querySelector('[data-prev]');
     const next = carousel.querySelector('[data-next]');
     let index = 0;
@@ -178,13 +178,16 @@
       });
     };
     const stop = () => {
-      if (timer) window.clearInterval(timer);
+      if (timer) window.clearTimeout(timer);
       timer = 0;
     };
     const start = () => {
       stop();
       if (reducedMotion || pausedByUser || !carouselVisible || document.hidden) return;
-      timer = window.setInterval(() => show(index + 1), interval);
+      timer = window.setTimeout(() => {
+        show(index + 1);
+        start();
+      }, interval);
     };
     const manualShow = (nextIndex) => {
       show(nextIndex);
@@ -213,14 +216,6 @@
     });
     carousel.addEventListener('pointercancel', () => {
       swipeStart = null;
-      pausedByUser = false;
-      start();
-    });
-    carousel.addEventListener('pointerenter', () => { pausedByUser = true; stop(); });
-    carousel.addEventListener('pointerleave', () => { pausedByUser = false; start(); });
-    carousel.addEventListener('focusin', () => { pausedByUser = true; stop(); });
-    carousel.addEventListener('focusout', (event) => {
-      if (carousel.contains(event.relatedTarget)) return;
       pausedByUser = false;
       start();
     });

@@ -17697,15 +17697,19 @@ body.page-company .company-journey__stages {
 }
 
 body.page-company .company-journey__stage {
-	min-height: 240px;
-	padding: 2rem;
+	min-height: 280px;
+	padding: 2.25rem;
 	border-right: 1px solid #cfd6dc;
 }
 
+body.page-company .company-journey__stage span {
+	font-size: .825rem;
+}
+
 body.page-company .company-journey__stage strong {
-	left: 2rem;
-	bottom: 2rem;
-	font-size: clamp(1.45rem, 2.2vw, 2.4rem);
+	left: 2.25rem;
+	bottom: 2.25rem;
+	font-size: clamp(1.65rem, 2.45vw, 2.7rem);
 }
 
 body.page-company .company-journey__guarantee {
@@ -20069,14 +20073,16 @@ body.page-solutions .section-navy .intro-grid h2 {
 	}
 }
 
-/* Company values: compact Figma-inspired cards, 2-up on desktop. */
+/* Company values: one Figma-inspired card per carousel view. */
 body.page-company #our-values.company-values--quotes {
 	--company-value-gap: clamp(18px, 2vw, 28px);
-	--carousel-visible: 2;
-	--carousel-step: 50;
+	--carousel-visible: 1;
+	--carousel-step: 100;
 }
 
 body.page-company #our-values.company-values--quotes .company-values__window {
+	width: min(100%, 620px);
+	margin-inline: auto;
 	overflow: hidden;
 	background: transparent;
 	box-shadow: none;
@@ -20088,7 +20094,7 @@ body.page-company #our-values.company-values--quotes .company-values__track {
 }
 
 body.page-company #our-values.company-values--quotes .company-value--statement {
-	flex: 0 0 50%;
+	flex: 0 0 100%;
 	min-width: 0;
 	min-height: 0;
 	display: grid;
@@ -20183,17 +20189,6 @@ body.page-company #our-values.company-values--quotes .company-value__copy cite {
 	font-weight: 700;
 	font-style: normal;
 	text-transform: uppercase;
-}
-
-@media (max-width: 980px) {
-	body.page-company #our-values.company-values--quotes {
-		--carousel-visible: 1;
-		--carousel-step: 100;
-	}
-
-	body.page-company #our-values.company-values--quotes .company-value--statement {
-		flex-basis: 100%;
-	}
 }
 
 @media (max-width: 620px) {

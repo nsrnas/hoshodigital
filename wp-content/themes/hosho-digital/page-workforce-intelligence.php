@@ -308,7 +308,7 @@
 
 	<?php hosho_render_quote("<strong>Take care of your employees <br>and they'll take care <br>of your business.</strong>", 'Richard Branson', 'richard-branson.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi'); 	?>
 
-	<?php hosho_render_cta('', '<strong>Build a Better Employee Experience</strong>', '', 'Contact Us', hosho_page_url('contact'), 'cta-employee.jpg'); ?>
+	<?php hosho_render_cta('', '<strong>Build a Better Workforce Experience</strong>', '', 'Contact Us', hosho_page_url('contact'), 'cta-employee.jpg'); ?>
 
 </main>
 

@@ -71,19 +71,17 @@ $templateMap = [ordered]@{
   'page-operational-intelligence.php'= 'page-operational-intelligence.php'
   'page-workforce-intelligence.php'= 'page-workforce-intelligence.php'
   'page-service-ai.php'             = 'page-ai-transformation.php'
-  'page-press.php'                 = 'page-press.php'
+  'page-media.php'                 = 'page-media.php'
   'page-privacy-policy.php'        = 'page-privacy-policy.php'
   'page-solutions.php'             = 'page-solutions.php'
   'page-strategy-session.php'      = 'page-strategy-session.php'
-  'page-sustainability.php'        = 'page-sustainability.php'
+  'page-esg.php'                   = 'page-esg.php'
   'page-terms-of-use.php'          = 'page-terms-of-use.php'
 }
 
 foreach ($entry in $templateMap.GetEnumerator()) {
   Convert-ThemePhp -Source (Join-Path $theme $entry.Key) -Destination (Join-Path $pluginRoot ('templates\' + $entry.Value))
 }
-Copy-Item -LiteralPath (Join-Path $pluginRoot 'templates\page-press.php') -Destination (Join-Path $pluginRoot 'templates\page-media.php') -Force
-Copy-Item -LiteralPath (Join-Path $pluginRoot 'templates\page-sustainability.php') -Destination (Join-Path $pluginRoot 'templates\page-esg.php') -Force
 Copy-Item -LiteralPath (Join-Path $pluginRoot 'templates\page-ai-transformation.php') -Destination (Join-Path $pluginRoot 'templates\page-ai.php') -Force
 Copy-Item -LiteralPath (Join-Path $pluginRoot 'templates\page-erp-optimization.php') -Destination (Join-Path $pluginRoot 'templates\page-erp.php') -Force
 Copy-Item -LiteralPath (Join-Path $pluginRoot 'templates\page-operational-intelligence.php') -Destination (Join-Path $pluginRoot 'templates\page-operational-experience.php') -Force

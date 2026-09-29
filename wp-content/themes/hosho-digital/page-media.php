@@ -1,1 +1,40 @@
-<?php require get_theme_file_path( 'page-press.php' );
+<?php get_header(); ?>
+<main id="main-content">
+  <section class="section press-contact">
+    <div class="shell">
+      <div class="press-contact__intro motion">
+        <div>
+          <h1>Media Contact</h1>
+        </div>
+      </div>
+
+      <div class="press-contact__profile motion">
+        <?php
+          $himari_portrait_file = 'media-himari.png';
+        ?>
+        <?php if ( $himari_portrait_file ) : ?>
+          <figure class="press-contact__portrait">
+            <img loading="eager" decoding="async" src="<?php echo esc_url( hosho_asset_url( $himari_portrait_file ) ); ?>" alt="Himari S, Communications Manager" style="width: 100%; height: 100%; object-fit: cover;">
+          </figure>
+        <?php else : ?>
+          <figure class="press-contact__portrait press-contact__portrait--placeholder" aria-label="Portrait of Himari S is awaiting the approved source file" style="background: #f4f4f4; display: flex; align-items: center; justify-content: center; font-size: 48px; color: #ccc;">
+            <span aria-hidden="true">HS</span>
+          </figure>
+        <?php endif; ?>
+
+        <div class="press-contact__person">
+          <h2>Himari S.</h2>
+          <p class="press-contact__role">Communications Manager</p>
+          <p class="press-contact__note">For interview requests, company information and other media enquiries, contact:</p>
+
+          <div class="press-contact__actions">
+            <a class="press-contact__email-box" href="mailto:media@hoshodigital.com">
+              media@hoshodigital.com
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main><?php get_footer(); ?>
