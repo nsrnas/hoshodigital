@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main id="main-content">
-  <?php hosho_render_hero( 'TECHNOLOGY CHANGES.<br>OUR PROMISE DOESN\'T.', 'hero-company-structure.png', array( 'class' => 'page-hero--company' ) ); ?>
+  <?php hosho_render_hero( 'TECHNOLOGY CHANGES.<br>OUR GUARANTEE DOESN\'T.', 'hero-company-structure.png', array( 'class' => 'page-hero--company' ) ); ?>
 
   <section class="section company-why">
     <div class="company-why__inner">
