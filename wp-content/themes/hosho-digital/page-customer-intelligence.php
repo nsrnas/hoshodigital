@@ -247,7 +247,7 @@
 
 	</div>
 
-	<?php hosho_render_cta('', '<strong>Elevate Your Customer Experience</strong>', '', 'Contact Us', hosho_page_url('contact'), 'cta-customer.jpg'); ?>
+	<?php hosho_render_cta('', '<strong>Elevate Your Customer Experience</strong>', '', 'Contact Us', hosho_page_url('contact'), 'cta-customer.jpeg'); ?>
 
 </main>
 
