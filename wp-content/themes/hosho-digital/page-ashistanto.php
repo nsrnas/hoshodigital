@@ -73,9 +73,9 @@
 				<p>Routine work becomes fragmented when employees need to move repeatedly between Outlook, Calendar, Teams and other applications.</p>
 			</div>
 			<div class="ashi-challenges__grid motion">
-				<article><span>01</span><h3>Constant context switching</h3><p>Employees lose focus while navigating between workplace applications to complete a single task.</p></article>
-				<article><span>02</span><h3>Repetitive manual effort</h3><p>Emails, meeting updates and reminders consume time through repeated steps and data entry.</p></article>
-				<article><span>03</span><h3>Delays and avoidable errors</h3><p>Disconnected actions make everyday communication slower and increase the chance of missed details.</p></article>
+				<article><h3>Constant context switching</h3><p>Employees lose focus while navigating between workplace applications to complete a single task.</p></article>
+				<article><h3>Repetitive manual effort</h3><p>Emails, meeting updates and reminders consume time through repeated steps and data entry.</p></article>
+				<article><h3>Delays and avoidable errors</h3><p>Disconnected actions make everyday communication slower and increase the chance of missed details.</p></article>
 			</div>
 		</div>
 	</section>
@@ -87,19 +87,19 @@
 			</div>
 			<div class="ashi-capabilities__grid">
 				<article class="ashi-capability motion">
-					<span>01</span><h3>Conversational Language Understanding</h3>
+					<h3>Conversational Language Understanding</h3>
 					<p>Understands natural-language voice and text commands and interprets what the user wants to accomplish.</p>
 				</article>
 				<article class="ashi-capability motion">
-					<span>02</span><h3>Intent Recognition &amp; Execution</h3>
+					<h3>Intent Recognition &amp; Execution</h3>
 					<p>Converts user requests into appropriate actions across connected workplace applications.</p>
 				</article>
 				<article class="ashi-capability motion">
-					<span>03</span><h3>Email Automation</h3>
+					<h3>Email Automation</h3>
 					<p>Creates, sends, replies to and manages emails based on simple user instructions.</p>
 				</article>
 				<article class="ashi-capability motion">
-					<span>04</span><h3>Meeting Scheduling Intelligence</h3>
+					<h3>Meeting Scheduling Intelligence</h3>
 					<p>Creates, updates, reschedules and manages calendar meetings and invitations.</p>
 				</article>
 			</div>
