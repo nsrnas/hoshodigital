@@ -9,7 +9,13 @@ get_header();
 ?>
 <main id="main-content" class="erp-page">
 	<!-- HERO -->
-	<?php hosho_render_hero( "UNLOCK THE SYSTEM YOU ALREADY OWN.", 'approach/erp/hero.jpg', array( 'class' => 'page-hero--company' ) ); ?>
+	<?php
+	$erp_partner_mark = '<img src="' . esc_url( hosho_asset_url( 'services/business-central.webp' ) ) . '" alt="Microsoft Dynamics 365 Business Central" class="erp-hero-logo" decoding="async">';
+	hosho_render_hero( 'UNLOCK THE SYSTEM YOU ALREADY OWN.', 'approach/erp/hero.jpg', array(
+		'class'        => 'page-hero--company',
+		'actions_html' => $erp_partner_mark,
+	) );
+	?>
 
 	<!-- ERP CAPABILITY GAP -->
 	<section class="erp-capability-gap" aria-labelledby="erp-capability-gap-title">
@@ -55,12 +61,38 @@ get_header();
 		<h2>Strategic Intervention Services</h2>
 		<p>Targeted consulting to bridge the gap between technical availability and business performance.</p>
 		<div class="intervention-grid">
-			<div class="intervention-card"><div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="12" y2="17"/></svg></div><div><h3>ERP Optimization</h3><p>Deep dive audit of your existing AL code and data structures to eliminate technical debt and lag.</p></div></div>
-			<div class="intervention-card"><div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2"><rect x="4" y="7" width="16" height="16" rx="2"/><circle cx="9" cy="9" r="1.4"/><circle cx="15" cy="9" r="1.4"/><path d="M8 15c1 1 2.2 1.4 4 1.4s3-.4 4-1.4"/></svg></div><div><h3>AI Integration</h3><p>Embedding Copilot and custom Azure AI agents directly into your Business Central UI for smarter workflows.</p></div></div>
-			<div class="intervention-card"><div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><div><h3>Custom Extensions</h3><p>Building future-proof, upgrade-compliant AL extensions tailored to your unique industry logic.</p></div></div>
-			<div class="intervention-card"><div class="icon-box"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div><h3>Long-Term Partnership</h3><p>Managed services focusing on continuous improvement rather than just keeping the lights on.</p></div></div>
+			<div class="intervention-card">
+				<div class="icon-box">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2">
+						<rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="12" y2="17"/></svg></div><div>
+							<h3>ERP Optimization</h3>
+							<p>Deep dive audit of your existing AL code and data structures to eliminate technical debt and lag.</p>
+						</div>
+					</div>
+			<div class="intervention-card">
+				<div class="icon-box">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2"><rect x="4" y="7" width="16" height="16" rx="2"/><circle cx="9" cy="9" r="1.4"/><circle cx="15" cy="9" r="1.4"/><path d="M8 15c1 1 2.2 1.4 4 1.4s3-.4 4-1.4"/></svg></div><div>
+						<h3>AI Integration</h3>
+						<p>Embedding Copilot and custom Azure AI agents directly into your Business Central UI for smarter workflows.</p>
+					</div>
+				</div>
+			<div class="intervention-card">
+				<div class="icon-box">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><div>
+						<h3>Custom Extensions</h3>
+						<p>Building future-proof, upgrade-compliant AL extensions tailored to your unique industry logic.</p>
+					</div>
+				</div>
+			<div class="intervention-card">
+				<div class="icon-box">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E21C15" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div>
+						<h3>Long-Term Partnership</h3>
+						<p>Managed services focusing on continuous improvement rather than just keeping the lights on.</p>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div></section>
+	</section>
 
 	<!-- WHY HOSHO DIGITAL -->
 	<section class="why-hosho-section"><div class="container motion">
@@ -101,15 +133,18 @@ get_header();
 	<?php hosho_render_quote( "<strong>It's not the strongest <br>or the most intelligent <br>who survive, but those <br>most adaptable to change.<strong>", 'Charles Darwin', 'approach/erp/charles-darwin.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi' ); ?>
 
 	<!-- THE OPTIMIZED OUTCOME -->
-	<section class="outcome-section"><div class="container motion">
-		<div class="outcome-header"><h2>The Optimized Outcome</h2><p>Precision-engineered results for organizations that demand more from their technology investments.</p></div>
-		<div class="outcome-grid">
-			<div class="outcome-card style-white "><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3>Higher Productivity</h3><p>Reduce operational friction by up to 50% through targeted automation and UX refinement within Business Central.</p></div>
-			<div class="outcome-card style-white "><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div><h3>Better Decisions</h3><p>Real-time Power BI integration and AI predictive models turning ERP data into prescriptive action items.</p></div>
-			<div class="outcome-card style-white "><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6"/><rect x="12" y="8" width="3" height="10"/><rect x="17" y="5" width="3" height="13"/></svg></div><h3>Scalable Operations</h3><p>Architecture that grows with your transaction volume without requiring additional headcount or infrastructure spend.</p></div>
-			<div class="outcome-card style-white "><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5.25 3.75 9.5 9 11 5.25-1.5 9-5.75 9-11V7z"/></svg></div><h3>Future-Ready Architecture</h3><p>Clean AL code and standard-aligned customizations that make the semi-annual Microsoft release cycle seamless.</p></div>
+	<section class="intervention-section optimized-outcome-section">
+		<div class="container motion">
+			<h2>The Optimized Outcome</h2>
+			<p>Precision-engineered results for organizations that demand more from their technology investments.</p>
+			<div class="intervention-grid outcome-grid">
+				<div class="outcome-card style-white"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3>Higher Productivity</h3><p>Reduce operational friction by up to 50% through targeted automation and UX refinement within Business Central.</p></div>
+				<div class="outcome-card style-white"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div><h3>Better Decisions</h3><p>Real-time Power BI integration and AI predictive models turning ERP data into prescriptive action items.</p></div>
+				<div class="outcome-card style-white"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6"/><rect x="12" y="8" width="3" height="10"/><rect x="17" y="5" width="3" height="13"/></svg></div><h3>Scalable Operations</h3><p>Architecture that grows with your transaction volume without requiring additional headcount or infrastructure spend.</p></div>
+				<div class="outcome-card style-white"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5.25 3.75 9.5 9 11 5.25-1.5 9-5.75 9-11V7z"/></svg></div><h3>Future-Ready Architecture</h3><p>Clean AL code and standard-aligned customizations that make the semi-annual Microsoft release cycle seamless.</p></div>
+			</div>
 		</div>
-	</div></section>
+	</section>
 
 	<!-- PHILOSOPHY STRIP -->
 	<section class="philosophy-strip"><div class="container motion">

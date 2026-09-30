@@ -276,7 +276,7 @@ get_header();
 	</section>
 
 	<!-- FINAL CTA -->
-	<?php hosho_render_cta('', 'READY TO TRANSFORM', '',	'Start Your AI Transformation',	home_url( '/contact' ),	'services/cta-ai.jpg'); ?>
+	<?php hosho_render_cta('', 'READY TO TRANSFORM?', '',	'Start Your AI Transformation',	home_url( '/contact' ),	'services/cta-ai.jpg'); ?>
 
 </main>
 

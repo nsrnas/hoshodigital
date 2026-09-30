@@ -107,5 +107,5 @@
     </div>
   </section>
   
-  <?php hosho_render_cta('','<strong>Innovate with Intelligence.</strong>','','Register interest','https://hoshodigital.com/eci-form/','eci-singapore-night.jpg'); ?>
+  <?php hosho_render_cta('','QUICK WINS. GUARANTEED OUTCOMES.','','Register interest','https://hoshodigital.com/eci-form/','eci-singapore-night.jpg'); ?>
 </main><?php get_footer(); ?>

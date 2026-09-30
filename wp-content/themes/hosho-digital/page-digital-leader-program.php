@@ -4,7 +4,7 @@
     $dlp_partner_marks =
       '<img src="' . esc_url( hosho_asset_url( 'imda.webp' ) ) . '" alt="Infocomm Media Development Authority" class="eci-hero-partner-img eci-hero-partner-img--imda" loading="lazy" decoding="async">';
 
-    hosho_render_hero('Quick wins.<br>Guaranteed outcomes.', 'hero-quickwin-corridor-v2.png', array(
+    hosho_render_hero('Eligibility.', 'hero-quickwin-corridor-v2.png', array(
       'class'         => 'page-hero--quickwin',
       'actions_html' => $dlp_partner_marks,
     ));
@@ -100,7 +100,7 @@
 
   <?php hosho_render_quote( '<strong>The only way to avoid making mistakes <br>is not to do anything. <br>And that … will be <br>the ultimate mistake.</strong>', 'Goh Keng Swee', 'goh-keng-swee.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi' ); ?>
 
-  <section class="section section-navy">
+  <section class="section section-navy dlp-process-section">
     <div class="shell">
       <h2>From opportunity to outcome.</h2>
       <div class="process process--arrow process--four">
@@ -149,15 +149,6 @@
       </div>
     </section>
 
-  <section class="section section-mist" id="eligibility">
-    <div class="shell qualification-panel motion">
-      <div>
-        <h2>Check your eligibility.</h2>
-      </div>
-      <div>
-        <p>If you are a Singapore-registered company with less than S$100 million in annual turnover or fewer than 200 employees, you may qualify. Fill in the form below to register your interest.</p>
-        <a class="button" href="https://smesgodigital.gov.sg/web/solution/dl_22/genaixdl-hosho" target="_blank" rel="noopener">Fill in Form<span class="button-arrow" aria-hidden="true"></span></a></div></div></section>
-
-  <?php hosho_render_cta('','Check your eligibility','','Check eligibility', hosho_page_url('contact'),'quickwin-singapore-city.jpg'); ?>
+  <?php hosho_render_cta('','Check your eligibility','','Check eligibility', 'https://smesgodigital.gov.sg/web/solution/dl_22/genaixdl-hosho','quickwin-singapore-city.jpg'); ?>
   
 </main><?php get_footer(); ?>

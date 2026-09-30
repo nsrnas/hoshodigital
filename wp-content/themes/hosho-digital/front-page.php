@@ -328,8 +328,8 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 				'Technology Partners',
 				array(
 					array( 'src' => 'homepage/tech-partners/openai.jpg', 'alt' => 'OpenAI' ),
-					array( 'src' => 'homepage/tech-partners/microsoft.jpg', 'alt' => 'Microsoft' ),
-					array( 'src' => 'homepage/tech-partners/google-cloud.jpg', 'alt' => 'Google Cloud' ),
+					array( 'src' => 'homepage/tech-partners/microsoft.png', 'alt' => 'Microsoft' ),
+					array( 'src' => 'homepage/tech-partners/google-cloud.png', 'alt' => 'Google Cloud' ),
 					array( 'src' => 'homepage/tech-partners/anthropic.jpg', 'alt' => 'Anthropic' ),
 				)
 			);

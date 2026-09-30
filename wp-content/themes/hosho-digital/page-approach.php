@@ -417,7 +417,8 @@ $foundationText = isset($_GET['foundationText']) ? $_GET['foundationText'] : "Te
 			<div class="framework-s-layout">
 				<div class="framework-s-visual">
 					<div class="s-puzzle-container">
-						<img src="<?php echo esc_url(hosho_asset_url('approach/main/1 - envision.png')); ?>" class="s-piece s-piece-1" alt="Envision"
+						<img src="<?php echo esc_url(hosho_asset_url('approach/main/1 - envision.png')); ?>" 
+						class="s-piece s-piece-1" alt="Envision"
 							data-num="01" data-title="Envision"
 							data-focus="Diagnose cross-industry business friction and map executive priorities."
 							data-guarantee="Eliminates strategic misalignment before engineering begins."
@@ -552,7 +553,7 @@ $foundationText = isset($_GET['foundationText']) ? $_GET['foundationText'] : "Te
 	</section>
 
 	<!-- FINAL CTA -->
-	<?php hosho_render_cta( '', '<strong>Don\'t Wait for the Perfect AI Strategy</strong>', 'Start with the opportunity that matters most.', 'Find Your First Win', hosho_page_url( 'strategy-session' ), 'approach/main/cta.jpg' ); ?>
+	<?php hosho_render_cta( '', '<strong>Don\'t Wait for the Perfect AI Strategy</strong>', '', 'Find Your First Win', hosho_page_url( 'strategy-session' ), 'approach/main/cta.jpg' ); ?>
 
 </main>
 
