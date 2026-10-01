@@ -4783,9 +4783,10 @@ a {
 	.cs-panel {
 		width: 100%;
 
-		min-height: 85vh;
+		/* reduce excessive vertical spacing on mobile so text sits closer to the arrow */
+		min-height: auto;
 
-		padding: 15vh 8%;
+		padding: 8vh 8%;
 	}
 
 	.cs-divider {
@@ -4800,6 +4801,21 @@ a {
 
 	.cs-divider-node {
 		transform: rotate(90deg);
+	}
+
+	/* tighter spacing between stacked panels */
+	.cognitive-shift .cs-panel:first-of-type {
+		padding-bottom: 5vh;
+	}
+
+	.cognitive-shift .cs-panel:last-of-type {
+		padding-top: 13vh;
+	}
+
+	/* reduce verb block height on mobile */
+	.cognitive-shift .cs-verb-wrapper {
+		min-height: 4rem;
+		margin-bottom: 1rem;
 	}
 
 }
@@ -5084,7 +5100,7 @@ a {
 }
 
 .venn-petal-text {
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: 700;
 	fill: #ffffff;
 	text-anchor: middle;
@@ -5139,7 +5155,8 @@ a {
 	}
 
 	.venn-petal-text {
-		font-size: 14px !important;
+		/* sedikit lebih besar untuk mobile agar lebih terbaca */
+		font-size: 18px !important;
 	}
 }
 
@@ -5285,7 +5302,7 @@ a {
 .venn-circle-title {
 	fill: #fff;
 	text-shadow: 0 1px 2px rgba(0, 0, 0, .18);
-	font-size: 25px;
+	font-size: 30px;
 	font-weight: 800;
 	letter-spacing: -.02em;
 }
@@ -20814,14 +20831,30 @@ body.page-company #our-values.company-values--quotes .company-value__copy cite {
 @media (max-width: 900px) {
 	.cognitive-shift .cs-split {
 		flex-direction: column;
-		gap: 32px;
+		gap: 0;
 		min-height: 0;
+	}
+
+	.cognitive-shift .cs-hero-title p {
+		text-align: center;
 	}
 
 	.cognitive-shift .cs-panel {
 		width: 100%;
 		padding-inline: 0;
 		text-align: center;
+	}
+
+	.cognitive-shift .cs-panel-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.cognitive-shift .cs-verb-wrapper {
+		width: 100%;
+		justify-content: center;
 	}
 
 	.cognitive-shift .cs-saas,
@@ -20831,6 +20864,25 @@ body.page-company #our-values.company-values--quotes .company-value__copy cite {
 
 	.cognitive-shift .cs-lines p {
 		text-align: left;
+	}
+
+	.cognitive-shift .cs-divider {
+		position: relative;
+		top: auto;
+		left: auto;
+		transform: none;
+		width: 100%;
+		height: 72px;
+		margin: 0;
+		pointer-events: none;
+	}
+
+	.cognitive-shift .cs-divider-node {
+		transform: rotate(90deg);
+	}
+
+	.cognitive-shift .cs-divider-arrow {
+		margin-inline: auto;
 	}
 }
 

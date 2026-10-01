@@ -127,15 +127,15 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 							<circle class="venn-circle venn-circle-engineering" data-venn-id="engineering" cx="203" cy="380" r="180" tabindex="0" role="button" aria-label="Software Engineering" />
 
 							<g class="venn-overlap-group">
-								<text x="290" y="255" class="venn-petal-text" transform="rotate(30, 272, 230)">Innovation</text>
+								<text x="275" y="255" class="venn-petal-text" transform="rotate(30, 272, 230)">Innovation</text>
 							</g>
 
 							<g class="venn-overlap-group">
-								<text x="390" y="255" class="venn-petal-text" transform="rotate(-30, 408, 232)">Alignment</text>
+								<text x="405" y="255" class="venn-petal-text" transform="rotate(-30, 408, 232)">Alignment</text>
 							</g>
 
 							<g class="venn-overlap-group">
-								<text x="335" y="363" class="venn-petal-text" transform="rotate(-90, 340, 365)">Execution</text>
+								<text x="310" y="365" class="venn-petal-text" transform="rotate(-90, 340, 365)">Execution</text>
 							</g>
 
 							<g class="venn-center" aria-hidden="true">
@@ -144,18 +144,18 @@ $hg_stamp_img = hosho_asset_url( 'homepage/stamp.png' );
 							</g>
 
 							<g class="venn-label-group advisory-label" data-venn-id="advisory">
-								<text x="290" y="110" class="venn-circle-title">Solution</text>
-								<text x="285" y="135" class="venn-circle-title">Advisory</text>
+								<text x="282" y="110" class="venn-circle-title">Solution</text>
+								<text x="277" y="135" class="venn-circle-title">Advisory</text>
 							</g>
 
 							<g class="venn-label-group consulting-label" data-venn-id="consulting">
 								<text x="435" y="380" class="venn-circle-title">Functional</text>
-								<text x="435" y="406" class="venn-circle-title">Consulting</text>
+								<text x="433" y="406" class="venn-circle-title">Consulting</text>
 							</g>
 
 							<g class="venn-label-group engineering-label" data-venn-id="engineering">
-								<text x="130" y="380" class="venn-circle-title">Software</text>
-								<text x="110" y="406" class="venn-circle-title">Engineering</text>
+								<text x="115" y="380" class="venn-circle-title">Software</text>
+								<text x="92" y="406" class="venn-circle-title">Engineering</text>
 							</g>
 						</svg>
 					</div>
