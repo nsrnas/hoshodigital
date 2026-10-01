@@ -10,7 +10,7 @@ get_header();
 <main id="main-content" class="erp-page">
 	<!-- HERO -->
 	<?php
-	$erp_partner_mark = '<img src="' . esc_url( hosho_asset_url( 'services/business-central.webp' ) ) . '" alt="Microsoft Dynamics 365 Business Central" class="erp-hero-logo" decoding="async">';
+	$erp_partner_mark = '<img src="' . esc_url( hosho_asset_url( 'services/erp/business-central.webp' ) ) . '" alt="Microsoft Dynamics 365 Business Central" class="erp-hero-logo" decoding="async">';
 	hosho_render_hero( 'UNLOCK THE SYSTEM YOU ALREADY OWN.', 'approach/erp/hero.jpg', array(
 		'class'        => 'page-hero--company',
 		'actions_html' => $erp_partner_mark,
@@ -24,7 +24,7 @@ get_header();
 			<h2 id="erp-capability-gap-title">average share of available functionality companies actually use.</h2>
 			<div class="erp-capability-gap__source">
 				<span>Source</span>
-				<img src="<?php echo esc_url( hosho_asset_url( 'services/abardeen.png' ) ); ?>" alt="Aberdeen Group" loading="lazy" decoding="async">
+				<img src="<?php echo esc_url( hosho_asset_url( 'services/erp/abardeen.png' ) ); ?>" alt="Aberdeen Group" loading="lazy" decoding="async">
 			</div>
 		</div>
 	</section>
@@ -130,7 +130,7 @@ get_header();
 	</div></section>
 
 	<!-- QUOTE -->
-	<?php hosho_render_quote( "<strong>It's not the strongest <br>or the most intelligent <br>who survive, but those <br>most adaptable to change.<strong>", 'Charles Darwin', 'approach/erp/charles-darwin.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi' ); ?>
+	<?php hosho_render_quote( "<strong>It's not the strongest <br>or the most intelligent <br>who survive, but those <br>most adaptable to change.<strong>", 'Charles Darwin', 'approach/erp/charles-darwin.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi quote-band--erp-darwin' ); ?>
 
 	<!-- THE OPTIMIZED OUTCOME -->
 	<section class="intervention-section optimized-outcome-section">

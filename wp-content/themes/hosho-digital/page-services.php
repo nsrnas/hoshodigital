@@ -76,7 +76,7 @@ get_header();
 	</section>
 
 	<!-- QUOTE -->
-	<?php hosho_render_quote( '<strong>The value of an idea <br>lies in the using <br>of it.</strong>', 'Thomas Edison', 'services\thomas-edison.png', 'quote-band--standard quote-band--red-soft' ); ?>
+	<?php hosho_render_quote( 'Improve constantly and forever the system of production and service.', 'W. Edwards Deming', 'services/w-edwards-deming.png', 'quote-band--standard quote-band--red-soft' ); ?>
 
 	<!-- HOW WE DELIVER -->
 	<section class="section">

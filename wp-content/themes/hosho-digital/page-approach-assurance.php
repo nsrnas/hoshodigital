@@ -92,7 +92,7 @@ get_header();
 							<path d="M17 7 7 17"/>
 						</svg></span>
 					</div>
-					<h4>Maintanance <br> &amp; Support</h4>
+					<h4>Maintenance <br> &amp; Support</h4>
 				</div>
 				<p>Ensuring smooth functional availability via proactive updates, bug fixes and technical expert support.</p>
 			</div>

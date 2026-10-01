@@ -2,7 +2,7 @@
 <main id="main-content">
   <?php
     $dlp_partner_marks =
-      '<img src="' . esc_url( hosho_asset_url( 'imda.webp' ) ) . '" alt="Infocomm Media Development Authority" class="eci-hero-partner-img eci-hero-partner-img--imda" loading="lazy" decoding="async">';
+      '<img src="' . esc_url( hosho_asset_url( 'programmes/eci/imda.png' ) ) . '" alt="Infocomm Media Development Authority" class="eci-hero-partner-img eci-hero-partner-img--imda" loading="lazy" decoding="async">';
 
     hosho_render_hero('Eligibility.', 'hero-quickwin-corridor-v2.png', array(
       'class'         => 'page-hero--quickwin',
@@ -30,7 +30,12 @@
         <div class="body-copy">
           <p class="lede">The Stanford HAI 2026 AI Index reports that 88% of surveyed organisations used AI in at least one business function in 2025.</p>
           <p>HOSHŌ DIGITAL helps convert that momentum into a governed, practical use case from opportunity discovery through deployment.</p>
-          <p><a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/economy" target="_blank" rel="noopener"><img src="<?php echo esc_url( hosho_asset_url( 'hai.png' ) ); ?>" alt="Stanford HAI, 2026 AI Index Report" style="height: 22px; width: auto;"></a></p>
+          <div class="erp-capability-gap__source">
+            <span>Source</span>
+            <a href="https://hai.stanford.edu/ai-index/2026-ai-index-report/economy" target="_blank" rel="noopener">
+              <img src="<?php echo esc_url( hosho_asset_url( 'programmes/dlp/hai.png' ) ); ?>" alt="Stanford HAI, 2026 AI Index Report" loading="lazy" decoding="async">
+            </a>
+          </div>
         </div>
       </div>
       <div class="stat-grid quickwin-stat-grid">
@@ -51,7 +56,7 @@
   </section>
 
   <section class="media-split">
-    <div class="media-split__image" style="background-image:url('<?php echo esc_url(hosho_asset_url('quickwin-singapore-city.jpg')); ?>')"></div>
+    <div class="media-split__image" style="background-image:url('<?php echo esc_url(hosho_asset_url('programmes/dlp/quickwin-singapore-city.jpg')); ?>')"></div>
     <div class="media-split__content motion">
       <h2>Built to move from a qualified need to a governed outcome.</h2>
       <div class="feature">
@@ -98,7 +103,7 @@
     </div>
   </section>
 
-  <?php hosho_render_quote( '<strong>The only way to avoid making mistakes <br>is not to do anything. <br>And that … will be <br>the ultimate mistake.</strong>', 'Goh Keng Swee', 'goh-keng-swee.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi' ); ?>
+  <?php hosho_render_quote( '<strong>The only way to avoid making mistakes <br>is not to do anything. <br>And that … will be <br>the ultimate mistake.</strong>', 'Goh Keng Swee', 'programmes/dlp/goh-keng-swee.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi' ); ?>
 
   <section class="section section-navy dlp-process-section">
     <div class="shell">
@@ -134,21 +139,21 @@
         </div>
         <div class="technology-logo-cloud" aria-label="Microsoft technologies">
           <div>
-            <img loading="lazy" decoding="async" src="<?php echo esc_url(hosho_asset_url('quickwin-copilot-studio.png')); ?>" alt="Microsoft Copilot Studio">
+            <img loading="lazy" decoding="async" src="<?php echo esc_url(hosho_asset_url('programmes/dlp/quickwin-copilot-studio.png')); ?>" alt="Microsoft Copilot Studio">
           </div>
           <div>
-            <img loading="lazy" decoding="async" src="<?php echo esc_url(hosho_asset_url('quickwin-azure-openai.png')); ?>" alt="Azure OpenAI">
+            <img loading="lazy" decoding="async" src="<?php echo esc_url(hosho_asset_url('programmes/dlp/quickwin-azure-openai.png')); ?>" alt="Azure OpenAI">
           </div>
           <div>
-            <img loading="lazy" decoding="async" src="<?php echo esc_url(hosho_asset_url('quickwin-copilot.png')); ?>" alt="Microsoft Copilot">
+            <img loading="lazy" decoding="async" src="<?php echo esc_url(hosho_asset_url('programmes/dlp/quickwin-copilot.png')); ?>" alt="Microsoft Copilot">
           </div>
           <div>
-            <img loading="lazy" decoding="async" src="<?php echo esc_url(hosho_asset_url('quickwin-copilot-agents.png')); ?>" alt="Copilot Agents">
+            <img loading="lazy" decoding="async" src="<?php echo esc_url(hosho_asset_url('programmes/dlp/quickwin-copilot-agents.png')); ?>" alt="Copilot Agents">
           </div>
         </div>
       </div>
     </section>
 
-  <?php hosho_render_cta('','Check your eligibility','','Check eligibility', 'https://smesgodigital.gov.sg/web/solution/dl_22/genaixdl-hosho','quickwin-singapore-city.jpg'); ?>
+  <?php hosho_render_cta('','Check your eligibility','','Check eligibility', 'https://smesgodigital.gov.sg/web/solution/dl_22/genaixdl-hosho','programmes/dlp/quickwin-singapore-city.jpg'); ?>
   
 </main><?php get_footer(); ?>

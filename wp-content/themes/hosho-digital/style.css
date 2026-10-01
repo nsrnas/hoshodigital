@@ -1249,6 +1249,11 @@ p {
 	mix-blend-mode: normal;
 }
 
+.quote-band--erp-darwin .quote-band__portrait img {
+	transform: scale(1.2);
+	transform-origin: right bottom;
+}
+
 .quote-band--blue .quote-band__mark {
 	color: rgba(200, 224, 255, .65);
 }
@@ -3187,17 +3192,6 @@ body.hosho-remade .solutions-card.is-open>p,
 	margin: 0;
 	color: #c5ccd6;
 	font-size: 1rem;
-}
-
-.programmes-page + .site-footer .footer-column,
-.programmes-page + .site-footer .footer-socials,
-.programmes-page + .site-footer .footer-legal {
-	display: none;
-}
-
-.programmes-page + .site-footer .footer-main {
-	grid-template-columns: 1fr;
-	padding-bottom: 20px;
 }
 
 @media (max-width: 720px) {
