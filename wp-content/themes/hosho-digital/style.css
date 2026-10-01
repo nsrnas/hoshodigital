@@ -1249,6 +1249,11 @@ p {
 	mix-blend-mode: normal;
 }
 
+.quote-band--erp-darwin .quote-band__portrait img {
+	transform: scale(1.2);
+	transform-origin: right bottom;
+}
+
 .quote-band--blue .quote-band__mark {
 	color: rgba(200, 224, 255, .65);
 }
@@ -2051,6 +2056,7 @@ body.page-strategy-session .site-footer {
 
 .footer-column a {
 	font-size: 13px;
+	font-weight: 400 !important;
 }
 
 .footer-legal a {
@@ -3188,17 +3194,6 @@ body.hosho-remade .solutions-card.is-open>p,
 	font-size: 1rem;
 }
 
-.programmes-page + .site-footer .footer-column,
-.programmes-page + .site-footer .footer-socials,
-.programmes-page + .site-footer .footer-legal {
-	display: none;
-}
-
-.programmes-page + .site-footer .footer-main {
-	grid-template-columns: 1fr;
-	padding-bottom: 20px;
-}
-
 @media (max-width: 720px) {
 	.programmes-options__grid {
 		grid-template-columns: 1fr;
@@ -3265,14 +3260,6 @@ body.hosho-remade .solutions-card.is-open>p,
 
 .approach-page .architecture-scale .jh-label-card {
 	padding: 20px 24px;
-}
-
-.approach-page .architecture-scale .jh-label-title {
-	font-size: 21px;
-}
-
-.approach-page .architecture-scale .jh-label-desc {
-	font-size: 16px;
 }
 
 .approach-page .architecture-scale .jh-label-card.is-active .jh-label-desc {
@@ -4796,9 +4783,10 @@ a {
 	.cs-panel {
 		width: 100%;
 
-		min-height: 85vh;
+		/* reduce excessive vertical spacing on mobile so text sits closer to the arrow */
+		min-height: auto;
 
-		padding: 15vh 8%;
+		padding: 8vh 8%;
 	}
 
 	.cs-divider {
@@ -4813,6 +4801,21 @@ a {
 
 	.cs-divider-node {
 		transform: rotate(90deg);
+	}
+
+	/* tighter spacing between stacked panels */
+	.cognitive-shift .cs-panel:first-of-type {
+		padding-bottom: 5vh;
+	}
+
+	.cognitive-shift .cs-panel:last-of-type {
+		padding-top: 13vh;
+	}
+
+	/* reduce verb block height on mobile */
+	.cognitive-shift .cs-verb-wrapper {
+		min-height: 4rem;
+		margin-bottom: 1rem;
 	}
 
 }
@@ -5097,7 +5100,7 @@ a {
 }
 
 .venn-petal-text {
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: 700;
 	fill: #ffffff;
 	text-anchor: middle;
@@ -5152,7 +5155,8 @@ a {
 	}
 
 	.venn-petal-text {
-		font-size: 14px !important;
+		/* sedikit lebih besar untuk mobile agar lebih terbaca */
+		font-size: 18px !important;
 	}
 }
 
@@ -5298,7 +5302,7 @@ a {
 .venn-circle-title {
 	fill: #fff;
 	text-shadow: 0 1px 2px rgba(0, 0, 0, .18);
-	font-size: 25px;
+	font-size: 30px;
 	font-weight: 800;
 	letter-spacing: -.02em;
 }
@@ -7255,7 +7259,7 @@ svg {
 }
 
 .fail-intro__stat .fail-intro__source span {
-	font-size: 11px;
+	font-size: 15px;
 	font-weight: 600;
 	line-height: 1.2;
 	color: #737780;
@@ -7264,7 +7268,7 @@ svg {
 .fail-intro__source img {
 	width: auto;
 	max-width: 160px;
-	height: 42px;
+	height: 50px;
 	object-fit: contain;
 }
 
@@ -7554,7 +7558,7 @@ svg {
 
 .gap-col .col-label {
 	display: block;
-	font-size: 12px;
+	font-size: 15px;
 	font-weight: 800;
 	letter-spacing: 1.5px;
 	text-transform: uppercase;
@@ -7586,7 +7590,7 @@ svg {
 }
 
 .gap-item h4 {
-	font-size: 18px;
+	font-size: 22px;
 	font-weight: 800;
 	margin-bottom: 8px;
 	color: var(--navy);
@@ -7597,7 +7601,7 @@ svg {
 }
 
 .gap-item p {
-	font-size: 15px;
+	font-size: 18px;
 	line-height: 1.75;
 	color: #4a5561;
 }
@@ -7900,7 +7904,7 @@ svg {
 	max-width: 640px;
 	margin: 0 auto;
 	padding-bottom: 0;
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 1.6;
 	font-weight: 400;
 	color: #555;
@@ -8775,7 +8779,7 @@ svg {
 }
 
 .resilience-item h4 {
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 800;
 	line-height: 1.3;
 	margin-bottom: 15px;
@@ -8784,7 +8788,7 @@ svg {
 }
 
 .resilience-item p {
-	font-size: 15px;
+	font-size: 18px;
 	line-height: 1.7;
 	color: rgba(255, 255, 255, .7);
 }
@@ -9498,6 +9502,7 @@ a {
 .outcome-card {
 	align-items: center;
 	text-align: center;
+	justify-content: flex-start
 }
 
 /* The Ai Agent Flow */
@@ -9653,10 +9658,6 @@ a {
 	box-shadow: 0 14px 32px rgba(226, 28, 21, .10);
 }
 
-.outcome-card {
-	justify-content: flex-start;
-}
-
 /* Quote */
 
 .ai-quote {
@@ -9742,15 +9743,6 @@ a {
 	margin-bottom: 24px;
 }
 
-.outcome-card {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	border: 1px solid var(--border);
-	padding: 30px 28px;
-	box-sizing: border-box;
-}
-
 .outcome-card.accent {
 	background: var(--red);
 	border-color: var(--red);
@@ -9781,18 +9773,6 @@ a {
 	flex: 0 0 auto;
 }
 
-.outcome-card h4 {
-	font-size: 18px;
-	font-weight: 700;
-	margin: 0;
-	color: var(--navy);
-	line-height: 1.3;
-	text-align: center;
-}
-
-.outcome-card.accent h4 {
-	color: #fff;
-}
 
 .outcome-card p {
 	margin: 0;
@@ -11022,7 +11002,7 @@ svg {
 }
 
 .opt-gap-section h2 {
-	font-size: 28px;
+	font-size: 40px;
 	font-weight: 800;
 	color: var(--navy);
 	max-width: 640px;
@@ -11100,7 +11080,7 @@ svg {
 }
 
 .help-section h2 {
-	font-size: 30px;
+	font-size: 35px;
 	font-weight: 800;
 	color: #fff;
 	margin-bottom: 16px;
@@ -11114,7 +11094,7 @@ svg {
 	max-width: 640px;
 	margin: 0 auto 44px;
 	color: #fff;
-	font-size: 15px;
+	font-size: 20px;
 	line-height: 1.75;
 }
 
@@ -11162,18 +11142,21 @@ svg {
 }
 
 .intervention-section h2 {
-	font-size: 28px;
+	font-size: 40px;
 	font-weight: 800;
 	color: var(--navy);
 	margin-bottom: 14px;
+}
+
+.intervention-section p {
+	font-weight: 400 !important;
 }
 
 .intervention-section>.container>p {
 	max-width: 620px;
 	margin: 0 auto;
 	color: var(--gray);
-	font-size: 15px;
-	line-height: 1.75;
+	font-size: 20px;
 }
 
 .intervention-grid {
@@ -11182,6 +11165,35 @@ svg {
 	gap: 24px;
 	text-align: left;
 	margin-top: 50px;
+}
+
+.intervention-grid > .outcome-card {
+	min-height: 100%;
+	padding: 30px;
+	border: 1px solid var(--border);
+	align-items: flex-start;
+	text-align: left;
+}
+
+.intervention-grid > .outcome-card .icon {
+	margin-bottom: 12px;
+}
+
+.optimized-outcome-section .outcome-card {
+	align-items: center;
+	text-align: center;
+}
+
+.optimized-outcome-section .outcome-card > .icon {
+	width: 100%;
+	display: flex;
+	align-self: center;
+	justify-content: center;
+}
+
+.optimized-outcome-section .outcome-card h3 {
+	width: 100%;
+	text-align: center;
 }
 
 .intervention-card {
@@ -11206,7 +11218,7 @@ svg {
 }
 
 .intervention-card h3 {
-	font-size: 16px;
+	font-size: 22px;
 	font-weight: 800;
 	color: var(--navy);
 	margin: 0 0 8px;
@@ -11215,7 +11227,7 @@ svg {
 
 .intervention-card p {
 	margin: 0;
-	font-size: 13.5px;
+	font-size: 17px;
 	line-height: 1.7;
 	color: var(--gray);
 	text-align: left;
@@ -11325,13 +11337,13 @@ svg {
 }
 
 .why-hosho-card h2 {
-	font-size: 26px;
+	font-size: 40px;
 	font-weight: 800;
 	margin-bottom: 16px;
 }
 
 .why-hosho-card p {
-	font-size: 14.5px;
+	font-size: 20px;
 	line-height: 1.75;
 	color: white;
 }
@@ -11360,7 +11372,7 @@ svg {
 
 .feature-card p {
 	font-weight: 700;
-	font-size: 14.5px;
+	font-size: 20px;
 	line-height: 1.5;
 	color: #fff;
 }
@@ -11371,11 +11383,6 @@ svg {
 	transform: translateY(-6px) scale(1.01);
 }
 
-.feature-card:hover {
-	border-color: var(--red);
-	box-shadow: 0 12px 28px rgba(226, 28, 21, .10);
-}
-
 .why-hosho-footer {
 	text-align: center;
 	color: rgba(255, 255, 255, .68);
@@ -11384,6 +11391,7 @@ svg {
 	padding-top: 60px;
 	font-size: 14.5px;
 	line-height: 1.8;
+	font-size: 20px;
 }
 
 /* How We Deliver Success */
@@ -11459,7 +11467,7 @@ svg {
 
 .success-item h3 {
 	display: block;
-	font-size: 13px;
+	font-size: 22px;
 	font-weight: 700;
 	letter-spacing: .02em;
 	color: var(--navy);
@@ -11469,7 +11477,7 @@ svg {
 
 .success-item p {
 	display: block;
-	font-size: 11.5px;
+	font-size: 17px;
 	color: rgba(7, 21, 35, .72);
 	line-height: 1.32;
 	max-width: 124px;
@@ -11507,7 +11515,7 @@ svg {
 }
 
 .outcome-section h2 {
-	font-size: 28px;
+	font-size: 44px;
 	font-weight: 800;
 	color: var(--navy);
 	margin-bottom: 14px;
@@ -11517,8 +11525,7 @@ svg {
 .outcome-section .outcome-header p {
 	max-width: 560px;
 	color: #4a5561;
-	font-size: 15px;
-	line-height: 1.75;
+	font-size: 20px;
 	text-align: center;
 	margin-inline: auto;
 }
@@ -11528,11 +11535,6 @@ svg {
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
 	margin-top: 50px;
-}
-
-.outcome-card {
-	padding: 34px 32px;
-	transition: border-color 220ms var(--ease), box-shadow 220ms var(--ease), transform 220ms var(--ease);
 }
 
 .outcome-card.style-white {
@@ -11551,6 +11553,7 @@ svg {
 .outcome-card .icon {
 	color: var(--red);
 	margin-bottom: 16px;
+	justify-content: center;
 }
 
 .outcome-card.style-navy .icon {
@@ -11563,7 +11566,7 @@ svg {
 }
 
 .outcome-card h3 {
-	font-size: 17px;
+	font-size: 22px;
 	font-weight: 800;
 	margin-bottom: 10px;
 	color: var(--navy);
@@ -11574,7 +11577,7 @@ svg {
 }
 
 .outcome-card p {
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 1.75;
 	color: var(--gray);
 	font-weight: 400 !important;
@@ -11593,7 +11596,7 @@ svg {
 }
 
 .philosophy-strip h2 {
-	font-size: 32px;
+	font-size: 40px;
 	font-weight: 800;
 	color: #111;
 	max-width: 640px;
@@ -11606,7 +11609,7 @@ svg {
 	max-width: 620px;
 	margin: 0 auto;
 	color: var(--gray);
-	font-size: 15px;
+	font-size: 18px;
 	line-height: 1.8;
 	font-weight: 400 !important;
 }
@@ -11620,7 +11623,7 @@ svg {
 }
 
 .journey-row span {
-	font-size: 13px;
+	font-size: 18px;
 	font-weight: 800;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -14433,19 +14436,39 @@ body.page-eci .eci-hero-partners .shell>div>img {
 	transform: translateY(-3px);
 }
 
-/* Added for page-approach-erp.php */
-.feature-card {
-	transition: transform 0.3s ease;
+/* Approach ERP typography and hero product mark */
+.erp-page .outcome-section .outcome-header p {
+	font-weight: 400;
 }
 
-.feature-card:hover {
-	transform: translateY(-5px);
+.erp-page .philosophy-strip .small-title {
+	font-size: 15px;
 }
 
-/* ==========================================================================
-   EVAN SEVEN-PAGE REVISION · 2026-08-20
-   Scoped to Careers, ESG, Media, Contact, Company, AI Quick Win and ECI.
-   ========================================================================== */
+body.page-approach .s-stage-info h3 {
+	font-size: 30px;
+}
+
+body.page-approach .s-info-block > span {
+	font-size: 22px;
+}
+
+body.page-approach .s-info-guarantee {
+	font-size: 18px;
+}
+
+body.page-approach .s-deliverable-list em {
+	font-size: 16px;
+}
+
+.erp-page .page-hero__actions .erp-hero-logo {
+	display: block;
+	width: auto;
+	max-width: min(280px, 70vw);
+	height: 52px;
+	object-fit: contain;
+	object-position: left center;
+}
 
 :is(.page-home, .page-company, .page-ai-quick-win, .page-eci, .page-careers, .page-esg, .page-sustainability, .page-media, .page-press, .page-contact, .page-solutions, .page-services, .page-ai, .page-ai-transformation, .page-erp-optimization, .page-approach, .page-innovation, .page-optimization, .page-assurance, .page-operational-intelligence, .page-operational-experience, .page-customer-intelligence, .page-customer-experience, .page-workforce-intelligence, .page-employee-experience, .page-accessibility, .page-terms-of-use, .page-privacy-policy, .page-cookies) .page-hero,
 .page-hero {
@@ -18996,7 +19019,7 @@ body .cta-panel.cta-panel .cta-panel__title strong {
 
 .jh-label-title {
 	display: block;
-	font-size: 17px;
+	font-size: 22px;
 	font-weight: 700;
 	color: #1a1c1d;
 }
@@ -19006,7 +19029,7 @@ body .cta-panel.cta-panel .cta-panel__title strong {
 	max-height: 0;
 	overflow: hidden;
 	opacity: 0;
-	font-size: 13px;
+	font-size: 18px;
 	line-height: 1.55;
 	color: #4a4d52;
 	transition: max-height 300ms var(--ease, ease), opacity 220ms var(--ease, ease), margin-top 300ms var(--ease, ease);
@@ -19447,7 +19470,7 @@ body.hosho-remade img {
 .engine-panel h3 {
 	font-size: 1.15rem;
 	font-weight: 700;
-	color: var(--atp-black);
+	color: #fff;
 	margin: 0;
 	line-height: 1.3;
 }
@@ -19457,7 +19480,7 @@ body.hosho-remade img {
 	margin: 8px 0 0 0;
 	padding: 0;
 	font-size: 0.92rem;
-	color: #4a4a46;
+	color: #fff;
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
@@ -20808,14 +20831,30 @@ body.page-company #our-values.company-values--quotes .company-value__copy cite {
 @media (max-width: 900px) {
 	.cognitive-shift .cs-split {
 		flex-direction: column;
-		gap: 32px;
+		gap: 0;
 		min-height: 0;
+	}
+
+	.cognitive-shift .cs-hero-title p {
+		text-align: center;
 	}
 
 	.cognitive-shift .cs-panel {
 		width: 100%;
 		padding-inline: 0;
 		text-align: center;
+	}
+
+	.cognitive-shift .cs-panel-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.cognitive-shift .cs-verb-wrapper {
+		width: 100%;
+		justify-content: center;
 	}
 
 	.cognitive-shift .cs-saas,
@@ -20825,6 +20864,25 @@ body.page-company #our-values.company-values--quotes .company-value__copy cite {
 
 	.cognitive-shift .cs-lines p {
 		text-align: left;
+	}
+
+	.cognitive-shift .cs-divider {
+		position: relative;
+		top: auto;
+		left: auto;
+		transform: none;
+		width: 100%;
+		height: 72px;
+		margin: 0;
+		pointer-events: none;
+	}
+
+	.cognitive-shift .cs-divider-node {
+		transform: rotate(90deg);
+	}
+
+	.cognitive-shift .cs-divider-arrow {
+		margin-inline: auto;
 	}
 }
 
@@ -21858,39 +21916,17 @@ body.page-approach .solutions-card {
 	margin-top: 38px;
 	padding: 16px 8px;
 }
-
-.erp-page .success-item {
-	min-width: 138px;
-	min-height: 174px;
-	justify-content: flex-start;
-	padding: 22px 14px;
-	border: 1px solid rgba(225, 28, 21, 0.18);
-	background: #fff;
-	box-shadow: 0 8px 22px rgba(7, 21, 35, 0.08);
-}
-
 .erp-page .success-item .icon-box {
 	width: 56px;
 	height: 56px;
 	margin-bottom: 14px;
+	margin-inline: auto;
 	border-radius: 0;
 }
 
 .erp-page .success-item .icon-box svg {
 	width: 25px;
 	height: 25px;
-}
-
-.erp-page .success-item h3 {
-	margin-bottom: 7px;
-	font-size: 17px;
-	line-height: 1.3;
-}
-
-.erp-page .success-item p {
-	max-width: 180px;
-	font-size: 14px;
-	line-height: 1.5;
 }
 
 .erp-page .success-separator {
@@ -21965,6 +22001,135 @@ body.page-approach .solutions-card {
 
 	.home .venn-main-grid {
 		row-gap: 24px;
+	}
+}
+
+/* Use equal-width footer link columns with a consistent gap. */
+@media (min-width: 992px) {
+	body.hosho-remade .site-footer .footer-main {
+		display: grid !important;
+		grid-template-columns: 220px repeat(5, minmax(0, 1fr)) !important;
+		gap: clamp(24px, 2.5vw, 48px) !important;
+		justify-content: initial !important;
+	}
+
+	body.hosho-remade .site-footer .footer-brand {
+		max-width: none !important;
+		margin-right: 0 !important;
+	}
+
+	body.hosho-remade .site-footer .footer-column {
+		min-width: 0 !important;
+	}
+
+	body.hosho-remade .site-footer .footer-column:nth-child(2) > a:first-of-type {
+		white-space: nowrap;
+	}
+}
+
+/* Digital Leader process: match the ERP help cards with arrows between them. */
+.dlp-process-section .process--arrow {
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: 28px;
+	border: 0;
+	text-align: left;
+}
+
+.dlp-process-section .process--arrow > article {
+	position: relative;
+	min-height: 0;
+	padding: 35px 20px 24px;
+	border: 1px solid var(--border);
+	background: #fff;
+	color: var(--ink);
+	transition: border-color 220ms var(--ease), box-shadow 220ms var(--ease), transform 220ms var(--ease);
+}
+
+.dlp-process-section .process--arrow > article:hover {
+	transform: translateY(-4px);
+	border-color: var(--red);
+	box-shadow: 0 12px 28px rgba(226, 28, 21, .10);
+}
+
+.dlp-process-section .process--arrow > article::before {
+	display: none;
+}
+
+body.hosho-remade .dlp-process-section .process--arrow > article h3 {
+	margin: 0 0 10px;
+	font-size: 22px !important;
+	line-height: 1.35;
+	color: #E21C15 !important;
+	-webkit-text-fill-color: #E21C15 !important;
+	text-align: center;
+
+}
+
+body.hosho-remade .dlp-process-section .process--arrow > article p {
+	margin: 0;
+	color: #222 !important;
+	-webkit-text-fill-color: #222 !important;
+}
+
+.dlp-process-section .process--arrow > article:not(:last-child)::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: -22px;
+	z-index: 2;
+	width: 16px;
+	height: 16px;
+	border: 0;
+	background: var(--red);
+	clip-path: polygon(0 36%, 62% 36%, 62% 0, 100% 50%, 62% 100%, 62% 64%, 0 64%);
+	opacity: 1;
+	transform: translateY(-50%);
+}
+
+@media (max-width: 900px) {
+	.dlp-process-section .process--arrow {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.dlp-process-section .process--arrow > article:nth-child(2)::after {
+		display: none;
+	}
+}
+
+@media (max-width: 560px) {
+	.dlp-process-section .process--arrow {
+		grid-template-columns: 1fr;
+	}
+
+	.dlp-process-section .process--arrow > article::after {
+		display: none;
+	}
+}
+
+.core-competencies-section .outcome-card {
+	align-items: center;
+	text-align: center;
+}
+
+.core-competencies-section .outcome-card > .icon {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.core-competencies-section .outcome-card h3 {
+	width: 100%;
+	text-align: center;
+}
+
+.core-competencies-section .outcome-card p {
+	width: 100%;
+	text-align: left;
+}
+
+@media (max-width: 560px) {
+	.designed-outcomes-section .intervention-grid {
+		grid-template-columns: 1fr;
 	}
 }
 

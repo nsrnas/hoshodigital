@@ -55,6 +55,6 @@ get_header();
 		</div>
 	</section>
 
-	<?php hosho_render_cta( '', 'Which one fits?', '', 'Talk to us', hosho_page_url( 'contact' ), 'programmes/cta-main.jpg' ); ?>
+	<?php hosho_render_cta( '', 'Find the right fit', '', 'Talk to us', hosho_page_url( 'contact' ), 'programmes/cta-main.jpg' ); ?>
 </main>
 <?php get_footer(); ?>

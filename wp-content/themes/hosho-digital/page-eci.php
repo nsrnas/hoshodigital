@@ -2,11 +2,11 @@
 <main id="main-content">
   <?php
     $dlp_partner_marks =
-      '<img src="' . esc_url( hosho_asset_url( 'imda.webp' ) ) . '" alt="Infocomm Media Development Authority" class="eci-hero-partner-img eci-hero-partner-img--imda" loading="lazy" decoding="async">' .
-      '<img src="' . esc_url( hosho_asset_url( 'esingapore.png' ) ) . '" alt="Enterprise Singapore" class="eci-hero-partner-img eci-hero-partner-img--enterprise" loading="lazy" decoding="async">' .
-      '<img src="' . esc_url( hosho_asset_url( 'edbs.jpg' ) ) . '" alt="Singapore Economic Development Board" class="eci-hero-partner-img eci-hero-partner-img--edb" loading="lazy" decoding="async">';
+      '<img src="' . esc_url( hosho_asset_url( 'programmes/eci/imda.png' ) ) . '" alt="Infocomm Media Development Authority" class="eci-hero-partner-img eci-hero-partner-img--imda" loading="lazy" decoding="async">' .
+      '<img src="' . esc_url( hosho_asset_url( 'programmes/eci/esingapore.png' ) ) . '" alt="Enterprise Singapore" class="eci-hero-partner-img eci-hero-partner-img--enterprise" loading="lazy" decoding="async">' .
+      '<img src="' . esc_url( hosho_asset_url( 'programmes/eci/edbs.png' ) ) . '" alt="Singapore Economic Development Board" class="eci-hero-partner-img eci-hero-partner-img--edb" loading="lazy" decoding="async">';
 
-    hosho_render_hero('INNOVATE WITH INTELLIGENCE', 'hero-quickwin-corridor-v2.png', array(
+    hosho_render_hero('INNOVATE WITH INTELLIGENCE', 'programmes/eci/hero-quickwin-corridor-v2.png', array(
         'class'        => 'page-hero--quickwin',
         'actions_html' => $dlp_partner_marks,
       )
@@ -41,7 +41,7 @@
         <p>From opportunity discovery through solution deployment and internal capability building.</p>
       </div>
     </div>
-    <div class="media-split__image" style="background-image:url('<?php echo esc_url(hosho_asset_url('eci-singapore-triangular-facade.jpg')); ?>')"></div>
+    <div class="media-split__image" style="background-image:url('<?php echo esc_url(hosho_asset_url('programmes/eci/eci-singapore-triangular-facade.jpg')); ?>')"></div>
   </section>
 
   <section class="section section-mist eci-benefits">
@@ -85,7 +85,7 @@
   </section>
 
 
-  <?php hosho_render_quote( '<strong>Change is the very essence of life. <br>The moment we cease to change, <br>to be able to adapt, to adjust, <br>to respond effectively to new situations, <br>then we have begun to die.</strong>', 'Lee Kuan Yew', 'lee-kuan-yew.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi' ); ?>
+  <?php hosho_render_quote( '<strong>Change is the very essence of life. <br>The moment we cease to change, <br>to be able to adapt, to adjust, <br>to respond effectively to new situations, <br>then we have begun to die.</strong>', 'Lee Kuan Yew', 'programmes/eci/lee-kuan-yew.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi' ); ?>
 
   <section class="section section-navy">
     <div class="shell">
@@ -107,5 +107,5 @@
     </div>
   </section>
   
-  <?php hosho_render_cta('','<strong>Innovate with Intelligence.</strong>','','Register interest','https://hoshodigital.com/eci-form/','eci-singapore-night.jpg'); ?>
+  <?php hosho_render_cta('','QUICK WINS. GUARANTEED OUTCOMES.','','Register interest','https://hoshodigital.com/eci-form/','programmes/eci/eci-singapore-night.jpg'); ?>
 </main><?php get_footer(); ?>

@@ -92,7 +92,7 @@ get_header();
 							<path d="M17 7 7 17"/>
 						</svg></span>
 					</div>
-					<h4>Maintanance <br> &amp; Support</h4>
+					<h4>Maintenance <br> &amp; Support</h4>
 				</div>
 				<p>Ensuring smooth functional availability via proactive updates, bug fixes and technical expert support.</p>
 			</div>
@@ -137,11 +137,11 @@ get_header();
 	<?php hosho_render_quote( '<strong>Continuous improvement <br>is better than delayed <br>perfection.</strong>', 'Mark Twain', 'approach/ams/twain.png', 'quote-band--standard quote-band--red-soft quote-band--masayoshi' ); ?>
 
 	<!-- CORE COMPETENCIES -->
-	<section class="competencies-section"><div class="container motion">
+	<section class="intervention-section core-competencies-section"><div class="container motion">
 		<div class="competencies-header"><h2>Core Competencies</h2></div>
-		<div class="advantage-grid">
-			<div class="advantage-item">
-				<div class="adv-icon" aria-hidden="true">
+		<div class="intervention-grid">
+			<div class="outcome-card style-white">
+				<div class="icon" aria-hidden="true">
 					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 						<path d="M3 3v18h18"/>
 						<rect x="7" y="13" width="3" height="5"/>
@@ -149,55 +149,55 @@ get_header();
 						<rect x="17" y="5" width="3" height="13"/>
 					</svg>
 				</div>
-				<h4>Monitoring</h4>
+				<h3>Monitoring</h3>
 				<p>Real-time observability and predictive analytics to identify bottlenecks before they impact your users.</p>
 			</div>
-			<div class="advantage-item adventage-red">
-				<div class="adv-icon" aria-hidden="true">
+			<div class="outcome-card style-white">
+				<div class="icon" aria-hidden="true">
 					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 						<path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
 					</svg>
 				</div>
-				<h4>Maintenance</h4>
+				<h3>Maintenance</h3>
 				<p>Continuous technical health checks, dependency updates, and platform performance tuning.</p>
 			</div>
-			<div class="advantage-item">
-				<div class="adv-icon" aria-hidden="true">
+			<div class="outcome-card style-white">
+				<div class="icon" aria-hidden="true">
 					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 						<path d="M9 9h6"/><path d="M12 3v4"/><path d="M7 7 5 5"/><path d="M17 7 19 5"/><path d="M5 12h14"/><path d="M9 20a3 3 0 0 0 6 0"/><path d="M7 12a5 5 0 1 1 10 0v1a5 5 0 1 1-10 0z"/>
 					</svg>
 				</div>
-				<h4>Bug Fixing</h4>
+				<h3>Bug Fixing</h3>
 				<p>Rapid identification and resolution of regressions with a zero-backlog philosophy for critical issues.</p>
 			</div>
-			<div class="advantage-item adventage-red">
-				<div class="adv-icon" aria-hidden="true">
+			<div class="outcome-card style-white">
+				<div class="icon" aria-hidden="true">
 					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 						<path d="M4 14a8 8 0 1 1 16 0"/>
 						<path d="M4 14v4a2 2 0 0 0 2 2h2v-6H4Z"/>
 						<path d="M20 14v4a2 2 0 0 1-2 2h-2v-6h4Z"/>
 					</svg>
 				</div>
-				<h4>Technical Support</h4>
+				<h3>Technical Support</h3>
 				<p>Tier 3 engineering support embedded within your team to resolve complex architectural challenges.</p>
 			</div>
-			<div class="advantage-item">
-				<div class="adv-icon" aria-hidden="true">
+			<div class="outcome-card style-white">
+				<div class="icon" aria-hidden="true">
 					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 						<path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3Z"/>
 					</svg>
 				</div>
-				<h4>Security</h4>
+				<h3>Security</h3>
 				<p>Ongoing threat modeling, vulnerability patching, and compliance monitoring (SOC2, HIPAA, GDPR).</p>
 			</div>
-			<div class="advantage-item adventage-red">
-				<div class="adv-icon" aria-hidden="true">
+			<div class="outcome-card style-white">
+				<div class="icon" aria-hidden="true">
 					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
 						<circle cx="12" cy="12" r="3"/>
 						<path d="M19.4 15a7.8 7.8 0 0 0 .1-6l2-1.2-2-3.4-2.3.9a8 8 0 0 0-5.2-3L11.6 0h-3.2l-.4 2.3a8 8 0 0 0-5.2 3L.5 4.4l-2 3.4 2 1.2a7.8 7.8 0 0 0 .1 6l-2 1.2 2 3.4 2.3-.9a8 8 0 0 0 5.2 3l.4 2.3h3.2l.4-2.3a8 8 0 0 0 5.2-3l2.3.9 2-3.4Z"/>
 					</svg>
 				</div>
-				<h4>Incident Response</h4>
+				<h3>Incident Response</h3>
 				<p>Defined RTO/RPO metrics and a battle-tested protocol for system-wide failure recovery.</p>
 			</div>
 		</div>
