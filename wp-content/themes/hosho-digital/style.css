@@ -20846,6 +20846,41 @@ body.page-ashistanto .page-hero--ashistanto .page-hero__body {
 	max-width: 42rem;
 }
 
+.ashi-brandmark {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	width: 5.5rem;
+	aspect-ratio: 1 / .86;
+}
+
+.ashi-brandmark img {
+	position: absolute;
+	left: -25%;
+	top: 50%;
+	width: 165%;
+	max-width: none;
+	height: auto;
+	transform: translateY(-50%);
+}
+
+.ashi-brandmark--hero {
+	flex: 0 0 auto;
+	width: clamp(5rem, 7vw, 7rem);
+}
+
+body.page-ashistanto .page-hero--ashistanto .page-hero__title-row {
+	display: flex;
+	gap: clamp(.75rem, 2vw, 1.5rem);
+	align-items: center;
+	width: fit-content;
+	max-width: 100%;
+}
+
+.ashi-brandmark--red {
+	margin-bottom: 1.25rem;
+}
+
 .ashi-intro__grid,
 .ashi-command__grid {
 	display: grid;
@@ -20936,6 +20971,10 @@ body.page-ashistanto .page-hero--ashistanto .page-hero__body {
 	font-size: .78rem;
 	font-weight: 800;
 	letter-spacing: .12em;
+}
+
+.ashi-brandmark--console {
+	width: 2.25rem;
 }
 
 .ashi-console__status {
@@ -21030,14 +21069,15 @@ body.page-ashistanto .page-hero--ashistanto .page-hero__body {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
 	margin-top: clamp(3rem, 6vw, 6rem);
-	border-block: 1px solid var(--line);
+	border-block: 1px solid rgba(255, 255, 255, .3);
+	background: var(--red);
 }
 
 .ashi-challenges__grid article,
 .ashi-value__grid article {
-	min-height: 300px;
-	padding: clamp(2rem, 3.5vw, 3.5rem);
-	border-right: 1px solid var(--line);
+	min-height: 320px;
+	padding: clamp(2.5rem, 4vw, 4.5rem);
+	border-right: 1px solid rgba(255, 255, 255, .3);
 }
 
 .ashi-challenges__grid article:last-child,
@@ -21070,6 +21110,16 @@ body.page-ashistanto .page-hero--ashistanto .page-hero__body {
 	margin: 0;
 	color: var(--muted);
 	line-height: 1.65;
+}
+
+.ashi-challenges__grid h3,
+.ashi-value__grid strong {
+	color: #fff;
+}
+
+.ashi-challenges__grid p,
+.ashi-value__grid p {
+	color: rgba(255, 255, 255, .82);
 }
 
 .ashi-capabilities__grid {
@@ -21111,31 +21161,43 @@ body.page-ashistanto .page-hero--ashistanto .page-hero__body {
 
 .ashi-value__grid strong {
 	max-width: 12ch;
-	color: var(--navy);
+	color: #fff;
 	font-size: clamp(1.8rem, 3vw, 3.25rem);
 	font-weight: 600;
 	line-height: 1.05;
 }
 
 .ashi-external {
-	padding-block: clamp(4rem, 8vw, 8rem);
-	background: linear-gradient(115deg, var(--red-dark) 0%, var(--red) 48%, var(--navy) 100%);
+	position: relative;
+	overflow: hidden;
+	padding-block: clamp(2.5rem, 5vw, 4.5rem);
+	background: linear-gradient(105deg, var(--red-dark) 0%, var(--red) 48%, #fff 100%);
 	color: #fff;
 }
 
 .ashi-external__inner {
-	display: flex;
-	gap: 3rem;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(14rem, .65fr);
+	gap: clamp(2rem, 6vw, 6rem);
 	align-items: center;
 }
 
-.ashi-external__inner > div {
+.ashi-external__copy {
+	position: relative;
+	z-index: 1;
 	max-width: 52rem;
+}
+
+.ashi-brandmark--cta {
+	justify-self: end;
+	width: clamp(19rem, 32vw, 31rem);
+	opacity: .22;
+	transform: translateX(clamp(5rem, 9vw, 12rem));
 }
 
 .ashi-external h2 {
 	color: #fff;
+	font-size: clamp(2.5rem, 4.5vw, 4.75rem);
 }
 
 .ashi-external p:not(.eyebrow) {
@@ -21144,6 +21206,10 @@ body.page-ashistanto .page-hero--ashistanto .page-hero__body {
 	color: rgba(255, 255, 255, .82);
 	font-size: 1.05rem;
 	line-height: 1.65;
+}
+
+.ashi-external__copy .button {
+	margin-top: 1.75rem;
 }
 
 body.hosho-remade .ashi-external .button,
@@ -21246,7 +21312,7 @@ body.page-solutions .solutions-product-feature h3 {
 	.ashi-value__grid article {
 		min-height: 0;
 		border-right: 0;
-		border-bottom: 1px solid var(--line);
+		border-bottom: 1px solid rgba(255, 255, 255, .3);
 	}
 
 	.ashi-challenges__grid article:last-child,
@@ -21262,6 +21328,14 @@ body.page-solutions .solutions-product-feature h3 {
 @media (max-width: 680px) {
 	body.page-ashistanto .page-hero--ashistanto .page-hero__media {
 		background-position: 72% center;
+	}
+
+	body.page-ashistanto .page-hero--ashistanto h1 {
+		font-size: clamp(2.75rem, 12vw, 3.5rem);
+	}
+
+	.ashi-brandmark--hero {
+		width: 3.5rem;
 	}
 
 	.ashi-capabilities__grid {
@@ -21281,8 +21355,16 @@ body.page-solutions .solutions-product-feature h3 {
 	}
 
 	.ashi-external__inner {
-		align-items: flex-start;
-		flex-direction: column;
+		grid-template-columns: 1fr;
+	}
+
+	.ashi-brandmark--cta {
+		position: absolute;
+		right: -8rem;
+		top: 50%;
+		width: 18rem;
+		opacity: .12;
+		transform: translateY(-50%);
 	}
 
 	.solutions-product-feature {
