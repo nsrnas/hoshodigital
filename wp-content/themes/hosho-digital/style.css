@@ -1,4 +1,4 @@
-/*
+﻿/*
 Theme Name: HOSHO Digital Remade
 Description: Clean editorial WordPress theme for HOSHO Digital.
 Version: 1.0.0
@@ -1410,9 +1410,7 @@ p {
 	font-size: 12px;
 }
 
-/* =========================================================
-   HOSHŌ — REVERSED S / 8 STAGES
-========================================================= */
+
 
 .framework-s-visual {
 	position: relative;
@@ -1650,7 +1648,7 @@ p {
 	font-weight: 600;
 }
 
-/* Phase Tabs */
+
 
 .framework-s-layout .phase-tabs {
 	position: relative;
@@ -1722,7 +1720,7 @@ p {
 	font-size: 9px;
 }
 
-/* Mobile */
+
 
 @media (max-width: 980px) {
 
@@ -1801,7 +1799,7 @@ p {
 
 }
 
-/* Reduced Motion */
+
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -2118,7 +2116,7 @@ body.page-strategy-session .site-footer {
 	transform: none;
 }
 
-/* Shared motion language: short UI feedback, measured editorial reveals. */
+
 .brand:focus-visible,
 .nav-links a:focus-visible,
 .footer-column a:focus-visible,
@@ -2503,7 +2501,7 @@ body.page-strategy-session .site-footer {
 	}
 }
 
-/* WordPress host-theme compatibility: keep dark branded surfaces legible. */
+
 body.hosho-remade .page-hero h1,
 body.hosho-remade .page-hero h2,
 body.hosho-remade .page-hero h3,
@@ -2594,7 +2592,7 @@ body.hosho-remade .page-hero__cta:hover .button-arrow {
 	transform: translate(3px, -3px) rotate(-45deg);
 }
 
-/* SOLUTIONS PAGE */
+
 
 .page-hero--solutions .page-hero__media {
 	background-position: 56% center;
@@ -2828,7 +2826,7 @@ body.hosho-remade .solutions-card h3 {
 	transition: margin .4s var(--ease);
 }
 
-/* Hidden content: description, capabilities, link */
+
 body.hosho-remade .solutions-card>p {
 	font-size: 17px;
 	color: var(--muted) !important;
@@ -2893,7 +2891,7 @@ body.hosho-remade .solutions-card.is-open>p,
 	display: block !important;
 }
 
-/* ── SPEEDOMETER SECTION ── */
+
 
 .speedo-layout {
 	display: flex;
@@ -3025,7 +3023,7 @@ body.hosho-remade .solutions-card.is-open>p,
 	}
 }
 
-/* Programmes overview */
+
 .programmes-page {
 	--programmes-navy: #0A1628;
 	--programmes-red: #E21C15;
@@ -3228,7 +3226,7 @@ body.hosho-remade .solutions-card.is-open>p,
 	}
 }
 
-/* Approach: enlarge the architecture diagram and its explanatory cards. */
+
 .approach-page .architecture-scale .architecture-header h3 {
 	font-size: clamp(52px, 7vw, 84px);
 }
@@ -3291,7 +3289,7 @@ body.hosho-remade .solutions-card.is-open>p,
 	}
 }
 
-/* Approach page opening hero headline. */
+
 body.page-approach .approach-page .page-hero h1 {
 	font-size: clamp(4rem, 8.5vw, 9rem) !important;
 }
@@ -3302,7 +3300,7 @@ body.page-approach .approach-page .page-hero h1 {
 	}
 }
 
-/* Matching square cards and crisp capability rows across both AI sections. */
+
 .ai-transformation-page :is(.act-on-intelligence__engines, .trusted-by-design__pillars) > .opt-gap-card {
 	position: relative;
 	padding: 30px 26px;
@@ -3350,7 +3348,7 @@ body.page-approach .approach-page .page-hero h1 {
 }
 
 .ai-transformation-page :is(.act-on-intelligence__engines, .trusted-by-design__pillars) > .opt-gap-card li::before {
-	content: "✓";
+	content: "âœ“";
 	position: absolute;
 	left: 12px;
 	color: #ff7775;
@@ -3364,7 +3362,7 @@ body.page-approach .approach-page .page-hero h1 {
 	box-shadow: 0 20px 42px rgba(0, 0, 0, 0.28), 0 8px 24px rgba(200, 16, 46, 0.16);
 }
 
-/* ── END SPEEDOMETER ── */
+
 
 .solutions-advantage-header {
 	margin-bottom: 48px;
@@ -3426,7 +3424,7 @@ body.page-approach .approach-page .page-hero h1 {
 	}
 }
 
-/* OPERATIONAL EXPERIENCE PAGE */
+
 
 .page-hero--opex .page-hero__media {
 	background-position: 60% center;
@@ -3686,7 +3684,7 @@ body.page-approach .approach-page .page-hero h1 {
 	}
 }
 
-/* CUSTOMER EXPERIENCE PAGE */
+
 
 .page-hero--cx .page-hero__media {
 	background-position: center center;
@@ -3759,7 +3757,7 @@ body.page-approach .approach-page .page-hero h1 {
 	box-shadow: 0 25px 35px -5px rgba(0, 0, 0, .15);
 }
 
-/* EMPLOYEE EXPERIENCE PAGEb*/
+
 
 .page-hero--ex .page-hero__media {
 	background-position: center center;
@@ -3906,7 +3904,7 @@ body.page-approach .approach-page .page-hero h1 {
 	max-height: 40px;
 }
 
-/* Solutions Intro Header (Clean, No Box) */
+
 .solutions-intro-callout {
 	padding: 56px 0 32px;
 }
@@ -4108,9 +4106,9 @@ body.page-approach .approach-page .page-hero h1 {
 	}
 }
 
-/* Front Page Styles */
 
-/* Hosho Homepage */
+
+
 
 body {
 	color: var(--text);
@@ -4221,7 +4219,7 @@ a {
 	color: #fff;
 }
 
-/* Hero */
+
 
 .hero {
 	position: relative;
@@ -4288,7 +4286,7 @@ a {
 	gap: 18px;
 }
 
-/* Your Success. Our Guarantee. */
+
 
 .success-guarantee {
 	padding: 56px 0 120px;
@@ -4384,7 +4382,7 @@ a {
 	color: #667483;
 }
 
-/* RESPONSIVE */
+
 
 @media (max-width: 900px) {
 	.guarantee-body {
@@ -4419,7 +4417,7 @@ a {
 	}
 }
 
-/* The Intelligent Digital Core */
+
 
 .digital-core {
 	padding: 110px 0 120px;
@@ -4595,9 +4593,9 @@ a {
 	transform: translateY(0);
 }
 
-/* Cognitive Shift */
 
-/* Cognitive Shift */
+
+
 
 .cognitive-shift {
 	--cs-blue: #4f8ef7;
@@ -4636,7 +4634,7 @@ a {
 	transition-delay: 1.1s;
 }
 
-/* Split */
+
 
 .cs-split {
 	position: relative;
@@ -4645,7 +4643,7 @@ a {
 	overflow: visible;
 }
 
-/* Panels */
+
 
 .cs-panel {
 	width: 50%;
@@ -4677,7 +4675,7 @@ a {
 	transform: translateY(-20px);
 }
 
-/* Heading */
+
 
 .cs-panel h3 {
 	margin: 0 0 clamp(1.5rem, 4vh, 3.2rem);
@@ -4687,7 +4685,7 @@ a {
 	color: #fff;
 }
 
-/* Verb */
+
 
 .cs-verb-wrapper {
 	min-height: clamp(3rem, 5.5vw, 6.5rem);
@@ -4716,7 +4714,7 @@ a {
 	color: #fff;
 }
 
-/* Detail Lines */
+
 
 .cs-lines p {
 	margin: 0 0 0.55rem;
@@ -4734,7 +4732,7 @@ a {
 	border-left: 1.5px solid #fff;
 }
 
-/* Center Divider */
+
 
 .cs-divider {
 	position: absolute;
@@ -4783,7 +4781,7 @@ a {
 	.cs-panel {
 		width: 100%;
 
-		/* reduce excessive vertical spacing on mobile so text sits closer to the arrow */
+		
 		min-height: auto;
 
 		padding: 8vh 8%;
@@ -4803,7 +4801,7 @@ a {
 		transform: rotate(90deg);
 	}
 
-	/* tighter spacing between stacked panels */
+	
 	.cognitive-shift .cs-panel:first-of-type {
 		padding-bottom: 5vh;
 	}
@@ -4812,7 +4810,7 @@ a {
 		padding-top: 13vh;
 	}
 
-	/* reduce verb block height on mobile */
+	
 	.cognitive-shift .cs-verb-wrapper {
 		min-height: 4rem;
 		margin-bottom: 1rem;
@@ -4828,7 +4826,7 @@ a {
 
 }
 
-/* From Strategy To Continuous Value (services) */
+
 
 .services-section {
 	padding: 110px 0;
@@ -4850,7 +4848,7 @@ a {
 	text-align: center;
 }
 
-/* Interactive Venn Diagram (solution Discipline Convergence) */
+
 
 @keyframes venn-draw {
 	from {
@@ -4892,7 +4890,7 @@ a {
 	}
 }
 
-/* Default: hide everything before animation plays */
+
 .venn-circle {
 	stroke-dasharray: 1037;
 	stroke-dashoffset: 1037;
@@ -4935,7 +4933,7 @@ a {
 	animation: venn-fade-up 0.5s var(--ease) 1s forwards;
 }
 
-/* Override animation for consulting & engineering labels so final position stays lowered */
+
 .venn-interactive-container.is-visible .venn-arc-label.consulting-label,
 .venn-interactive-container.is-visible .venn-arc-label.engineering-label {
 	animation: none !important;
@@ -4944,7 +4942,7 @@ a {
 	transition: opacity 0.5s var(--ease), transform 0.5s var(--ease);
 }
 
-/* â”€â”€ End Venn Entrance Animations â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+
 
 .venn-interactive-container {
 	background: transparent;
@@ -4973,11 +4971,11 @@ a {
 	height: auto;
 	display: block;
 	overflow: visible;
-	/* create an isolated stacking context so text can sit above blended petals */
+	
 	isolation: isolate;
 }
 
-/* Arc label colours should match their circle borders/fills */
+
 .venn-arc-label.advisory-label {
 	fill: #FF514B;
 }
@@ -5012,7 +5010,7 @@ a {
 	outline: none !important;
 }
 
-/* Top Circle: Advisory */
+
 .venn-circle-advisory {
 	stroke: none;
 	fill: #FF4943;
@@ -5029,7 +5027,7 @@ a {
 	fill: white;
 }
 
-/* Bottom-Right Circle: Consulting */
+
 .venn-circle-consulting {
 	stroke: none;
 	fill: #E21C15;
@@ -5046,7 +5044,7 @@ a {
 	fill: white;
 }
 
-/* Bottom-Left Circle: Engineering */
+
 .venn-circle-engineering {
 	stroke: none;
 	fill: #c50f08;
@@ -5155,7 +5153,7 @@ a {
 	}
 
 	.venn-petal-text {
-		/* sedikit lebih besar untuk mobile agar lebih terbaca */
+		
 		font-size: 18px !important;
 	}
 }
@@ -5228,7 +5226,7 @@ a {
 	font-style: italic;
 }
 
-/* Cognitive Shift overrides */
+
 .cognitive-shift {
 	background: radial-gradient(circle at top, rgba(255, 255, 255, .92) 0%, rgba(245, 247, 250, .94) 42%, rgba(235, 239, 245, .98) 100%);
 }
@@ -5436,7 +5434,7 @@ a {
 	text-transform: none;
 }
 
-/* Responsive */
+
 
 @media (max-width: 900px) {
 	.services-grid {
@@ -5462,7 +5460,7 @@ a {
 	}
 }
 
-/* Continuous Business Value */
+
 
 .business-value-box {
 	background: #112d4b;
@@ -5505,7 +5503,7 @@ a {
 	background: #c11d22;
 }
 
-/* Quote */
+
 
 .quote-section {
 	position: relative;
@@ -5570,7 +5568,7 @@ a {
 	object-fit: cover;
 }
 
-/* Rapid To Be Spoke */
+
 
 .rapid-spectrum {
 	padding: 110px 0 96px;
@@ -5712,7 +5710,7 @@ a {
 	will-change: transform;
 }
 
-/* Responsive */
+
 
 @media (max-width: 900px) and (min-width: 769px) {
 	.rapid-process {
@@ -5970,7 +5968,7 @@ a {
 }
 
 .rapid-card li::before {
-	content: "âœ“";
+	content: "Ã¢Å“â€œ";
 	flex: 0 0 auto;
 	width: 18px;
 	height: 18px;
@@ -5987,7 +5985,7 @@ a {
 	color: #fff;
 }
 
-/* Ai Budget */
+
 
 .ai-budget {
 	padding: 120px 0;
@@ -6148,7 +6146,7 @@ a {
 	}
 }
 
-/* Solution Growth */
+
 
 .solution-growth {
 	padding: 110px 0;
@@ -6225,7 +6223,7 @@ a {
 	font-weight: 600;
 }
 
-/* Partners */
+
 
 .partners-section {
 	padding: 60px 0 70px;
@@ -6309,7 +6307,7 @@ a {
 	}
 }
 
-/* Final Cta */
+
 
 .final-cta {
 	position: relative;
@@ -6358,7 +6356,7 @@ a {
 	line-height: 1.8;
 }
 
-/* Approach Page Styles */
+
 
 .approach-page {
 	color: var(--text);
@@ -6405,7 +6403,7 @@ a {
 	background: var(--red-dark);
 }
 
-/* Hero */
+
 
 .approach-hero {
 	position: relative;
@@ -6467,7 +6465,7 @@ a {
 	max-width: 620px;
 }
 
-/* Intro */
+
 
 .nodes-section .approach-intro {
 	padding: 90px 0 20px;
@@ -6494,7 +6492,7 @@ a {
 	color: #333;
 }
 
-/* Architecture Of Scale */
+
 
 .architecture-scale {
 	padding: 80px 0 110px;
@@ -6696,7 +6694,7 @@ a {
 	margin-top: 14px;
 }
 
-/* Transformation */
+
 
 .transformation-section {
 	padding: 190px 0 90px;
@@ -6727,7 +6725,7 @@ a {
 	margin: 40px auto 0;
 }
 
-/* Philosophy */
+
 
 .philosophy-section {
 	padding: 90px 0 100px;
@@ -6751,7 +6749,7 @@ a {
 	margin-bottom: 35px;
 }
 
-/* Seven Nodes */
+
 
 .nodes-section {
 	display: flex;
@@ -6915,7 +6913,7 @@ a {
 	color: #fff;
 }
 
-/* Quote */
+
 
 .approach-quote {
 	position: relative;
@@ -6978,7 +6976,7 @@ a {
 	filter: grayscale(100%);
 }
 
-/* Final Cta */
+
 
 .approach-cta {
 	position: relative;
@@ -7043,7 +7041,7 @@ a {
 	margin-bottom: 36px;
 }
 
-/* Philosophy Page Styles */
+
 
 .philosophy-page {
 	color: var(--text);
@@ -7129,7 +7127,7 @@ svg {
 	margin-bottom: 14px;
 }
 
-/* Hero */
+
 
 .philosophy-hero {
 	position: relative;
@@ -7191,9 +7189,7 @@ svg {
 	gap: 16px;
 }
 
-/* =========================================================
-		WHY 80% OF ENTERPRISE AI FAILS
-		========================================================= */
+
 
 .fail-section {
 	width: 100%;
@@ -7422,7 +7418,7 @@ svg {
 	display: block;
 }
 
-/* Responsive */
+
 
 @media (max-width: 900px) {
 
@@ -7511,7 +7507,7 @@ svg {
 
 }
 
-/* Execution Gap */
+
 
 .gap-section {
 	padding: 90px 0 100px;
@@ -7610,9 +7606,9 @@ svg {
 	color: rgba(255, 255, 255, .78);
 }
 
-/* 8-stage Delivery Framework */
 
-/* Tighten the visual handoff between Seven Nodes and Framework */
+
+
 .nodes-section+.framework-section {
 	margin-top: 0;
 	background: var(--mist);
@@ -7630,7 +7626,7 @@ svg {
 	overflow: hidden;
 }
 
-/* Stage Reveal (hover-to-expand) */
+
 .stage-reveal-blocks {
 	display: grid;
 	gap: 10px;
@@ -7757,7 +7753,7 @@ svg {
 	background: #fff;
 }
 
-/* Final Stage Reveal Override */
+
 .stage-reveal {
 	position: relative;
 	margin-bottom: 10px;
@@ -7867,7 +7863,7 @@ svg {
 	padding: 0 0 8px;
 }
 
-/* Container */
+
 .framework-container {
 	position: relative;
 	width: calc(100% - 110px);
@@ -7875,7 +7871,7 @@ svg {
 	margin: 0 auto;
 }
 
-/* Header */
+
 .framework-header {
 	position: relative;
 	z-index: 2;
@@ -7894,7 +7890,7 @@ svg {
 	color: #111;
 }
 
-/* "One Guarantee." second line gets red color */
+
 .framework-header h2 .highlight {
 	color: var(--red);
 	display: block;
@@ -7910,7 +7906,7 @@ svg {
 	color: #555;
 }
 
-/* Visual */
+
 .framework-visual {
 	position: relative;
 	z-index: 1;
@@ -7922,7 +7918,7 @@ svg {
 	margin-top: 5px;
 }
 
-/* Hachidan Watermark */
+
 .framework-watermark {
 	position: absolute;
 	top: 130px;
@@ -7938,7 +7934,7 @@ svg {
 	pointer-events: none;
 }
 
-/* Spiral Image */
+
 .framework-spiral-image {
 	position: relative;
 	z-index: 2;
@@ -8005,7 +8001,7 @@ svg {
 	opacity: .7;
 }
 
-/* Phase Tabs */
+
 .phase-tabs {
 	position: relative;
 	z-index: 5;
@@ -8092,7 +8088,7 @@ svg {
 	color: var(--red);
 }
 
-/* Framework Content */
+
 .framework-content {
 	position: relative;
 	z-index: 4;
@@ -8112,7 +8108,7 @@ svg {
 	display: block;
 }
 
-/* Phase Heading */
+
 .phase-panel-heading {
 	display: flex;
 	align-items: center;
@@ -8139,7 +8135,7 @@ svg {
 	color: #111;
 }
 
-/* Stage Grid */
+
 .stage-grid {
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -8147,7 +8143,7 @@ svg {
 	padding: 18px 25px 27px;
 }
 
-/* Stage Card */
+
 .stage-card {
 	min-width: 0;
 	padding: 28px 28px 24px;
@@ -8170,7 +8166,7 @@ svg {
 	color: rgba(226, 28, 21, .18);
 }
 
-/* Stage Number - Large Ghost Number */
+
 .stage-number {
 	position: absolute;
 	top: 16px;
@@ -8186,7 +8182,7 @@ svg {
 	user-select: none;
 }
 
-/* Stage Title */
+
 .stage-card h4 {
 	margin: 0 0 12px;
 	font-size: 13px;
@@ -8197,7 +8193,7 @@ svg {
 	text-transform: uppercase;
 }
 
-/* Stage Body & Hover State */
+
 .stage-body {
 	margin: 0 0 14px;
 	font-size: 13px;
@@ -8253,7 +8249,7 @@ svg {
 	margin-bottom: 14px;
 }
 
-/* Label */
+
 .stage-label {
 	display: block;
 	margin-bottom: 7px;
@@ -8265,7 +8261,7 @@ svg {
 	color: #c9000b;
 }
 
-/* Stage Reveal (hover-to-expand) */
+
 .stage-reveal {
 	position: relative;
 	margin-bottom: 10px;
@@ -8288,7 +8284,7 @@ svg {
 	transition: transform 280ms var(--ease);
 }
 
-/* Hidden body */
+
 .stage-reveal__body {
 	max-height: 0;
 	overflow: hidden;
@@ -8307,7 +8303,7 @@ svg {
 	color: #222;
 }
 
-/* Expanded on hover */
+
 .stage-reveal:hover .stage-reveal__body {
 	max-height: 120px;
 	opacity: 1;
@@ -8322,7 +8318,7 @@ svg {
 	color: #c9000b;
 }
 
-/* Click-to-toggle state (mobile) */
+
 .stage-reveal.is-open .stage-reveal__body {
 	max-height: 120px;
 	opacity: 1;
@@ -8337,7 +8333,7 @@ svg {
 	color: #c9000b;
 }
 
-/* ---- Guarantee variant ---- */
+
 .stage-reveal--guarantee {
 	padding: 4px 12px;
 	background: #f0f0f1;
@@ -8349,7 +8345,7 @@ svg {
 	color: #111;
 }
 
-/* ---- Deliverables variant ---- */
+
 .stage-reveal--deliverables .stage-reveal__body {
 	padding: 0;
 }
@@ -8390,7 +8386,7 @@ svg {
 	background: #fff;
 }
 
-/* Tablet */
+
 @media (max-width: 900px) {
 	.framework-container {
 		width: calc(100% - 60px);
@@ -8405,7 +8401,7 @@ svg {
 	}
 }
 
-/* Mobile */
+
 @media (max-width: 700px) {
 	.framework-section {
 		padding: 55px 0 65px;
@@ -8439,13 +8435,13 @@ svg {
 		max-height: 190px;
 	}
 
-	/* PHASES */
+	
 	.phase-tabs {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 		gap: 7px;
 	}
 
-	/* CONTENT */
+	
 	.phase-panel-heading {
 		margin: 0 18px;
 		min-height: 62px;
@@ -8470,7 +8466,7 @@ svg {
 	}
 }
 
-/* Small Mobile */
+
 @media (max-width: 450px) {
 	.framework-container {
 		width: calc(100% - 24px);
@@ -8524,9 +8520,9 @@ svg {
 	}
 }
 
-/* (Guarantee & Deliverables styles consolidated into .stage-reveal above) */
 
-/* Responsive */
+
+
 
 @media (max-width: 1000px) {
 
@@ -8573,7 +8569,7 @@ svg {
 		width: calc(100% - 36px);
 	}
 
-	/* HEADER */
+	
 
 	.framework-header {
 		grid-template-columns: 1fr;
@@ -8607,7 +8603,7 @@ svg {
 		height: 200px;
 	}
 
-	/* WATERMARK */
+	
 
 	.framework-watermark {
 		top: 270px;
@@ -8619,7 +8615,7 @@ svg {
 		font-size: 48px;
 	}
 
-	/* TABS */
+	
 
 	.phase-tabs {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -8633,7 +8629,7 @@ svg {
 		min-height: 58px;
 	}
 
-	/* CONTENT */
+	
 
 	.phase-panel-heading {
 		margin: 0 20px;
@@ -8709,7 +8705,7 @@ svg {
 
 }
 
-/* Resilience */
+
 
 .resilience-section {
 	background: #fff;
@@ -8793,7 +8789,7 @@ svg {
 	color: rgba(255, 255, 255, .7);
 }
 
-/* Final Cta */
+
 
 .philosophy-cta {
 	position: relative;
@@ -8856,7 +8852,7 @@ svg {
 	margin-bottom: 30px;
 }
 
-/* Core Platform */
+
 .core-platform-section {
 	padding: 44px 0 34px;
 	background: linear-gradient(180deg, #fff8f8 0%, #f8fbff 100%);
@@ -9084,7 +9080,7 @@ svg {
 	display: flex;
 }
 
-/* RESPONSIVE */
+
 
 @media (max-width: 900px) {
 	.approach-page .philosophy-cta {
@@ -9112,7 +9108,7 @@ svg {
 		width: 100%;
 		max-width: 100%;
 		padding-inline: 22px;
-		/* ini yang menang lawan rule global */
+		
 		padding-block: 36px;
 		box-sizing: border-box;
 	}
@@ -9143,7 +9139,7 @@ svg {
 	}
 }
 
-/* Approach Ai Page Styles */
+
 
 .ai-page {
 	color: var(--text);
@@ -9205,7 +9201,7 @@ a {
 	margin-bottom: 10px;
 }
 
-/* Hero */
+
 
 .ai-hero {
 	position: relative;
@@ -9274,7 +9270,7 @@ a {
 	max-width: 620px;
 }
 
-/* Intro */
+
 
 .ai-intro-section {
 	padding: 80px 0 90px;
@@ -9343,7 +9339,7 @@ a {
 	max-width: 900px;
 }
 
-/* Our Principles */
+
 
 .ai-principles {
 	padding: 80px 0 90px;
@@ -9505,7 +9501,7 @@ a {
 	justify-content: flex-start
 }
 
-/* The Ai Agent Flow */
+
 
 .ai-flow-section {
 	padding: 90px 0 100px;
@@ -9633,7 +9629,7 @@ a {
 	color: rgba(255, 255, 255, .4);
 }
 
-/* Governance */
+
 
 .governance-section {
 	padding: 90px 0 100px;
@@ -9658,7 +9654,7 @@ a {
 	box-shadow: 0 14px 32px rgba(226, 28, 21, .10);
 }
 
-/* Quote */
+
 
 .ai-quote {
 	position: relative;
@@ -9719,7 +9715,7 @@ a {
 	margin-top: 4px;
 }
 
-/* Designed For Outcomes */
+
 
 .outcomes-section {
 	padding: 90px 0 60px;
@@ -9835,7 +9831,7 @@ a {
 	}
 }
 
-/* Logos */
+
 
 .logos-section {
 	padding: 50px 0 90px;
@@ -9897,7 +9893,7 @@ a {
 	display: block;
 }
 
-/* Final Cta */
+
 
 .ai-cta {
 	position: relative;
@@ -9953,7 +9949,7 @@ a {
 	font-size: 16px;
 }
 
-/* Approach Ams Page Styles */
+
 
 .ams-page {
 	color: var(--text);
@@ -10007,7 +10003,7 @@ a {
 	background: var(--red-dark);
 }
 
-/* Hero */
+
 
 .ams-hero {
 	position: relative;
@@ -10072,7 +10068,7 @@ a {
 	max-width: 620px;
 }
 
-/* Intro */
+
 
 .ams-intro {
 	padding: 75px 0 60px;
@@ -10092,7 +10088,7 @@ a {
 	color: var(--red);
 }
 
-/* Statement Banner */
+
 
 .ams-statement {
 	position: relative;
@@ -10131,7 +10127,7 @@ a {
 	max-width: 820px;
 }
 
-/* Continuity Framework */
+
 
 .continuity-section {
 	padding: 90px 0;
@@ -10234,7 +10230,7 @@ a {
 	object-fit: contain;
 }
 
-/* Stay With You */
+
 
 .stay-section {
 	background: var(--navy);
@@ -10300,7 +10296,7 @@ a {
 	margin: 0;
 }
 
-/* Ams Engine */
+
 
 .engine-section {
 	padding: 90px 0 80px;
@@ -10515,7 +10511,7 @@ a {
 	padding: 0 16px;
 }
 
-/* Stats Bar */
+
 
 .stats-bar {
 	background: #2b2b2e;
@@ -10557,7 +10553,7 @@ a {
 	padding-top: 22px;
 }
 
-/* Quote */
+
 
 .ams-quote {
 	position: relative;
@@ -10619,7 +10615,7 @@ a {
 	margin-top: 4px;
 }
 
-/* Core Competencies */
+
 
 .competencies-section {
 	padding: 90px 0 80px;
@@ -10701,7 +10697,7 @@ a {
 	box-shadow: 0 12px 28px rgba(226, 28, 21, .10);
 }
 
-/* Hosho Advantage */
+
 
 .advantage-section {
 	padding: 90px 0 100px;
@@ -10816,7 +10812,7 @@ a {
 	transform: translateY(-6px);
 }
 
-/* Final Cta */
+
 
 .ams-cta {
 	position: relative;
@@ -10872,7 +10868,7 @@ a {
 	font-size: 16px;
 }
 
-/* Approach Erp Page Styles */
+
 
 .erp-page {
 	color: var(--text);
@@ -10937,7 +10933,7 @@ svg {
 	margin-bottom: 14px;
 }
 
-/* Hero */
+
 
 .erp-hero {
 	position: relative;
@@ -10993,7 +10989,7 @@ svg {
 	max-width: 560px;
 }
 
-/* Optimization Gap */
+
 
 .opt-gap-section {
 	padding: 80px 0;
@@ -11071,7 +11067,7 @@ svg {
 	transform: translateY(-4px);
 }
 
-/* Help Banner (4 Steps) */
+
 
 .help-section {
 	background: #071523;
@@ -11133,7 +11129,7 @@ svg {
 	text-align: center;
 }
 
-/* Strategic Intervention Services */
+
 
 .intervention-section {
 	padding: 90px 0;
@@ -11245,7 +11241,7 @@ svg {
 	}
 }
 
-/* Quote */
+
 
 .erp-quote {
 	position: relative;
@@ -11313,7 +11309,7 @@ svg {
 	filter: grayscale(100%);
 }
 
-/* Why Hosho Digital */
+
 
 .why-hosho-section {
 	background: var(--navy);
@@ -11394,7 +11390,7 @@ svg {
 	font-size: 20px;
 }
 
-/* How We Deliver Success */
+
 
 .success-section {
 	padding: 72px 0 78px;
@@ -11507,7 +11503,7 @@ svg {
 	}
 }
 
-/* The Optimized Outcome */
+
 
 .outcome-section {
 	background: var(--red-light);
@@ -11587,7 +11583,7 @@ svg {
 	color: rgba(255, 255, 255, .72);
 }
 
-/* Philosophy Strip */
+
 
 .philosophy-strip {
 	padding: 90px 0;
@@ -11632,7 +11628,7 @@ svg {
 	border-bottom: 2px solid var(--border);
 }
 
-/* Final Cta */
+
 
 .erp-cta {
 	position: relative;
@@ -11681,7 +11677,7 @@ svg {
 	margin-bottom: 36px;
 }
 
-/* Responsive */
+
 
 @media (max-width: 1000px) {
 	.opt-gap-grid {
@@ -11750,7 +11746,7 @@ svg {
 	}
 }
 
-/* Privacy Policy Page Styles */
+
 
 .legal-page {
 	color: var(--text);
@@ -11763,7 +11759,7 @@ svg {
 	margin: auto;
 }
 
-/* ============ HERO ============ */
+
 
 .legal-hero {
 	position: relative;
@@ -11785,7 +11781,7 @@ svg {
 	display: block;
 }
 
-/* ============ CONTENT ============ */
+
 
 .legal-content {
 	padding: 70px 0 90px;
@@ -11850,7 +11846,7 @@ svg {
 	text-decoration: none;
 }
 
-/* Sushil review: focused Company values and standard quote alignment. */
+
 body.hosho-remade .company-value__copy h3,
 body.hosho-remade .company-value__copy blockquote,
 body.hosho-remade .company-value__copy cite {
@@ -11931,7 +11927,7 @@ body.hosho-remade .company-value__copy>p {
 	}
 }
 
-/* Responsive System: Shared Across Every Merged Page */
+
 
 html,
 body {
@@ -12880,7 +12876,7 @@ canvas {
 	}
 }
 
-/* Accessibility Page Styles */
+
 
 .legal-page {
 	color: var(--text);
@@ -12893,7 +12889,7 @@ canvas {
 	margin: auto;
 }
 
-/* ============ HERO ============ */
+
 
 .legal-hero {
 	position: relative;
@@ -12915,7 +12911,7 @@ canvas {
 	display: block;
 }
 
-/* ============ CONTENT ============ */
+
 
 .legal-content {
 	padding: 70px 0 90px;
@@ -12976,7 +12972,7 @@ canvas {
 	text-decoration: none;
 }
 
-/* Terms Of Use Page Styles */
+
 
 .legal-page {
 	color: var(--text);
@@ -12989,7 +12985,7 @@ canvas {
 	margin: auto;
 }
 
-/* ============ HERO ============ */
+
 
 .legal-hero {
 	position: relative;
@@ -13011,7 +13007,7 @@ canvas {
 	display: block;
 }
 
-/* ============ CONTENT ============ */
+
 
 .legal-content {
 	padding: 70px 0 90px;
@@ -13094,7 +13090,7 @@ canvas {
 	text-decoration: none;
 }
 
-/* Cookies Policy Page Styles */
+
 
 .legal-page {
 	color: var(--text);
@@ -13107,7 +13103,7 @@ canvas {
 	margin: auto;
 }
 
-/* ============ HERO ============ */
+
 
 .legal-hero {
 	position: relative;
@@ -13125,7 +13121,7 @@ canvas {
 	display: block;
 }
 
-/* ============ CONTENT ============ */
+
 
 .legal-content {
 	padding: 70px 0 90px;
@@ -13206,7 +13202,7 @@ canvas {
 	text-decoration: none;
 }
 
-/* Solution Growth */
+
 
 .growth-full-bleed {
 	position: relative;
@@ -13408,7 +13404,7 @@ canvas {
 	}
 }
 
-/* Seven Nodes Diagram Animations */
+
 
 .nodes-right.motion .node-arc {
 	stroke-dasharray: 1285;
@@ -13432,7 +13428,7 @@ canvas {
 	transform-box: fill-box;
 }
 
-/* Arrow appears after ring finishes drawing (~1.8s total = 0.2s delay + 1.6s draw) */
+
 .nodes-right.motion.is-visible .node-arrowhead {
 	animation: popIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 1.9s forwards;
 }
@@ -13567,10 +13563,7 @@ canvas {
 	}
 }
 
-/* =========================================================
-   EVAN'S SEVEN PAGES: 2026 REVIEW PASS
-   Scoped to avoid changing coworker-owned templates.
-   ========================================================= */
+
 
 body:is(.page-home, .page-company, .page-ai-quick-win, .page-eci, .page-careers, .page-esg, .page-sustainability, .page-media, .page-press, .page-contact, .page-solutions, .page-services, .page-ai, .page-ai-transformation, .page-erp-optimization, .page-approach, .page-innovation, .page-optimization, .page-assurance, .page-operational-intelligence, .page-operational-experience, .page-customer-intelligence, .page-customer-experience, .page-workforce-intelligence, .page-employee-experience, .page-accessibility, .page-terms-of-use, .page-privacy-policy, .page-cookies) .page-hero h1,
 body.hosho-remade .page-hero h1 {
@@ -13603,7 +13596,7 @@ body:is(.page-careers, .page-company, .page-ai-quick-win, .page-eci) .cta-panel-
 	text-transform: uppercase;
 }
 
-/* Larger, consistent quote system with isolated monochrome portraits. */
+
 body:is(.page-careers, .page-sustainability, .page-company) .quote-band {
 	grid-template-columns: minmax(0, 66%) minmax(320px, 34%);
 	min-height: clamp(540px, 50vw, 680px);
@@ -13636,7 +13629,7 @@ body:is(.page-careers, .page-sustainability, .page-company) .quote-band__portrai
 	filter: grayscale(1) contrast(1.08);
 }
 
-/* Company values keep the approved split treatment without carousel numbering. */
+
 body.page-company .company-values__window {
 	overflow: visible;
 	background: transparent;
@@ -13666,7 +13659,7 @@ body.page-company .company-value__copy h3 {
 	margin-top: 0;
 }
 
-/* Clean, full-width editorial contact and media-contact pages. */
+
 body:is(.page-contact, .page-media, .page-press) #main-content {
 	padding-top: 86px;
 }
@@ -13891,7 +13884,7 @@ body.page-press .press-contact__address strong {
 	color: #e21c15;
 }
 
-/* AI Quick Win outcomes and ECI delivery stages. */
+
 body.page-ai-quick-win .quickwin-outcomes>article {
 	grid-column: span 3;
 }
@@ -14397,7 +14390,7 @@ body.page-eci .eci-hero-partners .shell>div>img {
 	}
 }
 
-/* --- Hover Effects for fail-card --- */
+
 .fail-card {
 	transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease, border-color 0.3s ease;
 }
@@ -14408,14 +14401,14 @@ body.page-eci .eci-hero-partners .shell>div>img {
 	border-color: #e21c15;
 }
 
-/* --- Hover Effects for process-layer --- */
+
 .process-layer:hover {
 	transform: translateY(-6px) scale(1.04);
 	filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.35)) brightness(1.12);
 	z-index: 10;
 }
 
-/* Added for page-approach-assurance.php modifications */
+
 .icon-box {
 	transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -14436,7 +14429,7 @@ body.page-eci .eci-hero-partners .shell>div>img {
 	transform: translateY(-3px);
 }
 
-/* Approach ERP typography and hero product mark */
+
 .erp-page .outcome-section .outcome-header p {
 	font-weight: 400;
 }
@@ -14484,7 +14477,7 @@ body.hosho-remade .page-hero h1 {
 	letter-spacing: -.055em;
 }
 
-/* Careers */
+
 .careers-belief__grid {
 	display: grid;
 	grid-template-columns: minmax(220px, .7fr) minmax(420px, 1.3fr);
@@ -14567,7 +14560,7 @@ body.hosho-remade .page-hero h1 {
 	background-position: center 48%;
 }
 
-/* ESG commitment accordion */
+
 .esg-commitments {
 	display: flex;
 	min-height: 640px;
@@ -14659,7 +14652,7 @@ body.hosho-remade .page-hero h1 {
 	grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-/* Standard quote composition */
+
 :is(.page-careers, .page-esg, .page-sustainability, .page-company) .quote-band {
 	display: grid;
 	grid-template-columns: minmax(0, 1fr) minmax(300px, 36%);
@@ -14715,7 +14708,7 @@ body.hosho-remade .page-hero h1 {
 	mix-blend-mode: luminosity;
 }
 
-/* Media */
+
 .press-contact {
 	padding-block: clamp(5rem, 10vw, 10rem);
 }
@@ -14801,7 +14794,7 @@ body.hosho-remade .page-hero h1 {
 	color: #071b2c;
 }
 
-/* Contact, full-width transparent form */
+
 .contact-page--immersive {
 	position: relative;
 	min-height: calc(100svh - 76px);
@@ -14897,7 +14890,7 @@ body.page-contact .contact-form--glass .consent label {
 	color: rgba(255, 255, 255, .8);
 }
 
-/* Company values */
+
 .company-value__visual--portrait {
 	background-position: center top !important;
 	background-size: cover !important;
@@ -14908,7 +14901,7 @@ body.page-contact .contact-form--glass .consent label {
 	font-size: clamp(1.25rem, 2vw, 2rem);
 }
 
-/* Quick Win */
+
 .quickwin-stat-grid .stat {
 	border-top: 3px solid #e91a1a;
 }
@@ -14948,7 +14941,7 @@ body.page-contact .contact-form--glass .consent label {
 	opacity: .55;
 }
 
-/* ECI */
+
 .page-hero--eci .page-hero__actions {
 	display: flex;
 	flex-wrap: wrap;
@@ -14992,7 +14985,7 @@ body.page-contact .contact-form--glass .consent label {
 	width: 85px;
 }
 
-/* Actual <img> variants (imda.webp, esingapore.png, edbs.jpg) */
+
 .eci-hero-partner-img {
 	display: block;
 	height: 38px;
@@ -15053,7 +15046,7 @@ body.page-contact .contact-form--glass .consent label {
 	color: #fff;
 }
 
-/* Shared interaction polish */
+
 :is(.page-careers, .page-esg, .page-sustainability, .page-media, .page-press, .page-contact, .page-company, .page-ai-quick-win, .page-eci) .button {
 	transition: transform .35s cubic-bezier(.22, 1, .36, 1), background .3s ease, color .3s ease, box-shadow .35s ease;
 }
@@ -15233,7 +15226,7 @@ body.page-contact .contact-form--glass .consent label {
 	}
 }
 
-/* ============ SOLUTION TRANSFORM (SaaS → Solution as a Service) ============ */
+
 
 .st-wrap {
 	max-width: 1024px;
@@ -15241,7 +15234,7 @@ body.page-contact .contact-form--glass .consent label {
 	padding: 0 24px;
 }
 
-/* ============ HERO ============ */
+
 
 .solution-transform__hero {
 	border-bottom: 3px solid var(--black);
@@ -15291,7 +15284,7 @@ body.page-contact .contact-form--glass .consent label {
 	color: var(--navy);
 }
 
-/* ============ SPLIT PANEL ============ */
+
 
 .solution-transform__split {
 	border-bottom: 2px solid #E5E7EB;
@@ -15549,7 +15542,7 @@ body.page-contact .contact-form--glass .consent label {
 	color: var(--red);
 }
 
-/* ============ DIMENSION STRIPS ============ */
+
 
 .solution-transform__dims-inner {
 	padding: 56px 24px;
@@ -15757,7 +15750,7 @@ body.page-contact .contact-form--glass .consent label {
 	text-align: right;
 }
 
-/* ============ SUMMARY STRIP ============ */
+
 
 .solution-transform__summary {
 	background: var(--navy);
@@ -15827,7 +15820,7 @@ body.page-contact .contact-form--glass .consent label {
 	letter-spacing: .25em;
 }
 
-/* ============ RESPONSIVE ============ */
+
 
 @media (max-width: 720px) {
 
@@ -15854,12 +15847,12 @@ body.page-contact .contact-form--glass .consent label {
 	}
 }
 
-/* Architecture Of Scale */
+
 
 .architecture-scale {
 	padding: 80px 0;
 	background-color: var(--navy);
-	/* User requested navy background */
+	
 	overflow: hidden;
 }
 
@@ -15870,7 +15863,7 @@ body.page-contact .contact-form--glass .consent label {
 	padding: 0 30px 60px;
 }
 
-/* The red structural frame */
+
 .aos-roof {
 	position: relative;
 	text-align: center;
@@ -16000,14 +15993,14 @@ body.page-contact .contact-form--glass .consent label {
 	pointer-events: none;
 }
 
-/* Category Alternating Background Blocks (compact Spacing & High Contrast) */
+
 
 .opex-category-block {
 	padding: 40px 0 !important;
 	margin: 0 !important;
 }
 
-/* Careers */
+
 .careers-belief__grid {
 	display: grid;
 	grid-template-columns: minmax(220px, .7fr) minmax(420px, 1.3fr);
@@ -16090,7 +16083,7 @@ body.page-contact .contact-form--glass .consent label {
 	background-position: center 48%;
 }
 
-/* ESG commitment accordion */
+
 .page-esg .esg-commitments,
 .page-sustainability .esg-commitments {
 	display: flex !important;
@@ -16215,7 +16208,7 @@ body.page-contact .contact-form--glass .consent label {
 	filter: none !important;
 }
 
-/* Standard quote composition */
+
 :is(.page-careers, .page-esg, .page-sustainability, .page-company) .quote-band {
 	display: grid;
 	grid-template-columns: minmax(0, 1fr) minmax(300px, 36%);
@@ -16295,7 +16288,7 @@ body.page-contact .contact-form--glass .consent label {
 	transform: translateY(7%);
 }
 
-/* Media */
+
 .press-contact {
 	padding-block: clamp(5rem, 10vw, 10rem);
 }
@@ -16463,7 +16456,7 @@ body.page-contact .contact-form--glass .consent label {
 	color: rgba(255, 255, 255, .8);
 }
 
-/* Company values */
+
 .company-value__visual--portrait {
 	background-position: center top !important;
 	background-size: cover !important;
@@ -16481,7 +16474,7 @@ body.page-contact .contact-form--glass .consent label {
 	font-size: clamp(1.25rem, 2vw, 2rem);
 }
 
-/* Quick Win */
+
 .quickwin-stat-grid .stat {
 	border-top: 3px solid #e91a1a;
 }
@@ -16521,7 +16514,7 @@ body.page-contact .contact-form--glass .consent label {
 	opacity: .55;
 }
 
-/* ECI */
+
 .page-hero--eci .page-hero__actions {
 	display: flex;
 	flex-wrap: wrap;
@@ -16649,7 +16642,7 @@ body.page-contact .contact-form--glass .consent label {
 	color: #fff;
 }
 
-/* Shared interaction polish */
+
 :is(.page-careers, .page-esg, .page-sustainability, .page-media, .page-press, .page-contact, .page-company, .page-ai-quick-win, .page-eci) .button {
 	transition: transform .35s cubic-bezier(.22, 1, .36, 1), background .3s ease, color .3s ease, box-shadow .35s ease;
 }
@@ -16862,7 +16855,7 @@ body.page-contact .contact-form--glass .consent label {
 	}
 }
 
-/* Alternate State 1: Executive Navy background (#071523), Navy Soft cards (#0e2a47) */
+
 .opex-category-block--navy,
 .opex-category-block--slate {
 	background-color: #071523 !important;
@@ -16876,7 +16869,7 @@ body.page-contact .contact-form--glass .consent label {
 	color: #ffffff !important;
 }
 
-/* Final host-resilient corrections for Evan's seven-page release. */
+
 body:is(.page-esg, .page-sustainability) .esg-commitments {
 	display: flex !important;
 	flex-flow: row nowrap !important;
@@ -16988,7 +16981,7 @@ body:is(.page-careers, .page-esg, .page-sustainability, .page-company) .quote-ba
 	}
 }
 
-/* Company director revision 2026-08-26 */
+
 body.page-company .company-why {
 	background: #fff;
 }
@@ -17519,7 +17512,7 @@ body.page-company .company-journey__guarantee p {
 	}
 }
 
-/* Company editorial refinement 2026-08-26 */
+
 body.page-company .company-why__grid,
 body.page-company .company-exists__grid {
 	grid-template-columns: minmax(300px, .78fr) minmax(0, 1.22fr);
@@ -17769,7 +17762,7 @@ body.page-company .company-journey__stage {
 	}
 }
 
-/* Company page final editorial system 2026-08-27 */
+
 body.page-company :is(.company-why, .company-direction, .company-beliefs, .company-values--director, .company-standard, .company-exists, .company-journey) {
 	padding-block: clamp(5rem, 8vw, 8.5rem);
 }
@@ -18312,7 +18305,7 @@ body.page-company .company-journey__guarantee {
 	}
 }
 
-/* Company composition polish: beliefs, values carousel and Lee Kuan Yew quote. */
+
 body.page-company .company-beliefs {
 	background: var(--navy);
 	color: #f8fafb;
@@ -18580,7 +18573,7 @@ body.page-company .quote-band--lee .quote-band__portrait img {
 	}
 }
 
-/* WHY HOSHO final responsive composition (keep last in cascade). */
+
 body.page-company .company-why {
 	position: relative;
 	overflow: hidden;
@@ -18750,7 +18743,7 @@ body.page-company .company-why__principles {
 	border-color: #e21c15 !important;
 }
 
-/* Alternate State 2: Pure White background (#ffffff), Light cards (#f4f6fa) */
+
 .opex-category-block--white {
 	background-color: #ffffff !important;
 }
@@ -18781,14 +18774,14 @@ body.page-company .company-why__principles {
 	}
 }
 
-/* --- HOSHO FIXES APPENDEED --- */
 
-/* Fix rapid-card alignment so unopened items don't stretch */
+
+
 .rapid-grid {
 	align-items: start;
 }
 
-/* Venn circles styling & pop-up hover effect */
+
 .venn-circle {
 	mix-blend-mode: normal !important;
 	fill-opacity: 0.85 !important;
@@ -18799,20 +18792,20 @@ body.page-company .company-why__principles {
 	transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), fill-opacity 0.3s ease, filter 0.3s ease !important;
 }
 
-/* Terang & Hangat - High brightness, warm hue */
+
 .venn-circle-advisory {
-	/* Change this fill color to update the Solution Advisory circle. */
+	
 	fill: #FF5C5C  !important;
 	stroke: none !important;
 }
 
-/* Netral & Tajam - Pure balanced red */
+
 .venn-circle-consulting {
 	fill: #FF2C2C  !important;
 	stroke: none !important;
 }
 
-/* Gelap & Dingin - Deep saturated, cool hue */
+
 .venn-circle-engineering {
 	fill: #FF0000  !important;
 	stroke: none !important;
@@ -18830,7 +18823,7 @@ body.page-company .company-why__principles {
 
 @media (max-width: 900px) {}
 
-/* Custom quote overrides for home and approach to match page-careers */
+
 :is(.home, .page-approach) .quote-band {
 	display: grid;
 	grid-template-columns: minmax(0, 1fr) minmax(300px, 36%);
@@ -18906,26 +18899,26 @@ body.page-company .company-why__principles {
 	}
 }
 
-/* Make front-page CTA title stronger */
+
 .home .cta-panel--concise h2 {
 	font-size: clamp(40px, 12vw, 58px) !important;
 	font-weight: 800 !important;
 	text-transform: uppercase !important;
 }
 
-/* Remove middle line / divider in press contact profile card */
+
 body.page-press .press-contact__person,
 .press-contact__person {
 	border-right: none !important;
 }
 
-/* Shrink the press lede paragraph */
+
 body.page-press .press-contact__intro .lede {
 	font-size: clamp(20px, 1.3vw, 28px) !important;
 	line-height: 1.5 !important;
 }
 
-/* CTA panel h2 - bigger and bolder for approach sub-pages */
+
 :is(.page-approach, .page-innovation, .page-assurance, .page-erp, .page-optimization, .page-ai, .page-ams) .cta-panel--concise h2 {
 	font-size: clamp(40px, 8vw, 72px) !important;
 	font-weight: 800 !important;
@@ -18934,7 +18927,7 @@ body.page-press .press-contact__intro .lede {
 	line-height: 1 !important;
 }
 
-/* Shared CTA typography: keep every page aligned with the ECI CTA. */
+
 body .cta-panel.cta-panel .cta-panel__title {
 	max-width: 980px;
 	font-size: clamp(48px, 6.4vw, 92px) !important;
@@ -18962,7 +18955,7 @@ body .cta-panel.cta-panel .cta-panel__title strong {
 	}
 }
 
-/* ===== Japanese House: image left, hoverable label cards right ===== */
+
 
 .japanese-house-card {
 	padding: 40px;
@@ -19057,10 +19050,7 @@ body .cta-panel.cta-panel .cta-panel__title strong {
 	}
 }
 
-/* WordPress runtime isolation.
- * The production site runs Astra and several Elementor add-ons. Keep their
- * generic page/container rules from shrinking or offsetting the custom pages.
- */
+
 html:has(body.hosho-remade) {
 	margin: 0 !important;
 	padding: 0 !important;
@@ -19105,7 +19095,7 @@ body.hosho-remade img {
 	max-width: 100%;
 }
 
-/* Footer Single-Row Layout Fix */
+
 @media (min-width: 992px) {
 	.footer-main {
 		display: flex !important;
@@ -19127,14 +19117,7 @@ body.hosho-remade img {
 	}
 }
 
-/* ==========================================================================
-   AI TRANSFORMATION PAGE
-   Editorial enterprise system: white / black / soft grey / navy + red accent
-   Scoped under .ai-transformation-page so it layers on top of the site's
-   existing tokens (page-hero, quote-band, container, motion, .btn) without
-   overriding them. Component classes are named for what they mean, not what
-   they are, so they read as this page's own system rather than a generic kit.
-   ========================================================================== */
+
 
 .ai-transformation-page {
 	--atp-white: #ffffff;
@@ -19147,7 +19130,7 @@ body.hosho-remade img {
 	--atp-red: #c8102e;
 	--atp-red-soft: #f6e4e6;
 
-	--atp-font-display: var(--font-display, 'Söhne', Helvetica, Arial, sans-serif);
+	--atp-font-display: var(--font-display, 'SÃ¶hne', Helvetica, Arial, sans-serif);
 
 	background: var(--atp-white);
 	color: var(--atp-black);
@@ -19163,7 +19146,7 @@ body.hosho-remade img {
 	padding-block: 88px;
 }
 
-/* Shared type utilities, kept intentionally minimal */
+
 
 .ai-transformation-page .tx-kicker {
 	font-size: 0.8rem;
@@ -19183,9 +19166,7 @@ body.hosho-remade img {
 	color: var(--atp-black);
 }
 
-/* --------------------------------------------------------------------
-   Hero intro — .transformation-brief
-   -------------------------------------------------------------------- */
+
 
 .transformation-brief {
 	padding-block: 56px 40px;
@@ -19227,9 +19208,7 @@ body.hosho-remade img {
 	padding-bottom: 2px;
 }
 
-/* --------------------------------------------------------------------
-   Sticky section nav — .transformation-wayfinder
-   -------------------------------------------------------------------- */
+
 
 .transformation-wayfinder {
 	position: sticky;
@@ -19267,9 +19246,7 @@ body.hosho-remade img {
 	color: var(--atp-red);
 }
 
-/* --------------------------------------------------------------------
-   05 — Why AI Transformation — .beyond-the-model
-   -------------------------------------------------------------------- */
+
 
 .beyond-the-model__facets {
 	display: grid;
@@ -19310,9 +19287,7 @@ body.hosho-remade img {
 	line-height: 1.5;
 }
 
-/* --------------------------------------------------------------------
-   06 — Three Transformation Frontiers — .inside-out
-   -------------------------------------------------------------------- */
+
 
 .inside-out {
 	background: var(--atp-navy);
@@ -19362,9 +19337,7 @@ body.hosho-remade img {
 	color: rgba(255, 255, 255, 0.4);
 }
 
-/* --------------------------------------------------------------------
-   08 — AI Agent Layer — .orchestrated-intelligence
-   -------------------------------------------------------------------- */
+
 
 .orchestrated-intelligence__pathway {
 	display: flex;
@@ -19417,9 +19390,7 @@ body.hosho-remade img {
 	color: var(--atp-grey-500);
 }
 
-/* --------------------------------------------------------------------
-   09 — Orchestration Engine — .act-on-intelligence
-   -------------------------------------------------------------------- */
+
 
 .act-on-intelligence {
 	background: var(--atp-grey-50);
@@ -19509,9 +19480,7 @@ body.hosho-remade img {
 	font-weight: 400;
 }
 
-/* --------------------------------------------------------------------
-   12 — Responsible AI — .trusted-by-design
-   -------------------------------------------------------------------- */
+
 
 .trusted-by-design {
 	background: #07182b;
@@ -19590,9 +19559,7 @@ body.hosho-remade img {
 	line-height: 1.5;
 }
 
-/* --------------------------------------------------------------------
-   13 — Observability — .measured-to-improve
-   -------------------------------------------------------------------- */
+
 
 .measured-to-improve__signals {
 	display: grid;
@@ -19630,9 +19597,7 @@ body.hosho-remade img {
 	font-weight: 400;
 }
 
-/* --------------------------------------------------------------------
-   15 — Business Value — .beyond-technology
-   -------------------------------------------------------------------- */
+
 
 .value-ladder {
 	display: flex;
@@ -19670,7 +19635,7 @@ body.hosho-remade img {
 	font-size: 1.1rem;
 }
 
-/* Responsive */
+
 
 @media (max-width: 1024px) {
 	.ai-transformation-page section {
@@ -19711,7 +19676,7 @@ body.hosho-remade img {
 	}
 }
 
-/* AI Transformation Page CTA panel tuning */
+
 .ai-transformation-page .cta-panel {
 	min-height: 380px !important;
 	padding-block: 0 !important;
@@ -19738,7 +19703,7 @@ body.hosho-remade img {
 	color: rgba(255, 255, 255, 0.88) !important;
 }
 
-/* Reduced motion */
+
 @media (prefers-reduced-motion: reduce) {
 	.ai-transformation-page * {
 		scroll-behavior: auto !important;
@@ -19747,7 +19712,7 @@ body.hosho-remade img {
 	}
 }
 
-/* Global quote sizing standard: Company is the reference across the site. */
+
 body.hosho-remade #main-content .quote-band {
 	display: grid;
 	grid-template-columns: minmax(0, 64%) minmax(0, 36%);
@@ -19804,7 +19769,7 @@ body.hosho-remade #main-content .quote-band__portrait img {
 	mask-image: linear-gradient(to bottom, #000 0%, #000 92%, transparent 100%);
 }
 
-/* Company value quotes: isolated from generic carousel and quote-band rules. */
+
 body.page-company #our-values.company-values--quotes .company-values__window {
 	background: #07182b;
 }
@@ -20080,7 +20045,7 @@ body.page-contact .contact-form--glass :is(input, select, textarea) {
 	}
 }
 
-/* Media page: quiet contact treatment. */
+
 body:is(.page-media, .page-press) .press-contact {
 	padding-block: clamp(56px, 8vw, 96px);
 }
@@ -20201,7 +20166,7 @@ body.page-careers .careers-belief__line--gradient {
 	}
 }
 
-/* ===== APPROACH PAGE: unify section rhythm ===== */
+
 .approach-page .fail-section,
 .approach-page .nodes-section,
 .approach-page .architecture-scale,
@@ -20247,9 +20212,7 @@ body.page-careers .careers-belief__line--gradient {
 	}
 }
 
-/* =========================================================
-   SECTION-NAVY intro-grid & title: center text, compact margin
-   ========================================================= */
+
 .section-navy .intro-grid {
 	text-align: center;
 	justify-items: center;
@@ -20268,7 +20231,7 @@ body.page-careers .careers-belief__line--gradient {
 	margin-bottom: 0;
 }
 
-/*  */
+
 body.page-solutions .section-navy .intro-grid {
 	text-align: left;
 	justify-items: stretch;
@@ -20293,13 +20256,13 @@ body.page-solutions .section-navy .intro-grid h2 {
 	margin-bottom: clamp(16px, 2vw, 24px);
 }
 
-/* Compact spacing before process--arrow */
+
 .section-navy .intro-grid+.process--arrow,
 .section-navy .shell>h2+.process--arrow {
 	margin-top: clamp(28px, 3.5vw, 44px);
 }
 
-/* .feature h3 padding and spacing */
+
 .feature h3 {
 	margin-top: 0;
 	margin-bottom: 8px;
@@ -20313,10 +20276,7 @@ body.page-solutions .section-navy .intro-grid h2 {
 	font-weight: 600;
 }
 
-/* =========================================================
-	APPEND TO: style.css (anywhere after your :root block is fine;
-	placing it near .solutions-cards keeps related styles together)
-	========================================================= */
+
 
 .overview-links-section {
 	padding: 110px 0 120px;
@@ -20432,7 +20392,7 @@ body.page-solutions .section-navy .intro-grid h2 {
 	transform: translate(3px, -3px) rotate(-45deg);
 }
 
-/* Responsive */
+
 
 @media (max-width: 980px) {
 	.overview-links-grid {
@@ -20462,8 +20422,7 @@ body.page-solutions .section-navy .intro-grid h2 {
 	}
 }
 
-/* Append To: Style.css
-	Services Hub Page (page-services.php) */
+
 
 .page-hero--services .page-hero__media {
 	background-position: 60% center;
@@ -20559,7 +20518,7 @@ body.page-solutions .section-navy .intro-grid h2 {
 	}
 }
 
-/* Company values: one Figma-inspired card per carousel view. */
+
 body.page-company #our-values.company-values--quotes {
 	--company-value-gap: clamp(18px, 2vw, 28px);
 	--carousel-visible: 1;
@@ -20689,7 +20648,7 @@ body.page-company #our-values.company-values--quotes .company-value__copy cite {
 	}
 }
 
-/* ===== Cognitive Shift — visual banner (saas-sol.png) ===== */
+
 
 .cognitive-shift .cs-visual {
 	position: relative;
@@ -20886,7 +20845,7 @@ body.page-company #our-values.company-values--quotes .company-value__copy cite {
 	}
 }
 
-/* Ashistanto product page. */
+
 body.page-ashistanto .page-hero--ashistanto .page-hero__media {
 	background-position: 68% center;
 }
@@ -21354,7 +21313,7 @@ body.page-solutions .solutions-product-feature h3 {
 	}
 }
 
-/* Framework S-puzzle (8-stage) */
+
 
 .s-puzzle-container {
 	position: relative;
@@ -21374,7 +21333,7 @@ body.page-solutions .solutions-product-feature h3 {
 	z-index: 10;
 }
 
-/* Approximate positioning to form the S curve */
+
 .s-piece-1 {
 	top: 7%;
 	left: 4%;
@@ -21442,7 +21401,7 @@ body.page-company .company-why__inner {
 	margin: 0 auto;
 }
 
-/* --- Left column --- */
+
 body.page-company .company-why__left {
 	display: flex;
 	flex-direction: column;
@@ -21487,7 +21446,7 @@ body.page-company .company-why__body p {
 	color: #fff;
 }
 
-/* HOSHŌ row at bottom-left */
+
 body.page-company .company-why__definition {
 	display: flex;
 	align-items: baseline;
@@ -21518,7 +21477,7 @@ body.page-company .company-why__definition>span:last-child {
 	align-self: center;
 }
 
-/* --- Right column --- */
+
 body.page-company .company-why__right {
 	display: flex;
 	flex-direction: column;
@@ -21544,7 +21503,7 @@ body.page-company .company-why__card {
 	-webkit-backdrop-filter: blur(6px);
 	border-left: 3px solid transparent;
 	cursor: default;
-	/* Transition for inversion effect */
+	
 	transition:
 		background 0.35s ease,
 		border-color 0.35s ease,
@@ -21585,7 +21544,7 @@ body.page-company .company-why__difference {
 	opacity: .85;
 }
 
-/* Stamp image */
+
 body.page-company .company-why__stamp {
 	display: block;
 	width: clamp(80px, 8.5vw, 140px);
@@ -21598,7 +21557,7 @@ body.page-company .company-why__stamp {
 	user-select: none;
 }
 
-/* --- Responsive --- */
+
 @media (max-width: 1024px) {
 	body.page-company .company-why__inner {
 		grid-template-columns: 1fr;
@@ -21633,7 +21592,7 @@ body.page-company .company-why__stamp {
 	}
 }
 
-/* Keep solution cards balanced across compact desktop widths. */
+
 .solutions-cards {
 	align-items: start;
 	grid-auto-rows: auto;
@@ -21682,7 +21641,7 @@ body.page-approach .solutions-card {
 	}
 }
 
-/* Standardize all titles on the front page */
+
 .home-page .section-title,
 .home-page .strategy-heading,
 .home-page .intro-grid h2,
@@ -21694,7 +21653,7 @@ body.page-approach .solutions-card {
 	letter-spacing: -0.02em !important;
 }
 
-/* Digital Leader Program - Dark Focused Path Section */
+
 .section-dark-path {
 	background-color: var(--navy);
 	color: #ffffff;
@@ -21823,7 +21782,7 @@ body.page-approach .solutions-card {
 	margin-top: 28px;
 }
 
-/* Approach ERP: larger process cards and clearer step labels. */
+
 .erp-page .success-section h2 {
 	font-size: clamp(36px, 4vw, 48px);
 	margin-bottom: 36px;
@@ -21889,7 +21848,7 @@ body.page-approach .solutions-card {
 	margin-top: 0 !important;
 }
 
-/* Business partner marks use identical slots and a fixed, shared gap. */
+
 .home .partner-category-section:last-child .partner-logos-track {
 	gap: 28px;
 }
@@ -21922,7 +21881,7 @@ body.page-approach .solutions-card {
 	}
 }
 
-/* Use equal-width footer link columns with a consistent gap. */
+
 @media (min-width: 992px) {
 	body.hosho-remade .site-footer .footer-main {
 		display: grid !important;
@@ -21945,7 +21904,7 @@ body.page-approach .solutions-card {
 	}
 }
 
-/* Digital Leader process: match the ERP help cards with arrows between them. */
+
 .dlp-process-section .process--arrow {
 	grid-template-columns: repeat(4, minmax(0, 1fr));
 	gap: 28px;
@@ -22051,3 +22010,916 @@ body.hosho-remade .dlp-process-section .process--arrow > article p {
 	}
 }
 
+
+
+
+/* ==========================================================================
+   JOB OPPORTUNITIES  —  tambahkan di akhir style.css
+   Body class otomatis dari WP: body.page-job-opportunities
+   ========================================================================== */
+
+body.page-job-opportunities .site-header:not(.is-scrolled) {
+	background: var(--navy);
+	border-color: rgba(255, 255, 255, .12);
+}
+
+.jobs-page {
+	background: var(--mist);
+	padding-bottom: clamp(72px, 9vw, 120px);
+}
+
+.jobs-hero {
+	min-height: clamp(260px, 26vw, 340px);
+	padding-top: 86px;
+	display: flex;
+	align-items: center;
+	background:
+		radial-gradient(48% 110% at 84% 42%, rgba(226, 28, 21, .72) 0%, transparent 76%),
+		linear-gradient(100deg, #071523 0%, #0b1c2c 58%, #17202c 82%, #561713 100%);
+}
+
+.jobs-hero .shell {
+	text-align: center;
+}
+
+.jobs-hero h1 {
+	margin: 0;
+	color: #fff;
+	font-size: clamp(36px, 5vw, 64px);
+	font-weight: 700;
+	line-height: 1.1;
+	transform: translateY(-32px);
+}
+
+.jobs-shell {
+	position: relative;
+	z-index: 2;
+}
+
+/* ---------- Filter card ---------- */
+.jobs-filter {
+	margin-top: clamp(-72px, -6vw, -48px);
+	padding: clamp(18px, 2.4vw, 30px);
+	background: #fff;
+	border-radius: 20px;
+	box-shadow: 0 18px 50px rgba(7, 21, 35, .14);
+}
+
+.jobs-filter__row {
+	display: grid;
+	grid-template-columns: minmax(0, 2.6fr) repeat(3, minmax(0, 1fr)) 100px;
+	gap: 16px;
+	padding-bottom: 18px;
+}
+
+.jobs-search,
+.jobs-select {
+	position: relative;
+	display: flex;
+	align-items: center;
+	min-width: 0;
+	height: 60px;
+	border-radius: 12px;
+	background: #f1f2f5;
+	color: var(--muted);
+}
+
+.jobs-search {
+	gap: 14px;
+	padding-inline: 20px;
+}
+
+.jobs-search svg {
+	flex: 0 0 auto;
+}
+
+.jobs-search input,
+.jobs-select select {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	color: var(--ink);
+	font-size: 17px;
+	min-width: 0;
+}
+
+.jobs-search input {
+	text-overflow: ellipsis;
+}
+
+.jobs-search input::placeholder {
+	color: #7b7f8a;
+}
+
+.jobs-select select {
+	appearance: none;
+	-webkit-appearance: none;
+	padding: 0 44px 0 20px;
+	cursor: pointer;
+	text-overflow: ellipsis;
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='10' viewBox='0 0 16 10' fill='none' stroke='%232b2f3a' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m2 2 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 18px center;
+}
+
+.jobs-search:focus-within,
+.jobs-select:focus-within {
+	box-shadow: 0 0 0 2px var(--red);
+}
+
+.jobs-filter__reset {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	height: 60px;
+	padding: 0 18px;
+	border: 0;
+	border-radius: 12px;
+	background: var(--red-dark);
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: background-color var(--motion-ui) ease, transform var(--motion-fast) var(--ease);
+}
+
+.jobs-filter__reset:hover {
+	background: var(--red);
+	transform: translateY(-2px);
+}
+
+.jobs-filter__reset:active {
+	transform: scale(.96);
+}
+
+.jobs-filter__reset:focus-visible {
+	outline: 2px solid var(--navy);
+	outline-offset: 3px;
+}
+
+.jobs-filter__count {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	margin: 44px 0 0;
+	color: var(--ink);
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: .08em;
+	text-transform: uppercase;
+}
+
+.jobs-filter__dot {
+	width: 10px;
+	height: 10px;
+	margin-right: 4px;
+	border-radius: 50%;
+	background: var(--red-dark);
+}
+
+/* ---------- List ---------- */
+.jobs-list {
+	display: grid;
+	gap: 16px;
+	margin: clamp(40px, 5vw, 64px) 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.job-row[hidden],
+.jobs-empty[hidden],
+.jobs-footer[hidden],
+.jobs-pager[hidden] {
+	display: none;
+}
+
+.job-row {
+	border-left: 0;
+	border-radius: 14px;
+	background: #fff;
+	box-shadow: 0 2px 10px rgba(7, 21, 35, .05);
+	transition: transform var(--motion-ui) var(--ease), box-shadow var(--motion-ui) ease;
+}
+
+.job-row:hover,
+.job-row:focus-within {
+	transform: translateY(-3px);
+	box-shadow: 0 14px 32px rgba(7, 21, 35, .1);
+}
+
+.job-row__link {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	padding: 26px clamp(20px, 2.4vw, 32px);
+	border-radius: 0 14px 14px 0;
+}
+
+.job-row__link:focus-visible {
+	outline: 2px solid var(--red);
+	outline-offset: 2px;
+}
+
+.job-row__main {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 14px;
+	min-width: 0;
+}
+
+.job-row__title {
+	margin: 0;
+	color: var(--ink);
+	font-size: clamp(21px, 2.1vw, 30px);
+	font-weight: 500;
+	letter-spacing: -.02em;
+	line-height: 1.2;
+}
+
+.job-badge {
+	padding: 4px 14px;
+	border-radius: 6px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.5;
+	white-space: nowrap;
+}
+
+.job-badge--full-time {
+	background: #fbd3d3;
+	color: var(--red-dark);
+}
+
+.job-badge--internship {
+	background: #e3e5ee;
+	color: #596072;
+}
+
+.job-row__meta {
+	display: flex;
+	align-items: center;
+	flex: 0 0 auto;
+	gap: clamp(20px, 2.4vw, 36px);
+}
+
+.job-meta {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	color: #4b505c;
+	font-size: 16px;
+	font-weight: 500;
+	white-space: nowrap;
+}
+
+.job-meta svg {
+	flex: 0 0 auto;
+	color: var(--red-dark);
+}
+
+.job-meta:first-child svg {
+	color: inherit;
+}
+
+.job-meta:last-child svg {
+	color: #4b505c;
+}
+
+.jobs-empty {
+	margin: 48px 0 0;
+	padding: 48px 24px;
+	border: 1px dashed #cfd6dc;
+	border-radius: 14px;
+	background: #fff;
+	text-align: center;
+}
+
+/* ---------- Footer / pager ---------- */
+.jobs-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	margin-top: clamp(48px, 6vw, 88px);
+}
+
+.jobs-footer__summary {
+	margin: 0;
+	color: #4b505c;
+	font-size: 15px;
+}
+
+.jobs-footer__summary strong {
+	color: var(--ink);
+}
+
+.jobs-pager {
+	display: flex;
+	gap: 12px;
+}
+
+.jobs-pager__btn {
+	display: grid;
+	place-items: center;
+	min-width: 60px;
+	height: 60px;
+	padding: 0 8px;
+	border: 0;
+	border-radius: 12px;
+	background: #eceef2;
+	color: var(--ink);
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color var(--motion-fast) ease, color var(--motion-fast) ease, transform var(--motion-fast) var(--ease);
+}
+
+.jobs-pager__btn:hover:not(:disabled):not(.is-active) {
+	background: #dfe2e8;
+	transform: translateY(-2px);
+}
+
+.jobs-pager__btn.is-active {
+	background: var(--red-dark);
+	color: #fff;
+	cursor: default;
+}
+
+.jobs-pager__btn:disabled {
+	color: #a8acb6;
+	cursor: not-allowed;
+}
+
+.jobs-pager__btn:focus-visible {
+	outline: 2px solid var(--red);
+	outline-offset: 3px;
+}
+
+.jobs-page .screen-reader-text {
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	clip: rect(0, 0, 0, 0) !important;
+	white-space: nowrap !important;
+	border: 0 !important;
+}
+
+.jobs-page,
+.jobs-page * {
+	border-radius: 0 !important;
+}
+
+.jobs-page .jobs-hero h1.screen-reader-text {
+	color: white;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1180px) {
+	.jobs-filter__row {
+		grid-template-columns: repeat(3, minmax(0, 1fr)) 76px;
+	}
+
+	.jobs-search {
+		grid-column: 1 / -1;
+	}
+}
+
+@media (max-width: 980px) {
+	.job-row__link {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 16px;
+	}
+
+	.job-row__meta {
+		flex-wrap: wrap;
+		gap: 12px 24px;
+	}
+}
+
+@media (max-width: 680px) {
+	.jobs-hero {
+		min-height: 220px;
+	}
+
+	.jobs-filter {
+		border-radius: 16px;
+	}
+
+	.jobs-filter__row {
+		grid-template-columns: 1fr 96px;
+		gap: 12px;
+	}
+
+	.jobs-search {
+		grid-column: 1 / -1;
+	}
+
+	.jobs-select:nth-of-type(1),
+	.jobs-select:nth-of-type(2),
+	.jobs-select:nth-of-type(3) {
+		grid-column: 1 / 2;
+	}
+
+	.jobs-filter__reset {
+		grid-column: 2;
+		grid-row: 2 / span 3;
+		height: auto;
+	}
+
+	.job-row__link {
+		padding: 22px 18px;
+	}
+
+	.job-meta {
+		font-size: 15px;
+		white-space: normal;
+	}
+
+	.jobs-footer {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.jobs-pager__btn {
+		min-width: 48px;
+		height: 48px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.job-row,
+	.jobs-pager__btn,
+	.jobs-filter__reset {
+		transition: none;
+	}
+}
+
+
+/* ==========================================================================
+   JOB DETAIL  —  tambahkan di akhir style.css (setelah job-opportunities.css)
+   Body class otomatis dari WP: body.page-job-detail
+   ========================================================================== */
+
+body.page-job-detail .site-header:not(.is-scrolled) {
+	background: var(--navy);
+	border-color: rgba(255, 255, 255, .12);
+}
+
+.job-detail-page {
+	padding-top: 86px;
+	background: #fff;
+}
+
+.job-detail {
+	padding-block: clamp(56px, 7vw, 96px) clamp(72px, 9vw, 120px);
+}
+
+.job-detail.shell {
+	width: min(1100px, calc(100% - 96px));
+	margin-inline: auto;
+}
+
+/* ---------- Header ---------- */
+.job-detail__title {
+	margin: 0 0 24px;
+	color: var(--ink);
+	font-size: clamp(34px, 4.2vw, 52px);
+	font-weight: 700;
+	letter-spacing: -.03em;
+	line-height: 1.1;
+}
+
+.job-detail__meta {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 14px 32px;
+}
+
+.job-detail__logo {
+	display: block;
+	overflow: hidden;
+	width: 72px;
+	height: 72px;
+	flex: 0 0 auto;
+}
+
+.job-detail__logo img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.job-detail__chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	color: var(--red-dark);
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.job-detail__chip svg {
+	flex: 0 0 auto;
+}
+
+/* ---------- Description (HTML dari the_content / plugin) ---------- */
+.job-detail__content {
+	margin-top: clamp(40px, 5vw, 64px);
+	color: var(--muted);
+	font-size: 17px;
+	line-height: 1.8;
+}
+
+.job-detail__content p {
+	margin: 0 0 14px;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+.job-detail__content strong,
+.job-detail__content b {
+	color: var(--ink);
+	font-weight: 700;
+}
+
+.job-detail__content > p:has(> strong:only-child) {
+	color: var(--ink);
+}
+
+.job-detail__content h3,
+.job-detail__content h4 {
+	margin: 28px 0 8px;
+	color: var(--ink);
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: -.01em;
+	line-height: 1.35;
+}
+
+.job-detail__content ul,
+.job-detail__content ol {
+	max-width: 1040px;
+	margin: 0 0 18px;
+	padding: 0 0 0 28px;
+}
+
+.job-detail__content ul {
+	list-style: disc;
+}
+
+.job-detail__content ol {
+	list-style: decimal;
+}
+
+.job-detail__content li::marker {
+	color: #000;
+}
+
+.job-detail__content li {
+	margin: 0 0 12px;
+	font-size: 16px;
+	line-height: 1.7;
+}
+
+.job-detail__content a {
+	color: var(--red-dark);
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.job-detail__tag {
+	margin-top: 30px;
+	color: var(--ink);
+}
+
+/* ---------- Section headings ---------- */
+.job-detail__heading {
+	margin: 0 0 24px;
+	color: var(--red-dark);
+	font-size: clamp(28px, 2.8vw, 36px);
+	font-weight: 700;
+	letter-spacing: -.02em;
+	line-height: 1.2;
+}
+
+/* ---------- Job features ---------- */
+.job-detail__features {
+	margin-top: clamp(48px, 6vw, 80px);
+}
+
+.job-features {
+	margin: 0;
+	border: 1px solid #dfe2e7;
+	border-radius: 6px;
+}
+
+.job-features__row {
+	display: flex;
+	justify-content: space-between;
+	gap: 24px;
+	padding: 22px 28px;
+	font-size: 17px;
+}
+
+.job-features__row + .job-features__row {
+	border-top: 1px solid #dfe2e7;
+}
+
+.job-features dt {
+	color: var(--ink);
+}
+
+.job-features dd {
+	margin: 0;
+	color: var(--muted);
+	text-align: right;
+}
+
+/* ---------- Apply form ---------- */
+.job-apply {
+	margin-top: clamp(56px, 7vw, 96px);
+}
+
+.job-apply,
+.job-apply * {
+	border-radius: 0 !important;
+}
+
+.job-apply__form {
+	display: grid;
+	gap: 26px;
+}
+
+.job-field label,
+.job-privacy__title {
+	display: block;
+	margin-bottom: 12px;
+	color: var(--ink);
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.job-field .req,
+.job-privacy .req {
+	color: var(--red-dark);
+}
+
+.job-field input[type="text"],
+.job-field input[type="email"],
+.job-field input[type="tel"],
+.job-field textarea,
+.job-phone select {
+	width: 100%;
+	border: 1px solid #d5d9de;
+	border-radius: 6px;
+	background: #fff;
+	color: var(--ink);
+	font-size: 16px;
+	transition: border-color var(--motion-fast) ease, box-shadow var(--motion-fast) ease;
+}
+
+.job-field input[type="text"],
+.job-field input[type="email"],
+.job-field input[type="tel"] {
+	height: 60px;
+	padding: 0 18px;
+}
+
+.job-field textarea {
+	min-height: 160px;
+	padding: 16px 18px;
+	resize: vertical;
+}
+
+.job-field input:focus,
+.job-field textarea:focus,
+.job-phone select:focus {
+	border-color: var(--red-dark);
+	box-shadow: 0 0 0 3px rgba(172, 13, 7, .14);
+	outline: 0;
+}
+
+.job-field input:user-invalid,
+.job-field textarea:user-invalid {
+	border-color: var(--red);
+}
+
+/* phone */
+.job-phone {
+	display: flex;
+}
+
+.job-phone select {
+	flex: 0 0 auto;
+	width: auto;
+	min-width: 112px;
+	height: 60px;
+	padding: 0 34px 0 16px;
+	border-radius: 6px 0 0 6px;
+	border-right: 0;
+	background: #f3f4f6 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='%23454a55'%3E%3Cpath d='M1 1h10L6 7z'/%3E%3C/svg%3E") no-repeat right 12px center;
+	appearance: none;
+	-webkit-appearance: none;
+	cursor: pointer;
+}
+
+.job-phone input[type="tel"] {
+	border-radius: 0 6px 6px 0;
+}
+
+/* file */
+.job-file {
+	position: relative;
+	display: flex !important;
+	align-items: stretch;
+	margin: 0 !important;
+	border: 1px solid #d5d9de;
+	border-radius: 6px;
+	background: #fff;
+	font-weight: 400 !important;
+	cursor: pointer;
+}
+
+.job-file input[type="file"] {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+	overflow: hidden;
+}
+
+.job-file__name {
+	flex: 1;
+	min-width: 0;
+	padding: 17px 18px;
+	overflow: hidden;
+	color: #5a5f6b;
+	font-size: 16px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.job-file__btn {
+	display: grid;
+	place-items: center;
+	padding: 0 28px;
+	border-radius: 0 5px 5px 0;
+	background: var(--red-dark);
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	transition: background-color var(--motion-fast) ease;
+}
+
+.job-file:hover .job-file__btn {
+	background: var(--red);
+}
+
+.job-file:focus-within {
+	border-color: var(--red-dark);
+	box-shadow: 0 0 0 3px rgba(172, 13, 7, .14);
+}
+
+.job-field__hint {
+	margin: 8px 0 0;
+	color: #7b7f8a;
+	font-size: 13px;
+}
+
+/* privacy */
+.job-privacy__label {
+	display: flex !important;
+	align-items: flex-start;
+	gap: 12px;
+	max-width: 1040px;
+	margin: 0 !important;
+	font-size: 15px !important;
+	line-height: 1.55;
+	cursor: pointer;
+}
+
+.job-privacy__label input {
+	flex: 0 0 auto;
+	width: 20px;
+	height: 20px;
+	margin: 3px 0 0;
+	accent-color: var(--red-dark);
+}
+
+/* submit + notice */
+.job-apply__actions {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 4px;
+}
+
+.job-apply__submit {
+	min-width: 168px;
+	height: 58px;
+	padding: 0 32px;
+	border: 1px solid var(--red-dark);
+	border-radius: 6px;
+	background: var(--red-dark);
+	color: #fff;
+	font-size: 17px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: background-color var(--motion-ui) ease, color var(--motion-ui) ease, transform var(--motion-fast) var(--ease);
+}
+
+.job-apply__submit:hover {
+	background: #fff;
+	color: var(--red-dark);
+	transform: translateY(-2px);
+}
+
+.job-apply__submit:active {
+	transform: scale(.97);
+}
+
+.job-apply__submit:focus-visible {
+	outline: 2px solid var(--navy);
+	outline-offset: 3px;
+}
+
+.job-apply__notice {
+	margin: 0;
+	padding: 14px 18px;
+	border-radius: 6px;
+	font-size: 15px;
+}
+
+.job-apply__notice[hidden] {
+	display: none;
+}
+
+.job-apply__notice.is-ok {
+	background: #e7f5ec;
+	color: #17623a;
+}
+
+.job-apply__notice.is-error {
+	background: #fdeaea;
+	color: var(--red-dark);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 680px) {
+	.job-detail.shell {
+		width: calc(100% - 32px);
+	}
+
+	.job-detail__meta {
+		gap: 14px 22px;
+	}
+
+	.job-detail__logo {
+		width: 60px;
+		height: 60px;
+	}
+
+	.job-detail__content {
+		font-size: 16px;
+	}
+
+	.job-detail__content ul,
+	.job-detail__content ol {
+		padding-left: 18px;
+	}
+
+	.job-features__row {
+		padding: 18px;
+		font-size: 16px;
+	}
+
+	.job-phone select {
+		min-width: 96px;
+	}
+
+	.job-file__btn {
+		padding: 0 18px;
+	}
+
+	.job-apply__actions {
+		justify-content: stretch;
+	}
+
+	.job-apply__submit {
+		width: 100%;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.job-apply__submit,
+	.job-field input,
+	.job-field textarea {
+		transition: none;
+	}
+}

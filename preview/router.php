@@ -13,6 +13,8 @@ $route_map = array(
     ''                       => array('page' => 'front-page',          'file' => 'front-page.php'),
     '/'                      => array('page' => 'front-page',          'file' => 'front-page.php'),
     'careers'                => array('page' => 'careers',             'file' => 'page-careers.php'),
+    'job-opportunities'      => array('page' => 'job-opportunities',   'file' => 'page-job-opportunities.php'),
+    'job-detail'             => array('page' => 'job-detail',          'file' => 'page-job-detail.php'),
     'esg'                    => array('page' => 'esg',                 'file' => 'page-esg.php'),
     'media'                  => array('page' => 'media',               'file' => 'page-media.php'),
     'contact'                => array('page' => 'contact',             'file' => 'page-contact.php'),
@@ -74,6 +76,28 @@ function add_filter() {}
 function add_theme_support() {}
 function register_nav_menus() {}
 function get_page_by_path() { return null; }
+function add_query_arg($key, $value, $url = '') {
+    $parts = parse_url($url);
+    $query = array();
+    if (!empty($parts['query'])) parse_str($parts['query'], $query);
+    $query[$key] = $value;
+    return (isset($parts['path']) ? $parts['path'] : '') . '?' . http_build_query($query);
+}
+function wp_unslash($value) { return is_array($value) ? array_map('wp_unslash', $value) : stripslashes($value); }
+function admin_url($path = '') { return '/wp-admin/' . ltrim($path, '/'); }
+function wp_nonce_field($action = '', $name = '_wpnonce') { printf('<input type="hidden" name="%s" value="preview">', esc_attr($name)); }
+function sanitize_title($title) { return trim(preg_replace('/[^a-z0-9]+/', '-', strtolower($title)), '-'); }
+function wp_list_pluck($list, $field) { return array_map(function ($item) use ($field) { return isset($item[$field]) ? $item[$field] : null; }, $list); }
+function current_time($type = 'mysql') { return $type === 'timestamp' ? time() : date('Y-m-d H:i:s'); }
+function human_time_diff($from, $to = 0) {
+    $diff = abs(($to ?: time()) - $from);
+    if ($diff < 60) return $diff . ' seconds';
+    if ($diff < 3600) return floor($diff / 60) . ' minutes';
+    if ($diff < 86400) return floor($diff / 3600) . ' hours';
+    if ($diff < 2592000) return floor($diff / 86400) . ' days';
+    if ($diff < 31536000) return floor($diff / 2592000) . ' months';
+    return floor($diff / 31536000) . ' years';
+}
 function get_permalink() { return '/'; }
 function home_url($path = '/') { return '/' . ltrim($path, '/'); }
 function get_theme_file_uri($path = '') { return '/wp-content/themes/hosho-digital/' . ltrim($path, '/'); }
@@ -100,7 +124,7 @@ function is_front_page() {
 function esc_url($v) { return htmlspecialchars($v, ENT_QUOTES, 'UTF-8'); }
 function esc_attr($v) { return htmlspecialchars($v, ENT_QUOTES, 'UTF-8'); }
 function esc_html($v) { return htmlspecialchars($v, ENT_QUOTES, 'UTF-8'); }
-function wp_kses_post($v) { return strip_tags($v, '<br><span><strong><em><img><a>'); }
+function wp_kses_post($v) { return strip_tags($v, '<br><p><span><strong><b><em><img><a><h3><h4><ul><ol><li>'); }
 function __($v) { return $v; }
 function language_attributes() { echo 'lang="en"'; }
 function bloginfo($key) { if ($key === 'charset') echo 'UTF-8'; }
