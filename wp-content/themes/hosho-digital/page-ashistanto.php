@@ -2,13 +2,20 @@
 
 <main id="main-content" class="ashistanto-page">
 	<?php
+	$ashistanto_red_logo   = hosho_asset_url( 'ashistanto-red-logo.png' );
+	$ashistanto_white_logo = hosho_asset_url( 'ashistanto-white-logo.png' );
+
 	hosho_render_hero(
-		'Ashistanto.',
+		'Ashistanto',
 		'hero-ashistanto.jpg',
 		array(
 			'class'     => 'page-hero--ashistanto',
 			'eyebrow'   => 'AI workplace assistant for Microsoft 365',
 			'body'      => array( 'Everyday work, completed through simple voice or text commands.' ),
+			'after_title_html' => sprintf(
+				'<span class="ashi-brandmark ashi-brandmark--hero"><img src="%s" alt="Ashistanto logo"></span>',
+				esc_url( $ashistanto_white_logo )
+			),
 			'cta_label' => 'Visit Ashistanto',
 			'cta_url'   => 'https://ashistanto.com/',
 		)
@@ -18,8 +25,9 @@
 	<section class="section ashi-intro">
 		<div class="shell ashi-intro__grid motion">
 			<div>
+				<span class="ashi-brandmark ashi-brandmark--red"><img src="<?php echo esc_url( $ashistanto_red_logo ); ?>" alt="Ashistanto logo"></span>
 				<p class="eyebrow">Work without the app switching</p>
-				<h2>Say what needs to happen. Ashistanto gets it moving.</h2>
+				<h2>Speak. Ashistanto Does.</h2>
 			</div>
 			<div class="ashi-intro__copy">
 				<p class="lede">Ashistanto is a workplace assistant that performs everyday tasks through natural voice or text commands.</p>
@@ -43,7 +51,7 @@
 
 			<div class="ashi-console motion" aria-label="Example Ashistanto interaction">
 				<div class="ashi-console__bar">
-					<span class="ashi-console__brand">ASHISTANTO</span>
+					<span class="ashi-brandmark ashi-brandmark--console"><img src="<?php echo esc_url( $ashistanto_red_logo ); ?>" alt="Ashistanto"></span>
 					<span class="ashi-console__status"><i aria-hidden="true"></i> Ready</span>
 				</div>
 				<div class="ashi-console__body">
@@ -69,7 +77,7 @@
 	<section class="section ashi-challenges">
 		<div class="shell">
 			<div class="intro-grid motion">
-				<div><p class="eyebrow">The workplace friction</p><h2>Small tasks create a large productivity drag.</h2></div>
+				<div><p class="eyebrow">The workplace friction</p><h2>Eliminate Productivity Drag.</h2></div>
 				<p>Routine work becomes fragmented when employees need to move repeatedly between Outlook, Calendar, Teams and other applications.</p>
 			</div>
 			<div class="ashi-challenges__grid motion">
@@ -109,7 +117,7 @@
 	<section class="section ashi-value">
 		<div class="shell">
 			<div class="intro-grid motion">
-				<div><p class="eyebrow">Business value</p><h2>More time for work that needs people.</h2></div>
+				<div><p class="eyebrow">Business value</p><h2>Reclaim your time.</h2></div>
 				<p>Ashistanto removes repetitive interaction from daily workflows while keeping employees in control of what is sent, scheduled or changed.</p>
 			</div>
 			<div class="ashi-value__grid motion">
@@ -122,11 +130,12 @@
 
 	<section class="ashi-external">
 		<div class="shell ashi-external__inner motion">
-			<div>
+			<div class="ashi-external__copy">
 				<h2>Meet Ashistanto.</h2>
 				<p>Explore the live product and see how natural conversation can simplify work across Microsoft 365.</p>
+				<a class="button" href="https://ashistanto.com/" target="_blank" rel="noopener noreferrer">Visit Ashistanto<span class="button-arrow" aria-hidden="true"></span></a>
 			</div>
-			<a class="button" href="https://ashistanto.com/" target="_blank" rel="noopener noreferrer">Visit Ashistanto<span class="button-arrow" aria-hidden="true"></span></a>
+			<span class="ashi-brandmark ashi-brandmark--cta" aria-hidden="true"><img src="<?php echo esc_url( $ashistanto_white_logo ); ?>" alt=""></span>
 		</div>
 	</section>
 </main>
