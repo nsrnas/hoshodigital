@@ -21154,6 +21154,7 @@ body.page-ashistanto .page-hero--ashistanto .page-hero__title-row {
 }
 
 .ashi-challenges__grid h3,
+.ashi-value__grid h3,
 .ashi-capability h3 {
 	margin-bottom: 1rem;
 	color: var(--navy);
@@ -21171,7 +21172,7 @@ body.page-ashistanto .page-hero--ashistanto .page-hero__title-row {
 }
 
 .ashi-challenges__grid h3,
-.ashi-value__grid strong {
+.ashi-value__grid h3 {
 	color: #fff;
 }
 
@@ -21209,20 +21210,6 @@ body.page-ashistanto .page-hero--ashistanto .page-hero__title-row {
 
 .ashi-capability p {
 	color: rgba(255, 255, 255, .82);
-}
-
-.ashi-value__grid article {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.ashi-value__grid strong {
-	max-width: 12ch;
-	color: #fff;
-	font-size: clamp(1.8rem, 3vw, 3.25rem);
-	font-weight: 600;
-	line-height: 1.05;
 }
 
 .ashi-external {
@@ -21378,9 +21365,6 @@ body.page-solutions .solutions-product-feature h3 {
 		border-bottom: 0;
 	}
 
-	.ashi-value__grid article {
-		gap: 2.5rem;
-	}
 }
 
 @media (max-width: 680px) {

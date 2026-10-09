@@ -121,9 +121,9 @@
 				<p>Ashistanto removes repetitive interaction from daily workflows while keeping employees in control of what is sent, scheduled or changed.</p>
 			</div>
 			<div class="ashi-value__grid motion">
-				<article><strong>Time Savings</strong><p>Automates repetitive workplace tasks and reduces application switching.</p></article>
-				<article><strong>Improved Productivity</strong><p>Enables employees to complete tasks quickly through natural voice and text commands.</p></article>
-				<article><strong>Reduced Errors</strong><p>Standardizes routine actions across emails, calendars, meetings and Teams.</p></article>
+				<article><h3>Time Savings</h3><p>Automates repetitive workplace tasks and reduces application switching.</p></article>
+				<article><h3>Improved Productivity</h3><p>Enables employees to complete tasks quickly through natural voice and text commands.</p></article>
+				<article><h3>Reduced Errors</h3><p>Standardizes routine actions across emails, calendars, meetings and Teams.</p></article>
 			</div>
 		</div>
 	</section>
