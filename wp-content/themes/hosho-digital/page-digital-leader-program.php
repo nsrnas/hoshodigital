@@ -4,7 +4,7 @@
     $dlp_partner_marks =
       '<img src="' . esc_url( hosho_asset_url( 'programmes/eci/imda.png' ) ) . '" alt="Infocomm Media Development Authority" class="eci-hero-partner-img eci-hero-partner-img--imda" loading="lazy" decoding="async">';
 
-    hosho_render_hero('Eligibility.', 'hero-quickwin-corridor-v2.png', array(
+    hosho_render_hero('Quick wins.<br>Guaranteed outcomes.', 'programmes/dlp/hero.jpg', array(
       'class'         => 'page-hero--quickwin',
       'actions_html' => $dlp_partner_marks,
     ));
