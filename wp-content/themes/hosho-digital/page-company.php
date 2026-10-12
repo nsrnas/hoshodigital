@@ -49,14 +49,12 @@
     <div class="shell">
       <div class="company-direction__grid">
         <article class="company-direction__item motion">
-          <p class="eyebrow">Our purpose</p>
-          <h3>Make Technology Matter.</h3>
-          <p>We help businesses turn technological possibility into business reality.</p>
+          <p class="eyebrow">Vision</p>
+          <h3>To amplify human potential and elevate business performance.</h3>
         </article>
         <article class="company-direction__item motion">
-          <p class="eyebrow">Our ambition</p>
-          <h3>Make Every Business More Intelligent.</h3>
-          <p>Not by replacing what works.</p>
+          <p class="eyebrow">Mission</p>
+          <h3>To turn business challenges into measurable outcomes through intelligent technology.</h3>
         </article>
       </div>
     </div>
@@ -78,7 +76,7 @@
   <section id="our-values" class="section company-values company-values--director company-values--quotes" data-carousel data-carousel-interval="5000" aria-roledescription="carousel" aria-label="HOSHŌ values">
     <div class="shell">
       <div class="company-values__header motion">
-        <div><h2>Our Values</h2></div>
+        <div><h2>Values</h2></div>
         <div class="carousel-controls" aria-label="Values carousel controls">
           <p class="screen-reader-text"><span data-current>01</span> of 05</p>
           <button type="button" data-prev aria-label="Previous value">←</button>

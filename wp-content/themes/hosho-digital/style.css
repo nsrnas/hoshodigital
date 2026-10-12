@@ -3443,7 +3443,7 @@ body.page-approach .approach-page .page-hero h1 {
 	position: relative;
 	overflow: hidden;
 	padding: 48px;
-	border-radius: 16px;
+	border-radius: 0;
 	background: #0b1c30;
 	color: white;
 	display: flex;
@@ -3511,7 +3511,7 @@ body.page-approach .approach-page .page-hero h1 {
 
 .opex-help-card {
 	padding: 48px;
-	border-radius: 16px;
+	border-radius: 0;
 	background: #f3f3f3;
 	border-top: 4px solid var(--red-dark);
 	border-right: 1px solid #e2e2e2;
@@ -3582,7 +3582,7 @@ body.page-approach .approach-page .page-hero h1 {
 	display: flex;
 	flex-direction: column;
 	padding: 32px;
-	border-radius: 8px;
+	border-radius: 0;
 	background: white;
 	border: 1px solid rgba(226, 28, 21, .15);
 	transition: transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s;
@@ -3964,7 +3964,7 @@ body.page-approach .approach-page .page-hero h1 {
 
 .ex-stat__glass {
 	padding: 32px;
-	border-radius: 16px;
+	border-radius: 0;
 	background: rgba(255, 255, 255, .1);
 	border: 1px solid rgba(255, 255, 255, .3);
 	backdrop-filter: blur(12px);
@@ -6965,7 +6965,7 @@ a {
 	right: 0;
 	top: 0;
 	bottom: 0;
-	width: 42%;
+	width: 40%;
 	overflow: hidden;
 }
 
@@ -20526,7 +20526,7 @@ body.page-company #our-values.company-values--quotes {
 }
 
 body.page-company #our-values.company-values--quotes .company-values__window {
-	width: min(100%, 620px);
+	width: 100%;
 	margin-inline: auto;
 	overflow: hidden;
 	background: transparent;
@@ -20534,11 +20534,21 @@ body.page-company #our-values.company-values--quotes .company-values__window {
 }
 
 body.page-company #our-values.company-values--quotes .company-values__track {
+	display: grid;
+	grid-template-columns: 1fr;
 	gap: 0;
 	align-items: stretch;
+	justify-items: center;
+	transform: none;
 }
 
 body.page-company #our-values.company-values--quotes .company-value--statement {
+	grid-area: 1 / 1;
+	width: 42%;
+	opacity: 0;
+	pointer-events: none;
+	transform: translateX(180%) scale(.76);
+	transition: transform 750ms cubic-bezier(.22, 1, .36, 1), opacity 750ms ease;
 	flex: 0 0 100%;
 	min-width: 0;
 	min-height: 0;
@@ -20549,6 +20559,50 @@ body.page-company #our-values.company-values--quotes .company-value--statement {
 	border: calc(var(--company-value-gap) / 2) solid transparent;
 	background: linear-gradient(to bottom, #aa0b06 0%, #2f0f16 76.81%, #011222 100%) padding-box;
 	color: #fff;
+}
+
+body.page-company #our-values.company-values--quotes .company-value--statement:first-child:not([data-position]),
+body.page-company #our-values.company-values--quotes .company-value--statement[data-position="0"] {
+	z-index: 3;
+	opacity: 1;
+	pointer-events: auto;
+	transform: translateX(0) scale(1);
+}
+
+body.page-company #our-values.company-values--quotes .company-value--statement[data-position="-1"],
+body.page-company #our-values.company-values--quotes .company-value--statement[data-position="1"] {
+	z-index: 2;
+	opacity: .4;
+}
+
+body.page-company #our-values.company-values--quotes .company-value--statement[data-position="-1"] {
+	transform: translateX(-85%) scale(.76);
+}
+
+body.page-company #our-values.company-values--quotes .company-value--statement[data-position="1"] {
+	transform: translateX(85%) scale(.76);
+}
+
+body.page-company #our-values.company-values--quotes .company-value--statement[data-position="-2"] {
+	transform: translateX(-180%) scale(.76);
+}
+
+@media (max-width: 980px) {
+	body.page-company #our-values.company-values--quotes .company-value--statement {
+		width: 64%;
+	}
+}
+
+@media (max-width: 620px) {
+	body.page-company #our-values.company-values--quotes .company-value--statement {
+		width: 82%;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	body.page-company #our-values.company-values--quotes .company-value--statement {
+		transition: none;
+	}
 }
 
 body.page-company #our-values.company-values--quotes .company-value__copy {
@@ -21086,15 +21140,52 @@ body.page-ashistanto .page-hero--ashistanto .page-hero__title-row {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
 	margin-top: clamp(3rem, 6vw, 6rem);
-	border-block: 1px solid rgba(255, 255, 255, .3);
-	background: var(--red);
+	border-block: 1px solid var(--line);
+	background: #fff;
 }
 
 .ashi-challenges__grid article,
 .ashi-value__grid article {
+	position: relative;
 	min-height: 320px;
 	padding: clamp(2.5rem, 4vw, 4.5rem);
-	border-right: 1px solid rgba(255, 255, 255, .3);
+	border-right: 1px solid var(--line);
+	background: #fff;
+	transition: background-color .25s ease, box-shadow .25s ease, transform .25s ease;
+}
+
+.ashi-challenges__grid article::before,
+.ashi-value__grid article::before {
+	content: "";
+	position: absolute;
+	inset: 0 0 auto;
+	height: 3px;
+	background: var(--red);
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform .25s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.ashi-challenges__grid article:hover,
+	.ashi-value__grid article:hover {
+		z-index: 1;
+		background: #fff7f6;
+		box-shadow: 0 10px 24px rgba(0, 0, 0, .08);
+		transform: translateY(-4px);
+	}
+
+	.ashi-challenges__grid article:hover::before,
+	.ashi-value__grid article:hover::before {
+		transform: scaleX(1);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.ashi-challenges__grid article:hover,
+	.ashi-value__grid article:hover {
+		transform: none;
+	}
 }
 
 .ashi-challenges__grid article:last-child,
@@ -21132,12 +21223,12 @@ body.page-ashistanto .page-hero--ashistanto .page-hero__title-row {
 
 .ashi-challenges__grid h3,
 .ashi-value__grid h3 {
-	color: #fff;
+	color: #111;
 }
 
 .ashi-challenges__grid p,
 .ashi-value__grid p {
-	color: rgba(255, 255, 255, .82);
+	color: #111;
 }
 
 .ashi-capabilities__grid {
@@ -21316,7 +21407,7 @@ body.page-solutions .solutions-product-feature h3 {
 	.ashi-value__grid article {
 		min-height: 0;
 		border-right: 0;
-		border-bottom: 1px solid rgba(255, 255, 255, .3);
+		border-bottom: 1px solid var(--line);
 	}
 
 	.ashi-challenges__grid article:last-child,

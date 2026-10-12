@@ -6,16 +6,10 @@
 	$ashistanto_white_logo = hosho_asset_url( 'ashistanto-white-logo.png' );
 
 	hosho_render_hero(
-		'Ashistanto',
+		'Your workplace assistant',
 		'hero-ashistanto.jpg',
 		array(
 			'class'     => 'page-hero--ashistanto',
-			'eyebrow'   => 'AI workplace assistant for Microsoft 365',
-			'body'      => array( 'Everyday work, completed through simple voice or text commands.' ),
-			'after_title_html' => sprintf(
-				'<span class="ashi-brandmark ashi-brandmark--hero"><img src="%s" alt="Ashistanto logo"></span>',
-				esc_url( $ashistanto_white_logo )
-			),
 			'cta_label' => 'Visit Ashistanto',
 			'cta_url'   => 'https://ashistanto.com/',
 		)
@@ -26,7 +20,6 @@
 		<div class="shell ashi-intro__grid motion">
 			<div>
 				<span class="ashi-brandmark ashi-brandmark--red"><img src="<?php echo esc_url( $ashistanto_red_logo ); ?>" alt="Ashistanto logo"></span>
-				<p class="eyebrow">Work without the app switching</p>
 				<h2>Speak. Ashistanto Does.</h2>
 			</div>
 			<div class="ashi-intro__copy">
@@ -39,7 +32,6 @@
 	<section class="section section-navy ashi-command">
 		<div class="shell ashi-command__grid">
 			<div class="ashi-command__copy motion">
-				<p class="eyebrow">One request. Connected action.</p>
 				<h2>Turn natural language into completed workplace tasks.</h2>
 				<p>Ashistanto understands what the user wants to accomplish, identifies the right workplace action and prepares it across connected Microsoft applications.</p>
 				<ul class="ashi-checklist">
@@ -77,7 +69,7 @@
 	<section class="section ashi-challenges">
 		<div class="shell">
 			<div class="intro-grid motion">
-				<div><p class="eyebrow">The workplace friction</p><h2>Eliminate Productivity Drag.</h2></div>
+				<div><h2>Eliminate Productivity Drag.</h2></div>
 				<p>Routine work becomes fragmented when employees need to move repeatedly between Outlook, Calendar, Teams and other applications.</p>
 			</div>
 			<div class="ashi-challenges__grid motion">
@@ -91,7 +83,7 @@
 	<section class="section section-mist ashi-capabilities">
 		<div class="shell">
 			<div class="section-heading motion">
-				<div><p class="eyebrow">Core capabilities</p><h2>Everyday work, intelligently orchestrated.</h2></div>
+				<div><h2>Core capabilities</h2></div>
 			</div>
 			<div class="ashi-capabilities__grid">
 				<article class="ashi-capability motion">
@@ -117,7 +109,7 @@
 	<section class="section ashi-value">
 		<div class="shell">
 			<div class="intro-grid motion">
-				<div><p class="eyebrow">Business value</p><h2>Reclaim your time.</h2></div>
+				<div><h2>Business value</h2></div>
 				<p>Ashistanto removes repetitive interaction from daily workflows while keeping employees in control of what is sent, scheduled or changed.</p>
 			</div>
 			<div class="ashi-value__grid motion">

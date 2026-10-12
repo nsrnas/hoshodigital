@@ -150,6 +150,7 @@
     const interval = Math.max(Number.parseInt(carousel.dataset.carouselInterval || '6000', 10) || 6000, 1000);
     const previous = carousel.querySelector('[data-prev]');
     const next = carousel.querySelector('[data-next]');
+    const centered = carousel.classList.contains('company-values--quotes');
     let index = 0;
     let timer = 0;
     let carouselVisible = true;
@@ -164,6 +165,19 @@
     };
 
     const show = (nextIndex) => {
+      if (centered) {
+        index = ((nextIndex % slides.length) + slides.length) % slides.length;
+        track.style.transform = 'none';
+        if (current) current.textContent = String(index + 1).padStart(2, '0');
+        slides.forEach((slide, slideIndex) => {
+          let offset = (slideIndex - index + slides.length) % slides.length;
+          if (offset > slides.length / 2) offset -= slides.length;
+          slide.dataset.position = String(offset);
+          slide.setAttribute('aria-hidden', offset === 0 ? 'false' : 'true');
+          slide.inert = offset !== 0;
+        });
+        return;
+      }
       const visibleCount = Math.min(slides.length, Math.max(1, Math.round(readCarouselNumber('--carousel-visible', 1))));
       const lastIndex = Math.max(slides.length - visibleCount, 0);
       const loopLength = lastIndex + 1;
