@@ -84,7 +84,7 @@ if (!function_exists('hosho_get_jobs')) {
       $slug = sanitize_title($row[0]);
       $job  = array(
         'id'       => $i + 1,
-        'title'    => $row[0],
+        'title'    => function_exists('hosho_job_title_case') ? hosho_job_title_case($row[0]) : ucwords(strtolower($row[0])),
         'slug'     => $slug,
         'category' => $row[1],
         'type'     => $row[2],

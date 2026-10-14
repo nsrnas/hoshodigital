@@ -22363,7 +22363,7 @@ body.page-job-opportunities .site-header:not(.is-scrolled) {
 	align-items: center;
 	justify-content: space-between;
 	gap: 24px;
-	padding: 26px clamp(20px, 2.4vw, 32px);
+	padding: 18px clamp(18px, 2vw, 28px);
 	border-radius: 0 14px 14px 0;
 }
 
@@ -22383,16 +22383,18 @@ body.page-job-opportunities .site-header:not(.is-scrolled) {
 .job-row__title {
 	margin: 0;
 	color: var(--ink);
-	font-size: clamp(21px, 2.1vw, 30px);
-	font-weight: 500;
-	letter-spacing: -.02em;
-	line-height: 1.2;
+	font-size: clamp(19px, 1.7vw, 25px);
+	font-weight: 600;
+	letter-spacing: -.01em;
+	line-height: 1.3;
 }
 
 .job-badge {
-	padding: 4px 14px;
+	padding: 3px 12px;
 	border-radius: 6px;
-	font-size: 14px;
+	background: #e3e5ee;
+	color: #596072;
+	font-size: 12.5px;
 	font-weight: 600;
 	line-height: 1.5;
 	white-space: nowrap;
@@ -22404,8 +22406,8 @@ body.page-job-opportunities .site-header:not(.is-scrolled) {
 }
 
 .job-badge--internship {
-	background: #e3e5ee;
-	color: #596072;
+	background: #ffe58a;
+	color: #6b4a00;
 }
 
 .job-row__meta {
@@ -22420,7 +22422,7 @@ body.page-job-opportunities .site-header:not(.is-scrolled) {
 	align-items: center;
 	gap: 10px;
 	color: #4b505c;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 500;
 	white-space: nowrap;
 }
@@ -22459,7 +22461,7 @@ body.page-job-opportunities .site-header:not(.is-scrolled) {
 .jobs-footer__summary {
 	margin: 0;
 	color: #4b505c;
-	font-size: 15px;
+	font-size: 14px;
 }
 
 .jobs-footer__summary strong {
@@ -22588,7 +22590,7 @@ body.page-job-opportunities .site-header:not(.is-scrolled) {
 	}
 
 	.job-meta {
-		font-size: 15px;
+		font-size: 13px;
 		white-space: normal;
 	}
 
@@ -22678,6 +22680,10 @@ body.page-job-detail .site-header:not(.is-scrolled) {
 
 .job-detail__chip svg {
 	flex: 0 0 auto;
+}
+
+.job-detail__chip .job-badge {
+	font-size: 14px;
 }
 
 /* ---------- Description (HTML dari the_content / plugin) ---------- */
