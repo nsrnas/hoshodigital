@@ -3336,6 +3336,7 @@ body.page-approach .approach-page .page-hero h1 {
 }
 
 .ai-transformation-page :is(.act-on-intelligence__engines, .trusted-by-design__pillars) > .opt-gap-card li {
+	position: relative;
 	min-height: 40px;
 	display: flex;
 	align-items: center;
@@ -3348,12 +3349,15 @@ body.page-approach .approach-page .page-hero h1 {
 }
 
 .ai-transformation-page :is(.act-on-intelligence__engines, .trusted-by-design__pillars) > .opt-gap-card li::before {
-	content: "âœ“";
+	content: "";
 	position: absolute;
 	left: 12px;
-	color: #ff7775;
-	font-size: 0.8rem;
-	font-weight: 800;
+	top: 50%;
+	width: 10px;
+	height: 6px;
+	border-left: 2px solid #ff7775;
+	border-bottom: 2px solid #ff7775;
+	transform: translateY(-70%) rotate(-45deg);
 }
 
 .ai-transformation-page :is(.act-on-intelligence__engines, .trusted-by-design__pillars) > .opt-gap-card:hover {
@@ -16280,15 +16284,6 @@ body.page-contact .contact-form--glass .consent label {
 	transform: none;
 }
 
-:is(.page-company) .quote-band--masaru .quote-band__portrait img {
-	width: clamp(390px, 37vw, 580px);
-	max-width: none;
-	height: auto;
-	max-height: none;
-	transform: translateY(7%);
-}
-
-
 .press-contact {
 	padding-block: clamp(5rem, 10vw, 10rem);
 }
@@ -16767,8 +16762,7 @@ body.page-contact .contact-form--glass .consent label {
 		min-height: 380px;
 	}
 
-	:is(.page-esg, .page-sustainability) .quote-band--konosuke .quote-band__portrait img,
-	:is(.page-company) .quote-band--masaru .quote-band__portrait img {
+	:is(.page-esg, .page-sustainability) .quote-band--konosuke .quote-band__portrait img {
 		width: auto;
 		height: calc(100% - 1rem);
 		max-width: min(94vw, 520px);
