@@ -35,7 +35,7 @@ $route_map = array(
     'assurance'              => array('page' => 'approach-ams',        'file' => 'page-approach-assurance.php'),
     'erp-optimization'        => array('page' => 'approach-erp',       'file' => 'page-approach-erp.php'),
     'ai-transformation'       => array('page' => 'ai-transformation',  'file' => 'page-service-ai.php'),
-    'services'                => array('page' => 'services ',          'file' => 'page-services.php'),
+    'services'                => array('page' => 'services',           'file' => 'page-services.php'),
     'optimization'           => array('page' => 'approach-optimization', 'file' => 'page-approach-optimization.php'),
     'privacy-policy'         => array('page' => 'privacy-policy',      'file' => 'page-privacy-policy.php'),
     'terms-of-use'           => array('page' => 'terms-of-use',        'file' => 'page-terms-of-use.php'),
@@ -75,6 +75,8 @@ function add_action() {}
 function add_filter() {}
 function add_theme_support() {}
 function register_nav_menus() {}
+// Preview router tidak menjalankan bootstrap WordPress/plugin; tidak ada CPT SJB.
+function post_type_exists($post_type) { return false; }
 function get_page_by_path() { return null; }
 function add_query_arg($key, $value, $url = '') {
     $parts = parse_url($url);
@@ -156,6 +158,21 @@ function wp_footer() {
 
 function get_header() { require HOSHO_THEME_ROOT . '/header.php'; }
 function get_footer() { require HOSHO_THEME_ROOT . '/footer.php'; }
+// WordPress normally provides this template loader; mirror the subset used by
+// the job templates so the standalone preview router can render them too.
+function load_template($file, $load_once = true, $args = array()) {
+    if (!is_file($file)) {
+        return;
+    }
+    if (is_array($args)) {
+        extract($args, EXTR_SKIP);
+    }
+    if ($load_once) {
+        require_once $file;
+    } else {
+        require $file;
+    }
+}
 
 require HOSHO_THEME_ROOT . '/functions.php';
 require HOSHO_THEME_ROOT . '/' . $template_file;

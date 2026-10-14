@@ -2,24 +2,25 @@
 /**
  * Template Name: Job Opportunities
  *
- * Halaman daftar lowongan. Saat ini memakai data dummy.
- * Nanti ganti hosho_get_jobs() agar mengambil data dari plugin job WordPress.
+ * Halaman daftar lowongan. Data dari plugin Simple Job Board (post type "jobpost")
+ * lewat adapter jobs-sjb-data.php. Lowongan dikelola di WP-Admin > Job Board.
  */
 
-require_once get_theme_file_path('jobs-dummy-data.php');
+require_once __DIR__ . '/jobs-sjb-data.php';
 
 $jobs      = hosho_get_jobs();
 $per_page  = 10;
-$types     = array('full-time' => 'Full Time', 'internship' => 'Internship');
-$cats      = array_values(array_unique(wp_list_pluck($jobs, 'category')));
-$locations = array_values(array_unique(wp_list_pluck($jobs, 'location')));
+$types     = hosho_job_types();
+$cats      = array_values(array_filter(array_unique(wp_list_pluck($jobs, 'category'))));
+$locations = array_values(array_filter(array_unique(wp_list_pluck($jobs, 'location'))));
 sort($cats);
 sort($locations);
 
 $ico_pin   = '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.6"/></svg>';
 $ico_clock = '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M12 6.5V12l3.5 2"/></svg>';
 
-get_header(); ?>
+// Selalu pakai header/footer dari plugin ini (bukan header tema/Elementor).
+load_template(__DIR__ . '/header.php', true); ?>
 <main id="main-content" class="jobs-page">
 
   <section class="jobs-hero">
@@ -81,7 +82,7 @@ get_header(); ?>
     <ul class="jobs-list" data-jobs-list>
       <?php foreach ($jobs as $job) :
         $ts     = strtotime($job['posted']);
-        $posted = $ts ? 'Posted ' . human_time_diff($ts, current_time('timestamp')) . ' ago' : '';
+        $posted = $ts ? 'Posted ' . human_time_diff($ts, time()) . ' ago' : '';
         $search = strtolower($job['title'] . ' ' . $job['category'] . ' ' . $job['location']);
       ?>
         <li class="job-row"
@@ -93,7 +94,7 @@ get_header(); ?>
           <a class="job-row__link" href="<?php echo esc_url($job['url']); ?>">
             <span class="job-row__main">
               <h2 class="job-row__title"><?php echo esc_html($job['title']); ?></h2>
-              <span class="job-badge job-badge--<?php echo esc_attr($job['type']); ?>"><?php echo esc_html($types[$job['type']] ?? $job['type']); ?></span>
+              <?php if ($job['type']) : ?><span class="job-badge job-badge--<?php echo esc_attr($job['type']); ?>"><?php echo esc_html($types[$job['type']] ?? $job['type']); ?></span><?php endif; ?>
             </span>
             <span class="job-row__meta">
               <span class="job-meta"><?php echo $ico_pin; ?><?php echo esc_html($job['location']); ?></span>
@@ -207,4 +208,4 @@ get_header(); ?>
   render(false);
 })();
 </script>
-<?php get_footer(); ?>
+<?php load_template(__DIR__ . '/footer.php', true); ?>
