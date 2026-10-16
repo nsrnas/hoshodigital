@@ -48,7 +48,7 @@
     <div class="shell">
       <div class="intro-grid motion"> 
         <div>
-          <h2>Governed progress, not disconnected experiments.</h2>
+          <h2>Governed Progress, Guaranteed Outcomes.</h2>
         </div>
         <p>HOSHŌ DIGITAL combines programme support, enterprise architecture and implementation discipline to keep AI investment tied to measurable business outcomes.</p>
       </div>
@@ -107,5 +107,5 @@
     </div>
   </section>
   
-  <?php hosho_render_cta('','QUICK WINS. GUARANTEED OUTCOMES.','','Register interest','https://hoshodigital.com/eci-form/','programmes/eci/eci-singapore-night.jpg'); ?>
+  <?php hosho_render_cta('','SOLVE CHALLENGES WITH INTELLIGENCE','','Register interest','https://hoshodigital.com/eci-form/','programmes/eci/eci-singapore-night.jpg'); ?>
 </main><?php get_footer(); ?>

@@ -266,7 +266,7 @@ $foundationText = isset($_GET['foundationText']) ? $_GET['foundationText'] : "Te
 		<div class="container">
 			<div class="architecture-header motion">
 				<h3>Strength in the Structure</h3>
-				<p>We treat your enterprise architecture like a building: some layers are structural and shouldn't be touched carelessly, others are meant to be renovated often.</p>
+				<p>We treat enterprise architecture like a building: strengthening and improving where needed and demolishing only when absolutely necessary.</p>
 			</div>
 
 			<div class="japanese-house-card motion">

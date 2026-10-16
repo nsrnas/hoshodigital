@@ -140,7 +140,7 @@
 
   <section class="section company-journey">
     <div class="shell">
-      <div class="section-heading motion"><h2>The HOSHŌ Journey</h2></div>
+      <div class="section-heading motion"><h2>The HOSHŌ Mindset</h2></div>
       <ol class="company-journey__stages">
         <li class="company-journey__stage motion"><span>Possibility</span><strong>Discover</strong></li>
         <li class="company-journey__stage motion"><span>Potential</span><strong>Design</strong></li>
