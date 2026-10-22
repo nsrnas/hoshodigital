@@ -55,7 +55,7 @@ if (isset($route_map[$path_clean])) {
     $match = $route_map[$last_segment];
 } else {
     http_response_code(404);
-    $match = array('page' => 'careers', 'file' => 'page-careers.php');
+    $match = array('page' => '404', 'file' => 'page-404.php');
 }
 
 $preview_page  = $match['page'];

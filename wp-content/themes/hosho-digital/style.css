@@ -23732,6 +23732,125 @@ body.page-company .company-exists__content .company-exists__questions li > span:
   letter-spacing: .16em;
 }
 
+/* 404 fallback */
+body.error404 .site-header,
+body.error404 .site-header:not(.is-scrolled),
+body.error404 .site-header.is-scrolled,
+body:has(.not-found-page) .site-header,
+body:has(.not-found-page) .site-header:not(.is-scrolled),
+body:has(.not-found-page) .site-header.is-scrolled {
+  background: var(--navy) !important;
+  border-color: rgba(255, 255, 255, .12) !important;
+  color: #fff !important;
+}
+
+.not-found-page {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.not-found-page__hero {
+  min-height: min(720px, calc(100svh - 92px));
+  display: grid;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  isolation: isolate;
+}
+
+.not-found-page__hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: min(58vw, 780px);
+  height: min(58vw, 780px);
+  right: -14vw;
+  bottom: -28vw;
+  border: 1px solid rgba(7, 21, 35, .12);
+  border-radius: 50%;
+  box-shadow: 0 0 0 72px rgba(7, 21, 35, .035), 0 0 0 144px rgba(7, 21, 35, .02);
+}
+
+.not-found-page__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(2.5rem, 5vw, 4rem);
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  padding-top: clamp(8rem, 14vw, 12rem);
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+.not-found-page__code {
+  color: var(--navy);
+  font-size: clamp(5rem, 15vw, 12rem);
+  font-weight: 700;
+  letter-spacing: -.08em;
+  line-height: .82;
+}
+
+.not-found-page__code span:nth-child(2) {
+  color: var(--red) !important;
+}
+
+.not-found-page__code span:first-child,
+.not-found-page__code span:last-child {
+  color: var(--navy) !important;
+}
+
+.not-found-page__content {
+  width: min(100%, 1240px);
+  max-width: 1240px;
+  margin-inline: auto;
+  justify-self: center;
+  text-align: center;
+}
+
+.not-found-page h1 {
+  display: block;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  color: var(--navy);
+  font-size: clamp(1.75rem, 4vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -.055em;
+  line-height: 1.08;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.not-found-page__body {
+  max-width: 520px;
+  margin: 3rem auto 0;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.65;
+}
+
+.not-found-page__cta {
+  margin-top: 2.25rem;
+}
+
+@media (max-width: 700px) {
+  .not-found-page__hero {
+    min-height: auto;
+  }
+
+  .not-found-page__inner {
+    gap: 2.5rem;
+  }
+
+  .not-found-page h1 {
+    white-space: normal;
+  }
+
+  .not-found-page__code {
+    font-size: clamp(5rem, 27vw, 9rem);
+  }
+}
+
 @media (max-width: 900px) {
   body.page-company .company-exists__content {
     grid-template-columns: 1fr;
