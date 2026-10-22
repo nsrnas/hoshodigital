@@ -297,10 +297,9 @@ $foundationText = isset($_GET['foundationText']) ? $_GET['foundationText'] : "Te
 								<path d="M 430 155 C 448 147, 452 137, 442 127" fill="none" stroke="#5c6570" stroke-width="3" stroke-linecap="round"/>
 							</g>
 
-							<!-- APPLICATIONS -->
-							<g class="jh-part" data-key="applications" tabindex="0">
+							<!-- APPLICATIONS & LOGIC -->
+							<g class="jh-part" data-key="application-process" tabindex="0">
 								<rect x="60" y="170" width="340" height="14" fill="#d2a94e" stroke="#8a6a26" stroke-width="2"/>
-								<rect class="jh-hit" x="8" y="38" width="444" height="148" fill="transparent"/>
 								<rect x="48" y="184" width="13" height="165" fill="#4a3822" stroke="#2c2013" stroke-width="1.5"/>
 								<rect x="399" y="184" width="13" height="165" fill="#4a3822" stroke="#2c2013" stroke-width="1.5"/>
 								<rect x="115" y="184" width="230" height="32" fill="#6b4a30" stroke="#3d2c1a" stroke-width="2"/>
@@ -308,11 +307,6 @@ $foundationText = isset($_GET['foundationText']) ? $_GET['foundationText'] : "Te
 								<line x1="160" y1="184" x2="160" y2="216" stroke="#4a3822" stroke-width="1.2" opacity="0.6"/>
 								<line x1="300" y1="184" x2="300" y2="216" stroke="#4a3822" stroke-width="1.2" opacity="0.6"/>
 								<line x1="330" y1="184" x2="330" y2="216" stroke="#4a3822" stroke-width="1.2" opacity="0.6"/>
-								<rect class="jh-hit" x="40" y="180" width="380" height="40" fill="transparent"/>
-							</g>
-
-							<!-- PROCESS & LOGIC -->
-							<g class="jh-part" data-key="process" tabindex="0">
 								<rect x="75" y="216" width="310" height="84" fill="#8a6d4b" stroke="#3d2c1a" stroke-width="2"/>
 								<rect x="90" y="230" width="85" height="54" fill="#e9e6df" stroke="#4a3822" stroke-width="2"/>
 								<rect x="285" y="230" width="85" height="54" fill="#e9e6df" stroke="#4a3822" stroke-width="2"/>
@@ -332,7 +326,7 @@ $foundationText = isset($_GET['foundationText']) ? $_GET['foundationText'] : "Te
 								<line x1="338" y1="270" x2="338" y2="295" stroke="#7a1f16" stroke-width="4"/>
 								<line x1="365" y1="270" x2="365" y2="295" stroke="#7a1f16" stroke-width="4"/>
 								<line x1="392" y1="270" x2="392" y2="295" stroke="#7a1f16" stroke-width="4"/>
-								<rect class="jh-hit" x="55" y="216" width="350" height="84" fill="transparent"/>
+								<rect class="jh-hit" x="40" y="168" width="380" height="136" fill="transparent"/>
 							</g>
 
 							<!-- FOUNDATION -->
@@ -351,13 +345,9 @@ $foundationText = isset($_GET['foundationText']) ? $_GET['foundationText'] : "Te
 							<span class="jh-label-title">Roof</span>
 							<p class="jh-label-desc">The measurable outcomes every layer below is built to deliver.</p>
 						</div>
-						<div class="jh-label-card" data-key="applications" tabindex="0">
-							<span class="jh-label-title">Applications</span>
-							<p class="jh-label-desc">User experiences &amp; workflow tools</p>
-						</div>
-						<div class="jh-label-card" data-key="process" tabindex="0">
-							<span class="jh-label-title">Process &amp; Logic</span>
-							<p class="jh-label-desc">The business rules governing actions</p>
+						<div class="jh-label-card" data-key="application-process" tabindex="0">
+							<span class="jh-label-title">Applications &amp; Process</span>
+							<p class="jh-label-desc">User experiences and workflow tools powered by the business rules that govern action.</p>
 						</div>
 						<div class="jh-label-card" data-key="foundation" tabindex="0">
 							<span class="jh-label-title">Foundation</span>
@@ -461,8 +451,10 @@ $foundationText = isset($_GET['foundationText']) ? $_GET['foundationText'] : "Te
 					</div>
 
 					<div class="s-stage-info" id="s-stage-info">
-						<div class="s-info-number" id="s-info-num">01</div>
-						<h3 id="s-info-title">Envision</h3>
+						<h3>
+							<span class="s-info-number" id="s-info-num">01</span>
+							<span class="s-info-title" id="s-info-title">Envision</span>
+						</h3>
 						<div class="s-info-block">
 							<span>THE FOCUS</span>
 							<p class="s-info-focus" id="s-info-focus">Diagnose cross-industry business friction and map executive priorities.</p>
