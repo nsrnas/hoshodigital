@@ -42,6 +42,7 @@ $route_map = array(
     'cookies'                => array('page' => 'cookies',             'file' => 'page-cookies.php'),
     'accessibility'          => array('page' => 'accessibility',       'file' => 'page-accessibility.php'),
     'strategy-session'       => array('page' => 'strategy-session',    'file' => 'page-strategy-session.php'),
+    'eci-form'               => array('page' => 'eci-form',             'file' => 'page-eci-form.php'),
 );
 
 $path_clean = strtolower(trim($request_path, '/'));

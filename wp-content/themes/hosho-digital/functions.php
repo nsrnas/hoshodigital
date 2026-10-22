@@ -8,7 +8,7 @@ function hosho_pages() {
     'careers' => 'Careers', 'job-opportunities' => 'Job Opportunities', 'job-detail' => 'Job Detail', 'esg' => 'ESG', 'media' => 'Media',
     'contact' => 'Contact', 'company' => 'Company', 'programmes' => 'Programmes', 'digital-leader-program' => 'Digital Leader Program', 'eci' => 'Enterprise Compute Initiative',
     'solutions' => 'Solutions', 'operational-intelligence' => 'Operational Intelligence', 'customer-intelligence' => 'Customer Intelligence', 'workforce-intelligence' => 'Workforce Intelligence', 'ashistanto' => 'Ashistanto', 'operational-experience' => 'Operational Intelligence', 'customer-experience' => 'Customer Intelligence', 'employee-experience' => 'Workforce Intelligence',
-    'approach' => 'Approach', 'innovation' => 'Innovation', 'assurance' => 'Assurance', 'erp-optimization' => 'ERP Optimization', 'optimization' => 'Optimization', 'ai' => 'AI', 'ai-transformation' => 'AI Transformation', 'strategy-session' => 'Strategy Session',
+    'approach' => 'Approach', 'innovation' => 'Innovation', 'assurance' => 'Assurance', 'erp-optimization' => 'ERP Optimization', 'optimization' => 'Optimization', 'ai' => 'AI', 'ai-transformation' => 'AI Transformation', 'strategy-session' => 'Strategy Session', 'eci-form' => 'ECI Form',
     'services' => 'Services',
   );
 }

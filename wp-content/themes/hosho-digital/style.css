@@ -1987,11 +1987,11 @@ body.page-approach .s-info-guarantee {
 	font-size: 13px;
 }
 
-body.page-strategy-session #main-content {
+body:is(.page-strategy-session, .page-eci-form) #main-content {
 	padding-top: 86px;
 }
 
-body.page-strategy-session .strategy-session-page {
+body:is(.page-strategy-session, .page-eci-form) .strategy-session-page {
 	min-height: calc(100svh - 86px);
 	padding: clamp(72px, 9vw, 132px) 0;
 	background:
@@ -1999,7 +1999,7 @@ body.page-strategy-session .strategy-session-page {
 		linear-gradient(135deg, #f4f6f8 0%, #eef2f5 100%);
 }
 
-body.page-strategy-session .strategy-session-form-wrap {
+body:is(.page-strategy-session, .page-eci-form) .strategy-session-form-wrap {
 	width: min(calc(100% - 48px), 900px);
 	margin-inline: auto;
 	padding: clamp(28px, 5vw, 64px);
@@ -2009,23 +2009,48 @@ body.page-strategy-session .strategy-session-form-wrap {
 	box-shadow: 0 24px 70px rgba(7, 21, 35, .12);
 }
 
-body.page-strategy-session .strategy-session-form {
+body.page-eci-form .eci-form-heading {
+	width: min(calc(100% - 48px), 900px);
+	margin: 0 auto clamp(28px, 4vw, 44px);
+	text-align: center;
+}
+
+body.page-eci-form .eci-form-heading h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: clamp(10px, 1.5vw, 18px);
+	margin: 0;
+	color: var(--navy);
+	font-size: clamp(32px, 5vw, 58px);
+	font-weight: 600;
+	letter-spacing: -.045em;
+	line-height: 1.05;
+}
+
+body.page-eci-form .eci-form-heading h1 img {
+	display: block;
+	width: clamp(58px, 7vw, 94px);
+	height: auto;
+}
+
+body:is(.page-strategy-session, .page-eci-form) .strategy-session-form {
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 	column-gap: clamp(18px, 3vw, 32px);
 	row-gap: 26px;
 }
 
-body.page-strategy-session .strategy-session-form .field {
+body:is(.page-strategy-session, .page-eci-form) .strategy-session-form .field {
 	gap: 9px;
 }
 
-body.page-strategy-session .strategy-session-form .field label {
+body:is(.page-strategy-session, .page-eci-form) .strategy-session-form .field label {
 	color: var(--navy);
 	font-size: 11px;
 	font-weight: 700;
 }
 
-body.page-strategy-session .strategy-session-form :is(input, select, textarea) {
+body:is(.page-strategy-session, .page-eci-form) .strategy-session-form :is(input, select, textarea) {
 	box-sizing: border-box;
 	width: 100%;
 	min-height: 54px;
@@ -2039,29 +2064,29 @@ body.page-strategy-session .strategy-session-form :is(input, select, textarea) {
 	transition: border-color 180ms ease, background-color 180ms ease, box-shadow 180ms ease;
 }
 
-body.page-strategy-session .strategy-session-form :is(input, select, textarea):focus {
+body:is(.page-strategy-session, .page-eci-form) .strategy-session-form :is(input, select, textarea):focus {
 	border-color: var(--red) !important;
 	background: #fff !important;
 	outline: 0;
 	box-shadow: 0 0 0 3px rgba(226, 28, 21, .12);
 }
 
-body.page-strategy-session .strategy-session-form select option {
+body:is(.page-strategy-session, .page-eci-form) .strategy-session-form select option {
 	color: var(--ink);
 	background: #fff;
 }
 
-body.page-strategy-session .strategy-session-form textarea {
+body:is(.page-strategy-session, .page-eci-form) .strategy-session-form textarea {
 	min-height: 150px;
 	resize: vertical;
 }
 
-body.page-strategy-session .strategy-session-form .consent {
+body:is(.page-strategy-session, .page-eci-form) .strategy-session-form .consent {
 	margin-top: 2px;
 	gap: 12px;
 }
 
-body.page-strategy-session .strategy-session-form .consent input {
+body:is(.page-strategy-session, .page-eci-form) .strategy-session-form .consent input {
 	width: 18px;
 	min-width: 18px;
 	height: 18px;
@@ -2075,19 +2100,19 @@ body.page-strategy-session .strategy-session-form .consent input {
 	accent-color: var(--red);
 }
 
-body.page-strategy-session .strategy-session-form .consent label {
+body:is(.page-strategy-session, .page-eci-form) .strategy-session-form .consent label {
 	color: #5d6b78;
 	font-size: 13px;
 	line-height: 1.55;
 }
 
-body.page-strategy-session .strategy-session-form__button {
+body:is(.page-strategy-session, .page-eci-form) .strategy-session-form__button {
 	justify-self: start;
 	min-width: 250px;
 	margin-top: 2px;
 }
 
-body.page-strategy-session .site-header:not(.is-scrolled) {
+body:is(.page-strategy-session, .page-eci-form) .site-header:not(.is-scrolled) {
 	background: var(--navy);
 	border-color: rgba(255, 255, 255, .12);
 }
@@ -2095,26 +2120,31 @@ body.page-strategy-session .site-header:not(.is-scrolled) {
 @media (min-width: 1200px) {}
 
 @media (max-width: 700px) {
-	body.page-strategy-session .strategy-session-page {
+	body:is(.page-strategy-session, .page-eci-form) .strategy-session-page {
 		padding: 52px 0 72px;
 	}
 
-	body.page-strategy-session .strategy-session-form-wrap {
+	body:is(.page-strategy-session, .page-eci-form) .strategy-session-form-wrap {
 		width: min(calc(100% - 32px), 560px);
 		padding: 26px 20px 30px;
 	}
 
-	body.page-strategy-session .strategy-session-form {
+	body.page-eci-form .eci-form-heading {
+		width: min(calc(100% - 32px), 560px);
+		margin-bottom: 28px;
+	}
+
+	body:is(.page-strategy-session, .page-eci-form) .strategy-session-form {
 		grid-template-columns: 1fr;
 		row-gap: 20px;
 	}
 
-	body.page-strategy-session .strategy-session-form__button {
+	body:is(.page-strategy-session, .page-eci-form) .strategy-session-form__button {
 		width: 100%;
 	}
 }
 
-body.page-strategy-session .site-footer {
+body:is(.page-strategy-session, .page-eci-form) .site-footer {
 	margin-top: 0;
 }
 

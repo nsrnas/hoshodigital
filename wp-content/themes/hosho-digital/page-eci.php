@@ -107,5 +107,5 @@
     </div>
   </section>
   
-  <?php hosho_render_cta('','SOLVE CHALLENGES WITH INTELLIGENCE','','Register interest','https://hoshodigital.com/eci-form/','programmes/eci/eci-singapore-night.jpg'); ?>
+  <?php hosho_render_cta('','SOLVE CHALLENGES WITH INTELLIGENCE','','Register interest', hosho_page_url( 'eci-form' ),'programmes/eci/eci-singapore-night.jpg'); ?>
 </main><?php get_footer(); ?>
