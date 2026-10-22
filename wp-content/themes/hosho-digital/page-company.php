@@ -123,17 +123,27 @@
     </div>
   </section>
 
-  <section class="section section-navy company-exists">
-    <div class="shell company-exists__grid">
-      <div class="motion"><h2>Technology got easier.<br>Transformation didn't.</h2><p class="lede">AI has made extraordinary capabilities accessible to almost every business.</p></div>
-      <div class="company-exists__copy motion">
-        <p>Access to technology doesn't equate to knowledge</p>
+  <section class="section section-mist company-exists">
+    <div class="shell">
+      <div class="company-exists__heading motion">
+        <h2>Technology got easier.<br>Transformation didn't.</h2>
+      </div>
+      <div class="company-exists__content motion">
+        <div class="company-exists__message">
+          <p class="company-exists__lead">Access to technology doesn't equate to knowledge</p>
+          <div class="company-exists__closing">
+            <p>That's where HOSHŌ comes in.</p>
+            <p>We bring strategy, technology and execution together to help organisations move from possibility → implementation → impact.</p>
+          </div>
+        </div>
         <ul class="company-exists__questions">
-          <li>Where to start</li><li>What to build</li><li>What to integrate</li><li>How to manage risk</li><li>How to get people to adopt it</li><li>How to turn it into measurable value</li>
+          <li><span>01</span><span>Where to start?</span></li>
+          <li><span>02</span><span>What to build?</span></li>
+          <li><span>03</span><span>What to integrate?</span></li>
+          <li><span>04</span><span>How to manage risk?</span></li>
+          <li><span>05</span><span>How to get people to adopt it?</span></li>
+          <li><span>06</span><span>How to turn it into measurable value?</span></li>
         </ul>
-        <p>That's where HOSHŌ comes in.</p>
-        <p>We bring strategy, technology and execution together to help organisations move from possibility → implementation → impact.</p>
-        <p class="company-exists__promise">And we stand behind the journey.</p>
       </div>
     </div>
   </section>
