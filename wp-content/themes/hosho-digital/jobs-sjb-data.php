@@ -23,11 +23,8 @@ if (!defined('ABSPATH')) {
 
 if (!function_exists('hosho_job_title_case')) {
   function hosho_job_title_case($title) {
-    $title = trim((string) $title);
-    if (function_exists('mb_convert_case') && defined('MB_CASE_TITLE')) {
-      return mb_convert_case(mb_strtolower($title, 'UTF-8'), MB_CASE_TITLE, 'UTF-8');
-    }
-    return ucwords(strtolower($title));
+    // Preserve the capitalization entered in the Job Board. Converting the whole string to title case changes acronyms such as "QA" into "Qa"
+    return trim((string) $title);
   }
 }
 
