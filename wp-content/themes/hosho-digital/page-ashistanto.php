@@ -18,13 +18,16 @@
 
 	<section class="section ashi-intro">
 		<div class="shell ashi-intro__grid motion">
-			<div>
+			<div class="ashi-intro__brand">
 				<span class="ashi-brandmark ashi-brandmark--red"><img src="<?php echo esc_url( $ashistanto_red_logo ); ?>" alt="Ashistanto logo"></span>
-				<h2>Speak. Ashistanto Does.</h2>
 			</div>
+			<div class="ashi-intro__title">
+				<h2>Meet<br>Your<br>Assistant</h2>
+			</div>
+			<div class="ashi-intro__divider" aria-hidden="true"></div>
 			<div class="ashi-intro__copy">
-				<p class="lede">Ashistanto is a workplace assistant that performs everyday tasks through natural voice or text commands.</p>
-				<p>It connects with Microsoft 365 applications to handle emails, meetings, reminders and Teams interactions, helping employees move through routine work with less effort.</p>
+				<p class="lede">Ashistanto. Your workplace assistant that performs everyday tasks through natural voice or text commands.</p>
+				<p>Your configurable AI assistant across all parts of the business from legal to finance to HR and beyond. Built on a secure, scalable and extensible enterprise platform.</p>
 			</div>
 		</div>
 	</section>
@@ -124,8 +127,7 @@
 		<div class="shell ashi-external__inner motion">
 			<div class="ashi-external__copy">
 				<h2>Meet Ashistanto.</h2>
-				<p>Explore the live product and see how natural conversation can simplify work across Microsoft 365.</p>
-				<a class="button" href="https://ashistanto.com/" target="_blank" rel="noopener noreferrer">Visit Ashistanto<span class="button-arrow" aria-hidden="true"></span></a>
+				<a class="button" href="https://ashistanto.com/" target="_blank" rel="noopener noreferrer">Explore<span class="button-arrow" aria-hidden="true"></span></a>
 			</div>
 			<span class="ashi-brandmark ashi-brandmark--cta" aria-hidden="true"><img src="<?php echo esc_url( $ashistanto_white_logo ); ?>" alt=""></span>
 		</div>

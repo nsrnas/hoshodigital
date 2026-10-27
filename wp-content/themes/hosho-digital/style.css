@@ -2028,6 +2028,10 @@ body.page-eci-form .eci-form-heading h1 {
 	line-height: 1.05;
 }
 
+body.page-eci-form .eci-form-heading h1 > span {
+	color: var(--red);
+}
+
 body.page-eci-form .eci-form-heading h1 img {
 	display: block;
 	width: clamp(58px, 7vw, 94px);
@@ -3452,6 +3456,35 @@ body.page-approach .approach-page .page-hero h1 {
 	body.page-approach .approach-page .page-hero h1 {
 		font-size: clamp(3.2rem, 13vw, 5rem) !important;
 	}
+}
+
+body.page-approach .page-hero h1 > span {
+	display: block;
+	width: max-content;
+	font-weight: inherit;
+	line-height: .92;
+}
+
+body.page-approach .page-hero h1 > small {
+	display: block;
+	width: max-content;
+	font-size: .34em !important;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: -.02em;
+	margin: .2em 0;
+}
+
+body.page-approach .page-hero h1 .approach-hero__word {
+	font-size: 1em;
+}
+
+body.page-approach .page-hero h1 .approach-hero__not {
+	font-size: .34em !important;
+	font-weight: 700;
+	line-height: 1;
+	letter-spacing: -.04em;
+	margin: .2em 0;
 }
 
 
@@ -21809,6 +21842,74 @@ body.page-solutions .solutions-product-feature h3 {
 	}
 }
 
+/* Ashistanto intro — large mark beside the three-line title. */
+body.page-ashistanto .ashi-intro__grid > div:first-child {
+	display: grid;
+	grid-template-columns: minmax(150px, .9fr) minmax(0, 1.1fr);
+	gap: clamp(1.25rem, 3vw, 3rem);
+	align-items: center;
+}
+
+body.page-ashistanto .ashi-intro__grid > div:first-child .ashi-brandmark--red {
+	width: 100%;
+	margin: 0;
+}
+
+body.page-ashistanto .ashi-intro__grid > div:first-child h2 {
+	margin: 0;
+}
+
+@media (max-width: 680px) {
+	body.page-ashistanto .ashi-intro__grid > div:first-child {
+		grid-template-columns: minmax(90px, .65fr) minmax(0, 1.35fr);
+		gap: 1rem;
+	}
+}
+
+@media (max-width: 420px) {
+	body.page-ashistanto .ashi-intro__grid > div:first-child {
+		grid-template-columns: 1fr;
+	}
+
+	body.page-ashistanto .ashi-intro__grid > div:first-child .ashi-brandmark--red {
+		width: 7rem;
+	}
+}
+
+/* Ashistanto intro — keep the enlarged mark and title inside the left column. */
+body.page-ashistanto .ashi-intro__grid {
+	grid-template-columns: minmax(0, .95fr) minmax(420px, 1.05fr);
+	gap: clamp(2.5rem, 5vw, 5rem);
+}
+
+body.page-ashistanto .ashi-intro__grid > div:first-child {
+	grid-template-columns: clamp(10rem, 16vw, 14rem) minmax(0, 1fr);
+	gap: clamp(.75rem, 1.5vw, 1.5rem);
+	}
+
+body.page-ashistanto .ashi-intro__grid > div:first-child .ashi-brandmark--red {
+	width: 100%;
+}
+
+body.page-ashistanto .ashi-intro__grid > div:first-child h2 {
+	max-width: 7ch;
+	font-size: clamp(2.5rem, 4.2vw, 4.75rem);
+	line-height: .98;
+}
+
+@media (max-width: 980px) {
+	body.page-ashistanto .ashi-intro__grid {
+	grid-template-columns: 1fr;
+	gap: 3rem;
+	}
+}
+
+@media (max-width: 680px) {
+	body.page-ashistanto .ashi-intro__grid > div:first-child {
+	grid-template-columns: minmax(7rem, .7fr) minmax(0, 1.3fr);
+	}
+}
+
 
 
 .s-puzzle-container {
@@ -23861,5 +23962,591 @@ body:has(.not-found-page) .site-header.is-scrolled {
 @media (max-width: 680px) {
   body.page-company .company-exists__content .company-exists__questions {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Company why — concise commitment statement and bottom-centered definition */
+body.page-company .company-why__inner {
+  padding-bottom: clamp(5rem, 8vw, 7rem);
+}
+
+body.page-company .company-why__left > .company-why__definition {
+  display: none;
+}
+
+body.page-company .company-why__hero-title {
+  max-width: none;
+  margin: 0;
+  font-size: clamp(2.4rem, 4.5vw, 4.75rem);
+  font-weight: 800;
+  line-height: .92;
+  letter-spacing: -.02em;
+}
+
+body.page-company .company-why__definition--bottom {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(3rem, 5vw, 4.5rem);
+  z-index: 2;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: .55rem;
+  width: max-content;
+  max-width: calc(100% - 2rem);
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: #fff;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+body.page-company .company-why__definition--bottom strong,
+body.page-company .company-why__definition--bottom [lang="ja"],
+body.page-company .company-why__definition--bottom > span {
+  color: #fff;
+}
+
+body.page-company .company-why__definition--bottom strong {
+  font-size: clamp(1.2rem, 2vw, 2rem);
+}
+
+body.page-company .company-why__definition--bottom [lang="ja"],
+body.page-company .company-why__definition--bottom > span:last-child {
+  font-size: clamp(.95rem, 1.35vw, 1.3rem);
+  font-weight: 600;
+}
+
+body.page-company .company-why__definition--bottom > span[aria-hidden="true"] {
+  font-size: clamp(.9rem, 1.2vw, 1.15rem);
+  opacity: .7;
+}
+
+/* Render the requested multilingual lock-up consistently even if the theme
+   file is served through a legacy character encoding. */
+body.page-company .company-why__definition--bottom > * {
+  display: none;
+}
+
+body.page-company .company-why__definition--bottom::after {
+  content: "HOSH\014C\00A0\2022\00A0\4FDD\8A3C\00A0\2022\00A0\30DB\30B7\30E7\30A6\00A0\2022\00A0Guarantee";
+  display: block;
+  color: #fff;
+  font-size: clamp(1.1rem, 1.7vw, 1.65rem);
+  font-weight: 600;
+  letter-spacing: .01em;
+  word-spacing: .35em;
+}
+
+body.page-company .company-why__principles {
+  border-top: 0 !important;
+}
+
+body.page-company .company-why__card {
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+body.page-company .company-why__card-title {
+  display: block;
+  color: #fff;
+}
+
+body.page-company .company-why__card-description {
+  display: block;
+  max-height: 0;
+  margin-top: 0;
+  overflow: hidden;
+  color: rgba(255, 255, 255, .86) !important;
+  font-size: clamp(.8rem, 1vw, 1rem) !important;
+  font-weight: 400 !important;
+  line-height: 1.55 !important;
+  opacity: 0;
+  transform: translateY(-.35rem);
+  transition: max-height .35s var(--ease), margin-top .35s var(--ease), opacity .25s ease, transform .35s var(--ease);
+}
+
+body.page-company .company-why__card:hover .company-why__card-description,
+body.page-company .company-why__card:focus-visible .company-why__card-description,
+body.page-company .company-why__card.is-expanded .company-why__card-description {
+  max-height: 12rem;
+  margin-top: .75rem;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body.page-company .company-why__card:hover .company-why__card-title,
+body.page-company .company-why__card:focus-visible .company-why__card-title,
+body.page-company .company-why__card.is-expanded .company-why__card-title {
+  color: #fff !important;
+}
+
+body.page-company .company-why__card:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+
+/* Keep principle cards stable while showing their descriptions in-place. */
+body.page-company .company-why__card,
+body.page-company .company-why__card:hover,
+body.page-company .company-why__card:focus-visible,
+body.page-company .company-why__card.is-expanded {
+  position: relative;
+  height: clamp(78px, 8vw, 112px);
+  min-height: clamp(78px, 8vw, 112px);
+  background: rgba(217, 217, 217, .2) !important;
+}
+
+body.page-company .company-why__card > span {
+  border-bottom: 0 !important;
+}
+
+body.page-company .company-why__card-description {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  margin: 0 !important;
+  padding: 1rem clamp(1rem, 1.6vw, 1.6rem);
+  background: rgba(7, 18, 31, .92);
+  max-height: none;
+  overflow: hidden;
+  opacity: 0;
+  transform: none;
+  visibility: hidden;
+  transition: opacity .25s ease, visibility .25s ease;
+}
+
+body.page-company .company-why__card:hover .company-why__card-description,
+body.page-company .company-why__card:focus-visible .company-why__card-description,
+body.page-company .company-why__card.is-expanded .company-why__card-description {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Final cascade: compact cards at rest, expandable only when active. */
+body.page-company .company-why__card,
+body.page-company .company-why__card:hover,
+body.page-company .company-why__card:focus-visible,
+body.page-company .company-why__card.is-expanded,
+body.page-company .company-why__card--tall {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+body.page-company .company-why__card:not(:hover):not(:focus-visible):not(.is-expanded) .company-why__card-description,
+body.page-company .company-why__card--tall:not(:hover):not(:focus-visible):not(.is-expanded) .company-why__card-description {
+  height: 0 !important;
+  max-height: 0 !important;
+  margin-top: 0 !important;
+  padding: 0 !important;
+  flex: 0 0 0 !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+body.page-company .company-why__card:hover .company-why__card-description,
+body.page-company .company-why__card:focus-visible .company-why__card-description,
+body.page-company .company-why__card.is-expanded .company-why__card-description {
+  height: auto !important;
+  max-height: 12rem !important;
+  margin-top: .75rem !important;
+  padding: 0 !important;
+  flex: 0 1 auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Compact by default; only the active principle expands for its description. */
+body.page-company .company-why__card,
+body.page-company .company-why__card:hover,
+body.page-company .company-why__card:focus-visible,
+body.page-company .company-why__card.is-expanded,
+body.page-company .company-why__card--tall {
+  height: auto;
+  min-height: 0;
+  overflow: hidden;
+}
+
+body.page-company .company-why__card-description,
+body.page-company .company-why__card:hover .company-why__card-description,
+body.page-company .company-why__card:focus-visible .company-why__card-description,
+body.page-company .company-why__card.is-expanded .company-why__card-description {
+  position: static;
+  display: block;
+  width: 100%;
+  max-height: 0;
+  margin-top: 0 !important;
+  padding: 0;
+  background: transparent;
+  opacity: 0;
+  transform: none;
+  visibility: hidden;
+  transition: max-height .35s var(--ease), margin-top .35s var(--ease), opacity .25s ease, visibility .25s ease;
+}
+
+body.page-company .company-why__card:hover .company-why__card-description,
+body.page-company .company-why__card:focus-visible .company-why__card-description,
+body.page-company .company-why__card.is-expanded .company-why__card-description {
+  max-height: 12rem;
+  margin-top: .75rem !important;
+  height: auto !important;
+  flex: 0 1 auto !important;
+  opacity: 1;
+  visibility: visible;
+}
+
+body.page-company .company-why__card:not(:hover):not(:focus-visible):not(.is-expanded),
+body.page-company .company-why__card--tall:not(:hover):not(:focus-visible):not(.is-expanded) {
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+body.page-company .company-why__card:not(:hover):not(:focus-visible):not(.is-expanded) .company-why__card-description,
+body.page-company .company-why__card--tall:not(:hover):not(:focus-visible):not(.is-expanded) .company-why__card-description {
+  height: 0 !important;
+  max-height: 0 !important;
+  flex: 0 0 0 !important;
+  margin-top: 0 !important;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Principle cards — title, divider and description stay in the same card. */
+body.page-company .company-why__card,
+body.page-company .company-why__card:hover,
+body.page-company .company-why__card:focus-visible,
+body.page-company .company-why__card.is-expanded {
+  height: clamp(150px, 15vw, 205px);
+  min-height: clamp(150px, 15vw, 205px);
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+body.page-company .company-why__card-title {
+  display: inline-block;
+  width: fit-content;
+  max-width: 100%;
+  padding-bottom: .75rem;
+  border-bottom: 0 !important;
+}
+
+body.page-company .company-why__card-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: .75rem;
+  background: rgba(255, 255, 255, .85);
+}
+
+body.page-company .company-why__card-description,
+body.page-company .company-why__card:hover .company-why__card-description,
+body.page-company .company-why__card:focus-visible .company-why__card-description,
+body.page-company .company-why__card.is-expanded .company-why__card-description {
+  position: static;
+  inset: auto;
+  display: block;
+  flex: 1 1 auto;
+  width: 100%;
+  max-height: none;
+  margin-top: .75rem !important;
+  padding: 0;
+  overflow: hidden;
+  background: transparent;
+  opacity: 0;
+  transform: none;
+  visibility: hidden;
+  transition: opacity .25s ease, visibility .25s ease;
+}
+
+body.page-company .company-why__card:hover .company-why__card-description,
+body.page-company .company-why__card:focus-visible .company-why__card-description,
+body.page-company .company-why__card.is-expanded .company-why__card-description {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 600px) {
+  body.page-company .company-why__hero-title {
+    max-width: none;
+    font-size: clamp(2rem, 9vw, 3.5rem);
+  }
+
+  body.page-company .company-why__definition--bottom {
+    gap: .35rem;
+  }
+}
+
+/* ECI benefits heading — centered above the capability cards */
+body.page-eci .eci-benefits .intro-grid {
+  display: block !important;
+  text-align: center;
+}
+
+body.page-eci .eci-benefits .intro-grid > div {
+  width: 100%;
+}
+
+body.page-eci .eci-benefits .intro-grid h2 {
+  max-width: none;
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 4rem);
+  line-height: 1.08;
+  letter-spacing: -.05em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+body.page-eci .eci-benefits .intro-grid > p {
+  max-width: 58ch;
+  margin: 1.5rem auto 0;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  body.page-eci .eci-benefits .intro-grid h2 {
+    white-space: normal;
+  }
+}
+
+/* Ashistanto intro — Figma-style horizontal composition. */
+body.page-ashistanto .ashi-intro__grid {
+	display: grid;
+	grid-template-columns: minmax(170px, .75fr) minmax(260px, 1.1fr) 5px minmax(360px, 2fr);
+	gap: clamp(1.5rem, 3vw, 4rem);
+	align-items: center;
+}
+
+body.page-ashistanto .ashi-intro__grid > div:first-child,
+body.page-ashistanto .ashi-intro__brand,
+body.page-ashistanto .ashi-intro__title,
+body.page-ashistanto .ashi-intro__copy {
+	display: block;
+}
+
+body.page-ashistanto .ashi-intro__brand .ashi-brandmark--red {
+	width: min(100%, clamp(10rem, 18vw, 19rem));
+	margin: 0;
+}
+
+body.page-ashistanto .ashi-intro__title h2 {
+	margin: 0;
+}
+
+body.page-ashistanto .ashi-intro__divider {
+	width: 5px;
+	height: 100%;
+	min-height: 15rem;
+	background: var(--red);
+}
+
+body.page-ashistanto .ashi-intro__copy {
+	max-width: none;
+}
+
+@media (max-width: 980px) {
+	body.page-ashistanto .ashi-intro__grid {
+	grid-template-columns: minmax(130px, .65fr) minmax(0, 1.35fr);
+	gap: 2rem;
+	}
+
+	body.page-ashistanto .ashi-intro__divider {
+	grid-column: 1 / -1;
+	width: 100%;
+	height: 5px;
+	min-height: 0;
+	}
+
+	body.page-ashistanto .ashi-intro__copy {
+	grid-column: 1 / -1;
+	}
+}
+
+@media (max-width: 520px) {
+	body.page-ashistanto .ashi-intro__grid {
+	grid-template-columns: 1fr;
+	}
+
+	body.page-ashistanto .ashi-intro__brand,
+	body.page-ashistanto .ashi-intro__title,
+	body.page-ashistanto .ashi-intro__copy,
+	body.page-ashistanto .ashi-intro__divider {
+	grid-column: 1;
+	}
+
+	body.page-ashistanto .ashi-intro__brand .ashi-brandmark--red {
+	width: 10rem;
+	}
+}
+
+@media (min-width: 981px) {
+	body.page-ashistanto .ashi-intro__grid {
+	grid-template-columns: minmax(190px, .72fr) minmax(420px, 1.3fr) 5px minmax(420px, 1.8fr);
+	gap: 2rem;
+	}
+
+	body.page-ashistanto .ashi-intro__title {
+	padding-right: .5rem;
+	}
+}
+
+/* Final Ashistanto intro alignment. */
+body.page-ashistanto .ashi-intro__grid {
+	grid-template-columns: minmax(190px, .72fr) minmax(420px, 1.3fr) 5px minmax(420px, 1.8fr);
+	gap: 2rem;
+}
+
+body.page-ashistanto .ashi-intro__brand {
+	display: flex !important;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+body.page-ashistanto .ashi-intro__brand .ashi-brandmark--red {
+	width: clamp(12rem, 17vw, 17rem);
+	height: clamp(12rem, 17vw, 17rem);
+	aspect-ratio: 1;
+	overflow: hidden;
+	margin: 0;
+}
+
+body.page-ashistanto .ashi-intro__brand .ashi-brandmark--red img {
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	max-width: none;
+	transform: none;
+	object-fit: contain;
+}
+
+body.page-ashistanto .ashi-intro__title {
+	min-width: 0;
+}
+
+body.page-ashistanto .ashi-intro__title h2 {
+	max-width: none;
+	font-size: clamp(2.5rem, 4.8vw, 5.5rem);
+	line-height: 1;
+	white-space: nowrap;
+}
+
+body.page-ashistanto .ashi-intro__divider {
+	justify-self: end;
+	width: 5px;
+	height: 100%;
+	min-height: 15rem;
+}
+
+@media (max-width: 1100px) {
+	body.page-ashistanto .ashi-intro__grid {
+	grid-template-columns: minmax(150px, .65fr) minmax(300px, 1.15fr) 5px minmax(300px, 1.7fr);
+	gap: 1.25rem;
+	}
+
+	body.page-ashistanto .ashi-intro__title h2 {
+	font-size: clamp(2.2rem, 4.3vw, 4.5rem);
+	}
+}
+
+@media (max-width: 980px) {
+	body.page-ashistanto .ashi-intro__grid {
+	grid-template-columns: minmax(130px, .65fr) minmax(0, 1.35fr);
+	gap: 2rem;
+	}
+
+	body.page-ashistanto .ashi-intro__divider {
+	grid-column: 1 / -1;
+	justify-self: stretch;
+	width: 100%;
+	height: 5px;
+	min-height: 0;
+	}
+
+	body.page-ashistanto .ashi-intro__copy {
+	grid-column: 1 / -1;
+	}
+}
+
+@media (max-width: 520px) {
+	body.page-ashistanto .ashi-intro__grid {
+	grid-template-columns: 1fr;
+	}
+
+	body.page-ashistanto .ashi-intro__brand,
+	body.page-ashistanto .ashi-intro__title,
+	body.page-ashistanto .ashi-intro__copy,
+	body.page-ashistanto .ashi-intro__divider {
+	grid-column: 1;
+	}
+
+	body.page-ashistanto .ashi-intro__brand .ashi-brandmark--red {
+	width: 10rem;
+	height: 10rem;
+	}
+
+	body.page-ashistanto .ashi-intro__title h2 {
+	white-space: normal;
+	}
+}
+
+/* Company direction — image belongs to the inner grid only. */
+body.page-company .company-direction__grid {
+  overflow: hidden;
+  border: 0;
+  aspect-ratio: 1676 / 714;
+  background-color: var(--mist);
+  background-image: url('assets/images/company-direction-background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+body.page-company .company-direction__item,
+body.page-company .company-direction__item:last-child {
+  background: transparent;
+}
+
+body.page-company .company-direction__item:first-child {
+  border-right: 1px solid rgba(255, 255, 255, .24);
+  color: #fff;
+}
+
+body.page-company .company-direction__item:first-child :is(h3, p) {
+  color: #fff;
+}
+
+body.page-company .company-direction__item:last-child {
+  color: var(--navy);
+}
+
+body.page-company .company-direction__item:last-child :is(h3, p) {
+  color: var(--navy);
+}
+
+body.page-company .company-direction__item:last-child,
+body.page-company .company-direction__item:last-child :is(h3, p),
+body.page-company .company-direction__item:last-child > .eyebrow {
+  color: var(--red);
+}
+
+body.page-company .company-direction__item > .eyebrow {
+  color: inherit;
+}
+
+@media (max-width: 980px) {
+  body.page-company .company-direction__grid {
+    aspect-ratio: auto;
+    background-size: cover;
+  }
+
+  body.page-company .company-direction__item:first-child {
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .24);
   }
 }

@@ -104,7 +104,7 @@ $foundationText = isset($_GET['foundationText']) ? $_GET['foundationText'] : "Te
 <main id="main-content" class="approach-page">
 
 	<!-- HERO -->
-	<?php hosho_render_hero( "Don't Leverage<br>What's Working", 'approach/main/hero.jpg', array( 'class' => 'page-hero--company' ) ); ?>
+	<?php hosho_render_hero( '<span class="approach-hero__word">LEVERAGE</span><small class="approach-hero__not">NOT</small><span class="approach-hero__word">REPLACE</span>', 'approach/main/hero.jpg', array( 'class' => 'page-hero--company' ) ); ?>
 
 	<!-- WHY 80% OF ENTERPRISE AI FAILS -->
 	<section class="fail-section">

@@ -48,9 +48,9 @@
     <div class="shell">
       <div class="intro-grid motion"> 
         <div>
-          <h2>Governed Progress, Guaranteed Outcomes.</h2>
+          <h2>Governed Progress. Guaranteed Outcomes.</h2>
         </div>
-        <p>HOSHŌ DIGITAL combines programme support, enterprise architecture and implementation discipline to keep AI investment tied to measurable business outcomes.</p>
+        <p>Combining programme support, enterprise architecture and implementation discipline to deliver measurable AI driven business outcomes.</p>
       </div>
     </div>
     <div class="capability-grid capability-grid--3col">

@@ -1,29 +1,12 @@
 <?php get_header(); ?>
 <main id="main-content">
-  <?php hosho_render_hero( 'TECHNOLOGY CHANGES.<br>OUR GUARANTEE DOESN\'T.', 'hero-company.png', array( 'class' => 'page-hero--company' ) ); ?>
+  <?php hosho_render_hero( 'Evolving technology. Guaranteed outcomes.', 'hero-company.png', array( 'class' => 'page-hero--company' ) ); ?>
 
   <section class="section company-why">
     <div class="company-why__inner">
       <!-- Left column -->
       <div class="company-why__left motion">
-        <h2 class="company-why__hero-title">Technology<br>moves fast.</h2>
-        <p class="company-why__sub-title">Your trust shouldn't be a gamble.</p>
-        <div class="company-why__divider" aria-hidden="true">
-          <svg width="100%" height="17" viewBox="0 0 833 17" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <line y1="8.5" x2="833" y2="8.5" stroke="url(#cw-grad)" stroke-width="17"/>
-            <defs>
-              <linearGradient id="cw-grad" x1="0" y1="17.5" x2="833" y2="17.5" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#FF2F34"/>
-                <stop offset="0.216" stop-color="#AB0A07"/>
-                <stop offset="1" stop-color="#2E0E16" stop-opacity="0"/>
-              </linearGradient>
-            </defs>
-          </svg>
-        </div>
-        <div class="company-why__body">
-          <p>It captures the promise at the heart of our business: If we say we can do it, we stand behind it.</p>
-          <p>We don't believe transformation should mean betting your business on the latest technology.</p>
-        </div>
+        <h2 class="company-why__hero-title">Your business outcomes are our commitment.<br>Delivering on them is our promise.</h2>
         <div class="company-why__definition">
           <strong>HOSHŌ</strong>
           <span lang="ja">保証</span>
@@ -35,13 +18,33 @@
       <div class="company-why__right">
         <img src="<?php echo esc_url( hosho_asset_url( 'stamp-white.png' ) ); ?>" alt="HOSHŌ guarantee stamp" class="company-why__stamp" loading="lazy" decoding="async">
         <div class="company-why__principles motion">
-          <div class="company-why__card"><span>We believe in understanding first.</span></div>
-          <div class="company-why__card"><span>Measuring what matters.</span></div>
-          <div class="company-why__card"><span>Building intelligently.</span></div>
-          <div class="company-why__card company-why__card--tall"><span>And staying accountable for the value created.</span></div>
+          <div class="company-why__card" tabindex="0" role="button" aria-expanded="false">
+            <span class="company-why__card-title">Understand Your Business</span>
+            <span class="company-why__card-description">We start by understanding your challenges, ambitions, and business needs to identify where AI can deliver the greatest value.</span>
+          </div>
+          <div class="company-why__card" tabindex="0" role="button" aria-expanded="false">
+            <span class="company-why__card-title">Define What Matters</span>
+            <span class="company-why__card-description">We establish clear objectives and measurable outcomes to ensure every solution delivers meaningful business impact.</span>
+          </div>
+          <div class="company-why__card" tabindex="0" role="button" aria-expanded="false">
+            <span class="company-why__card-title">Build with Intelligence</span>
+            <span class="company-why__card-description">We design and deliver tailored AI solutions that integrate with your existing systems, scale with your needs, and turn possibilities into performance.</span>
+          </div>
+          <div class="company-why__card company-why__card--tall" tabindex="0" role="button" aria-expanded="false">
+            <span class="company-why__card-title">Evolve with You</span>
+            <span class="company-why__card-description">We provide ongoing support, optimisation, and guidance to ensure your solutions continue to deliver value as your business and technology evolve.</span>
+          </div>
         </div>
-        <p class="company-why__difference">That's the HOSHŌ difference.</p>
       </div>
+    </div>
+    <div class="company-why__definition company-why__definition--bottom motion" aria-label="HOSHŌ guarantee">
+      <strong>HOSHŌ </strong>
+      <span aria-hidden="true"> • </span>
+      <span lang="ja">保証</span>
+      <span aria-hidden="true"> • </span>
+      <span lang="ja">ホショウ</span>
+      <span aria-hidden="true"> • </span>
+      <span>Guarantee</span>
     </div>
   </section>
 
@@ -163,4 +166,26 @@
 
   <?php hosho_render_cta( 'Your digital guarantee', '<strong>TURN POTENTIAL INTO PROGRESS.</strong>', '', 'Get in touch', hosho_page_url( 'contact' ), 'quickwin-digital-landscape.jpg' ); ?>
 </main>
+<script>
+(function () {
+  var cards = document.querySelectorAll('.company-why__card');
+  if (!cards.length) return;
+
+  cards.forEach(function (card) {
+    function toggle() {
+      var expanded = card.getAttribute('aria-expanded') === 'true';
+      card.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+      card.classList.toggle('is-expanded', !expanded);
+    }
+
+    card.addEventListener('click', toggle);
+    card.addEventListener('keydown', function (event) {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        toggle();
+      }
+    });
+  });
+})();
+</script>
 <?php get_footer(); ?>

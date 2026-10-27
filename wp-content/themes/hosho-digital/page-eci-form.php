@@ -12,7 +12,7 @@ get_header();
 	<section class="section contact-page strategy-session-page eci-form-page" id="eci-form">
 		<div class="eci-form-heading">
 			<h1>
-				<span>Intelligent. Solutions.</span>
+				<span>INTELLIGENT. SOLUTIONS.</span>
 				<img src="<?php echo esc_url( hosho_asset_url( 'stamp-red.png' ) ); ?>" alt="保証">
 			</h1>
 		</div>
